@@ -1,0 +1,58 @@
+---
+title: Wages
+description: |
+  Constituency-level data on wages.
+order: 30
+showcase: 6
+component: map.hex_cartogram
+config:
+  width: 600
+  hexjson: hexjson.constituencies
+  data: sources.economy.wages
+  columns:
+    - name: "filterLabel"
+      template: "{{ ConstituencyName }} ({{ RegionName }})"
+  value: "2022-12-01"
+  scale: Viridis
+  min: 0
+  max: 50000
+  matchKey: "ONSConstID"
+  legend:
+    position: top right
+    items:
+    - value: 50000
+      label: £50k
+    - value: 40000
+      label: £40k
+    - value: 30000
+      label: £30k
+    - value: 20000
+      label: £20k
+    - value: 10000
+      label: £10k
+    - value: 0
+      label: '0'
+  tools:
+    filter:
+      label: filterLabel
+    slider:
+      columns: ['2017-12-31','2018-12-01','2019-12-01','2020-12-01','2021-12-01','2022-12-01']
+      width: 500px
+  tooltip: "Median House Price ({{ _value }})<br />{{ ConstituencyName }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
+  attribution: |
+    Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House of Commons Library Constituency data: house prices</a>
+---
+
+
+<p>This page provides constituency-level data on wages in England, Scotland, and Wales.</p>
+
+{% comp 'oi.' + component, { "config": config } %}{% endcomp %}
+
+<h2>Notes</h2>
+
+<ul>
+<li>The values are the median full-time employee salary for residents of the constituency.</li>
+<li>Weekly salary data is multiplied up to an annual figure and then averaged over three years (2020-22).</li>
+<li>Self-employed people and part-time workers are not included.</li>
+<li>The source data are provided for pre-2023 constituencies.</li>
+</ul>

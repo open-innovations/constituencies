@@ -8,10 +8,10 @@ def read_data(filename, sheet_name):
     return data
 
 def get_median_house_prices(data):
-    data = data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='HouseConstMedianPrice')
-    return data
+    return data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='HouseConstMedianPrice')
 
 if __name__ == '__main__':
     data = read_data('raw-data/house-prices.xlsx', 'Constituency data table')
-    data = get_median_house_prices(data)
-    data.to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
+    get_median_house_prices(data).to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
+    data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='ConstRatio').to_csv(os.path.join(ECON_DATA_DIR, 'house_price_wage_ratio.csv'))
+    data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='ConstWage').to_csv(os.path.join(ECON_DATA_DIR, 'wages.csv'))
