@@ -15,3 +15,6 @@ if __name__ == '__main__':
     get_median_house_prices(data).to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
     data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='ConstRatio').to_csv(os.path.join(ECON_DATA_DIR, 'house_price_wage_ratio.csv'))
     data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='ConstWage').to_csv(os.path.join(ECON_DATA_DIR, 'wages.csv'))
+
+    unemploy = read_data('raw-data/unemployment.xlsx','Data')
+    unemploy.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='UnempConstRate').to_csv(os.path.join(ECON_DATA_DIR, 'unemployment_rate.csv'))

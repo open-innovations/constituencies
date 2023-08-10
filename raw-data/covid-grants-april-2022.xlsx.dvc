@@ -1,0 +1,14 @@
+md5: 9824e82b3e96b35f3494a134069baa0b
+frozen: true
+deps:
+- checksum: '"62791e27-19a9b"'
+  size: 105115
+  hash: md5
+  path: 
+    https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1073911/ohlg-arg-by-constituency-april-2022.xlsx
+outs:
+- md5: 7bf865766527e3393bef14addd90367f
+  size: 105115
+  isexec: true
+  hash: md5
+  path: covid-grants-april-2022.xlsx
