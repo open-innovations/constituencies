@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  transform:
+    cmd: PYTHONPATH=. python pipelines/transform.py
+    deps:
+    - path: data-raw/house-prices.xlsx
+      hash: md5
+      md5: a676375d47f5adec5ea65fd007e38a77
+      size: 9084108
+    - path: pipelines/transform.py
+      hash: md5
+      md5: 1ada03562cae1c14131e7cbfbb3462ca
+      size: 638
+    outs:
+    - path: src/_data/sources/economy/house_prices.csv
+      hash: md5
+      md5: feaca466711ddc82c9d804c39392481a
+      size: 580174
+      isexec: true

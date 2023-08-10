@@ -1,0 +1,10 @@
+stages:
+      transform:
+            cmd: PYTHONPATH=. python pipelines/transform.py
+            wdir: ../
+            deps:
+                  - pipelines/transform.py
+                  - data-raw/house-prices.xlsx
+            outs:
+                  - src/_data/sources/economy/house_prices.csv:
+                          cache: false
