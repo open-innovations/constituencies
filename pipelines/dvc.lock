@@ -9,8 +9,8 @@ stages:
       size: 9084108
     - path: pipelines/transform.py
       hash: md5
-      md5: 1ada03562cae1c14131e7cbfbb3462ca
-      size: 638
+      md5: 28147cbbe152a3ab7e2565c310342c21
+      size: 605
     outs:
     - path: src/_data/sources/economy/house_prices.csv
       hash: md5
