@@ -12,6 +12,6 @@ def get_median_house_prices(data):
     return data
 
 if __name__ == '__main__':
-    data = read_data('data-raw/house-prices.xlsx', 'Constituency data table')
+    data = read_data('raw-data/house-prices.xlsx', 'Constituency data table')
     data = get_median_house_prices(data)
     data.to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
