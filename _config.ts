@@ -6,7 +6,7 @@ import postcss from "lume/plugins/postcss.ts";
 import { walkSync } from 'std/fs/mod.ts';
 
 // Importing the OI Lume charts and utilities
-import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.0/mod.ts";
+import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.2/mod.ts";
 import autoDependency from "https://deno.land/x/oi_lume_utils@v0.3.0/processors/auto-dependency.ts";
 import csvLoader from "https://deno.land/x/oi_lume_utils@v0.3.0/loaders/csv-loader.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
@@ -21,7 +21,7 @@ const site = lume({
 // https://lume.land/docs/core/loaders/
 site.loadData([".csv", ".tsv", ".dat"], csvLoader);
 site.loadData([".geojson"], jsonLoader);
-
+site.loadData([".hexjson"], jsonLoader);
 
 /**
  * Descend into a folder tree and remotely map each file to the Lume build
@@ -87,6 +87,11 @@ site.use(oiCharts({
 		tileLayer: 'CartoDB.Positron'
 	}
 }));
+
+
+// Add filters
+site.filter('match', (value, regex) => { const re = new RegExp(regex); return value.match(re); });
+
 
 site.use(base_path());
 site.use(metas({
