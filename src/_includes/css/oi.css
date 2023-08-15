@@ -159,7 +159,6 @@ footer hr.about { margin: 32px 0; border: 0; border-top:1px solid #444; }
 
 @media only screen and (max-width: 1080px) {
 	.grid { grid-template-columns: 100%; }
-	.grid-list { grid-template-columns: repeat(2,1fr); grid-gap: 0.25em; }
 }
 
 @media only screen and (max-width: 800px) {
