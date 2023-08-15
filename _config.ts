@@ -14,7 +14,7 @@ import jsonLoader from "lume/core/loaders/json.ts";
 const site = lume({
   src: './src',
   // TODO Update this with the proper URL
-  location: new URL("https://open-innovations.github.io/constituencies/"),
+  location: new URL("https://hexcon.open-innovations.org/"),
 });
 
 // Register a series of extensions to be loaded by the OI CSV loader
