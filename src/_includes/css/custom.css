@@ -42,3 +42,5 @@ header a, .breadcrumb a { color:inherit; }
 	background: #888;
 	cursor: pointer;
 }
+.theme-icon { margin-right: 0.25em; float: left; width: 1em; height: 1em; text-align: center; }
+.theme-icon svg { width: 0.75em; height: auto; }

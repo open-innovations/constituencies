@@ -2,5 +2,5 @@
 layout: template/base.njk
 ---
 
-<h1>{{ title }}</h1>
+<h1>{% if theme %}<a href="/themes/{{ themes[theme]['url'] }}" class="{{ themes[theme]['class'] }} theme-icon">{{ themes[theme]['icon'] | safe }}</a>{% endif %}{{ title }}</h1>
 {{ content | safe }}
