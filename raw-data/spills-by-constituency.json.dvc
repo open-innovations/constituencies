@@ -1,0 +1,14 @@
+md5: 24731ddbde6db663306daec56ff3361a
+frozen: true
+deps:
+- checksum: '"9e63d36d1a401752247fdbfd43839434f0c0a643ff1a05904e2810da4c0fd020"'
+  size: 229328
+  hash: md5
+  path: 
+    https://raw.githubusercontent.com/top-poop/top-of-the-poops/main/web/data/generated/spills-by-constituency.json
+outs:
+- md5: 8684dd65bd630cdcf3a4e65c41b6c590
+  size: 229328
+  isexec: true
+  hash: md5
+  path: spills-by-constituency.json
