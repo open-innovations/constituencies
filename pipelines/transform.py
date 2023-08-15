@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 ECON_DATA_DIR = 'src/_data/sources/economy'
-
+ENVIRON_DATA_DIR = 'src/_data/sources/environment'
 def read_data(filename, sheet_name):
     data = pd.read_excel(filename, sheet_name, na_values='-')
     return data
@@ -18,3 +18,6 @@ if __name__ == '__main__':
 
     unemploy = read_data('raw-data/unemployment.xlsx','Data')
     unemploy.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values='UnempConstRate').to_csv(os.path.join(ECON_DATA_DIR, 'unemployment_rate.csv'))
+
+    spills = pd.read_json('raw-data/spills-by-constituency.json')
+    spills.to_csv(os.path.join(ENVIRON_DATA_DIR, 'spills_by_constituency.csv'))

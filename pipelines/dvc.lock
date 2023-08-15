@@ -5,12 +5,16 @@ stages:
     deps:
     - path: pipelines/transform.py
       hash: md5
-      md5: 1add4a37482667dfcc70dc4ae5b6707b
-      size: 1173
+      md5: 3489ba7b0b5016117a978a8286a25551
+      size: 1373
     - path: raw-data/house-prices.xlsx
       hash: md5
       md5: a676375d47f5adec5ea65fd007e38a77
       size: 9084108
+    - path: raw-data/spills-by-constituency.json
+      hash: md5
+      md5: 8684dd65bd630cdcf3a4e65c41b6c590
+      size: 229328
     - path: raw-data/unemployment.xlsx
       hash: md5
       md5: cd8caa9526f6e77a999453d322fa099d
@@ -35,6 +39,11 @@ stages:
       hash: md5
       md5: 15bf2b410408b36e6bcce4fd563fdcb2
       size: 190056
+      isexec: true
+    - path: src/_data/sources/environment/spills_by_constituency.csv
+      hash: md5
+      md5: 15c19b34ee6c9144627bb5e4e247a2aa
+      size: 100103
       isexec: true
   covid:
     cmd: PYTHONPATH=. python pipelines/covid.py

@@ -1,0 +1,599 @@
+,constituency,company,total_spills,total_hours,spills_increase,hours_increase,mp_name,mp_party,mp_uri,twitter_handle
+0,Preseli Pembrokeshire,Dwr Cymru Welsh Water,6754,79501.0,178,6910.0,Stephen Crabb,Conservative,https://www.theyworkforyou.com/mp/11768/stephen_crabb/preseli_pembrokeshire,@SCrabbPembs
+1,Carmarthen East and Dinefwr,Dwr Cymru Welsh Water,7456,71831.25,-243,-5289.25,Jonathan Edwards,Independent,https://www.theyworkforyou.com/mp/24743/jonathan_edwards/carmarthen_east_and_dinefwr,
+2,Dwyfor Meirionnydd,Dwr Cymru Welsh Water,6952,68545.25,-1019,-11682.0,Liz Saville-Roberts,Plaid Cymru,https://www.theyworkforyou.com/mp/25302/liz_saville-roberts/dwyfor_meirionnydd,@LSRPlaid
+3,Torridge and West Devon,South West Water,5233,58768.95,1122,9751.99,Geoffrey Cox,Conservative,https://www.theyworkforyou.com/mp/11541/geoffrey_cox/torridge_and_west_devon,@Geoffrey_Cox
+4,Penrith and The Border,United Utilities,6084,51249.75,-3229,-28494.12,Neil Hudson,Conservative,https://www.theyworkforyou.com/mp/25875/neil_hudson/penrith_and_the_border,@DrNeilHudson
+5,Workington,United Utilities,4707,44453.62,-3064,-26308.17,Mark Jenkinson,Conservative,https://www.theyworkforyou.com/mp/25792/mark_jenkinson/workington,@markjenkinsonmp
+6,Carmarthen West and South Pembrokeshire,Dwr Cymru Welsh Water,4536,43983.0,-555,-2804.5,Simon Hart,Conservative,https://www.theyworkforyou.com/mp/24813/simon_hart/carmarthen_west_and_south_pembrokeshire,@Simonhartmp
+7,Central Devon,South West Water,4320,43505.75,813,4072.25,Mel Stride,Conservative,https://www.theyworkforyou.com/mp/24914/mel_stride/central_devon,@MelJStride
+8,Ceredigion,Dwr Cymru Welsh Water,4068,40169.75,-603,-10432.0,Ben Lake,Plaid Cymru,https://www.theyworkforyou.com/mp/25669/ben_lake/ceredigion,@BenMLake
+9,South East Cornwall,South West Water,4669,39643.27,394,-1858.12,Sheryll Murray,Conservative,https://www.theyworkforyou.com/mp/24875/sheryll_murray/south_east_cornwall,@sheryllmurray
+10,Derbyshire Dales,Severn Trent Water,3825,36388.589,623,766.139,Sarah Dines,Conservative,https://www.theyworkforyou.com/mp/25877/sarah_dines/derbyshire_dales,@Dines4Dales
+11,Thirsk and Malton,Yorkshire Water,4776,33357.717,1202,11368.867,Kevin Hollinrake,Conservative,https://www.theyworkforyou.com/mp/25415/kevin_hollinrake/thirsk_and_malton,@kevinhollinrake
+12,Brecon and Radnorshire,Dwr Cymru Welsh Water,4075,33289.0,-830,-7612.0,Fay Jones,Conservative,https://www.theyworkforyou.com/mp/25881/fay_jones/brecon_and_radnorshire,@JonesyFay
+13,Berwick-upon-Tweed,Northumbrian Water,4333,32505.225,864,12321.205,Anne-Marie Trevelyan,Conservative,https://www.theyworkforyou.com/mp/25439/anne-marie_trevelyan/berwick-upon-tweed,@annietrev
+14,Aberconwy,Dwr Cymru Welsh Water,3320,32157.0,-635,-8502.0,Robin Millar,Conservative,https://www.theyworkforyou.com/mp/25832/robin_millar/aberconwy,@RobinMillarMP
+15,Ribble Valley,United Utilities,3036,31718.3,-1522,-16054.12,Nigel Evans,Conservative,https://www.theyworkforyou.com/mp/10190/nigel_evans/ribble_valley,@nigelmp
+16,Ynys Môn,Dwr Cymru Welsh Water,3448,31268.5,13,2381.25,Virginia Crosbie,Conservative,https://www.theyworkforyou.com/mp/25843/virginia_crosbie/ynys_mon,
+17,North Cornwall,South West Water,3194,30160.48,284,8356.88,Scott Mann,Conservative,https://www.theyworkforyou.com/mp/25383/scott_mann/north_cornwall,@scottmann4NC
+18,Ogmore,Dwr Cymru Welsh Water,3391,30039.75,-698,-6808.25,Chris Elmore,Labour,https://www.theyworkforyou.com/mp/25490/chris_elmore/ogmore,@CPJElmore
+19,Arfon,Dwr Cymru Welsh Water,3711,29725.0,-780,-2677.25,Hywel Williams,Plaid Cymru,https://www.theyworkforyou.com/mp/11323/hywel_williams/arfon,@HywelPlaidCymru
+20,Skipton and Ripon,Yorkshire Water,4469,29696.583,25,-11324.727,Julian Smith,Conservative,https://www.theyworkforyou.com/mp/24961/julian_smith/skipton_and_ripon,@JulianSmithUK
+21,Totnes,South West Water,4001,27465.19,158,-11239.14,Anthony Mangnall,Conservative,https://www.theyworkforyou.com/mp/25868/anthony_mangnall/totnes,@AnthonyMangnal1
+22,Neath,Dwr Cymru Welsh Water,3543,26893.0,-1257,-8212.75,Christina Rees,Labour/Co-operative,https://www.theyworkforyou.com/mp/25332/christina_rees/neath,@Rees4Neath
+23,Richmond (Yorks),Yorkshire Water,3188,25715.583,-451,-9919.697,Rishi Sunak,Conservative,https://www.theyworkforyou.com/mp/25428/rishi_sunak/richmond_%28yorks%29,@RishiSunak
+24,Tiverton and Honiton,South West Water,2766,24780.68,190,-1821.06,Richard Foord,Liberal Democrat,https://www.theyworkforyou.com/mp/26086/richard_foord/tiverton_and_honiton,@RichardFoordLD
+25,Westmorland and Lonsdale,United Utilities,2003,24661.3,-1119,-15299.77,Tim Farron,Liberal Democrat,https://www.theyworkforyou.com/mp/11923/tim_farron/westmorland_and_lonsdale,@timfarron
+26,Copeland,United Utilities,3088,24660.46,-2641,-26867.06,Trudy Harrison,Conservative,https://www.theyworkforyou.com/mp/25600/trudy_harrison/copeland,
+27,Shrewsbury and Atcham,Severn Trent Water,2000,23566.311,-514,-6517.179,Daniel Kawczynski,Conservative,https://www.theyworkforyou.com/mp/11817/daniel_kawczynski/shrewsbury_and_atcham,@DKShrewsbury
+28,Barrow and Furness,United Utilities,2204,22703.49,-580,-2185.14,Simon Fell,Conservative,https://www.theyworkforyou.com/mp/25869/simon_fell/barrow_and_furness,@simonfell
+29,Hexham,Northumbrian Water,2827,22643.55,-9,1778.66,Guy Opperman,Conservative,https://www.theyworkforyou.com/mp/24962/guy_opperman/hexham,@GuyOpperman
+30,Selby and Ainsty,Yorkshire Water,2909,21697.528,581,3144.048,Nigel Adams,Conservative,https://www.theyworkforyou.com/mp/24878/nigel_adams/selby_and_ainsty,@nadams
+31,North Devon,South West Water,2091,21010.3,-84,-3989.2,Selaine Saxby,Conservative,https://www.theyworkforyou.com/mp/25880/selaine_saxby/north_devon,@SelaineSaxby
+32,Rutland and Melton,Severn Trent Water,2331,20225.112,806,7905.772,Alicia Kearns,Conservative,https://www.theyworkforyou.com/mp/25906/alicia_kearns/rutland_and_melton,@aliciakearns
+33,Cynon Valley,Dwr Cymru Welsh Water,2759,19695.25,-1002,-6566.0,Beth Winter,Labour,https://www.theyworkforyou.com/mp/25826/beth_winter/cynon_valley,@BethWinterMP
+34,Gower,Dwr Cymru Welsh Water,2060,19258.5,-503,-4994.0,Tonia Antoniazzi,Labour,https://www.theyworkforyou.com/mp/25634/tonia_antoniazzi/gower,@ToniaAntoniazzi
+35,Kenilworth and Southam,Severn Trent Water,1813,18946.464,-7,1321.734,Jeremy Wright,Conservative,https://www.theyworkforyou.com/mp/11791/jeremy_wright/kenilworth_and_southam,
+36,Somerton and Frome,Wessex Water,2009,18872.8,-410,-4825.13,David Warburton,Conservative,https://www.theyworkforyou.com/mp/25372/david_warburton/somerton_and_frome,@DJWarburton
+37,Chichester,Southern Water,1125,18674.95,166,3385.25,Gillian Keegan,Conservative,https://www.theyworkforyou.com/mp/25670/gillian_keegan/chichester,@GillianKeegan
+38,Calder Valley,Yorkshire Water,3159,18038.2,-53,-9010.28,Craig Whittaker,Conservative,https://www.theyworkforyou.com/mp/24944/craig_whittaker/calder_valley,@CWhittaker_MP
+39,West Dorset,Wessex Water,1958,17346.72,-561,-11965.31,Chris Loder,Conservative,https://www.theyworkforyou.com/mp/25918/chris_loder/west_dorset,@chrisloder
+40,North West Durham,Northumbrian Water,2873,16831.02,-458,-663.84,Richard Holden,Conservative,https://www.theyworkforyou.com/mp/25893/richard_holden/north_west_durham,@RicHolden
+41,Buckingham,Thames Water,1053,16616.14,-60,588.37,Greg Smith,Conservative,https://www.theyworkforyou.com/mp/25925/greg_smith/buckingham,@gregsmith_uk
+42,Isle of Wight,Southern Water,2462,16573.97,20,-4260.25,Bob Seely,Conservative,https://www.theyworkforyou.com/mp/25645/bob_seely/isle_of_wight,@IoWBobSeely
+43,Monmouth,Dwr Cymru Welsh Water,1975,16546.75,58,-2615.25,David Davies,Conservative,https://www.theyworkforyou.com/mp/11719/david_davies/monmouth,@DavidTCDavies
+44,Rhondda,Dwr Cymru Welsh Water,3167,16486.5,-912,-4850.75,Chris Bryant,Labour,https://www.theyworkforyou.com/mp/10761/chris_bryant/rhondda,@RhonddaBryant
+45,York Central,Yorkshire Water,1940,15944.717,173,1103.617,Rachael Maskell,Labour/Co-operative,https://www.theyworkforyou.com/mp/25433/rachael_maskell/york_central,@RachaelMaskell
+46,Truro and Falmouth,South West Water,2182,15440.65,326,-873.22,Cherilyn Mackrory,Conservative,https://www.theyworkforyou.com/mp/25802/cherilyn_mackrory/truro_and_falmouth,@thisischerilyn
+47,Newport West,Dwr Cymru Welsh Water,2007,15300.0,-357,-5197.5,Ruth Jones,Labour,https://www.theyworkforyou.com/mp/25746/ruth_jones/newport_west,@RuthNewportWest
+48,Witney,Thames Water,903,15006.79,-264,-3614.45,Robert Courts,Conservative,https://www.theyworkforyou.com/mp/25593/robert_courts/witney,@robertcourts
+49,City of Durham,Northumbrian Water,2759,14763.26,-6,-1389.36,Mary Foy,Labour,https://www.theyworkforyou.com/mp/25833/mary_foy/city_of_durham,@marykfoy
+50,Clwyd West,Dwr Cymru Welsh Water,1550,14753.5,254,1244.0,David Jones,Conservative,https://www.theyworkforyou.com/mp/11506/david_jones/clwyd_west,@DavidJonesMP
+51,Wealden,Southern Water,1724,14716.77,-112,-3665.11,Nusrat Ghani,Conservative,https://www.theyworkforyou.com/mp/25354/nusrat_ghani/wealden,@Nus_Ghani
+52,Amber Valley,Severn Trent Water,2329,14706.445,465,1794.065,Nigel Mills,Conservative,https://www.theyworkforyou.com/mp/24965/nigel_mills/amber_valley,@nigelmills
+53,Vale of Glamorgan,Dwr Cymru Welsh Water,1631,14496.75,142,-814.25,Alun Cairns,Conservative,https://www.theyworkforyou.com/mp/24740/alun_cairns/vale_of_glamorgan,@AlunCairns
+54,Llanelli,Dwr Cymru Welsh Water,1891,14452.5,-105,369.25,Nia Griffith,Labour,https://www.theyworkforyou.com/mp/11692/nia_griffith/llanelli,@NiaGriffithMP
+55,West Worcestershire,Severn Trent Water,1676,14367.551,157,-488.329,Harriett Baldwin,Conservative,https://www.theyworkforyou.com/mp/24785/harriett_baldwin/west_worcestershire,@hbaldwin
+56,Delyn,Dwr Cymru Welsh Water,1796,14262.25,560,6764.5,Rob Roberts,Independent,https://www.theyworkforyou.com/mp/25852/rob_roberts/delyn,
+57,Tatton,United Utilities,1983,14247.09,-118,6520.29,Esther McVey,Conservative,https://www.theyworkforyou.com/mp/24882/esther_mcvey/tatton,@EstherMcVey1
+58,East Yorkshire,Yorkshire Water,1624,14201.5,571,7166.19,Greg Knight,Conservative,https://www.theyworkforyou.com/mp/11026/greg_knight/east_yorkshire,@GregKnight
+59,Scarborough and Whitby,Yorkshire Water,1855,13827.383,343,4907.353,Robert Goodwill,Conservative,https://www.theyworkforyou.com/mp/11804/robert_goodwill/scarborough_and_whitby,
+60,Keighley,Yorkshire Water,2103,13720.6,100,-1175.87,Robbie Moore,Conservative,https://www.theyworkforyou.com/mp/25922/robbie_moore/keighley,@_RobbieMoore
+61,Skipton and Ripon,United Utilities,1213,13292.77,-502,-7153.06,Julian Smith,Conservative,https://www.theyworkforyou.com/mp/24961/julian_smith/skipton_and_ripon,@JulianSmithUK
+62,St Austell and Newquay,South West Water,1912,13180.47,242,2530.78,Steve Double,Conservative,https://www.theyworkforyou.com/mp/25410/steve_double/st_austell_and_newquay,@stevedouble
+63,Bishop Auckland,Northumbrian Water,2277,13033.56,-206,-4692.55,Dehenna Davison,Conservative,https://www.theyworkforyou.com/mp/25815/dehenna_davison/bishop_auckland,@DehennaDavison
+64,Colne Valley,Yorkshire Water,2194,12725.9,-119,-3997.3,Jason McCartney,Conservative,https://www.theyworkforyou.com/mp/24887/jason_mccartney/colne_valley,@JasonMcCartney
+65,Arundel and South Downs,Southern Water,1079,12614.73,-192,-5660.58,Andrew Griffith,Conservative,https://www.theyworkforyou.com/mp/25927/andrew_griffith/arundel_and_south_downs,@griffitha
+66,North West Leicestershire,Severn Trent Water,1382,12243.176,158,2644.796,Andrew Bridgen,Conservative,https://www.theyworkforyou.com/mp/24741/andrew_bridgen/north_west_leicestershire,@ABridgen
+67,Mid Worcestershire,Severn Trent Water,1215,12052.434,94,-2507.656,Nigel Huddleston,Conservative,https://www.theyworkforyou.com/mp/25381/nigel_huddleston/mid_worcestershire,@HuddlestonNigel
+68,Sedgefield,Northumbrian Water,1583,12032.25,609,6047.87,Paul Howell,Conservative,https://www.theyworkforyou.com/mp/25855/paul_howell/sedgefield,@PaulHowellMP
+69,North East Somerset,Wessex Water,1934,11986.967,-661,-11201.953,Jacob Rees-Mogg,Conservative,https://www.theyworkforyou.com/mp/24926/jacob_rees-mogg/north_east_somerset,@Jacob_Rees_Mogg
+70,North Wiltshire,Wessex Water,1217,11771.4,-482,-6620.6,James Gray,Conservative,https://www.theyworkforyou.com/mp/10240/james_gray/north_wiltshire,@JGray
+71,Morecambe and Lunesdale,United Utilities,949,11733.24,-310,-389.06,David Morris,Conservative,https://www.theyworkforyou.com/mp/24966/david_morris/morecambe_and_lunesdale,@davidmorrisml
+72,Newton Abbot,South West Water,2121,11702.16,322,-2963.9,Anne Marie Morris,Conservative,https://www.theyworkforyou.com/mp/24912/anne_marie_morris/newton_abbot,@AnneMarieMorris
+73,Stretford and Urmston,United Utilities,1726,11682.38,-280,-312.1,Kate Green,Labour,https://www.theyworkforyou.com/mp/24896/kate_green/stretford_and_urmston,@KateGreenSU
+74,Tewkesbury,Severn Trent Water,1243,11537.947,232,988.807,Laurence Robertson,Conservative,https://www.theyworkforyou.com/mp/10505/laurence_robertson/tewkesbury,@lrobertsonTewks
+75,Leigh,United Utilities,1491,11518.44,465,6967.2,James Grundy,Conservative,https://www.theyworkforyou.com/mp/25812/james_grundy/leigh,
+76,North Dorset,Wessex Water,984,11499.0,119,2700.01,Simon Hoare,Conservative,https://www.theyworkforyou.com/mp/25427/simon_hoare/north_dorset,@Simon4NDorset
+77,East Devon,South West Water,1584,11394.78,197,1445.67,Simon Jupp,Conservative,https://www.theyworkforyou.com/mp/25911/simon_jupp/east_devon,@simonjamesjupp
+78,Aberavon,Dwr Cymru Welsh Water,1553,11136.75,-598,-4668.5,Stephen Kinnock,Labour,https://www.theyworkforyou.com/mp/25297/stephen_kinnock/aberavon,@SKinnock
+79,Pendle,United Utilities,1295,11120.19,-152,2505.87,Andrew Stephenson,Conservative,https://www.theyworkforyou.com/mp/24759/andrew_stephenson/pendle,@Andrew4Pendle
+80,Salisbury,Wessex Water,889,10994.4,-269,-5788.29,John Glen,Conservative,https://www.theyworkforyou.com/mp/24839/john_glen/salisbury,@JohnGlenUK
+81,Ludlow,Severn Trent Water,1424,10956.697,-432,-5244.733,Philip Dunne,Conservative,https://www.theyworkforyou.com/mp/11696/philip_dunne/ludlow,@Dunne4Ludlow
+82,South West Devon,South West Water,1769,10924.99,164,-1639.32,Gary Streeter,Conservative,https://www.theyworkforyou.com/mp/10575/gary_streeter/south_west_devon,@garystreeterSWD
+83,Montgomeryshire,Dwr Cymru Welsh Water,747,10784.25,32,2377.75,Craig Williams,Conservative,https://www.theyworkforyou.com/mp/25329/craig_williams/montgomeryshire,@craig4monty
+84,South Derbyshire,Severn Trent Water,1109,10734.424,-249,-5767.836,Heather Wheeler,Conservative,https://www.theyworkforyou.com/mp/24769/heather_wheeler/south_derbyshire,@HeatherWheeler
+85,Stratford-on-Avon,Severn Trent Water,1150,10646.448,-88,138.408,Nadhim Zahawi,Conservative,https://www.theyworkforyou.com/mp/24822/nadhim_zahawi/stratford-on-avon,@nadhimzahawi
+86,Clwyd South,Dwr Cymru Welsh Water,1756,10499.5,-250,352.25,Simon Baynes,Conservative,https://www.theyworkforyou.com/mp/25799/simon_baynes/clwyd_south,@baynes_simon
+87,Penistone and Stocksbridge,Yorkshire Water,1529,10324.6,-485,-8886.46,Miriam Cates,Conservative,https://www.theyworkforyou.com/mp/25897/miriam_cates/penistone_and_stocksbridge,
+88,Forest of Dean,Severn Trent Water,1018,10237.8,55,2564.56,Mark Harper,Conservative,https://www.theyworkforyou.com/mp/11588/mark_harper/forest_of_dean,@Mark_J_Harper
+89,North East Derbyshire,Yorkshire Water,1555,10205.0,266,814.53,Lee Rowley,Conservative,https://www.theyworkforyou.com/mp/25685/lee_rowley/north_east_derbyshire,@Lee4NED
+90,Newark,Severn Trent Water,1008,10089.471,69,-504.929,Robert Jenrick,Conservative,https://www.theyworkforyou.com/mp/25227/robert_jenrick/newark,@RobertJenrick
+91,Wentworth and Dearne,Yorkshire Water,1389,9950.4,524,-2208.82,John Healey,Labour,https://www.theyworkforyou.com/mp/10268/john_healey/wentworth_and_dearne,@JohnHealey_MP
+92,Beverley and Holderness,Yorkshire Water,1754,9918.6,-93,-7810.29,Graham Stuart,Conservative,https://www.theyworkforyou.com/mp/11406/graham_stuart/beverley_and_holderness,@grahamstuart
+93,Erewash,Severn Trent Water,735,9916.162,360,6383.892,Maggie Throup,Conservative,https://www.theyworkforyou.com/mp/25371/maggie_throup/erewash,@maggie_erewash
+94,Torfaen,Dwr Cymru Welsh Water,1834,9888.25,-439,-2497.5,Nick Thomas-Symonds,Labour,https://www.theyworkforyou.com/mp/25279/nick_thomas-symonds/torfaen,@NickTorfaen
+95,Richmond (Yorks),Northumbrian Water,987,9848.57,-242,-3754.32,Rishi Sunak,Conservative,https://www.theyworkforyou.com/mp/25428/rishi_sunak/richmond_%28yorks%29,@RishiSunak
+96,Chorley,United Utilities,1486,9836.5,-285,1279.26,Lindsay Hoyle,Speaker,https://www.theyworkforyou.com/mp/10295/lindsay_hoyle/chorley,@LindsayHoyle_MP
+97,South Ribble,United Utilities,1282,9801.09,-497,-651.02,Katherine Fletcher,Conservative,https://www.theyworkforyou.com/mp/25830/katherine_fletcher/south_ribble,@K_Fletcher_MP
+98,Bosworth,Severn Trent Water,1153,9779.175,120,4332.695,Luke Evans,Conservative,https://www.theyworkforyou.com/mp/25805/luke_evans/bosworth,@drlukeevans
+99,Yeovil,Wessex Water,1375,9710.833,-32,-1988.467,Marcus Fysh,Conservative,https://www.theyworkforyou.com/mp/25384/marcus_fysh/yeovil,@MarcusFysh
+100,Rossendale and Darwen,United Utilities,1927,9642.03,-871,-1593.28,Jake Berry,Conservative,https://www.theyworkforyou.com/mp/24860/jake_berry/rossendale_and_darwen,@JakeBerry
+101,Taunton Deane,Wessex Water,1122,9605.943,-95,-4387.257,Rebecca Pow,Conservative,https://www.theyworkforyou.com/mp/25407/rebecca_pow/taunton_deane,@pow_rebecca
+102,Huddersfield,Yorkshire Water,2167,9450.9,494,1395.67,Barry Sheerman,Labour/Co-operative,https://www.theyworkforyou.com/mp/10534/barry_sheerman/huddersfield,@BarrySheerman
+103,Newbury,Thames Water,774,9339.5,-401,-7290.06,Laura Farris,Conservative,https://www.theyworkforyou.com/mp/25835/laura_farris/newbury,@Laura__Farris
+104,North Durham,Northumbrian Water,1688,9249.684,234,2248.754,Kevan Jones,Labour,https://www.theyworkforyou.com/mp/11003/kevan_jones/north_durham,@KevanJonesMP
+105,High Peak,United Utilities,1238,9244.94,-604,-4593.69,Robert Largan,Conservative,https://www.theyworkforyou.com/mp/25841/robert_largan/high_peak,@robertlargan
+106,Bexhill and Battle,Southern Water,1114,9236.13,-357,-5005.03,Huw Merriman,Conservative,https://www.theyworkforyou.com/mp/25426/huw_merriman/bexhill_and_battle,@HuwMerriman
+107,Ashford,Southern Water,877,9092.72,126,1543.63,Damian Green,Conservative,https://www.theyworkforyou.com/mp/10241/damian_green/ashford,@DamianGreen
+108,Islwyn,Dwr Cymru Welsh Water,1738,9049.75,-635,-4761.5,Chris Evans,Labour/Co-operative,https://www.theyworkforyou.com/mp/24721/chris_evans/islwyn,@Chris_EvansMP
+109,Banbury,Thames Water,698,9015.77,-131,-752.89,Victoria Prentis,Conservative,https://www.theyworkforyou.com/mp/25420/victoria_prentis/banbury,@VictoriaPrentis
+110,South Leicestershire,Severn Trent Water,1381,8789.959,265,2588.279,Alberto Costa,Conservative,https://www.theyworkforyou.com/mp/25413/alberto_costa/south_leicestershire,@AlbertoCostaMP
+111,Jarrow,Northumbrian Water,1249,8721.64,278,3459.88,Kate Osborne,Labour,https://www.theyworkforyou.com/mp/25794/kate_osborne/jarrow,@KateOsborneMP
+112,The Cotswolds,Thames Water,537,8668.12,-165,-2709.51,Geoffrey Clifton-Brown,Conservative,https://www.theyworkforyou.com/mp/10119/geoffrey_clifton-brown/the_cotswolds,
+113,Halifax,Yorkshire Water,1729,8639.951,263,-326.069,Holly Lynch,Labour,https://www.theyworkforyou.com/mp/25434/holly_lynch/halifax,@HollyLynch5
+114,Daventry,Anglian Water,942,8579.01,271,-210.99,Chris Heaton-Harris,Conservative,https://www.theyworkforyou.com/mp/24841/chris_heaton-harris/daventry,@chhcalling
+115,Bolsover,Severn Trent Water,920,8544.74,89,604.23,Mark Fletcher,Conservative,https://www.theyworkforyou.com/mp/25903/mark_fletcher/bolsover,
+116,Elmet and Rothwell,Yorkshire Water,1233,8532.8,547,3152.7,Alec Shelbrooke,Conservative,https://www.theyworkforyou.com/mp/24893/alec_shelbrooke/elmet_and_rothwell,@AlecShelbrooke
+117,Rutland and Melton,Anglian Water,650,8516.72,461,6924.47,Alicia Kearns,Conservative,https://www.theyworkforyou.com/mp/25906/alicia_kearns/rutland_and_melton,@aliciakearns
+118,Tunbridge Wells,Southern Water,988,8457.87,8,-640.44,Greg Clark,Conservative,https://www.theyworkforyou.com/mp/11884/greg_clark/tunbridge_wells,@GregClarkMP
+119,Pontypridd,Dwr Cymru Welsh Water,1313,8443.0,-632,-4276.0,Alex Davies-Jones,Labour,https://www.theyworkforyou.com/mp/25824/alex_davies-jones/pontypridd,@AlexDaviesJones
+120,South Northamptonshire,Anglian Water,708,8231.58,283,3894.83,Andrea Leadsom,Conservative,https://www.theyworkforyou.com/mp/24829/andrea_leadsom/south_northamptonshire,@andrealeadsom
+121,"Plymouth, Sutton and Devonport",South West Water,1663,8173.7,-73,515.4,Luke Pollard,Labour/Co-operative,https://www.theyworkforyou.com/mp/25690/luke_pollard/plymouth%2C_sutton_and_devonport,@LukePollard
+122,Henley,Thames Water,736,8153.67,-147,-3232.36,John Howell,Conservative,https://www.theyworkforyou.com/mp/14131/john_howell/henley,@JHowellUK
+123,Wakefield,Yorkshire Water,1355,8134.8,43,114.84,Simon Lightwood,Labour,https://www.theyworkforyou.com/mp/26085/simon_lightwood/wakefield,@simonlightwood
+124,North Warwickshire,Severn Trent Water,1072,8100.221,249,-2565.809,Craig Tracey,Conservative,https://www.theyworkforyou.com/mp/25290/craig_tracey/north_warwickshire,@craig4nwarks
+125,Hemsworth,Yorkshire Water,943,8022.3,-87,4145.05,Jon Trickett,Labour,https://www.theyworkforyou.com/mp/10604/jon_trickett/hemsworth,@jon_trickett
+126,Bolton West,United Utilities,1388,8018.92,-36,2365.87,Chris Green,Conservative,https://www.theyworkforyou.com/mp/25359/chris_green/bolton_west,@CGreenUK
+127,Barnsley East,Yorkshire Water,1411,7973.2,454,4033.22,Stephanie Peacock,Labour,https://www.theyworkforyou.com/mp/25617/stephanie_peacock/barnsley_east,@Steph_Peacock
+128,Eddisbury,United Utilities,1098,7960.77,-79,4237.42,Edward Timpson,Conservative,https://www.theyworkforyou.com/mp/14128/edward_timpson/eddisbury,@edwardtimpson
+129,Rushcliffe,Severn Trent Water,804,7949.137,-202,-3877.253,Ruth Edwards,Conservative,https://www.theyworkforyou.com/mp/25854/ruth_edwards/rushcliffe,@RuthEdwardsMP
+130,Horsham,Southern Water,704,7925.66,148,1311.24,Jeremy Quin,Conservative,https://www.theyworkforyou.com/mp/25417/jeremy_quin/horsham,
+131,Warrington South,United Utilities,1120,7921.89,-335,-2521.92,Andy Carter,Conservative,https://www.theyworkforyou.com/mp/25884/andy_carter/warrington_south,@MrAndy_Carter
+132,Bolton North East,United Utilities,1367,7917.44,-464,-3507.09,Mark Logan,Conservative,https://www.theyworkforyou.com/mp/25886/mark_logan/bolton_north_east,
+133,York Outer,Yorkshire Water,980,7909.2,456,2977.6,Julian Sturdy,Conservative,https://www.theyworkforyou.com/mp/24853/julian_sturdy/york_outer,@JulianSturdy
+134,Buckingham,Anglian Water,611,7844.21,294,2998.96,Greg Smith,Conservative,https://www.theyworkforyou.com/mp/25925/greg_smith/buckingham,@gregsmith_uk
+135,Norwich South,Anglian Water,806,7711.27,-542,-12764.9,Clive Lewis,Labour,https://www.theyworkforyou.com/mp/25356/clive_lewis/norwich_south,@labourlewis
+136,Harrogate and Knaresborough,Yorkshire Water,1373,7693.9,41,29.61,Andrew Jones,Conservative,https://www.theyworkforyou.com/mp/24758/andrew_jones/harrogate_and_knaresborough,@AJonesMP
+137,Merthyr Tydfil and Rhymney,Dwr Cymru Welsh Water,1591,7692.5,-559,-3856.25,Gerald Jones,Labour,https://www.theyworkforyou.com/mp/25289/gerald_jones/merthyr_tydfil_and_rhymney,@GeraldJonesLAB
+138,Fylde,United Utilities,1428,7641.92,-391,-4219.58,Mark Menzies,Conservative,https://www.theyworkforyou.com/mp/24804/mark_menzies/fylde,
+139,North Tyneside,Northumbrian Water,1024,7573.0,171,2056.7,Mary Glindon,Labour,https://www.theyworkforyou.com/mp/24927/mary_glindon/north_tyneside,@GlindonMary
+140,Staffordshire Moorlands,Severn Trent Water,1022,7546.476,323,714.586,Karen Bradley,Conservative,https://www.theyworkforyou.com/mp/24725/karen_bradley/staffordshire_moorlands,
+141,South West Norfolk,Anglian Water,490,7355.87,261,5228.12,Elizabeth Truss,Conservative,https://www.theyworkforyou.com/mp/24941/elizabeth_truss/south_west_norfolk,@trussliz
+142,Huntingdon,Anglian Water,560,7293.42,-40,-856.86,Jonathan Djanogly,Conservative,https://www.theyworkforyou.com/mp/10854/jonathan_djanogly/huntingdon,@JDjanogly
+143,North Herefordshire,Dwr Cymru Welsh Water,1542,7289.5,527,2035.5,Bill Wiggin,Conservative,https://www.theyworkforyou.com/mp/11318/bill_wiggin/north_herefordshire,
+144,Birkenhead,United Utilities,544,7263.17,-613,4328.53,Mick Whitley,Labour,https://www.theyworkforyou.com/mp/25798/mick_whitley/birkenhead,@MickWhitleyMP
+145,North West Norfolk,Anglian Water,812,7126.64,245,4977.22,James Wild,Conservative,https://www.theyworkforyou.com/mp/25866/james_wild/north_west_norfolk,@jamesowild
+146,Heywood and Middleton,United Utilities,1383,7080.3,-212,-1209.77,Chris Clarkson,Conservative,https://www.theyworkforyou.com/mp/25825/chris_clarkson/heywood_and_middleton,@ChrisClarksonMP
+147,Hartlepool,Northumbrian Water,883,6917.01,321,3206.66,Jill Mortimer,Conservative,https://www.theyworkforyou.com/mp/25984/jill_mortimer/hartlepool,
+148,Wirral South,United Utilities,893,6892.52,-328,-77.27,Alison McGovern,Labour,https://www.theyworkforyou.com/mp/24897/alison_mcgovern/wirral_south,@Alison_McGovern
+149,Thornbury and Yate,Wessex Water,736,6853.3,-239,-2621.53,Luke Hall,Conservative,https://www.theyworkforyou.com/mp/25373/luke_hall/thornbury_and_yate,@LukeHall
+150,Bridgwater and West Somerset,Wessex Water,1123,6700.083,-340,-7037.437,Ian Liddell-Grainger,Conservative,https://www.theyworkforyou.com/mp/11048/ian_liddell-grainger/bridgwater_and_west_somerset,
+151,Worsley and Eccles South,United Utilities,1073,6617.38,148,1947.06,Barbara Keeley,Labour,https://www.theyworkforyou.com/mp/11943/barbara_keeley/worsley_and_eccles_south,@KeeleyMP
+152,Hazel Grove,United Utilities,1042,6580.34,-282,1023.36,William Wragg,Conservative,https://www.theyworkforyou.com/mp/25360/william_wragg/hazel_grove,@William_Wragg
+153,Blaydon,Northumbrian Water,1418,6573.49,227,1587.74,Liz Twist,Labour,https://www.theyworkforyou.com/mp/25623/liz_twist/blaydon,@LizTwistMP
+154,Sheffield South East,Yorkshire Water,1297,6558.7,280,3838.13,Clive Betts,Labour,https://www.theyworkforyou.com/mp/10045/clive_betts/sheffield_south_east,
+155,Witham,Anglian Water,383,6482.03,147,2671.61,Priti Patel,Conservative,https://www.theyworkforyou.com/mp/24778/priti_patel/witham,@pritipatel
+156,Central Suffolk and North Ipswich,Anglian Water,575,6460.68,407,4729.66,Daniel Poulter,Conservative,https://www.theyworkforyou.com/mp/24756/daniel_poulter/central_suffolk_and_north_ipswich,
+157,City of Chester,Dwr Cymru Welsh Water,1574,6437.0,642,3874.5,Chris Matheson,Labour,https://www.theyworkforyou.com/mp/25411/chris_matheson/city_of_chester,@ChrisM4Chester
+158,North East Bedfordshire,Anglian Water,478,6388.6,-10,-2079.4,Richard Fuller,Conservative,https://www.theyworkforyou.com/mp/24787/richard_fuller/north_east_bedfordshire,
+159,Wells,Wessex Water,999,6382.6,-177,-3209.26,James Heappey,Conservative,https://www.theyworkforyou.com/mp/25438/james_heappey/wells,@JSHeappey
+160,Lewes,Southern Water,755,6287.74,-229,-5149.96,Maria Caulfield,Conservative,https://www.theyworkforyou.com/mp/25397/maria_caulfield/lewes,@mariacaulfield
+161,Romsey and Southampton North,Southern Water,406,6252.53,-95,-1693.82,Caroline Nokes,Conservative,https://www.theyworkforyou.com/mp/24809/caroline_nokes/romsey_and_southampton_north,@carolinenokes
+162,Blaenau Gwent,Dwr Cymru Welsh Water,1555,6174.75,-716,-4034.25,Nick Smith,Labour,https://www.theyworkforyou.com/mp/24728/nick_smith/blaenau_gwent,@BlaenauGwentMP
+163,Chesterfield,Yorkshire Water,1180,6126.483,439,2880.993,Toby Perkins,Labour,https://www.theyworkforyou.com/mp/24845/toby_perkins/chesterfield,@tobyperkinsmp
+164,Wansbeck,Northumbrian Water,1176,6100.17,434,3776.15,Ian Lavery,Labour,https://www.theyworkforyou.com/mp/24963/ian_lavery/wansbeck,@IanLaveryMP
+165,Wyre and Preston North,United Utilities,1116,6001.57,-627,-1930.85,Ben Wallace,Conservative,https://www.theyworkforyou.com/mp/11668/ben_wallace/wyre_and_preston_north,@BWallaceMP
+166,St Ives,South West Water,1029,5963.52,331,2255.83,Derek Thomas,Conservative,https://www.theyworkforyou.com/mp/25440/derek_thomas/st_ives,@DerekThomasUK
+167,Easington,Northumbrian Water,938,5946.3,278,2853.08,Grahame Morris,Labour,https://www.theyworkforyou.com/mp/24715/grahame_morris/easington,@grahamemorris
+168,Dewsbury,Yorkshire Water,876,5904.9,287,164.84,Mark Eastwood,Conservative,https://www.theyworkforyou.com/mp/25923/mark_eastwood/dewsbury,@mark4dewsbury
+169,North Shropshire,Severn Trent Water,736,5904.518,102,890.988,Helen Morgan,Liberal Democrat,https://www.theyworkforyou.com/mp/26056/helen_morgan/north_shropshire,@HelenMorganMP
+170,Swansea East,Dwr Cymru Welsh Water,1018,5879.25,-311,-2211.5,Carolyn Harris,Labour,https://www.theyworkforyou.com/mp/25308/carolyn_harris/swansea_east,@carolynharris24
+171,Hereford and South Herefordshire,Dwr Cymru Welsh Water,1110,5854.25,357,1996.0,Jesse Norman,Conservative,https://www.theyworkforyou.com/mp/24827/jesse_norman/hereford_and_south_herefordshire,@Jesse_Norman
+172,Ellesmere Port and Neston,Dwr Cymru Welsh Water,780,5851.0,539,4027.5,Justin Madders,Labour,https://www.theyworkforyou.com/mp/25378/justin_madders/ellesmere_port_and_neston,@justinmadders
+173,Blackley and Broughton,United Utilities,1478,5827.93,-534,-5787.31,Graham Stringer,Labour,https://www.theyworkforyou.com/mp/10576/graham_stringer/blackley_and_broughton,
+174,"Normanton, Pontefract and Castleford",Yorkshire Water,1306,5825.6,438,1432.39,Yvette Cooper,Labour,https://www.theyworkforyou.com/mp/10131/yvette_cooper/normanton%2C_pontefract_and_castleford,@YvetteCooperMP
+175,Kettering,Anglian Water,501,5819.97,318,4956.97,Philip Hollobone,Conservative,https://www.theyworkforyou.com/mp/11661/philip_hollobone/kettering,
+176,North West Cambridgeshire,Anglian Water,452,5751.52,271,3713.07,Shailesh Vara,Conservative,https://www.theyworkforyou.com/mp/11475/shailesh_vara/north_west_cambridgeshire,@ShaileshVara
+177,Meriden,Severn Trent Water,451,5721.544,222,3048.864,Saqib Bhatti,Conservative,https://www.theyworkforyou.com/mp/25847/saqib_bhatti/meriden,@bhatti_saqib
+178,Blyth Valley,Northumbrian Water,923,5708.35,119,1722.88,Ian Levy,Conservative,https://www.theyworkforyou.com/mp/25791/ian_levy/blyth_valley,
+179,Doncaster North,Yorkshire Water,977,5703.8,122,3216.25,Ed Miliband,Labour,https://www.theyworkforyou.com/mp/11545/ed_miliband/doncaster_north,@Ed_Miliband
+180,Lancaster and Fleetwood,United Utilities,934,5701.94,-245,-1612.01,Cat Smith,Labour,https://www.theyworkforyou.com/mp/25432/cat_smith/lancaster_and_fleetwood,@CatSmithMP
+181,High Peak,Severn Trent Water,531,5638.925,124,2553.055,Robert Largan,Conservative,https://www.theyworkforyou.com/mp/25841/robert_largan/high_peak,@robertlargan
+182,Bury South,United Utilities,1188,5638.6,-162,920.4,Christian Wakeford,Labour,https://www.theyworkforyou.com/mp/25874/christian_wakeford/bury_south,@Christian4BuryS
+183,Lichfield,Severn Trent Water,680,5627.264,-130,-7919.986,Michael Fabricant,Conservative,https://www.theyworkforyou.com/mp/10193/michael_fabricant/lichfield,@Mike_Fabricant
+184,Bassetlaw,Severn Trent Water,632,5624.621,-93,-3911.669,Brendan Clarke-Smith,Conservative,https://www.theyworkforyou.com/mp/25862/brendan_clarke-smith/bassetlaw,@Bren4Bassetlaw
+185,Shipley,Yorkshire Water,1343,5596.4,-64,-954.65,Philip Davies,Conservative,https://www.theyworkforyou.com/mp/11816/philip_davies/shipley,@PhilipDaviesUK
+186,Cardiff South and Penarth,Dwr Cymru Welsh Water,863,5575.25,77,-2750.5,Stephen Doughty,Labour/Co-operative,https://www.theyworkforyou.com/mp/25166/stephen_doughty/cardiff_south_and_penarth,@SDoughtyMP
+187,The Wrekin,Severn Trent Water,908,5522.289,137,771.229,Mark Pritchard,Conservative,https://www.theyworkforyou.com/mp/11946/mark_pritchard/the_wrekin,@MPritchardUK
+188,Bolton South East,United Utilities,1493,5467.49,-649,-2837.39,Yasmin Qureshi,Labour,https://www.theyworkforyou.com/mp/24775/yasmin_qureshi/bolton_south_east,@YasminQureshiMP
+189,St Helens North,United Utilities,1135,5466.71,185,2035.14,Conor McGinn,Labour,https://www.theyworkforyou.com/mp/25423/conor_mcginn/st_helens_north,@ConorMcGinn
+190,Sleaford and North Hykeham,Anglian Water,626,5449.33,539,4825.83,Caroline Johnson,Conservative,https://www.theyworkforyou.com/mp/25597/dr_caroline_johnson/sleaford_and_north_hykeham,@drcarolinej
+191,Congleton,United Utilities,1345,5442.57,-1130,-8452.64,Fiona Bruce,Conservative,https://www.theyworkforyou.com/mp/24857/fiona_bruce/congleton,@UK_FoRBEnvoy
+192,Saffron Walden,Thames Water,343,5419.77,-100,-173.03,Kemi Badenoch,Conservative,https://www.theyworkforyou.com/mp/25693/kemi_badenoch/saffron_walden,@KemiBadenoch
+193,Gainsborough,Anglian Water,614,5390.64,396,2446.64,Edward Leigh,Conservative,https://www.theyworkforyou.com/mp/10352/edward_leigh/gainsborough,@EdwardLeighMP
+194,Louth and Horncastle,Anglian Water,975,5359.62,181,-1525.25,Victoria Atkins,Conservative,https://www.theyworkforyou.com/mp/25424/victoria_atkins/louth_and_horncastle,
+195,Wantage,Thames Water,496,5334.71,81,779.14,David Johnston,Conservative,https://www.theyworkforyou.com/mp/25924/david_johnston/wantage,@david4wantage
+196,Warrington North,United Utilities,736,5330.89,-201,-3167.48,Charlotte Nichols,Labour,https://www.theyworkforyou.com/mp/25885/charlotte_nichols/warrington_north,@charlotte2153
+197,Bury North,United Utilities,835,5311.94,-248,1525.04,James Daly,Conservative,https://www.theyworkforyou.com/mp/25905/james_daly/bury_north,@JamesDalyMP
+198,Stroud,Severn Trent Water,543,5282.546,-221,-3853.904,Siobhan Baillie,Conservative,https://www.theyworkforyou.com/mp/25838/siobhan_baillie/stroud,@Siobhan_Baillie
+199,Stone,Severn Trent Water,809,5261.084,175,541.854,Bill Cash,Conservative,https://www.theyworkforyou.com/mp/10095/bill_cash/stone,@BillCashMP
+200,North Norfolk,Anglian Water,528,5216.25,101,-3192.05,Duncan Baker,Conservative,https://www.theyworkforyou.com/mp/25844/duncan_baker/north_norfolk,@duncancbaker
+201,Rother Valley,Severn Trent Water,556,5198.409,280,3142.349,Alexander Stafford,Conservative,https://www.theyworkforyou.com/mp/25864/alexander_stafford/rother_valley,@Alex_Stafford
+202,Halton,United Utilities,1168,5193.89,-409,878.04,Derek Twigg,Labour,https://www.theyworkforyou.com/mp/10610/derek_twigg/halton,@DerekTwiggMP
+203,Haltemprice and Howden,Yorkshire Water,1468,5193.1,288,1274.73,David Davis,Conservative,https://www.theyworkforyou.com/mp/10162/david_davis/haltemprice_and_howden,@DavidDavisMP
+204,Stalybridge and Hyde,United Utilities,989,5173.86,-812,-6873.33,Jonathan Reynolds,Labour/Co-operative,https://www.theyworkforyou.com/mp/24929/jonathan_reynolds/stalybridge_and_hyde,@jreynoldsMP
+205,Devizes,Wessex Water,454,5161.6,-294,-2044.28,Danny Kruger,Conservative,https://www.theyworkforyou.com/mp/25913/danny_kruger/devizes,@danny__kruger
+206,Oldham East and Saddleworth,United Utilities,654,5100.21,-228,-2159.62,Debbie Abrahams,Labour,https://www.theyworkforyou.com/mp/25034/debbie_abrahams/oldham_east_and_saddleworth,@Debbie_abrahams
+207,Alyn and Deeside,Dwr Cymru Welsh Water,853,5097.75,-80,133.75,Mark Tami,Labour,https://www.theyworkforyou.com/mp/11267/mark_tami/alyn_and_deeside,@MarkTamiMP
+208,Brentwood and Ongar,Thames Water,481,5072.6,-122,-2973.3,Alex Burghart,Conservative,https://www.theyworkforyou.com/mp/25659/alex_burghart/brentwood_and_ongar,@alexburghart
+209,Harwich and North Essex,Anglian Water,610,5065.08,-132,-4145.36,Bernard Jenkin,Conservative,https://www.theyworkforyou.com/mp/10312/bernard_jenkin/harwich_and_north_essex,@bernardjenkin
+210,Stockton North,Northumbrian Water,993,5036.9,79,-167.28,Alex Cunningham,Labour,https://www.theyworkforyou.com/mp/24742/alex_cunningham/stockton_north,@ACunninghamMP
+211,Gateshead,Northumbrian Water,1199,5006.071,285,2757.521,Ian Mearns,Labour,https://www.theyworkforyou.com/mp/24919/ian_mearns/gateshead,@IanMearnsMP
+212,Burton,Severn Trent Water,666,4991.558,-20,-2321.522,Kate Griffiths,Conservative,https://www.theyworkforyou.com/mp/25839/kate_griffiths/burton,
+213,South East Cambridgeshire,Anglian Water,417,4879.06,-121,-1311.41,Lucy Frazer,Conservative,https://www.theyworkforyou.com/mp/25399/lucy_frazer/south_east_cambridgeshire,@lucyfrazermp
+214,Cardiff West,Dwr Cymru Welsh Water,609,4870.5,-118,-1534.75,Kevin Brennan,Labour,https://www.theyworkforyou.com/mp/10753/kevin_brennan/cardiff_west,@KevinBrennanMP
+215,Makerfield,United Utilities,1022,4844.01,-93,1042.21,Yvonne Fovargue,Labour,https://www.theyworkforyou.com/mp/24805/yvonne_fovargue/makerfield,@Y_FovargueMP
+216,South Staffordshire,Severn Trent Water,777,4828.69,-113,-6475.91,Gavin Williamson,Conservative,https://www.theyworkforyou.com/mp/24729/gavin_williamson/south_staffordshire,@GavinWilliamson
+217,North East Cambridgeshire,Anglian Water,574,4745.25,131,1621.25,Steve Barclay,Conservative,https://www.theyworkforyou.com/mp/24916/steve_barclay/north_east_cambridgeshire,@SteveBarclay
+218,South West Hertfordshire,Thames Water,234,4741.66,98,2762.68,Gagan Mohindra,Conservative,https://www.theyworkforyou.com/mp/25920/gagan_mohindra/south_west_hertfordshire,@gaganmohindra
+219,Wokingham,Thames Water,292,4735.8,-182,-2834.69,John Redwood,Conservative,https://www.theyworkforyou.com/mp/10499/john_redwood/wokingham,@johnredwood
+220,Camborne and Redruth,South West Water,509,4727.26,273,3710.17,George Eustice,Conservative,https://www.theyworkforyou.com/mp/24933/george_eustice/camborne_and_redruth,
+221,North East Hampshire,Thames Water,387,4583.52,-159,-2891.26,Ranil Jayawardena,Conservative,https://www.theyworkforyou.com/mp/25419/ranil_jayawardena/north_east_hampshire,@TeamRanil
+222,Salford and Eccles,United Utilities,1088,4566.69,-415,281.07,Rebecca Long-Bailey,Labour,https://www.theyworkforyou.com/mp/25368/rebecca_long-bailey/salford_and_eccles,@RLong_Bailey
+223,"Plymouth, Moor View",South West Water,691,4565.58,53,425.84,Johnny Mercer,Conservative,https://www.theyworkforyou.com/mp/25367/johnny_mercer/plymouth%2C_moor_view,@JohnnyMercerUK
+224,Stafford,Severn Trent Water,378,4564.517,-120,-1777.323,Theo Clarke,Conservative,https://www.theyworkforyou.com/mp/25900/theo_clarke/stafford,@theodoraclarke
+225,Newcastle upon Tyne East,Northumbrian Water,888,4556.9,27,1051.12,Nick Brown,Labour,https://www.theyworkforyou.com/mp/10069/nick_brown/newcastle_upon_tyne_east,
+226,South Northamptonshire,Thames Water,444,4513.6,235,2779.81,Andrea Leadsom,Conservative,https://www.theyworkforyou.com/mp/24829/andrea_leadsom/south_northamptonshire,@andrealeadsom
+227,Tonbridge and Malling,Southern Water,540,4455.09,-149,-1645.04,Thomas Tugendhat,Conservative,https://www.theyworkforyou.com/mp/25374/thomas_tugendhat/tonbridge_and_malling,@TomTugendhat
+228,Mid Derbyshire,Severn Trent Water,911,4408.724,-349,-7376.186,Pauline Latham,Conservative,https://www.theyworkforyou.com/mp/24821/pauline_latham/mid_derbyshire,@Pauline_Latham
+229,Hastings and Rye,Southern Water,652,4408.35,132,1019.0,Sally-Ann Hart,Conservative,https://www.theyworkforyou.com/mp/25902/sally-ann_hart/hastings_and_rye,@SallyAnn1066
+230,Carlisle,United Utilities,780,4403.29,-414,-4569.25,John Stevenson,Conservative,https://www.theyworkforyou.com/mp/24799/john_stevenson/carlisle,@John4Carlisle
+231,Forest of Dean,Dwr Cymru Welsh Water,648,4344.75,220,1458.0,Mark Harper,Conservative,https://www.theyworkforyou.com/mp/11588/mark_harper/forest_of_dean,@Mark_J_Harper
+232,North Herefordshire,Severn Trent Water,467,4245.063,156,1587.683,Bill Wiggin,Conservative,https://www.theyworkforyou.com/mp/11318/bill_wiggin/north_herefordshire,
+233,Rochdale,United Utilities,1102,4233.08,-344,-1376.74,Tony Lloyd,Labour,https://www.theyworkforyou.com/mp/10367/tony_lloyd/rochdale,@tony4rochdale
+234,Middlesbrough South and East Cleveland,Northumbrian Water,620,4110.944,98,1323.044,Simon Clarke,Conservative,https://www.theyworkforyou.com/mp/25657/simon_clarke/middlesbrough_south_and_east_cleveland,@SimonClarkeMP
+235,West Lancashire,United Utilities,549,4036.32,-142,-764.29,Rosie Cooper,Labour,https://www.theyworkforyou.com/mp/11667/rosie_cooper/west_lancashire,@rosie4westlancs
+236,Pudsey,Yorkshire Water,849,3979.2,-263,-1610.62,Stuart Andrew,Conservative,https://www.theyworkforyou.com/mp/24864/stuart_andrew/pudsey,@StuartAndrew
+237,Brigg and Goole,Severn Trent Water,447,3977.99,156,710.34,Andrew Percy,Conservative,https://www.theyworkforyou.com/mp/24832/andrew_percy/brigg_and_goole,
+238,Batley and Spen,Yorkshire Water,716,3953.9,182,1464.85,Kim Leadbeater,Labour,https://www.theyworkforyou.com/mp/26040/kim_leadbeater/batley_and_spen,@TracyBrabin
+239,Sherwood,Severn Trent Water,559,3945.671,82,-333.489,Mark Spencer,Conservative,https://www.theyworkforyou.com/mp/24909/mark_spencer/sherwood,@Mark_Spencer
+240,Bradford East,Yorkshire Water,1003,3912.6,34,47.06,Imran Hussain,Labour,https://www.theyworkforyou.com/mp/25375/imran_hussain/bradford_east,@Imran_HussainMP
+241,Leeds Central,Yorkshire Water,1169,3911.7,188,1391.63,Hilary Benn,Labour,https://www.theyworkforyou.com/mp/10669/hilary_benn/leeds_central,@hilarybennmp
+242,Wrexham,Dwr Cymru Welsh Water,710,3863.75,10,556.75,Sarah Atherton,Conservative,https://www.theyworkforyou.com/mp/25810/sarah_atherton/wrexham,
+243,Bristol North West,Wessex Water,1654,3837.967,139,-991.523,Darren Jones,Labour,https://www.theyworkforyou.com/mp/25637/darren_jones/bristol_north_west,@darrenpjones
+244,Ashfield,Severn Trent Water,592,3814.058,181,-2173.522,Lee Anderson,Conservative,https://www.theyworkforyou.com/mp/25894/lee_anderson/ashfield,
+245,Bolsover,Yorkshire Water,614,3798.9,110,1908.16,Mark Fletcher,Conservative,https://www.theyworkforyou.com/mp/25903/mark_fletcher/bolsover,
+246,Cleethorpes,Anglian Water,584,3788.88,134,-167.87,Martin Vickers,Conservative,https://www.theyworkforyou.com/mp/24814/martin_vickers/cleethorpes,@MartinVickers
+247,Mid Sussex,Southern Water,480,3764.94,-52,-1358.3,Mims Davies,Conservative,https://www.theyworkforyou.com/mp/25330/mims_davies/mid_sussex,@mimsdavies
+248,Redcar,Northumbrian Water,705,3719.406,364,2771.346,Jacob Young,Conservative,https://www.theyworkforyou.com/mp/25806/jacob_young/redcar,@JacobYoungMP
+249,Grantham and Stamford,Anglian Water,247,3670.29,141,1917.54,Gareth Davies,Conservative,https://www.theyworkforyou.com/mp/25858/gareth_davies/grantham_and_stamford,@GarethDavies_MP
+250,Leeds North West,Yorkshire Water,851,3651.2,9,-68.48,Alex Sobel,Labour/Co-operative,https://www.theyworkforyou.com/mp/25680/alex_sobel/leeds_north_west,@alexsobel
+251,Wyre Forest,Severn Trent Water,386,3630.304,-10,-1517.416,Mark Garnier,Conservative,https://www.theyworkforyou.com/mp/24824/mark_garnier/wyre_forest,@Mark4WyreForest
+252,North East Derbyshire,Severn Trent Water,477,3581.503,106,1113.503,Lee Rowley,Conservative,https://www.theyworkforyou.com/mp/25685/lee_rowley/north_east_derbyshire,@Lee4NED
+253,Sefton Central,United Utilities,835,3545.36,-232,-219.84,Bill Esterson,Labour,https://www.theyworkforyou.com/mp/24905/bill_esterson/sefton_central,@Bill_Esterson
+254,Charnwood,Severn Trent Water,743,3514.511,23,-823.659,Edward Argar,Conservative,https://www.theyworkforyou.com/mp/25396/edward_argar/charnwood,
+255,Broadland,Anglian Water,257,3513.79,167,2638.79,Jerome Mayhew,Conservative,https://www.theyworkforyou.com/mp/25904/jerome_mayhew/broadland,@JeromeMayhew
+256,Meon Valley,Southern Water,284,3511.74,-110,-2375.0,Flick Drummond,Conservative,https://www.theyworkforyou.com/mp/25392/flick_drummond/meon_valley,
+257,Morley and Outwood,Yorkshire Water,853,3508.8,199,1008.94,Andrea Jenkyns,Conservative,https://www.theyworkforyou.com/mp/25431/andrea_jenkyns/morley_and_outwood,@andreajenkyns
+258,Wellingborough,Anglian Water,324,3459.0,198,2912.75,Peter Bone,Conservative,https://www.theyworkforyou.com/mp/11915/peter_bone/wellingborough,@PeterBoneUK
+259,Rotherham,Yorkshire Water,864,3451.3,309,931.64,Sarah Champion,Labour,https://www.theyworkforyou.com/mp/25168/sarah_champion/rotherham,@SarahChampionMP
+260,Weaver Vale,United Utilities,1039,3438.32,-224,-2050.88,Mike Amesbury,Labour,https://www.theyworkforyou.com/mp/25702/mike_amesbury/weaver_vale,@MikeAmesburyMP
+261,New Forest East,Southern Water,373,3436.16,-213,-3542.9,Julian Lewis,Independent,https://www.theyworkforyou.com/mp/10358/julian_lewis/new_forest_east,
+262,Bridgwater and West Somerset,South West Water,363,3403.61,-67,-2271.37,Ian Liddell-Grainger,Conservative,https://www.theyworkforyou.com/mp/11048/ian_liddell-grainger/bridgwater_and_west_somerset,
+263,Maldon,Anglian Water,432,3400.33,41,21.55,John Whittingdale,Conservative,https://www.theyworkforyou.com/mp/10632/john_whittingdale/maldon,@JWhittingdale
+264,Mole Valley,Thames Water,395,3397.41,-82,-2535.99,Paul Beresford,Conservative,https://www.theyworkforyou.com/mp/10041/paul_beresford/mole_valley,
+265,South Cambridgeshire,Anglian Water,327,3356.25,159,2337.25,Anthony Browne,Conservative,https://www.theyworkforyou.com/mp/25850/anthony_browne/south_cambridgeshire,@ab4scambs
+266,Stockport,United Utilities,1056,3349.22,-22,1426.36,Navendu Mishra,Labour,https://www.theyworkforyou.com/mp/25836/navendu_mishra/stockport,@NavPMishra
+267,Brigg and Goole,Anglian Water,280,3327.45,208,3143.3,Andrew Percy,Conservative,https://www.theyworkforyou.com/mp/24832/andrew_percy/brigg_and_goole,
+268,Wigan,United Utilities,939,3302.43,-395,-1065.84,Lisa Nandy,Labour,https://www.theyworkforyou.com/mp/24831/lisa_nandy/wigan,@lisanandy
+269,Barnsley Central,Yorkshire Water,630,3197.1,266,1198.78,Dan Jarvis,Labour,https://www.theyworkforyou.com/mp/25067/dan_jarvis/barnsley_central,@DanJarvisMP
+270,Gloucester,Severn Trent Water,244,3194.478,117,2296.298,Richard Graham,Conservative,https://www.theyworkforyou.com/mp/24921/richard_graham/gloucester,@RichardGrahamUK
+271,Redditch,Severn Trent Water,201,3192.491,-213,-2019.409,Rachel Maclean,Conservative,https://www.theyworkforyou.com/mp/25692/rachel_maclean/redditch,@redditchrachel
+272,Bury St Edmunds,Anglian Water,252,3188.17,78,1061.42,Jo Churchill,Conservative,https://www.theyworkforyou.com/mp/25408/jo_churchill/bury_st_edmunds,@Jochurchill_MP
+273,North East Hertfordshire,Thames Water,251,3184.6,-99,-1225.81,Oliver Heald,Conservative,https://www.theyworkforyou.com/mp/10267/oliver_heald/north_east_hertfordshire,@OliverHealdUK
+274,West Suffolk,Anglian Water,231,3149.17,135,2131.17,Matthew Hancock,Conservative,https://www.theyworkforyou.com/mp/24773/matthew_hancock/west_suffolk,@MattHancock
+275,Preston,United Utilities,507,3110.74,-123,590.21,Mark Hendrick,Labour/Co-operative,https://www.theyworkforyou.com/mp/10682/mark_hendrick/preston,@MpHendrick
+276,Cheadle,United Utilities,581,3059.38,28,836.92,Mary Robinson,Conservative,https://www.theyworkforyou.com/mp/25405/mary_robinson/cheadle,@MaryRobinson01
+277,Ellesmere Port and Neston,United Utilities,495,3038.89,-198,-1987.59,Justin Madders,Labour,https://www.theyworkforyou.com/mp/25378/justin_madders/ellesmere_port_and_neston,@justinmadders
+278,Broxtowe,Severn Trent Water,491,2992.82,135,-237.0,Darren Henry,Conservative,https://www.theyworkforyou.com/mp/25871/darren_henry/broxtowe,@DarrenG_Henry
+279,Bradford West,Yorkshire Water,811,2924.1,-34,-581.88,Naseem Shah,Labour,https://www.theyworkforyou.com/mp/25385/naseem_shah/bradford_west,@NazShahBfd
+280,Yeovil,South West Water,284,2915.53,51,-27.71,Marcus Fysh,Conservative,https://www.theyworkforyou.com/mp/25384/marcus_fysh/yeovil,@MarcusFysh
+281,Caerphilly,Dwr Cymru Welsh Water,723,2914.75,-364,-2925.0,Wayne David,Labour,https://www.theyworkforyou.com/mp/10842/wayne_david/caerphilly,@WayneDavid_MP
+282,East Surrey,Southern Water,343,2886.24,-35,-722.35,Claire Coutinho,Conservative,https://www.theyworkforyou.com/mp/25890/claire_coutinho/east_surrey,@ClaireCoutinho
+283,Garston and Halewood,United Utilities,267,2835.82,40,997.5,Maria Eagle,Labour,https://www.theyworkforyou.com/mp/10183/maria_eagle/garston_and_halewood,@meaglemp
+284,Vale of Clwyd,Dwr Cymru Welsh Water,710,2813.75,-92,-1055.75,James Davies,Conservative,https://www.theyworkforyou.com/mp/25292/james_davies/vale_of_clwyd,@JamesDavies
+285,Wirral West,United Utilities,592,2807.28,-184,-1982.39,Margaret Greenwood,Labour,https://www.theyworkforyou.com/mp/25349/margaret_greenwood/wirral_west,@MGreenwoodWW
+286,Daventry,Severn Trent Water,319,2791.357,43,213.647,Chris Heaton-Harris,Conservative,https://www.theyworkforyou.com/mp/24841/chris_heaton-harris/daventry,@chhcalling
+287,Maidstone and The Weald,Southern Water,316,2766.56,-3,8.89,Helen Grant,Conservative,https://www.theyworkforyou.com/mp/24796/helen_grant/maidstone_and_the_weald,@HelenGrantMP
+288,Sunderland Central,Northumbrian Water,723,2756.5,211,1452.78,Julie Elliott,Labour,https://www.theyworkforyou.com/mp/24710/julie_elliott/sunderland_central,@JulieElliottMP
+289,Denton and Reddish,United Utilities,905,2750.49,-910,-9131.01,Andrew Gwynne,Labour,https://www.theyworkforyou.com/mp/11531/andrew_gwynne/denton_and_reddish,@GwynneMP
+290,Stockton South,Northumbrian Water,826,2733.58,173,37.34,Matt Vickers,Conservative,https://www.theyworkforyou.com/mp/25853/matt_vickers/stockton_south,@Matt_VickersMP
+291,Blackburn,United Utilities,1056,2724.28,-678,-3963.69,Kate Hollern,Labour,https://www.theyworkforyou.com/mp/25298/kate_hollern/blackburn,@Kate_HollernMP
+292,Hemel Hempstead,Thames Water,147,2715.33,134,2628.58,Mike Penning,Conservative,https://www.theyworkforyou.com/mp/11626/mike_penning/hemel_hempstead,
+293,Hyndburn,United Utilities,741,2697.99,-222,-508.69,Sara Britcliffe,Conservative,https://www.theyworkforyou.com/mp/25876/sara_britcliffe/hyndburn,@SarBritcliffeMP
+294,Corby,Anglian Water,378,2687.23,22,1090.11,Tom Pursglove,Conservative,https://www.theyworkforyou.com/mp/25387/tom_pursglove/corby,@VotePursglove
+295,North Shropshire,Dwr Cymru Welsh Water,644,2660.25,382,1985.0,Helen Morgan,Liberal Democrat,https://www.theyworkforyou.com/mp/26056/helen_morgan/north_shropshire,@HelenMorganMP
+296,South Shields,Northumbrian Water,405,2622.84,103,1448.63,Emma Lewell-Buck,Labour,https://www.theyworkforyou.com/mp/25181/emma_lewell-buck/south_shields,@EmmaLewellBuck
+297,Weston-Super-Mare,Wessex Water,198,2609.3,-187,-2446.75,John Penrose,Conservative,https://www.theyworkforyou.com/mp/11924/john_penrose/weston-super-mare,
+298,"Sheffield, Brightside and Hillsborough",Yorkshire Water,881,2607.5,178,465.35,Gill Furniss,Labour,https://www.theyworkforyou.com/mp/25489/gill_furniss/sheffield%2C_brightside_and_hillsborough,@GillFurnissMP
+299,Wallasey,United Utilities,639,2599.04,-833,-2914.07,Angela Eagle,Labour,https://www.theyworkforyou.com/mp/10182/angela_eagle/wallasey,@angelaeagle
+300,South Holland and The Deepings,Anglian Water,267,2565.33,255,2477.58,John Hayes,Conservative,https://www.theyworkforyou.com/mp/10265/john_hayes/south_holland_and_the_deepings,
+301,Macclesfield,United Utilities,881,2565.09,-576,-7128.36,David Rutley,Conservative,https://www.theyworkforyou.com/mp/24820/david_rutley/macclesfield,@DavidRutley
+302,Cheltenham,Severn Trent Water,165,2542.322,58,2128.702,Alex Chalk,Conservative,https://www.theyworkforyou.com/mp/25340/alex_chalk/cheltenham,@AlexChalkChelt
+303,Altrincham and Sale West,United Utilities,797,2534.07,-426,-7916.44,Graham Brady,Conservative,https://www.theyworkforyou.com/mp/10062/graham_brady/altrincham_and_sale_west,@SirGrahamBrady
+304,Chippenham,Wessex Water,553,2512.4,-232,-2368.26,Michelle Donelan,Conservative,https://www.theyworkforyou.com/mp/25316/michelle_donelan/chippenham,@michelledonelan
+305,Stourbridge,Severn Trent Water,316,2467.075,116,1323.735,Suzanne Webb,Conservative,https://www.theyworkforyou.com/mp/25926/suzanne_webb/stourbridge,@Q66Suzi
+306,Torbay,South West Water,334,2458.98,-95,-977.53,Kevin Foster,Conservative,https://www.theyworkforyou.com/mp/25338/kevin_foster/torbay,@kevin_j_foster
+307,East Hampshire,Thames Water,237,2451.38,-194,-4653.87,Damian Hinds,Conservative,https://www.theyworkforyou.com/mp/24782/damian_hinds/east_hampshire,@DamianHinds
+308,Rother Valley,Yorkshire Water,506,2443.5,138,939.37,Alexander Stafford,Conservative,https://www.theyworkforyou.com/mp/25864/alexander_stafford/rother_valley,@Alex_Stafford
+309,Cardiff North,Dwr Cymru Welsh Water,325,2436.25,-61,-2407.0,Anna McMorrin,Labour,https://www.theyworkforyou.com/mp/25647/anna_mcmorrin/cardiff_north,@AnnaMcMorrin
+310,Folkestone and Hythe,Southern Water,283,2404.28,36,139.64,Damian Collins,Conservative,https://www.theyworkforyou.com/mp/24744/damian_collins/folkestone_and_hythe,@DamianCollins
+311,Harborough,Anglian Water,176,2386.88,152,2086.88,Neil O'Brien,Conservative,https://www.theyworkforyou.com/mp/25679/neil_o%27brien/harborough,@NeilDotObrien
+312,Leeds West,Yorkshire Water,1001,2383.867,127,-790.843,Rachel Reeves,Labour,https://www.theyworkforyou.com/mp/24851/rachel_reeves/leeds_west,@RachelReevesMP
+313,Mid Norfolk,Anglian Water,197,2375.06,77,1581.06,George Freeman,Conservative,https://www.theyworkforyou.com/mp/24817/george_freeman/mid_norfolk,@GeorgeFreemanMP
+314,North West Hampshire,Thames Water,197,2351.73,-85,-1723.68,Kit Malthouse,Conservative,https://www.theyworkforyou.com/mp/25346/kit_malthouse/north_west_hampshire,@kitmalthouse
+315,The Cotswolds,Wessex Water,360,2334.0,-155,-2215.93,Geoffrey Clifton-Brown,Conservative,https://www.theyworkforyou.com/mp/10119/geoffrey_clifton-brown/the_cotswolds,
+316,Stone,United Utilities,234,2333.84,-99,-128.73,Bill Cash,Conservative,https://www.theyworkforyou.com/mp/10095/bill_cash/stone,@BillCashMP
+317,The Cotswolds,Severn Trent Water,402,2316.009,34,-1782.281,Geoffrey Clifton-Brown,Conservative,https://www.theyworkforyou.com/mp/10119/geoffrey_clifton-brown/the_cotswolds,
+318,Reigate,Thames Water,152,2217.93,-38,-512.11,Crispin Blunt,Conservative,https://www.theyworkforyou.com/mp/10051/crispin_blunt/reigate,@CrispinBlunt
+319,North Somerset,Wessex Water,394,2204.0,-108,-2759.4,Liam Fox,Conservative,https://www.theyworkforyou.com/mp/10213/liam_fox/north_somerset,@LiamFox
+320,Oldham West and Royton,United Utilities,595,2192.74,-186,-451.89,Jim McMahon,Labour/Co-operative,https://www.theyworkforyou.com/mp/25475/jim_mcmahon/oldham_west_and_royton,@JimfromOldham
+321,Burnley,United Utilities,602,2167.32,-446,-1725.66,Antony Higginbotham,Conservative,https://www.theyworkforyou.com/mp/25842/antony_higginbotham/burnley,@antony_hig
+322,Faversham and Mid Kent,Southern Water,290,2145.63,61,619.49,Helen Whately,Conservative,https://www.theyworkforyou.com/mp/25398/helen_whately/faversham_and_mid_kent,@Helen_Whately
+323,East Surrey,Thames Water,181,2144.71,-12,-399.47,Claire Coutinho,Conservative,https://www.theyworkforyou.com/mp/25890/claire_coutinho/east_surrey,@ClaireCoutinho
+324,Crewe and Nantwich,United Utilities,364,2131.43,-151,-489.23,Kieran Mullan,Conservative,https://www.theyworkforyou.com/mp/25883/kieran_mullan/crewe_and_nantwich,@KieranMullanUK
+325,South West Wiltshire,Wessex Water,480,2115.4,-290,-4027.97,Andrew Murrison,Conservative,https://www.theyworkforyou.com/mp/11132/andrew_murrison/south_west_wiltshire,@AWMurrison
+326,Tamworth,Severn Trent Water,390,2103.847,50,617.397,Christopher Pincher,Conservative,https://www.theyworkforyou.com/mp/24747/christopher_pincher/tamworth,@ChrisPincher
+327,Windsor,Thames Water,197,2101.58,-33,-1207.22,Adam Afriyie,Conservative,https://www.theyworkforyou.com/mp/11929/adam_afriyie/windsor,@AdamAfriyie
+328,Worcester,Severn Trent Water,265,2098.18,-176,-555.81,Robin Walker,Conservative,https://www.theyworkforyou.com/mp/24862/robin_walker/worcester,@WalkerWorcester
+329,Waveney,Anglian Water,589,2080.74,-4,909.74,Peter Aldous,Conservative,https://www.theyworkforyou.com/mp/24904/peter_aldous/waveney,@peter_aldous
+330,Leeds North East,Yorkshire Water,833,2064.4,134,450.07,Fabian Hamilton,Labour,https://www.theyworkforyou.com/mp/10256/fabian_hamilton/leeds_north_east,@FabianLeedsNE
+331,Don Valley,Severn Trent Water,369,2017.421,32,-3069.199,Nicholas Fletcher,Conservative,https://www.theyworkforyou.com/mp/25859/nicholas_fletcher/don_valley,@NickFletcherMP
+332,Braintree,Anglian Water,247,1983.09,160,1351.59,James Cleverly,Conservative,https://www.theyworkforyou.com/mp/25376/james_cleverly/braintree,@JamesCleverly
+333,Exeter,South West Water,671,1982.57,72,847.58,Ben Bradshaw,Labour,https://www.theyworkforyou.com/mp/10061/ben_bradshaw/exeter,@BenPBradshaw
+334,Leeds East,Yorkshire Water,525,1942.8,85,574.48,Richard Burgon,Labour,https://www.theyworkforyou.com/mp/25391/richard_burgon/leeds_east,@RichardBurgon
+335,Newcastle upon Tyne Central,Northumbrian Water,540,1875.938,63,972.808,Chi Onwurah,Labour,https://www.theyworkforyou.com/mp/24807/chi_onwurah/newcastle_upon_tyne_central,@ChiOnwurah
+336,Clacton,Anglian Water,440,1844.16,103,1066.91,Giles Watling,Conservative,https://www.theyworkforyou.com/mp/25644/giles_watling/clacton,@GilesWatling
+337,"Manchester, Withington",United Utilities,357,1839.0,-36,438.35,Jeff Smith,Labour,https://www.theyworkforyou.com/mp/25366/jeff_smith/manchester%2C_withington,@JeffSmithetc
+338,Hertford and Stortford,Thames Water,188,1838.4,-5,75.37,Julie Marson,Conservative,https://www.theyworkforyou.com/mp/25879/julie_marson/hertford_and_stortford,@JulieMarsonMP
+339,Oxford West and Abingdon,Thames Water,156,1828.85,-134,-2616.29,Layla Moran,Liberal Democrat,https://www.theyworkforyou.com/mp/25689/layla_moran/oxford_west_and_abingdon,@LaylaMoran
+340,Loughborough,Severn Trent Water,420,1817.796,-33,-1630.504,Jane Hunt,Conservative,https://www.theyworkforyou.com/mp/25921/jane_hunt/loughborough,@JaneMHunt
+341,Chesham and Amersham,Thames Water,116,1814.05,57,850.75,Sarah Green,Liberal Democrat,https://www.theyworkforyou.com/mp/26034/sarah_green/chesham_and_amersham,@SarahGreenLD
+342,Beaconsfield,Thames Water,117,1801.78,15,326.53,Joy Morrissey,Conservative,https://www.theyworkforyou.com/mp/25878/joy_morrissey/beaconsfield,@joymorrissey
+343,Ashton-under-Lyne,United Utilities,578,1792.89,-533,-1174.43,Angela Rayner,Labour,https://www.theyworkforyou.com/mp/25429/angela_rayner/ashton-under-lyne,@AngelaRayner
+344,Rayleigh and Wickford,Anglian Water,150,1785.0,-17,-790.5,Mark Francois,Conservative,https://www.theyworkforyou.com/mp/10901/mark_francois/rayleigh_and_wickford,
+345,Newport East,Dwr Cymru Welsh Water,382,1766.5,-249,-970.0,Jessica Morden,Labour,https://www.theyworkforyou.com/mp/11732/jessica_morden/newport_east,@jessicamordenmp
+346,Saffron Walden,Anglian Water,246,1753.22,171,1435.72,Kemi Badenoch,Conservative,https://www.theyworkforyou.com/mp/25693/kemi_badenoch/saffron_walden,@KemiBadenoch
+347,Bath,Wessex Water,1681,1734.967,-401,-2144.823,Wera Hobhouse,Liberal Democrat,https://www.theyworkforyou.com/mp/25648/wera_hobhouse/bath,@Wera_Hobhouse
+348,Dagenham and Rainham,Thames Water,102,1733.02,-11,-409.8,Jon Cruddas,Labour,https://www.theyworkforyou.com/mp/10828/jon_cruddas/dagenham_and_rainham,@JonCruddas_1
+349,Leeds North West,South West Water,112,1694.6,-31,-751.25,Alex Sobel,Labour/Co-operative,https://www.theyworkforyou.com/mp/25680/alex_sobel/leeds_north_west,@alexsobel
+350,Sittingbourne and Sheppey,Southern Water,357,1666.69,32,354.05,Gordon Henderson,Conservative,https://www.theyworkforyou.com/mp/24828/gordon_henderson/sittingbourne_and_sheppey,
+351,Gainsborough,Severn Trent Water,267,1651.308,43,666.848,Edward Leigh,Conservative,https://www.theyworkforyou.com/mp/10352/edward_leigh/gainsborough,@EdwardLeighMP
+352,Stoke-on-Trent South,Severn Trent Water,336,1649.227,-92,-570.403,Jack Brereton,Conservative,https://www.theyworkforyou.com/mp/25698/jack_brereton/stoke-on-trent_south,
+353,Kenilworth and Southam,Thames Water,177,1641.94,-62,-550.88,Jeremy Wright,Conservative,https://www.theyworkforyou.com/mp/11791/jeremy_wright/kenilworth_and_southam,
+354,Hitchin and Harpenden,Thames Water,96,1637.97,67,1338.59,Bim Afolami,Conservative,https://www.theyworkforyou.com/mp/25661/bim_afolami/hitchin_and_harpenden,@BimAfolami
+355,Don Valley,Yorkshire Water,500,1625.1,175,811.06,Nicholas Fletcher,Conservative,https://www.theyworkforyou.com/mp/25859/nicholas_fletcher/don_valley,@NickFletcherMP
+356,South West Surrey,Southern Water,142,1578.95,-37,-358.91,Jeremy Hunt,Conservative,https://www.theyworkforyou.com/mp/11859/jeremy_hunt/south_west_surrey,@Jeremy_Hunt
+357,South Dorset,Wessex Water,732,1567.3,-147,-2111.89,Richard Drax,Conservative,https://www.theyworkforyou.com/mp/24903/richard_drax/south_dorset,
+358,Battersea,Thames Water,285,1552.05,18,-535.17,Marsha de Cordova,Labour,https://www.theyworkforyou.com/mp/25620/marsha_de_cordova/battersea,@MarshadeCordova
+359,East Hampshire,Southern Water,170,1548.17,-22,-956.06,Damian Hinds,Conservative,https://www.theyworkforyou.com/mp/24782/damian_hinds/east_hampshire,@DamianHinds
+360,Wirral South,Dwr Cymru Welsh Water,332,1534.5,211,959.0,Alison McGovern,Labour,https://www.theyworkforyou.com/mp/24897/alison_mcgovern/wirral_south,@Alison_McGovern
+361,"Sheffield, Hallam",Yorkshire Water,453,1521.7,-290,-1270.53,Olivia Blake,Labour,https://www.theyworkforyou.com/mp/25908/olivia_blake/sheffield%2C_hallam,@_OliviaBlake
+362,Rugby,Severn Trent Water,456,1514.631,-188,-5899.889,Mark Pawsey,Conservative,https://www.theyworkforyou.com/mp/24880/mark_pawsey/rugby,@MarkPawsey
+363,Washington and Sunderland West,Northumbrian Water,306,1501.9,75,856.17,Sharon Hodgson,Labour,https://www.theyworkforyou.com/mp/11592/sharon_hodgson/washington_and_sunderland_west,@SharonHodgsonMP
+364,Bromsgrove,Severn Trent Water,243,1501.487,-138,-2669.723,Sajid Javid,Conservative,https://www.theyworkforyou.com/mp/24854/sajid_javid/bromsgrove,@sajidjavid
+365,New Forest West,Southern Water,177,1499.61,30,167.8,Desmond Swayne,Conservative,https://www.theyworkforyou.com/mp/10580/desmond_swayne/new_forest_west,@DesmondSwayne
+366,Scunthorpe,Severn Trent Water,513,1490.076,208,773.856,Holly Mumby-Croft,Conservative,https://www.theyworkforyou.com/mp/25804/holly_mumby-croft/scunthorpe,
+367,Mansfield,Severn Trent Water,414,1471.296,-88,-5144.654,Ben Bradley,Conservative,https://www.theyworkforyou.com/mp/25683/ben_bradley/mansfield,@BBradley_Mans
+368,South Suffolk,Anglian Water,208,1433.03,122,1015.45,James Cartlidge,Conservative,https://www.theyworkforyou.com/mp/25414/james_cartlidge/south_suffolk,@jcartlidgemp
+369,Harborough,Severn Trent Water,290,1422.923,-305,-7846.847,Neil O'Brien,Conservative,https://www.theyworkforyou.com/mp/25679/neil_o%27brien/harborough,@NeilDotObrien
+370,West Dorset,South West Water,262,1409.38,-60,-463.24,Chris Loder,Conservative,https://www.theyworkforyou.com/mp/25918/chris_loder/west_dorset,@chrisloder
+371,Surrey Heath,Thames Water,147,1390.18,-15,-382.41,Michael Gove,Conservative,https://www.theyworkforyou.com/mp/11858/michael_gove/surrey_heath,@michaelgove
+372,Houghton and Sunderland South,Northumbrian Water,566,1378.7,37,418.84,Bridget Phillipson,Labour,https://www.theyworkforyou.com/mp/24709/bridget_phillipson/houghton_and_sunderland_south,@bphillipsonMP
+373,Sheffield Central,Yorkshire Water,552,1369.7,-250,-1557.98,Paul Blomfield,Labour,https://www.theyworkforyou.com/mp/24943/paul_blomfield/sheffield_central,@PaulBlomfieldMP
+374,Newcastle-under-Lyme,United Utilities,212,1368.42,-6,-599.04,Aaron Bell,Conservative,https://www.theyworkforyou.com/mp/25916/aaron_bell/newcastle-under-lyme,@AaronBell4NUL
+375,Warwick and Leamington,Severn Trent Water,204,1356.534,83,590.864,Matt Western,Labour,https://www.theyworkforyou.com/mp/25701/matt_western/warwick_and_leamington,@MattWestern_
+376,Salisbury,Southern Water,99,1349.57,-150,-2920.19,John Glen,Conservative,https://www.theyworkforyou.com/mp/24839/john_glen/salisbury,@JohnGlenUK
+377,Southport,United Utilities,256,1337.98,-48,602.04,Damien Moore,Conservative,https://www.theyworkforyou.com/mp/25630/damien_moore/southport,
+378,Canterbury,Southern Water,249,1324.31,71,385.27,Rosie Duffield,Labour,https://www.theyworkforyou.com/mp/25656/rosie_duffield/canterbury,@RosieDuffield1
+379,"Sheffield, Heeley",Yorkshire Water,436,1311.4,170,-109.19,Louise Haigh,Labour,https://www.theyworkforyou.com/mp/25357/louise_haigh/sheffield%2C_heeley,@LouHaigh
+380,"Birmingham, Ladywood",Severn Trent Water,510,1309.399,-71,-1175.421,Shabana Mahmood,Labour,https://www.theyworkforyou.com/mp/24788/shabana_mahmood/birmingham%2C_ladywood,@ShabanaMahmood
+381,North Swindon,Thames Water,113,1309.3,-115,-1975.49,Justin Tomlinson,Conservative,https://www.theyworkforyou.com/mp/24870/justin_tomlinson/north_swindon,@JustinTomlinson
+382,Castle Point,Anglian Water,258,1296.5,157,801.5,Rebecca Harris,Conservative,https://www.theyworkforyou.com/mp/24731/rebecca_harris/castle_point,@RebeccaHarrisMP
+383,Eddisbury,Dwr Cymru Welsh Water,339,1296.25,187,781.5,Edward Timpson,Conservative,https://www.theyworkforyou.com/mp/14128/edward_timpson/eddisbury,@edwardtimpson
+384,Bradford South,Yorkshire Water,416,1292.9,-69,-518.22,Judith Cummins,Labour,https://www.theyworkforyou.com/mp/25393/judith_cummins/bradford_south,@JudithCummins
+385,Mid Dorset and North Poole,Wessex Water,278,1286.3,-128,-2005.14,Michael Tomlinson,Conservative,https://www.theyworkforyou.com/mp/25422/michael_tomlinson/mid_dorset_and_north_poole,@Michael4MDNP
+386,Bridgend,Dwr Cymru Welsh Water,131,1285.25,-178,-3067.25,Jamie Wallis,Conservative,https://www.theyworkforyou.com/mp/25829/jamie_wallis/bridgend,@JamieWallisMP
+387,Devizes,Thames Water,117,1282.45,-297,-5026.6,Danny Kruger,Conservative,https://www.theyworkforyou.com/mp/25913/danny_kruger/devizes,@danny__kruger
+388,Boston and Skegness,Anglian Water,286,1279.743,162,725.963,Matt Warman,Conservative,https://www.theyworkforyou.com/mp/25395/matt_warman/boston_and_skegness,@mattwarman
+389,Middlesbrough,Northumbrian Water,391,1267.43,183,782.12,Andy McDonald,Labour,https://www.theyworkforyou.com/mp/25169/andy_mcdonald/middlesbrough,@AndyMcDonaldMP
+390,Staffordshire Moorlands,United Utilities,240,1262.77,-176,-787.0,Karen Bradley,Conservative,https://www.theyworkforyou.com/mp/24725/karen_bradley/staffordshire_moorlands,
+391,"Birmingham, Hodge Hill",Severn Trent Water,387,1262.204,-20,-101.986,Liam Byrne,Labour,https://www.theyworkforyou.com/mp/11360/liam_byrne/birmingham%2C_hodge_hill,@liambyrnemp
+392,Manchester Central,United Utilities,649,1258.05,-673,-1369.77,Lucy Powell,Labour/Co-operative,https://www.theyworkforyou.com/mp/25165/lucy_powell/manchester_central,@LucyMPowell
+393,South West Surrey,Thames Water,111,1254.47,-43,-488.09,Jeremy Hunt,Conservative,https://www.theyworkforyou.com/mp/11859/jeremy_hunt/south_west_surrey,@Jeremy_Hunt
+394,Stoke-on-Trent Central,Severn Trent Water,584,1251.191,-514,-5622.529,Jo Gideon,Conservative,https://www.theyworkforyou.com/mp/25882/jo_gideon/stoke-on-trent_central,@jogideon
+395,Chingford and Woodford Green,Thames Water,191,1231.34,117,1031.93,Iain Duncan Smith,Conservative,https://www.theyworkforyou.com/mp/10180/iain_duncan_smith/chingford_and_woodford_green,@MPIainDS
+396,South Norfolk,Anglian Water,130,1185.29,41,518.92,Richard Bacon,Conservative,https://www.theyworkforyou.com/mp/10707/richard_bacon/south_norfolk,@richardbaconmp
+397,Bognor Regis and Littlehampton,Southern Water,150,1146.98,-78,-1060.62,Nick Gibb,Conservative,https://www.theyworkforyou.com/mp/10225/nick_gibb/bognor_regis_and_littlehampton,@NickGibbUK
+398,Newcastle upon Tyne North,Northumbrian Water,269,1137.41,48,715.85,Catherine McKinnell,Labour,https://www.theyworkforyou.com/mp/24818/catherine_mckinnell/newcastle_upon_tyne_north,@CatMcKinnell
+399,Esher and Walton,Thames Water,100,1100.23,5,113.43,Dominic Raab,Conservative,https://www.theyworkforyou.com/mp/24815/dominic_raab/esher_and_walton,@DominicRaab
+400,Eastleigh,Southern Water,181,1062.85,-98,-1520.32,Paul Holmes,Conservative,https://www.theyworkforyou.com/mp/25808/paul_holmes/eastleigh,@pauljholmes
+401,Bristol West,Wessex Water,677,1050.75,169,230.13,Thangam Debbonaire,Labour,https://www.theyworkforyou.com/mp/25402/thangam_debbonaire/bristol_west,@ThangamMP
+402,North Thanet,Southern Water,128,1050.07,63,539.35,Roger Gale,Conservative,https://www.theyworkforyou.com/mp/10217/roger_gale/north_thanet,@SirRogerGale
+403,Doncaster Central,Severn Trent Water,80,1037.228,-32,-876.162,Rosie Winterton,Labour,https://www.theyworkforyou.com/mp/10648/rosie_winterton/doncaster_central,
+404,Stoke-on-Trent North,United Utilities,82,1023.24,-51,-442.76,Jonathan Gullis,Conservative,https://www.theyworkforyou.com/mp/25898/jonathan_gullis/stoke-on-trent_north,
+405,Wolverhampton North East,Severn Trent Water,88,1018.047,37,641.737,Jane Stevenson,Conservative,https://www.theyworkforyou.com/mp/25807/jane_stevenson/wolverhampton_north_east,@Jane_Stevenson_
+406,"Liverpool, Riverside",United Utilities,321,1006.06,-116,180.22,Kim Johnson,Labour,https://www.theyworkforyou.com/mp/25803/kim_johnson/liverpool%2C_riverside,@KimJohnsonMP
+407,Brigg and Goole,Yorkshire Water,477,1004.8,25,276.72,Andrew Percy,Conservative,https://www.theyworkforyou.com/mp/24832/andrew_percy/brigg_and_goole,
+408,Swansea West,Dwr Cymru Welsh Water,333,992.75,-144,-17.5,Geraint Davies,Labour,https://www.theyworkforyou.com/mp/10159/geraint_davies/swansea_west,@GeraintDaviesMP
+409,Halesowen and Rowley Regis,Severn Trent Water,258,990.975,-8,-3012.985,James Morris,Conservative,https://www.theyworkforyou.com/mp/24855/james_morris/halesowen_and_rowley_regis,@JamesMorris
+410,Gillingham and Rainham,Southern Water,502,980.821,171,231.541,Rehman Chishti,Conservative,https://www.theyworkforyou.com/mp/24920/rehman_chishti/gillingham_and_rainham,@Rehman_Chishti
+411,Pendle,Yorkshire Water,237,978.4,137,555.09,Andrew Stephenson,Conservative,https://www.theyworkforyou.com/mp/24759/andrew_stephenson/pendle,@Andrew4Pendle
+412,Derby South,Severn Trent Water,311,977.901,-288,-5049.119,Margaret Beckett,Labour,https://www.theyworkforyou.com/mp/10031/margaret_beckett/derby_south,
+413,Runnymede and Weybridge,Thames Water,80,958.77,-32,-641.41,Ben Spencer,Conservative,https://www.theyworkforyou.com/mp/25889/ben_spencer/runnymede_and_weybridge,@DrBenSpencer
+414,Great Yarmouth,Anglian Water,208,921.21,1,276.12,Brandon Lewis,Conservative,https://www.theyworkforyou.com/mp/24879/brandon_lewis/great_yarmouth,@BrandonLewis
+415,Guildford,Thames Water,124,914.46,-84,-970.29,Angela Richardson,Conservative,https://www.theyworkforyou.com/mp/25827/angela_richardson/guildford,@AJRichardsonMP
+416,Gosport,Southern Water,158,909.07,-4,-261.97,Caroline Dinenage,Conservative,https://www.theyworkforyou.com/mp/24873/caroline_dinenage/gosport,@cj_dinenage
+417,Cannock Chase,Severn Trent Water,258,897.725,-3,150.625,Amanda Milling,Conservative,https://www.theyworkforyou.com/mp/25350/amanda_milling/cannock_chase,@amandamilling
+418,"Southampton, Test",Southern Water,141,895.22,-10,-490.46,Alan Whitehead,Labour,https://www.theyworkforyou.com/mp/10630/alan_whitehead/southampton%2C_test,@alanwhiteheadmp
+419,South West Bedfordshire,Anglian Water,53,893.5,-7,-22.25,Andrew Selous,Conservative,https://www.theyworkforyou.com/mp/11216/andrew_selous/south_west_bedfordshire,@AndrewSelous
+420,Oxford East,Thames Water,56,891.52,-70,-930.96,Anneliese Dodds,Labour/Co-operative,https://www.theyworkforyou.com/mp/25618/anneliese_dodds/oxford_east,@AnnelieseDodds
+421,Bootle,United Utilities,215,845.32,-136,-313.02,Peter Dowd,Labour,https://www.theyworkforyou.com/mp/25309/peter_dowd/bootle,@Peter_Dowd
+422,Nottingham South,Severn Trent Water,188,843.453,5,-18.547,Lilian Greenwood,Labour,https://www.theyworkforyou.com/mp/24774/lilian_greenwood/nottingham_south,@LilianGreenwood
+423,Portsmouth South,Southern Water,149,841.35,-17,-531.92,Stephen Morgan,Labour,https://www.theyworkforyou.com/mp/25658/stephen_morgan/portsmouth_south,@StephenMorganMP
+424,Mid Bedfordshire,Anglian Water,86,832.96,39,420.96,Nadine Dorries,Conservative,https://www.theyworkforyou.com/mp/11397/nadine_dorries/mid_bedfordshire,@NadineDorries
+425,Fareham,Southern Water,235,824.39,3,43.71,Suella Braverman,Conservative,https://www.theyworkforyou.com/mp/25272/suella_braverman/fareham,@SuellaBraverman
+426,Newcastle-under-Lyme,Severn Trent Water,420,815.003,-232,-3318.757,Aaron Bell,Conservative,https://www.theyworkforyou.com/mp/25916/aaron_bell/newcastle-under-lyme,@AaronBell4NUL
+427,New Forest West,Wessex Water,93,813.0,-11,-532.33,Desmond Swayne,Conservative,https://www.theyworkforyou.com/mp/10580/desmond_swayne/new_forest_west,@DesmondSwayne
+428,North Wiltshire,Thames Water,96,805.0,11,-37.44,James Gray,Conservative,https://www.theyworkforyou.com/mp/10240/james_gray/north_wiltshire,@JGray
+429,Epping Forest,Thames Water,106,795.41,-84,-1554.73,Eleanor Laing,Conservative,https://www.theyworkforyou.com/mp/10348/eleanor_laing/epping_forest,@eleanor4epping
+430,Aldershot,Thames Water,65,788.17,16,186.03,Leo Docherty,Conservative,https://www.theyworkforyou.com/mp/25628/leo_docherty/aldershot,@LeoDochertyUK
+431,Havant,Southern Water,69,780.54,-32,-429.42,Alan Mak,Conservative,https://www.theyworkforyou.com/mp/25285/alan_mak/havant,@AlanMakMP
+432,Rochford and Southend East,Anglian Water,168,778.36,142,715.33,James Duddridge,Conservative,https://www.theyworkforyou.com/mp/11785/james_duddridge/rochford_and_southend_east,@JamesDuddridge
+433,Suffolk Coastal,Anglian Water,335,767.54,1,102.65,Therese Coffey,Conservative,https://www.theyworkforyou.com/mp/24771/therese_coffey/suffolk_coastal,@theresecoffey
+434,South Swindon,Thames Water,51,745.59,45,699.45,Robert Buckland,Conservative,https://www.theyworkforyou.com/mp/24843/robert_buckland/south_swindon,@RobertBuckland
+435,St Helens South and Whiston,United Utilities,389,727.67,120,-99.99,Marie Rimmer,Labour,https://www.theyworkforyou.com/mp/25321/marie_rimmer/st_helens_south_and_whiston,@MarieRimmer
+436,Walsall South,Severn Trent Water,276,725.84,-16,-349.14,Valerie Vaz,Labour,https://www.theyworkforyou.com/mp/24852/valerie_vaz/walsall_south,@Valerie_VazMP
+437,Greenwich and Woolwich,Thames Water,169,722.68,-6,-127.66,Matthew Pennycook,Labour,https://www.theyworkforyou.com/mp/25379/matthew_pennycook/greenwich_and_woolwich,@mtpennycook
+438,Derby North,Severn Trent Water,393,708.455,208,366.485,Amanda Solloway,Conservative,https://www.theyworkforyou.com/mp/25436/amanda_solloway/derby_north,@ASollowayUK
+439,Cities of London and Westminster,Thames Water,335,701.2,-213,71.61,Nickie Aiken,Conservative,https://www.theyworkforyou.com/mp/25817/nickie_aiken/cities_of_london_and_westminster,@twocitiesnickie
+440,Rochester and Strood,Southern Water,241,669.14,42,-227.11,Kelly Tolhurst,Conservative,https://www.theyworkforyou.com/mp/25430/kelly_tolhurst/rochester_and_strood,@KellyTolhurst
+441,Brentwood and Ongar,Anglian Water,91,665.75,27,223.0,Alex Burghart,Conservative,https://www.theyworkforyou.com/mp/25659/alex_burghart/brentwood_and_ongar,@alexburghart
+442,Nottingham East,Severn Trent Water,180,661.373,-53,-162.247,Nadia Whittome,Labour,https://www.theyworkforyou.com/mp/25845/nadia_whittome/nottingham_east,@NadiaWhittomeMP
+443,Great Grimsby,Anglian Water,217,650.57,140,563.32,Lia Nici,Conservative,https://www.theyworkforyou.com/mp/25865/lia_nici/great_grimsby,@lia_nici
+444,Leicester South,Severn Trent Water,87,650.212,33,585.212,Jon Ashworth,Labour,https://www.theyworkforyou.com/mp/25120/jon_ashworth/leicester_south,@JonAshworth
+445,Stratford-on-Avon,Thames Water,56,649.57,-13,-129.6,Nadhim Zahawi,Conservative,https://www.theyworkforyou.com/mp/24822/nadhim_zahawi/stratford-on-avon,@nadhimzahawi
+446,Northampton South,Anglian Water,424,633.66,-16,-331.24,Andrew Lewer,Conservative,https://www.theyworkforyou.com/mp/25686/andrew_lewer/northampton_south,@ALewerMBE
+447,Eastbourne,Southern Water,146,603.7,-22,-539.67,Caroline Ansell,Conservative,https://www.theyworkforyou.com/mp/25335/caroline_ansell/eastbourne,@Caroline_Ansell
+448,Barking,Thames Water,88,580.68,31,212.83,Margaret Hodge,Labour,https://www.theyworkforyou.com/mp/10281/margaret_hodge/barking,@margarethodge
+449,Darlington,Northumbrian Water,230,580.166,15,122.466,Peter Gibson,Conservative,https://www.theyworkforyou.com/mp/25793/peter_gibson/darlington,@Gibbo4Darlo
+450,Blackpool North and Cleveleys,United Utilities,64,576.52,9,282.27,Paul Maynard,Conservative,https://www.theyworkforyou.com/mp/24764/paul_maynard/blackpool_north_and_cleveleys,@PaulMaynardUK
+451,"Birmingham, Yardley",Severn Trent Water,130,567.938,-8,-88.012,Jess Phillips,Labour,https://www.theyworkforyou.com/mp/25364/jess_phillips/birmingham%2C_yardley,@jessphillips
+452,Gravesham,Southern Water,236,567.31,-1,-236.43,Adam Holloway,Conservative,https://www.theyworkforyou.com/mp/11599/adam_holloway/gravesham,
+453,Wolverhampton South West,Severn Trent Water,166,563.438,-108,-760.762,Stuart Anderson,Conservative,https://www.theyworkforyou.com/mp/25818/stuart_anderson/wolverhampton_south_west,@Stuart4WolvesSW
+454,Telford,Severn Trent Water,166,550.128,-139,-3100.242,Lucy Allan,Conservative,https://www.theyworkforyou.com/mp/25337/lucy_allan/telford,@lucyallan
+455,Ipswich,Anglian Water,173,539.65,-34,-55.97,Tom Hunt,Conservative,https://www.theyworkforyou.com/mp/25811/tom_hunt/ipswich,@tomhunt1988
+456,Kingswood,Wessex Water,457,534.8,-14,-361.64,Chris Skidmore,Conservative,https://www.theyworkforyou.com/mp/24713/chris_skidmore/kingswood,@CSkidmoreUK
+457,Tynemouth,Northumbrian Water,148,530.75,36,302.78,Alan Campbell,Labour,https://www.theyworkforyou.com/mp/10086/alan_campbell/tynemouth,@alancampbellmp
+458,Ilford North,Thames Water,153,526.39,-2,-28.52,Wes Streeting,Labour,https://www.theyworkforyou.com/mp/25320/wes_streeting/ilford_north,@wesstreeting
+459,Hammersmith,Thames Water,73,518.49,57,486.0,Andrew Slaughter,Labour,https://www.theyworkforyou.com/mp/11559/andrew_slaughter/hammersmith,@hammersmithandy
+460,Doncaster Central,Yorkshire Water,69,511.6,-32,298.28,Rosie Winterton,Labour,https://www.theyworkforyou.com/mp/10648/rosie_winterton/doncaster_central,
+461,Aldridge-Brownhills,Severn Trent Water,114,491.098,-66,-484.872,Wendy Morton,Conservative,https://www.theyworkforyou.com/mp/25342/wendy_morton/aldridge-brownhills,@morton_wendy
+462,Doncaster North,South West Water,43,489.05,-18,-409.38,Ed Miliband,Labour,https://www.theyworkforyou.com/mp/11545/ed_miliband/doncaster_north,@Ed_Miliband
+463,Vauxhall,Thames Water,118,478.21,8,-356.22,Florence Eshalomi,Labour/Co-operative,https://www.theyworkforyou.com/mp/25759/florence_eshalomi/vauxhall,@FloEshalomi
+464,Bedford,Anglian Water,42,477.0,18,300.25,Mohammad Yasin,Labour,https://www.theyworkforyou.com/mp/25649/mohammad_yasin/bedford,@YasinForBedford
+465,Gedling,Severn Trent Water,226,470.534,-193,-5282.086,Tom Randall,Conservative,https://www.theyworkforyou.com/mp/25837/tom_randall/gedling,@Tom_Randall
+466,Lincoln,Anglian Water,41,470.033,-100,-2569.037,Karl McCartney,Conservative,https://www.theyworkforyou.com/mp/24790/karl_mccartney/lincoln,@karlmccartney
+467,Christchurch,Wessex Water,79,451.7,-61,-607.85,Christopher Chope,Conservative,https://www.theyworkforyou.com/mp/10103/christopher_chope/christchurch,
+468,Nuneaton,Severn Trent Water,54,443.588,-20,-690.012,Marcus Jones,Conservative,https://www.theyworkforyou.com/mp/24745/marcus_jones/nuneaton,@Marcus4Nuneaton
+469,Brentford and Isleworth,Thames Water,43,438.3,1,25.55,Ruth Cadbury,Labour,https://www.theyworkforyou.com/mp/25343/ruth_cadbury/brentford_and_isleworth,@RuthCadbury
+470,Dartford,Thames Water,44,418.8,-108,-604.53,Gareth Johnson,Conservative,https://www.theyworkforyou.com/mp/24803/gareth_johnson/dartford,
+471,Chelmsford,Anglian Water,73,392.0,46,329.0,Vicky Ford,Conservative,https://www.theyworkforyou.com/mp/25614/vicky_ford/chelmsford,@vickyford
+472,Chelsea and Fulham,Thames Water,124,385.95,-70,-73.52,Greg Hands,Conservative,https://www.theyworkforyou.com/mp/11610/greg_hands/chelsea_and_fulham,@GregHands
+473,Erith and Thamesmead,Thames Water,35,383.91,-1,33.81,Abena Oppong-Asare,Labour,https://www.theyworkforyou.com/mp/25846/abena_oppong-asare/erith_and_thamesmead,@abenaopp
+474,Reading West,Thames Water,21,382.34,-96,-262.91,Alok Sharma,Conservative,https://www.theyworkforyou.com/mp/24902/alok_sharma/reading_west,@AlokSharma_RDG
+475,Colchester,Anglian Water,328,381.15,27,-1576.06,Will Quince,Conservative,https://www.theyworkforyou.com/mp/25403/will_quince/colchester,@willquince
+476,South Basildon and East Thurrock,Anglian Water,42,379.0,10,285.5,Stephen Metcalfe,Conservative,https://www.theyworkforyou.com/mp/24749/stephen_metcalfe/south_basildon_and_east_thurrock,@Metcalfe_SBET
+477,Richmond Park,Thames Water,76,378.64,20,20.51,Sarah Olney,Liberal Democrat,https://www.theyworkforyou.com/mp/25596/sarah_olney/richmond_park,@sarahjolney1
+478,Penrith and The Border,Northumbrian Water,149,376.42,-44,-416.18,Neil Hudson,Conservative,https://www.theyworkforyou.com/mp/25875/neil_hudson/penrith_and_the_border,@DrNeilHudson
+479,Bristol East,Wessex Water,576,368.1,92,-175.9,Kerry McCarthy,Labour,https://www.theyworkforyou.com/mp/11455/kerry_mccarthy/bristol_east,@KerryMP
+480,Leyton and Wanstead,Thames Water,102,366.55,4,-142.38,John Cryer,Labour,https://www.theyworkforyou.com/mp/10143/john_cryer/leyton_and_wanstead,@JohnCryerMP
+481,Crawley,Thames Water,36,347.33,-6,-164.61,Henry Smith,Conservative,https://www.theyworkforyou.com/mp/24802/henry_smith/crawley,@HenrySmithUK
+482,Portsmouth North,Southern Water,158,335.81,51,117.15,Penny Mordaunt,Conservative,https://www.theyworkforyou.com/mp/24938/penny_mordaunt/portsmouth_north,@PennyMordaunt
+483,Harlow,Thames Water,32,323.91,32,323.91,Robert Halfon,Conservative,https://www.theyworkforyou.com/mp/24784/robert_halfon/harlow,@halfon4harlowMP
+484,Dudley North,Severn Trent Water,134,319.829,-26,18.229,Marco Longhi,Conservative,https://www.theyworkforyou.com/mp/25917/marco_longhi/dudley_north,@marcolonghi4dn
+485,Harrow East,Thames Water,72,316.67,-47,-406.1,Bob Blackman,Conservative,https://www.theyworkforyou.com/mp/24945/bob_blackman/harrow_east,@BobBlackman
+486,"Birmingham, Perry Barr",Severn Trent Water,89,307.725,-3,-90.345,Khalid Mahmood,Labour,https://www.theyworkforyou.com/mp/11087/khalid_mahmood/birmingham%2C_perry_barr,@khalid4PB
+487,Wythenshawe and Sale East,United Utilities,50,305.71,-28,-157.51,Mike Kane,Labour,https://www.theyworkforyou.com/mp/25220/mike_kane/wythenshawe_and_sale_east,@MikeKaneMP
+488,Ilford South,Thames Water,69,301.43,-123,-2267.1,Sam Tarry,Labour,https://www.theyworkforyou.com/mp/25912/sam_tarry/ilford_south,@SamTarry
+489,Woking,Thames Water,42,300.68,-29,-175.22,Jonathan Lord,Conservative,https://www.theyworkforyou.com/mp/24884/jonathan_lord/woking,@JonathanLord
+490,"Birmingham, Edgbaston",Severn Trent Water,149,291.956,39,145.766,Preet Kaur Gill,Labour/Co-operative,https://www.theyworkforyou.com/mp/25666/preet_kaur_gill/birmingham%2C_edgbaston,@PreetKGillMP
+491,Mitcham and Morden,Thames Water,118,288.93,-33,31.39,Siobhain McDonagh,Labour,https://www.theyworkforyou.com/mp/10381/siobhain_mcdonagh/mitcham_and_morden,@Siobhain_Mc
+492,Walsall North,Severn Trent Water,118,286.225,-72,-641.155,Eddie Hughes,Conservative,https://www.theyworkforyou.com/mp/25699/eddie_hughes/walsall_north,@EddieHughes4WN
+493,Putney,Thames Water,104,280.71,-216,-2813.19,Fleur Anderson,Labour,https://www.theyworkforyou.com/mp/25813/fleur_anderson/putney,@PutneyFleur
+494,East Ham,Thames Water,58,278.78,-59,-909.68,Stephen Timms,Labour,https://www.theyworkforyou.com/mp/10596/stephen_timms/east_ham,@stephenctimms
+495,Poole,Wessex Water,116,277.8,-90,-560.34,Robert Syms,Conservative,https://www.theyworkforyou.com/mp/10582/robert_syms/poole,@RobertSyms
+496,Bristol South,Wessex Water,169,277.3,-42,-248.24,Karin Smyth,Labour,https://www.theyworkforyou.com/mp/25390/karin_smyth/bristol_south,@karinsmyth
+497,West Bromwich East,Severn Trent Water,94,272.223,-182,-3633.217,Nicola Richards,Conservative,https://www.theyworkforyou.com/mp/25834/nicola_richards/west_bromwich_east,@Nicola4WBE
+498,Stoke-on-Trent North,Severn Trent Water,188,268.336,-71,-685.934,Jonathan Gullis,Conservative,https://www.theyworkforyou.com/mp/25898/jonathan_gullis/stoke-on-trent_north,
+499,Brent North,Thames Water,64,254.45,-39,-15.91,Barry Gardiner,Labour,https://www.theyworkforyou.com/mp/10220/barry_gardiner/brent_north,@BarryGardiner
+500,Chipping Barnet,Thames Water,46,248.14,15,187.26,Theresa Villiers,Conservative,https://www.theyworkforyou.com/mp/11500/theresa_villiers/chipping_barnet,
+501,Sutton Coldfield,Severn Trent Water,40,239.894,-3,-74.716,Andrew Mitchell,Conservative,https://www.theyworkforyou.com/mp/11115/andrew_mitchell/sutton_coldfield,
+502,"Birmingham, Selly Oak",Severn Trent Water,186,238.673,-12,-406.137,Steve McCabe,Labour,https://www.theyworkforyou.com/mp/10377/steve_mccabe/birmingham%2C_selly_oak,@steve_mccabe
+503,Knowsley,United Utilities,62,235.73,-53,117.54,George Howarth,Labour,https://www.theyworkforyou.com/mp/10292/george_howarth/knowsley,
+504,Blackpool South,United Utilities,50,233.46,-2,36.41,Scott Benton,Conservative,https://www.theyworkforyou.com/mp/25800/scott_benton/blackpool_south,@ScottBentonMP
+505,East Worthing and Shoreham,Southern Water,86,226.01,-11,-207.4,Tim Loughton,Conservative,https://www.theyworkforyou.com/mp/10371/tim_loughton/east_worthing_and_shoreham,@timloughton
+506,Chatham and Aylesford,Southern Water,118,225.13,13,-70.91,Tracey Crouch,Conservative,https://www.theyworkforyou.com/mp/24871/tracey_crouch/chatham_and_aylesford,@tracey_crouch
+507,"Birmingham, Hall Green",Severn Trent Water,98,221.584,-73,-641.596,Tahir Ali,Labour,https://www.theyworkforyou.com/mp/25888/tahir_ali/birmingham%2C_hall_green,@TahirAliMP
+508,Ealing Central and Acton,Thames Water,34,215.95,14,177.12,Rupa Huq,Labour,https://www.theyworkforyou.com/mp/25284/rupa_huq/ealing_central_and_acton,@RupaHuq
+509,Daventry,Thames Water,58,210.02,27,-199.34,Chris Heaton-Harris,Conservative,https://www.theyworkforyou.com/mp/24841/chris_heaton-harris/daventry,@chhcalling
+510,Poplar and Limehouse,Thames Water,113,209.36,-134,-124.5,Apsana Begum,Labour,https://www.theyworkforyou.com/mp/25914/apsana_begum/poplar_and_limehouse,@ApsanaBegumMP
+511,Warley,Severn Trent Water,234,209.055,-3,-1839.485,John Spellar,Labour,https://www.theyworkforyou.com/mp/10558/john_spellar/warley,@spellar
+512,Worthing West,Southern Water,70,206.01,-84,-1538.37,Peter Bottomley,Conservative,https://www.theyworkforyou.com/mp/10057/peter_bottomley/worthing_west,@PBottomleyMP
+513,Ashton-under-Lyne,Severn Trent Water,12,198.89,-12,197.44,Angela Rayner,Labour,https://www.theyworkforyou.com/mp/25429/angela_rayner/ashton-under-lyne,@AngelaRayner
+514,Solihull,Severn Trent Water,92,197.241,91,195.991,Julian Knight,Conservative,https://www.theyworkforyou.com/mp/25388/julian_knight/solihull,@julianknight15
+515,South Staffordshire,United Utilities,68,196.4,-61,-489.85,Gavin Williamson,Conservative,https://www.theyworkforyou.com/mp/24729/gavin_williamson/south_staffordshire,@GavinWilliamson
+516,Bermondsey and Old Southwark,Thames Water,50,194.99,-23,77.12,Neil Coyle,Labour,https://www.theyworkforyou.com/mp/25326/neil_coyle/bermondsey_and_old_southwark,@coyleneil
+517,Edmonton,Thames Water,27,183.54,13,44.51,Kate Osamor,Labour/Co-operative,https://www.theyworkforyou.com/mp/25365/kate_osamor/edmonton,@KateOsamor
+518,Milton Keynes North,Anglian Water,59,178.25,37,50.5,Ben Everitt,Conservative,https://www.theyworkforyou.com/mp/25910/ben_everitt/milton_keynes_north,@Ben_Everitt
+519,"Manchester, Gorton",United Utilities,76,172.71,-34,59.8,Afzal Khan,Labour,https://www.theyworkforyou.com/mp/25662/afzal_khan/manchester%2C_gorton,@Afzal4Gorton
+520,Slough,Thames Water,16,172.65,12,149.31,Tan Dhesi,Labour,https://www.theyworkforyou.com/mp/25695/tan_dhesi/slough,@TanDhesi
+521,South Thanet,Southern Water,74,168.41,-19,-131.76,Craig Mackinlay,Conservative,https://www.theyworkforyou.com/mp/25437/craig_mackinlay/south_thanet,@cmackinlay
+522,Wimbledon,Thames Water,47,160.5,37,142.17,Stephen Hammond,Conservative,https://www.theyworkforyou.com/mp/11927/stephen_hammond/wimbledon,@S_Hammond
+523,Walthamstow,Thames Water,61,159.13,-4,4.97,Stella Creasy,Labour/Co-operative,https://www.theyworkforyou.com/mp/24949/stella_creasy/walthamstow,@stellacreasy
+524,"Southampton, Itchen",Southern Water,39,156.06,-42,-367.71,Royston Smith,Conservative,https://www.theyworkforyou.com/mp/25345/royston_smith/southampton%2C_itchen,@Royston_Smith
+525,Kingston upon Hull West and Hessle,Yorkshire Water,72,155.0,-17,-226.92,Emma Hardy,Labour,https://www.theyworkforyou.com/mp/25646/emma_hardy/kingston_upon_hull_west_and_hessle,@EmmaHardyMP
+526,Orpington,Thames Water,37,152.84,-2,-13.57,Gareth Bacon,Conservative,https://www.theyworkforyou.com/mp/25750/gareth_bacon/orpington,@GarethBaconMP
+527,Leicester East,Severn Trent Water,68,146.19,18,-9.67,Claudia Webbe,Independent,https://www.theyworkforyou.com/mp/25797/claudia_webbe/leicester_east,@ClaudiaWebbe
+528,Bournemouth East,Wessex Water,68,137.1,-4,-19.23,Tobias Ellwood,Conservative,https://www.theyworkforyou.com/mp/11437/tobias_ellwood/bournemouth_east,@Tobias_Ellwood
+529,"Birmingham, Northfield",Severn Trent Water,118,135.877,22,-30.793,Gary Sambrook,Conservative,https://www.theyworkforyou.com/mp/25887/gary_sambrook/birmingham%2C_northfield,@GarySambrook89
+530,Filton and Bradley Stoke,Wessex Water,128,135.4,-10,-94.69,Jack Lopresti,Conservative,https://www.theyworkforyou.com/mp/24716/jack_lopresti/filton_and_bradley_stoke,@JackLopresti
+531,Cardiff Central,Dwr Cymru Welsh Water,35,134.5,-4,55.25,Jo Stevens,Labour,https://www.theyworkforyou.com/mp/25304/jo_stevens/cardiff_central,@JoStevensLabour
+532,Grantham and Stamford,Severn Trent Water,37,132.346,6,-42.084,Gareth Davies,Conservative,https://www.theyworkforyou.com/mp/25858/gareth_davies/grantham_and_stamford,@GarethDavies_MP
+533,Hitchin and Harpenden,Anglian Water,40,131.0,-187,-4854.5,Bim Afolami,Conservative,https://www.theyworkforyou.com/mp/25661/bim_afolami/hitchin_and_harpenden,@BimAfolami
+534,Kingston and Surbiton,Thames Water,26,122.56,-25,-205.35,Edward Davey,Liberal Democrat,https://www.theyworkforyou.com/mp/10155/edward_davey/kingston_and_surbiton,@EdwardJDavey
+535,Taunton Deane,South West Water,16,116.37,0,0.0,Rebecca Pow,Conservative,https://www.theyworkforyou.com/mp/25407/rebecca_pow/taunton_deane,@pow_rebecca
+536,North Shropshire,United Utilities,61,115.03,-27,-19.9,Helen Morgan,Liberal Democrat,https://www.theyworkforyou.com/mp/26056/helen_morgan/north_shropshire,@HelenMorganMP
+537,Southend West,Anglian Water,42,114.82,23,68.82,Anna Firth,Conservative,https://www.theyworkforyou.com/mp/26059/anna_firth/southend_west,@Anna_Firth
+538,Maidenhead,Thames Water,20,114.78,5,-8.97,Theresa May,Conservative,https://www.theyworkforyou.com/mp/10426/theresa_may/maidenhead,@theresa_may
+539,Brent Central,Thames Water,38,111.45,6,25.86,Dawn Butler,Labour,https://www.theyworkforyou.com/mp/11447/dawn_butler/brent_central,@DawnButlerBrent
+540,West Bromwich West,Severn Trent Water,72,110.097,-25,-665.593,Shaun Bailey,Conservative,https://www.theyworkforyou.com/mp/25814/shaun_bailey/west_bromwich_west,@Shaun4WBW
+541,"Brighton, Kemptown",Southern Water,51,109.25,-18,-150.26,Lloyd Russell-Moyle,Labour/Co-operative,https://www.theyworkforyou.com/mp/25667/lloyd_russell-moyle/brighton%2C_kemptown,@lloyd_rm
+542,Carshalton and Wallington,Thames Water,18,101.5,-13,-80.35,Elliot Colburn,Conservative,https://www.theyworkforyou.com/mp/25907/elliot_colburn/carshalton_and_wallington,@ElliotColburn
+543,Finchley and Golders Green,Thames Water,49,88.82,33,68.37,Mike Freer,Conservative,https://www.theyworkforyou.com/mp/24934/mike_freer/finchley_and_golders_green,
+544,Wolverhampton South East,Severn Trent Water,81,86.581,34,-39.189,Pat McFadden,Labour,https://www.theyworkforyou.com/mp/11936/pat_mcfadden/wolverhampton_south_east,@patmcfaddenmp
+545,Bracknell,Thames Water,15,86.4,-8,-92.67,James Sunderland,Conservative,https://www.theyworkforyou.com/mp/25860/james_sunderland/bracknell,@JamesSunderl
+546,Wentworth and Dearne,Severn Trent Water,21,86.246,10,52.486,John Healey,Labour,https://www.theyworkforyou.com/mp/10268/john_healey/wentworth_and_dearne,@JohnHealey_MP
+547,"Ealing, Southall",Thames Water,33,78.09,2,21.88,Virendra Sharma,Labour,https://www.theyworkforyou.com/mp/13934/virendra_sharma/ealing%2C_southall,@VirendraSharma
+548,Peterborough,Anglian Water,49,77.45,12,35.37,Paul Bristow,Conservative,https://www.theyworkforyou.com/mp/25795/paul_bristow/peterborough,@paulbristow79
+549,Nottingham North,Severn Trent Water,35,72.45,-89,-206.61,Alex Norris,Labour/Co-operative,https://www.theyworkforyou.com/mp/25687/alex_norris/nottingham_north,@AlexNorrisNN
+550,"Lewisham, Deptford",Thames Water,24,68.0,-20,-123.94,Vicky Foxcroft,Labour,https://www.theyworkforyou.com/mp/25380/vicky_foxcroft/lewisham%2C_deptford,@vickyfoxcroft
+551,Bournemouth West,Wessex Water,15,62.2,-6,-129.62,Conor Burns,Conservative,https://www.theyworkforyou.com/mp/24780/conor_burns/bournemouth_west,@ConorBurnsUK
+552,Epsom and Ewell,Thames Water,34,57.95,17,17.35,Chris Grayling,Conservative,https://www.theyworkforyou.com/mp/10920/chris_grayling/epsom_and_ewell,
+553,Croydon Central,Thames Water,20,45.93,14,29.34,Sarah Jones,Labour,https://www.theyworkforyou.com/mp/25673/sarah_jones/croydon_central,@LabourSJ
+554,Horsham,Thames Water,5,44.38,-51,-507.32,Jeremy Quin,Conservative,https://www.theyworkforyou.com/mp/25417/jeremy_quin/horsham,
+555,Coventry South,Severn Trent Water,20,43.523,11,29.063,Zarah Sultana,Labour,https://www.theyworkforyou.com/mp/25909/zarah_sultana/coventry_south,@zarahsultana
+556,North East Hertfordshire,Anglian Water,26,40.21,-2,16.71,Oliver Heald,Conservative,https://www.theyworkforyou.com/mp/10267/oliver_heald/north_east_hertfordshire,@OliverHealdUK
+557,Leicester West,Severn Trent Water,59,36.219,-43,-73.431,Liz Kendall,Labour,https://www.theyworkforyou.com/mp/24816/liz_kendall/leicester_west,@leicesterliz
+558,Cambridge,Anglian Water,13,30.2,9,20.37,Daniel Zeichner,Labour,https://www.theyworkforyou.com/mp/25386/daniel_zeichner/cambridge,@DanielZeichner
+559,Hornchurch and Upminster,Anglian Water,8,29.88,0,0.0,Julia Lopez,Conservative,https://www.theyworkforyou.com/mp/25652/julia_lopez/hornchurch_and_upminster,@JuliaLopezMP
+560,Dover,Southern Water,15,28.47,1,-50.66,Natalie Elphicke,Conservative,https://www.theyworkforyou.com/mp/25831/natalie_elphicke/dover,@NatalieElphicke
+561,Harrow West,Thames Water,18,27.92,5,8.03,Gareth Thomas,Labour/Co-operative,https://www.theyworkforyou.com/mp/10594/gareth_thomas/harrow_west,@GarethThomasMP
+562,Luton South,Thames Water,14,27.43,0,-0.17,Rachel Hopkins,Labour,https://www.theyworkforyou.com/mp/25809/rachel_hopkins/luton_south,@rach_hopkins
+563,Hexham,United Utilities,37,26.7,-72,-74.74,Guy Opperman,Conservative,https://www.theyworkforyou.com/mp/24962/guy_opperman/hexham,@GuyOpperman
+564,North West Hampshire,Southern Water,10,26.65,-1,-2.8200000000000003,Kit Malthouse,Conservative,https://www.theyworkforyou.com/mp/25346/kit_malthouse/north_west_hampshire,@kitmalthouse
+565,Dudley South,Severn Trent Water,43,24.815,-45,-430.945,Mike Wood,Conservative,https://www.theyworkforyou.com/mp/25362/mike_wood/dudley_south,@mikejwood
+566,Basingstoke,Thames Water,6,24.34,-39,-412.24,Maria Miller,Conservative,https://www.theyworkforyou.com/mp/11389/maria_miller/basingstoke,@MariaMillerUK
+567,Streatham,Thames Water,18,23.94,11,15.9,Bell Ribeiro-Addy,Labour,https://www.theyworkforyou.com/mp/25856/bell_ribeiro-addy/streatham,@BellRibeiroAddy
+568,Richmond (Yorks),United Utilities,26,22.37,-115,-59.96,Rishi Sunak,Conservative,https://www.theyworkforyou.com/mp/25428/rishi_sunak/richmond_%28yorks%29,@RishiSunak
+569,Norwich North,Anglian Water,6,21.91,6,21.91,Chloe Smith,Conservative,https://www.theyworkforyou.com/mp/24691/chloe_smith/norwich_north,@NorwichChloe
+570,"Birmingham, Erdington",Severn Trent Water,46,21.147,-16,-66.023,Paulette Hamilton,Labour,https://www.theyworkforyou.com/mp/26061/paulette_hamilton/birmingham%2C_erdington,@JackDromeyMP
+571,Welwyn Hatfield,Thames Water,8,17.58,-14,-71.95,Grant Shapps,Conservative,https://www.theyworkforyou.com/mp/11917/grant_shapps/welwyn_hatfield,@grantshapps
+572,Winchester,Southern Water,12,16.08,-74,-1215.44,Steve Brine,Conservative,https://www.theyworkforyou.com/mp/24901/steve_brine/winchester,@BrineMP
+573,Scunthorpe,Anglian Water,5,10.75,2,9.5,Holly Mumby-Croft,Conservative,https://www.theyworkforyou.com/mp/25804/holly_mumby-croft/scunthorpe,
+574,Tottenham,Thames Water,3,7.42,3,7.42,David Lammy,Labour,https://www.theyworkforyou.com/mp/10678/david_lammy/tottenham,@DavidLammy
+575,Ealing North,Thames Water,5,5.34,-3,1.16,James Murray,Labour/Co-operative,https://www.theyworkforyou.com/mp/25801/james_murray/ealing_north,@jamesmurray_ldn
+576,Coventry North West,Severn Trent Water,12,5.208,-2,-2.762,Taiwo Owatemi,Labour,https://www.theyworkforyou.com/mp/25915/taiwo_owatemi/coventry_north_west,@TaiwoOwatemi
+577,"Liverpool, West Derby",United Utilities,3,3.77,2,0.4,Ian Byrne,Labour,https://www.theyworkforyou.com/mp/25816/ian_byrne/liverpool%2C_west_derby,@IanByrneMP
+578,Croydon North,Thames Water,3,2.64,-13,-22.28,Steve Reed,Labour/Co-operative,https://www.theyworkforyou.com/mp/25170/steve_reed/croydon_north,@SteveReedMP
+579,Tooting,Thames Water,4,2.36,2,0.45,Rosena Allin-Khan,Labour,https://www.theyworkforyou.com/mp/25579/rosena_allin-khan/tooting,@DrRosena
+580,Thurrock,Anglian Water,3,1.5,3,1.5,Jackie Doyle-Price,Conservative,https://www.theyworkforyou.com/mp/24957/jackie_doyle-price/thurrock,@JackieDP
+581,Dartford,Southern Water,1,1.32,-1,-1.63,Gareth Johnson,Conservative,https://www.theyworkforyou.com/mp/24803/gareth_johnson/dartford,
+582,Uxbridge and South Ruislip,Thames Water,1,0.93,0,-0.61,Boris Johnson,Conservative,https://www.theyworkforyou.com/mp/10999/boris_johnson/uxbridge_and_south_ruislip,@BorisJohnson
+583,Kingston upon Hull North,Yorkshire Water,1,0.5,1,0.5,Diana R. Johnson,Labour,https://www.theyworkforyou.com/mp/11647/diana_r._johnson/kingston_upon_hull_north,@DianaJohnsonMP
+584,Wycombe,Thames Water,2,0.46,-10,-35.01,Steven Baker,Conservative,https://www.theyworkforyou.com/mp/24786/steven_baker/wycombe,@SteveBakerHW
+585,Northampton North,Anglian Water,1,0.30000000000000004,0,0.27,Michael Ellis,Conservative,https://www.theyworkforyou.com/mp/24866/michael_ellis/northampton_north,@Michael_Ellis1
+586,Banbury,Anglian Water,0,0.0,0,0.0,Victoria Prentis,Conservative,https://www.theyworkforyou.com/mp/25420/victoria_prentis/banbury,@VictoriaPrentis
+587,Basildon and Billericay,Anglian Water,0,0.0,0,0.0,John Baron,Conservative,https://www.theyworkforyou.com/mp/10715/john_baron/basildon_and_billericay,
+588,Feltham and Heston,Thames Water,0,0.0,0,0.0,Seema Malhotra,Labour/Co-operative,https://www.theyworkforyou.com/mp/25150/seema_malhotra/feltham_and_heston,@SeemaMalhotra1
+589,Hertsmere,Thames Water,0,0.0,0,0.0,Oliver Dowden,Conservative,https://www.theyworkforyou.com/mp/25323/oliver_dowden/hertsmere,@OliverDowden
+590,"Liverpool, Walton",United Utilities,0,0.0,-68,-468.21,Dan Carden,Labour,https://www.theyworkforyou.com/mp/25642/dan_carden/liverpool%2C_walton,@DanCardenMP
+591,Middlesbrough South and East Cleveland,Yorkshire Water,0,0.0,-60,-1021.69,Simon Clarke,Conservative,https://www.theyworkforyou.com/mp/25657/simon_clarke/middlesbrough_south_and_east_cleveland,@SimonClarkeMP
+592,Milton Keynes South,Anglian Water,0,0.0,0,0.0,Iain Stewart,Conservative,https://www.theyworkforyou.com/mp/24947/iain_stewart/milton_keynes_south,@iainastewart
+593,Reading East,Thames Water,0,0.0,0,0.0,Matt Rodda,Labour,https://www.theyworkforyou.com/mp/25691/matt_rodda/reading_east,@MattRodda
+594,Stroud,Wessex Water,0,0.0,-3,-0.42,Siobhan Baillie,Conservative,https://www.theyworkforyou.com/mp/25838/siobhan_baillie/stroud,@Siobhan_Baillie
+595,Twickenham,Thames Water,0,0.0,0,0.0,Munira Wilson,Liberal Democrat,https://www.theyworkforyou.com/mp/25820/munira_wilson/twickenham,@munirawilson
+596,Welwyn Hatfield,Anglian Water,0,0.0,0,0.0,Grant Shapps,Conservative,https://www.theyworkforyou.com/mp/11917/grant_shapps/welwyn_hatfield,@grantshapps
+597,West Ham,Thames Water,0,0.0,-3,-23.38,Lyn Brown,Labour,https://www.theyworkforyou.com/mp/11921/lyn_brown/west_ham,@lynbrownmp

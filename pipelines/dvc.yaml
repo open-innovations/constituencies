@@ -6,6 +6,7 @@ stages:
                   - pipelines/transform.py
                   - raw-data/house-prices.xlsx
                   - raw-data/unemployment.xlsx
+                  - raw-data/spills-by-constituency.json
             outs:
                   - src/_data/sources/economy/house_prices.csv:
                           cache: false
@@ -14,6 +15,8 @@ stages:
                   - src/_data/sources/economy/wages.csv:
                           cache: false
                   - src/_data/sources/economy/unemployment_rate.csv:
+                          cache: false
+                  - src/_data/sources/environment/spills_by_constituency.csv:
                           cache: false
       covid:
             cmd: PYTHONPATH=. python pipelines/covid.py
