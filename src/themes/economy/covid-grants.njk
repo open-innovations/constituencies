@@ -12,7 +12,7 @@ viz:
     data: sources.economy.covid_grants_ohlg
     columns:
       - name: "filterLabel"
-        template: "{{ n }} ({{ Region }})"
+        template: "{{ Parlimentary Constituency Name }} ({{ Region }})"
     value: "Value of Grants Paid"
     scale: Viridis
     min: 0
@@ -36,15 +36,15 @@ viz:
     tools:
       filter:
         label: filterLabel
-    tooltip: "Omicron Hospitality and Leisure Grant<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
+    tooltip: "Omicron Hospitality and Leisure Grant<br />{{ Parlimentary Constituency Name }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk) / Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
   - width: 600
     hexjson: hexjson.constituencies
     data: sources.economy.covid_grants_arg
     columns:
       - name: "filterLabel"
-        template: "{{ n }} ({{ Region }})"
+        template: "{{ Parlimentary Constituency Name }} ({{ Region }})"
     value: "Value of Grants Paid"
     scale: Viridis
     min: 0
@@ -66,7 +66,7 @@ viz:
         label: filterLabel
     tooltip: "Additional Restrictions Grant<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk) / Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
 ---
 
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic in England as of 31 March 2022.</p>
