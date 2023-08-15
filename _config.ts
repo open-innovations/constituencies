@@ -45,8 +45,6 @@ remoteTree('src/_data/sources', dataPath);
 // Copy /data to live site
 site.copy(dataPath);
 
-
-
 // Register an HTML processor
 // https://lume.land/docs/core/processors/
 site.process([".html"], autoDependency);
@@ -55,25 +53,6 @@ site.process([".html"], autoDependency);
 site.use(oiCharts({
 	assetPath: '/assets',
 	componentNamespace: 'oi',
-	colour: {
-		names: {
-			"gold": "#F7AB3D",
-			"orange": "#E55912",
-			"turquoise": "#69C2C9",
-			"cherry": "#E52E36",
-			"chartreuse": "#C7B200",
-			"plum": "#7D2248",
-			"grey": "#B2B2B2",
-			"blue": "#005776",
-			"raisin": "#874245",
-			"rose": "#FF808B",
-			"forest": "#4A783C",
-			"richblack": "#000000",
-		},
-		scales: {
-			'example': '#ff0000 0%, #0000ff 100%',
-		}
-	},
 	font: {
 		family: 'Poppins,CenturyGothicStd,"Century Gothic",Arial,sans-serif',
 		weight: 'normal',
@@ -88,10 +67,8 @@ site.use(oiCharts({
 	}
 }));
 
-
 // Add filters
 site.filter('match', (value, regex) => { const re = new RegExp(regex); return value.match(re); });
-
 
 site.use(base_path());
 site.use(metas({

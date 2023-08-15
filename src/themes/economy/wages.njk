@@ -1,5 +1,6 @@
 ---
 title: Wages
+theme: economy
 description: |
   Constituency-level data on wages.
 order: 30
@@ -11,12 +12,12 @@ config:
   data: sources.economy.wages
   columns:
     - name: "filterLabel"
-      template: "{{ ConstituencyName }} ({{ RegionName }})"
-  value: "2022-12-01"
+      template: "{{ parliamentary constituency 2010 }}"
+  value: "2022"
   scale: Viridis
   min: 0
   max: 50000
-  matchKey: "ONSConstID"
+  matchKey: "pcon10cd"
   legend:
     position: top right
     items:
@@ -36,11 +37,11 @@ config:
     filter:
       label: filterLabel
     slider:
-      columns: ['2017-12-31','2018-12-01','2019-12-01','2020-12-01','2021-12-01','2022-12-01']
+      columns: ['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022']
       width: 500px
-  tooltip: "Median House Price ({{ _value }})<br />{{ ConstituencyName }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
+  tooltip: "Median gross annual pay ({{ _value }})<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
   attribution: |
-    Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House of Commons Library Constituency data: house prices</a>
+    Data: <a href="https://www.nomisweb.co.uk/articles/295.aspx">The Annual Survey of Hours and Earnings</a> &copy; ONS Crown Copyright (from Nomis on 15 August 2023)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
 ---
 
 
@@ -52,7 +53,7 @@ config:
 
 <ul>
 <li>The values are the median full-time employee salary for residents of the constituency.</li>
-<li>Weekly salary data is multiplied up to an annual figure and then averaged over three years (2020-22).</li>
 <li>Self-employed people and part-time workers are not included.</li>
+<li>In years where figures for a particular constituency have been suppressed by ONS as statistically unreliable, previous year's values have been used.</li>
 <li>The source data are provided for pre-2023 constituencies.</li>
 </ul>

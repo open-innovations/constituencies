@@ -18,6 +18,8 @@
 
 	{% include 'partials/header.njk' %}
 
+	{% if theme %}{% include 'partials/breadcrumb.njk' %}{% endif %}
+
 	<div class="b6-bg" id="main">
 		<div class="holder padded tallpadded">
 		{{ content | safe }}

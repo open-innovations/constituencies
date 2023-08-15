@@ -1,0 +1,10 @@
+<div class="{{ themes[theme]['class'] }}">
+	<div class="holder padded">
+		<a href="/themes">Themes</a>
+		{% if themes[theme]['title']==title %}
+		{% else %}
+		&gt; <a href="/themes/{{ themes[theme]['url'] }}">{{ themes[theme]['title'] }}</a>
+		{% endif %}
+		{% if title %} &gt; {{ title }}{% endif %}
+	</div>
+</div>

@@ -116,8 +116,6 @@ a.button:hover, button:hover, button:focus, a.button:focus { background-color: #
 .c12-bg, .c12-bg-hover:hover, .c12-bg:visited, .youtube:hover { background-color: #D60303; color: white; }
 .c13-bg, .c13-bg-hover:hover, .c13-bg:visited { background-color: #FF6700; color: black; }
 .c14-bg, .c14-bg-hover:hover, .c14-bg:visited { background-color: #F9BC26; color: black; }
-.c12-bg, .on label { background-color: #D60303; color: white; }
-.c12-bg:hover, .c12-bg:focus { background: #444; color: white; }
 .warning { color: rgb(95, 82, 7); background-color: rgb(251, 245, 208); filter: drop-shadow(0px 0px 1px rgb(95, 82, 7)); }
 .padded { padding: 1em; }
 .padded-bottom { padding: 1em; margin-bottom: 1em; }
@@ -146,9 +144,6 @@ header nav ul > li > a:hover, header nav ul > li > a:focus { background: white; 
 
 .grid { display: grid; grid-template-columns: repeat(2,1fr); grid-gap: 1em; }
 .grid .pane { background: #f9f9f9; }
-
-.grid-list { display: grid; grid-template-columns: repeat(3,1fr); grid-gap: 0.5em; list-style: none; margin: 0; margin-bottom: 2em; }
-.grid-list > li > a { padding: 1em; background: #dfdfdf; text-decoration: none; display: block; text-align: center; height: 100%; }
 
 .legend { margin-bottom: 1em; text-align: center; }
 .legend .legend-item { display: inline-block; line-height: 1em; margin-right: 1em; cursor: pointer; }
