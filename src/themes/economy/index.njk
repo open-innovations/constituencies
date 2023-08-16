@@ -8,8 +8,9 @@ description: |
 <p>{{ description }}</p>
 
 <ul>
-<li><a href="covid-grants">Covid grants</a></li>
-<li><a href="house-prices">House prices</a></li>
-<li><a href="unemployment">Unemployment</a></li>
-<li><a href="wages">Wages</a></li>
+{% for page in search.pages("theme=economy", "order title") %}
+{% if page.data.title!=title and not page.data.draft %}
+	<li><a href="{{ page.data.url }}">{{ page.data.title }}</a></li>
+{% endif %}
+{% endfor %}
 </ul>

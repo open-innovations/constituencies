@@ -1,14 +1,14 @@
 ---
-title: Transport
-theme: transport
+title: Society
+theme: society
 description: |
-  Presenting data by constituency for transport-related data.
+  Presenting data by constituency for society-related data.
 ---
 
 <p>{{ description }}</p>
 
 <ul>
-{% for page in search.pages("theme=transport", "order title") %}
+{% for page in search.pages("theme=society", "order title") %}
 {% if page.data.title!=title and not page.data.draft %}
 	<li><a href="{{ page.data.url }}">{{ page.data.title }}</a></li>
 {% endif %}
