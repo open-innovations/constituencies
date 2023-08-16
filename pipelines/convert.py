@@ -30,35 +30,42 @@ def dataframe_grid2latlong():
     #df.to_csv('src/_data/sources/environment/storm_overflows.csv')
     return df
 
-def latlong2constituency(df):
+def latlong2constituency(df, opts={}):
+
+    if not 'key' in opts:
+        opts['key'] = 'PCON21CD'
+    if not 'geojson' in opts:
+        opts['geojson'] = 'src/_data/geojson/constituencies-2022.geojson'
+
     # load the geojson
-    with open('src/_data/geojson/constituencies-2022.geojson') as f:
-        js = json.load(f)
+    with open(opts['geojson']) as f:
+        geo = json.load(f)
 
-    # load the data to convert
-    latitudes, longitudes = df['latitude'], df['longitude']
-    
-    #create the points 
-    Points = []
-    for long, lat in zip(longitudes,latitudes):
-        point = Point(long, lat)
-        Points.append(point)
+    # Go through each area and work out the rectangular bounds
+    # This will be used as a first pass for points as it is faster
+    for feature in geo['features']:
+        feature['geometry']['polygon'] = shape(feature['geometry']);
+        feature['geometry']['bounds'] = feature['geometry']['polygon'].bounds;
 
-    #iterate through polygons to find which one contains point.
-    for point in Points:
-        for feature in js['features']:
-            polygon = shape(feature['geometry'])
-            #print(feature['properties']['PCON22NM'])
-            try:
-                if polygon.contains(point):
-                    df[df.loc[Points.index(point)],'PCON22CD'] = feature['properties']['PCON22CD']
-                    break
-            except:
-                print('bad geometry for', feature['properties']['PCON22NM'])
-                #break
+    df[opts['key']] = ""
+
+    for i, row in df.iterrows():
+        lat = row['lat']
+        lon = row['lon']
+        point = Point(lon,lat)
+        for feature in geo['features']:
+            b = feature['geometry']['bounds']
+            if lon >= b[0] and lon <= b[2] and lat >= b[1] and lat <= b[3]:
+                # It has passed the initial bounding-box test
+                # so check if it is really within the polygon(s)
+                if feature['geometry']['polygon'].contains(point):
+                    df.at[i,opts['key']] = feature['properties'][opts['key']];
+
     return df
 
 if __name__ == '__main__':
-    data = dataframe_grid2latlong()
-    df = latlong2constituency(data)
-    print(df['PCON22CD'])
+    #data = dataframe_grid2latlong()
+    d = {'lat': [53.9948, 53.8382,53.7969,53.7419], 'lon': [-1.5401, -1.6399, -1.5341,-2.0131]}
+    df = pd.DataFrame(data=d)
+    df = latlong2constituency(df,{'key':'PCON22CD','geojson':'src/_data/geojson/constituencies-2022.geojson'})
+    print(df)
