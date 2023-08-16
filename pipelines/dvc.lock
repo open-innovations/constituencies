@@ -67,3 +67,17 @@ stages:
       md5: d9ec98f7c59fe2c42947ad34cc232bd2
       size: 30826
       isexec: true
+  util:
+    cmd: PYTHONPATH=. python pipelines/utils.py
+    deps:
+    - path: pipelines/utils.py
+      hash: md5
+      md5: 121aeec6db236fc8f8f8c05158034760
+      size: 1336
+  polygons:
+    cmd: PYTHONPATH=. python pipelines/polygons.py
+    deps:
+    - path: pipelines/polygons.py
+      hash: md5
+      md5: 12cf2bdf69b9dcf94153895c9f43012c
+      size: 390
