@@ -1,0 +1,43 @@
+---
+title: EU Referendum
+theme: society
+description: |
+  Estimates of constituency-level voting for the 2016 EU Referendum (GB).
+component: map.hex_cartogram
+config:
+  ref:
+    width: 600
+    hexjson: hexjson.constituencies
+    data: sources.society.eu_referendum
+    columns:
+      - name: "filterLabel"
+        template: "{{ n }} ({{ a }})"
+    value: "Figure to use"
+    scale: "#F9BC26 0%, #2254F4 100%"
+    min: 0
+    max: 1
+    matchKey: "PCON11CD"
+    legend:
+      position: top right
+      items:
+      - value: 1
+        label: "Leave"
+      - value: 0.5
+        label: "50/50"
+      - value: 0
+        label: 'Remain'
+    tools:
+      filter:
+        label: filterLabel
+    tooltip: "Estimated leave vote<br />{{ n }}: <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>"
+    attribution: |
+      Data: <a href="https://docs.google.com/spreadsheets/d/1b71SDKPFbk-ktmUTXmDpUP5PT299qq24orEA0_TOpmw/edit#gid=579044181">EU referendum estimates</a> from <a href="http://www.tandfonline.com/doi/abs/10.1080/17457289.2017.1287081?journalCode=fbep20">Hanretty 2017</a> (<a href="https://medium.com/@chrishanretty/final-estimates-of-the-leave-vote-or-areal-interpolation-and-the-uks-referendum-on-eu-membership-5490b6cab878">blog post</a>)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+---
+
+<p>Estimates of how each constituency voted in the 2016 EU Referendum (Great Britain).</p>
+
+{% comp 'oi.' + component, { "config": config.ref } %}{% endcomp %}
+
+<h2>Notes</h2>
+
+<p>As the voting in the 2016 EU Referendum was not, in general, organised by constituency, it isn't possible to say the exact way each constituency voted. In Leeds, for instance, results were returned for groups of three constituencies. Chris Hanretty (Professor of Politics, Royal Holloway) created estimates at constituency level by using linear regressions and a statistical model which explained the Leave share of the vote in each local authority area using demographic characteristics. You can read about the methodology in "<a href="http://dx.doi.org/10.1080/17457289.2017.1287081">Areal interpolation and the UK's referendum on EU membership</a>" (Chris Hanretty, Journal Of Elections, Public Opinion And Parties, Online Early Access) or the <a href="https://medium.com/@chrishanretty/final-estimates-of-the-leave-vote-or-areal-interpolation-and-the-uks-referendum-on-eu-membership-5490b6cab878">summary blog post</a>.</p>
