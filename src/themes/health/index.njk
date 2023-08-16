@@ -1,0 +1,16 @@
+---
+title: Health
+theme: health
+description: |
+  Presenting data by constituency for health-related data.
+---
+
+<p>{{ description }}</p>
+
+<ul>
+{% for page in search.pages("theme=health", "order title") %}
+{% if page.data.title!=title and not page.data.draft %}
+	<li><a href="{{ page.data.url }}">{{ page.data.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
