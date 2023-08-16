@@ -8,6 +8,9 @@ description: |
 
 <ul class="grid-list">
 {% for theme, data in themes %}
-	<li>{% if data['draft'] %}<div class="b5-bg">{% else %}<a href="{{ data['url'] }}" class="{{ data['class'] }}">{% endif %}{{ data['icon'] | safe }}<h2>{{ data['title'] }}</h2><p>{{ data['description'] }}</p>{% if data['draft'] %}</div>{% else %}</a>{% endif %}</li>
+	{% if not themes[theme]['draft'] %}
+	<li>{% if search.pages("theme="+theme+" !draft") | length > 1 %}<a href="{{ data['url'] }}" class="{{ data['class'] }}">{% else %}<div class="b5-bg">{% endif %}{{ data['icon'] | safe }}<h2>{{ data['title'] }}</h2><p>
+	{{ data['description'] }}</p>{% if search.pages("theme="+theme+" !draft") | length > 1 %}</a>{% else %}</div>{% endif %}</li>
+	{% endif %}
 {% endfor %}
 </ul>
