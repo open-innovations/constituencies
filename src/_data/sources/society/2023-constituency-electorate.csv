@@ -1,0 +1,653 @@
+PCON25NM,PCON25CD,Electorate
+"Aldershot",E14001063,76765
+"Aldridge-Brownhills",E14001064,73122
+"Altrincham and Sale West",E14001065,73934
+"Amber Valley",E14001066,70625
+"Arundel and South Downs",E14001067,76974
+"Ashfield",E14001068,69819
+"Ashford",E14001069,73546
+"Ashton-under-Lyne",E14001070,72278
+"Aylesbury",E14001071,75636
+"Banbury",E14001072,69943
+"Barking",E14001073,71822
+"Barnsley North",E14001074,76794
+"Barnsley South",E14001075,75896
+"Barrow and Furness",E14001076,76603
+"Basildon and Billericay",E14001077,76993
+"Basingstoke",E14001078,77050
+"Bassetlaw",E14001079,75773
+"Bath",E14001080,73241
+"Battersea",E14001081,71949
+"Beaconsfield",E14001082,72315
+"Beckenham and Penge",E14001083,76625
+"Bedford",E14001084,70068
+"Bermondsey and Old Southwark",E14001085,70602
+"Bethnal Green and Stepney",E14001086,77000
+"Beverley and Holderness",E14001087,71102
+"Bexhill and Battle",E14001088,70869
+"Bexleyheath and Crayford",E14001089,69948
+"Bicester and Woodstock",E14001090,70389
+"Birkenhead",E14001091,76271
+"Birmingham Edgbaston",E14001092,71354
+"Birmingham Erdington",E14001093,76856
+"Birmingham Hall Green and Moseley",E14001094,75781
+"Birmingham Hodge Hill and Solihull North",E14001095,76922
+"Birmingham Ladywood",E14001096,76585
+"Birmingham Northfield",E14001097,73483
+"Birmingham Perry Barr",E14001098,74048
+"Birmingham Selly Oak",E14001099,76285
+"Birmingham Yardley",E14001100,71912
+"Bishop Auckland",E14001101,70879
+"Blackburn",E14001102,70586
+"Blackley and Middleton South",E14001103,71375
+"Blackpool North and Fleetwood",E14001104,75396
+"Blackpool South",E14001105,76071
+"Blaydon and Consett",E14001106,70163
+"Blyth and Ashington",E14001107,75452
+"Bognor Regis and Littlehampton",E14001108,76985
+"Bolsover",E14001109,74680
+"Bolton North East",E14001110,77020
+"Bolton South and Walkden",E14001111,75716
+"Bolton West",E14001112,72125
+"Bootle",E14001113,75194
+"Boston and Skegness",E14001114,75806
+"Bournemouth East",E14001115,73173
+"Bournemouth West",E14001116,72094
+"Bracknell",E14001117,70247
+"Bradford East",E14001118,72150
+"Bradford South",E14001119,70890
+"Bradford West",E14001120,71258
+"Braintree",E14001121,75662
+"Brent East",E14001122,75880
+"Brent West",E14001123,76463
+"Brentford and Isleworth",E14001124,76354
+"Brentwood and Ongar",E14001125,74937
+"Bridgwater",E14001126,71418
+"Bridlington and The Wolds",E14001127,72501
+"Brigg and Immingham",E14001128,71628
+"Brighton Kemptown and Peacehaven",E14001129,69865
+"Brighton Pavilion",E14001130,75722
+"Bristol Central",E14001131,70227
+"Bristol East",E14001132,75936
+"Bristol North East",E14001133,69793
+"Bristol North West",E14001134,76783
+"Bristol South",E14001135,74696
+"Broadland and Fakenham",E14001136,72907
+"Bromley and Biggin Hill",E14001137,70418
+"Bromsgrove",E14001138,75305
+"Broxbourne",E14001139,75454
+"Broxtowe",E14001140,72461
+"Buckingham and Bletchley",E14001141,73644
+"Burnley",E14001142,75436
+"Burton and Uttoxeter",E14001143,75460
+"Bury North",E14001144,77009
+"Bury South",E14001145,74598
+"Bury St Edmunds and Stowmarket",E14001146,75655
+"Calder Valley",E14001147,75987
+"Camborne and Redruth",E14001148,73568
+"Cambridge",E14001149,72560
+"Cannock Chase",E14001150,75582
+"Canterbury",E14001151,75499
+"Carlisle",E14001152,75868
+"Carshalton and Wallington",E14001153,72755
+"Castle Point",E14001154,70923
+"Central Devon",E14001155,73491
+"Central Suffolk and North Ipswich",E14001156,71020
+"Chatham and Aylesford",E14001157,74840
+"Cheadle",E14001158,73775
+"Chelmsford",E14001159,76454
+"Chelsea and Fulham",E14001160,76481
+"Cheltenham",E14001161,75292
+"Chesham and Amersham",E14001162,74155
+"Chester North and Neston",E14001163,72327
+"Chester South and Eddisbury",E14001164,71975
+"Chesterfield",E14001165,70722
+"Chichester",E14001166,76765
+"Chingford and Woodford Green",E14001167,75677
+"Chippenham",E14001168,71648
+"Chipping Barnet",E14001169,76187
+"Chorley",E14001170,74568
+"Christchurch",E14001171,71598
+"Cities of London and Westminster",E14001172,73140
+"City of Durham",E14001173,72878
+"Clacton",E14001174,75959
+"Clapham and Brixton Hill",E14001175,75460
+"Colchester",E14001176,76843
+"Colne Valley",E14001177,71518
+"Congleton",E14001178,69836
+"Corby and East Northamptonshire",E14001179,76748
+"Coventry East",E14001180,73389
+"Coventry North West",E14001181,73431
+"Coventry South",E14001182,70998
+"Cramlington and Killingworth",E14001183,73295
+"Crawley",E14001184,74446
+"Crewe and Nantwich",E14001185,76236
+"Croydon East",E14001186,75346
+"Croydon South",E14001187,71541
+"Croydon West",E14001188,70812
+"Dagenham and Rainham",E14001189,73627
+"Darlington",E14001190,70446
+"Dartford",E14001191,72048
+"Daventry",E14001192,76539
+"Derby North",E14001193,71876
+"Derby South",E14001194,72067
+"Derbyshire Dales",E14001195,71435
+"Dewsbury and Batley",E14001196,70226
+"Didcot and Wantage",E14001197,74356
+"Doncaster Central",E14001198,75007
+"Doncaster East and the Isle of Axholme",E14001199,70113
+"Doncaster North",E14001200,71739
+"Dorking and Horley",E14001201,70317
+"Dover and Deal",E14001202,75855
+"Droitwich and Evesham",E14001203,74345
+"Dudley",E14001204,71083
+"Dulwich and West Norwood",E14001205,74314
+"Dunstable and Leighton Buzzard",E14001206,74069
+"Ealing Central and Acton",E14001207,75399
+"Ealing North",E14001208,72985
+"Ealing Southall",E14001209,75085
+"Earley and Woodley",E14001210,70083
+"Easington",E14001211,70043
+"East Grinstead and Uckfield",E14001212,72356
+"East Ham",E14001213,70902
+"East Hampshire",E14001214,69959
+"East Surrey",E14001215,73145
+"East Thanet",E14001216,73790
+"East Wiltshire",E14001217,71109
+"East Worthing and Shoreham",E14001218,75466
+"Eastbourne",E14001219,73322
+"Eastbourne",E14001219,73322
+"Eastleigh",E14001220,69982
+"Edmonton and Winchmore Hill",E14001221,75204
+"Ellesmere Port and Bromborough",E14001222,71027
+"Eltham and Chislehurst",E14001223,74179
+"Ely and East Cambridgeshire",E14001224,76279
+"Enfield North",E14001225,76824
+"Epping Forest",E14001226,74553
+"Epsom and Ewell",E14001227,76844
+"Erewash",E14001228,71986
+"Erith and Thamesmead",E14001229,76728
+"Esher and Walton",E14001230,73280
+"Exeter",E14001231,71713
+"Exmouth and Exeter East",E14001232,74502
+"Fareham and Waterlooville",E14001233,77036
+"Farnham and Bordon",E14001234,72938
+"Faversham and Mid Kent",E14001235,71798
+"Feltham and Heston",E14001236,75226
+"Filton and Bradley Stoke",E14001237,73598
+"Finchley and Golders Green",E14001238,75761
+"Folkestone and Hythe",E14001239,70023
+"Forest of Dean",E14001240,71510
+"Frome and East Somerset",E14001241,70177
+"Fylde",E14001242,75114
+"Gainsborough",E14001243,74750
+"Gateshead Central and Whickham",E14001244,70994
+"Gedling",E14001245,75795
+"Gillingham and Rainham",E14001246,73951
+"Glastonbury and Somerton",E14001247,70015
+"Gloucester",E14001248,76695
+"Godalming and Ash",E14001249,71399
+"Goole and Pocklington",E14001250,76337
+"Gorton and Denton",E14001251,74306
+"Gosport",E14001252,73763
+"Grantham and Bourne",E14001253,72071
+"Gravesham",E14001254,72866
+"Great Grimsby and Cleethorpes",E14001255,77050
+"Great Yarmouth",E14001256,70077
+"Greenwich and Woolwich",E14001257,69824
+"Guildford",E14001258,71367
+"Hackney North and Stoke Newington",E14001259,75401
+"Hackney South and Shoreditch",E14001260,75197
+"Halesowen",E14001261,69907
+"Halifax",E14001262,74563
+"Hamble Valley",E14001263,76902
+"Hammersmith and Chiswick",E14001264,74746
+"Hampstead and Highgate",E14001265,74222
+"Harborough, Oadby and Wigston",E14001266,74810
+"Harlow",E14001267,73479
+"Harpenden and Berkhamsted",E14001268,71635
+"Harrogate and Knaresborough",E14001269,75800
+"Harrow East",E14001270,76299
+"Harrow West",E14001271,74060
+"Hartlepool",E14001272,71228
+"Harwich and North Essex",E14001273,74838
+"Hastings and Rye",E14001274,75581
+"Havant",E14001275,72766
+"Hayes and Harlington",E14001276,72897
+"Hazel Grove",E14001277,72941
+"Hemel Hempstead",E14001278,70496
+"Hendon",E14001279,71496
+"Henley and Thame",E14001280,70626
+"Hereford and South Herefordshire",E14001281,71125
+"Herne Bay and Sandwich",E14001282,76028
+"Hertford and Stortford",E14001283,75396
+"Hertsmere",E14001284,73256
+"Hexham",E14001285,72738
+"Heywood and Middleton North",E14001286,73306
+"High Peak",E14001287,73960
+"Hinckley and Bosworth",E14001288,75683
+"Hitchin",E14001289,72112
+"Holborn and St Pancras",E14001290,75475
+"Honiton and Sidmouth",E14001291,74365
+"Hornchurch and Upminster",E14001292,76938
+"Hornsey and Friern Barnet",E14001293,70565
+"Horsham",E14001294,76981
+"Houghton and Sunderland South",E14001295,76883
+"Hove and Portslade",E14001296,73726
+"Huddersfield",E14001297,76044
+"Huntingdon",E14001298,75590
+"Hyndburn",E14001299,71145
+"Hyndburn",E14001299,71145
+"Ilford North",E14001300,74684
+"Ilford South",E14001301,74065
+"Ipswich",E14001302,75117
+"Isle of Wight East",E14001303,56805
+"Isle of Wight West",E14001304,54911
+"Islington North",E14001305,73970
+"Islington South and Finsbury",E14001306,75905
+"Jarrow and Gateshead East",E14001307,71106
+"Keighley and Ilkley",E14001308,72954
+"Kenilworth and Southam",E14001309,71451
+"Kensington and Bayswater",E14001310,75980
+"Kettering",E14001311,76163
+"Kingston and Surbiton",E14001312,75410
+"Kingston upon Hull East",E14001313,72622
+"Kingston upon Hull North and Cottingham",E14001314,76039
+"Kingston upon Hull West and Haltemprice",E14001315,74321
+"Kingswinford and South Staffordshire",E14001316,71896
+"Knowsley",E14001317,71228
+"Lancaster and Wyre",E14001318,74992
+"Leeds Central and Headingley",E14001319,75396
+"Leeds East",E14001320,75330
+"Leeds North East",E14001321,70976
+"Leeds North West",E14001322,71607
+"Leeds South West and Morley",E14001324,71376
+"Leeds South",E14001323,74726
+"Leeds West and Pudsey",E14001325,70270
+"Leicester East",E14001326,76465
+"Leicester South",E14001327,71007
+"Leicester West",E14001328,72848
+"Leigh and Atherton",E14001329,76363
+"Lewes",E14001330,75091
+"Lewisham East",E14001331,71706
+"Lewisham North",E14001332,73504
+"Lewisham West and East Dulwich",E14001333,69904
+"Leyton and Wanstead",E14001334,71330
+"Lichfield",E14001335,74942
+"Lincoln",E14001336,74128
+"Liverpool Garston",E14001337,70372
+"Liverpool Riverside",E14001338,70157
+"Liverpool Walton",E14001339,71181
+"Liverpool Wavertree",E14001340,71076
+"Liverpool West Derby",E14001341,70730
+"Loughborough",E14001342,73902
+"Louth and Horncastle",E14001343,75959
+"Lowestoft",E14001344,73967
+"Luton North",E14001345,73266
+"Luton South and South Bedfordshire",E14001346,70197
+"Macclesfield",E14001347,75881
+"Maidenhead",E14001348,73463
+"Maidstone and Malling",E14001349,73084
+"Makerfield",E14001350,76517
+"Maldon",E14001351,76794
+"Manchester Central",E14001352,75311
+"Manchester Rusholme",E14001353,70692
+"Manchester Withington",E14001354,71614
+"Mansfield",E14001355,74680
+"Melksham and Devizes",E14001356,71823
+"Melton and Syston",E14001357,71615
+"Meriden and Solihull East",E14001358,74211
+"Mid Bedfordshire",E14001359,71748
+"Mid Buckinghamshire",E14001360,72240
+"Mid Cheshire",E14001361,69775
+"Mid Derbyshire",E14001362,70085
+"Mid Dorset and North Poole",E14001363,74305
+"Mid Leicestershire",E14001364,76173
+"Mid Norfolk",E14001365,71060
+"Mid Sussex",E14001366,72255
+"Middlesbrough South and East Cleveland",E14001368,69967
+"Middlesbrough and Thornaby East",E14001367,71742
+"Milton Keynes Central",E14001369,76708
+"Milton Keynes North",E14001370,70620
+"Mitcham and Morden",E14001371,76877
+"Morecambe and Lunesdale",E14001372,76040
+"New Forest East",E14001373,73823
+"New Forest West",E14001374,71009
+"Newark",E14001375,76478
+"Newbury",E14001376,71631
+"Newcastle upon Tyne Central and West",E14001377,76460
+"Newcastle upon Tyne East and Wallsend",E14001378,76875
+"Newcastle upon Tyne North",E14001379,76503
+"Newcastle-under-Lyme",E14001380,70025
+"Newton Abbot",E14001381,72956
+"Newton Aycliffe and Spennymoor",E14001382,71299
+"Normanton and Hemsworth",E14001383,75388
+"North Bedfordshire",E14001384,76319
+"North Cornwall",E14001385,75034
+"North Cotswolds",E14001386,70915
+"North Devon",E14001387,76455
+"North Dorset",E14001388,72109
+"North Durham",E14001389,73079
+"North East Cambridgeshire",E14001390,70806
+"North East Derbyshire",E14001391,72344
+"North East Hampshire",E14001392,73306
+"North East Hertfordshire",E14001393,76849
+"North East Somerset and Hanham",E14001394,73113
+"North Herefordshire",E14001395,70894
+"North Norfolk",E14001396,70719
+"North Northumberland",E14001397,72541
+"North Shropshire",E14001398,77052
+"North Somerset",E14001399,73963
+"North Warwickshire and Bedworth",E14001400,70245
+"North West Cambridgeshire",E14001401,73556
+"North West Essex",E14001402,76280
+"North West Hampshire",E14001403,76004
+"North West Leicestershire",E14001404,75373
+"North West Norfolk",E14001405,75200
+"Northampton North",E14001406,75713
+"Northampton South",E14001407,71512
+"Norwich North",E14001408,71441
+"Norwich South",E14001409,73301
+"Nottingham East",E14001410,75327
+"Nottingham North and Kimberley",E14001411,74515
+"Nottingham South",E14001412,76076
+"Nuneaton",E14001413,70335
+"Old Bexley and Sidcup",E14001414,74317
+"Oldham East and Saddleworth",E14001415,72997
+"Oldham West, Chadderton and Royton",E14001416,74183
+"Orpington",E14001417,71571
+"Ossett and Denby Dale",E14001418,71595
+"Oxford East",E14001419,72371
+"Oxford West and Abingdon",E14001420,72004
+"Peckham",E14001421,71176
+"Pendle and Clitheroe",E14001422,76941
+"Penistone and Stocksbridge",E14001423,71377
+"Penrith and Solway",E14001424,76720
+"Peterborough",E14001425,72273
+"Plymouth Moor View",E14001426,73378
+"Plymouth Sutton and Devonport",E14001427,73495
+"Pontefract, Castleford and Knottingley",E14001428,72751
+"Poole",E14001429,72162
+"Poplar and Limehouse",E14001430,75814
+"Portsmouth North",E14001431,71844
+"Portsmouth South",E14001432,74253
+"Preston",E14001433,72946
+"Putney",E14001434,73041
+"Queen's Park and Maida Vale",E14001435,75256
+"Rawmarsh and Conisbrough",E14001436,70272
+"Rayleigh and Wickford",E14001437,76422
+"Reading Central",E14001438,71283
+"Reading West and Mid Berkshire",E14001439,69999
+"Redcar",E14001440,71331
+"Redditch",E14001441,69921
+"Reigate",E14001442,76139
+"Ribble Valley",E14001443,75993
+"Richmond Park",E14001445,75037
+"Richmond and Northallerton",E14001444,72744
+"Rochdale",E14001446,71697
+"Rochester and Strood",E14001447,72155
+"Romford",E14001448,73730
+"Romsey and Southampton North",E14001449,73831
+"Rossendale and Darwen",E14001450,74593
+"Rother Valley",E14001451,70184
+"Rotherham",E14001452,75345
+"Rugby",E14001453,72603
+"Ruislip, Northwood and Pinner",E14001454,72168
+"Runcorn and Helsby",E14001455,70950
+"Runnymede and Weybridge",E14001456,73778
+"Rushcliffe",E14001457,76171
+"Rutland and Stamford",E14001458,70864
+"Salford",E14001459,72169
+"Salisbury",E14001460,70242
+"Scarborough and Whitby",E14001461,73862
+"Scunthorpe",E14001462,74278
+"Sefton Central",E14001463,74746
+"Selby",E14001464,74761
+"Sevenoaks",E14001465,73684
+"Sheffield Brightside and Hillsborough",E14001466,71154
+"Sheffield Central",E14001467,70453
+"Sheffield Hallam",E14001468,76637
+"Sheffield Heeley",E14001469,74614
+"Sheffield South East",E14001470,76223
+"Sherwood Forest",E14001471,76543
+"Shipley",E14001472,74095
+"Shrewsbury",E14001473,75139
+"Sittingbourne and Sheppey",E14001474,76818
+"Skipton and Ripon",E14001475,76758
+"Sleaford and North Hykeham",E14001476,73380
+"Slough",E14001477,75287
+"Smethwick",E14001478,71195
+"Solihull West and Shirley",E14001479,70537
+"South Basildon and East Thurrock",E14001480,73322
+"South Cambridgeshire",E14001481,75484
+"South Cotswolds",E14001482,72865
+"South Derbyshire",E14001483,71202
+"South Devon",E14001484,71691
+"South Dorset",E14001485,76640
+"South East Cornwall",E14001486,71734
+"South Holland and The Deepings",E14001487,76139
+"South Leicestershire",E14001488,75634
+"South Norfolk",E14001489,69837
+"South Northamptonshire",E14001490,76555
+"South Ribble",E14001491,72029
+"South Shields",E14001492,69725
+"South Shropshire",E14001493,77034
+"South Suffolk",E14001494,71070
+"South West Devon",E14001495,75371
+"South West Hertfordshire",E14001496,71552
+"South West Norfolk",E14001497,72496
+"South West Wiltshire",E14001498,71551
+"Southampton Itchen",E14001499,72150
+"Southampton Test",E14001500,69960
+"Southend East and Rochford",E14001501,70094
+"Southend West and Leigh",E14001502,76824
+"Southgate and Wood Green",E14001503,76034
+"Southport",E14001504,74168
+"Spelthorne",E14001505,72897
+"Spen Valley",E14001506,72169
+"St Albans",E14001507,70881
+"St Austell and Newquay",E14001508,74585
+"St Helens North",E14001509,76082
+"St Helens South and Whiston",E14001510,70937
+"St Ives",E14001511,70107
+"St Neots and Mid Cambridgeshire",E14001512,74699
+"Stafford",E14001513,70537
+"Staffordshire Moorlands",E14001514,70113
+"Stalybridge and Hyde",E14001515,73028
+"Stevenage",E14001516,70370
+"Stockport",E14001517,74769
+"Stockton North",E14001518,69779
+"Stockton West",E14001519,70108
+"Stoke-on-Trent Central",E14001520,70550
+"Stoke-on-Trent North",E14001521,69821
+"Stoke-on-Trent South",E14001522,69831
+"Stone, Great Wyrley and Penkridge",E14001523,70701
+"Stourbridge",E14001524,69840
+"Stratford and Bow",E14001525,73849
+"Stratford-on-Avon",E14001526,72388
+"Streatham and Croydon North",E14001527,76050
+"Stretford and Urmston",E14001528,73212
+"Stroud",E14001529,76249
+"Suffolk Coastal",E14001530,72663
+"Sunderland Central",E14001531,72688
+"Surrey Heath",E14001532,70825
+"Sussex Weald",E14001533,70075
+"Sutton Coldfield",E14001535,74584
+"Sutton and Cheam",E14001534,71284
+"Swindon North",E14001536,72163
+"Swindon South",E14001537,72468
+"Tamworth",E14001538,73644
+"Tatton",E14001539,75538
+"Taunton and Wellington",E14001540,76049
+"Telford",E14001541,70768
+"Tewkesbury",E14001542,72426
+"The Wrekin",E14001543,76143
+"Thirsk and Malton",E14001544,76623
+"Thornbury and Yate",E14001545,74935
+"Thurrock",E14001546,73347
+"Tipton and Wednesbury",E14001547,73820
+"Tiverton and Minehead",E14001548,70829
+"Tonbridge",E14001549,73692
+"Tooting",E14001550,76986
+"Torbay",E14001551,75742
+"Torridge and Tavistock",E14001552,74802
+"Tottenham",E14001553,75968
+"Truro and Falmouth",E14001554,73326
+"Tunbridge Wells",E14001555,75213
+"Twickenham",E14001556,75889
+"Tynemouth",E14001557,73022
+"Uxbridge and South Ruislip",E14001558,75042
+"Vauxhall and Camberwell Green",E14001559,69995
+"Wakefield and Rothwell",E14001560,73968
+"Wallasey",E14001561,73054
+"Walsall and Bloxwich",E14001562,74866
+"Walthamstow",E14001563,70867
+"Warrington North",E14001564,72350
+"Warrington South",E14001565,76639
+"Warwick and Leamington",E14001566,75440
+"Washington and Gateshead South",E14001567,71775
+"Watford",E14001568,70576
+"Waveney Valley",E14001569,70540
+"Weald of Kent",E14001570,70110
+"Wellingborough and Rushden",E14001571,76669
+"Wells and Mendip Hills",E14001572,69843
+"Welwyn Hatfield",E14001573,74535
+"West Bromwich",E14001574,72206
+"West Dorset",E14001575,75390
+"West Ham and Beckton",E14001576,70590
+"West Lancashire",E14001577,73652
+"West Suffolk",E14001578,76243
+"West Worcestershire",E14001579,76638
+"Westmorland and Lonsdale",E14001580,72322
+"Weston-super-Mare",E14001581,70722
+"Wetherby and Easingwold",E14001582,71455
+"Whitehaven and Workington",E14001583,73385
+"Widnes and Halewood",E14001584,70865
+"Wigan",E14001585,75607
+"Wimbledon",E14001586,74641
+"Winchester",E14001587,76577
+"Windsor",E14001588,74338
+"Wirral West",E14001589,72126
+"Witham",E14001590,75064
+"Witney",E14001591,70042
+"Woking",E14001592,71737
+"Wokingham",E14001593,70235
+"Wolverhampton North East",E14001594,70449
+"Wolverhampton South East",E14001595,75685
+"Wolverhampton West",E14001596,75592
+"Worcester",E14001597,73928
+"Worsley and Eccles",E14001598,76915
+"Worthing West",E14001599,76293
+"Wycombe",E14001600,71769
+"Wyre Forest",E14001601,77015
+"Wythenshawe and Sale East",E14001602,76971
+"Yeovil",E14001603,76056
+"York Central",E14001604,74854
+"York Outer",E14001605,72720
+"Aberdeen South",586,76560
+"Aberdeen North",614,76895
+"Aberdeenshire North and Moray East",602,71485
+"Airdrie and Shotts",564,70420
+"Alloa and Grangemouth",570,72265
+"Angus and Perthshire Glens",578,77006
+"Arbroath and Broughty Ferry",562,76810
+"Argyll, Bute and South Lochaber",582,71707
+"Ayr, Carrick and Cumnock",589,72057
+"Berwickshire, Roxburgh and Selkirk",561,74687
+"Bathgate and Linlithgow",597,71650
+"Caithness, Sutherland and Easter Ross",603,75173
+"Central Ayrshire",590,69779
+"Coatbridge and Bellshill",610,72507
+"Cowdenbeath and Kirkcaldy",585,70329
+"Cumbernauld and Kirkintilloch",609,70579
+"Dumfries and Galloway",600,76863
+"Dumfriesshire, Clydesdale and Tweeddale",615,70738
+"Dundee Central",595,75298
+"Dunfermline and Dollar",563,70725
+"East Kilbride and Strathaven",565,75161
+"East Renfrewshire",566,72959
+"Edinburgh East and Musselburgh",567,75705
+"Edinburgh North and Leith",568,76770
+"Edinburgh South",599,70980
+"Edinburgh South West",569,73315
+"Edinburgh West",587,76723
+"Falkirk",596,75067
+"Glasgow East",604,69748
+"Glasgow North",606,73210
+"Glasgow North East",613,75236
+"Glasgow South",607,71344
+"Glasgow South West",571,70431
+"Glasgow West",608,72499
+"Glenrothes and Mid Fife",617,69734
+"Gordon and Buchan",584,70238
+"Hamilton and Clyde Valley",611,74577
+"Inverclyde and Renfrewshire West",572,70418
+"Inverness, Skye and West Ross-shire",598,76903
+"Kilmarnock and Loudoun",573,74801
+"Livingston",574,75454
+"Lothian East",588,71287
+"Mid Dunbartonshire",605,75099
+"Midlothian",575,71210
+"Moray West, Nairn and Strathspey",581,76237
+"Motherwell, Wishaw and Carluke",576,72318
+"Na h-Eileanan an Iar",592,21177
+"North Ayrshire and Arran",593,73588
+"North East Fife",616,70452
+"Orkney and Shetland",591,34824
+"Paisley and Renfrewshire North",601,69941
+"Paisley and Renfrewshire South",577,69813
+"Perth and Kinross-shire",594,76320
+"Rutherglen",612,71612
+"Stirling and Strathallan",579,77008
+"West Aberdeenshire and Kincardine",583,73634
+"West Dunbartonshire",580,70286
+"Aberafan Maesteg",W07000081,69817
+"Alyn and Deeside",W07000082,75695
+"Bangor Aberconwy",W07000083,70468
+"Blaenau Gwent and Rhymney",W07000084,71079
+"Brecon, Radnor and Cwm Tawe",W07000085,72113
+"Bridgend",W07000086,70770
+"Caerfyrddin",W07000087,72683
+"Caerphilly",W07000088,72458
+"Cardiff East",W07000089,72463
+"Cardiff North",W07000090,71143
+"Cardiff South and Penarth",W07000091,72269
+"Cardiff West",W07000092,73947
+"Ceredigion Preseli",W07000093,74063
+"Clwyd East",W07000094,76395
+"Clwyd North",W07000095,76150
+"Dwyfor Meirionnydd",W07000096,72533
+"Gower",W07000097,76801
+"Llanelli",W07000098,69895
+"Merthyr Tydfil and Aberdare",W07000099,74805
+"Mid and South Pembrokeshire",W07000100,76820
+"Monmouthshire",W07000101,72681
+"Montgomeryshire and Glyndwr",W07000102,74223
+"Neath and Swansea East",W07000103,74705
+"Newport East",W07000104,76159
+"Newport West and Islwyn",W07000105,76234
+"Pontypridd",W07000106,73743
+"Rhondda and Ogmore",W07000107,73557
+"Swansea West",W07000108,74612
+"Torfaen",W07000109,70591
+"Vale of Glamorgan",W07000110,70426
+"Wrexham",W07000111,70964
+"Ynys Môn",W07000112,52415
+"Belfast East",557,70076
+"Belfast North",547,71372
+"Belfast South and Mid Down",559,71978
+"Belfast West",558,71921
+"East Antrim",543,69936
+"East Londonderry",548,72213
+"Fermanagh and South Tyrone",553,74643
+"Foyle",550,69890
+"Lagan Valley",545,76332
+"Mid Ulster",552,70094
+"Newry and Armagh",560,74585
+"North Antrim",551,71165
+"North Down",555,70412
+"South Antrim",544,71646
+"South Down",554,71772
+"Strangford",556,70070
+"Upper Bann",546,76969
+"West Tyrone",549,70614
