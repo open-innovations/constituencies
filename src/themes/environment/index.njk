@@ -1,0 +1,16 @@
+---
+title: Environment
+theme: environment
+description: |
+  Presenting data by constituency for environmental data.
+---
+
+<p>{{ description }}</p>
+
+<ul>
+{% for page in search.pages("theme=environment", "order title") %}
+{% if page.data.title!=title and not page.data.draft %}
+	<li><a href="{{ page.data.url }}">{{ page.data.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
