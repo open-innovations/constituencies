@@ -1,0 +1,56 @@
+schema: '2.0'
+stages:
+  economy:
+    cmd: PYTHONPATH=. python pipelines/economy/economy.py
+    deps:
+    - path: pipelines/economy/economy.py
+      hash: md5
+      md5: d1500b7c52b8b503f51d843164511dec
+      size: 1579
+    - path: pipelines/util.py
+      hash: md5
+      md5: a655311e5871c40920fcaee80fc5fc53
+      size: 588
+    - path: raw-data/covid-grants-april-2022.xlsx
+      hash: md5
+      md5: 7bf865766527e3393bef14addd90367f
+      size: 105115
+    - path: raw-data/house-prices.xlsx
+      hash: md5
+      md5: a676375d47f5adec5ea65fd007e38a77
+      size: 9084108
+    - path: raw-data/unemployment.xlsx
+      hash: md5
+      md5: cd8caa9526f6e77a999453d322fa099d
+      size: 14608696
+    outs:
+    - path: src/_data/sources/economy/covid_grants_arg.csv
+      hash: md5
+      md5: 36c933dad8d4e353c083f31f9b9cf394
+      size: 31408
+      isexec: true
+    - path: src/_data/sources/economy/covid_grants_ohlg.csv
+      hash: md5
+      md5: 906fa4fb709f0663e562ca8290a9fa99
+      size: 28803
+      isexec: true
+    - path: src/_data/sources/economy/house_price_wage_ratio.csv
+      hash: md5
+      md5: fbc06f434a4a863770130dba2513be2e
+      size: 250520
+      isexec: true
+    - path: src/_data/sources/economy/house_prices.csv
+      hash: md5
+      md5: d7b3625cd22074e679ca74eba35a7a2a
+      size: 466619
+      isexec: true
+    - path: src/_data/sources/economy/unemployment_rate.csv
+      hash: md5
+      md5: d607f1affaf2bdc0a7f5f0efc36c6797
+      size: 2134107
+      isexec: true
+    - path: src/_data/sources/economy/wages.csv
+      hash: md5
+      md5: 4aef62b3813b5e31a4aee52034f0d0c4
+      size: 163890
+      isexec: true

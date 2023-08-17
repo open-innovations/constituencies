@@ -1,0 +1,23 @@
+stages:
+  economy:
+    cmd: PYTHONPATH=. python pipelines/economy/economy.py
+    wdir: ../..
+    deps:
+      - pipelines/economy/economy.py
+      - pipelines/util.py
+      - raw-data/covid-grants-april-2022.xlsx
+      - raw-data/house-prices.xlsx
+      - raw-data/unemployment.xlsx
+    outs:
+      - src/_data/sources/economy/covid_grants_arg.csv:
+          cache: false
+      - src/_data/sources/economy/covid_grants_ohlg.csv:
+          cache: false
+      - src/_data/sources/economy/wages.csv:
+          cache: false
+      - src/_data/sources/economy/house_prices.csv:
+          cache: false
+      - src/_data/sources/economy/house_price_wage_ratio.csv:
+          cache: false
+      - src/_data/sources/economy/unemployment_rate.csv:
+          cache: false
