@@ -1,0 +1,37 @@
+schema: '2.0'
+stages:
+  economy:
+    cmd: PYTHONPATH=. python pipelines/environment/environment.py
+    deps:
+    - path: pipelines/environment/environment.py
+      hash: md5
+      md5: 49fc602dc8956c6408318766913be300
+      size: 3960
+    - path: pipelines/util.py
+      hash: md5
+      md5: a655311e5871c40920fcaee80fc5fc53
+      size: 588
+    - path: raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage
+        companies.xlsx
+      hash: md5
+      md5: 9fd0b3ebb44686df00e1510468be9434
+      size: 2179272
+    - path: raw-data/spills-by-constituency.json
+      hash: md5
+      md5: 8684dd65bd630cdcf3a4e65c41b6c590
+      size: 229328
+    - path: src/_data/geojson/constituencies-2022.geojson
+      hash: md5
+      md5: 715a5f3e6a3f43c54fd0a527c7b03fff
+      size: 7462400
+    outs:
+    - path: src/_data/sources/environment/spills_by_constituency.csv
+      hash: md5
+      md5: 15c19b34ee6c9144627bb5e4e247a2aa
+      size: 100103
+      isexec: true
+    - path: src/_data/sources/environment/storm_overflows.csv
+      hash: md5
+      md5: 604fe863ca2c31efad97a6c332f8e259
+      size: 5639781
+      isexec: true

@@ -1,0 +1,15 @@
+stages:
+  economy:
+    cmd: PYTHONPATH=. python pipelines/environment/environment.py
+    wdir: ../..
+    deps:
+      - pipelines/environment/environment.py
+      - pipelines/util.py
+      - raw-data/spills-by-constituency.json
+      - src/_data/geojson/constituencies-2022.geojson
+      - raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx
+    outs:
+      - src/_data/sources/environment/spills_by_constituency.csv:
+          cache: false
+      - src/_data/sources/environment/storm_overflows.csv:
+          cache: false
