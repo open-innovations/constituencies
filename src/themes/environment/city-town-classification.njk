@@ -1,0 +1,52 @@
+---
+title: City & town classification (England, Scotland & Wales)
+theme: environment
+description: |
+  The House of Commons Library's classification according to the size of the settlements people live in.
+order: 30
+showcase: 6
+component: map.hex_cartogram
+config:
+  test: blah
+  width: 600
+  hexjson: hexjson.constituencies
+  data: sources.environment.city_town_classification
+  columns:
+    - name: "filterLabel"
+      template: "{{ constituency_code }}"
+  value: "classification"
+  matchKey: "constituency_code"
+  legend:
+    position: top right
+    items:
+    - colour: "Core City (London)"
+      label: "Core city"
+    - colour: "Other City"
+      label: "Other city"
+    - colour: "Large Town"
+      label: "Large town"
+    - colour: "Medium Town"
+      label: "Medium town"
+    - colour: "Small Town"
+      label: "Small town"
+    - colour: "Village or smaller"
+      label: "Village or smaller"
+  tools:
+    filter:
+      label: filterLabel
+  tooltip: "{{ constituency_name }}<br /><strong>{{ classification }}</strong>"
+  attribution: |
+    Data: <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-8322/">City and Town Classification of Constituencies</a> (House of Commons Library) / Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+---
+
+<p>In 2018 <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-8322/">the House of Commons Library developed a classification of constituency areas according to the size of the settlements</a> people live in. The classification is intended to assist in analysing data, and understanding differences, trends and inequalities across Great Britain. Each constituency and local authority is assigned to one of six categories, e.g. “Core City” or “Small Town”, which most closely matches its population distribution. This is intended to offer an alternative to rural/urban classifications in analysing variation.</p>
+
+{% comp 'oi.' + component, { "config": config } %}{% endcomp %}
+
+<h2>Notes</h2>
+
+<ul>
+<li>This classification isn’t intended to resolve long-standing disputes about which settlements deserve to be called ‘cities’, ‘towns’, or ‘villages’. In fact, it takes no account of the ceremonial definition of ‘city’, using the term only as a way to identify larger settlements. For instance, St Albans is identified as a ‘large town’ here because its population is 86,000 – even though it has city status. Luton, on the other hand, doesn’t have city status, but is classified here as an ‘Other City’ because its population is 225,000.</li>
+<li>The precise division between ‘large’, ‘medium’ and ‘small’ towns is, to a large extent, subjective. The distinctions used here aim to provide a useful distribution of settlements across six categories for the purposes of analysis at constituency and local authority level.</li>
+<li>The House of Commons Library only classified constituencies within Great Britain so Northern Ireland is left blank.</li>
+</ul>
