@@ -11,5 +11,9 @@ stages:
     outs:
       - src/_data/sources/environment/spills_by_constituency.csv:
           cache: false
-      - src/_data/sources/environment/storm_overflows.csv:
+      - src/_data/sources/environment/storm_overflows_by_constituency.csv:
+          cache: false
+      - src/_data/sources/environment/storm_overflows_spill_count.csv:
+          cache: false
+      - src/_data/sources/environment/storm_overflows_total_duration.csv:
           cache: false

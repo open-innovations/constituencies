@@ -85,7 +85,10 @@ def df_latlong2constituency(df, opts={}):
                         except:
                             print('contains() is invalid',point,feature['geometry']['bounds'])
                             print(feature['geometry']['polygon'])
-
+    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD']]
+    # remove non-numeric entries
+    df.replace(['#N/a', 'N/a', '-'], '', inplace=True)
+    df.to_csv('src/_data/sources/environment/storm_overflows_by_constituency.csv')
     return df
 
 def storm_overflows():
@@ -93,7 +96,19 @@ def storm_overflows():
     df = df_grid2latlong()
     # convert latlong to a constituency using shapely to check polygons
     df = df_latlong2constituency(df,{'key':'PCON22CD','geojson':'src/_data/geojson/constituencies-2022.geojson'})
-    df.to_csv('src/_data/sources/environment/storm_overflows.csv')
+    
+    # we select only necessary columns, groupby those columns and sum the counts
+    # reset_index() ensures we return a dataframe rather than a groupby object 
+    
+    df['Total Duration (hrs) all spills prior to processing through 12-24h count method'] = pd.to_numeric(df['Total Duration (hrs) all spills prior to processing through 12-24h count method'], errors='coerce')
+    total_duration = df.groupby('PCON22CD')['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
+    
+    df['Counted spills using 12-24h count method'] = pd.to_numeric(df['Counted spills using 12-24h count method'], errors='coerce')
+    total_spills = df.groupby('PCON22CD')['Counted spills using 12-24h count method'].sum().reset_index() 
+
+    total_spills.to_csv('src/_data/sources/environment/storm_overflows_spill_count.csv')
+    total_duration.round(1).to_csv('src/_data/sources/environment/storm_overflows_total_duration.csv')
+
     return 
 
 if __name__ == '__main__':
