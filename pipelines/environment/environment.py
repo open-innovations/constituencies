@@ -5,7 +5,9 @@ from shapely.geometry import shape, Point
 from shapely.validation import make_valid
 
 def spills():
-    pd.read_json('raw-data/spills-by-constituency.json').to_csv(os.path.join(ENVIRON_DATA_DIR, 'spills_by_constituency.csv'))
+    # this is what we are trying to reproduce
+    data = pd.read_json('raw-data/spills-by-constituency.json').to_csv(os.path.join(ENVIRON_DATA_DIR, 'spills_by_constituency.csv'))
+    return data
 
 def df_grid2latlong():
     xl = pd.ExcelFile('raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx')
@@ -30,12 +32,14 @@ def df_grid2latlong():
             print('No grid ref for', df.iloc[i]['Water Company Name'], df.iloc[i]['Site Name\n(WaSC operational)\n[optional]'])
         #print(i)
     df.columns = df.columns.str.replace('\n',' ')
-    #df.to_csv('src/_data/sources/environment/storm_overflows.csv')
     return df
 
 def df_latlong2constituency(df, opts={}):
     if not 'key' in opts:
-        opts['key'] = 'PCON21CD'
+        # default key
+        opts['key'] = 'PCON22CD'
+    if not 'name' in opts:
+        opts['name'] = 'PCON22NM'
     if not 'geojson' in opts:
         opts['geojson'] = 'src/_data/geojson/constituencies-2022.geojson'
 
@@ -81,11 +85,15 @@ def df_latlong2constituency(df, opts={}):
                             # so check if it is really within the polygon(s)
                             if feature['geometry']['polygon'].contains(point):
                                 df.at[i,opts['key']] = feature['properties'][opts['key']]
+                                df.at[i,opts['name']] = feature['properties'][opts['name']]
                                 continue
                         except:
                             print('contains() is invalid',point,feature['geometry']['bounds'])
                             print(feature['geometry']['polygon'])
-    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD']]
+        print(row)
+        break
+    df.to_csv('raw-data/storm_overflows_latlong.csv')
+    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD', 'PCON22NM']]
     # remove non-numeric entries
     df.replace(['#N/a', 'N/a', '-'], '', inplace=True)
     df.to_csv('src/_data/sources/environment/storm_overflows_by_constituency.csv')
@@ -101,16 +109,17 @@ def storm_overflows():
     # reset_index() ensures we return a dataframe rather than a groupby object 
     
     df['Total Duration (hrs) all spills prior to processing through 12-24h count method'] = pd.to_numeric(df['Total Duration (hrs) all spills prior to processing through 12-24h count method'], errors='coerce')
-    total_duration = df.groupby('PCON22CD')['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
+    total_duration = df.groupby(['PCON22CD', 'PCON22NM'])['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
     
     df['Counted spills using 12-24h count method'] = pd.to_numeric(df['Counted spills using 12-24h count method'], errors='coerce')
-    total_spills = df.groupby('PCON22CD')['Counted spills using 12-24h count method'].sum().reset_index() 
+    total_spills = df.groupby(['PCON22CD', 'PCON22NM'])['Counted spills using 12-24h count method'].sum().reset_index() 
 
     total_spills.to_csv('src/_data/sources/environment/storm_overflows_spill_count.csv')
     total_duration.round(1).to_csv('src/_data/sources/environment/storm_overflows_total_duration.csv')
 
-    return 
+    return total_spills
 
 if __name__ == '__main__':
     spills()
     storm_overflows()
+     
