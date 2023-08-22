@@ -5,8 +5,8 @@ stages:
     deps:
     - path: pipelines/economy/economy.py
       hash: md5
-      md5: e86ed3883cfde3c1763cd44d71a2d2ef
-      size: 1929
+      md5: 1e78457b5ecdcb83b26ac778697d8cb7
+      size: 1987
     - path: pipelines/util.py
       hash: md5
       md5: a655311e5871c40920fcaee80fc5fc53
@@ -41,8 +41,8 @@ stages:
       isexec: true
     - path: src/_data/sources/economy/house_prices.csv
       hash: md5
-      md5: d7b3625cd22074e679ca74eba35a7a2a
-      size: 466619
+      md5: 9841237cccb03dfc2b893cb0a324bf91
+      size: 458226
       isexec: true
     - path: src/_data/sources/economy/unemployment_rate.csv
       hash: md5

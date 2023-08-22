@@ -18,7 +18,9 @@ def wages(data, values):
     return
 
 def house_prices(data, values):
-    data_pivot(data, values).round(0).to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
+    data = data_pivot(data, values).round(0)
+    data.replace('-', '', inplace=True)
+    data.to_csv(os.path.join(ECON_DATA_DIR, 'house_prices.csv'))
     return
 
 def house_price_wage_ratio(data, values):
