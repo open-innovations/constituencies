@@ -5,8 +5,8 @@ stages:
     deps:
     - path: pipelines/environment/environment.py
       hash: md5
-      md5: 56abe84480a61cb5a8eed994c88716b9
-      size: 5536
+      md5: ee6f31ea3ce65d7b89efec042915dc1f
+      size: 5498
     - path: pipelines/util.py
       hash: md5
       md5: a655311e5871c40920fcaee80fc5fc53
@@ -30,18 +30,8 @@ stages:
       md5: 15c19b34ee6c9144627bb5e4e247a2aa
       size: 100103
       isexec: true
-    - path: src/_data/sources/environment/storm_overflows_by_constituency.csv
+    - path: src/_data/sources/environment/storm_overflows.csv
       hash: md5
-      md5: d7b5fcd1ad8152ecfbbb4d7452bc46af
-      size: 280658
-      isexec: true
-    - path: src/_data/sources/environment/storm_overflows_spill_count.csv
-      hash: md5
-      md5: f635452f55989def4ddca01a990c684e
-      size: 100
-      isexec: true
-    - path: src/_data/sources/environment/storm_overflows_total_duration.csv
-      hash: md5
-      md5: 0b9a2be743ce2fb7ab32dcafa1710a51
-      size: 139
+      md5: be2d964c9595da21a76a223cd4c2d048
+      size: 25214
       isexec: true

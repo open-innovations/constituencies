@@ -93,7 +93,7 @@ def df_latlong2constituency(df, opts={}):
     df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD', 'PCON22NM']]
     # remove non-numeric entries
     df.replace(['#N/a', 'N/a', '-'], '', inplace=True)
-    df.to_csv('src/_data/sources/environment/storm_overflows_by_constituency.csv')
+    #df.to_csv('src/_data/sources/environment/storm_overflows_by_constituency.csv')
     return df
 
 def storm_overflows():
@@ -111,10 +111,10 @@ def storm_overflows():
     df['Counted spills using 12-24h count method'] = pd.to_numeric(df['Counted spills using 12-24h count method'], errors='coerce')
     total_spills = df.groupby(['PCON22CD', 'PCON22NM'])['Counted spills using 12-24h count method'].sum().reset_index() 
 
-    total_spills.to_csv('src/_data/sources/environment/storm_overflows_spill_count.csv')
-    total_duration.round(1).to_csv('src/_data/sources/environment/storm_overflows_total_duration.csv')
-
-    return total_spills
+    total_spills#.to_csv('src/_data/sources/environment/storm_overflows_spill_count.csv')
+    total_duration.round(1)#.to_csv('src/_data/sources/environment/storm_overflows_total_duration.csv')
+    merged_df = total_spills.merge(total_duration, how='inner').to_csv('src/_data/sources/environment/storm_overflows.csv')
+    return merged_df
 
 if __name__ == '__main__':
     spills()
