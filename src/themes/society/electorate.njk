@@ -3,7 +3,6 @@ title: Electorate (UK)
 theme: society
 description: |
   Electorate by constituency (UK).
-component: map.hex_cartogram
 config:
   ref:
     width: 600
@@ -37,5 +36,6 @@ config:
 ---
 
 <p>Initial electorate values from the 2023 boundary reviews.</p>
-{% comp 'oi.' + component, { "config": config.ref } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config.ref } %}{% endcomp %}
+
 

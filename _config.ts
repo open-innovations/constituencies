@@ -6,7 +6,7 @@ import postcss from "lume/plugins/postcss.ts";
 import { walkSync } from 'std/fs/mod.ts';
 
 // Importing the OI Lume charts and utilities
-import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.4/mod.ts";
+import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.5/mod.ts";
 import autoDependency from "https://deno.land/x/oi_lume_utils@v0.3.0/processors/auto-dependency.ts";
 import csvLoader from "https://deno.land/x/oi_lume_utils@v0.3.0/loaders/csv-loader.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
@@ -14,7 +14,7 @@ import jsonLoader from "lume/core/loaders/json.ts";
 const site = lume({
   src: './src',
   // TODO Update this with the proper URL
-  location: new URL("https://hexcon.open-innovations.org/"),
+  location: new URL("https://constituencies.open-innovations.org/"),
 });
 
 // Register a series of extensions to be loaded by the OI CSV loader
@@ -44,6 +44,9 @@ const dataPath = '/data';
 remoteTree('src/_data/sources', dataPath);
 // Copy /data to live site
 site.copy(dataPath);
+site.filter("path_to_link",function(path){
+	return path.replace(/^sources/,dataPath).replace(/\./g,"\/")+".csv";
+});
 
 // Register an HTML processor
 // https://lume.land/docs/core/processors/
@@ -53,6 +56,17 @@ site.process([".html"], autoDependency);
 site.use(oiCharts({
 	assetPath: '/assets',
 	componentNamespace: 'oi',
+	colour: {
+		names: {
+			"Core City (London)": "#3e3e3e",
+			"Core City (outside London)": "#3e3e3e",
+			"Other City": "#b950b4",
+			"Large Town": "#c79329",
+			"Medium Town": "#3058be",
+			"Small Town": "#189657",
+			"Village or smaller": "#c1c1c1"
+		}
+	},
 	font: {
 		family: 'Poppins,CenturyGothicStd,"Century Gothic",Arial,sans-serif',
 		weight: 'normal',
