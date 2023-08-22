@@ -54,6 +54,8 @@ def df_latlong2constituency(df, opts={}):
         feature['geometry']['bounds'] = feature['geometry']['polygon'].bounds
 
     df[opts['key']] = ""
+    
+    df = df.reset_index()
 
     for i, row in df.iterrows():
         lat = row['lat']
@@ -80,18 +82,13 @@ def df_latlong2constituency(df, opts={}):
                 for feature in geo['features']:
                     b = feature['geometry']['bounds']
                     if lon >= b[0] and lon <= b[2] and lat >= b[1] and lat <= b[3]:
-                        try:
-                            # It has passed the initial bounding-box test
-                            # so check if it is really within the polygon(s)
-                            if feature['geometry']['polygon'].contains(point):
-                                df.at[i,opts['key']] = feature['properties'][opts['key']]
-                                df.at[i,opts['name']] = feature['properties'][opts['name']]
-                                continue
-                        except:
-                            print('contains() is invalid',point,feature['geometry']['bounds'])
-                            print(feature['geometry']['polygon'])
-        print(row)
-        break
+                        # It has passed the initial bounding-box test
+                        # so check if it is really within the polygon(s)
+                        if feature['geometry']['polygon'].contains(point):
+                            df.at[i,opts['key']] = feature['properties'][opts['key']]
+                            df.at[i,opts['name']] = feature['properties'][opts['name']]
+                            #print(point,'is within',feature['properties'][opts['name']])
+                            continue
     df.to_csv('raw-data/storm_overflows_latlong.csv')
     df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD', 'PCON22NM']]
     # remove non-numeric entries
