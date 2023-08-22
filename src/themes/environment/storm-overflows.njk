@@ -1,0 +1,79 @@
+---
+title: Storm overflows (England)
+theme: environment
+description: |
+  Constituency-level data on sewage overflows.
+config:
+  - width: 600
+    hexjson: hexjson.constituencies
+    data: sources.environment.storm_overflows
+    columns:
+      - name: "filterLabel"
+        template: "{{ n }} ({{ a }})"
+    value: "Counted spills using 12-24h count method"
+    scale: "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%"
+    min: 0
+    max: 5000
+    matchKey: "PCON22CD"
+    legend:
+      position: top right
+      items:
+        - value: 5000
+          label: "5,000+"
+        - value: 4000
+          label: "4,000"
+        - value: 3000
+          label: "3,000"
+        - value: 2000
+          label: "2,000"
+        - value: 1000
+          label: "1,000"
+        - value: 0
+          label: '0'
+    tools:
+      filter:
+        label: filterLabel
+    tooltip: "{{ n }}<br />Total spills: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
+    attribution: |
+      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)<br/>Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+  - width: 600
+    hexjson: hexjson.constituencies
+    data: sources.environment.storm_overflows
+    columns:
+      - name: "filterLabel"
+        template: "{{ n }} ({{ a }})"
+    value: "Total Duration (hrs) all spills prior to processing through 12-24h count method"
+    scale: "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%"
+    min: 0
+    max: 60000
+    matchKey: "PCON22CD"
+    legend:
+      position: top right
+      items:
+        - value: 60000
+          label: "60,000+"
+        - value: 40000
+          label: "40,000"
+        - value: 20000
+          label: "20,000"
+        - value: 0
+          label: '0'
+    tools:
+      filter:
+        label: filterLabel
+    tooltip: "{{ n }}<br />Total hours: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>"
+    attribution: |
+      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)<br/>Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+---
+
+<h2>Total spills</h2>
+{% comp 'oi.map.hex_cartogram', { "config": config[0] } %}{% endcomp %}
+
+<h2>Total duration (hours)</h2>
+{% comp 'oi.map.hex_cartogram', { "config": config[1] } %}{% endcomp %}
+
+<h2>Notes</h2>
+<p>Data are provided by Water and Sewerage Companies (WaSCs) to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations.</p>
+<p>We found the longitude/latitude (using the OS Grid Ref) for every storm overflow event included in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring dataset</a> (2022) and then found the corresponding Parliamentary constituency.</p>
+<p>The "Total spills" map shows the result of adding up the values in the <code>Total Duration (hrs) all spills prior to processing through 12-24h count method</code> column. The "Total hours" map does the equivalent for the <code>Counted spills using 12-24h count method</code> column.</p>
+<p>The totals are similar but not-quite-the-same-as those shown at <a href="https://top-of-the-poops.org/">Top of the Poops</a>. We haven't been able to determine why there are differences.</p>

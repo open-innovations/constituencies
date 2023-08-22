@@ -1,14 +1,13 @@
-md5: 6a83fd86178d283d81678ebc48fb89ad
+md5: a454048f4c48ad4e1fcd59d0265ae518
 frozen: true
 deps:
-- checksum: '"73afcf407b4d91:0"'
-  size: 14608696
+- checksum: '"9bfbf4832fd0d91:0"'
+  size: 14779912
   hash: md5
   path: 
     https://data.parliament.uk/resources/constituencystatistics/PowerBIData/Economy/Unemployment/unemployment.xlsx
 outs:
-- md5: cd8caa9526f6e77a999453d322fa099d
-  size: 14608696
-  isexec: true
+- md5: a262a4a975ddb153f51a155e6ec08c33
+  size: 12542255
   hash: md5
   path: unemployment.xlsx
