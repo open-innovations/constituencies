@@ -3,9 +3,6 @@ title: Covid grants (England)
 theme: economy
 description: |
   Data on the coronavirus (COVID-19) business grant schemes.
-order: 30
-showcase: 6
-component: map.hex_cartogram
 viz:
   - width: 600
     hexjson: hexjson.constituencies
@@ -73,9 +70,11 @@ viz:
 
 <h2>Omicron Hospitality and Leisure Grant (OHLG)</h2>
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic as of 31 March 2022. The values are the total amount of money that each parliamentary constituency in England has received from central government and distributed to SMEs.</p>
-{% comp 'oi.' + component, { "config": viz[0] } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": viz[0] } %}{% endcomp %}
+<a href="{{ viz[0].data | path_to_link }}">Download data as CSV</a>
 
 <h2>Additional Restrictions Grant (ARG)</h2>
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic as of 31 March 2022. The values are the total amount of money that each parliamentary constituency in England has received from central government and distributed to SMEs.</p>
-{% comp 'oi.' + component, { "config": viz[1] } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": viz[1] } %}{% endcomp %}
+<a href="{{ viz[1].data | path_to_link }}">Download data as CSV</a>
 

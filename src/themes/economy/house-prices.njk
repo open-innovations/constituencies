@@ -3,9 +3,6 @@ title: House prices (England & Wales)
 theme: economy
 description: |
   Constituency-level data on house prices.
-order: 30
-showcase: 6
-component: map.hex_cartogram
 viz:
   - width: 600
     hexjson: hexjson.constituencies
@@ -78,9 +75,9 @@ viz:
 
 <p>This page provides constituency-level data on house prices in England and Wales. The house price figures used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
 
-{% comp 'oi.' + component, { "config": viz[0] } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": viz[0] } %}{% endcomp %}
 <h3>House price to wages ratio</h3>
-{% comp 'oi.' + component, { "config": viz[1] } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": viz[1] } %}{% endcomp %}
 
 
 <h2>Notes</h2>

@@ -3,7 +3,6 @@ title: Road accidents (GB)
 theme: transport
 description: |
   Constituency-level data on road accidents in England, Scotland and Wales.
-component: map.hex_cartogram
 config:
   all:
     width: 600
@@ -78,10 +77,10 @@ config:
 <p>Road accidents reported to the police for England, Scotland and Wales.</p>
 
 <h2>All accidents</h2>
-{% comp 'oi.' + component, { "config": config.all } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config.all } %}{% endcomp %}
 
 <h2>Fatal or serious accidents</h2>
-{% comp 'oi.' + component, { "config": config.fatal } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config.fatal } %}{% endcomp %}
 
 <h2>Notes</h2>
 

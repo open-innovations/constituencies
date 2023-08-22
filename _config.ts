@@ -14,7 +14,7 @@ import jsonLoader from "lume/core/loaders/json.ts";
 const site = lume({
   src: './src',
   // TODO Update this with the proper URL
-  location: new URL("https://hexcon.open-innovations.org/"),
+  location: new URL("https://constituencies.open-innovations.org/"),
 });
 
 // Register a series of extensions to be loaded by the OI CSV loader
@@ -44,6 +44,9 @@ const dataPath = '/data';
 remoteTree('src/_data/sources', dataPath);
 // Copy /data to live site
 site.copy(dataPath);
+site.filter("path_to_link",function(path){
+	return path.replace(/^sources/,dataPath).replace(/\./g,"\/")+".csv";
+});
 
 // Register an HTML processor
 // https://lume.land/docs/core/processors/

@@ -3,7 +3,6 @@ title: Disability (England & Wales)
 theme: health
 description: |
   Disability as measured in the 2021 census at constituency-level (England & Wales).
-component: map.hex_cartogram
 config:
   ref:
     width: 600
@@ -40,7 +39,7 @@ config:
       Data: <a href="https://commonslibrary.parliament.uk/constituency-data-self-reported-health-2021-census/">Self-reported health, 2021 census</a> (House of Commons Library)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
 ---
 
-{% comp 'oi.' + component, { "config": config.ref } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config.ref } %}{% endcomp %}
 
 <h2>Notes</h2>
 

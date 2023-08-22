@@ -3,17 +3,13 @@ title: City & town classification (England, Scotland & Wales)
 theme: environment
 description: |
   The House of Commons Library's classification according to the size of the settlements people live in.
-order: 30
-showcase: 6
-component: map.hex_cartogram
 config:
-  test: blah
   width: 600
   hexjson: hexjson.constituencies
   data: sources.environment.city_town_classification
   columns:
     - name: "filterLabel"
-      template: "{{ constituency_code }}"
+      template: "{{ constituency_name }} ({{ a }})"
   value: "classification"
   matchKey: "constituency_code"
   legend:
@@ -41,7 +37,7 @@ config:
 
 <p>In 2018 <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-8322/">the House of Commons Library developed a classification of constituency areas according to the size of the settlements</a> people live in. The classification is intended to assist in analysing data, and understanding differences, trends and inequalities across Great Britain. Each constituency and local authority is assigned to one of six categories, e.g. “Core City” or “Small Town”, which most closely matches its population distribution. This is intended to offer an alternative to rural/urban classifications in analysing variation.</p>
 
-{% comp 'oi.' + component, { "config": config } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config } %}{% endcomp %}
 
 <h2>Notes</h2>
 

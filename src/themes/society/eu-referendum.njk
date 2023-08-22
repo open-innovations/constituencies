@@ -3,7 +3,6 @@ title: EU Referendum (England, Scotland & Wales)
 theme: society
 description: |
   Estimates of constituency-level voting for the 2016 EU Referendum (GB).
-component: map.hex_cartogram
 config:
   ref:
     width: 600
@@ -36,7 +35,7 @@ config:
 
 <p>Estimates of how each constituency voted in the 2016 EU Referendum (Great Britain).</p>
 
-{% comp 'oi.' + component, { "config": config.ref } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config.ref } %}{% endcomp %}
 
 <h2>Notes</h2>
 

@@ -3,9 +3,6 @@ title: Unemployment
 theme: economy
 description: |
   Constituency-level data on people claiming unemployment benefits.
-order: 30
-showcase: 6
-component: map.hex_cartogram
 config:
   width: 600
   hexjson: hexjson.constituencies
@@ -45,7 +42,7 @@ config:
 ---
 
 
-{% comp 'oi.' + component, { "config": config } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config } %}{% endcomp %}
 
 <h2>Notes</h2>
 

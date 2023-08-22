@@ -3,9 +3,6 @@ title: Wages (England, Scotland & Wales)
 theme: economy
 description: |
   Constituency-level data on wages.
-order: 30
-showcase: 6
-component: map.hex_cartogram
 config:
   width: 600
   hexjson: hexjson.constituencies
@@ -44,7 +41,7 @@ config:
 
 <p>This page provides constituency-level data on wages in England, Scotland, and Wales as of December 2022.</p>
 
-{% comp 'oi.' + component, { "config": config } %}{% endcomp %}
+{% comp 'oi.map.hex_cartogram', { "config": config } %}{% endcomp %}
 
 <h2>Notes</h2>
 
