@@ -2,6 +2,7 @@ from pipelines.util import *
 
 def covid_grants():
     ohlg = read_data('raw-data/covid-grants-april-2022.xlsx', 'OHLG')
+    ohlg.replace('-', '', inplace=True)
     ohlg.round(0).to_csv(os.path.join(ECON_DATA_DIR, 'covid_grants_ohlg.csv'))
 
     arg = read_data('raw-data/covid-grants-april-2022.xlsx','ARG')

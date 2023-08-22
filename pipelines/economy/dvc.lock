@@ -5,8 +5,8 @@ stages:
     deps:
     - path: pipelines/economy/economy.py
       hash: md5
-      md5: f8af40e9b3cc426623a404cbb21d48bb
-      size: 1888
+      md5: e86ed3883cfde3c1763cd44d71a2d2ef
+      size: 1929
     - path: pipelines/util.py
       hash: md5
       md5: a655311e5871c40920fcaee80fc5fc53
@@ -31,8 +31,8 @@ stages:
       isexec: true
     - path: src/_data/sources/economy/covid_grants_ohlg.csv
       hash: md5
-      md5: 906fa4fb709f0663e562ca8290a9fa99
-      size: 28803
+      md5: 57f9fe58ebdd4bac887872625b6b4f82
+      size: 28786
       isexec: true
     - path: src/_data/sources/economy/house_price_wage_ratio.csv
       hash: md5

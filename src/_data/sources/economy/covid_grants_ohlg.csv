@@ -2,7 +2,7 @@
 0,E14000530,Aldershot,South East,512030,150
 1,E14000531,Aldridge-Brownhills,West Midlands,288019,89
 2,E14000532,Altrincham and Sale West,North West,664030,182
-3,E14000533,Amber Valley,East Midlands,-,-
+3,E14000533,Amber Valley,East Midlands,,
 4,E14000534,Arundel and South Downs,South East,894820,250
 5,E14000535,Ashfield,East Midlands,292691,95
 6,E14000536,Ashford,South East,1224072,357
@@ -21,7 +21,7 @@
 19,E14000549,Battersea,London,1208682,275
 20,E14000550,Beaconsfield,South East,841886.78,201
 21,E14000551,Beckenham,London,454016,123
-22,E14000552,Bedford,East of England,-,0
+22,E14000552,Bedford,East of England,,0
 23,E14000553,Bermondsey and Old Southwark,London,2158703,481
 24,E14000554,Berwick-upon-Tweed,North East,3090751,1103
 25,E14000555,Bethnal Green and Bow,London,2284716,558
@@ -59,7 +59,7 @@
 57,E14000587,Bradford East,Yorkshire and The Humber,552041,174
 58,E14000588,Bradford South,Yorkshire and The Humber,466703,147
 59,E14000589,Bradford West,Yorkshire and The Humber,1286752,392
-60,E14000590,Braintree,East of England,-,-
+60,E14000590,Braintree,East of England,,
 61,E14000591,Brent Central,London,218007,58
 62,E14000592,Brent North,London,172004,45
 63,E14000593,Brentford and Isleworth,London,1166696,286
@@ -177,7 +177,7 @@
 175,E14000705,Forest of Dean,South West,986296,534
 176,E14000706,Fylde,North West,847127.56,259
 177,E14000707,Gainsborough,East Midlands,817409,276
-178,E14000708,Garston and Halewood,North West,-,-
+178,E14000708,Garston and Halewood,North West,,
 179,E14000709,Gateshead,North East,479362,142
 180,E14000710,Gedling,East Midlands,396689,116
 181,E14000711,Gillingham and Rainham,South East,356022,106
@@ -244,7 +244,7 @@
 242,E14000772,Kingston upon Hull North,Yorkshire and The Humber,388689,112
 243,E14000773,Kingston upon Hull West and Hessle,Yorkshire and The Humber,1018727,297
 244,E14000774,Kingswood,South West,313346,86
-245,E14000775,Knowsley,North West,-,-
+245,E14000775,Knowsley,North West,,
 246,E14000776,Lancaster and Fleetwood,North West,816717,244
 247,E14000777,Leeds Central,Yorkshire and The Humber,2651417,655
 248,E14000778,Leeds East,Yorkshire and The Humber,358021,104
@@ -262,10 +262,10 @@
 260,E14000790,Leyton and Wanstead,London,450681,123
 261,E14000791,Lichfield,West Midlands,597360,166
 262,E14000792,Lincoln,East Midlands,943385,265
-263,E14000793,"Liverpool, Riverside",North West,-,-
-264,E14000794,"Liverpool, Walton",North West,-,0
-265,E14000795,"Liverpool, Wavertree",North West,-,-
-266,E14000796,"Liverpool, West Derby",North West,-,0
+263,E14000793,"Liverpool, Riverside",North West,,
+264,E14000794,"Liverpool, Walton",North West,,0
+265,E14000795,"Liverpool, Wavertree",North West,,
+266,E14000796,"Liverpool, West Derby",North West,,0
 267,E14000797,Loughborough,East Midlands,540142,161
 268,E14000798,Louth and Horncastle,East Midlands,2061529,700
 269,E14000799,Ludlow,West Midlands,1440894,466
@@ -339,7 +339,7 @@
 337,E14000867,Nottingham South,East Midlands,1072040,278
 338,E14000868,Nuneaton,West Midlands,28001,8
 339,E14000869,Old Bexley and Sidcup,London,328020,99
-340,E14000870,Oldham East and Saddleworth,North West,-,-
+340,E14000870,Oldham East and Saddleworth,North West,,
 341,E14000871,Oldham West and Royton,North West,24001,7
 342,E14000872,Orpington,London,442681,119
 343,E14000873,Oxford East,South East,1238713.9,306
