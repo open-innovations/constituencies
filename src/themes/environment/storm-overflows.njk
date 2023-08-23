@@ -35,7 +35,7 @@ config:
         label: filterLabel
     tooltip: "{{ n }}<br />Total spills: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)<br/>Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
   - width: 600
     hexjson: hexjson.constituencies
     data: sources.environment.storm_overflows
@@ -63,14 +63,22 @@ config:
         label: filterLabel
     tooltip: "{{ n }}<br />Total hours: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)<br/>Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
 ---
 
 <h2>Total spills</h2>
-{% comp 'oi.map.hex_cartogram', { "config": config[0] } %}{% endcomp %}
+
+{% comp 'hexmap', {
+	"config": config[0],
+	"download": {"text": "EDM totals by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
 
 <h2>Total duration (hours)</h2>
-{% comp 'oi.map.hex_cartogram', { "config": config[1] } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": config[1],
+	"download": {"text": "EDM totals by constituency", "type": "CSV"}
+} %}{% endcomp %}
 
 <h2>Notes</h2>
 <p>Data are provided by Water and Sewerage Companies (WaSCs) to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations.</p>

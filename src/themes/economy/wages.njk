@@ -35,13 +35,16 @@ config:
       label: filterLabel
   tooltip: "Median gross annual pay ({{ _value }})<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
   attribution: |
-    Data: <a href="https://www.nomisweb.co.uk/articles/295.aspx">The Annual Survey of Hours and Earnings</a> &copy; ONS Crown Copyright (from Nomis on 15 August 2023)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+    Data: <a href="https://www.nomisweb.co.uk/articles/295.aspx">The Annual Survey of Hours and Earnings</a> &copy; ONS Crown Copyright (from Nomis on 15 August 2023)
 ---
 
 
 <p>This page provides constituency-level data on wages in England, Scotland, and Wales as of December 2022.</p>
 
-{% comp 'oi.map.hex_cartogram', { "config": config } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": config,
+	"download": {"text": "Wages by constituency", "type": "CSV"}
+} %}{% endcomp %}
 
 <h2>Notes</h2>
 

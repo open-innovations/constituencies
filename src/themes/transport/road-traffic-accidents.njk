@@ -39,7 +39,7 @@ config:
         width: 500px
     tooltip: "All road accidents ({{ _value }})<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://roadtraffic.dft.gov.uk/custom-downloads/road-accidents/reports/fea81bec-6ebb-43aa-9fca-5578791c9ccc">Stats19 Road accidents and safety statistics</a> (DfT)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://roadtraffic.dft.gov.uk/custom-downloads/road-accidents/reports/fea81bec-6ebb-43aa-9fca-5578791c9ccc">Stats19 Road accidents and safety statistics</a> (DfT)
   fatal:
     width: 600
     hexjson: hexjson.constituencies
@@ -71,16 +71,23 @@ config:
         width: 500px
     tooltip: "All road accidents ({{ _value }})<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://roadtraffic.dft.gov.uk/custom-downloads/road-accidents/reports/fea81bec-6ebb-43aa-9fca-5578791c9ccc">Stats19 Road accidents and safety statistics</a> (DfT)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://roadtraffic.dft.gov.uk/custom-downloads/road-accidents/reports/fea81bec-6ebb-43aa-9fca-5578791c9ccc">Stats19 Road accidents and safety statistics</a> (DfT)
 ---
 
 <p>Road accidents reported to the police for England, Scotland and Wales.</p>
 
 <h2>All accidents</h2>
-{% comp 'oi.map.hex_cartogram', { "config": config.all } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": config.all,
+	"download": {"text": "Stats19 all accidents by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
 
 <h2>Fatal or serious accidents</h2>
-{% comp 'oi.map.hex_cartogram', { "config": config.fatal } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": config.fatal,
+	"download": {"text": "Stats19 fatal or serious by constituency", "type": "CSV"}
+} %}{% endcomp %}
 
 <h2>Notes</h2>
 

@@ -5,6 +5,7 @@ description: |
   Constituency-level data on house prices.
 viz:
   - width: 600
+    test: true
     hexjson: hexjson.constituencies
     data: sources.economy.house_prices
     columns:
@@ -38,7 +39,7 @@ viz:
         width: 500px
     tooltip: "Median House Price ({{ _value }})<br />{{ ConstituencyName }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a><br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a>
   - width: 600
     hexjson: hexjson.constituencies
     data: sources.economy.house_price_wage_ratio
@@ -69,15 +70,22 @@ viz:
         width: 500px
     tooltip: "House price to wages ratio ({{ _value }})<br />{{ ConstituencyName }}: &times;<strong>{{ {{ _value }} | toFixed(2) }}</strong>"
     attribution: |
-      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a><br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a>
 ---
 
 
 <p>This page provides constituency-level data on house prices in England and Wales. The house price figures used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
 
-{% comp 'oi.map.hex_cartogram', { "config": viz[0] } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": viz[0],
+	"download": {"text": "House prices by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
 <h3>House price to wages ratio</h3>
-{% comp 'oi.map.hex_cartogram', { "config": viz[1] } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": viz[1],
+	"download": {"text": "House price wage ratio by constituency", "type": "CSV"}
+} %}{% endcomp %}
 
 
 <h2>Notes</h2>

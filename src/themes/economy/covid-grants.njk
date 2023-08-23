@@ -35,7 +35,7 @@ viz:
         label: filterLabel
     tooltip: "Omicron Hospitality and Leisure Grant<br />{{ Parlimentary Constituency Name }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)
   - width: 600
     hexjson: hexjson.constituencies
     data: sources.economy.covid_grants_arg
@@ -63,18 +63,22 @@ viz:
         label: filterLabel
     tooltip: "Additional Restrictions Grant<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)
 ---
 
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic in England as of 31 March 2022.</p>
 
 <h2>Omicron Hospitality and Leisure Grant (OHLG)</h2>
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic as of 31 March 2022. The values are the total amount of money that each parliamentary constituency in England has received from central government and distributed to SMEs.</p>
-{% comp 'oi.map.hex_cartogram', { "config": viz[0] } %}{% endcomp %}
-<a href="{{ viz[0].data | path_to_link }}">Download data as CSV</a>
+{% comp 'hexmap', {
+	"config": viz[0],
+	"download": {"text": "Covid grants OHLG", "type": "CSV"}
+} %}{% endcomp %}
 
 <h2>Additional Restrictions Grant (ARG)</h2>
 <p>Data on the number and value of grants to small and medium sized businesses (SMEs) in response to the coronavirus pandemic as of 31 March 2022. The values are the total amount of money that each parliamentary constituency in England has received from central government and distributed to SMEs.</p>
-{% comp 'oi.map.hex_cartogram', { "config": viz[1] } %}{% endcomp %}
-<a href="{{ viz[1].data | path_to_link }}">Download data as CSV</a>
+{% comp 'hexmap', {
+	"config": viz[1],
+	"download": {"text": "Covid grants ARG", "type": "CSV"}
+} %}{% endcomp %}
 

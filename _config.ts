@@ -6,7 +6,7 @@ import postcss from "lume/plugins/postcss.ts";
 import { walkSync } from 'std/fs/mod.ts';
 
 // Importing the OI Lume charts and utilities
-import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.5/mod.ts";
+import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.6/mod.ts";
 import autoDependency from "https://deno.land/x/oi_lume_utils@v0.3.0/processors/auto-dependency.ts";
 import csvLoader from "https://deno.land/x/oi_lume_utils@v0.3.0/loaders/csv-loader.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
@@ -44,9 +44,6 @@ const dataPath = '/data';
 remoteTree('src/_data/sources', dataPath);
 // Copy /data to live site
 site.copy(dataPath);
-site.filter("path_to_link",function(path){
-	return path.replace(/^sources/,dataPath).replace(/\./g,"\/")+".csv";
-});
 
 // Register an HTML processor
 // https://lume.land/docs/core/processors/

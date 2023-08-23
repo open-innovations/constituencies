@@ -32,10 +32,13 @@ config:
         label: filterLabel
     tooltip: "Electorate<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
-      Data: <a href="https://boundarycommissionforengland.independent.gov.uk/2023-review/the-2023-review-of-parliamentary-constituency-boundaries-in-england-volume-two-constituency-names-designations-and-composition/">Boundary Commission for England</a> / <a href="https://www.bcomm-scotland.independent.gov.uk/sites/default/files/2023_review_final/bcs_2023_final_recs_electorate_ward_area_desig.pdf">Boundary Commission for Scotland</a> / <a href="https://bcomm-wales.gov.uk/sites/bcomm/files/review/2023%20Final%20Recs_Electdatabyconsts_E%20-%20Done.xls">Boundary Commission for Wales</a> / <a href="https://www.boundarycommission.org.uk/files/boundarycommission/2023-07/Final%20Recommendations%20Report%20of%20the%202023%20Review%20of%20Parliamentary%20Constituencies.PDF">Boundary Commission for Northern Ireland</a><br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2023 constituencies</a> (Open Innovations and contributors)
+      Data: <a href="https://boundarycommissionforengland.independent.gov.uk/2023-review/the-2023-review-of-parliamentary-constituency-boundaries-in-england-volume-two-constituency-names-designations-and-composition/">Boundary Commission for England</a> / <a href="https://www.bcomm-scotland.independent.gov.uk/sites/default/files/2023_review_final/bcs_2023_final_recs_electorate_ward_area_desig.pdf">Boundary Commission for Scotland</a> / <a href="https://bcomm-wales.gov.uk/sites/bcomm/files/review/2023%20Final%20Recs_Electdatabyconsts_E%20-%20Done.xls">Boundary Commission for Wales</a> / <a href="https://www.boundarycommission.org.uk/files/boundarycommission/2023-07/Final%20Recommendations%20Report%20of%20the%202023%20Review%20of%20Parliamentary%20Constituencies.PDF">Boundary Commission for Northern Ireland</a>
 ---
 
 <p>Initial electorate values from the 2023 boundary reviews.</p>
-{% comp 'oi.map.hex_cartogram', { "config": config.ref } %}{% endcomp %}
+{% comp 'hexmap', {
+	"config": config.ref,
+	"download": {"text": "Electorate by constituency", "type": "CSV"}
+} %}{% endcomp %}
 
 
