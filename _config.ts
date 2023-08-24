@@ -6,7 +6,7 @@ import postcss from "lume/plugins/postcss.ts";
 import { walkSync } from 'std/fs/mod.ts';
 
 // Importing the OI Lume charts and utilities
-import oiCharts from "https://deno.land/x/oi_lume_viz@v0.11.6/mod.ts";
+import oiCharts from "https://deno.land/x/oi_lume_viz@v0.12.0/mod.ts";
 import autoDependency from "https://deno.land/x/oi_lume_utils@v0.3.0/processors/auto-dependency.ts";
 import csvLoader from "https://deno.land/x/oi_lume_utils@v0.3.0/loaders/csv-loader.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
@@ -53,17 +53,6 @@ site.process([".html"], autoDependency);
 site.use(oiCharts({
 	assetPath: '/assets',
 	componentNamespace: 'oi',
-	colour: {
-		names: {
-			"Core City (London)": "#3e3e3e",
-			"Core City (outside London)": "#3e3e3e",
-			"Other City": "#b950b4",
-			"Large Town": "#c79329",
-			"Medium Town": "#3058be",
-			"Small Town": "#189657",
-			"Village or smaller": "#c1c1c1"
-		}
-	},
 	font: {
 		family: 'Poppins,CenturyGothicStd,"Century Gothic",Arial,sans-serif',
 		weight: 'normal',

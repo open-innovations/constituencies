@@ -1,0 +1,651 @@
+const_id,const_name,2019,2019_party,2019_MP,2019_electorate,2019_turnout,2017,2017_turnout,2015
+E14000530,Aldershot,Con,Conservative and Unionist Party,Leo Docherty,72617,66,Con,64.4,Con
+E14000531,Aldridge-Brownhills,Con,Conservative and Unionist Party,Wendy Morton,60138,65.4,Con,66.8,Con
+E14000532,Altrincham and Sale West,Con,Conservative and Unionist Party,Graham Brady,73146,74.9,Con,72.3,Con
+E14000533,Amber Valley,Con,Conservative and Unionist Party,Nigel Mills,69976,65.1,Con,67.5,Con
+E14000534,Arundel and South Downs,Con,Conservative and Unionist Party,Andrew Griffith,,,Con,76,Con
+E14000535,Ashfield,Con,Conservative and Unionist Party,Lee Anderson,78204,62.6,Lab,64.1,Lab
+E14000536,Ashford,Con,Conservative and Unionist Party,Damian Green,89550,67.1,Con,68.7,Con
+E14000537,Ashton-under-Lyne,Lab,Labour Party,Angela Rayner,67978,56.8,Lab,58.9,Lab
+E14000538,Aylesbury,Con,Conservative and Unionist Party,Rob Butler,,,Con,71.4,Con
+E14000539,Banbury,Con,Conservative and Unionist Party,Victoria Prentis,90113,69.8,Con,73.6,Con
+E14000540,Barking,Lab,Labour Party,Margaret Hodge,77946,57.1,Lab,62,Lab
+E14000541,Barnsley Central,Lab,Labour Party,Dan Jarvis,65277,56.5,Lab,61,Lab
+E14000542,Barnsley East,Lab,Labour Party,Stephanie Peacock,69504,54.8,Lab,59,Lab
+E14000543,Barrow and Furness,Con,Conservative and Unionist Party,Simon Fell,,,Lab,68.6,Lab
+E14000544,Basildon and Billericay,Con,Conservative and Unionist Party,John Baron,69906,63.1,Con,65.1,Con
+E14000545,Basingstoke,Con,Conservative and Unionist Party,Maria Miller,82926,66,Con,68.5,Con
+E14000546,Bassetlaw,Con,Conservative and Unionist Party,Brendan Clarke-Smith,80035,63.5,Lab,66.7,Lab
+E14000547,Bath,LD,Liberal Democrats,Wera Hobhouse,67752,77,LD,74.4,Con
+E14000548,Batley and Spen,Lab,Labour and Co-operative Party,Tracy Brabin,79558,66.5,Lab,67.2,Lab
+E14000549,Battersea,Lab,Labour Party,Marsha de Cordova,79309,75.6,Lab,71.1,Con
+E14000550,Beaconsfield,Con,Conservative and Unionist Party,Joy Morrissey,77720,74.5,Con,72.4,Con
+E14000551,Beckenham,Con,Conservative and Unionist Party,Bob Stewart,68671,73.6,Con,76.3,Con
+E14000552,Bedford,Lab,Labour Party,Mohammad Yasin,71579,66.1,Lab,67.7,Con
+E14000553,Bermondsey and Old Southwark,Lab,Labour Party,Neil Coyle,,,Lab,67.2,Lab
+E14000554,Berwick-upon-Tweed,Con,Conservative and Unionist Party,Anne-Marie Trevelyan,,,Con,71.9,Con
+E14000555,Bethnal Green and Bow,Lab,Labour Party,Rushanara Ali,88169,68.7,Lab,69.8,Lab
+E14000556,Beverley and Holderness,Con,Conservative and Unionist Party,Graham Stuart,,,Con,69.2,Con
+E14000557,Bexhill and Battle,Con,Conservative and Unionist Party,Huw Merriman,,,Con,73.2,Con
+E14000558,Bexleyheath and Crayford,Con,Conservative and Unionist Party,David Evennett,65466,66.1,Con,69.3,Con
+E14000559,Birkenhead,Lab,Labour Party,Mick Whitley,63762,66.4,Lab,67.9,Lab
+E14000560,"Birmingham, Edgbaston",Lab,Labour and Co-operative Party,Preet Kaur Gill,68828,61.5,Lab,64.2,Lab
+E14000561,"Birmingham, Erdington",Lab,Labour Party,Jack Dromey,66148,53.3,Lab,57.4,Lab
+E14000562,"Birmingham, Hall Green",Lab,Labour Party,Tahir Ali,80283,65.9,Lab,69.6,Lab
+E14000563,"Birmingham, Hodge Hill",Lab,Labour Party,Liam Byrne,78295,57.5,Lab,61.5,Lab
+E14000564,"Birmingham, Ladywood",Lab,Labour Party,Shabana Mahmood,74912,56.2,Lab,59.2,Lab
+E14000565,"Birmingham, Northfield",Con,Conservative and Unionist Party,Gary Sambrook,73694,58.5,Lab,61.5,Lab
+E14000566,"Birmingham, Perry Barr",Lab,Labour Party,Khalid Mahmood,72006,58.5,Lab,63.3,Lab
+E14000567,"Birmingham, Selly Oak",Lab,Labour Party,Steve McCabe,74926,66,Lab,66.1,Lab
+E14000568,"Birmingham, Yardley",Lab,Labour Party,Jess Phillips,74704,57.1,Lab,61.5,Lab
+E14000569,Bishop Auckland,Con,Conservative and Unionist Party,Dehenna Davison,68170,65.7,Lab,64.1,Lab
+E14000570,Blackburn,Lab,Labour Party,Kate Hollern,71228,62.8,Lab,67.5,Lab
+E14000571,Blackley and Broughton,Lab,Labour Party,Graham Stringer,73372,52.6,Lab,56.1,Lab
+E14000572,Blackpool North and Cleveleys,Con,Conservative and Unionist Party,Paul Maynard,,,Con,64.2,Con
+E14000573,Blackpool South,Con,Conservative and Unionist Party,Scott Lloyd Benton,,,Lab,59.9,Lab
+E14000574,Blaydon,Lab,Labour Party,Liz Twist,67853,67.3,Lab,70.3,Lab
+E14000575,Blyth Valley,Con,Conservative and Unionist Party,Ian Levy,,,Lab,67.1,Lab
+E14000576,Bognor Regis and Littlehampton,Con,Conservative and Unionist Party,Nick Gibb,77488,66.1,Con,67.9,Con
+E14000577,Bolsover,Con,Conservative and Unionist Party,Mark Fletcher,75157,61.1,Lab,63.5,Lab
+E14000578,Bolton North East,Con,Conservative and Unionist Party,Mark Logan,67564,64.5,Lab,67.3,Lab
+E14000579,Bolton South East,Lab,Labour Party,Yasmin Qureshi,69163,58.7,Lab,61.6,Lab
+E14000580,Bolton West,Con,Conservative and Unionist Party,Chris Green,73191,67.4,Con,70.2,Con
+E14000581,Bootle,Lab,Labour Party,Peter Dowd,74832,65.7,Lab,69.2,Lab
+E14000582,Boston and Skegness,Con,Conservative and Unionist Party,Matt Warman,,,Con,62.8,Con
+E14000583,Bosworth,Con,Conservative and Unionist Party,Luke Evans,81537,69.2,Con,68.9,Con
+E14000584,Bournemouth East,Con,Conservative and Unionist Party,Tobias Ellwood,74127,66.5,Con,65.3,Con
+E14000585,Bournemouth West,Con,Conservative and Unionist Party,Conor Burns,74211,62,Con,61,Con
+E14000586,Bracknell,Con,Conservative and Unionist Party,James Sunderland,,,Con,70.8,Con
+E14000587,Bradford East,Lab,Labour Party,Imran Hussain,73206,60.4,Lab,64.9,Lab
+E14000588,Bradford South,Lab,Labour Party,Judith Cummins,69046,57.6,Lab,60.7,Lab
+E14000589,Bradford West,Lab,Labour Party,Naz Shah,70694,62.6,Lab,67.7,Lab
+E14000590,Braintree,Con,Conservative and Unionist Party,James Cleverly,75208,67.1,Con,69.6,Con
+E14000591,Brent Central,Lab,Labour Party,Dawn Butler,84204,58.3,Lab,65.2,Lab
+E14000592,Brent North,Lab,Labour Party,Barry Gardiner,83772,61.9,Lab,68.6,Lab
+E14000593,Brentford and Isleworth,Lab,Labour Party,Ruth Cadbury,,,Lab,72.5,Lab
+E14000594,Brentwood and Ongar,Con,Conservative and Unionist Party,Alex Burghart,,,Con,70.6,Con
+E14000595,Bridgwater and West Somerset,Con,Conservative and Unionist Party,Ian Liddell-Grainger,,,Con,65.4,Con
+E14000596,Brigg and Goole,Con,Conservative and Unionist Party,Andrew Percy,65939,65.8,Con,68.3,Con
+E14000597,"Brighton, Kemptown",Lab,Labour and Co-operative Party,Lloyd Russell-Moyle,69833,69.5,Lab,72.7,Con
+E14000598,"Brighton, Pavilion",Green,Green Party,Caroline Lucas,79057,73.4,Green,76.6,Green
+E14000599,Bristol East,Lab,Labour Party,Kerry McCarthy,73867,70.6,Lab,70.3,Lab
+E14000600,Bristol North West,Lab,Labour Party,Darren Jones,76273,73.3,Lab,71.9,Con
+E14000601,Bristol South,Lab,Labour Party,Karin Smyth,84079,65.6,Lab,65.6,Lab
+E14000602,Bristol West,Lab,Labour Party,Thangam Debbonaire,99253,76.1,Lab,77.2,Lab
+E14000603,Broadland,Con,Conservative and Unionist Party,Jerome Mayhew,78151,72.9,Con,72.5,Con
+E14000604,Bromley and Chislehurst,Con,Conservative and Unionist Party,Bob Neill,66711,68.3,Con,71.8,Con
+E14000605,Bromsgrove,Con,Conservative and Unionist Party,Sajid Javid,,,Con,73.7,Con
+E14000606,Broxbourne,Con,Conservative and Unionist Party,Charles Walker,,,Con,64.7,Con
+E14000607,Broxtowe,Con,Conservative and Unionist Party,Darren George Henry,73052,75.7,Con,75.2,Con
+E14000608,Buckingham,Con,Conservative and Unionist Party,Greg Smith,,,Spk,68.6,Spk
+E14000609,Burnley,Con,Conservative and Unionist Party,Antony Higginbotham,64343,60.6,Lab,62.4,Lab
+E14000610,Burton,Con,Conservative and Unionist Party,Kate Griffiths,,,Con,67.7,Con
+E14000611,Bury North,Con,Conservative and Unionist Party,James Daly,68802,68.1,Lab,71.1,Con
+E14000612,Bury South,Con,Conservative and Unionist Party,Christian Wakeford,75152,66.9,Lab,69.3,Lab
+E14000613,Bury St Edmunds,Con,Conservative and Unionist Party,Jo Churchill,,,Con,72.4,Con
+E14000614,Calder Valley,Con,Conservative and Unionist Party,Craig Whittaker,79287,72.9,Con,73.6,Con
+E14000615,Camberwell and Peckham,Lab,Labour Party,Harriet Harman,,,Lab,67.3,Lab
+E14000616,Camborne and Redruth,Con,Conservative and Unionist Party,George Eustice,70250,71.7,Con,71,Con
+E14000617,Cambridge,Lab,Labour Party,Daniel Zeichner,79951,67.2,Lab,71.4,Lab
+E14000618,Cannock Chase,Con,Conservative and Unionist Party,Amanda Milling,,,Con,64.3,Con
+E14000619,Canterbury,Lab,Labour Party,Rosie Duffield,80203,75,Lab,72.9,Con
+E14000620,Carlisle,Con,Conservative and Unionist Party,John Stevenson,,,Con,69.3,Con
+E14000621,Carshalton and Wallington,Con,Conservative and Unionist Party,Elliot Colburn,72926,67.3,LD,71.8,LD
+E14000622,Castle Point,Con,Conservative and Unionist Party,Rebecca Harris,,,Con,64.5,Con
+E14000623,Central Devon,Con,Conservative and Unionist Party,Mel Stride,82665,70.2,Con,77.9,Con
+E14000624,Central Suffolk and North Ipswich,Con,Conservative and Unionist Party,Daniel Poulter,,,Con,72.5,Con
+E14000625,Charnwood,Con,Conservative and Unionist Party,Edward Argar,,,Con,70.8,Con
+E14000626,Chatham and Aylesford,Con,Conservative and Unionist Party,Tracey Crouch,73305,59.1,Con,63.9,Con
+E14000627,Cheadle,Con,Conservative and Unionist Party,Mary Robinson,,,Con,74.5,Con
+E14000628,Chelmsford,Con,Conservative and Unionist Party,Vicky Ford,,,Con,70.3,Con
+E14000629,Chelsea and Fulham,Con,Conservative and Unionist Party,Greg Hands,67110,69.8,Con,66.3,Con
+E14000630,Cheltenham,Con,Conservative and Unionist Party,Alex Chalk,81043,73.2,Con,72.4,Con
+E14000631,Chesham and Amersham,Con,Conservative and Unionist Party,Cheryl Gillan,72542,76.8,Con,77.3,Con
+E14000632,Chesterfield,Lab,Labour Party,Toby Perkins,71030,63.6,Lab,66.6,Lab
+E14000633,Chichester,Con,Conservative and Unionist Party,Gillian Keegan,85499,71.6,Con,70.7,Con
+E14000634,Chingford and Woodford Green,Con,Conservative and Unionist Party,Iain Duncan Smith,65393,74.1,Con,71.5,Con
+E14000635,Chippenham,Con,Conservative and Unionist Party,Michelle Donelan,,,Con,75,Con
+E14000636,Chipping Barnet,Con,Conservative and Unionist Party,Theresa Villiers,,,Con,72,Con
+E14000637,Chorley,Spk,Speaker seeking re-election,Lindsay Hoyle,,,Lab,73,Lab
+E14000638,Christchurch,Con,Conservative and Unionist Party,Christopher Chope,71521,72.6,Con,72.2,Con
+E14000639,Cities of London and Westminster,Con,Conservative and Unionist Party,Nickie Aiken,63700,67.1,Con,63,Con
+E14000640,City of Chester,Lab,Labour Party,Chris Matheson,76057,71.7,Lab,77.6,Lab
+E14000641,City of Durham,Lab,Labour Party,Mary Foy,71271,68.6,Lab,68.1,Lab
+E14000642,Clacton,Con,Conservative and Unionist Party,Giles Watling,70930,61.3,Con,63.8,UKIP
+E14000643,Cleethorpes,Con,Conservative and Unionist Party,Martin Vickers,73689,62.9,Con,65.9,Con
+E14000644,Colchester,Con,Conservative and Unionist Party,Will Quince,82625,64.6,Con,67.1,Con
+E14000645,Colne Valley,Con,Conservative and Unionist Party,Jason McCartney,84174,72.4,Lab,71.8,Con
+E14000646,Congleton,Con,Conservative and Unionist Party,Fiona Bruce,80930,70.7,Con,73.4,Con
+E14000647,Copeland,Con,Conservative and Unionist Party,Trudy Harrison,61693,68.9,Con,69.7,Lab
+E14000648,Corby,Con,Conservative and Unionist Party,Tom Pursglove,86151,70.2,Con,72.4,Con
+E14000649,Coventry North East,Lab,Labour Party,Colleen Fletcher,,,Lab,61.6,Lab
+E14000650,Coventry North West,Lab,Labour Party,Taiwo Owatemi,,,Lab,66.4,Lab
+E14000651,Coventry South,Lab,Labour Party,Zarah Sultana,,,Lab,66.6,Lab
+E14000652,Crawley,Con,Conservative and Unionist Party,Henry Smith,74207,67.2,Con,68.7,Con
+E14000653,Crewe and Nantwich,Con,Conservative and Unionist Party,Kieran John Mullan,80321,67.3,Lab,69.9,Con
+E14000654,Croydon Central,Lab,Labour Party,Sarah Jones,81410,66.4,Lab,71.5,Con
+E14000655,Croydon North,Lab,Labour and Co-operative Party,Steve Reed,88466,62.9,Lab,68.3,Lab
+E14000656,Croydon South,Con,Conservative and Unionist Party,Chris Philp,83977,70.7,Con,73.5,Con
+E14000657,Dagenham and Rainham,Lab,Labour Party,Jon Cruddas,71043,61.6,Lab,65,Lab
+E14000658,Darlington,Con,Conservative and Unionist Party,Peter Gibson,66395,65.5,Lab,67.7,Lab
+E14000659,Dartford,Con,Conservative and Unionist Party,Gareth Johnson,,,Con,69.2,Con
+E14000660,Daventry,Con,Conservative and Unionist Party,Chris Heaton-Harris,77493,74.1,Con,74.1,Con
+E14000661,Denton and Reddish,Lab,Labour Party,Andrew Gwynne,66234,58.3,Lab,60.3,Lab
+E14000662,Derby North,Con,Conservative and Unionist Party,Amanda Solloway,73212,64.2,Lab,69.8,Con
+E14000663,Derby South,Lab,Labour Party,Margaret Beckett,73079,58.1,Lab,64.9,Lab
+E14000664,Derbyshire Dales,Con,Conservative and Unionist Party,Sarah Elizabeth Dines,65060,76.9,Con,77.2,Con
+E14000665,Devizes,Con,Conservative and Unionist Party,Danny Kruger,,,Con,70.2,Con
+E14000666,Dewsbury,Con,Conservative and Unionist Party,Mark Eastwood,81253,69.4,Lab,69.7,Lab
+E14000667,Don Valley,Con,Conservative and Unionist Party,Nicholas Fletcher,75356,60.3,Lab,62.3,Lab
+E14000668,Doncaster Central,Lab,Labour Party,Rosie Winterton,71387,58.2,Lab,60.2,Lab
+E14000669,Doncaster North,Lab,Labour Party,Ed Miliband,72363,56.2,Lab,58.6,Lab
+E14000670,Dover,Con,Conservative and Unionist Party,Natalie Elphicke,76355,66.4,Con,69.8,Con
+E14000671,Dudley North,Con,Conservative and Unionist Party,Marco Longhi,,,Lab,62.8,Lab
+E14000672,Dudley South,Con,Conservative and Unionist Party,Mike Wood,,,Con,62.4,Con
+E14000673,Dulwich and West Norwood,Lab,Labour Party,Helen Hayes,84675,65.9,Lab,72.2,Lab
+E14000674,Ealing Central and Acton,Lab,Labour Party,Rupa Huq,75510,72.6,Lab,74.8,Lab
+E14000675,Ealing North,Lab,Labour and Co-operative Party,James Murray,74473,66.6,Lab,70.4,Lab
+E14000676,"Ealing, Southall",Lab,Labour Party,Virendra Sharma,64580,65.4,Lab,69.5,Lab
+E14000677,Easington,Lab,Labour Party,Grahame Morris,61182,56.5,Lab,58.4,Lab
+E14000678,East Devon,Con,Conservative and Unionist Party,Simon Jupp,87133,73.5,Con,73.4,Con
+E14000679,East Ham,Lab,Labour Party,Stephen Timms,89369,61.1,Lab,67.7,Lab
+E14000680,East Hampshire,Con,Conservative and Unionist Party,Damian Hinds,76478,74.4,Con,74.9,Con
+E14000681,East Surrey,Con,Conservative and Unionist Party,Claire Coutinho,,,Con,72.3,Con
+E14000682,East Worthing and Shoreham,Con,Conservative and Unionist Party,Tim Loughton,75196,70.7,Con,70.4,Con
+E14000683,East Yorkshire,Con,Conservative and Unionist Party,Greg Knight,,,Con,66.7,Con
+E14000684,Eastbourne,Con,Conservative and Unionist Party,Caroline Ansell,79307,69.5,LD,73,Con
+E14000685,Eastleigh,Con,Conservative and Unionist Party,Paul Holmes,83880,70.3,Con,70.7,Con
+E14000686,Eddisbury,Con,Conservative and Unionist Party,Edward Timpson,73700,71.9,Con,73.2,Con
+E14000687,Edmonton,Lab,Labour and Co-operative Party,Kate Osamor,65568,61.5,Lab,66.6,Lab
+E14000688,Ellesmere Port and Neston,Lab,Labour Party,Justin Madders,70327,69.3,Lab,74.3,Lab
+E14000689,Elmet and Rothwell,Con,Conservative and Unionist Party,Alec Shelbrooke,80957,71.9,Con,74.3,Con
+E14000690,Eltham,Lab,Labour Party,Clive Efford,64046,68.2,Lab,71.8,Lab
+E14000691,Enfield North,Lab,Labour Party,Feryal Clark,68066,66.2,Lab,71.5,Lab
+E14000692,"Enfield, Southgate",Lab,Labour Party,Bambos Charalambous,65055,72.7,Lab,74.4,Con
+E14000693,Epping Forest,Con,Conservative and Unionist Party,Eleanor Laing,,,Con,68.1,Con
+E14000694,Epsom and Ewell,Con,Conservative and Unionist Party,Chris Grayling,,,Con,74.3,Con
+E14000695,Erewash,Con,Conservative and Unionist Party,Maggie Throup,,,Con,68.3,Con
+E14000696,Erith and Thamesmead,Lab,Labour Party,Abena Oppong-Asare,65399,63.3,Lab,63.9,Lab
+E14000697,Esher and Walton,Con,Conservative and Unionist Party,Dominic Raab,81184,77.7,Con,74,Con
+E14000698,Exeter,Lab,Labour Party,Ben Bradshaw,82047,68.5,Lab,71.8,Lab
+E14000699,Fareham,Con,Conservative and Unionist Party,Suella Braverman,78624,72.8,Con,72.5,Con
+E14000700,Faversham and Mid Kent,Con,Conservative and Unionist Party,Helen Whately,73404,68.7,Con,69,Con
+E14000701,Feltham and Heston,Lab,Labour and Co-operative Party,Seema Malhotra,,,Lab,65,Lab
+E14000702,Filton and Bradley Stoke,Con,Conservative and Unionist Party,Jack Lopresti,74016,72.6,Con,70.2,Con
+E14000703,Finchley and Golders Green,Con,Conservative and Unionist Party,Mike Freer,,,Con,71.7,Con
+E14000704,Folkestone and Hythe,Con,Conservative and Unionist Party,Damian Collins,88273,66.8,Con,68.4,Con
+E14000705,Forest of Dean,Con,Conservative and Unionist Party,Mark Harper,,,Con,73.1,Con
+E14000706,Fylde,Con,Conservative and Unionist Party,Mark Menzies,,,Con,70.7,Con
+E14000707,Gainsborough,Con,Conservative and Unionist Party,Edward Leigh,76343,66.9,Con,68,Con
+E14000708,Garston and Halewood,Lab,Labour Party,Maria Eagle,76116,70.1,Lab,71.3,Lab
+E14000709,Gateshead,Lab,Labour Party,Ian Mearns,64449,59.2,Lab,64.7,Lab
+E14000710,Gedling,Con,Conservative and Unionist Party,Tom Randall,71366,70,Lab,72.7,Lab
+E14000711,Gillingham and Rainham,Con,Conservative and Unionist Party,Rehman Chishti,73631,62.4,Con,67.2,Con
+E14000712,Gloucester,Con,Conservative and Unionist Party,Richard Graham,81332,66.1,Con,65.3,Con
+E14000713,Gosport,Con,Conservative and Unionist Party,Caroline Dinenage,73541,65.9,Con,66.8,Con
+E14000714,Grantham and Stamford,Con,Conservative and Unionist Party,Gareth Davies,,,Con,69.4,Con
+E14000715,Gravesham,Con,Conservative and Unionist Party,Adam Holloway,73234,64.9,Con,67.3,Con
+E14000716,Great Grimsby,Con,Conservative and Unionist Party,Lia Nici,61409,53.9,Lab,57.6,Lab
+E14000717,Great Yarmouth,Con,Conservative and Unionist Party,Brandon Lewis,71957,60.4,Con,62.1,Con
+E14000718,Greenwich and Woolwich,Lab,Labour Party,Matthew Pennycook,79997,66.4,Lab,69.1,Lab
+E14000719,Guildford,Con,Conservative and Unionist Party,Angela Joy Richardson,77729,75.5,Con,73.9,Con
+E14000720,Hackney North and Stoke Newington,Lab,Labour Party,Diane Abbott,92451,61.5,Lab,66.4,Lab
+E14000721,Hackney South and Shoreditch,Lab,Labour and Co-operative Party,Meg Hillier,89380,60.9,Lab,66.9,Lab
+E14000722,Halesowen and Rowley Regis,Con,Conservative and Unionist Party,James Morris,,,Con,64.6,Con
+E14000723,Halifax,Lab,Labour Party,Holly Walker-Lynch,71904,64.6,Lab,67.9,Lab
+E14000724,Haltemprice and Howden,Con,Conservative and Unionist Party,David Davis,,,Con,72.1,Con
+E14000725,Halton,Lab,Labour Party,Derek Twigg,,,Lab,67.5,Lab
+E14000726,Hammersmith,Lab,Labour Party,Andy Slaughter,74759,69.5,Lab,72,Lab
+E14000727,Hampstead and Kilburn,Lab,Labour Party,Tulip Siddiq,82432,69.6,Lab,70.6,Lab
+E14000728,Harborough,Con,Conservative and Unionist Party,Neil O'Brien,,,Con,73.2,Con
+E14000729,Harlow,Con,Conservative and Unionist Party,Robert Halfon,68078,63.7,Con,66.4,Con
+E14000730,Harrogate and Knaresborough,Con,Conservative and Unionist Party,Andrew Jones,,,Con,73.6,Con
+E14000731,Harrow East,Con,Conservative and Unionist Party,Bob Blackman,,,Con,71.1,Con
+E14000732,Harrow West,Lab,Labour and Co-operative Party,Gareth Thomas,,,Lab,72.3,Lab
+E14000733,Hartlepool,Lab,Labour Party,Mike Hill,70855,57.9,Lab,59.3,Lab
+E14000734,Harwich and North Essex,Con,Conservative and Unionist Party,Bernard Jenkin,74153,70.1,Con,71.8,Con
+E14000735,Hastings and Rye,Con,Conservative and Unionist Party,Sally-Ann Hart,80524,67.4,Con,70.1,Con
+E14000736,Havant,Con,Conservative and Unionist Party,Alan Mak,72130,63.7,Con,64,Con
+E14000737,Hayes and Harlington,Lab,Labour Party,John McDonnell,72356,60.8,Lab,65.4,Lab
+E14000738,Hazel Grove,Con,Conservative and Unionist Party,William Wragg,,,Con,70,Con
+E14000739,Hemel Hempstead,Con,Conservative and Unionist Party,Mike Penning,73737,69.5,Con,70.5,Con
+E14000740,Hemsworth,Lab,Labour Party,Jon Trickett,73726,59.6,Lab,64,Lab
+E14000741,Hendon,Con,Conservative and Unionist Party,Matthew Offord,,,Con,68.4,Con
+E14000742,Henley,Con,Conservative and Unionist Party,John Howell,76660,76.6,Con,76.3,Con
+E14000743,Hereford and South Herefordshire,Con,Conservative and Unionist Party,Jesse Norman,72085,68.9,Con,71.1,Con
+E14000744,Hertford and Stortford,Con,Conservative and Unionist Party,Julie Marson,82407,72.9,Con,73.1,Con
+E14000745,Hertsmere,Con,Conservative and Unionist Party,Oliver Dowden,73971,70.6,Con,71.2,Con
+E14000746,Hexham,Con,Conservative and Unionist Party,Guy Opperman,,,Con,75.8,Con
+E14000747,Heywood and Middleton,Con,Conservative and Unionist Party,Chris Clarkson,78916,60.2,Lab,62.5,Lab
+E14000748,High Peak,Con,Conservative and Unionist Party,Robert Largan,,,Lab,73.7,Con
+E14000749,Hitchin and Harpenden,Con,Conservative and Unionist Party,Bim Afolami,76321,77.1,Con,77.6,Con
+E14000750,Holborn and St Pancras,Lab,Labour Party,Keir Starmer,87236,65.1,Lab,67.2,Lab
+E14000751,Hornchurch and Upminster,Con,Conservative and Unionist Party,Julia Lopez,80765,66.8,Con,69.5,Con
+E14000752,Hornsey and Wood Green,Lab,Labour Party,Catherine West,81814,74.8,Lab,78.1,Lab
+E14000753,Horsham,Con,Conservative and Unionist Party,Jeremy Quin,,,Con,75,Con
+E14000754,Houghton and Sunderland South,Lab,Labour Party,Bridget Phillipson,,,Lab,61,Lab
+E14000755,Hove,Lab,Labour Party,Peter Kyle,74313,75.9,Lab,77.7,Lab
+E14000756,Huddersfield,Lab,Labour and Co-operative Party,Barry Sheerman,65525,63.9,Lab,65.6,Lab
+E14000757,Huntingdon,Con,Conservative and Unionist Party,Jonathan Djanogly,84686,69.8,Con,71,Con
+E14000758,Hyndburn,Con,Conservative and Unionist Party,Sara Britcliffe,70910,59.8,Lab,63.3,Lab
+E14000759,Ilford North,Lab,Labour Party,Wes Streeting,72963,68.7,Lab,72.7,Lab
+E14000760,Ilford South,Lab,Labour Party,Sam Tarry,84957,62.9,Lab,67.7,Lab
+E14000761,Ipswich,Con,Conservative and Unionist Party,Tom Hunt,75525,65.6,Lab,67.7,Con
+E14000762,Isle of Wight,Con,Conservative and Unionist Party,Bob Seely,113021,65.9,Con,67.4,Con
+E14000763,Islington North,Lab,Labour Party,Jeremy Corbyn,75162,71.6,Lab,73.6,Lab
+E14000764,Islington South and Finsbury,Lab,Labour Party,Emily Thornberry,70489,67.8,Lab,69.3,Lab
+E14000765,Jarrow,Lab,Labour Party,Kate Osborne,65103,63.5,Lab,66.5,Lab
+E14000766,Keighley,Con,Conservative and Unionist Party,Robbie Moore,72778,72.3,Lab,72.5,Con
+E14000767,Kenilworth and Southam,Con,Conservative and Unionist Party,Jeremy Wright,68156,77.2,Con,77.5,Con
+E14000768,Kensington,Con,Conservative and Unionist Party,Felicity Buchan,64609,67.7,Lab,64,Con
+E14000769,Kettering,Con,Conservative and Unionist Party,Philip Hollobone,,,Con,69.3,Con
+E14000770,Kingston and Surbiton,LD,Liberal Democrats,Ed Davey,81975,74.2,LD,76.3,Con
+E14000771,Kingston upon Hull East,Lab,Labour Party,Karl Turner,,,Lab,55.6,Lab
+E14000772,Kingston upon Hull North,Lab,Labour Party,Diana Johnson,,,Lab,57.5,Lab
+E14000773,Kingston upon Hull West and Hessle,Lab,Labour Party,Emma Hardy,,,Lab,57.5,Lab
+E14000774,Kingswood,Con,Conservative and Unionist Party,Chris Skidmore,68972,71.5,Con,70.4,Con
+E14000775,Knowsley,Lab,Labour Party,George Howarth,84060,65.4,Lab,67.9,Lab
+E14000776,Lancaster and Fleetwood,Lab,Labour Party,Cat Smith,70059,64.5,Lab,68.6,Lab
+E14000777,Leeds Central,Lab,Labour Party,Hilary Benn,90971,54.2,Lab,53.4,Lab
+E14000778,Leeds East,Lab,Labour Party,Richard Burgon,67286,58,Lab,63,Lab
+E14000779,Leeds North East,Lab,Labour Party,Fabian Hamilton,70580,71.6,Lab,75.7,Lab
+E14000780,Leeds North West,Lab,Labour and Co-operative Party,Alex Sobel,67741,72.8,Lab,68.1,LD
+E14000781,Leeds West,Lab,Labour Party,Rachel Reeves,67727,59.5,Lab,62.2,Lab
+E14000782,Leicester East,Lab,Labour Party,Claudia Webbe,78432,63,Lab,67.7,Lab
+E14000783,Leicester South,Lab,Labour Party,Jon Ashworth,77665,64.6,Lab,67.1,Lab
+E14000784,Leicester West,Lab,Labour Party,Liz Kendall,64918,53.6,Lab,58,Lab
+E14000785,Leigh,Con,Conservative and Unionist Party,James Grundy,,,Lab,61.7,Lab
+E14000786,Lewes,Con,Conservative and Unionist Party,Maria Caulfield,71503,76.7,Con,76.6,Con
+E14000787,Lewisham East,Lab,Labour Party,Janet Daby,67857,66,Lab,69.4,Lab
+E14000788,Lewisham West and Penge,Lab,Labour Party,Ellie Reeves,74615,69.8,Lab,73.2,Lab
+E14000789,"Lewisham, Deptford",Lab,Labour Party,Vicky Foxcroft,80617,68.7,Lab,70.5,Lab
+E14000790,Leyton and Wanstead,Lab,Labour Party,John Cryer,64852,68.7,Lab,71.1,Lab
+E14000791,Lichfield,Con,Conservative and Unionist Party,Michael Fabricant,76751,70.3,Con,72.1,Con
+E14000792,Lincoln,Con,Conservative and Unionist Party,Karl McCartney,74778,67.7,Lab,66.7,Con
+E14000793,"Liverpool, Riverside",Lab,Labour Party,Kim Johnson,80310,65.7,Lab,63.1,Lab
+E14000794,"Liverpool, Walton",Lab,Labour Party,Dan Carden,62628,65.1,Lab,67.4,Lab
+E14000795,"Liverpool, Wavertree",Lab,Labour Party,Paula Barker,63458,68.4,Lab,70.1,Lab
+E14000796,"Liverpool, West Derby",Lab,Labour Party,Ian Byrne,65640,67,Lab,69.5,Lab
+E14000797,Loughborough,Con,Conservative and Unionist Party,Jane Hunt,,,Con,68.2,Con
+E14000798,Louth and Horncastle,Con,Conservative and Unionist Party,Victoria Atkins,,,Con,66.9,Con
+E14000799,Ludlow,Con,Conservative and Unionist Party,Philip Dunne,69442,72.3,Con,73.7,Con
+E14000800,Luton North,Lab,Labour Party,Sarah Owen,68185,64,Lab,70,Lab
+E14000801,Luton South,Lab,Labour Party,Rachel Hopkins,69338,60.7,Lab,68.8,Lab
+E14000802,Macclesfield,Con,Conservative and Unionist Party,David Rutley,76216,70.7,Con,72.4,Con
+E14000803,Maidenhead,Con,Conservative and Unionist Party,Theresa May,,,Con,76.7,Con
+E14000804,Maidstone and The Weald,Con,Conservative and Unionist Party,Helen Grant,76110,67.9,Con,68.8,Con
+E14000805,Makerfield,Lab,Labour Party,Yvonne Fovargue,,,Lab,63.3,Lab
+E14000806,Maldon,Con,Conservative and Unionist Party,John Whittingdale,,,Con,70.4,Con
+E14000807,Manchester Central,Lab,Labour and Co-operative Party,Lucy Powell,94247,55.5,Lab,55.3,Lab
+E14000808,"Manchester, Gorton",Lab,Labour Party,Afzal Khan,76419,58.3,Lab,61.2,Lab
+E14000809,"Manchester, Withington",Lab,Labour Party,Jeff Smith,76530,69.2,Lab,72,Lab
+E14000810,Mansfield,Con,Conservative and Unionist Party,Ben Bradley,77131,63.9,Con,64.6,Lab
+E14000811,Meon Valley,Con,Conservative and Unionist Party,Flick Drummond,,,Con,73.1,Con
+E14000812,Meriden,Con,Conservative and Unionist Party,Saqib Bhatti,85371,63.4,Con,67.2,Con
+E14000813,Mid Bedfordshire,Con,Conservative and Unionist Party,Nadine Dorries,,,Con,75.2,Con
+E14000814,Mid Derbyshire,Con,Conservative and Unionist Party,Pauline Latham,67437,73.2,Con,74.9,Con
+E14000815,Mid Dorset and North Poole,Con,Conservative and Unionist Party,Michael Tomlinson,65426,74.8,Con,74.4,Con
+E14000816,Mid Norfolk,Con,Conservative and Unionist Party,George Freeman,81992,68.5,Con,69.7,Con
+E14000817,Mid Sussex,Con,Conservative and Unionist Party,Mims Davies,85140,73.7,Con,73.4,Con
+E14000818,Mid Worcestershire,Con,Conservative and Unionist Party,Nigel Huddleston,78221,71.7,Con,72.6,Con
+E14000819,Middlesbrough,Lab,Labour Party,Andy McDonald,60759,52.9,Lab,58.5,Lab
+E14000820,Middlesbrough South and East Cleveland,Con,Conservative and Unionist Party,Simon Clarke,,,Con,66,Lab
+E14000821,Milton Keynes North,Con,Conservative and Unionist Party,Ben Everitt,91535,68.3,Con,71.8,Con
+E14000822,Milton Keynes South,Con,Conservative and Unionist Party,Iain Stewart,96343,66.4,Con,70,Con
+E14000823,Mitcham and Morden,Lab,Labour Party,Siobhain McDonagh,70014,65.4,Lab,70.2,Lab
+E14000824,Mole Valley,Con,Conservative and Unionist Party,Paul Beresford,,,Con,76.3,Con
+E14000825,Morecambe and Lunesdale,Con,Conservative and Unionist Party,David Morris,67397,67.2,Con,68.4,Con
+E14000826,Morley and Outwood,Con,Conservative and Unionist Party,Andrea Jenkyns,78803,65.9,Con,68.7,Con
+E14000827,New Forest East,Con,Conservative and Unionist Party,Julian Lewis,73579,69,Con,70.9,Con
+E14000828,New Forest West,Con,Conservative and Unionist Party,Desmond Swayne,70892,71,Con,72.3,Con
+E14000829,Newark,Con,Conservative and Unionist Party,Robert Jenrick,75855,72.2,Con,73.1,Con
+E14000830,Newbury,Con,Conservative and Unionist Party,Laura Farris,83414,71.9,Con,73.6,Con
+E14000831,Newcastle upon Tyne Central,Lab,Labour Party,Chi Onwurah,57845,64.8,Lab,67.1,Lab
+E14000832,Newcastle upon Tyne East,Lab,Labour Party,Nick Brown,63796,68,Lab,67.3,Lab
+E14000833,Newcastle upon Tyne North,Lab,Labour Party,Catherine McKinnell,68486,68.6,Lab,73.2,Lab
+E14000834,Newcastle-under-Lyme,Con,Conservative and Unionist Party,Aaron Bell,68209,65.6,Lab,67.1,Lab
+E14000835,Newton Abbot,Con,Conservative and Unionist Party,Anne Marie Morris,72533,72.5,Con,72.2,Con
+E14000836,"Normanton, Pontefract and Castleford",Lab,Labour Party,Yvette Cooper,84527,57.1,Lab,60.4,Lab
+E14000837,North Cornwall,Con,Conservative and Unionist Party,Scott Mann,69935,73.9,Con,74.1,Con
+E14000838,North Devon,Con,Conservative and Unionist Party,Selaine Saxby,75862,73.3,Con,73.6,Con
+E14000839,North Dorset,Con,Conservative and Unionist Party,Simon Hoare,75956,73.9,Con,73.2,Con
+E14000840,North Durham,Lab,Labour Party,Kevan Jones,66796,63.2,Lab,64.8,Lab
+E14000841,North East Bedfordshire,Con,Conservative and Unionist Party,Richard Fuller,90679,71.7,Con,73.5,Con
+E14000842,North East Cambridgeshire,Con,Conservative and Unionist Party,Steve Barclay,,,Con,63.2,Con
+E14000843,North East Derbyshire,Con,Conservative and Unionist Party,Lee Rowley,,,Con,70,Lab
+E14000844,North East Hampshire,Con,Conservative and Unionist Party,Ranil Jayawardena,,,Con,77.4,Con
+E14000845,North East Hertfordshire,Con,Conservative and Unionist Party,Oliver Heald,,,Con,73.4,Con
+E14000846,North East Somerset,Con,Conservative and Unionist Party,Jacob Rees-Mogg,73684,76.4,Con,75.9,Con
+E14000847,North Herefordshire,Con,Conservative and Unionist Party,Bill Wiggin,70252,72.6,Con,74.2,Con
+E14000848,North Norfolk,Con,Conservative and Unionist Party,Duncan Charles Baker,,,LD,75.5,LD
+E14000849,North Shropshire,Con,Conservative and Unionist Party,Owen Paterson,83257,67.9,Con,69.2,Con
+E14000850,North Somerset,Con,Conservative and Unionist Party,Liam Fox,80194,77.4,Con,77.1,Con
+E14000851,North Swindon,Con,Conservative and Unionist Party,Justin Tomlinson,82441,66.9,Con,68.6,Con
+E14000852,North Thanet,Con,Conservative and Unionist Party,Roger Gale,72811,66.2,Con,66.6,Con
+E14000853,North Tyneside,Lab,Labour Party,Mary Glindon,78902,63.9,Lab,65.9,Lab
+E14000854,North Warwickshire,Con,Conservative and Unionist Party,Craig Tracey,,,Con,65.5,Con
+E14000855,North West Cambridgeshire,Con,Conservative and Unionist Party,Shailesh Vara,94909,68,Con,68.8,Con
+E14000856,North West Durham,Con,Conservative and Unionist Party,Richard Holden,72166,66,Lab,66.7,Lab
+E14000857,North West Hampshire,Con,Conservative and Unionist Party,Kit Malthouse,83083,70.9,Con,72.3,Con
+E14000858,North West Leicestershire,Con,Conservative and Unionist Party,Andrew Bridgen,78935,68.2,Con,71.2,Con
+E14000859,North West Norfolk,Con,Conservative and Unionist Party,James Wild,72080,64.7,Con,67.8,Con
+E14000860,North Wiltshire,Con,Conservative and Unionist Party,James Gray,,,Con,75.3,Con
+E14000861,Northampton North,Con,Conservative and Unionist Party,Michael Ellis,58774,67.3,Con,68.7,Con
+E14000862,Northampton South,Con,Conservative and Unionist Party,Andrew Lewer,62172,65.7,Con,66.5,Con
+E14000863,Norwich North,Con,Conservative and Unionist Party,Chloe Smith,67172,68.9,Con,68.7,Con
+E14000864,Norwich South,Lab,Labour Party,Clive Lewis,77845,66.4,Lab,69.4,Lab
+E14000865,Nottingham East,Lab,Labour Party,Nadia Whittome,66262,60.4,Lab,63.9,Lab
+E14000866,Nottingham North,Lab,Labour and Co-operative Party,Alex Norris,66495,53.1,Lab,57.4,Lab
+E14000867,Nottingham South,Lab,Labour Party,Lilian Greenwood,79485,60.6,Lab,67.8,Lab
+E14000868,Nuneaton,Con,Conservative and Unionist Party,Marcus Jones,,,Con,66.7,Con
+E14000869,Old Bexley and Sidcup,Con,Conservative and Unionist Party,James Brokenshire,66104,69.8,Con,72.9,Con
+E14000870,Oldham East and Saddleworth,Lab,Labour Party,Debbie Abrahams,72173,64,Lab,65.3,Lab
+E14000871,Oldham West and Royton,Lab,Labour and Co-operative Party,Jim McMahon,73063,60.8,Lab,63.4,Lab
+E14000872,Orpington,Con,Conservative and Unionist Party,Gareth Bacon,68884,70.7,Con,74.5,Con
+E14000873,Oxford East,Lab,Labour and Co-operative Party,Anneliese Dodds,77947,63.3,Lab,68.9,Lab
+E14000874,Oxford West and Abingdon,LD,Liberal Democrats,Layla Moran,76953,76.4,LD,79.6,Con
+E14000875,Pendle,Con,Conservative and Unionist Party,Andrew Stephenson,65289,68.1,Con,69.2,Con
+E14000876,Penistone and Stocksbridge,Con,Conservative and Unionist Party,Miriam Joy Cates,70925,69.8,Lab,70,Lab
+E14000877,Penrith and The Border,Con,Conservative and Unionist Party,Neil Hudson,67555,70.8,Con,71.5,Con
+E14000878,Peterborough,Con,Conservative and Unionist Party,Paul Bristow,72560,66,Lab,66.9,Con
+E14000879,"Plymouth, Moor View",Con,Conservative and Unionist Party,Johnny Mercer,69430,63.7,Con,65.6,Con
+E14000880,"Plymouth, Sutton and Devonport",Lab,Labour and Co-operative Party,Luke Pollard,77852,68.3,Lab,67,Con
+E14000881,Poole,Con,Conservative and Unionist Party,Robert Syms,73992,68.2,Con,67.7,Con
+E14000882,Poplar and Limehouse,Lab,Labour Party,Apsana Begum,91760,66.8,Lab,67.7,Lab
+E14000883,Portsmouth North,Con,Conservative and Unionist Party,Penny Mordaunt,71299,64.4,Con,66.3,Con
+E14000884,Portsmouth South,Lab,Labour Party,Stephen Morgan,74186,63.9,Lab,64,Con
+E14000885,Preston,Lab,Labour and Co-operative Party,Mark Hendrick,59672,56.6,Lab,61.7,Lab
+E14000886,Pudsey,Con,Conservative and Unionist Party,Stuart Andrew,73212,74.1,Con,74.5,Con
+E14000887,Putney,Lab,Labour Party,Fleur Anderson,65542,77,Con,72.3,Con
+E14000888,Rayleigh and Wickford,Con,Conservative and Unionist Party,Mark Francois,,,Con,70.5,Con
+E14000889,Reading East,Lab,Labour Party,Matt Rodda,77465,72.2,Lab,73.3,Con
+E14000890,Reading West,Con,Conservative and Unionist Party,Alok Sharma,74623,67.5,Con,69.7,Con
+E14000891,Redcar,Con,Conservative and Unionist Party,Jacob Young,,,Lab,63.8,Lab
+E14000892,Redditch,Con,Conservative and Unionist Party,Rachel Maclean,,,Con,70.3,Con
+E14000893,Reigate,Con,Conservative and Unionist Party,Crispin Blunt,74842,71,Con,72.3,Con
+E14000894,Ribble Valley,Con,Conservative and Unionist Party,Nigel Evans,,,Con,71,Con
+E14000895,Richmond (Yorks),Con,Conservative and Unionist Party,Rishi Sunak,82601,69.9,Con,70.6,Con
+E14000896,Richmond Park,LD,Liberal Democrats,Sarah Olney,80161,81.2,Con,79.3,Con
+E14000897,Rochdale,Lab,Labour Party,Tony Lloyd,80168,59.2,Lab,64.2,Lab
+E14000898,Rochester and Strood,Con,Conservative and Unionist Party,Kelly Jane Tolhurst,82156,63.2,Con,65.1,Con
+E14000899,Rochford and Southend East,Con,Conservative and Unionist Party,James Duddridge,75624,61,Con,64.4,Con
+E14000900,Romford,Con,Conservative and Unionist Party,Andrew Richard Rosindell,72350,65.3,Con,68.1,Con
+E14000901,Romsey and Southampton North,Con,Conservative and Unionist Party,Caroline Nokes,68228,75.3,Con,74.8,Con
+E14000902,Rossendale and Darwen,Con,Conservative and Unionist Party,Jake Berry,72771,67.1,Con,69.4,Con
+E14000903,Rother Valley,Con,Conservative and Unionist Party,Alexander Stafford,74802,65.1,Lab,65.9,Lab
+E14000904,Rotherham,Lab,Labour Party,Sarah Champion,61688,57.8,Lab,60.1,Lab
+E14000905,Rugby,Con,Conservative and Unionist Party,Mark Pawsey,72341,70.2,Con,71.3,Con
+E14000906,"Ruislip, Northwood and Pinner",Con,Conservative and Unionist Party,David Simmonds,73389,72.1,Con,72.9,Con
+E14000907,Runnymede and Weybridge,Con,Conservative and Unionist Party,Ben Spencer,77196,69,Con,69.1,Con
+E14000908,Rushcliffe,Con,Conservative and Unionist Party,Ruth Edwards,77116,78.5,Con,78.2,Con
+E14000909,Rutland and Melton,Con,Conservative and Unionist Party,Alicia Kearns,,,Con,73.6,Con
+E14000910,Saffron Walden,Con,Conservative and Unionist Party,Kemi Badenoch,87117,72.4,Con,73.6,Con
+E14000911,Salford and Eccles,Lab,Labour Party,Rebecca Long Bailey,82202,61.6,Lab,61.1,Lab
+E14000912,Salisbury,Con,Conservative and Unionist Party,John Glen,,,Con,73.3,Con
+E14000913,Scarborough and Whitby,Con,Conservative and Unionist Party,Robert Goodwill,74394,66.8,Con,68.6,Con
+E14000914,Scunthorpe,Con,Conservative and Unionist Party,Holly Mumby-Croft,61975,60.9,Lab,65.4,Lab
+E14000915,Sedgefield,Con,Conservative and Unionist Party,Paul Howell,64325,64.6,Lab,65.2,Lab
+E14000916,Sefton Central,Lab,Labour Party,Bill Esterson,69760,72.9,Lab,75.6,Lab
+E14000917,Selby and Ainsty,Con,Conservative and Unionist Party,Nigel Adams,,,Con,74.1,Con
+E14000918,Sevenoaks,Con,Conservative and Unionist Party,Laura Trott,71777,71,Con,71.8,Con
+E14000919,Sheffield Central,Lab,Labour Party,Paul Blomfield,89849,56.7,Lab,61.9,Lab
+E14000920,Sheffield South East,Lab,Labour Party,Clive Betts,67832,61.9,Lab,63.4,Lab
+E14000921,"Sheffield, Brightside and Hillsborough",Lab,Labour Party,Gill Furniss,69333,57.1,Lab,59.6,Lab
+E14000922,"Sheffield, Hallam",Lab,Labour Party,Olivia Frances Blake,72763,78.2,Lab,77.7,LD
+E14000923,"Sheffield, Heeley",Lab,Labour Party,Louise Haigh,66940,63.8,Lab,65.1,Lab
+E14000924,Sherwood,Con,Conservative and Unionist Party,Mark Spencer,77948,67.6,Con,70.2,Con
+E14000925,Shipley,Con,Conservative and Unionist Party,Philip Davies,74029,72.9,Con,73.2,Con
+E14000926,Shrewsbury and Atcham,Con,Conservative and Unionist Party,Daniel Kawczynski,82237,71.8,Con,73.8,Con
+E14000927,Sittingbourne and Sheppey,Con,Conservative and Unionist Party,Gordon Henderson,,,Con,63,Con
+E14000928,Skipton and Ripon,Con,Conservative and Unionist Party,Julian Smith,78673,74.6,Con,74.7,Con
+E14000929,Sleaford and North Hykeham,Con,Conservative and Unionist Party,Caroline Johnson,94761,70.2,Con,72.5,Con
+E14000930,Slough,Lab,Labour Party,Tan Dhesi,87632,58.2,Lab,65.4,Lab
+E14000931,Solihull,Con,Conservative and Unionist Party,Julian Knight,78762,70.3,Con,73.1,Con
+E14000932,Somerton and Frome,Con,Conservative and Unionist Party,David Warburton,,,Con,75.8,Con
+E14000933,South Basildon and East Thurrock,Con,Conservative and Unionist Party,Stephen Metcalfe,74441,60.8,Con,64.2,Con
+E14000934,South Cambridgeshire,Con,Conservative and Unionist Party,Anthony Browne,87288,76.7,Con,76.3,Con
+E14000935,South Derbyshire,Con,Conservative and Unionist Party,Heather Wheeler,,,Con,69.1,Con
+E14000936,South Dorset,Con,Conservative and Unionist Party,Richard Drax,72924,70,Con,68.8,Con
+E14000937,South East Cambridgeshire,Con,Conservative and Unionist Party,Lucy Frazer,86769,74.2,Con,73.4,Con
+E14000938,South East Cornwall,Con,Conservative and Unionist Party,Sheryll Murray,71825,74.7,Con,74.2,Con
+E14000939,South Holland and The Deepings,Con,Conservative and Unionist Party,John Hayes,75728,64.9,Con,66,Con
+E14000940,South Leicestershire,Con,Conservative and Unionist Party,Alberto Costa,,,Con,71.9,Con
+E14000941,South Norfolk,Con,Conservative and Unionist Party,Richard Bacon,86214,72.5,Con,73.8,Con
+E14000942,South Northamptonshire,Con,Conservative and Unionist Party,Andrea Leadsom,,,Con,75.9,Con
+E14000943,South Ribble,Con,Conservative and Unionist Party,Katherine Fletcher,75344,71.4,Con,72.5,Con
+E14000944,South Shields,Lab,Labour Party,Emma Lewell-Buck,62793,60.3,Lab,64.4,Lab
+E14000945,South Staffordshire,Con,Conservative and Unionist Party,Gavin Williamson,,,Con,69.8,Con
+E14000946,South Suffolk,Con,Conservative and Unionist Party,James Cartlidge,,,Con,72,Con
+E14000947,South Swindon,Con,Conservative and Unionist Party,Robert Buckland,73118,69.4,Con,71,Con
+E14000948,South Thanet,Con,Conservative and Unionist Party,Craig Mackinlay,73302,65.8,Con,68.9,Con
+E14000949,South West Bedfordshire,Con,Conservative and Unionist Party,Andrew Selous,,,Con,70,Con
+E14000950,South West Devon,Con,Conservative and Unionist Party,Gary Streeter,72535,73.6,Con,74.3,Con
+E14000951,South West Hertfordshire,Con,Conservative and Unionist Party,Gagan Mohindra,80449,76.1,Con,75,Con
+E14000952,South West Norfolk,Con,Conservative and Unionist Party,Elizabeth Truss,78455,65.6,Con,67.5,Con
+E14000953,South West Surrey,Con,Conservative and Unionist Party,Jeremy Hunt,,,Con,77.6,Con
+E14000954,South West Wiltshire,Con,Conservative and Unionist Party,Andrew Murrison,,,Con,71.4,Con
+E14000955,"Southampton, Itchen",Con,Conservative and Unionist Party,Royston Smith,79006,60,Con,65.4,Con
+E14000956,"Southampton, Test",Lab,Labour Party,Alan Whitehead,79509,56.6,Lab,67,Lab
+E14000957,Southend West,Con,Conservative and Unionist Party,David Amess,69043,67.4,Con,69.9,Con
+E14000958,Southport,Con,Conservative and Unionist Party,Damien Moore,70837,68,Con,69.2,LD
+E14000959,Spelthorne,Con,Conservative and Unionist Party,Kwasi Kwarteng,70929,69.8,Con,69.1,Con
+E14000960,St Albans,LD,Liberal Democrats,Daisy Cooper,73721,78.1,Con,78.5,Con
+E14000961,St Austell and Newquay,Con,Conservative and Unionist Party,Steve Double,79930,69.8,Con,69.3,Con
+E14000962,St Helens North,Lab,Labour Party,Conor McGinn,75593,62.9,Lab,66.1,Lab
+E14000963,St Helens South and Whiston,Lab,Labour Party,Marie Rimmer,79058,63.6,Lab,67,Lab
+E14000964,St Ives,Con,Conservative and Unionist Party,Derek Thomas,68795,74.7,Con,76.5,Con
+E14000965,Stafford,Con,Conservative and Unionist Party,Theo Clarke,72572,70.5,Con,76,Con
+E14000966,Staffordshire Moorlands,Con,Conservative and Unionist Party,Karen Bradley,,,Con,70.7,Con
+E14000967,Stalybridge and Hyde,Lab,Labour and Co-operative Party,Jonathan Reynolds,73064,58,Lab,59.6,Lab
+E14000968,Stevenage,Con,Conservative and Unionist Party,Stephen McPartland,,,Con,69.9,Con
+E14000969,Stockport,Lab,Labour Party,Navendu Mishra,,,Lab,64.8,Lab
+E14000970,Stockton North,Lab,Labour Party,Alex Cunningham,66676,61.7,Lab,64.6,Lab
+E14000971,Stockton South,Con,Conservative and Unionist Party,Matt Vickers,76895,71.3,Lab,71.3,Con
+E14000972,Stoke-on-Trent Central,Con,Conservative and Unionist Party,Jo Gideon,,,Lab,58.3,Lab
+E14000973,Stoke-on-Trent North,Con,Conservative and Unionist Party,Jonathan Edward Gullis,,,Lab,58.6,Lab
+E14000974,Stoke-on-Trent South,Con,Conservative and Unionist Party,Jack Edgar Brereton,,,Con,63.3,Lab
+E14000975,Stone,Con,Conservative and Unionist Party,Bill Cash,,,Con,73.9,Con
+E14000976,Stourbridge,Con,Conservative and Unionist Party,Suzanne Webb,,,Con,67.2,Con
+E14000977,Stratford-on-Avon,Con,Conservative and Unionist Party,Nadhim Zahawi,,,Con,74,Con
+E14000978,Streatham,Lab,Labour Party,Bell Ribeiro-Addy,84763,66.7,Lab,71.1,Lab
+E14000979,Stretford and Urmston,Lab,Labour Party,Kate Green,72386,69.2,Lab,70,Lab
+E14000980,Stroud,Con,Conservative and Unionist Party,Siobhan Baillie,84536,78,Lab,77.2,Con
+E14000981,Suffolk Coastal,Con,Conservative and Unionist Party,Thérèse Coffey,81910,71.2,Con,73.5,Con
+E14000982,Sunderland Central,Lab,Labour Party,Julie Elliott,,,Lab,62.1,Lab
+E14000983,Surrey Heath,Con,Conservative and Unionist Party,Michael Gove,81349,72.1,Con,71.9,Con
+E14000984,Sutton and Cheam,Con,Conservative and Unionist Party,Paul Scully,71760,70.4,Con,74,Con
+E14000985,Sutton Coldfield,Con,Conservative and Unionist Party,Andrew Mitchell,75638,69.2,Con,70.1,Con
+E14000986,Tamworth,Con,Conservative and Unionist Party,Christopher Pincher,71580,64.3,Con,66.3,Con
+E14000987,Tatton,Con,Conservative and Unionist Party,Esther McVey,69018,70.9,Con,72.5,Con
+E14000988,Taunton Deane,Con,Conservative and Unionist Party,Rebecca Pow,,,Con,73.9,Con
+E14000989,Telford,Con,Conservative and Unionist Party,Lucy Allan,68921,62.1,Con,65.8,Con
+E14000990,Tewkesbury,Con,Conservative and Unionist Party,Laurence Robertson,83958,72.8,Con,72.7,Con
+E14000991,The Cotswolds,Con,Conservative and Unionist Party,Geoffrey Robert Clifton-Brown,,,Con,74.4,Con
+E14000992,The Wrekin,Con,Conservative and Unionist Party,Mark Pritchard,70693,69.2,Con,72.4,Con
+E14000993,Thirsk and Malton,Con,Conservative and Unionist Party,Kevin Hollinrake,80979,69.9,Con,71.2,Con
+E14000994,Thornbury and Yate,Con,Conservative and Unionist Party,Luke Hall,69492,75.2,Con,74.8,Con
+E14000995,Thurrock,Con,Conservative and Unionist Party,Jackie Doyle-Price,79798,59.5,Con,64.5,Con
+E14000996,Tiverton and Honiton,Con,Conservative and Unionist Party,Neil Parish,82953,71.9,Con,71.8,Con
+E14000997,Tonbridge and Malling,Con,Conservative and Unionist Party,Tom Tugendhat,77380,73.7,Con,73.6,Con
+E14000998,Tooting,Lab,Labour Party,Rosena Allin-Khan,76933,76,Lab,74.8,Lab
+E14000999,Torbay,Con,Conservative and Unionist Party,Kevin Foster,75054,67.2,Con,67.5,Con
+E14001000,Torridge and West Devon,Con,Conservative and Unionist Party,Geoffrey Cox,79831,74.8,Con,74,Con
+E14001001,Totnes,Con,Conservative and Unionist Party,Anthony Mangnall,69863,74.7,Con,73.1,Con
+E14001002,Tottenham,Lab,Labour Party,David Lammy,75740,61.9,Lab,67.9,Lab
+E14001003,Truro and Falmouth,Con,Conservative and Unionist Party,Cherilyn Mackrory,76719,77.2,Con,75.9,Con
+E14001004,Tunbridge Wells,Con,Conservative and Unionist Party,Greg Clark,74816,73,Con,72.6,Con
+E14001005,Twickenham,LD,Liberal Democrats,Munira Wilson,82866,77.8,LD,79.7,Con
+E14001006,Tynemouth,Lab,Labour Party,Alan Campbell,77261,72.5,Lab,73.6,Lab
+E14001007,Uxbridge and South Ruislip,Con,Conservative and Unionist Party,Boris Johnson,70369,68.5,Con,66.9,Con
+E14001008,Vauxhall,Lab,Labour and Co-operative Party,Florence Eshalomi,88600,63.6,Lab,67.3,Lab
+E14001009,Wakefield,Con,Conservative and Unionist Party,Imran Nasir Ahmad Khan,70192,64.1,Lab,66,Lab
+E14001010,Wallasey,Lab,Labour Party,Angela Eagle,66310,70.1,Lab,71.8,Lab
+E14001011,Walsall North,Con,Conservative and Unionist Party,Eddie Hughes,67177,54.4,Con,56.7,Lab
+E14001012,Walsall South,Lab,Labour Party,Valerie Vaz,68024,62.4,Lab,65.5,Lab
+E14001013,Walthamstow,Lab,Labour and Co-operative Party,Stella Creasy,70268,68.8,Lab,71.1,Lab
+E14001014,Wansbeck,Lab,Labour Party,Ian Lavery,,,Lab,68.4,Lab
+E14001015,Wantage,Con,Conservative and Unionist Party,David Johnston,90875,73.9,Con,74.3,Con
+E14001016,Warley,Lab,Labour Party,John Francis Spellar,62421,59.7,Lab,63.3,Lab
+E14001017,Warrington North,Lab,Labour Party,Charlotte Nichols,72565,64.3,Lab,67.6,Lab
+E14001018,Warrington South,Con,Conservative and Unionist Party,Andy Carter,86895,71.2,Lab,72.5,Con
+E14001019,Warwick and Leamington,Lab,Labour Party,Matt Western,76373,71,Lab,73,Con
+E14001020,Washington and Sunderland West,Lab,Labour Party,Sharon Hodgson,,,Lab,60.4,Lab
+E14001021,Watford,Con,Conservative and Unionist Party,Dean Russell,,,Con,67.9,Con
+E14001022,Waveney,Con,Conservative and Unionist Party,Peter Aldous,82791,61.8,Con,65.3,Con
+E14001023,Wealden,Con,Conservative and Unionist Party,Nus Ghani,82990,73.4,Con,74.4,Con
+E14001024,Weaver Vale,Lab,Labour Party,Mike Amesbury,70551,71.9,Lab,73.5,Con
+E14001025,Wellingborough,Con,Conservative and Unionist Party,Peter Bone,,,Con,67.3,Con
+E14001026,Wells,Con,Conservative and Unionist Party,James Heappey,86522,71.2,Con,74,Con
+E14001027,Welwyn Hatfield,Con,Conservative and Unionist Party,Grant Shapps,74892,69.5,Con,71,Con
+E14001028,Wentworth and Dearne,Lab,Labour Party,John Healey,74536,55.8,Lab,59.1,Lab
+E14001029,West Bromwich East,Con,Conservative and Unionist Party,Nicola Faye Richards,62111,57.9,Lab,61.5,Lab
+E14001030,West Bromwich West,Con,Conservative and Unionist Party,Shaun Stephen Bailey,64576,53.4,Lab,54.9,Lab
+E14001031,West Dorset,Con,Conservative and Unionist Party,Chris Loder,80963,75.3,Con,75.6,Con
+E14001032,West Ham,Lab,Labour Party,Lyn Brown,98871,60.9,Lab,65.9,Lab
+E14001033,West Lancashire,Lab,Labour Party,Rosie Cooper,,,Lab,74.4,Lab
+E14001034,West Suffolk,Con,Conservative and Unionist Party,Matt Hancock,,,Con,67,Con
+E14001035,West Worcestershire,Con,Conservative and Unionist Party,Harriett Mary Morrison Baldwin,76267,75.4,Con,76.1,Con
+E14001036,Westminster North,Lab,Labour Party,Karen Buck,65519,65.5,Lab,68.1,Lab
+E14001037,Westmorland and Lonsdale,LD,Liberal Democrats,Tim Farron,,,LD,78,LD
+E14001038,Weston-Super-Mare,Con,Conservative and Unionist Party,John Penrose,82526,67.4,Con,68.8,Con
+E14001039,Wigan,Lab,Labour Party,Lisa Nandy,,,Lab,63.2,Lab
+E14001040,Wimbledon,Con,Conservative and Unionist Party,Stephen Hammond,68232,77.7,Con,77.3,Con
+E14001041,Winchester,Con,Conservative and Unionist Party,Steve Brine,,,Con,79,Con
+E14001042,Windsor,Con,Conservative and Unionist Party,Adam Afriyie,,,Con,73.5,Con
+E14001043,Wirral South,Lab,Labour Party,Alison McGovern,57280,76,Lab,78.5,Lab
+E14001044,Wirral West,Lab,Labour Party,Margaret Greenwood,55550,77.3,Lab,78.6,Lab
+E14001045,Witham,Con,Conservative and Unionist Party,Priti Patel,70402,70.1,Con,71.5,Con
+E14001046,Witney,Con,Conservative and Unionist Party,Robert Alexander Courts,,,Con,73.8,Con
+E14001047,Woking,Con,Conservative and Unionist Party,Jonathan Lord,,,Con,72.7,Con
+E14001048,Wokingham,Con,Conservative and Unionist Party,John Redwood,83953,73.8,Con,75.7,Con
+E14001049,Wolverhampton North East,Con,Conservative and Unionist Party,Jane Stevenson,,,Lab,60.2,Lab
+E14001050,Wolverhampton South East,Lab,Labour Party,Pat McFadden,,,Lab,60.3,Lab
+E14001051,Wolverhampton South West,Con,Conservative and Unionist Party,Stuart Paul Anderson,,,Lab,70.8,Lab
+E14001052,Worcester,Con,Conservative and Unionist Party,Robin Walker,73403,69.3,Con,69.7,Con
+E14001053,Workington,Con,Conservative and Unionist Party,Mark Jenkinson,61370,67.8,Lab,69.2,Lab
+E14001054,Worsley and Eccles South,Lab,Labour Party,Barbara Keeley,75219,59.6,Lab,62.1,Lab
+E14001055,Worthing West,Con,Conservative and Unionist Party,Peter Bottomley,78587,69.5,Con,70.2,Con
+E14001056,Wycombe,Con,Conservative and Unionist Party,Steve Baker,78094,70.1,Con,69.6,Con
+E14001057,Wyre and Preston North,Con,Conservative and Unionist Party,Ben Wallace,,,Con,73,Con
+E14001058,Wyre Forest,Con,Conservative and Unionist Party,Mark Garnier,78079,64.8,Con,65.9,Con
+E14001059,Wythenshawe and Sale East,Lab,Labour Party,Mike Kane,76313,58.7,Lab,60.1,Lab
+E14001060,Yeovil,Con,Conservative and Unionist Party,Marcus Fysh,,,Con,71.8,Con
+E14001061,York Central,Lab,Labour and Co-operative Party,Rachael Maskell,74801,66.2,Lab,68.9,Lab
+E14001062,York Outer,Con,Conservative and Unionist Party,Julian Sturdy,74586,74.2,Con,75.9,Con
+N06000001,Belfast East,DUP,Democratic Unionist Party - D.U.P.,Gavin Robinson,66245,64.1,DUP,67.7,DUP
+N06000002,Belfast North,SF,Sinn Féin,John Finucane,72225,67.9,DUP,67.5,DUP
+N06000003,Belfast South,SDLP,SDLP (Social Democratic & Labour Party),Claire Hanna,69984,67.7,DUP,66.3,SDLP
+N06000004,Belfast West,SF,Sinn Féin,Paul Maskey,65644,59.1,SF,65.4,SF
+N06000005,East Antrim,DUP,Democratic Unionist Party - D.U.P.,Sammy Wilson,64830,57.5,DUP,60.8,DUP
+N06000006,East Londonderry,DUP,Democratic Unionist Party - D.U.P.,Gregory Campbell,69246,56.8,DUP,61.4,DUP
+N06000007,Fermanagh and South Tyrone,SF,Sinn Féin,Michelle Gildernew,72848,69.7,SF,76.1,UUP
+N06000008,Foyle,SDLP,SDLP (Social Democratic & Labour Party),Colum Eastwood,74346,63.4,SF,65.6,SDLP
+N06000009,Lagan Valley,DUP,Democratic Unionist Party - D.U.P.,Jeffrey M. Donaldson,75735,60,DUP,62.2,DUP
+N06000010,Mid Ulster,SF,Sinn Féin,Francie Molloy,70449,63.3,SF,68.6,SF
+N06000011,Newry and Armagh,SF,Sinn Féin,Mickey Brady,81226,62.5,SF,68.9,SF
+N06000012,North Antrim,DUP,Democratic Unionist Party - D.U.P.,Ian Paisley Jr,77134,57.1,DUP,64.2,DUP
+N06000013,North Down,Alliance,Alliance - Alliance Party of Northern Ireland,Stephen Anthony Farry,67099,60.6,Ind,61,Ind
+N06000014,South Antrim,DUP,Democratic Unionist Party - D.U.P.,Paul Girvan,71711,59.9,DUP,63.4,UUP
+N06000015,South Down,SF,Sinn Féin,Chris Hazzard,79175,62.9,SF,67.5,SDLP
+N06000016,Strangford,DUP,Democratic Unionist Party - D.U.P.,Jim Shannon,66928,56,DUP,60.4,DUP
+N06000017,Upper Bann,DUP,Democratic Unionist Party - D.U.P.,Carla Lockhart,82887,60.4,DUP,64.2,DUP
+N06000018,West Tyrone,SF,Sinn Féin,Órfhlaith Begley,66259,62.2,SF,68.2,SF
+S14000001,Aberdeen North,SNP,Scottish National Party (SNP),Kirsty Blackman,62489,59.9,SNP,59.2,SNP
+S14000002,Aberdeen South,SNP,Scottish National Party (SNP),Stephen Flynn,65719,69.4,Con,68.6,SNP
+S14000003,Airdrie and Shotts,SNP,Scottish National Party (SNP),Neil Gray,64008,62.1,SNP,59.3,SNP
+S14000004,Angus,SNP,Scottish National Party (SNP),Dave Doogan,63952,67.5,Con,63.1,SNP
+S14000005,Argyll and Bute,SNP,Scottish National Party (SNP),Brendan O'Hara,66525,72.2,SNP,71.6,SNP
+S14000006,"Ayr, Carrick and Cumnock",SNP,Scottish National Party (SNP),Allan Dorans,71970,64.7,Con,65,SNP
+S14000007,Banff and Buchan,Con,Conservative and Unionist Party,David Duguid,66655,63.4,Con,61.7,SNP
+S14000008,"Berwickshire, Roxburgh and Selkirk",Con,Conservative and Unionist Party,John Lamont,74518,71.3,Con,71.7,SNP
+S14000009,"Caithness, Sutherland and Easter Ross",LD,Liberal Democrats,Jamie Stone,46930,67,LD,66,SNP
+S14000010,Central Ayrshire,SNP,Scottish National Party (SNP),Philippa Whitford,69742,66.7,SNP,65.5,SNP
+S14000011,"Coatbridge, Chryston and Bellshill",SNP,Scottish National Party (SNP),Steven Bonnar,72943,66.1,Lab,63.4,SNP
+S14000012,"Cumbernauld, Kilsyth and Kirkintilloch East",SNP,Scottish National Party (SNP),Stuart McDonald,66079,69.1,SNP,65.9,SNP
+S14000013,Dumfries and Galloway,Con,Conservative and Unionist Party,Alister Jack,74580,69,Con,69.6,SNP
+S14000014,"Dumfriesshire, Clydesdale and Tweeddale",Con,Conservative and Unionist Party,David Mundell,68330,71.9,Con,72.4,Con
+S14000015,Dundee East,SNP,Scottish National Party (SNP),Stewart Hosie,66210,68.4,SNP,65.3,SNP
+S14000016,Dundee West,SNP,Scottish National Party (SNP),Chris Law,64431,64.5,SNP,61.9,SNP
+S14000017,Dunfermline and West Fife,SNP,Scottish National Party (SNP),Douglas Chapman,76652,69.8,SNP,67.5,SNP
+S14000018,East Dunbartonshire,SNP,Scottish National Party (SNP),Amy Callaghan,66075,80.3,LD,78.2,SNP
+S14000019,"East Kilbride, Strathaven and Lesmahagow",SNP,Scottish National Party (SNP),Lisa Cameron,81224,69.4,SNP,67.4,SNP
+S14000020,East Lothian,SNP,Scottish National Party (SNP),Kenny MacAskill,81600,71.7,Lab,70.7,SNP
+S14000021,East Renfrewshire,SNP,Scottish National Party (SNP),Kirsten Oswald,72232,76.6,Con,76.8,SNP
+S14000022,Edinburgh East,SNP,Scottish National Party (SNP),Tommy Sheppard,69424,68.9,SNP,66.2,SNP
+S14000023,Edinburgh North and Leith,SNP,Scottish National Party (SNP),Deidre Brock,81336,73,SNP,71.2,SNP
+S14000024,Edinburgh South,Lab,Labour Party,Ian Murray,66188,75.1,Lab,74.2,Lab
+S14000025,Edinburgh South West,SNP,Scottish National Party (SNP),Joanna Cherry,73501,70.9,SNP,69.5,SNP
+S14000026,Edinburgh West,LD,Liberal Democrats,Christine Jardine,72507,75.2,LD,73.9,SNP
+S14000027,Na h-Eileanan an Iar,SNP,Scottish National Party (SNP),Angus MacNeil,21106,68.6,SNP,69.7,SNP
+S14000028,Falkirk,SNP,Scottish National Party (SNP),John McNally,84472,66.1,SNP,65.5,SNP
+S14000029,Glasgow Central,SNP,Scottish National Party (SNP),Alison Thewliss,69230,57.9,SNP,56.1,SNP
+S14000030,Glasgow East,SNP,Scottish National Party (SNP),David Linden,67381,57.1,SNP,54.7,SNP
+S14000031,Glasgow North,SNP,Scottish National Party (SNP),Patrick Grady,57130,63.3,SNP,62.3,SNP
+S14000032,Glasgow North East,SNP,Scottish National Party (SNP),Anne McLaughlin,61075,55.5,Lab,53.1,SNP
+S14000033,Glasgow North West,SNP,Scottish National Party (SNP),Carol Monaghan,63402,62.7,SNP,61,SNP
+S14000034,Glasgow South,SNP,Scottish National Party (SNP),Stewart McDonald,70891,66.9,SNP,64.6,SNP
+S14000035,Glasgow South West,SNP,Scottish National Party (SNP),Chris Stephens,64575,57.1,SNP,56.3,SNP
+S14000036,Glenrothes,SNP,Scottish National Party (SNP),Peter Grant,65762,63.2,SNP,60.9,SNP
+S14000037,Gordon,SNP,Scottish National Party (SNP),Richard Gordon Thomson,79629,70.2,Con,68.4,SNP
+S14000038,Inverclyde,SNP,Scottish National Party (SNP),Ronnie Cowan,60622,65.8,SNP,66.5,SNP
+S14000039,"Inverness, Nairn, Badenoch and Strathspey",SNP,Scottish National Party (SNP),Drew Hendry,78057,70.2,SNP,68.8,SNP
+S14000040,Kilmarnock and Loudoun,SNP,Scottish National Party (SNP),Alan Brown,74517,63.9,SNP,63.5,SNP
+S14000041,Kirkcaldy and Cowdenbeath,SNP,Scottish National Party (SNP),Neale Hanvey,72853,64.5,Lab,63.6,SNP
+S14000042,Lanark and Hamilton East,SNP,Scottish National Party (SNP),Angela Crawley,77659,68.3,SNP,65.4,SNP
+S14000043,Linlithgow and East Falkirk,SNP,Scottish National Party (SNP),Martyn Day,87044,66.4,SNP,65.2,SNP
+S14000044,Livingston,SNP,Scottish National Party (SNP),Hannah Bardell,82285,66.3,SNP,64.8,SNP
+S14000045,Midlothian,SNP,Scottish National Party (SNP),Owen Thompson,70544,68.4,Lab,66.4,SNP
+S14000046,Moray,Con,Conservative and Unionist Party,Douglas Ross,71035,68.7,Con,67.5,SNP
+S14000047,Motherwell and Wishaw,SNP,Scottish National Party (SNP),Marion Fellows,68856,64.5,SNP,61.5,SNP
+S14000048,North Ayrshire and Arran,SNP,Scottish National Party (SNP),Patricia Gibson,73534,64.1,SNP,64.9,SNP
+S14000049,North East Fife,LD,Liberal Democrats,Wendy Chamberlain,60905,75.3,SNP,71.3,SNP
+S14000050,Ochil and South Perthshire,SNP,Scottish National Party (SNP),John Nicolson,78776,73.4,Con,70.7,SNP
+S14000051,Orkney and Shetland,LD,Liberal Democrats,Alistair Carmichael,34211,67.7,LD,68.3,LD
+S14000052,Paisley and Renfrewshire North,SNP,Scottish National Party (SNP),Gavin Newlands,72007,69,SNP,69.2,SNP
+S14000053,Paisley and Renfrewshire South,SNP,Scottish National Party (SNP),Mhairi Black,64385,66.9,SNP,68.1,SNP
+S14000054,Perth and North Perthshire,SNP,Scottish National Party (SNP),Pete Wishart,72600,74.5,SNP,71.9,SNP
+S14000055,"Ross, Skye and Lochaber",SNP,Scottish National Party (SNP),Ian Blackford,54229,73.5,SNP,71.8,SNP
+S14000056,Rutherglen and Hamilton West,SNP,Scottish National Party (SNP),Margaret Ferrier,80918,66.5,Lab,63.6,SNP
+S14000057,Stirling,SNP,Scottish National Party (SNP),Alyn Smith,68473,76.8,Con,74.4,SNP
+S14000058,West Aberdeenshire and Kincardine,Con,Conservative and Unionist Party,Andrew Bowie,72640,73.4,Con,71.3,SNP
+S14000059,West Dunbartonshire,SNP,Scottish National Party (SNP),Martin Docherty,66517,67.9,SNP,65.3,SNP
+W07000041,Ynys Môn,Con,Conservative and Unionist Party,Virginia Crosbie,51925,70.4,Lab,70.7,Lab
+W07000042,Delyn,Con,Conservative and Unionist Party,Rob Roberts,,,Lab,73,Lab
+W07000043,Alyn and Deeside,Lab,Labour Party,Mark Tami,,,Lab,71.2,Lab
+W07000044,Wrexham,Con,Conservative and Unionist Party,Sarah Atherton,49737,67.4,Lab,70.5,Lab
+W07000045,Llanelli,Lab,Labour Party,Nia Griffith,60513,63.2,Lab,68,Lab
+W07000046,Gower,Lab,Labour Party,Tonia Antoniazzi,,,Lab,73.4,Con
+W07000047,Swansea West,Lab,Labour Party,Geraint Davies,,,Lab,65.7,Lab
+W07000048,Swansea East,Lab,Labour Party,Carolyn Harris,,,Lab,60.2,Lab
+W07000049,Aberavon,Lab,Labour Party,Stephen Kinnock,50747,62.3,Lab,66.8,Lab
+W07000050,Cardiff Central,Lab,Labour Party,Jo Stevens,64037,65.3,Lab,68.2,Lab
+W07000051,Cardiff North,Lab,Labour Party,Anna McMorrin,68438,77,Lab,77.5,Con
+W07000052,Rhondda,Lab,Labour Party,Chris Bryant,,,Lab,65.3,Lab
+W07000053,Torfaen,Lab,Labour Party,Nick Thomas-Symonds,,,Lab,62.2,Lab
+W07000054,Monmouth,Con,Conservative and Unionist Party,David Davies,,,Con,76.7,Con
+W07000055,Newport East,Lab,Labour Party,Jessica Morden,58554,62,Lab,64.5,Lab
+W07000056,Newport West,Lab,Labour Party,Ruth Jones,66657,65.2,Lab,67.6,Lab
+W07000057,Arfon,PC,Plaid Cymru - The Party of Wales,Hywel Williams,42215,68.9,PC,68.4,PC
+W07000058,Aberconwy,Con,Conservative and Unionist Party,Robin John Millar,44699,71.3,Con,71.2,Con
+W07000059,Clwyd West,Con,Conservative and Unionist Party,David Jones,57714,69.7,Con,69.9,Con
+W07000060,Vale of Clwyd,Con,Conservative and Unionist Party,James Davies,56649,65.7,Lab,68.2,Con
+W07000061,Dwyfor Meirionnydd,PC,Plaid Cymru - The Party of Wales,Liz Saville Roberts,44362,67.5,PC,68,PC
+W07000062,Clwyd South,Con,Conservative and Unionist Party,Simon Baynes,53919,67.3,Lab,69.9,Lab
+W07000063,Montgomeryshire,Con,Conservative and Unionist Party,Craig Williams,48997,69.8,Con,68.9,Con
+W07000064,Ceredigion,PC,Plaid Cymru - The Party of Wales,Ben Lake,56250,71.3,PC,73.4,LD
+W07000065,Preseli Pembrokeshire,Con,Conservative and Unionist Party,Stephen Crabb,,,Con,72.2,Con
+W07000066,Carmarthen West and South Pembrokeshire,Con,Conservative and Unionist Party,Simon Anthony Hart,,,Con,72.2,Con
+W07000067,Carmarthen East and Dinefwr,PC,Plaid Cymru - The Party of Wales,Jonathan Edwards,57407,71.4,PC,73.4,PC
+W07000068,Brecon and Radnorshire,Con,Conservative and Unionist Party,Fay Alicia Jones,55490,74.5,Con,73.9,Con
+W07000069,Neath,Lab,Labour and Co-operative Party,Christina Rees,56416,65.2,Lab,68.7,Lab
+W07000070,Cynon Valley,Lab,Labour Party,Beth Winter,,,Lab,62.1,Lab
+W07000071,Merthyr Tydfil and Rhymney,Lab,Labour Party,Gerald Jones,,,Lab,60.6,Lab
+W07000072,Blaenau Gwent,Lab,Labour Party,Nick Smith,50736,59.6,Lab,63.3,Lab
+W07000073,Bridgend,Con,Conservative and Unionist Party,Jamie Hamilton Wallis,61380,68.8,Lab,69.6,Lab
+W07000074,Ogmore,Lab,Labour Party,Chris Elmore,56155,63,Lab,65.3,Lab
+W07000075,Pontypridd,Lab,Labour Party,Alex Davies-Jones,,,Lab,66,Lab
+W07000076,Caerphilly,Lab,Labour Party,Wayne David,63166,63.5,Lab,64.3,Lab
+W07000077,Islwyn,Lab,Labour and Co-operative Party,Chris Evans,55423,62,Lab,64.3,Lab
+W07000078,Vale of Glamorgan,Con,Conservative and Unionist Party,Alun Cairns,76508,71.6,Con,72.7,Con
+W07000079,Cardiff West,Lab,Labour Party,Kevin Brennan,68508,67.4,Lab,70,Lab
+W07000080,Cardiff South and Penarth,Lab,Labour and Co-operative Party,Stephen Doughty,78837,64.2,Lab,66.5,Lab
