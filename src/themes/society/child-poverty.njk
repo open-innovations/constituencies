@@ -1,0 +1,64 @@
+---
+title: Child poverty (UK)
+theme: society
+description: |
+  Child poverty by constituency (UK).
+---
+
+<p>This page provides constituency-level data on child poverty in the UK (2021/2). Use the slider to switch between relative and absolute poverty.</p>
+{% comp 'hexmap', {
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.child-poverty-2021",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "Constituency relative rate",
+		scale: "Viridis",
+		min: 0,
+		max: 1,
+		matchKey: "ONSConstID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 1,
+				label: "100%"
+			},{
+				value: 0.8,
+				label: "80%"
+			},{
+				value: 0.6,
+				label: "60%"
+			},{
+				value: 0.4,
+				label: "40%"
+			},{
+				value: 0.2,
+				label: "20%"
+			},{
+				value: 0,
+				label: "0%"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			},
+			slider: {
+				columns: ['Constituency relative rate','Constituency absolute rate'],
+				width: "500px"
+			}
+		},
+		tooltip: "{{ n }}<br />{{ _value }}: {{ {{ _value }} | multiply(100) | toFixed(1) }}%",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-child-poverty/">child poverty</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "child poverty by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Notes</h2>
+<p>These figures were published by the HMRC and DWP for the first time in March 2020 and updated in March 2023.</p>
+<p><strong>Relative poverty</strong>: households with income below 60% of the median (middle) household income. This can be seen as a measure of inequality between low- and middle-income households.</p>
+<p><strong>Absolute poverty</strong>: households with income below 60% of (inflation-adjusted) median income in 2010/11. This is often used to look at how living standards of low-income households are changing over time.</p>
+<p>In these statistics, income is measured before housing costs are taken into account.  The median is the point where half of household incomes are higher and half lower.</p>
