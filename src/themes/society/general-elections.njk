@@ -5,7 +5,7 @@ description: |
   General Election results by constituency (UK).
 ---
 
-<p>General Election results for 2019/2017/2015.</p>
+<p>The party-political make up of the UK Parliament at various points from 2015 until 2023.</p>
 {% comp 'hexmap', {
 	"config": {
 		"colours": {
@@ -35,7 +35,7 @@ description: |
 			name: "filterLabel",
 			template: "{{ n }} ({{ a }})"
 		}],
-		value: "GE2019",
+		value: "GE 2019",
 		matchKey: "const_id",
 		legend: {
 			position: "top right",
@@ -88,7 +88,7 @@ description: |
 				label: "filterLabel"
 			},
 			slider: {
-				columns: ['GE2015','GE2017','GE2019','2023'],
+				columns: ['GE 2015','GE 2017','Pre GE 2019','GE 2019','2023'],
 				width: "500px"
 			}
 		},

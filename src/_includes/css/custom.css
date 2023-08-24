@@ -14,6 +14,7 @@ header a, .breadcrumb a { color:inherit; }
 
 .oi-slider { margin:auto; margin-bottom: 1em; }
 .oi-slider-inner { display: flex; align-items: center; justify-content: flex-end; }
+.oi-slider-inner label { white-space:nowrap; }
 .oi-slider-control {
 	width: 100%;
 	height: 0.5em;
