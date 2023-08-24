@@ -5,7 +5,7 @@ description: |
   General Election results by constituency (UK).
 ---
 
-<p>The party-political make up of the UK Parliament at various points from 2015 until 2023.</p>
+<p>The party-political make up of the UK Parliament at various points from 2010 until 2023.</p>
 {% comp 'hexmap', {
 	"config": {
 		"colours": {
@@ -88,12 +88,12 @@ description: |
 				label: "filterLabel"
 			},
 			slider: {
-				columns: ['GE 2015','GE 2017','Pre GE 2019','GE 2019','2023'],
+				columns: ['GE 2010','GE 2015','GE 2017','Pre GE 2019','GE 2019','2023'],
 				width: "500px"
 			}
 		},
 		tooltip: "{{ n }}<br />{{ _value }}: {{ {{ _value }} }}",
-		attribution: 'Data: General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, ODI Leeds; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7979" target="_parent">2017</a> (Parliament) & <a href="http://www.data.parliament.uk/dataset/general-election-2015" target="_parent">2015</a> (Parliament).'
+		attribution: 'Data: General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, ODI Leeds; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7979" target="_parent">2017</a> (Parliament), <a href="http://www.data.parliament.uk/dataset/general-election-2015" target="_parent">2015</a> (Parliament) & <a href="https://en.wikipedia.org/wiki/Results_of_the_2010_United_Kingdom_general_election">2010</a> (Wikipedia).'
 	},
 	"download": {"text": "General Election results by constituency", "type": "CSV"}
 } %}{% endcomp %}
