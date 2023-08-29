@@ -45,6 +45,12 @@ header a, .breadcrumb a { color:inherit; }
 .theme-icon { margin-right: 0.25em; float: left; width: 1em; height: 1em; text-align: center; }
 .theme-icon svg { width: 0.75em; height: auto; }
 
+.oi-map .data-layer > .outline * {
+	stroke: red;
+	stroke-width: 4px;
+	stroke-opacity: 1;
+	outline: none;
+}
 
 @media only screen and (max-width: 1080px) {
 	.grid-list { grid-template-columns: repeat(2,1fr); grid-gap: 0.25em; }

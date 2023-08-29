@@ -3,42 +3,96 @@ title: Electorate (UK)
 theme: society
 description: |
   Electorate by constituency (UK).
-config:
-  ref:
-    width: 600
-    hexjson: hexjson.uk-constituencies-2023
-    data: sources.society.2023-constituency-electorate
-    columns:
-      - name: "filterLabel"
-        template: "{{ n }} ({{ a }})"
-    value: "Electorate"
-    scale: "Viridis"
-    min: 50000
-    max: 80000
-    matchKey: "PCON25CD"
-    legend:
-      position: top right
-      items:
-      - value: 80000
-        label: ">80,000"
-      - value: 70000
-        label: "70000"
-      - value: 60000
-        label: "60000"
-      - value: 50000
-        label: "<50000"
-    tools:
-      filter:
-        label: filterLabel
-    tooltip: "Electorate<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
-    attribution: |
-      Data: <a href="https://boundarycommissionforengland.independent.gov.uk/2023-review/the-2023-review-of-parliamentary-constituency-boundaries-in-england-volume-two-constituency-names-designations-and-composition/">Boundary Commission for England</a> / <a href="https://www.bcomm-scotland.independent.gov.uk/sites/default/files/2023_review_final/bcs_2023_final_recs_electorate_ward_area_desig.pdf">Boundary Commission for Scotland</a> / <a href="https://bcomm-wales.gov.uk/sites/bcomm/files/review/2023%20Final%20Recs_Electdatabyconsts_E%20-%20Done.xls">Boundary Commission for Wales</a> / <a href="https://www.boundarycommission.org.uk/files/boundarycommission/2023-07/Final%20Recommendations%20Report%20of%20the%202023%20Review%20of%20Parliamentary%20Constituencies.PDF">Boundary Commission for Northern Ireland</a>
 ---
 
+<h2>2023 Constituencies</h2>
 <p>Initial electorate values from the 2023 boundary reviews.</p>
 {% comp 'hexmap', {
-	"config": config.ref,
-	"download": {"text": "Electorate by constituency", "type": "CSV"}
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": "sources.society.2023-constituency-electorate",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Electorate",
+		"scale": "Viridis",
+		"min": 50000,
+		"max": 80000,
+		"matchKey": "PCON25CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 80000,
+				"label": ">80,000"
+			},{
+				"value": 70000,
+				"label": "70000"
+			},{
+				"value": 60000,
+				"label": "60000"
+			},{
+				"value": 50000,
+				"label": "<50000"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Electorate<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://boundarycommissionforengland.independent.gov.uk/2023-review/the-2023-review-of-parliamentary-constituency-boundaries-in-england-volume-two-constituency-names-designations-and-composition/\">Boundary Commission for England</a> / <a href=\"https://www.bcomm-scotland.independent.gov.uk/sites/default/files/2023_review_final/bcs_2023_final_recs_electorate_ward_area_desig.pdf\">Boundary Commission for Scotland</a> / <a href=\"https://bcomm-wales.gov.uk/sites/bcomm/files/review/2023%20Final%20Recs_Electdatabyconsts_E%20-%20Done.xls\">Boundary Commission for Wales</a> / <a href=\"https://www.boundarycommission.org.uk/files/boundarycommission/2023-07/Final%20Recommendations%20Report%20of%20the%202023%20Review%20of%20Parliamentary%20Constituencies.PDF\">Boundary Commission for Northern Ireland</a>"
+	},
+	"download": {"text": "Electorate estimates by constituency (2023)", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Pre-2023 Constituencies</h2>
+<p>Electoral registrations from 2015 to 2023. Prior to 2015 there are some differences in Scottish constituencies.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.constituency-electorate",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Electoral registrations December 2022",
+		"scale": "Viridis",
+		"min": 50000,
+		"max": 80000,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 80000,
+				"label": ">80,000"
+			},{
+				"value": 70000,
+				"label": "70000"
+			},{
+				"value": 60000,
+				"label": "60000"
+			},{
+				"value": 50000,
+				"label": "<50000"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				columns: ['Total electors 2015','Total electors 2016','Total electors 2017','Total electors 2018','Electoral registrations December 2019','Electoral registrations March 2020','Electoral registrations December 2020','Electoral registrations December 2021','Electoral registrations December 2022'],
+				width: "500px"
+			}
+		},
+		"tooltip": "Electorate<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/elections/electoralregistration/datasets/electoralstatisticsforuk\">Electoral statistics for the UK</a> (Office of National Statistics)"
+	},
+	"download": {"text": "Electorate by constituency (up to 2022)", "type": "CSV"}
 } %}{% endcomp %}
 
 
