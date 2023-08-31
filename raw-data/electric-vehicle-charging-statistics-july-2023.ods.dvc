@@ -1,0 +1,14 @@
+md5: 136129ffcd431d1fe1833c879a401a5d
+frozen: true
+deps:
+- checksum: '"64be9a7c-56899"'
+  size: 354457
+  hash: md5
+  path: 
+    https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1173344/electric-vehicle-charging-device-statistics-july-2023.ods
+outs:
+- md5: 9a2ff79ec13d66b05aea71427e626324
+  size: 354457
+  isexec: true
+  hash: md5
+  path: electric-vehicle-charging-statistics-july-2023.ods

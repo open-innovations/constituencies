@@ -1,0 +1,14 @@
+md5: 14bba9e23efeda8cd879917587e3b8aa
+frozen: true
+deps:
+- checksum: '"6475f027-40a81"'
+  size: 264833
+  hash: md5
+  path: 
+    https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1159691/electric-vehicle-charging-device-grant-scheme-statistics-april-2023.ods
+outs:
+- md5: 444779cc1ee97642bae5b7779cfb660e
+  size: 264833
+  isexec: true
+  hash: md5
+  path: electric-vehicle-charging-device-grant-scheme-statistics.ods

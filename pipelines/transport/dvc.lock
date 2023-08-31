@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  transport:
+    cmd: PYTHONPATH=. python pipelines/transport/transport.py
+    deps:
+    - path: pipelines/transport/transport.py
+      hash: md5
+      md5: 42abe60d43f1919c43ac2419b018a2f0
+      size: 2970
+    - path: pipelines/util.py
+      hash: md5
+      md5: 0aa94a654502204f6d878e2fa0831afd
+      size: 650
+    outs:
+    - path: src/_data/sources/transport/ev_charging_points.csv
+      hash: md5
+      md5: 81f242b523f4a002013cbf089853cf20
+      size: 11042
+      isexec: true

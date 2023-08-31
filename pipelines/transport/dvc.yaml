@@ -1,0 +1,10 @@
+stages:
+  transport:
+    cmd: PYTHONPATH=. python pipelines/transport/transport.py
+    wdir: ../..
+    deps:
+      - pipelines/transport/transport.py
+      - pipelines/util.py
+    outs:
+      - src/_data/sources/transport/ev_charging_points.csv:
+          cache: false
