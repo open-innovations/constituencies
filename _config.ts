@@ -49,6 +49,10 @@ site.copy(dataPath);
 // https://lume.land/docs/core/processors/
 site.process([".html"], autoDependency);
 
+
+site.loadAssets([".css"]);
+site.loadAssets([".js"]);
+
 // Import lume charts
 site.use(oiCharts({
 	assetPath: '/assets',

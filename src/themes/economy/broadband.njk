@@ -1,0 +1,302 @@
+---
+title: Broadband (UK)
+theme: economy
+description: |
+  Constituency-level data on broadband.
+---
+
+<p>See how broadband connectivity and speeds vary in different parts of the UK, based on Ofcom data and <a href="https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/">compiled by the House of Commons Library</a>. Below are views of <a href="#average">average download speeds</a>, the percentage <a href="#below-universal-service-obligation">below universal service obligation</a>, those <a href="#under-10Mbps">receiving under 10 Mbps</a>, those <a href="#over-30Mbps">receiving over 30 Mbps</a>, <a href="#superfast">superfast availability</a> and <a href="#gigabit">gigabit availability</a>.</p>
+
+<h2>Average download speeds (May 2022){% comp 'anchor', { 'ref': 'average'} %}{% endcomp %}</h2>
+
+<p>Speeds actually being received based on the mean average. This may reflect consumer choice as well as line quality, since users sometimes have access to packages offering higher speeds than those they are actually receiving. This is a mean average, meaning that lines with high speeds (e.g. gigabit speeds) will have a disproportionate impact on the average. Ofcom’s source data contains median download speeds for constituencies.</p>
+
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Average download speed (Mbps)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 200,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 200,
+				"label": "200+ Mbps"
+			},{
+				"value": 150,
+				"label": "150 Mbps"
+			},{
+				"value": 100,
+				"label": "100 Mbps"
+			},{
+				"value": 50,
+				"label": "50 Mbps"
+			},{
+				"value": 0,
+				"label": "0 Mbps"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />Average speed: <strong>{{ {{ _value }} | toLocaleString() }}Mbps</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Below universal service obligation (January 2023){% comp 'anchor', { 'ref': 'below-universal-service-obligation'} %}{% endcomp %}</h2>
+<p>The percentage of premises unable to receive 10 Mbps download speed or 1 Mbps upload speed, which Ofcom regards as necessary components of ‘decent broadband’. This measure counts only premises that cannot receive the above speeds from fixed broadband, fixed wireless technologies, and mobile broadband.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Below universal service obligation (%)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 4,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 4,
+				"label": "4%+"
+			},{
+				"value": 3,
+				"label": "3%"
+			},{
+				"value": 2,
+				"label": "2%"
+			},{
+				"value": 1,
+				"label": "1%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />Below universal service obligation: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>Receiving under 10 Mbps (May 2022){% comp 'anchor', { 'ref': 'under-10Mbps'} %}{% endcomp %}</h2>
+<p>The percentage of lines receiving download speeds under 10 Mbps. These lines may have access to higher speeds. However, a high percentage of lines receiving under 10 Mbps suggest that the speeds available to basic broadband subscribers are low and below Ofcom’s threshold for ‘decent broadband’.
+</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Receiving under 10 Mbps (%)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 20,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 20,
+				"label": "20%+"
+			},{
+				"value": 15,
+				"label": "15%"
+			},{
+				"value": 10,
+				"label": "10%"
+			},{
+				"value": 5,
+				"label": "5%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>Receiving over 30 Mbps (May 2022){% comp 'anchor', { 'ref': 'over-30Mbps'} %}{% endcomp %}</h2>
+<p>The percentage of lines actually receiving superfast download speeds (over 30 Mbps). Note that this does not show what lines are capable of receiving. Some lines not receiving 30 Mbps have the option of faster speeds available to them. A lower-than-average figure on this measure may indicate that consumers have chosen not to (or are unable to) adopt superfast packages, rather than worse connectivity in the area.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Receiving over 30 Mbps (%)",
+		"scale": "Viridis",
+		"min": 50,
+		"max": 100,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 90,
+				"label": "90%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 70,
+				"label": "70%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 50,
+				"label": "<50%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>Superfast availability (January 2023){% comp 'anchor', { 'ref': 'superfast'} %}{% endcomp %}</h2>
+<p>The percentage of premises that were capable of receiving download speeds of at least 30 Mbps. Superfast availability doesn’t mean that all lines are actually receiving superfast speeds, because this often requires consumers to subscribe to specific packages.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Superfast availability (%)",
+		"scale": "Viridis",
+		"min": 50,
+		"max": 100,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 90,
+				"label": "90%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 70,
+				"label": "70%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 50,
+				"label": "<50%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Gigabit availability (January 2023){% comp 'anchor', { 'ref': 'gigabit'} %}{% endcomp %}</h2>
+<p>The percentage of premises that were capable of receiving speeds of 1 gigabit per second (1 Gbps).</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Gigabit availability (%)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ Name }}<br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
+
