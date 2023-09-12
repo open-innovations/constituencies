@@ -5,32 +5,31 @@ description: |
   Electric vehicle charging points by constituency (UK).
 ---
 <h2>Total number of charging sockets and devices</h2>
-<p></p>
-{# {% comp 'hexmap', {
+{% comp 'hexmap', {
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2023",
+		"hexjson": "hexjson.constituencies",
 		"data": "sources.transport.ev_charging_points",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "home-2022",
+		"value": "total",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 1500,
-		"matchKey": "geography_code_LA22CD",
+		"max": 2400,
+		"matchKey": "PCON22CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 500,
-				"label": "500"
+				"value": 800,
+				"label": "800"
 			},{
-				"value": 1000,
-				"label": "1000"
+				"value": 1600,
+				"label": "1600"
 			},{
-				"value": 1500,
-				"label": "1500"
+				"value": 2400,
+				"label": "2400"
 			}]
 		},
 		"tools": {
@@ -42,7 +41,123 @@ description: |
 		"attribution": ""
 	},
 	"download": {"text": "EV Charging", "type": "CSV"}
-} %}{% endcomp %} #}
+} %}{% endcomp %}
+
+<h2>Workplace charging sockets and devices</h2>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "workplace-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 850,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 50,
+				"label": "50"
+			},{
+				"value": 450,
+				"label": "450"
+			},{
+				"value": 850,
+				"label": "850"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": ""
+	},
+	"download": {"text": "EV Charging", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Public charging sockets and devices</h2>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "public-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 2250,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 750,
+				"label": "750"
+			},{
+				"value": 1500,
+				"label": "1500"
+			},{
+				"value": 2250,
+				"label": "2250"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": ""
+	},
+	"download": {"text": "EV Charging", "type": "CSV"}
+} %}{% endcomp %}
+<h2>Home charging sockets and devices</h2>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "home-2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 1200,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 400,
+				"label": "400"
+			},{
+				"value": 800,
+				"label": "800"
+			},{
+				"value": 1200,
+				"label": "1200"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": ""
+	},
+	"download": {"text": "EV Charging", "type": "CSV"}
+} %}{% endcomp %}
 <h2>Notes</h2>
 <p>Data comes from two sources: 
     <ul>
