@@ -32,6 +32,20 @@ for($f = 0; $f < $n ; $f++){
 	
 }
 
+# Load in the population figures
+@data = LoadCSV("../../raw-data/Population.csv");
+$ages = {};
+for($i = 0; $i < @data; $i++){
+	#Age group,ONSConstID,ConstituencyName,RegionID,RegionName,CountryID,CountryName,DateThisUpdate,DateOfDataset,Date,Const%,ConstLevel,Reg%,UK%
+	#0-9,E14000554,Berwick-upon-Tweed,E12000001,North East,K02000001,UK,16/09/2021,30/06/2020,2020,8.20%,6183,10.90%,11.80%
+	$cid = $data[$i]->{'ONSConstID'};
+	if(!$ages->{$cid}){ $ages->{$cid} = 0; }
+	if($data[$i]->{'Date'} eq "2020" && $data[$i]->{'Age group'} ne "0-9" && $data[$i]->{'Age group'} ne "10-19"){ $ages->{$cid} += $data[$i]->{'ConstLevel'}; }
+	if($data[$i]->{'Date'} eq "2020"){ $ages->{$cid} += $data[$i]->{'ConstLevel'}; }
+}
+
+
+
 # Load the CSV into rows
 # Comes from https://chargepoints.dft.gov.uk/api/retrieve/registry/format/csv
 @rows = LoadCSV("../../raw-data/national-charge-point-registry.csv");
@@ -39,7 +53,7 @@ $n = @rows;
 $bad = 0;
 $badconnections = 0;
 
-for($i = 0; $i < $n ; $i++){	
+for($i = 0; $i < $n ; $i++){
 	$lat = $rows[$i]->{'latitude'};
 	$lon = $rows[$i]->{'longitude'};
 	$area = $geo->findPoint($key,$lat,$lon);
@@ -79,9 +93,15 @@ for($i = 0; $i < $n ; $i++){
 	}
 }
 open(FILE,">","../../src/_data/sources/transport/national_charge_point_registry_by_constituency.csv");
-print FILE "$key,all,slow (3-6 KW),fast (7-22 KW),rapid (25-100 KW),ultra (>100 KW)\n";
+print FILE "$key,all";
+print FILE ",slow (3-6 KW),fast (7-22 KW),rapid (25-100 KW),ultra (>100 KW),population (2020)";
+print FILE ",all (per 100k),slow (3-6 KW per 100k),fast (7-22 KW per 100k),rapid (25-100 KW per 100k),ultra (>100 KW per 100k)";
+print FILE "\n";
 foreach $area (sort(keys(%{$connections}))){
-	print FILE ($area =~ /,/ ? "\"$area\"": $area).",$connections->{$area}{'total'},$connections->{$area}{'slow'},$connections->{$area}{'fast'},$connections->{$area}{'rapid'},$connections->{$area}{'ultra'}\n";
+	print FILE ($area =~ /,/ ? "\"$area\"": $area);
+	print FILE ",$connections->{$area}{'total'},$connections->{$area}{'slow'},$connections->{$area}{'fast'},$connections->{$area}{'rapid'},$connections->{$area}{'ultra'},$ages->{$area}";
+	print FILE ",".sprintf("%0d",1e5*$connections->{$area}{'total'}/$ages->{$area}).",".sprintf("%0d",1e5*$connections->{$area}{'slow'}/$ages->{$area}).",".sprintf("%0d",1e5*$connections->{$area}{'fast'}/$ages->{$area}).",".sprintf("%0d",1e5*$connections->{$area}{'rapid'}/$ages->{$area}).",".sprintf("%0d",1e5*$connections->{$area}{'ultra'}/$ages->{$area});
+	print FILE "\n";
 }
 close(FILE);
 print "$bad unidentified chargepoint locations ($badconnections chargepoints)\n";
@@ -116,17 +136,24 @@ sub LoadCSV {
 	my $col = shift;
 	my $compact = shift;
 
-	my (@lines,$str,@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f);
+	my (@lines,$str,@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2);
 
 	msg("Processing CSV from <cyan>$file<none>\n");
 	open(FILE,"<:utf8",$file);
 	@lines = <FILE>;
 	close(FILE);
 	$str = join("",@lines);
-	$str =~ s/\r\n/\\n/g;
-	
+
+	$n = () = $str =~ /\r\n/g;
+	$n2 = () = $str =~ /\n/g;
+	if($n < $n2 * 0.25){ 
+		# Replace CR LF with escaped newline
+		$str =~ s/\r\n/\\n/g;
+	}
 	@rows = split(/[\n]/,$str);
 
+	$n = @rows;
+	
 	for($r = 0; $r < @rows; $r++){
 		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
 		if($r < 1){

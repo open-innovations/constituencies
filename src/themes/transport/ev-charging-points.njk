@@ -166,7 +166,7 @@ description: |
 
 
 <h2>National Chargepoint Registry{% comp 'anchor', { 'ref': 'ncr'} %}{% endcomp %}</h2>
-<p>Aggregating <a href="https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints">data on <em>publicly accessible chargepoints</em></a> from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a>. Use the slider to see types of connections: slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), ultra (>100 KW).</p>
+<p>Aggregating <a href="https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints">data on <em>publicly accessible chargepoints</em></a> from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a>. Use the slider to see numbers of connections per 100,000 population for slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), and ultra (>100 KW) charging.</p>
 {% comp 'hexmap', {
 	"config": {
 		"width": 600,
@@ -175,32 +175,29 @@ description: |
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "slow per capita",
+			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "all",
+		"value": "all (per 100k)",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 500,
+		"max": 300,
 		"matchKey": "PCON22CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 500,
-				"label": "500+"
-			},{
-				"value": 400,
-				"label": "400"
-			},{
 				"value": 300,
-				"label": "300"
+				"label": "300+ / 100k"
 			},{
 				"value": 200,
-				"label": "200"
+				"label": "200 / 100k"
 			},{
 				"value": 100,
-				"label": "100"
+				"label": "100 / 100k"
 			},{
 				"value": 0,
-				"label": "0"
+				"label": "0 / 100k"
 			}]
 		},
 		"tools": {
@@ -208,14 +205,14 @@ description: |
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["all","slow (3-6 KW)","fast (7-22 KW)","rapid (25-100 KW)","ultra (>100 KW)"],
+				"columns": ["all (per 100k)","slow (3-6 KW per 100k)","fast (7-22 KW per 100k)","rapid (25-100 KW per 100k)","ultra (>100 KW per 100k)"],
 				"width": "600px"
 			}
 		},
-		"tooltip": "{{ n }}<br />All connections: <strong>{{ all | toLocaleString() }}</strong><br />Slow (3-6 KW): <strong>{{ slow (3-6 KW) | toLocaleString()}}</strong><br />Fast (7-22 KW): <strong>{{ fast (7-22 KW) | toLocaleString()}}</strong><br />Rapid (25-100 KW): <strong>{{ rapid (25-100 KW) | toLocaleString()}}</strong><br />Ultra (&gt;100 KW): <strong>{{ ultra (>100 KW) | toLocaleString()}}</strong>",
-		"attribution": "Connections aggregated from the <a href=\"https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints\">National Chargepoint Registry</a> (as of September 2023)"
+		"tooltip": "{{ n }}<br />Population (2020): <strong>{{ population (2020) | toLocaleString() }}</strong><br />All: <strong>{{ all (per 100k) | toLocaleString() }}</strong> / 100k<br />Slow (3-6 KW): <strong>{{ slow (3-6 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Fast (7-22 KW): <strong>{{ fast (7-22 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Rapid (25-100 KW): <strong>{{ rapid (25-100 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Ultra (&gt;100 KW): <strong>{{ ultra (>100 KW per 100k) | toLocaleString()}}</strong> / 100k",
+		"attribution": "Connections aggregated from the <a href=\"https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints\">National Chargepoint Registry</a> (as of September 2023)<br /><a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population data</a> (House of Commons Library)"
 	},
-	"download": {"text": "EV Charging", "type": "CSV"}
+	"download": {"text": "National Chargepoint Registry data by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
 <h2>Notes</h2>
