@@ -29,6 +29,7 @@ if __name__ == '__main__':
     merged_df.replace('x', 'NaN', inplace=True)
     merged_df['public-2023-04'] = merged_df['public-2023-04'].astype(float)
     merged_df['total'] = merged_df[['workplace-2023-04', 'home-2022', 'public-2023-04']].sum(axis=1)
+    merged_df.set_index('geography_code_LA22CD', inplace=True)
     merged_df.to_csv(os.path.join(TRANSPORT_DATA_DIR, 'ev_charging_points.csv'))
     
     
