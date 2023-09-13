@@ -3,7 +3,6 @@
 use lib "./../lib/";	# Custom functions
 use Data::Dumper;
 use JSON::XS;
-use YAML::XS;
 use OpenInnovations::GeoJSON;
 
 my $outputfile = "../../src/_data/sources/transport/national_charge_point_registry_by_constituency.csv";
@@ -138,6 +137,7 @@ sub warning {
 
 
 sub LoadCSV {
+	# version 1.1
 	my $file = shift;
 	my $col = shift;
 	my $compact = shift;
@@ -162,9 +162,13 @@ sub LoadCSV {
 	
 	for($r = 0; $r < @rows; $r++){
 		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
+
 		if($r < 1){
 			# Header
 			if(!@header){
+				for($c = 0; $c < @cols; $c++){
+					$cols[$c] =~ s/(^\"|\"$)//g;
+				}
 				@header = @cols;
 			}else{
 				for($c = 0; $c < @cols; $c++){
