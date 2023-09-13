@@ -5,8 +5,13 @@ description: |
   Electric vehicle charging points by constituency (UK).
 ---
 
+<p>This page aims to present data on electric vehicle (EV) charging for <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> (ONS/ZapMap and <a href="#ncr">National Chargepoint Registry</a>), and <a href="#combined">combined</a> charging sockets/devices/connections.</p>
 
-<h2>Total number of charging sockets and devices{% comp 'anchor', { 'ref': 'total'} %}{% endcomp %}</h2>
+<h2>Combined charging availability{% comp 'anchor', { 'ref': 'combined'} %}{% endcomp %}</h2>
+<p>
+    To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
+</p>
+
 {% comp 'hexmap', {
 	"config": {
 		"width": 600,
@@ -24,14 +29,14 @@ description: |
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 800,
-				"label": "800"
+				"value": 2400,
+				"label": "2400"
 			},{
 				"value": 1600,
 				"label": "1600"
 			},{
-				"value": 2400,
-				"label": "2400"
+				"value": 800,
+				"label": "800"
 			}]
 		},
 		"tools": {
@@ -40,85 +45,7 @@ description: |
 			}
 		},
 		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": ""
-	},
-	"download": {"text": "EV Charging", "type": "CSV"}
-} %}{% endcomp %}
-
-<h2>Workplace charging sockets and devices{% comp 'anchor', { 'ref': 'work'} %}{% endcomp %}</h2>
-{% comp 'hexmap', {
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.ev_charging_points",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "workplace-2023-04",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 850,
-		"matchKey": "PCON22CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 50,
-				"label": "50"
-			},{
-				"value": 450,
-				"label": "450"
-			},{
-				"value": 850,
-				"label": "850"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
-		},
-		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": ""
-	},
-	"download": {"text": "EV Charging", "type": "CSV"}
-} %}{% endcomp %}
-
-<h2>Public charging sockets and devices{% comp 'anchor', { 'ref': 'public'} %}{% endcomp %}</h2>
-{% comp 'hexmap', {
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.ev_charging_points",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "public-2023-04",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 2250,
-		"matchKey": "PCON22CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 750,
-				"label": "750"
-			},{
-				"value": 1500,
-				"label": "1500"
-			},{
-				"value": 2250,
-				"label": "2250"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
-		},
-		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": ""
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023\"> Electric Vehicle Charging Device Statistics</a> and <a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
 	},
 	"download": {"text": "EV Charging", "type": "CSV"}
 } %}{% endcomp %}
@@ -126,6 +53,7 @@ description: |
 
 
 <h2>Home charging sockets and devices{% comp 'anchor', { 'ref': 'home'} %}{% endcomp %}</h2>
+<p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants (EVHS, DRS, and EVCG) for domestic charging devices. These figures will not include home charging devices that have been installed without a grant. </p>
 {% comp 'hexmap', {
 	"config": {
 		"width": 600,
@@ -143,14 +71,14 @@ description: |
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 400,
-				"label": "400"
+				"value": 1200,
+				"label": "1200"
 			},{
 				"value": 800,
 				"label": "800"
 			},{
-				"value": 1200,
-				"label": "1200"
+				"value": 400,
+				"label": "400"
 			}]
 		},
 		"tools": {
@@ -159,14 +87,113 @@ description: |
 			}
 		},
 		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": ""
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
 	},
 	"download": {"text": "EV Charging", "type": "CSV"}
 } %}{% endcomp %}
 
 
-<h2>National Chargepoint Registry{% comp 'anchor', { 'ref': 'ncr'} %}{% endcomp %}</h2>
-<p>Aggregating <a href="https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints">data on <em>publicly accessible chargepoints</em></a> from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a>. Use the slider to see numbers of connections per 100,000 population for slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), and ultra (>100 KW) charging.</p>
+<h2>Workplace charging sockets and devices{% comp 'anchor', { 'ref': 'work'} %}{% endcomp %}</h2>
+<p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants through the Workplace Charging Scheme (WCS). The statistics provided are for the number of "Sockets Installed".</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "workplace-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 800,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 800,
+				"label": "800+"
+			},{
+				"value": 600,
+				"label": "600"
+			},{
+				"value": 400,
+				"label": "400"
+			},{
+				"value": 200,
+				"label": "200"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
+	},
+	"download": {"text": "EV Charging", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Public charging sockets and devices{% comp 'anchor', { 'ref': 'public'} %}{% endcomp %}</h2>
+
+<h3>ONS/ZapMap</h3>
+<p>For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries. The data are provided aggregated to lower tier local authority district so have been apportioned to constituencies based on the amount of geographic overlap.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "public-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 2250,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 2000,
+				"label": "2000+"
+			},{
+				"value": 1500,
+				"label": "1500"
+			},{
+				"value": 1000,
+				"label": "1000"
+			},{
+				"value": 500,
+				"label": "500"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Total charging points<br />{{ n }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023\"> Electric Vehicle Charging Device Statistics</a> (DfT)"
+	},
+	"download": {"text": "EV Charging", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+
+<h3>National Chargepoint Registry{% comp 'anchor', { 'ref': 'ncr'} %}{% endcomp %}</h3>
+<p>Publicly accessible chargepoints per 100,000 people from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a> (see <a href="#notes">notes</a>). Use the slider to see numbers of connections per 100,000 population for slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), and ultra (>100 KW) charging.</p>
 {% comp 'hexmap', {
 	"config": {
 		"width": 600,
@@ -215,24 +242,16 @@ description: |
 	"download": {"text": "National Chargepoint Registry data by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
-<h2>Notes</h2>
-<p>Data comes from three sources: 
-    <ul>
-    <li><a href="https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023"> Electric Vehicle Charging Device Statistics</a></li>
-    <li><a href="https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023">Electric Vehicle Charging Grant Scheme Statistics</a></li>
-	<li><a href="https://chargepoints.dft.gov.uk/api/retrieve/registry/format/csv">National Chargepoint Registry</a></li>
-    </ul>
-</p>
-<p>
-    For our total value, we add the number of workplace, home, and public-access charging points for each lower-tier 2022 local authority district.
-    Homecharging and publicly available "devices" represent charging devices at all speeds. A device can have a number of connectors of varying speeds.
-    We count each of these "devices" as one unit as there is no way to know how many individual sockets they have.
-    Workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
-</p>
-<p>
-    For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries.
-    For homecharging we are using 2022 data. At some point this will update with a 2023 value and we will need to see if they also use updated geographies.
-    Workplace charging uses April 2023 data.
-</p>
-<p>The Electric Vehicle Charging Device Statistics (ONS/ZapMap) references 44,020 devices (July 2023). <a href="https://www.zap-map.com/ev-stats/how-many-charging-points">According to ZapMap</a> "there were 48,450 electric vehicle charging points across the UK, across 29,062 charging locations" as of the end of August 2023. As of early September 2023, the National Chargepoint Registry contains 49,343 <code>In service</code> connections from 31,589 devices. So the NCR's <em>connections</em> appear to be comparable to ZapMap's <em>devices</em>. The NCR data include latitudes/longitudes for each device and that makes it possible to aggregate by constituency easily.</p>
-<p>In <a href="https://open-innovations.org/blog/2022-04-27-planning-electric-vehicle-bulk-charging-locations-with-open-data">our previous analysis (April 2022)</a> we identified at least 50 chargepoints that had been given incorrect coordinates by their operators; some had their latitudes/longitudes swapped around, some had the wrong sign on the longitude, and some had duplicated the latitude in the longitude value. In the current dataset it hasn't been possible to associate 134 locations (149 connections) with constituencies.</p>
+<h2>Notes{% comp 'anchor', { 'ref': 'notes'} %}{% endcomp %}</h2>
+<p>For each source we have had to use different concepts of "connections".</p>
+<ul>
+	<li><strong>Home</strong>: a single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data. At some point this will update with a 2023 value and we will need to see if they also use updated geographies.</li>
+	<li><strong>Workplace</strong>: workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
+	The data are provided at lower-tier 2022 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses April 2023 data.</li>
+	<li><strong>Public</strong>:
+		<ul>
+			<li><strong>ONS/ZapMap</strong>: publicly available "devices" represent charging devices at all speeds. The Electric Vehicle Charging Device Statistics (ONS/ZapMap) references 44,020 devices (July 2023). <a href="https://www.zap-map.com/ev-stats/how-many-charging-points">According to ZapMap</a> "there were 48,450 electric vehicle charging points across the UK, across 29,062 charging locations" as of the end of August 2023. A device can have a number of connectors of varying speeds. We count each of these "devices" as one unit as there is no way to know how many individual sockets they have. For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries.</li>
+			<li><strong>National Chargepoint Registry</strong>: As of early September 2023, the National Chargepoint Registry contains 49,343 <code>In service</code> connections from 31,589 devices. So the NCR's <em>connections</em> appear to be comparable to ZapMap's <em>devices</em>. The NCR data include latitudes/longitudes for each device and that makes it possible to aggregate by constituency easily. In <a href="https://open-innovations.org/blog/2022-04-27-planning-electric-vehicle-bulk-charging-locations-with-open-data">our previous analysis (April 2022)</a> we identified at least 50 chargepoints that had been given incorrect coordinates by their operators; some had their latitudes/longitudes swapped around, some had the wrong sign on the longitude, and some had duplicated the latitude in the longitude value. In the current dataset it hasn't been possible to associate 134 locations (149 connections) with constituencies.</li>
+		</ul>
+	</li>
+</ul>
