@@ -6,6 +6,13 @@ use JSON::XS;
 use YAML::XS;
 use OpenInnovations::GeoJSON;
 
+my $outputfile = "../../src/_data/sources/transport/national_charge_point_registry_by_constituency.csv";
+my $geojsonfile = "../../src/_data/geojson/constituencies-2022.geojson";
+my $popfile = "../../raw-data/Population.csv";
+my $key = "PCON22CD";
+
+
+
 my %colours = (
 	'black'=>"\033[0;30m",
 	'red'=>"\033[0;31m",
@@ -20,10 +27,9 @@ my %colours = (
 
 $types = {};
 $connections = {};
-$key = "PCON22CD";
 
 # Load in the GeoJSON structure and work out bounding boxes for each feature
-$geo = OpenInnovations::GeoJSON->new('file'=>"../../src/_data/geojson/constituencies-2022.geojson");
+$geo = OpenInnovations::GeoJSON->new('file'=>$geojsonfile);
 
 $n = @{$geo->{'features'}};
 for($f = 0; $f < $n ; $f++){
@@ -33,7 +39,7 @@ for($f = 0; $f < $n ; $f++){
 }
 
 # Load in the population figures
-@data = LoadCSV("../../raw-data/Population.csv");
+@data = LoadCSV($popfile);
 $ages = {};
 for($i = 0; $i < @data; $i++){
 	#Age group,ONSConstID,ConstituencyName,RegionID,RegionName,CountryID,CountryName,DateThisUpdate,DateOfDataset,Date,Const%,ConstLevel,Reg%,UK%
@@ -92,7 +98,7 @@ for($i = 0; $i < $n ; $i++){
 		}
 	}
 }
-open(FILE,">","../../src/_data/sources/transport/national_charge_point_registry_by_constituency.csv");
+open(FILE,">",$outputfile);
 print FILE "$key,all";
 print FILE ",slow (3-6 KW),fast (7-22 KW),rapid (25-100 KW),ultra (>100 KW),population (2020)";
 print FILE ",all (per 100k),slow (3-6 KW per 100k),fast (7-22 KW per 100k),rapid (25-100 KW per 100k),ultra (>100 KW per 100k)";
