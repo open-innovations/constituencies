@@ -244,14 +244,16 @@ description: |
 
 <h2>Notes{% comp 'anchor', { 'ref': 'notes'} %}{% endcomp %}</h2>
 <p>For each source we have had to use different concepts of "connections".</p>
+
+<h3>Home</h3>
+<p>A single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data. At some point this will update with a 2023 value and we will need to see if they also use updated geographies.</p>
+
+<h3>Workplace</h3>
+<p>Workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
+	The data are provided at lower-tier 2022 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses April 2023 data.</p>
+
+<h3>Public</h3>
 <ul>
-	<li><strong>Home</strong>: a single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data. At some point this will update with a 2023 value and we will need to see if they also use updated geographies.</li>
-	<li><strong>Workplace</strong>: workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
-	The data are provided at lower-tier 2022 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses April 2023 data.</li>
-	<li><strong>Public</strong>:
-		<ul>
-			<li><strong>ONS/ZapMap</strong>: publicly available "devices" represent charging devices at all speeds. The Electric Vehicle Charging Device Statistics (ONS/ZapMap) references 44,020 devices (July 2023). <a href="https://www.zap-map.com/ev-stats/how-many-charging-points">According to ZapMap</a> "there were 48,450 electric vehicle charging points across the UK, across 29,062 charging locations" as of the end of August 2023. A device can have a number of connectors of varying speeds. We count each of these "devices" as one unit as there is no way to know how many individual sockets they have. For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries.</li>
-			<li><strong>National Chargepoint Registry</strong>: As of early September 2023, the National Chargepoint Registry contains 49,343 <code>In service</code> connections from 31,589 devices. So the NCR's <em>connections</em> appear to be comparable to ZapMap's <em>devices</em>. The NCR data include latitudes/longitudes for each device and that makes it possible to aggregate by constituency easily. In <a href="https://open-innovations.org/blog/2022-04-27-planning-electric-vehicle-bulk-charging-locations-with-open-data">our previous analysis (April 2022)</a> we identified at least 50 chargepoints that had been given incorrect coordinates by their operators; some had their latitudes/longitudes swapped around, some had the wrong sign on the longitude, and some had duplicated the latitude in the longitude value. In the current dataset it hasn't been possible to associate 134 locations (149 connections) with constituencies.</li>
-		</ul>
-	</li>
+	<li><strong>ONS/ZapMap</strong>: publicly available "devices" represent charging devices at all speeds. The Electric Vehicle Charging Device Statistics (ONS/ZapMap) references 44,020 devices (July 2023). <a href="https://www.zap-map.com/ev-stats/how-many-charging-points">According to ZapMap</a> "there were 48,450 electric vehicle charging points across the UK, across 29,062 charging locations" as of the end of August 2023. A device can have a number of connectors of varying speeds. We count each of these "devices" as one unit as there is no way to know how many individual sockets they have. For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries.</li>
+	<li><strong>National Chargepoint Registry</strong>: As of early September 2023, the National Chargepoint Registry contains 49,343 <code>In service</code> connections from 31,589 devices. So the NCR's <em>connections</em> appear to be comparable to ZapMap's <em>devices</em>. The NCR data include latitudes/longitudes for each device and that makes it possible to aggregate by constituency easily. In <a href="https://open-innovations.org/blog/2022-04-27-planning-electric-vehicle-bulk-charging-locations-with-open-data">our previous analysis (April 2022)</a> we identified at least 50 chargepoints that had been given incorrect coordinates by their operators; some had their latitudes/longitudes swapped around, some had the wrong sign on the longitude, and some had duplicated the latitude in the longitude value. In the current dataset it hasn't been possible to associate 134 locations (149 connections) with constituencies.</li>
 </ul>
