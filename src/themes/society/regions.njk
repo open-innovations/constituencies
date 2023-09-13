@@ -1,0 +1,160 @@
+---
+title: Nations and regions (UK)
+theme: society
+description: |
+  Showing constituencies by nation and region (UK).
+---
+
+<h2>Existing constituencies</h2>
+{% comp 'hexmap', {
+	"config": {
+		"colours": {
+			"North East": "#d60303",
+			"North West": "#1dd3a7",
+			"Yorkshire and the Humber": "#f9bc26",
+			"East Midlands": "#00b6ff",
+			"West Midlands": "#e6007c",
+			"East of England": "#ff6700",
+			"London": "#d73058",
+			"South East": "#67e767",
+			"South West": "#178cff",
+			"Wales": "#0dbc37",
+			"Scotland": "#2254f4",
+			"Northern Ireland": "#722ea5"
+		},
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.population-2020",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "a",
+		"matchKey": "PCON11CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"colour": "North East",
+				"label": "North East"
+			},{
+				"colour": "North West",
+				"label": "North West"
+			},{
+				"colour": "Yorkshire and the Humber",
+				"label": "Yorkshire and the Humber"
+			},{
+				"colour": "East Midlands",
+				"label": "East Midlands"
+			},{
+				"colour": "West Midlands",
+				"label": "West Midlands"
+			},{
+				"colour": "East of England",
+				"label": "East of England"
+			},{
+				"colour": "London",
+				"label": "London"
+			},{
+				"colour": "South East",
+				"label": "South East"
+			},{
+				"colour": "South West",
+				"label": "South West"
+			},{
+				"colour": "Wales",
+				"label": "Wales"
+			},{
+				"colour": "Scotland",
+				"label": "Scotland"
+			},{
+				"colour": "Northern Ireland",
+				"label": "Northern Ireland"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ n }}<br /><strong>{{ a }}</strong>",
+		"attribution": ""
+	}
+} %}{% endcomp %}
+
+<h2>2023 constituencies</h2>
+{% comp 'hexmap', {
+	"config": {
+		"colours": {
+			"E12000001": "#d60303",
+			"E12000002": "#1dd3a7",
+			"E12000003": "#f9bc26",
+			"E12000004": "#00b6ff",
+			"E12000005": "#e6007c",
+			"E12000006": "#ff6700",
+			"E12000007": "#d73058",
+			"E12000008": "#67e767",
+			"E12000009": "#178cff",
+			"W92000004": "#0dbc37",
+			"S92000003": "#2254f4",
+			"N92000002": "#722ea5"
+		},
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": "sources.society.population-2020",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "region",
+		"matchKey": "PCON11CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"colour": "E12000001",
+				"label": "North East"
+			},{
+				"colour": "E12000002",
+				"label": "North West"
+			},{
+				"colour": "E12000003",
+				"label": "Yorkshire and the Humber"
+			},{
+				"colour": "E12000004",
+				"label": "East Midlands"
+			},{
+				"colour": "E12000005",
+				"label": "West Midlands"
+			},{
+				"colour": "E12000006",
+				"label": "East of England"
+			},{
+				"colour": "E12000007",
+				"label": "London"
+			},{
+				"colour": "E12000008",
+				"label": "South East"
+			},{
+				"colour": "E12000009",
+				"label": "South West"
+			},{
+				"colour": "W92000004",
+				"label": "Wales"
+			},{
+				"colour": "S92000003",
+				"label": "Scotland"
+			},{
+				"colour": "N92000002",
+				"label": "Northern Ireland"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ n }}<br /><strong>{{ region }}</strong>",
+		"attribution": ""
+	}
+} %}{% endcomp %}
+
+
