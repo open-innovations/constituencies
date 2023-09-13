@@ -1,0 +1,153 @@
+---
+title: Population (UK)
+theme: society
+description: |
+  Population by constituency (UK).
+---
+
+
+<h2>Total population{% comp 'anchor', { 'ref': 'total'} %}{% endcomp %}</h2>
+<p>An age breakdown by constituency.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.population-2020",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "total",
+		"scale": "Viridis",
+		"min": 50000,
+		"max": 150000,
+		"matchKey": "PCON11CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 150000,
+				"label": ">150,000"
+			},{
+				"value": 100000,
+				"label": "100,000"
+			},{
+				"value": 50000,
+				"label": "<50000"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "{{ n }}<br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+	},
+	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>Age breakdown by age groups{% comp 'anchor', { 'ref': 'by-group'} %}{% endcomp %}</h2>
+<p>Split into under 18, 18-64, 65 and over.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.population-2020",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "18+",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100000,
+		"matchKey": "PCON11CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 4000,
+				"label": ">4000"
+			},{
+				"value": 3000,
+				"label": "3000"
+			},{
+				"value": 2000,
+				"label": "2000"
+			},{
+				"value": 1000,
+				"label": "1000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				columns: ['<18','18-64','65+'],
+				width: "500px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+	},
+	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+
+<h2>Age breakdown by year{% comp 'anchor', { 'ref': 'by-age'} %}{% endcomp %}</h2>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.population-2020",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "0",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 4000,
+		"matchKey": "PCON11CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 4000,
+				"label": ">4000"
+			},{
+				"value": 3000,
+				"label": "3000"
+			},{
+				"value": 2000,
+				"label": "2000"
+			},{
+				"value": 1000,
+				"label": "1000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				columns: ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90+'],
+				width: "500px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+	},
+	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
+} %}{% endcomp %}
+
+
+

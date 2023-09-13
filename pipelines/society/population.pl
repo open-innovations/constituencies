@@ -84,8 +84,6 @@ foreach $pcon (sort(keys(%{$totals}))){
 	}
 	print FILE "\n";
 }
-#print Dumper $categories;
-
 
 
 
