@@ -7,7 +7,8 @@ description: |
 
 <h2>2023 Constituencies</h2>
 <p>Initial electorate values from the 2023 boundary reviews.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2023",
@@ -50,7 +51,8 @@ description: |
 
 <h2>Pre-2023 Constituencies</h2>
 <p>Electoral registrations from 2015 to 2023. Prior to 2015 there are some differences in Scottish constituencies.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",

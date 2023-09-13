@@ -6,7 +6,8 @@ description: |
 ---
 
 <h2>Existing constituencies</h2>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"colours": {
 			"North East": "#d60303",
@@ -82,7 +83,8 @@ description: |
 } %}{% endcomp %}
 
 <h2>2023 constituencies</h2>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"colours": {
 			"E12000001": "#d60303",

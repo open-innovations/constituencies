@@ -8,7 +8,8 @@ description: |
 
 <h2>Total population{% comp 'anchor', { 'ref': 'total'} %}{% endcomp %}</h2>
 <p>An age breakdown by constituency.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -49,7 +50,8 @@ description: |
 
 <h2>Age breakdown by age groups{% comp 'anchor', { 'ref': 'by-group'} %}{% endcomp %}</h2>
 <p>Split into under 18, 18-64, 65 and over.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -102,7 +104,8 @@ description: |
 
 <h2>Age breakdown by year{% comp 'anchor', { 'ref': 'by-age'} %}{% endcomp %}</h2>
 <p>Use the slider to select a specific age from 0-90+.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",

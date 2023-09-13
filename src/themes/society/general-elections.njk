@@ -6,7 +6,8 @@ description: |
 ---
 
 <p>The party-political make up of the UK Parliament at various points from 2010 until 2023.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"colours": {
 			"Con":'#0485A8',

@@ -6,7 +6,8 @@ description: |
 ---
 
 <p>This page provides constituency-level data on child poverty in the UK (2021/2). Use the slider to switch between relative and absolute poverty.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		width: 600,
 		hexjson: "hexjson.constituencies",

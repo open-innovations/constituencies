@@ -11,7 +11,8 @@ description: |
 
 <h3>At least once a month{% comp 'anchor', { 'ref': 'cycle-monthly'} %}{% endcomp %}</h3>
 <p>The proportion of adults that cycle at least once a month.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -61,7 +62,8 @@ description: |
 
 <h3>At least once a week{% comp 'anchor', { 'ref': 'cycle-weekly'} %}{% endcomp %}</h3>
 <p>The proportion of adults that cycle at least once a week.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -112,7 +114,8 @@ description: |
 
 <h3>At least three times a week{% comp 'anchor', { 'ref': 'cycle-3perweek'} %}{% endcomp %}</h3>
 <p>The proportion of adults that cycle at least three times a week.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -166,7 +169,8 @@ description: |
 
 <h3>At least once a month{% comp 'anchor', { 'ref': 'walk-monthly'} %}{% endcomp %}</h3>
 <p>The proportion of adults that walk at least once a month.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -218,7 +222,8 @@ description: |
 
 <h3>At least once a week{% comp 'anchor', { 'ref': 'walk-weekly'} %}{% endcomp %}</h3>
 <p>The proportion of adults that walk at least once a week.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -269,7 +274,8 @@ description: |
 
 <h3>At least three times a week{% comp 'anchor', { 'ref': 'walk-3perweek'} %}{% endcomp %}</h3>
 <p>The proportion of adults that walk at least three times a week.</p>
-{% comp 'hexmap', {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
