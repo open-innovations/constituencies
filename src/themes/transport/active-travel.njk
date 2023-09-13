@@ -1,0 +1,327 @@
+---
+title: Active Travel (England)
+theme: transport
+description: |
+  Walking and cycling (England).
+---
+
+<p>Data and statistics about <a href="#walk">walking</a> and <a href="#cycle">cycling</a>, based on the National Travel Survey and Active Lives Survey.</p>
+
+<h2>Cycling{% comp 'anchor', { 'ref': 'cycle'} %}{% endcomp %}</h2>
+
+<h3>At least once a month{% comp 'anchor', { 'ref': 'cycle-monthly'} %}{% endcomp %}</h3>
+<p>The proportion of adults that cycle at least once a month.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Cycle once a month 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Cycle once a month 2016","Cycle once a month 2017","Cycle once a month 2018","Cycle once a month 2019","Cycle once a month 2020","Cycle once a month 2021","Cycle once a month 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Cycles once a month<br />2016: <strong>{{ Cycle once a month 2016 }}%</strong><br />2017: <strong>{{ Cycle once a month 2017 }}%</strong><br />2018: <strong>{{ Cycle once a month 2018 }}%</strong><br />2019: <strong>{{ Cycle once a month 2019 }}%</strong><br />2020: <strong>{{ Cycle once a month 2020 }}%</strong><br />2021: <strong>{{ Cycle once a month 2021 }}%</strong><br />2022: <strong>{{ Cycle once a month 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+<h3>At least once a week{% comp 'anchor', { 'ref': 'cycle-weekly'} %}{% endcomp %}</h3>
+<p>The proportion of adults that cycle at least once a week.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Cycle once a week 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Cycle once a week 2016","Cycle once a week 2017","Cycle once a week 2018","Cycle once a week 2019","Cycle once a week 2020","Cycle once a week 2021","Cycle once a week 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Cycles once a week<br />2016: <strong>{{ Cycle once a week 2016 }}%</strong><br />2017: <strong>{{ Cycle once a week 2017 }}%</strong><br />2018: <strong>{{ Cycle once a week 2018 }}%</strong><br />2019: <strong>{{ Cycle once a week 2019 }}%</strong><br />2020: <strong>{{ Cycle once a week 2020 }}%</strong><br />2021: <strong>{{ Cycle once a week 2021 }}%</strong><br />2022: <strong>{{ Cycle once a week 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h3>At least three times a week{% comp 'anchor', { 'ref': 'cycle-3perweek'} %}{% endcomp %}</h3>
+<p>The proportion of adults that cycle at least three times a week.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Cycle three times a week 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Cycle three times a week 2016","Cycle three times a week 2017","Cycle three times a week 2018","Cycle three times a week 2019","Cycle three times a week 2020","Cycle three times a week 2021","Cycle three times a week 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Cycles three times a week<br />2016: <strong>{{ Cycle three times a week 2016 }}%</strong><br />2017: <strong>{{ Cycle three times a week 2017 }}%</strong><br />2018: <strong>{{ Cycle three times a week 2018 }}%</strong><br />2019: <strong>{{ Cycle three times a week 2019 }}%</strong><br />2020: <strong>{{ Cycle three times a week 2020 }}%</strong><br />2021: <strong>{{ Cycle three times a week 2021 }}%</strong><br />2022: <strong>{{ Cycle three times a week 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Walking{% comp 'anchor', { 'ref': 'walk'} %}{% endcomp %}</h2>
+
+<h3>At least once a month{% comp 'anchor', { 'ref': 'walk-monthly'} %}{% endcomp %}</h3>
+<p>The proportion of adults that walk at least once a month.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Walk once a month 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Walk once a month 2016","Walk once a month 2017","Walk once a month 2018","Walk once a month 2019","Walk once a month 2020","Walk once a month 2021","Walk once a month 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Walks once a month<br />2016: <strong>{{ Walk once a month 2016 }}%</strong><br />2017: <strong>{{ Walk once a month 2017 }}%</strong><br />2018: <strong>{{ Walk once a month 2018 }}%</strong><br />2019: <strong>{{ Walk once a month 2019 }}%</strong><br />2020: <strong>{{ Walk once a month 2020 }}%</strong><br />2021: <strong>{{ Walk once a month 2021 }}%</strong><br />2022: <strong>{{ Walk once a month 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h3>At least once a week{% comp 'anchor', { 'ref': 'walk-weekly'} %}{% endcomp %}</h3>
+<p>The proportion of adults that walk at least once a week.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Walk once a week 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Walk once a week 2016","Walk once a week 2017","Walk once a week 2018","Walk once a week 2019","Walk once a week 2020","Walk once a week 2021","Walk once a week 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Walks once a week<br />2016: <strong>{{ Walk once a week 2016 }}%</strong><br />2017: <strong>{{ Walk once a week 2017 }}%</strong><br />2018: <strong>{{ Walk once a week 2018 }}%</strong><br />2019: <strong>{{ Walk once a week 2019 }}%</strong><br />2020: <strong>{{ Walk once a week 2020 }}%</strong><br />2021: <strong>{{ Walk once a week 2021 }}%</strong><br />2022: <strong>{{ Walk once a week 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h3>At least three times a week{% comp 'anchor', { 'ref': 'walk-3perweek'} %}{% endcomp %}</h3>
+<p>The proportion of adults that walk at least three times a week.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Walk three times a week 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Walk three times a week 2016","Walk three times a week 2017","Walk three times a week 2018","Walk three times a week 2019","Walk three times a week 2020","Walk three times a week 2021","Walk three times a week 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "{{ n }}<br />Walks three times a week<br />2016: <strong>{{ Walk three times a week 2016 }}%</strong><br />2017: <strong>{{ Walk three times a week 2017 }}%</strong><br />2018: <strong>{{ Walk three times a week 2018 }}%</strong><br />2019: <strong>{{ Walk three times a week 2019 }}%</strong><br />2020: <strong>{{ Walk three times a week 2020 }}%</strong><br />2021: <strong>{{ Walk three times a week 2021 }}%</strong><br />2022: <strong>{{ Walk three times a week 2022 }}%</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	},
+	"download": {"text": "Active travel", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Notes{% comp 'anchor', { 'ref': 'notes'} %}{% endcomp %}</h2>
+<p>"Walking" refers to any continuous walk of over 10 minutes, irrespective of purpose.</p>
+<p>"Cycling" refers to any cycling, irrespective of length or purpose.</p>
+<p>These statistics cover the time period mid-November to mid-November for each year. For example, if data is labelled as 2021, this covers mid-November 2020 to mid-November 2021.</p>
+<p>The data from the Active Lives Survey is produced at local authority level and covers where respondents live, which may not be the same as the area where they walk or cycle.. For each local authority we have calculated the number of respondents for each category using the <code>Weighted_sample</code> column. We have then apportioned these respondents between the constituencies associated with that local authority by the amount of geographic overlap. In some cases - where a constituency is entirely within a particular local authority - the value will match that local authority. For instance, the constituency of <em>Oxford East</em> is entirely within the local authority of <em>Oxford</em> so has the same values. However <em>Oxford West and Abingdon</em> is partly in <em>Oxford</em>, partly in <em>Vale of White Horse</em> and partly in <em>Cherwell</em> so gets a contribution from each.</p>
+<p>The constituency values vary a lot between constituencies and between years. This could be, for example, because of small sample sizes in some areas and/or few people cycling.</p>
