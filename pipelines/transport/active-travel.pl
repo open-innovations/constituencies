@@ -7,7 +7,7 @@ use OpenInnovations::GeoJSON;
 require "lib.pl";
 
 my $outputfile = "../../src/_data/sources/transport/active-travel.csv";
-my $lookupfile = "../../raw-data/lookup-LAD22CD-PCON22CD.json";
+my $lookupfile = "../../lookups/lookup-LAD22CD-PCON22CD.json";
 my $datafile = "../../raw-data/cw0307-all-walking-and-cycling-data-in-tables-cw0301-to-cw0303.csv";
 @columns = (
 	{'name'=>'onepm_cycall','title'=>'Cycle once a month'},
