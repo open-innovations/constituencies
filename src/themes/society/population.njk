@@ -7,7 +7,6 @@ description: |
 
 
 <h2>Total population{% comp 'anchor', { 'ref': 'total'} %}{% endcomp %}</h2>
-<p>An age breakdown by constituency.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
@@ -49,7 +48,7 @@ description: |
 
 
 <h2>Age breakdown by age groups{% comp 'anchor', { 'ref': 'by-group'} %}{% endcomp %}</h2>
-<p>Split into under 18, 18-64, 65 and over.</p>
+<p>Split into the groups: under 18, 18-64, 65 and over.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
@@ -60,7 +59,7 @@ description: |
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "18+",
+		"value": "18-64",
 		"scale": "Viridis",
 		"min": 0,
 		"max": 100000,
@@ -93,7 +92,7 @@ description: |
 				width: "500px"
 			}
 		},
-		"tooltip": "{{ n }}<br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"tooltip": "{{ n }}<br />All ages: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
 	},
 	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
