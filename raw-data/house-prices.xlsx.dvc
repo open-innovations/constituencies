@@ -1,14 +1,14 @@
-md5: a149268444d380fe373cb4087a91105a
+md5: 3395a178c36dd1540cd6beab157d52a5
 frozen: true
 deps:
-- checksum: '"47fc6c522a4d91:0"'
-  size: 9084108
+- checksum: '"496b7a19b4ebd91:0"'
+  size: 9175510
   hash: md5
   path: 
     https://data.parliament.uk/resources/constituencystatistics/PowerBIData/Economy/House%20Prices/house-prices.xlsx
 outs:
-- md5: a676375d47f5adec5ea65fd007e38a77
-  size: 9084108
+- md5: c60c7e52b3394e05a5207a955e180b9d
+  size: 9175510
   isexec: true
   hash: md5
   path: house-prices.xlsx
