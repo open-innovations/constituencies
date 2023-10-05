@@ -5,12 +5,12 @@ stages:
     deps:
     - path: pipelines/economy/economy.py
       hash: md5
-      md5: 1e78457b5ecdcb83b26ac778697d8cb7
-      size: 1987
+      md5: 8dc84c48df3b4a921db809233c1db7c2
+      size: 2358
     - path: pipelines/util.py
       hash: md5
-      md5: 0aa94a654502204f6d878e2fa0831afd
-      size: 650
+      md5: 26230f637818c0c982b393dc9b152ced
+      size: 670
     - path: raw-data/covid-grants-april-2022.xlsx
       hash: md5
       md5: 7bf865766527e3393bef14addd90367f
@@ -19,6 +19,10 @@ stages:
       hash: md5
       md5: c60c7e52b3394e05a5207a955e180b9d
       size: 9175510
+    - path: raw-data/median-wages.csv
+      hash: md5
+      md5: 654048c593e015bb927ea65f6a8595a6
+      size: 203356
     - path: raw-data/unemployment.xlsx
       hash: md5
       md5: 5c13922d0916060f0885c100f384a827
@@ -51,6 +55,6 @@ stages:
       isexec: true
     - path: src/_data/sources/economy/wages.csv
       hash: md5
-      md5: 78e6e6a56aa14f355c2ec3efc6fde453
-      size: 167729
+      md5: 4896a1bf39ccc1082a42cff87a36cbf5
+      size: 72023
       isexec: true

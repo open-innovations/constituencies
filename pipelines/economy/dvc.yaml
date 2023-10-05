@@ -8,6 +8,7 @@ stages:
       - raw-data/covid-grants-april-2022.xlsx
       - raw-data/house-prices.xlsx
       - raw-data/unemployment.xlsx
+      - raw-data/median-wages.csv
     outs:
       - src/_data/sources/economy/covid_grants_arg.csv:
           cache: false

@@ -10,11 +10,11 @@ config:
   columns:
     - name: "filterLabel"
       template: "{{ ConstituencyName }} ({{ RegionName }})"
-  value: "2022-12-01"
+  value: "2022"
   scale: Viridis
   min: 0
   max: 50000
-  matchKey: "ONSConstID"
+  matchKey: "geography_code"
   legend:
     position: top right
     items:
@@ -31,6 +31,9 @@ config:
     - value: 0
       label: '0'
   tools:
+    slider:
+      columns: ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"]
+      width: 500px
     filter:
       label: filterLabel
   tooltip: "Median gross annual pay ({{ _value }})<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
@@ -51,6 +54,6 @@ config:
 <ul>
 <li>The values are the median full-time employee salary for residents of the constituency.</li>
 <li>Self-employed people and part-time workers are not included.</li>
-<li>In years where figures for a particular constituency have been suppressed by ONS as statistically unreliable, previous year's values have been used.</li>
+<li>In years where figures for a particular constituency have been suppressed by ONS as statistically unreliable, previous year's values have been used. There are some gaps in the 2010 data as there is no previous data.</li>
 <li>The source data are provided for pre-2023 constituencies.</li>
 </ul>

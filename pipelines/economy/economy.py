@@ -13,9 +13,18 @@ def data_pivot(data, values):
     # pivot the house price data into wide format
     return data.pivot(index=['ONSConstID', 'ConstituencyName', 'RegionName'], columns='DateOfDataset', values=values)
 
-def wages(data, values):
-    data_pivot(data, values).round(0).to_csv(os.path.join(ECON_DATA_DIR, 'wages.csv'))
-    return
+def wages(path):
+    data = pd.read_csv(path)
+    data = data.pivot(index='GEOGRAPHY_CODE', columns='DATE', values='OBS_VALUE')
+    data.index.rename('geography_code', inplace=True)
+    for i, row in data.iterrows():
+        prev_value = np.nan
+        for j, value in row.items():
+            if pd.isna(value):
+                data.at[i, j] = prev_value
+                value = prev_value
+            prev_value = value
+    return data.to_csv(os.path.join(ECON_DATA_DIR, 'wages.csv'))
 
 def house_prices(data, values):
     data = data_pivot(data, values).round(0)
@@ -44,7 +53,7 @@ if __name__ == '__main__':
     
     #get a metrics from house price data and write to csvs.
     house_price_data = read_data('raw-data/house-prices.xlsx', 'Constituency data table')
-    wages(house_price_data, 'ConstWage')
+    wages('raw-data/median-wages.csv')
     house_prices(house_price_data, 'HouseConstMedianPrice')
     house_price_wage_ratio(house_price_data, 'ConstRatio')
 
