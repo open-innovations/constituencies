@@ -1,0 +1,52 @@
+---
+title: Households off the gas grid (England, Scotland, and Wales)
+theme: energy
+description: |
+  Estimates of households that are off the gas grid (England, Scotland, and Wales)
+config:
+  ref:
+    width: 600
+    hexjson: hexjson.constituencies
+    data: sources.energy.OffGasGridDashboard_DataFile
+    columns:
+      - name: "filterLabel"
+        template: "{{ n }} ({{ a }})"
+    value: "Estimated percentage of properties not on the gas grid"
+    scale: "Viridis"
+    min: 0
+    max: 40
+    matchKey: "Constituency code"
+    legend:
+      position: top right
+      items:
+      - value: 40
+        label: "40%+"
+      - value: 30
+        label: "30%"
+      - value: 20
+        label: "20%"
+      - value: 10
+        label: "10%"
+      - value: 0
+        label: '0%'
+    tools:
+      filter:
+        label: filterLabel
+    tooltip: "Households off the gas grid<br />{{ n }}: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>"
+    attribution: |
+      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-households-off-the-gas-grid/">Households off the gas grid</a> (House of Commons Library / Department for Energy Security and Net Zero)
+---
+
+<p>Accessing the mains gas grid is the most common way in England, Wales, and Scotland to heat a home.</p>
+
+<p>Properties that are off the gas grid do not have access to mains gas and rely on alternative sources of fuel such as heating oil, electric heating, liquefied petroleum gas (LPG), or <a href="https://en.wikipedia.org/wiki/District_heating">district heating systems</a>.</p>
+
+{% comp 'hexmap', {
+	"config": config.ref,
+	"download": {"text": "Fuel poverty by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Notes</h2>
+
+<p>There is no definitive source for the number of households not on the gas grid. Estimates for the number and proportion of properties without mains gas are based on the difference between the number of properties and the number of domestic gas meters (including non-consuming meters), as published in the <a href="https://www.gov.uk/government/publications/regional-energy-data-guidance-note">sub-national gas consumption data</a>.</p>
+<p>The <a href="https://www.communities-ni.gov.uk/publications/northern-ireland-housing-statistics-2020-21">latest data on heating type for Northern Ireland</a> are for 2016 when only 24% of households used mains gas for heating. 67% used heating oil, by far the highest rate in the UK.</p>
