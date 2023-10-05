@@ -9,6 +9,5 @@ deps:
 outs:
 - md5: c60c7e52b3394e05a5207a955e180b9d
   size: 9175510
-  isexec: true
   hash: md5
   path: house-prices.xlsx
