@@ -1,0 +1,378 @@
+---
+title: Climate change projections by constituency (England, Scotland and Wales)
+theme: environment
+description: |
+  Projections taken from the Met Office's UKCP18 dataset. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010.
+---
+
+
+<p>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010. These change are the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. The projections use a scenarios of global carbon emissions called RCP8.5, which thankfully we are currently not following. There are maps for:</p>
+<ul>
+	<li><a href="#rainfall">observed rainfall anomaly in 2019 (mm/day)</a></li>
+	<li><a href="#rainfall2065">annual mean change in rainfall (mm/day)</a></li>
+	<li><a href="#temperature">annual temperature change (&deg;C)</a></li>
+	<li><a href="#drought">difference in the number of days experiencing drought per year</a></li>
+	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
+	<li><a href="#heatwaves">change in the number of days categorised as a heatwave by the regional publich health authorities</a></li>
+	<li><a href="#warmest">how much hotter the warmest day of the average year will be in future (in &deg;C)</a></li>
+</ul>
+<p>This <a href="https://oacd-ucl.github.io/climate-hexmaps/">analysis of projections was undertaken by Georgia Willits</a> as part of her dissertation research for her Climate Change MSc at UCL Geography. Prof. Chris Brierley supervised the research.</p>
+    
+
+
+
+<h2>Rainfall anomaly{% comp 'anchor', { 'ref': 'rainfall'} %}{% endcomp %}</h2>
+<p>The observed rainfall anomaly in 2019 (mm/day).</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -0.8,
+		"max": 0.8,
+		"value": "ann_rain_2019",
+		"scale": "#a50026 0%, #d73027 10%, #f46d43 20%, #fdae61 30%, #fee090 40%, #ffffbf 50%, #e0f3f8 60%, #abd9e9 70%, #74add1 80%, #4575b4 90%, #313695 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.8,
+				"label": "+0.8 mm/day"
+			},{
+				"value": 0.6,
+				"label": "+0.6 mm/day"
+			},{
+				"value": 0.4,
+				"label": "+0.4 mm/day"
+			},{
+				"value": 0.2,
+				"label": "+0.2 mm/day"
+			},{
+				"value": 0,
+				"label": "0.0 mm/day"
+			},{
+				"value": -0.2,
+				"label": "-0.2 mm/day"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Observed rainfall anomaly (2019)<br />{{ n }}: <strong>{{ ann_rain_2019 | toFixed(3) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+
+<h2>Rainfall{% comp 'anchor', { 'ref': 'rainfall'} %}{% endcomp %}</h2>
+<p>Annual mean change in rainfall (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Some western coastal areas will be getting more rain per day on average but most of the country will be getting less rain across the year.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -0.4,
+		"max": 0.4,
+		"value": "ann_rain_change_mmday_2065",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.4,
+				"label": "+0.4 mm/day"
+			},{
+				"value": 0.3,
+				"label": "+0.3 mm/day"
+			},{
+				"value": 0.2,
+				"label": "+0.2 mm/day"
+			},{
+				"value": 0.1,
+				"label": "+0.1 mm/day"
+			},{
+				"value": 0,
+				"label": "0.0 mm/day"
+			},{
+				"value": -0.1,
+				"label": "-0.1 mm/day"
+			},{
+				"value": -0.2,
+				"label": "-0.2 mm/day"
+			},{
+				"value": -0.3,
+				"label": "-0.3 mm/day"
+			},{
+				"value": -0.4,
+				"label": "-0.4 mm/day"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Annual mean change in rainfall<br />{{ n }}: <strong>{{ ann_rain_change_mmday_2065 | toFixed(3) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Temperature{% comp 'anchor', { 'ref': 'temperature'} %}{% endcomp %}</h2>
+<p>Annual mean change in temperature by 2065 (°C) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Everywhere will be hotter but it will be more pronounced in the south and London.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": 2,
+		"max": 3.5,
+		"value": "ann_warming_oC_2065",
+		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 3.5,
+				"label": ">3.5&deg;C"
+			},{
+				"value": 3,
+				"label": "+3&deg;C"
+			},{
+				"value": 2.5,
+				"label": "+2.5&deg;C"
+			},{
+				"value": 2,
+				"label": "+2&deg;C"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Annual mean change in temperature<br />{{ n }}: <strong>{{ ann_warming_oC_2065 | toFixed(2) }} &deg;C</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Drought{% comp 'anchor', { 'ref': 'drought'} %}{% endcomp %}</h2>
+<p>The number of extra days experiencing drought for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Almost everywhere will be experiencing more days of drought. The effects won't be as large in Scotland, the north west of England, and parts of Wales.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": 0,
+		"max": 4,
+		"value": "drought_day_change_2065",
+		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 4,
+				"label": ">4 days"
+			},{
+				"value": 3,
+				"label": "+3 days"
+			},{
+				"value": 2,
+				"label": "+2 days"
+			},{
+				"value": 1,
+				"label": "+1 day"
+			},{
+				"value": 0,
+				"label": "0 days"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Change in number of days experiencing drought<br />{{ n }}: <strong>{{ drought_day_change_2065 | toFixed(2) }} days</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+<h2>Wettest days{% comp 'anchor', { 'ref': 'wettest'} %}{% endcomp %}</h2>
+<p>The change in the amount of rain falling over the wettest 5 days of the year (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. For most of the country the wettest days will be getting wetter. Almost everywhere will be getting more rain on the five wettest days of the year. The western side of the country, particularly parts of Wales and Cumbria will be getting significantly more rain on those days.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -30,
+		"max": 30,
+		"value": "max5day_rain_mm_change_2065",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": ">30 days"
+			},{
+				"value": 20,
+				"label": "+20 days"
+			},{
+				"value": 10,
+				"label": "+10 days"
+			},{
+				"value": 0,
+				"label": "0 days"
+			},{
+				"value": -10,
+				"label": "-10 days"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Change in amount of rain falling over wettest 5 days of the year<br />{{ n }}: <strong>{{ max5day_rain_mm_change_2065 | toFixed(2) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+
+<h2>Heatwaves{% comp 'anchor', { 'ref': 'heatwaves'} %}{% endcomp %}</h2>
+<p>The change in the number of days classed as heatwaves for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Everywhere will be getting more days of heatwaves but the situation will be worst in the south eastern part of England.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": 0,
+		"max": 25,
+		"value": "number_heatwave_days_change_2065",
+		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": ">25 days"
+			},{
+				"value": 20,
+				"label": "+20 days"
+			},{
+				"value": 15,
+				"label": "+15 days"
+			},{
+				"value": 10,
+				"label": "+10 days"
+			},{
+				"value": 5,
+				"label": "+5 days"
+			},{
+				"value": 0,
+				"label": "0 days"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Change in number of days classed as heatwaves<br />{{ n }}: <strong>{{ number_heatwave_days_change_2065 | toFixed(2) }} days</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
+
+<h2>Warmest day{% comp 'anchor', { 'ref': 'warmest'} %}{% endcomp %}</h2>
+<p>The change in the temperature of the warmest day of year for the years 2051-2080 (so roughly 2065) compared to 1981-2010.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": 0,
+		"max": 7.5,
+		"value": "warmest_dayofyear_change_oC_2065",
+		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 7.5,
+				"label": "+7.5&deg;C"
+			},{
+				"value": 5,
+				"label": "+5&deg;C"
+			},{
+				"value": 2.5,
+				"label": "+2.5&deg;C"
+			},{
+				"value": 0,
+				"label": "0&deg;C"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Change in temperature of warmest day of year<br />{{ n }}: <strong>{{ warmest_dayofyear_change_oC_2065 | toFixed(2) }}&deg;C</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
