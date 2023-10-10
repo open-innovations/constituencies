@@ -52,6 +52,9 @@ header a, .breadcrumb a { color:inherit; }
 	outline: none;
 }
 
+.number, .name, .tooltip strong {
+	font-family: Poppins;
+}
 @media only screen and (max-width: 1080px) {
 	.grid-list { grid-template-columns: repeat(2,1fr); grid-gap: 0.25em; }
 }
