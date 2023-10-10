@@ -10,9 +10,9 @@ description: |
 <ul>
 	<li><a href="#rainfall-anomaly">observed rainfall anomaly in 2019 (mm/day)</a></li>
 	<li><a href="#rainfall">annual mean change in rainfall (mm/day)</a></li>
+	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
 	<li><a href="#temperature">annual temperature change (&deg;C)</a></li>
 	<li><a href="#drought">difference in the number of days experiencing drought per year</a></li>
-	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
 	<li><a href="#heatwaves">change in the number of days categorised as a heatwave by the regional publich health authorities</a></li>
 	<li><a href="#warmest">how much hotter the warmest day of the average year will be in future (in &deg;C)</a></li>
 </ul>
@@ -135,6 +135,56 @@ description: |
 
 
 
+
+<h2>Wettest days{% comp 'anchor', { 'ref': 'wettest'} %}{% endcomp %}</h2>
+<p>The change in the amount of rain falling over the wettest 5 days of the year (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. For most of the country the wettest days will be getting wetter. Almost everywhere will be getting more rain on the five wettest days of the year. The western side of the country, particularly parts of Wales and Cumbria will be getting significantly more rain on those days.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -30,
+		"max": 30,
+		"value": "max5day_rain_mm_change_2065",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": ">30 days"
+			},{
+				"value": 20,
+				"label": "+20 days"
+			},{
+				"value": 10,
+				"label": "+10 days"
+			},{
+				"value": 0,
+				"label": "0 days"
+			},{
+				"value": -10,
+				"label": "-10 days"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "Change in amount of rain falling over wettest 5 days of the year<br />{{ n }}: <strong>{{ max5day_rain_mm_change_2065 | toFixed(2) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"download": {"text": "Climate change projections", "type": "CSV"}
+} %}{% endcomp %}
+
+
+
 <h2>Temperature{% comp 'anchor', { 'ref': 'temperature'} %}{% endcomp %}</h2>
 <p>Annual mean change in temperature by 2065 (°C) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Everywhere will be hotter but it will be more pronounced in the south and London.</p>
 {% comp 'wrapper', {
@@ -227,56 +277,6 @@ description: |
 	},
 	"download": {"text": "Climate change projections", "type": "CSV"}
 } %}{% endcomp %}
-
-
-
-<h2>Wettest days{% comp 'anchor', { 'ref': 'wettest'} %}{% endcomp %}</h2>
-<p>The change in the amount of rain falling over the wettest 5 days of the year (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. For most of the country the wettest days will be getting wetter. Almost everywhere will be getting more rain on the five wettest days of the year. The western side of the country, particularly parts of Wales and Cumbria will be getting significantly more rain on those days.</p>
-{% comp 'wrapper', {
-	"component": comp.oi.map.hex_cartogram,
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.environment.climate_projections_oacd-ucl",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"min": -30,
-		"max": 30,
-		"value": "max5day_rain_mm_change_2065",
-		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
-		"matchKey": "ons_id",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 30,
-				"label": ">30 days"
-			},{
-				"value": 20,
-				"label": "+20 days"
-			},{
-				"value": 10,
-				"label": "+10 days"
-			},{
-				"value": 0,
-				"label": "0 days"
-			},{
-				"value": -10,
-				"label": "-10 days"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
-		},
-		"tooltip": "Change in amount of rain falling over wettest 5 days of the year<br />{{ n }}: <strong>{{ max5day_rain_mm_change_2065 | toFixed(2) }} mm/day</strong>",
-		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
-	},
-	"download": {"text": "Climate change projections", "type": "CSV"}
-} %}{% endcomp %}
-
 
 
 
