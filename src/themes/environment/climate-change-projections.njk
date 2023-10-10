@@ -8,8 +8,8 @@ description: |
 
 <p>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010. These change are the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. The projections use a scenarios of global carbon emissions called RCP8.5, which thankfully we are currently not following. There are maps for:</p>
 <ul>
-	<li><a href="#rainfall">observed rainfall anomaly in 2019 (mm/day)</a></li>
-	<li><a href="#rainfall2065">annual mean change in rainfall (mm/day)</a></li>
+	<li><a href="#rainfall-anomaly">observed rainfall anomaly in 2019 (mm/day)</a></li>
+	<li><a href="#rainfall">annual mean change in rainfall (mm/day)</a></li>
 	<li><a href="#temperature">annual temperature change (&deg;C)</a></li>
 	<li><a href="#drought">difference in the number of days experiencing drought per year</a></li>
 	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
@@ -21,7 +21,7 @@ description: |
 
 
 
-<h2>Rainfall anomaly{% comp 'anchor', { 'ref': 'rainfall'} %}{% endcomp %}</h2>
+<h2>Rainfall anomaly{% comp 'anchor', { 'ref': 'rainfall-anomaly'} %}{% endcomp %}</h2>
 <p>The observed rainfall anomaly in 2019 (mm/day).</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
