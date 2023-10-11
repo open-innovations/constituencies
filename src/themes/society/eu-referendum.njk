@@ -28,7 +28,7 @@ config:
     tools:
       filter:
         label: filterLabel
-    tooltip: "Estimated leave vote<br />{{ n }}: <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />Estimated leave vote: <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>"
     attribution: |
       Data: <a href="https://docs.google.com/spreadsheets/d/1b71SDKPFbk-ktmUTXmDpUP5PT299qq24orEA0_TOpmw/edit#gid=579044181">EU referendum estimates</a> from <a href="http://www.tandfonline.com/doi/abs/10.1080/17457289.2017.1287081?journalCode=fbep20">Hanretty 2017</a> (<a href="https://medium.com/@chrishanretty/final-estimates-of-the-leave-vote-or-areal-interpolation-and-the-uks-referendum-on-eu-membership-5490b6cab878">blog post</a>)
 ---

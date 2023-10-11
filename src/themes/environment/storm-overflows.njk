@@ -33,7 +33,7 @@ config:
     tools:
       filter:
         label: filterLabel
-    tooltip: "{{ n }}<br />Total spills: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />Total spills: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
       Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
   - width: 600
@@ -61,7 +61,7 @@ config:
     tools:
       filter:
         label: filterLabel
-    tooltip: "{{ n }}<br />Total hours: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />Total hours: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>"
     attribution: |
       Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
 ---

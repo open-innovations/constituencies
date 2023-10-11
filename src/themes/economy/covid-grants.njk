@@ -33,7 +33,7 @@ viz:
     tools:
       filter:
         label: filterLabel
-    tooltip: "Omicron Hospitality and Leisure Grant<br />{{ Parlimentary Constituency Name }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />OHLG: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
       Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)
   - width: 600
@@ -61,7 +61,7 @@ viz:
     tools:
       filter:
         label: filterLabel
-    tooltip: "Additional Restrictions Grant<br />{{ n }}: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />ARG: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
     attribution: |
       Data: <a href="https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority">Coronavirus business grant funding</a> (gov.uk)
 ---

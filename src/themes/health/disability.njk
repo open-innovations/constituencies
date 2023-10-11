@@ -34,7 +34,7 @@ config:
     tools:
       filter:
         label: filterLabel
-    tooltip: "Disability (2021 census)<br />{{ n }}: <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>"
+    tooltip: "<strong>{{ n }}</strong><br />Disability (2021 census): <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>"
     attribution: |
       Data: <a href="https://commonslibrary.parliament.uk/constituency-data-self-reported-health-2021-census/">Self-reported health, 2021 census</a> (House of Commons Library)
 ---
