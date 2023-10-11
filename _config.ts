@@ -45,6 +45,11 @@ remoteTree('src/_data/sources', dataPath);
 // Copy /data to live site
 site.copy(dataPath);
 
+// Mirror source data files to live site
+remoteTree('src/_data/hexjson', '/assets/hexjson/');
+// Copy /data to live site
+site.copy('/assets/hexjson/');
+
 // Register an HTML processor
 // https://lume.land/docs/core/processors/
 site.process([".html"], autoDependency);
@@ -52,6 +57,8 @@ site.process([".html"], autoDependency);
 
 site.loadAssets([".css"]);
 site.loadAssets([".js"]);
+site.loadAssets([".svg"]);
+site.loadAssets([".hexjson"]);
 
 // Import lume charts
 site.use(oiCharts({
