@@ -73,6 +73,8 @@ site.use(oiCharts({
 
 // Add filters
 site.filter('match', (value, regex) => { const re = new RegExp(regex); return value.match(re); });
+site.filter('keys', o => Object.keys(o) );
+
 
 site.use(base_path());
 site.use(metas({

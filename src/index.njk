@@ -2,5 +2,29 @@
 title: Welcome
 ---
 
-<p>In the lead up to the next General Election, this site aims to map data about UK constituencies on hex cartograms. We shall be creating themes and populating them with separate pages for each data aspect. That way it will be possible to link to individual maps and make sharing them easier. If you know of an existing open dataset (provided by constituency) that you think we should include, please <a href="mailto:hello@open-innovations.org?subject=Constituency%20dataset&body=URL:%20%0ATitle:%20%0ADescription:">get in touch</a> or <a href="about">find out more</a>...</p>
+<p>In the lead up to the next General Election, this site aims to map data about UK constituencies on hex cartograms. We have created <a href="themes/">themes</a> and are populating those with separate pages for each data aspect. That way it will be possible to link to individual maps and make sharing them easier. If you know of an existing open dataset (provided by constituency) that you think we should include, please <a href="mailto:hello@open-innovations.org?subject=Constituency%20dataset&body=URL:%20%0ATitle:%20%0ADescription:">get in touch</a> or <a href="about">find out more</a>...</p>
+
+{% set data = search.data("themes/") %}
+
+<h2>Recently added visualisations...</h2>
+<ul class="grid-list">
+{% for page in search.pages("theme_page theme!=undefined !draft", "order created=desc", 3) %}
+	<li><a href="{{ page.data.url }}" class="{{ data.themes[page.data.theme].class | safe }}">
+	{{ data.themes[page.data.theme].icon | safe }}
+	<h3>{{ page.data.title }}</h3>
+	<p>Added: {{ page.data.created | date('do MMMM yyyy') }}</p>
+	</a></li>
+{% endfor %}
+</ul>
+
+<h2>Recently updated visualisations...</h2>
+<ul class="grid-list">
+{% for page in search.pages("theme_page theme!=undefined !draft", "order updated=desc", 3) %}
+	<li><a href="{{ page.data.url }}" class="{{ data.themes[page.data.theme].class | safe }}">
+	{{ data.themes[page.data.theme].icon | safe }}
+	<h3>{{ page.data.title }}</h3>
+	<p>Updated: {{ page.data.date | date('do MMMM yyyy') }}</p>
+	</a></li>
+{% endfor %}
+</ul>
 
