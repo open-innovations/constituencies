@@ -1,0 +1,124 @@
+---
+title: School funding (England)
+theme: society
+created: 2023-10-24T17:10
+description: |
+  School funding by constituency (England).
+---
+
+<p>This page provides <a href="https://commonslibrary.parliament.uk/constituency-data-schools-funding/">constituency-level data on school funding for mainstream state-funded schools in England</a>. Use the slider to change years.</p>
+
+
+<h2>Allocations per pupil (real){% comp 'anchor', { 'ref': 'real'} %}{% endcomp %}</h2>
+<p>Funding allocations per pupil are shown after adjusting for inflation (in 2022-23 prices).</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.school-allocations",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "Allocation per pupil (real) / 2022-23",
+		scale: "Viridis",
+		min: 0,
+		max: 8000,
+		matchKey: "ONSconstID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 8000,
+				label: "£8k"
+			},{
+				value: 6000,
+				label: "£6k"
+			},{
+				value: 4000,
+				label: "£4k"
+			},{
+				value: 2000,
+				label: "£2k"
+			},{
+				value: 0,
+				label: "£0"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			},
+			slider: {
+				columns: ["Allocation per pupil (real) / 2014-15","Allocation per pupil (real) / 2015-16","Allocation per pupil (real) / 2016-17","Allocation per pupil (real) / 2017-18","Allocation per pupil (real) / 2018-19","Allocation per pupil (real) / 2019-20","Allocation per pupil (real) / 2020-21","Allocation per pupil (real) / 2021-22","Allocation per pupil (real) / 2022-23"],
+				width: "500px"
+			}
+		},
+		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: <strong>&pound;{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-schools-funding/">schools funding</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "schools funding by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Allocations per pupil (nominal){% comp 'anchor', { 'ref': 'nominal'} %}{% endcomp %}</h2>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.school-allocations",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "Allocation per pupil (nominal) / 2022-23",
+		scale: "Viridis",
+		min: 0,
+		max: 8000,
+		matchKey: "ONSconstID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 8000,
+				label: "£8k"
+			},{
+				value: 6000,
+				label: "£6k"
+			},{
+				value: 4000,
+				label: "£4k"
+			},{
+				value: 2000,
+				label: "£2k"
+			},{
+				value: 0,
+				label: "£0"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			},
+			slider: {
+				columns: ["Allocation per pupil (nominal) / 2014-15","Allocation per pupil (nominal) / 2015-16","Allocation per pupil (nominal) / 2016-17","Allocation per pupil (nominal) / 2017-18","Allocation per pupil (nominal) / 2018-19","Allocation per pupil (nominal) / 2019-20","Allocation per pupil (nominal) / 2020-21","Allocation per pupil (nominal) / 2021-22","Allocation per pupil (nominal) / 2022-23"],
+				width: "500px"
+			}
+		},
+		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: <strong>&pound;{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-schools-funding/">schools funding</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "schools funding by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Notes</h2>
+<p>Data is for mainstream state-funded schools in England only. Schools with 20 or fewer pupils have been excluded.</p>
+
+<p>The schools block excludes high (special) needs funding, early years funding, and the pupil premium.</p>
+
+<p>2021-22 and 2022-23 figures include protected funding for the teachers’ pay and pension grants. In previous years this was excluded. This means that caution should be taken when making comparisons before and after 2021-22.</p>
+
+<p>Constituency level figures have been built up from school-level schools block allocations (all schools which receive schools block funding are included) and are what schools actually receive.</p>
+
+<p>School level allocations between 2014-15 and 2018-19 published by the Department for Education rounded to the nearest £1,000. From 2019-20 exact allocations were published.</p>
+
+<p>Data is in real terms (2022-23 prices). The pandemic has caused unusual movements in the GDP deflator, which is used to measure inflation in the economy. This means that for 2020-21 and 2021-22 it does not provide an accurate representation of price changes over this period. GDP deflator growth for 2020-21 and 2021-22 have been averaged across the two years to smooth the distortions caused by pandemic-related factors. OBR forecasts are used for 2021-22.</p>
