@@ -5,7 +5,7 @@ export default function ({ comp, component, config, download }) {
 
 	if(!config.attribution) config.attribution = "";
 	if(config.hexjson=="hexjson.constituencies") config.attribution += '<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
-	if(config.hexjson=="hexjson.uk-constituencies-2023") config.attribution += '<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2023 constituencies</a> (Open Innovations and contributors)';
+	if(config.hexjson=="hexjson.uk-constituencies-2023" || config.hexjson=="hexjson.uk-constituencies-2023-temporary") config.attribution += '<br />Hex layout: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2023 constituencies</a> (Open Innovations and contributors)';
 
 	if(typeof config.data==="string"){
 		if(download && typeof download.text=="string"){
