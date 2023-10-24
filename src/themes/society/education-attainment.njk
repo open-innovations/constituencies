@@ -1,0 +1,164 @@
+---
+title: Education attainment (England)
+theme: society
+created: 2023-10-24T18:40
+description: |
+  Education attainment by constituency (England).
+---
+
+<p>This page provides <a href="https://commonslibrary.parliament.uk/constituency-data-educational-attainment/">constituency-level data on educational attainment in state-funded schools in England</a>. There are breakdowns of <a href="#gcse-a-c">GCSE A*-C</a>, <a href="#ks4-attainment8">KS4 Attainment 8</a> and <a href="#ks2">KS2 Attainment</a>.</p>
+
+
+<h2>GCSE A*-C English/Maths{% comp 'anchor', { 'ref': 'gcse-a-c'} %}{% endcomp %}</h2>
+<p>Proportion of pupils attending schools in the constituency achieving A*-C or 9-4 grades in English and Maths. See information on <a href="https://ofqual.blog.gov.uk/2018/03/02/gcse-9-to-1-grades-a-brief-guide-for-parents/">converting letter grades to numbers</a>.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.education-attainment",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "A*-C % / 2022",
+		scale: "Viridis",
+		min: 0,
+		max: 100,
+		matchKey: "Constituency ID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 100,
+				label: "100%"
+			},{
+				value: 80,
+				label: "80%"
+			},{
+				value: 60,
+				label: "60%"
+			},{
+				value: 40,
+				label: "40%"
+			},{
+				value: 20,
+				label: "20%"
+			},{
+				value: 0,
+				label: "0%"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			},
+			slider: {
+				columns: ["A*-C % / 2011","A*-C % / 2012","A*-C % / 2013","A*-C % / 2014","A*-C % / 2015","A*-C % / 2016","A*-C % / 2017","A*-C % / 2018","A*-C % / 2019","A*-C % / 2020","A*-C % / 2021","A*-C % / 2022"],
+				width: "500px"
+			}
+		},
+		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}%</strong>",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-educational-attainment/">educational attainment</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "schools funding by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>KS4 Attainment 8{% comp 'anchor', { 'ref': 'ks4-attainment8'} %}{% endcomp %}</h2>
+<p>Attainment 8 is an average score based on a pupil’s best eight grades in a group of GCSEs. The maximum a pupil can achieve is 90 points. Excludes non-maintained special schools, hospital schools, pupil referral units and alternative provision.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.education-attainment",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "KS4 Attainment 8 / 2022",
+		scale: "Viridis",
+		min: 0,
+		max: 90,
+		matchKey: "Constituency ID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 90,
+				label: "90"
+			},{
+				value: 60,
+				label: "60"
+			},{
+				value: 30,
+				label: "30"
+			},{
+				value: 0,
+				label: "0"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			},
+			slider: {
+				columns: ["KS4 Attainment 8 / 2017","KS4 Attainment 8 / 2018","KS4 Attainment 8 / 2019","KS4 Attainment 8 / 2022"],
+				width: "500px"
+			}
+		},
+		tooltip: "<strong>{{ n }}</strong><br />Attainment 8: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-educational-attainment/">educational attainment</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "schools funding by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>KS2 Attainment{% comp 'anchor', { 'ref': 'ks2'} %}{% endcomp %}</h2>
+<p>The percentage of pupils achieving the expected standard. The expected standard is where a pupil achieves a scaled score of 100 or more in the reading and maths national curriculum assessments at key stage 2 (taken at the end of year 6). As well as an outcome of 'reaching the expected standard' or 'working at greater depth' in the writing Teacher Assessment. Attainment data is for state-funded schools in England only and excludes independent schools, independent special schools, non-maintained special schools, hospital schools, pupil referral units and alternative provision.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		width: 600,
+		hexjson: "hexjson.constituencies",
+		data: "sources.society.education-attainment",
+		columns: [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ a }})"
+		}],
+		value: "KS2 met expected / 2022",
+		scale: "Viridis",
+		min: 0,
+		max: 100,
+		matchKey: "Constituency ID",
+		legend: {
+			position: "top right",
+			items: [{
+				value: 100,
+				label: "100%"
+			},{
+				value: 80,
+				label: "80%"
+			},{
+				value: 60,
+				label: "60%"
+			},{
+				value: 40,
+				label: "40%"
+			},{
+				value: 20,
+				label: "20%"
+			},{
+				value: 0,
+				label: "0%"
+			}]
+		},
+		tools: {
+			filter: {
+				label: "filterLabel"
+			}
+		},
+		tooltip: "<strong>{{ n }}</strong><br />KS2 met expected standard: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}%</strong>",
+		attribution: 'Data: <a href="https://commonslibrary.parliament.uk/constituency-data-educational-attainment/">educational attainment</a> (House of Commons Library; OGL).'
+	},
+	"download": {"text": "schools funding by constituency", "type": "CSV"}
+} %}{% endcomp %}
+
