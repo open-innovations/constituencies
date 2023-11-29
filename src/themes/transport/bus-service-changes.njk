@@ -1,0 +1,62 @@
+---
+title: Bus service changes (England & Wales)
+theme: transport
+created: 2023-11-29T21:45
+description: |
+  This dataset shows how bus services have changed from 2010 to 2023.
+---
+
+<p>This dataset was created by Friends of the Earth and the University of Leeds and involved a huge and complex analysis of all available local and national timetable data in England and Wales from 2010 to 2023. It has shown that while London has had an almost constant level of bus provision, many other parts of the country have seen declines of more than two-thirds. Read <a href="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined">the full report from Friends of the Earth</a>. The data are presented for the new constituencies that will be used for the expected general election in 2024.</p>
+
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023-temporary",
+		"data": "sources.transport.bustrip-trends-new-parliamentary_constituency_1",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Trips per hour % change: 2010-2023",
+		"scale": "RdBu",
+		"min": -100,
+		"max": 100,
+		"matchKey": "ID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": "+25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			},{
+				"value": -25,
+				"label": "-25%"
+			},{
+				"value": -50,
+				"label": "-50%"
+			},{
+				"value": -75,
+				"label": "-75%"
+			},{
+				"value": -100,
+				"label": "-100%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString }}%</strong>",
+		"attribution": "<a href=\"https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined\">How Britain’s bus services have drastically declined</a> (Friends of the Earth & University of Leeds 2023)"
+	},
+	"download": {"text": "Bus service changes", "type": "CSV"}
+} %}{% endcomp %}
+
+<h2>Notes</h2>
+
+<p>Data analysis was been conducted using annual snapshots of public transport timetable data between 2004 and 2023 (see <a href="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined#methodology">the methodology</a> to understand why they chose to present data from 2008 onwards). For more recent years, the data were available in the international General Transit Feed Specification (GTFS) format. The GTFS is an Open Standard used to distribute relevant information about transit systems to riders. It allows public transit agencies to publish their transit data in a format that can be consumed by a wide variety of software applications. For earlier years (pre-2018), the data sets needed to be transformed into the GTFS format from the various sources.</p>
+<p>Once data sets for each year were transformed into the GTFS format, a program developed by the University of Leeds processed timetable data to calculate the frequency of services scheduled to stop in each LSOA and local authority in Britain, measured as “trips per hour” (TPH), for buses, trams, metros and trains.</p>
