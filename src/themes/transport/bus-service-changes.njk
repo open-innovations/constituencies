@@ -16,7 +16,7 @@ description: |
 		"data": "sources.transport.bustrip-trends-new-parliamentary_constituency_1",
 		"columns": [{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
+			"template": "{{ n }} ({{ Trips per hour % change: 2010-2023 }}%)"
 		}],
 		"value": "Trips per hour % change: 2010-2023",
 		"scale": "RdBu",
@@ -26,6 +26,12 @@ description: |
 		"legend": {
 			"position": "top right",
 			"items": [{
+				"value": 75,
+				"label": "+75%"
+			},{
+				"value": 50,
+				"label": "+50%"
+			},{
 				"value": 25,
 				"label": "+25%"
 			},{
