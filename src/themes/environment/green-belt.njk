@@ -49,7 +49,7 @@ description: Fraction of each constituency that constitutes green belt.
 						"label": "filterLabel"
 					}
 				},
-				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | toLocaleString() }} hectares ({{ % Green Belt }}%)",
+				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
 				"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library)/<a href=\"https://www.gov.uk/government/statistics/local-authority-green-belt-statistics-for-england-2022-to-2023/local-authority-green-belt-england-2022-23-statistical-release\">Local authority Green Belt statistics for England: 2022-23, Accompanying tables</a> (DLUHC)"
 			},
 			"download": {"text": "Climate change projections", "type": "CSV"}
@@ -105,7 +105,7 @@ description: Fraction of each constituency that constitutes green belt.
 						"label": "filterLabel"
 					}
 				},
-				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | toLocaleString() }} hectares ({{ % Green Belt }}%)",
+				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
 				"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library)/<a href=\"https://www.gov.uk/government/statistics/local-authority-green-belt-statistics-for-england-2022-to-2023/local-authority-green-belt-england-2022-23-statistical-release\">Local authority Green Belt statistics for England: 2022-23, Accompanying tables</a> (DLUHC)"
 			},
 			"download": {"text": "Climate change projections", "type": "CSV"}
@@ -119,5 +119,4 @@ description: Fraction of each constituency that constitutes green belt.
 <ul>
 <li>Data as at 31 March 2023.</li>
 <li>Area figures are rounded to the nearest 10 hectares</li>
-<li>Empty values indicate that fewer than 5 hectares of land are designated as Green Belt</li>
 </ul>
