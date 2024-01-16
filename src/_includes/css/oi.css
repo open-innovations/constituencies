@@ -163,4 +163,5 @@ footer hr.about { margin: 32px 0; border: 0; border-top:1px solid #444; }
 
 @media only screen and (max-width: 800px) {
 	.elsewhere { float:none; margin-left: 0; margin-bottom: 1em; }
+	.doublepadded { padding: 1em; }
 }
