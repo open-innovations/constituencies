@@ -50,18 +50,19 @@ OI.ready(function(){
 	document.head.prepend(styles);
 	
 	var panelSelectors = document.querySelectorAll('panelSelector');
-	var p,type,titleSelector,position,idx,list,panel,panels,li,title,tabs,id;
+	var p;
 	
-	for(p = 0; p < panelSelectors.length; p++){
+	function panelSelector(el){
+
+		var type,titleSelector,position,idx,list,panel,panels,li,title,tabs,id,_obj;
+		type = el.getAttribute('data-type');
+		titleSelector = el.getAttribute('data-title-selector')||'h2';
+		position = el.getAttribute('data-position');
+		id = el.id;
 		
-		type = panelSelectors[p],panelSelectors[p].getAttribute('data-type');
-		titleSelector = panelSelectors[p].getAttribute('data-title-selector')||'h2';
-		position = panelSelectors[p].getAttribute('data-position');
-		id = panelSelectors[p].id;
+		panels = el.querySelectorAll('[role="tabpanel"]');
 		
-		panels = panelSelectors[p].querySelectorAll('[role="tabpanel"]');
-		
-		panelSelectors[p].setAttribute('style','--tab-count: '+panels.length+';');
+		el.setAttribute('style','--tab-count: '+panels.length+';');
 
 		if(type=="select") list = document.createElement('select');
 		else list = document.createElement('ul');
@@ -83,19 +84,40 @@ OI.ready(function(){
 			li.innerHTML = '<a href="#' + panel.id + '" role="tab" aria-controls="'+panel.id+'">' + title + '</a>';
 			list.append(li);
 		}
-		if(position=="bottom") panelSelectors[p].append(list);
-		else panelSelectors[p].prepend(list);
+		if(position=="bottom") el.append(list);
+		else el.prepend(list);
 		
-		
+		_obj = this;
+
 		if(type=="select"){
 			
 		}else{
 
-			tabs = document.querySelectorAll('[role="tab"]');
+			this.setTab = function(tab){
+				for(t = 0; t < tabs.length; t++){
+					if(tab==tabs[t]){
+
+						// Remove all current selected tabs
+						list.querySelectorAll('[aria-selected="true"]').forEach((t) => t.setAttribute("aria-selected", false));
+
+						// Set this tab as selected
+						tab.setAttribute("aria-selected", true);
+
+						// Hide all tab panels
+						panels.forEach((p) => p.setAttribute("hidden", true));
+
+						// Show the selected panel
+						el.querySelector(`#${tab.getAttribute("aria-controls")}`).removeAttribute("hidden");
+					}
+				}
+						
+			};
+
+			tabs = el.querySelectorAll('[role="tab"]');
 
 			// Add a click event handler to each tab
 			tabs.forEach((tab) => {
-				tab.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); changeTabs(e.target) });
+				tab.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); _obj.setTab(e.target) });
 			});
 
 			// Enable arrow navigation between tabs in the tab list
@@ -119,31 +141,13 @@ OI.ready(function(){
 
 					tabs[tabFocus].setAttribute("tabindex", 0);
 					tabs[tabFocus].focus();
-					changeTabs(tabs[tabFocus]);
+					this.setTab(tabs[tabFocus]);
 				}
 			});
-			changeTabs(tabs[0]);
+			this.setTab(tabs[0]);
 		}
+
+		return this;
 	}
-	function changeTabs(tab) {
-		const list = tab.closest('[role=tablist]');
-		const container = tab.closest('panelSelector');
-
-		// Remove all current selected tabs
-		list
-		.querySelectorAll('[aria-selected="true"]')
-		.forEach((t) => t.setAttribute("aria-selected", false));
-
-		// Set this tab as selected
-		tab.setAttribute("aria-selected", true);
-
-		// Hide all tab panels
-		container
-		.querySelectorAll('[role="tabpanel"]')
-		.forEach((p) => p.setAttribute("hidden", true));
-
-		// Show the selected panel
-		container.querySelector(`#${tab.getAttribute("aria-controls")}`)
-		.removeAttribute("hidden");
-	}
+	for(p = 0; p < panelSelectors.length; p++) new panelSelector(panelSelectors[p]);
 });
