@@ -1,5 +1,3 @@
-import { parseHTML } from '../../../_lib/deps.ts';
-
 export default function ({ id, type = "", label, titleSelector="h2", position="top", content }) {
 
 	if(!id) id = crypto.randomUUID();
