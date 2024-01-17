@@ -4,8 +4,8 @@ export default function ({ comp, component, config, download }) {
 	const dataPath = '/data';
 
 	if(!config.attribution) config.attribution = "";
-	if(config.hexjson=="hexjson.constituencies") config.attribution += '<br /><a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
-	if(config.hexjson=="hexjson.uk-constituencies-2023" || config.hexjson=="hexjson.uk-constituencies-2023-temporary") config.attribution += '<br /><a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2023 constituencies</a> (Open Innovations and contributors)';
+	if(config.hexjson=="hexjson.constituencies") config.attribution += ' / <a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
+	if(config.hexjson=="hexjson.uk-constituencies-2023" || config.hexjson=="hexjson.uk-constituencies-2023-temporary") config.attribution += ' / <a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2023 constituencies</a> (Open Innovations and contributors)';
 
 	config.attribution += '<div class="menu" data-dependencies="/assets/js/menu.js">';
 	if(typeof config.data==="string"){
