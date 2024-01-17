@@ -1,6 +1,6 @@
 .icon-inline { width: 2em; height: 2em; display: table-cell; vertical-align: middle; margin-right: 0.5em; }
 .oi-viz .oi-attribution { text-align: center; font-size: 0.8em; color: #555; line-height: 1.5em; display: block; }
-.oi-viz .oi-attribution .download svg { position:relative; top:2px; margin-left:0.25em; }
+.oi-viz .oi-attribution .download svg { position:relative; top:3px; margin-right:0.25em; }
 
 .menu .menu-item { display: inline-block; cursor: pointer; }
 .menu .menu-item::before { content: "|"; margin: 0 0.25em; }
