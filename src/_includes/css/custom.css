@@ -1,6 +1,19 @@
 .icon-inline { width: 2em; height: 2em; display: table-cell; vertical-align: middle; margin-right: 0.5em; }
-.oi-viz .oi-attribution { text-align: center; font-size: 0.8em; color: #555; line-height: 1.5em; }
+.oi-viz .oi-attribution { text-align: center; font-size: 0.8em; color: #555; line-height: 1.5em; display: block; }
 .oi-viz .oi-attribution .download svg { position:relative; top:2px; margin-left:0.25em; }
+
+.menu .menu-item { display: inline-block; cursor: pointer; }
+.menu .menu-item::before { content: "|"; margin: 0 0.25em; }
+.menu .menu-item:first-child:before { content: ""; }
+.menu .menu-item button { background: transparent; border: 0; padding: 0 0.25em; margin: 0; line-height: 1.5em; }
+
+.capture { margin-top: 0; padding: 1em; }
+.capture .oi-filter, .capture .menu { display: none; }
+.capture a { color: inherit; text-decoration: none; }
+.capture .oi-legend-top { top: 1em; }
+.capture .oi-legend-right { right: 1em; }
+.capture .oi-legend-bottom { bottom: 1em; }
+.capture .oi-legend-left { left: 1em; }
 
 header a, .breadcrumb a { color:inherit; }
 
