@@ -9,13 +9,13 @@ stages:
       size: 1228908
     - path: foodbanks.pl
       hash: md5
-      md5: acd5c2919979aedd199534962f9f1ff4
-      size: 131
+      md5: ecddb32c58209ff7ff0dfb2e01c9e515
+      size: 171
     outs:
     - path: ../../src/_data/sources/society/foodbanks.csv
       hash: md5
-      md5: 5437946e31c4250716ce2322937f19e5
-      size: 4
+      md5: 1d732b0ab3ffb47db32977efba7a0077
+      size: 28
       isexec: true
   get-foodbanks:
     cmd: wget --no-check-certificate -O ../../raw-data/society/foodbanks.json "https://www.givefood.org.uk/api/2/foodbanks/"
