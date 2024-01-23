@@ -1,0 +1,1 @@
+requires 'JSON::XS', '2.0';
