@@ -1,0 +1,52 @@
+---
+title: Gigabit availability
+---
+
+<h2>Gigabit availability (September 2023){% comp 'anchor', { 'ref': 'gigabit'} %}{% endcomp %}</h2>
+<p>The percentage of premises that were capable of receiving speeds of 1 gigabit per second (1 Gbps).</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Gigabit availability (%)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}

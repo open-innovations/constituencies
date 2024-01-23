@@ -1,0 +1,52 @@
+---
+title: Superfast availability
+---
+
+<h2>Superfast availability (September 2023){% comp 'anchor', { 'ref': 'superfast'} %}{% endcomp %}</h2>
+<p>The percentage of premises that were capable of receiving download speeds of at least 30 Mbps. Superfast availability doesn’t mean that all lines are actually receiving superfast speeds, because this often requires consumers to subscribe to specific packages.</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Superfast availability (%)",
+		"scale": "Viridis",
+		"min": 50,
+		"max": 100,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 90,
+				"label": "90%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 70,
+				"label": "70%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 50,
+				"label": "<50%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}

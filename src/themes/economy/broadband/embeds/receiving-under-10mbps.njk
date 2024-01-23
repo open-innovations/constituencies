@@ -1,0 +1,49 @@
+---
+title: Receiving under 10 Mbps
+---
+<h2>Receiving under 10 Mbps (May 2023){% comp 'anchor', { 'ref': 'under-10Mbps'} %}{% endcomp %}</h2>
+<p>The percentage of lines receiving download speeds under 10 Mbps. These lines may have access to higher speeds. However, a high percentage of lines receiving under 10 Mbps suggest that the speeds available to basic broadband subscribers are low and below Ofcom’s threshold for ‘decent broadband’.
+</p>
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.economy.BroadbandDashboardDataFile",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ Name }}"
+		}],
+		"value": "Receiving under 10 Mbps (%)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 20,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items":[{
+				"value": 20,
+				"label": "20%+"
+			},{
+				"value": 15,
+				"label": "15%"
+			},{
+				"value": 10,
+				"label": "10%"
+			},{
+				"value": 5,
+				"label": "5%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+} %}{% endcomp %}
