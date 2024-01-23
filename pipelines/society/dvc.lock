@@ -5,21 +5,27 @@ stages:
     deps:
     - path: ../../raw-data/society/foodbanks.json
       hash: md5
-      md5: 4e305ee5fd77823c5fc9706a3828121b
+      md5: 96fbaaba8bba7571b928cb9df5e719a1
       size: 1228908
+    - path: ../../src/_data/hexjson/constituencies.hexjson
+      hash: md5
+      md5: 996bbc999cd2c7d393eff3019ee14f29
+      size: 66148
     - path: foodbanks.pl
       hash: md5
-      md5: a032219f86fd701e8075e4308541d0d4
-      size: 164
+      md5: ec2997e289cf1c5c46723c75b03a918f
+      size: 1756
     outs:
     - path: ../../src/_data/sources/society/foodbanks.csv
       hash: md5
-      md5: 1d732b0ab3ffb47db32977efba7a0077
-      size: 28
+      md5: 8ddbb2cf9e1780d195153746757988dc
+      size: 26400
+      isexec: true
   get-foodbanks:
     cmd: wget --no-check-certificate -O ../../raw-data/society/foodbanks.json "https://www.givefood.org.uk/api/2/foodbanks/"
     outs:
     - path: ../../raw-data/society/foodbanks.json
       hash: md5
-      md5: 4e305ee5fd77823c5fc9706a3828121b
+      md5: 96fbaaba8bba7571b928cb9df5e719a1
       size: 1228908
+      isexec: true

@@ -10,6 +10,7 @@ stages:
     deps:
       - foodbanks.pl
       - ../../raw-data/society/foodbanks.json
+      - ../../src/_data/hexjson/constituencies.hexjson
     outs:
       - ../../src/_data/sources/society/foodbanks.csv:
           cache: false
