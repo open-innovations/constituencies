@@ -9,6 +9,5 @@ deps:
 outs:
 - md5: 8684dd65bd630cdcf3a4e65c41b6c590
   size: 229328
-  isexec: true
   hash: md5
   path: spills-by-constituency.json

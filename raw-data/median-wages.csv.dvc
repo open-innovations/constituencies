@@ -1,4 +1,4 @@
-md5: 69e916b67db3c1722898924a7645519b
+md5: 340bcb75b414b17e066a554a0eb6db86
 frozen: true
 deps:
 - checksum: '259807824802670669679467920576837391755'
@@ -7,8 +7,7 @@ deps:
   path: 
     https://www.nomisweb.co.uk/api/v01/dataset/NM_30_1.data.csv?geography=TYPE460&sex=8&item=2&pay=7&measures=20100&time=2010,latest&select=DATE,GEOGRAPHY_CODE,OBS_VALUE
 outs:
-- md5: 654048c593e015bb927ea65f6a8595a6
-  size: 203356
-  isexec: true
+- md5: 45326e7ae00e381e5a3fe6122b20a379
+  size: 218806
   hash: md5
   path: median-wages.csv

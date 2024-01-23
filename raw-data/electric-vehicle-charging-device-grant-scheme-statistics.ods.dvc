@@ -9,6 +9,5 @@ deps:
 outs:
 - md5: 444779cc1ee97642bae5b7779cfb660e
   size: 264833
-  isexec: true
   hash: md5
   path: electric-vehicle-charging-device-grant-scheme-statistics.ods

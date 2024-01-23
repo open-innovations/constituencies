@@ -9,6 +9,5 @@ deps:
 outs:
 - md5: 7bf865766527e3393bef14addd90367f
   size: 105115
-  isexec: true
   hash: md5
   path: covid-grants-april-2022.xlsx

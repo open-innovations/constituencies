@@ -9,6 +9,5 @@ deps:
 outs:
 - md5: 9a2ff79ec13d66b05aea71427e626324
   size: 354457
-  isexec: true
   hash: md5
   path: electric-vehicle-charging-statistics-july-2023.ods
