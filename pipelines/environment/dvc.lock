@@ -35,3 +35,38 @@ stages:
       md5: be2d964c9595da21a76a223cd4c2d048
       size: 25214
       isexec: true
+  storm-overflows:
+    cmd: PYTHONPATH=../.. python storm-overflows.py
+    deps:
+    - path: ../../raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage
+        companies.xlsx
+      hash: md5
+      md5: ee2acbd709d5d094955dc74f4307c291
+      size: 2324810
+    - path: ../../raw-data/spills-by-constituency.json
+      hash: md5
+      md5: 8684dd65bd630cdcf3a4e65c41b6c590
+      size: 229328
+    - path: ../../src/_data/geojson/constituencies-2022.geojson
+      hash: md5
+      md5: 4c70e72adbfe31a71d6a504edd2d2509
+      size: 7461749
+    - path: ../util.py
+      hash: md5
+      md5: 26230f637818c0c982b393dc9b152ced
+      size: 670
+    - path: storm-overflows.py
+      hash: md5
+      md5: 08c09b0c03d3ccc3e0f62f74e7474f5f
+      size: 5498
+    outs:
+    - path: ../../src/_data/sources/environment/spills_by_constituency.csv
+      hash: md5
+      md5: 15c19b34ee6c9144627bb5e4e247a2aa
+      size: 100103
+      isexec: true
+    - path: ../../src/_data/sources/environment/storm_overflows.csv
+      hash: md5
+      md5: be2d964c9595da21a76a223cd4c2d048
+      size: 25214
+      isexec: true
