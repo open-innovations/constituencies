@@ -1,4 +1,18 @@
 stages:
+  get-storm-overflows:
+    cmd:
+      - wget -q -O ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return.zip "https://environment.data.gov.uk/api/file/download?fileDataSetId=c55e170e-3c75-49a5-8026-a961ff94c8e0&fileName=EDM_2022_Storm_Overflow_Annual_Return.zip"
+    outs:
+      - ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return.zip:
+          cache: false
+  unzip-storm-overflows:
+    cmd:
+      - unzip -o ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return.zip "EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx" -d ../../raw-data/
+    deps:
+      - ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return.zip
+    outs:
+      - ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx:
+          cache: false
   storm-overflows:
     cmd: PYTHONPATH=../.. python storm-overflows.py
     deps:
@@ -6,7 +20,7 @@ stages:
       - ../util.py
       - ../../raw-data/spills-by-constituency.json
       - ../../src/_data/geojson/constituencies-2022.geojson
-      - ../../raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx
+      - ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx
     outs:
       - ../../src/_data/sources/environment/spills_by_constituency.csv:
           cache: false

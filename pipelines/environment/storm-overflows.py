@@ -10,7 +10,7 @@ def spills():
     return data
 
 def df_grid2latlong():
-    xlsfile = '../../raw-data/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx'
+    xlsfile = '../../raw-data/EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx'
     xl = pd.ExcelFile(xlsfile)
     names = xl.sheet_names 
 
