@@ -1,0 +1,120 @@
+---
+title: Percentage green belt
+---
+
+<h2>Percentage green belt (31 March 2023)</h2>
+
+{% comp 'layout.panelSelector.set', { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } %}
+
+	{% comp 'layout.panelSelector.panel', { id: "green-belt-percent-current", classes: "doublepadded" } %}
+
+		<h3>Current constituencies</h3>
+		{% comp "wrapper", {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.environment.CBP00934---Constituency-and-local-authority-data-for-download-old",
+				"columns": [{
+					"name": "filterLabel",
+					"template": "{{ n }}"
+				}],
+				"min": 0,
+				"max": 100,
+				"value": "% Green Belt",
+				"scale": "#dfdfdf 0%, #0DBC37 100%",
+				"matchKey": "ONS code",
+				"legend": {
+					"position": "top right",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80%"
+					},{
+						"value": 60,
+						"label": "60%"
+					},{
+						"value": 40,
+						"label": "40%"
+					},{
+						"value": 20,
+						"label": "20%"
+					},{
+						"value": 10,
+						"label": "10%"
+					},{
+						"value": 0,
+						"label": "0%"
+					}]
+				},
+				"tools": {
+					"filter": {
+						"label": "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
+				"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library/DLUHC)"
+			},
+			"download": {"text": "Green Belt land - current", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}	{# end of selector panel #}
+
+	{% comp 'layout.panelSelector.panel', { id: "green-belt-percent-future", classes: "doublepadded"} %}
+
+		<h3>Future constituencies</h3>
+		{% comp "wrapper", {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"width": 600,
+				"hexjson": "hexjson.uk-constituencies-2023",
+				"data": "sources.environment.CBP00934---Constituency-and-local-authority-data-for-download",
+				"columns": [{
+					"name": "filterLabel",
+					"template": "{{ n }}"
+				}],
+				"min": 0,
+				"max": 100,
+				"value": "% Green Belt",
+				"scale": "#dfdfdf 0%, #0DBC37 100%",
+				"matchKey": "ONS code",
+				"legend": {
+					"position": "top right",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80%"
+					},{
+						"value": 60,
+						"label": "60%"
+					},{
+						"value": 40,
+						"label": "40%"
+					},{
+						"value": 20,
+						"label": "20%"
+					},{
+						"value": 10,
+						"label": "10%"
+					},{
+						"value": 0,
+						"label": "0%"
+					}]
+				},
+				"tools": {
+					"filter": {
+						"label": "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
+				"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library/DLUHC)"
+			},
+			"download": {"text": "Green Belt land - future", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}	{# end of selector panel #}
+{% endcomp %} {# end of selector set #}
