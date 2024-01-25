@@ -1,12 +1,12 @@
 stages:
   get-foodbanks:
     cmd: wget --no-check-certificate -O ../../raw-data/society/foodbanks.json "https://www.givefood.org.uk/api/2/foodbanks/"
+    always_changed: true
     outs:
       - ../../raw-data/society/foodbanks.json:
           cache: false
   foodbanks:
     cmd: perl foodbanks.pl
-    always_changed: true
     deps:
       - foodbanks.pl
       - ../../raw-data/society/foodbanks.json
