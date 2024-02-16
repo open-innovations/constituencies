@@ -2,11 +2,12 @@
 title: General Elections (UK)
 theme: society
 created: 2023-08-24T15:05
+updated: 2024-02-16T10:00
 description: |
   General Election results by constituency (UK).
 ---
 
-<p>The party-political make up of the UK Parliament at various points from 2010 until 2023.</p>
+<p>The party-political make up of the UK Parliament at various points from 2010 until 2024.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
@@ -91,7 +92,8 @@ description: |
 			},
 			slider: {
 				columns: ['GE 2010','GE 2015','GE 2017','Pre GE 2019','GE 2019','Current'],
-				width: "500px"
+				width: "500px",
+				position: "top"
 			}
 		},
 		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
@@ -101,5 +103,5 @@ description: |
 } %}{% endcomp %}
 
 <h2>Notes</h2>
-<p>For the 2023 position on the slider, we have applied <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a> up to 19th October 2023.</p>
+<p>For the "Current" position on the slider, we have applied <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a> up to 15th February 2024.</p>
 
