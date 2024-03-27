@@ -2,87 +2,123 @@
 title: Storm overflows (England)
 theme: environment
 created: 2023-08-22T17:44
+updated: 2024-03-27T19:05
 description: |
   Constituency-level data on sewage overflows.
-config:
-  - width: 600
-    hexjson: hexjson.constituencies
-    data: sources.environment.storm_overflows
-    columns:
-      - name: "filterLabel"
-        template: "{{ n }} ({{ a }})"
-    value: "Counted spills using 12-24h count method"
-    scale: "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%"
-    min: 0
-    max: 5000
-    matchKey: "PCON22CD"
-    legend:
-      position: top right
-      items:
-        - value: 5000
-          label: "5,000+"
-        - value: 4000
-          label: "4,000"
-        - value: 3000
-          label: "3,000"
-        - value: 2000
-          label: "2,000"
-        - value: 1000
-          label: "1,000"
-        - value: 0
-          label: '0'
-    tools:
-      filter:
-        label: filterLabel
-    tooltip: "<strong>{{ n }}</strong><br />Total spills: <strong>{{ {{ _value }} | toLocaleString() }}</strong>"
-    attribution: |
-      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
-  - width: 600
-    hexjson: hexjson.constituencies
-    data: sources.environment.storm_overflows
-    columns:
-      - name: "filterLabel"
-        template: "{{ n }} ({{ a }})"
-    value: "Total Duration (hrs) all spills prior to processing through 12-24h count method"
-    scale: "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%"
-    min: 0
-    max: 60000
-    matchKey: "PCON22CD"
-    legend:
-      position: top right
-      items:
-        - value: 60000
-          label: "60,000+"
-        - value: 40000
-          label: "40,000"
-        - value: 20000
-          label: "20,000"
-        - value: 0
-          label: '0'
-    tools:
-      filter:
-        label: filterLabel
-    tooltip: "<strong>{{ n }}</strong><br />Total hours: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>"
-    attribution: |
-      Data: <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)
 ---
 
-<h2>Total spills</h2>
+<h2 id="total-spills">Total spills</h2>
 
-{% comp 'hexmap', {
-	"config": config[0],
+{% comp "wrapper", {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.storm_overflows",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "2022",
+			"template": "{{ Counted spills using 12-24h count method→2022 }}"
+		},{
+			"name": "2023",
+			"template": "{{ Counted spills using 12-24h count method→2023 }}"
+		}],
+		"value": "2023",
+		"scale": "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%",
+		"min": 0,
+		"max": 6000,
+		"matchKey": "PCON22CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 6000,
+				"label": "6,000+"
+			},{
+				"value": 4000,
+				"label": "4,000"
+			},{
+				"value": 2000,
+				"label": "2,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider":{
+				"columns":["2022","2023"],
+				"width": "200px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total spills 2023: <strong>{{ 2023 | toLocaleString() }}</strong><br />Total spills 2022: <strong>{{ 2022 | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac\">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)"
+	},
 	"download": {"text": "EDM totals by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
 
-<h2>Total duration (hours)</h2>
-{% comp 'hexmap', {
-	"config": config[1],
+
+<h2 id="total-duration">Total duration (hours)</h2>
+
+{% comp "wrapper", {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.storm_overflows",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "2022",
+			"template": "{{ Total Duration (hrs) all spills prior to processing through 12-24h count method→2022 }}"
+		},{
+			"name": "2023",
+			"template": "{{ Total Duration (hrs) all spills prior to processing through 12-24h count method→2023 }}"
+		}],
+		"value": "2023",
+		"scale": "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%",
+		"min": 0,
+		"max": 60000,
+		"matchKey": "PCON22CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 60000,
+				"label": "60,000+"
+			},{
+				"value": 40000,
+				"label": "40,000"
+			},{
+				"value": 20000,
+				"label": "20,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider":{
+				"columns":["2022","2023"],
+				"width": "200px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total hours 2023: <strong>{{ 2023 | toLocaleString() }}</strong><br />Total hours 2022: <strong>{{ 2022 | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac\">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)"
+	},
 	"download": {"text": "EDM totals by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
 <h2>Notes</h2>
 <p>Data are provided by Water and Sewerage Companies (WaSCs) to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations.</p>
-<p>We found the longitude/latitude (using the OS Grid Ref) for every storm overflow event included in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring dataset</a> (2022) and then found the corresponding Parliamentary constituency.</p>
+<p>We found the longitude/latitude (using the OS Grid Ref) for every storm overflow event included in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring dataset</a> (2023) and then found the corresponding Parliamentary constituency.</p>
 <p>The "Total spills" map shows the result of adding up the values in the <code>Counted spills using 12-24h count method</code> column. The "Total duration (hours)" map does the equivalent for the <code>Total Duration (hrs) all spills prior to processing through 12-24h count method</code> column.</p>
 <p>The totals are similar but not-quite-the-same-as those shown at <a href="https://top-of-the-poops.org/">Top of the Poops</a>. We haven't been able to determine why there are differences.</p>
