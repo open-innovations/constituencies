@@ -60,26 +60,28 @@ my $double = 0;
 my $counts = {};
 my $types = {};
 my $nrows = @rows;
-my ($r,$pcon,@pcons,$p,$pid);
+my ($r,$pcon,@pcons,$p,$pid,$pname);
 for($r = 0; $r < @rows; $r++){
-	$pcon = $rows[$r]{'PCON10NM'};
-	$pcon =~ s/St\./St/g;
+	$pname = $rows[$r]{'PCON10NM'};
 	@pcons = ();
 	# Limit to first constituency when two are given
-	if($pcon){
-		if($pcon =~ / \/.*/){
-			@pcons = split(/ \/ /,$pcon);
+	if($pname){
+		if($pname =~ / \/.*/){
+			@pcons = split(/ \/ /,$pname);
 			$double++;
 		}else{
-			@pcons = ($pcon);
+			@pcons = ($pname);
 		}
 	}
 	$p = @pcons;
 	if($p > 0){
 		for($p = 0; $p < @pcons; $p++){
-			$pcon = $pcons[$p];
+			$pname = $pcons[$p];
+			$pcon = $pname;
+			$pcon =~ s/St\./St/g;
 			if($pcon){
 				if($constituencies->{$pcon}){
+					$constituencies->{$pcon}{'Historic England Name'} = $pname;
 					$pid = $constituencies->{$pcon}{'PCON10CD'};
 					if(!$counts->{$pid}){ $counts->{$pid} = {'name'=>$pcon,'total'=>0,'types'=>{}}; }
 					if($rows[$r]{'Narrow Term'}){
@@ -137,7 +139,9 @@ $csv .= "\n";
 foreach $pcon (sort(keys(%{$constituencies}))){
 	$pid = $constituencies->{$pcon}{'PCON10CD'};
 	if($pid =~ /^E/){
-		$csv .= $pid.",".($pcon =~ /,/ ? "\"$pcon\"" : $pcon);
+		#print Dumper $constituencies->{$pcon};
+		$pname = $constituencies->{$pcon}{'Historic England Name'}||$pcon;
+		$csv .= $pid.",".($pcon =~ /,/ ? "\"$pname\"" : $pname);
 		for($t=0;$t< @typ;$t++){
 			$csv .= ",".($counts->{$pid}{'types'}{$typ[$t]}||"0");
 		}

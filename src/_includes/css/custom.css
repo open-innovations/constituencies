@@ -52,6 +52,7 @@ input[type="range"].oi-slider-control:focus::-moz-range-thumb{ outline: 4px soli
 .number, .name, .tooltip strong {
 	font-family: Poppins;
 }
+.tooltip a { color: inherit; }
 
 .credit { font-size:0.9em;text-align:center;color: #555;line-height: 1.5em;margin-top:0.5em; }
 .credit a, .credit a:visited { color: inherit; text-decoration: none; }

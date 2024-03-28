@@ -84,7 +84,7 @@ E14000609,Burnley,4,0,0,4,0,0,0
 E14000610,Burton,1,0,0,1,0,0,0
 E14000611,Bury North,5,0,0,1,2,0,2
 E14000612,Bury South,1,0,0,0,0,0,1
-E14000613,Bury St Edmunds,8,2,0,5,0,0,1
+E14000613,Bury St. Edmunds,8,2,0,5,0,0,1
 E14000614,Calder Valley,14,3,0,7,1,0,3
 E14000615,Camberwell and Peckham,17,0,0,14,1,1,1
 E14000616,Camborne and Redruth,19,10,0,7,0,0,2
@@ -221,7 +221,7 @@ E14000746,Hexham,36,24,0,9,1,0,2
 E14000747,Heywood and Middleton,9,0,0,3,2,0,4
 E14000748,High Peak,7,2,0,3,0,0,2
 E14000749,Hitchin and Harpenden,2,0,0,2,0,0,0
-E14000750,Holborn and St Pancras,24,0,0,11,0,0,13
+E14000750,Holborn and St. Pancras,24,0,0,11,0,0,13
 E14000751,Hornchurch and Upminster,8,2,0,6,0,0,0
 E14000752,Hornsey and Wood Green,8,0,0,5,1,0,2
 E14000753,Horsham,5,2,0,2,1,0,0
@@ -431,11 +431,11 @@ E14000956,"Southampton, Test",1,0,0,0,0,0,1
 E14000957,Southend West,1,0,0,0,1,0,0
 E14000958,Southport,5,0,0,0,4,0,1
 E14000959,Spelthorne,1,0,0,0,0,0,1
-E14000960,St Albans,2,0,0,2,0,0,0
-E14000961,St Austell and Newquay,15,7,0,8,0,0,0
-E14000962,St Helens North,2,1,0,1,0,0,0
-E14000963,St Helens South and Whiston,11,2,0,3,3,0,3
-E14000964,St Ives,93,82,0,7,0,0,4
+E14000960,St. Albans,2,0,0,2,0,0,0
+E14000961,St. Austell and Newquay,15,7,0,8,0,0,0
+E14000962,St. Helens North,2,1,0,1,0,0,0
+E14000963,St. Helens South and Whiston,11,2,0,3,3,0,3
+E14000964,St. Ives,93,82,0,7,0,0,4
 E14000965,Stafford,4,2,0,1,1,0,0
 E14000966,Staffordshire Moorlands,13,6,0,7,0,0,0
 E14000967,Stalybridge and Hyde,5,0,0,1,1,0,3
