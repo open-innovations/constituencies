@@ -1,0 +1,51 @@
+{% comp "wrapper", {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.storm_overflows",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "Total duration 2022",
+			"template": "{{ Total Duration (hrs) all spills prior to processing through 12-24h count method→2022 }}"
+		},{
+			"name": "Total duration 2023",
+			"template": "{{ Total Duration (hrs) all spills prior to processing through 12-24h count method→2023 }}"
+		}],
+		"value": "Total duration 2023",
+		"scale": "#fff5eb 0%, #fdd0a4 25%, #fb8c3c 50%, #dc5006 75%, #7f2704 100%",
+		"min": 0,
+		"max": 60000,
+		"matchKey": "PCON22CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 60000,
+				"label": "60,000+"
+			},{
+				"value": 40000,
+				"label": "40,000"
+			},{
+				"value": 20000,
+				"label": "20,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider":{
+				"columns":["Total duration 2022","Total duration 2023"],
+				"width": "200px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total hours 2023: <strong>{{ Total duration 2023 | toLocaleString() }}</strong><br />Total hours 2022: <strong>{{ Total duration 2022 | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac\">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)"
+	},
+	"download": {"text": "EDM totals by constituency", "type": "CSV"}
+} %}{% endcomp %}
