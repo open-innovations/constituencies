@@ -1,0 +1,50 @@
+{% comp "wrapper", {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.heritage-at-risk",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "All",
+			"template": "{{ Type→All }}"
+		}],
+		"value": "All",
+		"scale": "#cccccc 0%, #b62126 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON10CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100+"
+			},{
+				"value": 80,
+				"label": "80"
+			},{
+				"value": 60,
+				"label": "60"
+			},{
+				"value": 40,
+				"label": "40"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />All entries: <strong>{{ All | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2023-registers/\">Heritage at Risk 2023 Register</a> (Historic England)"
+	},
+	"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
+} %}{% endcomp %}

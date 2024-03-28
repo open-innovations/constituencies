@@ -59,6 +59,7 @@ my $badcon = 0;
 my $double = 0;
 my $counts = {};
 my $types = {};
+my $nrows = @rows;
 my ($r,$pcon,@pcons,$p,$pid);
 for($r = 0; $r < @rows; $r++){
 	$pcon = $rows[$r]{'PCON10NM'};
@@ -107,6 +108,7 @@ for($r = 0; $r < @rows; $r++){
 	}
 }
 msg("Stats:\n");
+msg("\t<green>$nrows<none> entries in the register.\n");
 msg("\t<green>$nocon<none> with no constituency given.\n");
 msg("\t<green>$double<none> with multiple constituencies.\n");
 msg("\t<green>$badcon<none> with a bad constituency name.\n");
@@ -134,11 +136,13 @@ for($t=0;$t< @typ;$t++){
 $csv .= "\n";
 foreach $pcon (sort(keys(%{$constituencies}))){
 	$pid = $constituencies->{$pcon}{'PCON10CD'};
-	$csv .= $pid.",".($pcon =~ /,/ ? "\"$pcon\"" : $pcon);
-	for($t=0;$t< @typ;$t++){
-		$csv .= ",".($counts->{$pid}{'types'}{$typ[$t]}||"");
+	if($pid =~ /^E/){
+		$csv .= $pid.",".($pcon =~ /,/ ? "\"$pcon\"" : $pcon);
+		for($t=0;$t< @typ;$t++){
+			$csv .= ",".($counts->{$pid}{'types'}{$typ[$t]}||"0");
+		}
+		$csv .= "\n";
 	}
-	$csv .= "\n";
 }
 
 open($fh,">:utf8",$basedir."../../src/_data/sources/society/heritage-at-risk.csv");
