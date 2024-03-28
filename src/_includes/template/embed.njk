@@ -12,10 +12,17 @@
 </head>
 <body class="b6-bg padded">
 
-
+	<h1>{% if theme %}<a href="/themes/{{ themes[theme]['url'] }}" class="{{ themes[theme]['class'] }} theme-icon">{{ themes[theme]['icon'] | safe }}</a>{% endif %}{{ title }}</h1>
+	{% if updated %}
+	<p class="updated">Updated: <time datetime="{{ updated }}">{{ updated | date('do MMMM yyyy') }}</time></p>
+	{% else %}
+		{% if created %}
+	<p class="updated">Created: <time datetime="{{ created }}">{{ created | date('do MMMM yyyy') }}</time></p>
+		{% endif %}
+	{% endif %}
 	{{ content | safe }}
 	
-	<p class="credit">Visualisation by <a href="https://open-innovations.org/" target="_parent">Open Innovations <svg width="1em" height="1em" overflow="auto" viewBox="-32 -32 64 64" xmlns="http://www.w3.org/2000/svg"><mask id="oi-person"><path d="m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0" fill="#fff"></path></mask><g id="oi-logo" fill="black"><circle r="32" mask="url(#oi-person)"></circle></g></svg></a></p>
+	<p class="credit">Visualisation by <a href="https://constituencies.open-innovations.org/" target="_parent">Open Innovations <svg width="1em" height="1em" overflow="auto" viewBox="-32 -32 64 64" xmlns="http://www.w3.org/2000/svg"><mask id="oi-person"><path d="m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0" fill="#fff"></path></mask><g id="oi-logo" fill="black"><circle r="32" mask="url(#oi-person)"></circle></g></svg></a></p>
 
 
 	<script src="https://open-innovations.org/resources/oi.log.js"></script>

@@ -52,6 +52,13 @@ input[type="range"].oi-slider-control:focus::-moz-range-thumb{ outline: 4px soli
 .number, .name, .tooltip strong {
 	font-family: Poppins;
 }
+
+.credit { font-size:0.9em;text-align:center;color: #555;line-height: 1.5em;margin-top:0.5em; }
+.credit a, .credit a:visited { color: inherit; text-decoration: none; }
+.credit svg { position:relative;top:2px; }
+.embed { display: block; text-align: center; font-size:0.8em; color: #555; margin-bottom: 1rem; } 
+
+
 @media only screen and (max-width: 1080px) {
 	.grid-list { grid-template-columns: repeat(2,1fr); grid-gap: 0.25em; }
 }

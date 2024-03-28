@@ -85,7 +85,7 @@ OI.ready(function(){
 			item = document.createElement('div');
 			item.classList.add('menu-item');
 			btn = document.createElement('button');
-			btn.innerHTML = "PNG";
+			btn.innerHTML = "Save PNG";
 			item.appendChild(btn);
 			el.appendChild(item);
 			btn.addEventListener("click", function (e) {
@@ -99,7 +99,7 @@ OI.ready(function(){
 			item = document.createElement('div');
 			item.classList.add('menu-item');
 			btnsvg = document.createElement("button");
-			btnsvg.innerHTML = 'SVG';
+			btnsvg.innerHTML = 'Save SVG';
 			item.appendChild(btnsvg);
 			el.appendChild(item);
 			btnsvg.addEventListener("click", function (e) {
