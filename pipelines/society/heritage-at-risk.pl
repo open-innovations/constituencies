@@ -37,6 +37,17 @@ my $constituencies = getCSV({
 	'startrow'=>2
 });
 
+my $mpdata = getCSV({
+	'file'=>$basedir.'../../src/_data/sources/society/general-elections.csv',
+	'keys'=>{
+		'PCON10CD'=>'const_id',
+		'MP'=>'Current MP',
+		'Party'=>'Current'
+	},
+	'index'=>'PCON10CD',
+	'startrow'=>2
+});
+
 my @rows = getXLSX({
 	'url'=>'https://historicengland.org.uk/content/docs/har/har-2023-entries-additions-removals/',
 	'file'=>$basedir.'temp/har.xlsx',
@@ -122,15 +133,15 @@ foreach $t (sort(keys(%{$types}))){
 }
 @typ = sort(@typ);
 
-my $csv = "PCON10CD,Name";
+my $csv = "PCON10CD,Name,MP,Party";
 for($t=0;$t < @typ;$t++){
 	$csv .= ",Type";
 }
-$csv .= "\n,";
+$csv .= "\n,,,";
 for($t=0;$t < @typ;$t++){
 	$csv .= ",".$typ[$t];
 }
-$csv .= "\n---,---";
+$csv .= "\n---,---,---,---";
 for($t=0;$t< @typ;$t++){
 	$csv .= ",---";
 }
@@ -142,6 +153,8 @@ foreach $pcon (sort(keys(%{$constituencies}))){
 		#print Dumper $constituencies->{$pcon};
 		$pname = $constituencies->{$pcon}{'Historic England Name'}||$pcon;
 		$csv .= $pid.",".($pcon =~ /,/ ? "\"$pname\"" : $pname);
+		$csv .= ",".$mpdata->{$pid}{'MP'};
+		$csv .= ",".$mpdata->{$pid}{'Party'};
 		for($t=0;$t< @typ;$t++){
 			$csv .= ",".($counts->{$pid}{'types'}{$typ[$t]}||"0");
 		}
