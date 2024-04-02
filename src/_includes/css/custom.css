@@ -28,7 +28,7 @@ header a, .breadcrumb a { color:inherit; }
 
 .oi-slider { margin:auto; margin-bottom: 1em; }
 .oi-slider-inner { display: grid; }
-.oi-slider-inner label { display: block; text-align: center; }
+.oi-slider-inner label { display: block; text-align: center; font-family: Poppins; }
 
 input[type="range"].oi-slider-control { -webkit-appearance: none; appearance: none; background: transparent; cursor: pointer; width: 100%; margin-bottom: 0.25em; }
 input[type="range"].oi-slider-control:focus { outline: none; }
