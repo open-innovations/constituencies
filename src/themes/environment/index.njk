@@ -9,8 +9,8 @@ description: |
 
 <ul>
 {% for page in search.pages("theme=environment", "order title") %}
-{% if page.data.title!=title and not page.data.draft %}
-	<li><a href="{{ page.data.url }}">{{ page.data.title }}</a>{% if page.data.updated %} - last updated {{ page.data.updated  | date('do MMMM yyyy') }}{% endif %}</li>
+{% if page.title!=title and not page.draft %}
+	<li><a href="{{ page.url }}">{{ page.title }}</a>{% if page.updated %} - last updated {{ page.updated  | date('do MMMM yyyy') }}{% endif %}</li>
 {% endif %}
 {% endfor %}
 </ul>

@@ -42,6 +42,8 @@ def house_price_wage_ratio(data, values):
 
 def unemployment(data, values):
     data = data_pivot(data, values)
+    # Drop all months that aren't December
+    data.drop(data.filter(regex='20[0-9]{2}-(0[0-9]|10|11)').columns, axis=1, inplace=True)
     data = data.apply(pd.to_numeric, errors='ignore')
     data = data.round(4)
     #print(data['UnempConstRate'])
