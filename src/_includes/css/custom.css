@@ -9,7 +9,7 @@
 .menu .menu-item button { background: transparent; border: 0; padding: 0 0.25em; margin: 0; line-height: 1.5em; }
 
 .capture { margin-top: 0; padding: 1em; background: white; }
-.capture .oi-filter, .capture .menu, .capture input { display: none; }
+.capture .oi-filter, .capture .menu, .capture input, .capture g.overlay { display: none; }
 .capture a { color: inherit; text-decoration: none; }
 .capture .oi-legend-top { top: 1em; }
 .capture .oi-legend-right { right: 1em; }
