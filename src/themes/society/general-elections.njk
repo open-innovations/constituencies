@@ -7,90 +7,206 @@ description: |
   General Election results by constituency (UK).
 ---
 
-<p>The party-political make up of the UK Parliament at various points from 2010 until 2024.</p>
-{% comp 'wrapper', {
+<p>The party-political make up of the UK Parliament at various points.</p>
+
+{% comp 'layout.panelSelector.set', { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2010", title: "2010", classes: "doublepadded" } %}
+
+		<h3>General Election 2010</h3>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#F6CB2F','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.society.general-elections",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }} ({{ a }})"
+				}],
+				"value": "GE 2010",
+				"matchKey": "const_id",
+				"legend": {
+					position: "top right",
+					items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "Ind",label: "Ind"},{colour: "DUP",label: "DUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Alliance",label: "Alln"},{colour: "Spk",label: "Spk"}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+			},
+			"download": {"text": "General Election results by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2015", title: "2015", classes: "doublepadded" } %}
+
+		<h3>General Election 2015</h3>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.society.general-elections",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }} ({{ a }})"
+				}],
+				"value": "GE 2015",
+				"matchKey": "const_id",
+				"legend": {
+					position: "top right",
+					items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "UKIP",label: "UKIP"},{colour: "Ind",label: "Ind"},{colour: "DUP",label: "DUP"},{colour: "UUP",label: "UUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Spk",label: "Spk"}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+			},
+			"download": {"text": "General Election results by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2017", title: "2017", classes: "doublepadded" } %}
+
+		<h3>General Election 2017</h3>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.society.general-elections",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }} ({{ a }})"
+				}],
+				"value": "GE 2017",
+				"matchKey": "const_id",
+				"legend": {
+					position: "top right",
+					items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "Ind",label: "Ind"},{colour: "DUP",label: "DUP"},{colour: "SF",label: "SF"},{colour: "Spk",label: "Spk"}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+			},
+			"download": {"text": "General Election results by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2019", title: "2019", classes: "doublepadded" } %}
+
+		<h3>General Election 2019</h3>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.society.general-elections",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }} ({{ a }})"
+				}],
+				"value": "GE 2019",
+				"matchKey": "const_id",
+				"legend": {
+					position: "top right",
+					items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "DUP",label: "DUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Alliance",label: "Alln"},{colour: "Spk",label: "Spk"}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+			},
+			"download": {"text": "General Election results by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
+
+	{% comp 'layout.panelSelector.panel', { id: "current", title: "Now", classes: "doublepadded" } %}
+
+		<h3>As of 22nd February 2024</h3>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.constituencies",
+				"data": "sources.society.general-elections",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }} ({{ a }})"
+				}],
+				"value": "Current",
+				"matchKey": "const_id",
+				"legend": {
+					position: "top right",
+					items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "DUP",label: "DUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Alliance",label: "Alln"},{colour: "WPB",label: "WPB"},{colour: "Spk",label: "Spk"}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+			},
+			"download": {"text": "General Election results by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+
+	{% endcomp %}
+
+{% endcomp %}
+
+<h2>Notes</h2>
+<p>The results for "Now" include <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a>.</p>
+
+{#
+
+	# All legend items
+	items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "UKIP",label: "UKIP"},{colour: "Ind",label: "Ind"},{colour: "DUP",label: "DUP"},{colour: "UUP",label: "UUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Alliance",label: "Alln"},{colour: "WPB",label: "WPB"},{colour: "Spk",label: "Spk"}]
+
+#}
+
+{#% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
-		"colours": {
-			"Con":'#0485A8',
-			"Lab":'#DC4343',
-			'LD':'#EAA544',
-			'Green':'#5EBD4C',
-			'Brexit':'#0FA697',
-			'SNP':'#EBDB1C',
-			'UKIP':'#73537A',
-			'PC':'#4FBA7C',
-			'Ind':'#CCA7C6',
-			'DUP':'#BF3759',
-			'UUP':'#3b75a8',
-			'SF':'#2C604D',
-			'SDLP':'#53BC5B',
-			'Alliance':'#EAA544',
-			'Spk':'#909090',
-			'XSpk':'#909090',
-			'Monster':'#cccccc',
-			'WPB':'#1e28d8',
-			'none':'#dfdfdf'
-		},
-		width: 600,
-		hexjson: "hexjson.constituencies",
-		data: "sources.society.general-elections",
-		columns: [{
+		"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.general-elections",
+		"columns": [{
 			name: "filterLabel",
 			template: "{{ n }} ({{ a }})"
 		}],
-		value: "Current",
-		matchKey: "const_id",
-		legend: {
+		"value": "Current",
+		"matchKey": "const_id",
+		"legend": {
 			position: "top right",
-			items: [{
-				colour: "Con",
-				label: "Con"
-			},{
-				colour: "Lab",
-				label: "Lab"
-			},{
-				colour: "LD",
-				label: "LDem"
-			},{
-				colour: "SNP",
-				label: "SNP"
-			},{
-				colour: "PC",
-				label: "PC"
-			},{
-				colour: "Green",
-				label: "Grn"
-			},{
-				colour: "UKIP",
-				label: "UKIP"
-			},{
-				colour: "Ind",
-				label: "Ind"
-			},{
-				colour: "DUP",
-				label: "DUP"
-			},{
-				colour: "UUP",
-				label: "UUP"
-			},{
-				colour: "SF",
-				label: "SF"
-			},{
-				colour: "SDLP",
-				label: "SDLP"
-			},{
-				colour: "Alliance",
-				label: "Alln"
-			},{
-				colour: "WPB",
-				label: "WPB"
-			},{
-				colour: "Spk",
-				label: "Spk"
-			}]
+			items: [{colour: "Con",label: "Con"},{colour: "Lab",label: "Lab"},{colour: "LD",label: "LDem"},{colour: "SNP",label: "SNP"},{colour: "PC",label: "PC"},{colour: "Green",label: "Grn"},{colour: "UKIP",label: "UKIP"},{colour: "Ind",label: "Ind"},{colour: "DUP",label: "DUP"},{colour: "UUP",label: "UUP"},{colour: "SF",label: "SF"},{colour: "SDLP",label: "SDLP"},{colour: "Alliance",label: "Alln"},{colour: "WPB",label: "WPB"},{colour: "Spk",label: "Spk"}]
 		},
-		tools: {
+		"tools": {
 			filter: {
 				label: "filterLabel"
 			},
@@ -100,12 +216,8 @@ description: |
 				position: "top"
 			}
 		},
-		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
-		attribution: 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
+		"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 	},
 	"download": {"text": "General Election results by constituency", "type": "CSV"}
-} %}{% endcomp %}
-
-<h2>Notes</h2>
-<p>For the "Current" position on the slider, we have applied <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a> up to 22nd February 2024.</p>
-
+} %}{% endcomp %#}

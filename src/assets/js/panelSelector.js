@@ -19,7 +19,7 @@ OI.ready(function(){
 		panelSelector { margin-bottom: 1em; }
 		panelSelector [role="tablist"] {
 			display: grid;
-			grid-template-columns: repeat(clamp(1, var(--tab-count, 4), 4), 1fr);
+			grid-template-columns: repeat(clamp(1, var(--tab-count, 4), 10), 1fr);
 			grid-gap: 4px;
 			margin: 0;
 			list-style: none;
@@ -93,31 +93,36 @@ OI.ready(function(){
 			
 		}else{
 
-			this.setTab = function(tab){
+			this.setTab = function(tab,updateHistory){
+				var mtab;
 				for(t = 0; t < tabs.length; t++){
-					if(tab==tabs[t]){
+					if(tab==tabs[t] || tab==tabs[t].getAttribute('href')) mtab = tabs[t];
+				}
+				if(mtab){
 
-						// Remove all current selected tabs
-						list.querySelectorAll('[aria-selected="true"]').forEach((t) => t.setAttribute("aria-selected", false));
+					// Remove all current selected tabs
+					list.querySelectorAll('[aria-selected="true"]').forEach((t) => t.setAttribute("aria-selected", false));
 
-						// Set this tab as selected
-						tab.setAttribute("aria-selected", true);
+					// Set this tab as selected
+					mtab.setAttribute("aria-selected", true);
 
-						// Hide all tab panels
-						panels.forEach((p) => p.setAttribute("hidden", true));
+					// Hide all tab panels
+					panels.forEach((p) => p.setAttribute("hidden", true));
 
-						// Show the selected panel
-						el.querySelector(`#${tab.getAttribute("aria-controls")}`).removeAttribute("hidden");
+					// Show the selected panel
+					el.querySelector(`#${mtab.getAttribute("aria-controls")}`).removeAttribute("hidden");
+
+					if(updateHistory){
+						history.pushState({ tab: mtab.getAttribute('href') }, "title 1", mtab.getAttribute('href'));
 					}
 				}
-						
 			};
 
 			tabs = el.querySelectorAll('[role="tab"]');
 
 			// Add a click event handler to each tab
 			tabs.forEach((tab) => {
-				tab.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); _obj.setTab(e.target) });
+				tab.addEventListener("click", function(e){ e.preventDefault(); e.stopPropagation(); _obj.setTab(e.target,true) });
 			});
 
 			// Enable arrow navigation between tabs in the tab list
@@ -141,13 +146,25 @@ OI.ready(function(){
 
 					tabs[tabFocus].setAttribute("tabindex", 0);
 					tabs[tabFocus].focus();
-					this.setTab(tabs[tabFocus]);
+					this.setTab(tabs[tabFocus],true);
 				}
 			});
-			this.setTab(tabs[0]);
+			this.setTab(tabs[0],false);
 		}
 
 		return this;
 	}
-	for(p = 0; p < panelSelectors.length; p++) new panelSelector(panelSelectors[p]);
+	var ps = new Array(panelSelectors.length)
+	for(p = 0; p < panelSelectors.length; p++) ps[p] = new panelSelector(panelSelectors[p]);
+
+	function triggerTab(tab){
+		for(var p = 0; p < ps.length; p++){
+			ps[p].setTab(tab,false);
+		}
+	}
+
+	if(location.hash) triggerTab(location.hash);
+	window.addEventListener("popstate", (event) => {
+		if(location.hash) triggerTab(location.hash);
+	});
 });
