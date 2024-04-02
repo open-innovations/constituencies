@@ -5,8 +5,8 @@ stages:
     deps:
     - path: pipelines/economy/economy.py
       hash: md5
-      md5: d5b6527bf7e849c69dd6f88bf8ff2363
-      size: 2448
+      md5: d941878440b87600348dc8900c540b72
+      size: 2495
     - path: pipelines/util.py
       hash: md5
       md5: 26230f637818c0c982b393dc9b152ced
@@ -19,6 +19,10 @@ stages:
       hash: md5
       md5: c60c7e52b3394e05a5207a955e180b9d
       size: 9175510
+    - path: raw-data/median-wages.csv
+      hash: md5
+      md5: 45326e7ae00e381e5a3fe6122b20a379
+      size: 218806
     - path: raw-data/unemployment.xlsx
       hash: md5
       md5: 3480e7209fd05326147ed339e9265664
@@ -26,26 +30,31 @@ stages:
     outs:
     - path: src/_data/sources/economy/covid_grants_arg.csv
       hash: md5
-      md5: 07caefeedba81e23b9b66a8dd3250aa9
-      size: 31156
+      md5: 0d5a1efc0b567b444b9faca73c54741d
+      size: 30622
       isexec: true
     - path: src/_data/sources/economy/covid_grants_ohlg.csv
       hash: md5
-      md5: f4ec45e70c8dbe7a8879ca79b001a2c0
-      size: 29320
+      md5: 57f9fe58ebdd4bac887872625b6b4f82
+      size: 28786
       isexec: true
     - path: src/_data/sources/economy/house_price_wage_ratio.csv
       hash: md5
-      md5: 77b980ebd73cb3413d369a72370db383
-      size: 158460
+      md5: b1e187158dc5272e2789cf34a9df7c6b
+      size: 157809
       isexec: true
     - path: src/_data/sources/economy/house_prices.csv
       hash: md5
-      md5: a1c2a9757b65b5cc8fc78b9fcd509326
-      size: 462978
+      md5: 9f02f9dd949519d78bdad07370520d5f
+      size: 462327
       isexec: true
     - path: src/_data/sources/economy/unemployment_rate.csv
       hash: md5
-      md5: bd2a40ac249ea43811aa3369f6769f06
-      size: 213616
+      md5: e6249d773eebb0ce2f8655272b626b5a
+      size: 87945
+      isexec: true
+    - path: src/_data/sources/economy/wages.csv
+      hash: md5
+      md5: f88d129af071c399a97ffbf07ec4dc73
+      size: 77084
       isexec: true

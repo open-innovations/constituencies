@@ -21,7 +21,7 @@ title: Welcome
 
 <h2>Recently updated visualisations...</h2>
 <ul class="grid-list">
-{% for page in search.pages("theme_page theme!=undefined !draft updated!=undefined", "order updated=desc", 6) %}
+{% for page in search.pages("theme_page theme!=undefined !draft updated!=undefined", "order updated=desc", 9) %}
 	<li><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}">
 	{{ data.themes[page.theme].icon | safe }}
 	<h3>{{ page.title }}</h3>
