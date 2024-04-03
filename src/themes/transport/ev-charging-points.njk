@@ -5,14 +5,13 @@ created: 2023-08-31T16:40
 updated: 2023-08-31T16:40
 description: |
   Electric vehicle charging points by constituency (UK).
+keywords: [EV,home,workplace,public,National Chargepoint Registry,sockets,charging,emissions,OZEV]
 ---
 
 <p>This page aims to present data on electric vehicle (EV) charging for <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> (ONS/ZapMap and <a href="#ncr">National Chargepoint Registry</a>), and <a href="#combined">combined</a> charging sockets/devices/connections.</p>
 
 <h2>Combined charging availability{% comp 'anchor', { 'ref': 'combined'} %}{% endcomp %}</h2>
-<p>
-    To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
-</p>
+<p>To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
 
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,

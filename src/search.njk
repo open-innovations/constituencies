@@ -1,0 +1,107 @@
+---
+title: Search
+---
+
+
+{% set data = search.data("themes/") %}
+
+<div id="filter" style="display:none">
+	<label for="filter-input"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></label>
+	<input type="text" placeholder="Search for a hex cartogram" id="filter-input" />
+</div>
+<noscript><p>Here is a list of hex cartograms you can view...</p></noscript>
+
+<ul id="pages">
+  {% for page in search.pages("theme_page theme!=undefined !draft created!=undefined", "order created=desc") %}
+  <li data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}"><div class="page-title">{{ data.themes[page.theme].icon | safe }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
+  {% endfor %}
+</ul>
+
+<script>
+function ListItem(li){
+	this.el = li;
+	this.dom = true;
+	this.title = (li.querySelector('.page-title') ? li.querySelector('.page-title').innerHTML : "");
+	this.link = li.querySelector('a').getAttribute('href');
+	this.description = (li.querySelector('.description') ? li.querySelector('.description').innerHTML : "");
+	this.keywords = li.getAttribute('data-keywords')||"";
+	this.theme = li.getAttribute('data-theme')||"";
+	if(li.querySelector('.keywords')) li.querySelector('.keywords').style.display = "none";
+	this.show = function(el){
+		el.appendChild(this.el);
+		this.dom = true;
+	}
+	this.hide = function(){
+		if(this.dom) this.el.remove()
+		this.dom = false;
+	}
+	this.rank = function(val){
+		var words = val.split(/ /);
+		var r = 0,v,re,rw,ok = true;
+		for(var i = 0; i < words.length; i++){
+			v = words[i];
+			rw = 0;
+			re = new RegExp("(\W|^)"+v, "i");
+			if(this.title.toLowerCase().indexOf(v) == 0) rw += 3;			// Title starts with search
+			if(this.title.toLowerCase().indexOf(v) > 0) rw += 1;			// Title contains search
+			if(this.description.toLowerCase().match(re)) rw += 1.5;			// Description contains value at start of a word
+			if(this.description.toLowerCase().indexOf(v) >= 0) rw += 0.5;	// Description contains search
+			if(this.keywords.toLowerCase().indexOf(v) >= 0) rw += 2;		// Keywords contains search
+			if(this.theme.toLowerCase().indexOf(v) >= 0) rw += 2;			// Theme contains search
+			if(rw == 0) ok = false;
+			r += rw;
+		}
+		return (ok ? r : 0);
+	}
+	return this;
+}
+// Make the filter box
+function FilterList(el,ul){
+
+	var filter,label,li,list,i,a,val;
+
+	el.style.display = "";
+
+	filter = el.querySelector('input[type=text]');
+
+	// Get the list items
+	li = ul.querySelectorAll("li");
+	list = new Array(li.length);
+	for(i = 0; i < li.length; i++) list[i] = new ListItem(li[i]);
+
+	var _obj = this;
+	// Listen for keypresses and then update what is visible in the list
+	filter.addEventListener('keyup',function(e){
+		_obj.filter(filter.value.toLowerCase());
+	});
+	
+	this.filter = function(val){
+		var tmp = [],ok,i,title,desc,keyw;
+		
+		if(!val){
+			for(i = 0; i < list.length; i++) list[i].hide();
+		}else{
+			for(i = 0 ; i < list.length; i++) tmp.push({'rank':list[i].rank(val),'li':list[i]});
+			tmp = sortBy(tmp,'rank','title');
+			for(i = 0; i < tmp.length; i++){
+				if(tmp[i].rank > 0) tmp[i].li.show(ul)
+				else tmp[i].li.hide();
+			}
+		}
+	};
+
+	// Set search to the contents of the search box
+	this.filter(filter.value);
+
+	return this;
+}
+
+// Sort the data
+function sortBy(arr,i,j,reverse){
+	return arr.sort(function (a, b) {
+		return (a[i] < b[i] ? 1 : (a[i] > b[i] ? -1 : (j && a[j] < b[j] ? -1 : 1)))*(reverse ? -1 : 1);
+	});
+}
+FilterList(document.getElementById('filter'),document.getElementById('pages'));
+
+</script>
