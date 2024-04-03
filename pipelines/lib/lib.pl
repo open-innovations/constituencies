@@ -1,8 +1,11 @@
 #!/usr/bin/perl
 
+use utf8;
+use warnings;
+use strict;
+
 ################
 # Subroutines
-
 
 my %colours = (
 	'black'=>"\033[0;30m",
@@ -18,21 +21,25 @@ my %colours = (
 
 sub msg {
 	my $str = $_[0];
-	my $dest = $_[1]||STDOUT;
+	my $dest = $_[1]||"STDOUT";
 	foreach my $c (keys(%colours)){ $str =~ s/\< ?$c ?\>/$colours{$c}/g; }
-	print $dest $str;
+	if($dest eq "STDERR"){
+		print STDERR $str;
+	}else{
+		print STDOUT $str;
+	}
 }
 
 sub error {
 	my $str = $_[0];
 	$str =~ s/(^[\t\s]*)/$1<red>ERROR:<none> /;
-	msg($str,STDERR);
+	msg($str,"STDERR");
 }
 
 sub warning {
 	my $str = $_[0];
 	$str =~ s/(^[\t\s]*)/$1$colours{'yellow'}WARNING:$colours{'none'} /;
-	print STDERR $str;
+	msg($str,"STDERR");
 }
 
 sub LoadCSV {
@@ -42,7 +49,7 @@ sub LoadCSV {
 
 	my (@lines,$str,@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2,$compact,$sline,$col);
 	$compact = $config->{'compact'};
-	$sline = $config->{'startrow'};
+	$sline = $config->{'startrow'}||0;
 	$col = $config->{'key'};
 
 	msg("Processing CSV from <cyan>$file<none>\n");
@@ -62,6 +69,7 @@ sub LoadCSV {
 	$n = @rows;
 	
 	for($r = $sline; $r < @rows; $r++){
+		$rows[$r] =~ s/[\n\r]//g;
 		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
 
 		if($r < $sline+1){

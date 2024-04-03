@@ -1,6 +1,6 @@
 package OpenInnovations::GeoJSON;
 
-# Version 1.0
+# Version 1.1
 
 use strict;
 use warnings;
@@ -13,6 +13,8 @@ use constant PI => 4 * atan2(1, 1);
 use constant X         => 0;
 use constant Y         => 1;
 use constant TWOPI    => 2*PI;
+use constant EARTHRADIUS => 6378100;
+use constant D2R => PI/360;
 
 sub new {
     my ($class, %args) = @_;
@@ -78,6 +80,113 @@ sub load {
 
 	return $self;
 }
+
+sub getFeaturesByProperty {
+	my $self = shift;
+	my $prop = shift;
+	my $val = shift;
+	
+	my ($f,$total,$n,$ok,@gs,@features,@fs);
+
+	@features = @{$self->{'features'}};
+
+	$total = @features;
+	for($f = 0; $f < $total; $f++){
+		if(exists($features[$f]->{'properties'}{$prop})){
+			if($features[$f]->{'properties'}{$prop} eq $val){
+				push(@fs,$features[$f]);
+			}
+		}
+	}
+	return @fs;
+}
+
+sub closestFeature {
+	my $self = shift;
+	my $lat = shift;
+	my $lon = shift;
+	
+	my ($d,$dmin,$f,$i);
+	
+	$dmin = EARTHRADIUS * PI *2;
+	$i = -1;
+	for($f = 0; $f < @{$self->{'features'}}; $f++){
+		$d = $self->distanceFromFeature($f,$lat,$lon);
+		if($d < $dmin){
+			$dmin = $d;
+			$i = $f;
+		}
+	}
+	return ($i,$dmin);
+}
+
+sub distanceFromFeature {
+	my $self = shift;
+	my $f = shift;
+	my $lat = shift;
+	my $lon = shift;
+	my ($d,$p,@gs,$n,@a,@b,$dmin,@poly,$i,$j,$k,@p1,@p2);
+	my $feature = $self->{'features'}[$f];
+	$dmin = EARTHRADIUS * PI *2;
+	if($feature->{'geometry'}->{'type'} eq "Polygon"){
+		for($i = 0; $i < @{$feature->{'geometry'}->{'coordinates'}}; $i++){
+			@p1 = @{$feature->{'geometry'}->{'coordinates'}[$i][0]};
+			for($j = 0; $j < @{$feature->{'geometry'}->{'coordinates'}[$i]}; $j++){
+				@p2 = @{$feature->{'geometry'}->{'coordinates'}[$i][$j]};
+				$d = distanceToSegment($lat,$lon,@p1,@p2);
+				if($d < $dmin){
+					$dmin = $d;
+				}
+				@p1 = @p2;
+			}
+		}
+	}elsif($feature->{'geometry'}->{'type'} eq "MultiPolygon"){
+		for($i = 0; $i < @{$feature->{'geometry'}->{'coordinates'}}; $i++){
+			for($j = 0; $j < @{$feature->{'geometry'}->{'coordinates'}[$i]}; $j++){
+				@p1 = @{$feature->{'geometry'}->{'coordinates'}[$i][$j][0]};
+				for($k = 1; $k < @{$feature->{'geometry'}->{'coordinates'}[$i][$j]}; $k++){
+					@p2 = @{$feature->{'geometry'}->{'coordinates'}[$i][$j][$k]};
+					$d = distanceToSegment($lat,$lon,@p1,@p2);
+					if($d < $dmin){
+						$dmin = $d;
+					}
+					@p1 = @p2;
+				}
+			}
+		}
+	}
+	return $dmin;
+}
+sub getFeatureAt {
+	my $self = shift;
+	my $lat = shift;
+	my $lon = shift;
+
+	my ($f,$total,$n,$ok,@gs,@features);
+
+	@features = @{$self->{'features'}};
+
+	$total = @features;
+	for($f = 0; $f < $total; $f++){
+		@gs = "";
+		$ok = 0;
+
+		# If we are in the bounding box
+		if($lat >= $features[$f]->{'_bbox'}{'lat'}{'min'} && $lat <= $features[$f]->{'_bbox'}{'lat'}{'max'} && $lon >= $features[$f]->{'_bbox'}{'lon'}{'min'} && $lon <= $features[$f]->{'_bbox'}{'lon'}{'max'}){
+			if($features[$f]->{'geometry'}->{'type'} eq "Polygon"){
+				$ok = withinPolygon($lat,$lon,@{$features[$f]->{'geometry'}->{'coordinates'}});
+			}else{
+				$n = @{$features[$f]->{'geometry'}->{'coordinates'}};
+				$ok = withinMultiPolygon($lat,$lon,@{$features[$f]->{'geometry'}->{'coordinates'}});
+			}
+			if($ok){
+				return $features[$f];
+			}
+		}
+	}
+	return {};
+}
+
 
 sub findPoint {
 	my $self = shift;
@@ -257,5 +366,53 @@ sub PtInPoly{
 
     return !(abs($angle) < PI);
 }
+
+
+# Based on https://github.com/Turfjs/turf/blob/master/packages/turf-point-to-line-distance/index.ts
+# Returns the distance between a point P on a segment AB.
+#
+# * @private
+# * @param {Array<number>} p external point
+# * @param {Array<number>} a first segment point
+# * @param {Array<number>} b second segment point
+# * @param {Object} [options={}] Optional parameters
+# * @returns {number} distance
+sub distanceToSegment {
+	#$d = abs(($b[0]-$a[0])*($a[1]-$lat) - ($a[0]-$lon)*($b[1]-$a[1]))/sqrt(($b[0]-$a[0])**2 + ($b[1]-$a[1])**2);
+	my @vals = @_;
+	my @p = @vals[0,1];
+	my @a = @vals[2,3];
+	my @b = @vals[4,5];
+	my @v = ($b[0] - $a[0], $b[1] - $a[1]);
+	my @w = ($p[0] - $a[0], $p[1] - $a[1]);
+
+	my $c1 = dot(@w,@v);
+	if($c1 <= 0){
+		return greatCircleDistance($p[0], $p[1], $a[0], $a[1], EARTHRADIUS);
+	}
+	my $c2 = dot(@v,@v);
+	if ($c2 <= $c1) {
+		return greatCircleDistance($p[0], $p[1], $b[0], $b[1], EARTHRADIUS);
+	}
+	my $b2 = $c1 / $c2;
+	return greatCircleDistance($p[0], $p[1], $a[0] + $b2 * $v[0], $a[1] + $b2 * $v[1], EARTHRADIUS);
+}
+
+sub greatCircleDistance {
+	my @p = @_;
+	$p[0] *= D2R;
+	$p[1] *= D2R;
+	$p[2] *= D2R;
+	$p[3] *= D2R;
+	return Math::Trig::great_circle_distance(@p);
+}
+
+sub dot(\@\@) {
+	my @uv = @_;
+	my @u = @uv[0,1];
+	my @v = @uv[0,1];
+	return $u[0] * $v[0] + $u[1] * $v[1];
+}
+
 
 1;

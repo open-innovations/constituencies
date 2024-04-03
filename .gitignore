@@ -5,3 +5,7 @@ _site/
 deno.lock
 
 data-raw/
+raw-data/
+
+# Anthing temporary
+*temp/
