@@ -2,17 +2,17 @@
 title: Crime (England, Wales & Northern Ireland)
 theme: society
 created: 2024-04-03T22:30
-updated: 2024-04-03T22:30
+updated: 2024-04-04T17:45
 description: |
     A breakdown of UK Police open data for 2021-2023 for the future parliamentary constituencies.
 keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','violence','sexual','criminal']
 ---
 
-<p>{{ description }}</p>
+<p>{{ description }} There are views for <a href="#all">all crime</a>, <a href="#anti-social-behaviour">anti-social behaviour</a>, <a href="#bicycle-theft">bicycle theft</a>, <a href="#burglary">burglary</a>, <a href="#criminal-damage">criminal damage and arson</a>, <a href="#drugs">drugs</a>, <a href="#weapons">possession of weapons</a>, <a href="#public-order">public order</a>, <a href="#robbery">robbery</a>, <a href="#shoplifting">shoplifting</a>, <a href="#theft-from-the-person">theft from the person</a>, <a href="#vehicle">vehicle crime</a>, <a href="#violence">violence and sexual offences</a>, as well as <a href="#other">other crime</a>.</p>
 
 <section>
 	<h2>All crime{% comp 'anchor', { 'ref': 'all'} %}{% endcomp %}</h2>
-	<p>This cartogram shows the sum of all crimes including: anti-social behaviour, bicycle theft, burglary, criminal damage and arson, drugs, possession of weapons, public order, robbery, shoplifting, theft from the person, vehicle crime, violence and sexual offences, as well as other crime/theft. See <a href="#notes">notes</a>.</p>
+	<p>This cartogram shows the sum of all crimes. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 
 	{% comp 'wrapper', {
 		"component": comp.oi.map.hex_cartogram,
@@ -35,14 +35,17 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
 			"max": 50000,
 			"legend": {
 				"position": "top right",
 				"items": [{
+					"value": 50001,
+					"label": ">50,000"
+				},{
 					"value": 50000,
-					"label": "50,000+"
+					"label": "50,000"
 				},{
 					"value": 40000,
 					"label": "40,000"
@@ -77,7 +80,6 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 	} %}{% endcomp %}
 </section>
 
-{#
 <section>
 	<h2>Anti-social behaviour{% comp 'anchor', { 'ref': 'anti-social-behaviour'} %}{% endcomp %}</h2>
 	<p>This cartogram shows anti-social behaviour crime. See <a href="#notes">notes</a>.</p>
@@ -103,26 +105,26 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 12000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 12001,
+					"label": ">12,000"
 				},{
-					"value": 8000,
-					"label": "8,000"
+					"value": 12000,
+					"label": "12,000"
+				},{
+					"value": 9000,
+					"label": "9,000"
 				},{
 					"value": 6000,
 					"label": "6,000"
 				},{
-					"value": 4000,
-					"label": "4,000"
-				},{
-					"value": 2000,
-					"label": "2,000"
+					"value": 3000,
+					"label": "3,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -170,26 +172,23 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 1500,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 1501,
+					"label": ">1500"
 				},{
-					"value": 8000,
-					"label": "8,000"
+					"value": 1500,
+					"label": "1500"
 				},{
-					"value": 6000,
-					"label": "6,000"
+					"value": 1000,
+					"label": "1,000"
 				},{
-					"value": 4000,
-					"label": "4,000"
-				},{
-					"value": 2000,
-					"label": "2,000"
+					"value": 500,
+					"label": "500"
 				},{
 					"value": 0,
 					"label": "0"
@@ -227,36 +226,39 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 				"template": "{{ n }} ({{ a }})"
 			},{
 				"name": "2021",
-				"template": "{{ Burglary theft→2021 }}"
+				"template": "{{ Burglary→2021 }}"
 			},{
 				"name": "2022",
-				"template": "{{ Burglary theft→2022 }}"
+				"template": "{{ Burglary→2022 }}"
 			},{
 				"name": "2023",
-				"template": "{{ Burglary theft→2023 }}"
+				"template": "{{ Burglary→2023 }}"
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 2500,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 2501,
+					"label": ">2,500"
 				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
-				},{
-					"value": 4000,
-					"label": "4,000"
+					"value": 2500,
+					"label": "2,500"
 				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1500,
+					"label": "1,500"
+				},{
+					"value": 1000,
+					"label": "1,000"
+				},{
+					"value": 500,
+					"label": "500"
 				},{
 					"value": 0,
 					"label": "0"
@@ -294,36 +296,33 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 				"template": "{{ n }} ({{ a }})"
 			},{
 				"name": "2021",
-				"template": "{{ Criminal damage and arson theft→2021 }}"
+				"template": "{{ Criminal damage and arson→2021 }}"
 			},{
 				"name": "2022",
-				"template": "{{ Criminal damage and arson theft→2022 }}"
+				"template": "{{ Criminal damage and arson→2022 }}"
 			},{
 				"name": "2023",
-				"template": "{{ Criminal damage and arson theft→2023 }}"
+				"template": "{{ Criminal damage and arson→2023 }}"
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 3000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 3001,
+					"label": ">3,000"
 				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
-				},{
-					"value": 4000,
-					"label": "4,000"
+					"value": 3000,
+					"label": "3,000"
 				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1000,
+					"label": "1,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -345,7 +344,6 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 		"download": {"text": "Crime data by constituency", "type": "CSV"}
 	} %}{% endcomp %}
 </section>
-
 
 <section>
 	<h2>Drugs{% comp 'anchor', { 'ref': 'drugs'} %}{% endcomp %}</h2>
@@ -372,26 +370,26 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 4000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
-				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
+					"value": 4001,
+					"label": ">4,000"
 				},{
 					"value": 4000,
 					"label": "4,000"
 				},{
+					"value": 3000,
+					"label": "3,000"
+				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1000,
+					"label": "1,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -439,26 +437,29 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 1000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 1001,
+					"label": ">1,000"
 				},{
-					"value": 8000,
-					"label": "8,000"
+					"value": 1000,
+					"label": "1,000"
 				},{
-					"value": 6000,
-					"label": "6,000"
+					"value": 800,
+					"label": "800"
 				},{
-					"value": 4000,
-					"label": "4,000"
+					"value": 600,
+					"label": "600"
 				},{
-					"value": 2000,
-					"label": "2,000"
+					"value": 400,
+					"label": "400"
+				},{
+					"value": 200,
+					"label": "200"
 				},{
 					"value": 0,
 					"label": "0"
@@ -506,26 +507,29 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 5000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 5001,
+					"label": ">5,000"
 				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
+					"value": 5000,
+					"label": "5,000"
 				},{
 					"value": 4000,
 					"label": "4,000"
 				},{
+					"value": 3000,
+					"label": "3,000"
+				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1000,
+					"label": "1,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -550,7 +554,7 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 
 <section>
 	<h2>Robbery{% comp 'anchor', { 'ref': 'robbery'} %}{% endcomp %}</h2>
-	<p>This cartogram shows robbery. See <a href="#notes">notes</a>.</p>
+	<p>This cartogram shows robbery. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 
 	{% comp 'wrapper', {
 		"component": comp.oi.map.hex_cartogram,
@@ -573,26 +577,26 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 2000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
-				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
-				},{
-					"value": 4000,
-					"label": "4,000"
+					"value": 2001,
+					"label": ">2,000"
 				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1500,
+					"label": "1,500"
+				},{
+					"value": 1000,
+					"label": "1,000"
+				},{
+					"value": 500,
+					"label": "500"
 				},{
 					"value": 0,
 					"label": "0"
@@ -640,17 +644,14 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 6000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
-				},{
-					"value": 8000,
-					"label": "8,000"
+					"value": 6001,
+					"label": ">6,000"
 				},{
 					"value": 6000,
 					"label": "6,000"
@@ -684,7 +685,7 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 
 <section>
 	<h2>Theft from the person{% comp 'anchor', { 'ref': 'theft-from-the-person'} %}{% endcomp %}</h2>
-	<p>This cartogram shows theft from the person. See <a href="#notes">notes</a>.</p>
+	<p>This cartogram shows theft from the person. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 
 	{% comp 'wrapper', {
 		"component": comp.oi.map.hex_cartogram,
@@ -707,17 +708,14 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 6000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
-				},{
-					"value": 8000,
-					"label": "8,000"
+					"value": 6001,
+					"label": ">6,000"
 				},{
 					"value": 6000,
 					"label": "6,000"
@@ -774,26 +772,26 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 4000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
-				},{
-					"value": 8000,
-					"label": "8,000"
-				},{
-					"value": 6000,
-					"label": "6,000"
+					"value": 4001,
+					"label": ">4,000"
 				},{
 					"value": 4000,
 					"label": "4,000"
 				},{
+					"value": 3000,
+					"label": "3,000"
+				},{
 					"value": 2000,
 					"label": "2,000"
+				},{
+					"value": 1000,
+					"label": "1,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -841,26 +839,26 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 			}],
 			"value": "2021",
 			"matchKey": "PCON25CD",
-			"scale": "#dddddd 0%, #1b4080 100%",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 			"min": 0,
-			"max": 10000,
+			"max": 16000,
 			"legend": {
 				"position": "top right",
 				"items": [{
-					"value": 10000,
-					"label": "10,000+"
+					"value": 16001,
+					"label": ">16,000"
+				},{
+					"value": 16000,
+					"label": "16,000"
+				},{
+					"value": 12000,
+					"label": "12,000"
 				},{
 					"value": 8000,
 					"label": "8,000"
 				},{
-					"value": 6000,
-					"label": "6,000"
-				},{
 					"value": 4000,
 					"label": "4,000"
-				},{
-					"value": 2000,
-					"label": "2,000"
 				},{
 					"value": 0,
 					"label": "0"
@@ -882,7 +880,77 @@ keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','vi
 		"download": {"text": "Crime data by constituency", "type": "CSV"}
 	} %}{% endcomp %}
 </section>
-#}
-<h2>Notes</h2>
+
+<section>
+	<h2>Other crime{% comp 'anchor', { 'ref': 'other'} %}{% endcomp %}</h2>
+	<p>This cartogram shows other crime that isn't in one of the categories above. See <a href="#notes">notes</a>.</p>
+
+	{% comp 'wrapper', {
+		"component": comp.oi.map.hex_cartogram,
+		"config": {
+			"width": 600,
+			"hexjson": "hexjson.uk-constituencies-2023",
+			"data": "sources.society.crime-data",
+			"columns": [{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			},{
+				"name": "2021",
+				"template": "{{ Other crime→2021 }}"
+			},{
+				"name": "2022",
+				"template": "{{ Other crime→2022 }}"
+			},{
+				"name": "2023",
+				"template": "{{ Other crime→2023 }}"
+			}],
+			"value": "2021",
+			"matchKey": "PCON25CD",
+			"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
+			"min": 0,
+			"max": 800,
+			"legend": {
+				"position": "top right",
+				"items": [{
+					"value": 801,
+					"label": ">800"
+				},{
+					"value": 800,
+					"label": "800"
+				},{
+					"value": 600,
+					"label": "600"
+				},{
+					"value": 400,
+					"label": "400"
+				},{
+					"value": 200,
+					"label": "200"
+				},{
+					"value": 0,
+					"label": "0"
+				}]
+			},
+			"tools": {
+				"filter": {
+					"label": "filterLabel"
+				},
+				"slider": {
+					"columns": ["2021","2022","2023"],
+					"width": "500px",
+					"position": "bottom"
+				}
+			},
+			"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+			"attribution": 'Data: <a href="https://data.police.uk/data/archive/">crime data</a> (data.police.uk).'
+		},
+		"download": {"text": "Crime data by constituency", "type": "CSV"}
+	} %}{% endcomp %}
+</section>
+
+
+<h2 id="notes">Notes</h2>
 <p>The data are published by the Single Online Home National Digital Team, and are provided by the 43 geographic police forces in England and Wales, the British Transport Police, the Police Service of Northern Ireland and the Ministry of Justice.</p>
+<p>The values above are for reports of crimes. They include cases where no suspect was identified or no further action was taken.</p>
+<p>Crimes that have no location recorded are not included here. Crimes whose location took place in rivers, estuaries, or at sea are first checked to see if they are within 200 metres of a constituency boundary. If they are they will be attached to that constituency. Otherwise they are not included with any constituency.</p>
 <p>Some police forces may not have submitted data in certain years. For example, Greater Manchester Police are missing for 2021/2022/2023 and Devon & Cornwall Police are missing in 2023. Crimes may have been recorded as happening within these police force areas by other police forces.</p>
