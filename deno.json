@@ -1,7 +1,7 @@
 {
   "importMap": "./import_map.json",
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --v8-flags=--max-old-space-size=2048 --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --v8-flags=--max-old-space-size=2048 -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "refresh-cache": "deno cache --lock-write _config.ts"
