@@ -9,3 +9,7 @@ raw-data/
 
 # Anthing temporary
 *temp/
+
+# Ignore profiles
+*.heapprofile
+*.cpuprofile
