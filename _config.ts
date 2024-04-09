@@ -94,8 +94,6 @@ site.use(oiCharts({
 site.filter('match', (value, regex) => { const re = new RegExp(regex); return value.match(re); });
 site.filter('keys', o => Object.keys(o) );
 
-
-site.use(base_path());
 site.use(metas({
   defaultPageData: {
     title: 'title', // Use the `date` value as fallback.
@@ -104,7 +102,9 @@ site.use(metas({
 site.use(date());
 site.use(postcss({}));
 
-
+// This should normally run late on, as it registers a processor which re-writes URLs.
+// These could be updated by prior processors.
+site.use(base_path());
 
 site.copy('CNAME');
 site.copy('.nojekyll');
