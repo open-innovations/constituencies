@@ -40,6 +40,7 @@ OI.ready(function(){
 			color: inherit;
 			border: 1px solid #dfdfdf;
 			background: #dfdfdf;
+			font-family: Poppins;
 		}
 		panelSelector [role="tab"][aria-selected="true"] {
 			background: white;
