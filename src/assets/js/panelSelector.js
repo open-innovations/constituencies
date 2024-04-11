@@ -22,6 +22,7 @@ OI.ready(function(){
 			grid-template-columns: repeat(clamp(1, var(--tab-count, 4), 10), 1fr);
 			grid-gap: 4px;
 			margin: 0;
+			margin-top: 1em;
 			list-style: none;
 		}
 		panelSelector [role="tablist"] > * {
