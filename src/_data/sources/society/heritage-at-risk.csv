@@ -1,536 +1,536 @@
-PCON10CD,Name,MP,Party,Type,Type,Type,Type,Type,Type,Type
-,,,,All,Archaeology,Battlefield,Building or structure,Conservation area,Park and garden,Place of worship
----,---,---,---,---,---,---,---,---,---,---
-E14000530,Aldershot,Leo Docherty,Con,3,0,0,2,0,0,1
-E14000531,Aldridge-Brownhills,Wendy Morton,Con,0,0,0,0,0,0,0
-E14000532,Altrincham and Sale West,Graham Brady,Con,0,0,0,0,0,0,0
-E14000533,Amber Valley,Nigel Mills,Con,6,1,0,5,0,0,0
-E14000534,Arundel and South Downs,Andrew Griffith,Con,11,4,0,1,1,1,4
-E14000535,Ashfield,Lee Anderson,Con,3,1,0,0,1,1,0
-E14000536,Ashford,Damian Green,Con,5,1,0,4,0,0,0
-E14000537,Ashton-under-Lyne,Angela Rayner,Lab,4,0,0,0,0,0,4
-E14000538,Aylesbury,Rob Butler,Con,5,4,0,0,0,1,0
-E14000539,Banbury,Victoria Prentis,Con,6,1,0,1,2,0,2
-E14000540,Barking,Margaret Hodge,Lab,1,1,0,0,0,0,0
-E14000541,Barnsley Central,Dan Jarvis,Lab,2,1,0,0,0,0,1
-E14000542,Barnsley East,Stephanie Peacock,Lab,3,1,0,1,1,0,0
-E14000543,Barrow and Furness,Simon Fell,Con,9,3,0,3,2,0,1
-E14000544,Basildon and Billericay,John Baron,Con,0,0,0,0,0,0,0
-E14000545,Basingstoke,Maria Miller,Con,0,0,0,0,0,0,0
-E14000546,Bassetlaw,Brendan Clarke-Smith,Con,16,1,0,6,1,1,7
-E14000547,Bath,Wera Hobhouse,LD,5,1,0,3,0,1,0
-E14000548,Batley and Spen,Kim Leadbeater,Lab,1,0,0,0,0,0,1
-E14000549,Battersea,Marsha de Cordova,Lab,3,0,0,3,0,0,0
-E14000550,Beaconsfield,Joy Morrissey,Con,0,0,0,0,0,0,0
-E14000551,Beckenham,Bob Stewart,Con,2,1,0,1,0,0,0
-E14000552,Bedford,Mohammad Yasin,Lab,2,0,0,0,1,0,1
-E14000553,Bermondsey and Old Southwark,Neil Coyle,Lab,13,2,0,9,0,0,2
-E14000554,Berwick-upon-Tweed,Anne-Marie Trevelyan,Con,90,74,0,12,3,1,0
-E14000555,Bethnal Green and Bow,Rushanara Ali,Lab,17,1,0,9,3,0,4
-E14000556,Beverley and Holderness,Graham Stuart,Con,23,20,0,2,0,0,1
-E14000557,Bexhill and Battle,Huw Merriman,Con,5,1,0,3,0,0,1
-E14000558,Bexleyheath and Crayford,David Evennett,Con,1,0,0,1,0,0,0
-E14000559,Birkenhead,Mick Whitley,Lab,4,0,0,0,3,1,0
-E14000560,"Birmingham, Edgbaston",Preet Kaur Gill,Lab,2,0,0,1,1,0,0
-E14000561,"Birmingham, Erdington",Paulette Hamilton,Lab,0,0,0,0,0,0,0
-E14000562,"Birmingham, Hall Green",Tahir Ali,Lab,7,0,0,3,1,1,2
-E14000563,"Birmingham, Hodge Hill",Liam Byrne,Lab,1,0,0,0,0,0,1
-E14000564,"Birmingham, Ladywood",Shabana Mahmood,Lab,13,0,0,4,4,0,5
-E14000565,"Birmingham, Northfield",Gary Sambrook,Con,2,0,0,0,1,0,1
-E14000566,"Birmingham, Perry Barr",Khalid Mahmood,Lab,3,0,0,1,1,0,1
-E14000567,"Birmingham, Selly Oak",Steve McCabe,Lab,0,0,0,0,0,0,0
-E14000568,"Birmingham, Yardley",Jess Phillips,Lab,2,1,0,0,1,0,0
-E14000569,Bishop Auckland,Dehenna Davison,Con,21,15,0,3,1,0,2
-E14000570,Blackburn,Kate Hollern,Lab,3,0,0,0,2,1,0
-E14000571,Blackley and Broughton,Graham Stringer,Lab,7,0,0,2,1,0,4
-E14000572,Blackpool North and Cleveleys,Paul Maynard,Con,2,0,0,1,0,0,1
-E14000573,Blackpool South,Scott Lloyd Benton,Con,2,0,0,1,0,0,1
-E14000574,Blaydon,Liz Twist,Lab,9,3,1,4,1,0,0
-E14000575,Blyth Valley,Ian Levy,Con,6,0,0,3,1,1,1
-E14000576,Bognor Regis and Littlehampton,Nick Gibb,Con,3,0,0,2,0,0,1
-E14000577,Bolsover,Mark Fletcher,Con,7,2,0,2,3,0,0
-E14000578,Bolton North East,Mark Logan,Con,4,0,0,0,0,0,4
-E14000579,Bolton South East,Yasmin Qureshi,Lab,3,0,0,1,0,0,2
-E14000580,Bolton West,Chris Green,Con,1,0,0,0,0,0,1
-E14000581,Bootle,Peter Dowd,Lab,2,0,0,0,2,0,0
-E14000582,Boston and Skegness,Matt Warman,Con,15,1,0,4,5,0,5
-E14000583,Bosworth,Luke Evans,Con,4,0,0,0,3,0,1
-E14000584,Bournemouth East,Tobias Ellwood,Con,4,1,0,0,1,0,2
-E14000585,Bournemouth West,Conor Burns,Con,3,1,0,0,0,0,2
-E14000586,Bracknell,James Sunderland,Con,1,0,0,0,0,1,0
-E14000587,Bradford East,Imran Hussain,Lab,5,0,0,1,2,0,2
-E14000588,Bradford South,Judith Cummins,Lab,1,0,0,0,1,0,0
-E14000589,Bradford West,Naz Shah,Lab,14,0,0,2,9,0,3
-E14000590,Braintree,James Cleverly,Con,4,1,0,1,1,0,1
-E14000591,Brent Central,Dawn Butler,Lab,5,0,0,1,0,1,3
-E14000592,Brent North,Barry Gardiner,Lab,3,0,0,3,0,0,0
-E14000593,Brentford and Isleworth,Ruth Cadbury,Lab,17,0,0,14,2,1,0
-E14000594,Brentwood and Ongar,Alex Burghart,Con,9,1,0,4,0,1,3
-E14000595,Bridgwater and West Somerset,Ian Liddell-Grainger,Con,41,24,0,4,0,2,11
-E14000596,Brigg and Goole,Andrew Percy,Con,12,4,0,1,2,0,5
-E14000597,"Brighton, Kemptown",Lloyd Russell-Moyle,Lab,5,0,0,2,2,0,1
-E14000598,"Brighton, Pavilion",Caroline Lucas,Green,10,0,0,3,3,2,2
-E14000599,Bristol East,Kerry McCarthy,Lab,2,0,0,0,0,2,0
-E14000600,Bristol North West,Darren Jones,Lab,5,1,0,1,0,1,2
-E14000601,Bristol South,Karin Smyth,Lab,1,0,0,1,0,0,0
-E14000602,Bristol West,Thangam Debbonaire,Lab,7,2,0,3,1,0,1
-E14000603,Broadland,Jerome Mayhew,Con,13,1,0,5,2,0,5
-E14000604,Bromley and Chislehurst,Bob Neill,Con,7,1,0,6,0,0,0
-E14000605,Bromsgrove,Sajid Javid,Con,8,1,0,2,1,1,3
-E14000606,Broxbourne,Charles Walker,Con,4,2,0,0,2,0,0
-E14000607,Broxtowe,Darren George Henry,Con,6,1,0,3,2,0,0
-E14000608,Buckingham,Greg Smith,Con,15,2,0,6,0,1,6
-E14000609,Burnley,Antony Higginbotham,Con,4,0,0,4,0,0,0
-E14000610,Burton,Kate Griffiths,Con,1,0,0,1,0,0,0
-E14000611,Bury North,James Daly,Con,5,0,0,1,2,0,2
-E14000612,Bury South,Christian Wakeford,Con,1,0,0,0,0,0,1
-E14000613,Bury St. Edmunds,Jo Churchill,Con,8,2,0,5,0,0,1
-E14000614,Calder Valley,Craig Whittaker,Con,14,3,0,7,1,0,3
-E14000615,Camberwell and Peckham,Harriet Harman,Lab,17,0,0,14,1,1,1
-E14000616,Camborne and Redruth,George Eustice,Con,19,10,0,7,0,0,2
-E14000617,Cambridge,Daniel Zeichner,Lab,2,0,0,1,0,0,1
-E14000618,Cannock Chase,Amanda Milling,Con,0,0,0,0,0,0,0
-E14000619,Canterbury,Rosie Duffield,Lab,9,4,0,5,0,0,0
-E14000620,Carlisle,John Stevenson,Con,3,1,0,0,2,0,0
-E14000621,Carshalton and Wallington,Elliot Colburn,Con,6,0,0,5,0,0,1
-E14000622,Castle Point,Rebecca Harris,Con,0,0,0,0,0,0,0
-E14000623,Central Devon,Mel Stride,Con,54,44,0,2,2,0,6
-E14000624,Central Suffolk and North Ipswich,Daniel Poulter,Con,18,1,0,10,0,1,6
-E14000625,Charnwood,Edward Argar,Con,5,1,0,2,0,0,2
-E14000626,Chatham and Aylesford,Tracey Crouch,Con,2,1,0,0,0,0,1
-E14000627,Cheadle,Mary Robinson,Con,1,0,0,1,0,0,0
-E14000628,Chelmsford,Vicky Ford,Con,1,0,0,0,1,0,0
-E14000629,Chelsea and Fulham,Greg Hands,Con,4,0,0,3,0,0,1
-E14000630,Cheltenham,Alex Chalk,Con,3,0,0,0,0,0,3
-E14000631,Chesham and Amersham,Sarah Green,LD,2,0,0,2,0,0,0
-E14000632,Chesterfield,Toby Perkins,Lab,4,0,0,3,0,0,1
-E14000633,Chichester,Gillian Keegan,Con,14,10,0,3,1,0,0
-E14000634,Chingford and Woodford Green,Iain Duncan Smith,Con,4,0,0,3,0,0,1
-E14000635,Chippenham,Michelle Donelan,Con,3,1,0,0,0,0,2
-E14000636,Chipping Barnet,Theresa Villiers,Con,1,0,0,0,0,0,1
-E14000637,Chorley,Lindsay Hoyle,Spk,3,1,0,1,0,0,1
-E14000638,Christchurch,Christopher Chope,Con,8,8,0,0,0,0,0
-E14000639,Cities of London and Westminster,Nickie Aiken,Con,16,0,0,8,0,0,8
-E14000640,City of Chester,Samantha Dixon,Lab,4,2,0,1,0,0,1
-E14000641,City of Durham,Mary Foy,Lab,10,1,0,8,0,1,0
-E14000642,Clacton,Giles Watling,Con,9,0,0,4,4,0,1
-E14000643,Cleethorpes,Martin Vickers,Con,12,7,0,3,1,0,1
-E14000644,Colchester,Will Quince,Con,3,1,0,2,0,0,0
-E14000645,Colne Valley,Jason McCartney,Con,8,1,0,5,0,0,2
-E14000646,Congleton,Fiona Bruce,Con,7,1,0,2,2,0,2
-E14000647,Copeland,Trudy Harrison,Con,21,12,0,4,1,0,4
-E14000648,Corby,Tom Pursglove,Con,12,1,0,5,0,0,6
-E14000649,Coventry North East,Colleen Fletcher,Lab,0,0,0,0,0,0,0
-E14000650,Coventry North West,Taiwo Owatemi,Lab,2,1,0,0,1,0,0
-E14000651,Coventry South,Zarah Sultana,Lab,8,0,0,3,2,1,2
-E14000652,Crawley,Henry Smith,Con,0,0,0,0,0,0,0
-E14000653,Crewe and Nantwich,Kieran John Mullan,Con,6,1,0,4,0,1,0
-E14000654,Croydon Central,Sarah Jones,Lab,6,0,0,4,1,0,1
-E14000655,Croydon North,Steve Reed,Lab,4,0,0,1,1,0,2
-E14000656,Croydon South,Chris Philp,Con,4,1,0,1,0,0,2
-E14000657,Dagenham and Rainham,Jon Cruddas,Lab,6,0,0,5,1,0,0
-E14000658,Darlington,Peter Gibson,Con,4,0,0,1,2,0,1
-E14000659,Dartford,Gareth Johnson,Con,2,2,0,0,0,0,0
-E14000660,Daventry,Chris Heaton-Harris,Con,16,4,0,8,0,0,4
-E14000661,Denton and Reddish,Andrew Gwynne,Lab,5,0,0,3,0,0,2
-E14000662,Derby North,Amanda Solloway,Con,3,0,0,3,0,0,0
-E14000663,Derby South,Margaret Beckett,Lab,1,0,0,0,0,0,1
-E14000664,Derbyshire Dales,Sarah Elizabeth Dines,Con,10,3,0,2,0,0,5
-E14000665,Devizes,Danny Kruger,Con,63,54,0,6,0,1,2
-E14000666,Dewsbury,Mark Eastwood,Con,5,2,0,1,0,0,2
-E14000667,Don Valley,Nicholas Fletcher,Con,9,5,0,1,2,0,1
-E14000668,Doncaster Central,Rosie Winterton,Lab,4,0,0,0,2,0,2
-E14000669,Doncaster North,Ed Miliband,Lab,12,4,0,1,3,0,4
-E14000670,Dover,Natalie Elphicke,Con,11,1,0,5,3,0,2
-E14000671,Dudley North,Marco Longhi,Con,4,1,0,0,0,0,3
-E14000672,Dudley South,Mike Wood,Con,5,0,0,3,2,0,0
-E14000673,Dulwich and West Norwood,Helen Hayes,Lab,10,0,0,8,1,0,1
-E14000674,Ealing Central and Acton,Rupa Huq,Lab,7,0,0,2,3,1,1
-E14000675,Ealing North,James Murray,Lab,4,1,0,2,1,0,0
-E14000676,"Ealing, Southall",Virendra Sharma,Lab,5,1,0,3,1,0,0
-E14000677,Easington,Grahame Morris,Lab,1,0,0,0,1,0,0
-E14000678,East Devon,Simon Jupp,Con,7,2,0,3,0,1,1
-E14000679,East Ham,Stephen Timms,Lab,8,0,0,8,0,0,0
-E14000680,East Hampshire,Damian Hinds,Con,7,6,0,1,0,0,0
-E14000681,East Surrey,Claire Coutinho,Con,2,0,0,1,0,0,1
-E14000682,East Worthing and Shoreham,Tim Loughton,Con,2,0,0,0,1,0,1
-E14000683,East Yorkshire,Greg Knight,Con,70,65,0,1,1,1,2
-E14000684,Eastbourne,Caroline Ansell,Con,7,1,0,6,0,0,0
-E14000685,Eastleigh,Paul Holmes,Con,1,1,0,0,0,0,0
-E14000686,Eddisbury,Edward Timpson,Con,7,4,0,2,0,0,1
-E14000687,Edmonton,Kate Osamor,Lab,5,0,0,2,2,0,1
-E14000688,Ellesmere Port and Neston,Justin Madders,Lab,4,1,0,2,0,0,1
-E14000689,Elmet and Rothwell,Alec Shelbrooke,Con,7,2,0,3,0,1,1
-E14000690,Eltham,Clive Efford,Lab,4,0,0,3,0,0,1
-E14000691,Enfield North,Feryal Clark,Lab,9,1,0,5,0,2,1
-E14000692,"Enfield, Southgate",Bambos Charalambous,Lab,7,0,0,4,0,3,0
-E14000693,Epping Forest,Eleanor Laing,Con,7,2,0,2,3,0,0
-E14000694,Epsom and Ewell,Chris Grayling,Con,3,0,0,0,2,1,0
-E14000695,Erewash,Maggie Throup,Con,3,0,0,0,2,0,1
-E14000696,Erith and Thamesmead,Abena Oppong-Asare,Lab,1,0,0,1,0,0,0
-E14000697,Esher and Walton,Dominic Raab,Con,2,0,0,2,0,0,0
-E14000698,Exeter,Ben Bradshaw,Lab,3,1,0,0,0,0,2
-E14000699,Fareham,Suella Braverman,Con,2,0,0,2,0,0,0
-E14000700,Faversham and Mid Kent,Helen Whately,Con,9,2,0,4,0,0,3
-E14000701,Feltham and Heston,Seema Malhotra,Lab,9,2,0,5,1,0,1
-E14000702,Filton and Bradley Stoke,Jack Lopresti,Con,2,1,0,0,0,1,0
-E14000703,Finchley and Golders Green,Mike Freer,Con,6,0,0,3,1,0,2
-E14000704,Folkestone and Hythe,Damian Collins,Con,13,4,0,7,0,0,2
-E14000705,Forest of Dean,Mark Harper,Con,16,8,0,4,0,0,4
-E14000706,Fylde,Mark Menzies,Con,0,0,0,0,0,0,0
-E14000707,Gainsborough,Edward Leigh,Con,26,8,0,6,4,0,8
-E14000708,Garston and Halewood,Maria Eagle,Lab,1,0,0,1,0,0,0
-E14000709,Gateshead,Ian Mearns,Lab,4,0,0,2,1,0,1
-E14000710,Gedling,Tom Randall,Con,1,0,0,0,0,0,1
-E14000711,Gillingham and Rainham,Rehman Chishti,Con,5,0,0,2,3,0,0
-E14000712,Gloucester,Richard Graham,Con,14,2,0,10,1,0,1
-E14000713,Gosport,Caroline Dinenage,Con,12,3,0,6,3,0,0
-E14000714,Grantham and Stamford,Gareth Davies,Con,19,6,0,6,1,1,5
-E14000715,Gravesham,Adam Holloway,Con,0,0,0,0,0,0,0
-E14000716,Great Grimsby,Lia Nici,Con,7,0,0,2,4,0,1
-E14000717,Great Yarmouth,Brandon Lewis,Con,17,1,0,5,4,0,7
-E14000718,Greenwich and Woolwich,Matthew Pennycook,Lab,9,0,0,5,2,1,1
-E14000719,Guildford,Angela Joy Richardson,Con,2,0,0,0,0,0,2
-E14000720,Hackney North and Stoke Newington,Diane Abbott,Lab,16,0,0,8,0,1,7
-E14000721,Hackney South and Shoreditch,Meg Hillier,Lab,19,1,0,12,2,0,4
-E14000722,Halesowen and Rowley Regis,James Morris,Con,1,0,0,1,0,0,0
-E14000723,Halifax,Holly Walker-Lynch,Lab,10,2,0,5,1,0,2
-E14000724,Haltemprice and Howden,David Davis,Con,8,5,0,1,0,1,1
-E14000725,Halton,Derek Twigg,Lab,4,1,0,0,0,0,3
-E14000726,Hammersmith,Andy Slaughter,Lab,11,0,0,9,1,1,0
-E14000727,Hampstead and Kilburn,Tulip Siddiq,Lab,9,0,0,8,0,0,1
-E14000728,Harborough,Neil O'Brien,Con,3,0,0,0,0,0,3
-E14000729,Harlow,Robert Halfon,Con,4,1,0,0,2,1,0
-E14000730,Harrogate and Knaresborough,Andrew Jones,Con,2,0,1,1,0,0,0
-E14000731,Harrow East,Bob Blackman,Con,12,3,0,7,0,1,1
-E14000732,Harrow West,Gareth Thomas,Lab,3,1,0,2,0,0,0
-E14000733,Hartlepool,Jill Mortimer,Con,8,2,0,0,4,0,2
-E14000734,Harwich and North Essex,Bernard Jenkin,Con,10,4,0,5,1,0,0
-E14000735,Hastings and Rye,Sally-Ann Hart,Con,16,0,0,9,1,0,6
-E14000736,Havant,Alan Mak,Con,2,0,0,0,1,0,1
-E14000737,Hayes and Harlington,John McDonnell,Lab,24,0,0,17,6,0,1
-E14000738,Hazel Grove,William Wragg,Con,2,0,0,0,0,0,2
-E14000739,Hemel Hempstead,Mike Penning,Con,1,0,0,1,0,0,0
-E14000740,Hemsworth,Jon Trickett,Lab,4,3,0,1,0,0,0
-E14000741,Hendon,Matthew Offord,Con,3,1,0,1,0,0,1
-E14000742,Henley,John Howell,Con,11,7,0,4,0,0,0
-E14000743,Hereford and South Herefordshire,Jesse Norman,Con,23,7,0,6,1,0,9
-E14000744,Hertford and Stortford,Julie Marson,Con,2,0,0,1,0,1,0
-E14000745,Hertsmere,Oliver Dowden,Con,0,0,0,0,0,0,0
-E14000746,Hexham,Guy Opperman,Con,36,24,0,9,1,0,2
-E14000747,Heywood and Middleton,Chris Clarkson,Con,9,0,0,3,2,0,4
-E14000748,High Peak,Robert Largan,Con,7,2,0,3,0,0,2
-E14000749,Hitchin and Harpenden,Bim Afolami,Con,2,0,0,2,0,0,0
-E14000750,Holborn and St. Pancras,Keir Starmer,Lab,24,0,0,11,0,0,13
-E14000751,Hornchurch and Upminster,Julia Lopez,Con,8,2,0,6,0,0,0
-E14000752,Hornsey and Wood Green,Catherine West,Lab,8,0,0,5,1,0,2
-E14000753,Horsham,Jeremy Quin,Con,5,2,0,2,1,0,0
-E14000754,Houghton and Sunderland South,Bridget Phillipson,Lab,1,1,0,0,0,0,0
-E14000755,Hove,Peter Kyle,Lab,5,0,0,1,2,0,2
-E14000756,Huddersfield,Barry Sheerman,Lab,6,0,0,2,0,0,4
-E14000757,Huntingdon,Jonathan Djanogly,Con,3,0,0,1,0,0,2
-E14000758,Hyndburn,Sara Britcliffe,Con,5,0,0,2,0,0,3
-E14000759,Ilford North,Wes Streeting,Lab,1,0,0,0,1,0,0
-E14000760,Ilford South,Sam Tarry,Lab,3,0,0,1,2,0,0
-E14000761,Ipswich,Tom Hunt,Con,1,0,0,1,0,0,0
-E14000762,Isle of Wight,Bob Seely,Con,27,2,0,8,6,2,9
-E14000763,Islington North,Jeremy Corbyn,Lab,5,0,0,2,2,0,1
-E14000764,Islington South and Finsbury,Emily Thornberry,Lab,23,0,0,10,6,0,7
-E14000765,Jarrow,Kate Osborne,Lab,5,0,0,1,2,0,2
-E14000766,Keighley,Robbie Moore,Con,5,0,0,2,1,1,1
-E14000767,Kenilworth and Southam,Jeremy Wright,Con,18,5,0,1,0,3,9
-E14000768,Kensington,Felicity Buchan,Con,35,0,0,29,1,1,4
-E14000769,Kettering,Philip Hollobone,Con,1,0,0,1,0,0,0
-E14000770,Kingston and Surbiton,Ed Davey,LD,6,0,0,3,2,0,1
-E14000771,Kingston upon Hull East,Karl Turner,Lab,0,0,0,0,0,0,0
-E14000772,Kingston upon Hull North,Diana Johnson,Lab,1,0,0,0,1,0,0
-E14000773,Kingston upon Hull West and Hessle,Emma Hardy,Lab,2,0,0,0,2,0,0
-E14000774,Kingswood,Damien Egan,Lab,4,1,0,1,2,0,0
-E14000775,Knowsley,George Howarth,Lab,2,0,0,0,1,0,1
-E14000776,Lancaster and Fleetwood,Cat Smith,Lab,7,2,0,3,1,0,1
-E14000777,Leeds Central,Hilary Benn,Lab,8,0,0,5,2,0,1
-E14000778,Leeds East,Richard Burgon,Lab,2,0,0,1,0,0,1
-E14000779,Leeds North East,Fabian Hamilton,Lab,0,0,0,0,0,0,0
-E14000780,Leeds North West,Alex Sobel,Lab,4,3,0,0,0,0,1
-E14000781,Leeds West,Rachel Reeves,Lab,0,0,0,0,0,0,0
-E14000782,Leicester East,Claudia Webbe,Lab,2,0,0,2,0,0,0
-E14000783,Leicester South,Jon Ashworth,Lab,6,0,0,3,0,0,3
-E14000784,Leicester West,Liz Kendall,Lab,2,0,0,1,0,0,1
-E14000785,Leigh,James Grundy,Con,4,0,0,2,2,0,0
-E14000786,Lewes,Maria Caulfield,Con,10,5,0,3,0,0,2
-E14000787,Lewisham East,Janet Daby,Lab,11,0,0,11,0,0,0
-E14000788,Lewisham West and Penge,Ellie Reeves,Lab,9,0,0,7,0,1,1
-E14000789,"Lewisham, Deptford",Vicky Foxcroft,Lab,7,0,0,4,1,0,2
-E14000790,Leyton and Wanstead,John Cryer,Lab,13,0,0,7,1,1,4
-E14000791,Lichfield,Michael Fabricant,Con,7,5,0,2,0,0,0
-E14000792,Lincoln,Karl McCartney,Con,13,1,0,2,6,0,4
-E14000793,"Liverpool, Riverside",Kim Johnson,Lab,7,0,0,2,0,1,4
-E14000794,"Liverpool, Walton",Dan Carden,Lab,4,0,0,0,0,1,3
-E14000795,"Liverpool, Wavertree",Paula Barker,Lab,4,0,0,0,0,0,4
-E14000796,"Liverpool, West Derby",Ian Byrne,Lab,0,0,0,0,0,0,0
-E14000797,Loughborough,Jane Hunt,Con,8,0,0,5,2,1,0
-E14000798,Louth and Horncastle,Victoria Atkins,Con,44,14,0,8,4,0,18
-E14000799,Ludlow,Philip Dunne,Con,48,21,0,11,0,0,16
-E14000800,Luton North,Sarah Owen,Lab,0,0,0,0,0,0,0
-E14000801,Luton South,Rachel Hopkins,Lab,3,0,0,0,3,0,0
-E14000802,Macclesfield,David Rutley,Con,5,2,0,0,0,0,3
-E14000803,Maidenhead,Theresa May,Con,5,3,0,1,1,0,0
-E14000804,Maidstone and The Weald,Helen Grant,Con,4,0,0,3,0,0,1
-E14000805,Makerfield,Yvonne Fovargue,Lab,2,0,0,2,0,0,0
-E14000806,Maldon,John Whittingdale,Con,4,0,0,1,1,1,1
-E14000807,Manchester Central,Lucy Powell,Lab,6,0,0,2,1,0,3
-E14000808,"Manchester, Gorton",Afzal Khan,Lab,2,0,0,0,0,0,2
-E14000809,"Manchester, Withington",Jeff Smith,Lab,4,0,0,0,0,0,4
-E14000810,Mansfield,Ben Bradley,Con,3,1,0,0,1,0,1
-E14000811,Meon Valley,Flick Drummond,Con,3,2,0,1,0,0,0
-E14000812,Meriden,Saqib Bhatti,Con,1,0,0,1,0,0,0
-E14000813,Mid Bedfordshire,Alistair Strathern,Lab,9,2,0,1,0,1,5
-E14000814,Mid Derbyshire,Pauline Latham,Con,8,0,0,5,1,0,2
-E14000815,Mid Dorset and North Poole,Michael Tomlinson,Con,21,20,0,1,0,0,0
-E14000816,Mid Norfolk,George Freeman,Con,17,3,0,4,1,0,9
-E14000817,Mid Sussex,Mims Davies,Con,3,1,0,0,1,0,1
-E14000818,Mid Worcestershire,Nigel Huddleston,Con,17,4,0,4,0,1,8
-E14000819,Middlesbrough,Andy McDonald,Lab,0,0,0,0,0,0,0
-E14000820,Middlesbrough South and East Cleveland,Simon Clarke,Con,7,4,0,1,1,1,0
-E14000821,Milton Keynes North,Ben Everitt,Con,5,3,0,0,1,0,1
-E14000822,Milton Keynes South,Iain Stewart,Con,0,0,0,0,0,0,0
-E14000823,Mitcham and Morden,Siobhain McDonagh,Lab,8,1,0,7,0,0,0
-E14000824,Mole Valley,Paul Beresford,Con,8,2,0,4,0,1,1
-E14000825,Morecambe and Lunesdale,David Morris,Con,6,1,0,2,0,0,3
-E14000826,Morley and Outwood,Andrea Jenkyns,Con,3,1,1,1,0,0,0
-E14000827,New Forest East,Julian Lewis,Con,4,2,0,0,0,0,2
-E14000828,New Forest West,Desmond Swayne,Con,6,6,0,0,0,0,0
-E14000829,Newark,Robert Jenrick,Con,29,5,0,10,2,0,12
-E14000830,Newbury,Laura Farris,Con,12,3,0,4,0,3,2
-E14000831,Newcastle upon Tyne Central,Chi Onwurah,Lab,8,0,0,3,0,2,3
-E14000832,Newcastle upon Tyne East,Nick Brown,Lab,4,0,0,1,0,0,3
-E14000833,Newcastle upon Tyne North,Catherine McKinnell,Lab,4,3,0,1,0,0,0
-E14000834,Newcastle-under-Lyme,Aaron Bell,Con,1,0,0,1,0,0,0
-E14000835,Newton Abbot,Anne Marie Morris,Con,8,3,0,2,0,2,1
-E14000836,"Normanton, Pontefract and Castleford",Yvette Cooper,Lab,7,2,0,3,1,0,1
-E14000837,North Cornwall,Scott Mann,Con,56,37,0,9,1,0,9
-E14000838,North Devon,Selaine Saxby,Con,34,17,0,5,1,0,11
-E14000839,North Dorset,Simon Hoare,Con,62,56,0,5,0,0,1
-E14000840,North Durham,Kevan Jones,Lab,3,0,0,2,1,0,0
-E14000841,North East Bedfordshire,Richard Fuller,Con,14,6,0,1,0,2,5
-E14000842,North East Cambridgeshire,Steve Barclay,Con,14,8,0,0,5,0,1
-E14000843,North East Derbyshire,Lee Rowley,Con,3,0,0,1,2,0,0
-E14000844,North East Hampshire,Ranil Jayawardena,Con,3,0,0,1,0,2,0
-E14000845,North East Hertfordshire,Oliver Heald,Con,13,5,0,3,0,1,4
-E14000846,North East Somerset,Jacob Rees-Mogg,Con,11,7,0,1,3,0,0
-E14000847,North Herefordshire,Bill Wiggin,Con,32,11,0,7,1,0,13
-E14000848,North Norfolk,Duncan Charles Baker,Con,13,1,0,5,1,1,5
-E14000849,North Shropshire,Helen Morgan,LD,14,6,0,6,0,0,2
-E14000850,North Somerset,Liam Fox,Con,6,2,0,2,0,0,2
-E14000851,North Swindon,Justin Tomlinson,Con,3,3,0,0,0,0,0
-E14000852,North Thanet,Roger Gale,Con,7,3,0,1,0,0,3
-E14000853,North Tyneside,Mary Glindon,Lab,1,0,0,0,0,0,1
-E14000854,North Warwickshire,Craig Tracey,Con,13,3,0,9,0,0,1
-E14000855,North West Cambridgeshire,Shailesh Vara,Con,16,3,0,2,0,0,11
-E14000856,North West Durham,Richard Holden,Con,13,3,0,8,0,0,2
-E14000857,North West Hampshire,Kit Malthouse,Con,3,2,0,1,0,0,0
-E14000858,North West Leicestershire,Andrew Bridgen,Con,7,0,0,2,0,0,5
-E14000859,North West Norfolk,James Wild,Con,13,2,0,3,1,0,7
-E14000860,North Wiltshire,James Gray,Con,17,9,0,4,0,0,4
-E14000861,Northampton North,Michael Ellis,Con,0,0,0,0,0,0,0
-E14000862,Northampton South,Andrew Lewer,Con,1,0,0,1,0,0,0
-E14000863,Norwich North,Chloe Smith,Con,1,0,0,0,1,0,0
-E14000864,Norwich South,Clive Lewis,Lab,12,1,0,11,0,0,0
-E14000865,Nottingham East,Nadia Whittome,Lab,9,0,0,0,7,0,2
-E14000866,Nottingham North,Alex Norris,Lab,0,0,0,0,0,0,0
-E14000867,Nottingham South,Lilian Greenwood,Lab,12,0,0,3,5,0,4
-E14000868,Nuneaton,Marcus Jones,Con,3,0,0,3,0,0,0
-E14000869,Old Bexley and Sidcup,Louie French,Con,1,0,0,1,0,0,0
-E14000870,Oldham East and Saddleworth,Debbie Abrahams,Lab,5,0,0,0,1,0,4
-E14000871,Oldham West and Royton,Jim McMahon,Lab,4,0,0,2,1,0,1
-E14000872,Orpington,Gareth Bacon,Con,8,1,0,6,1,0,0
-E14000873,Oxford East,Anneliese Dodds,Lab,3,0,0,1,0,0,2
-E14000874,Oxford West and Abingdon,Layla Moran,LD,1,1,0,0,0,0,0
-E14000875,Pendle,Andrew Stephenson,Con,1,0,0,0,1,0,0
-E14000876,Penistone and Stocksbridge,Miriam Joy Cates,Con,12,5,0,5,0,1,1
-E14000877,Penrith and The Border,Neil Hudson,Con,57,24,0,18,3,0,12
-E14000878,Peterborough,Paul Bristow,Con,17,13,0,2,0,0,2
-E14000879,"Plymouth, Moor View",Johnny Mercer,Con,7,3,0,4,0,0,0
-E14000880,"Plymouth, Sutton and Devonport",Luke Pollard,Lab,13,5,0,8,0,0,0
-E14000881,Poole,Robert Syms,Con,1,0,0,0,1,0,0
-E14000882,Poplar and Limehouse,Apsana Begum,Lab,14,0,0,8,2,0,4
-E14000883,Portsmouth North,Penny Mordaunt,Con,6,0,0,5,0,0,1
-E14000884,Portsmouth South,Stephen Morgan,Lab,10,0,0,8,0,0,2
-E14000885,Preston,Mark Hendrick,Lab,5,0,0,1,1,0,3
-E14000886,Pudsey,Stuart Andrew,Con,3,1,0,1,0,1,0
-E14000887,Putney,Fleur Anderson,Lab,3,0,0,2,1,0,0
-E14000888,Rayleigh and Wickford,Mark Francois,Con,0,0,0,0,0,0,0
-E14000889,Reading East,Matt Rodda,Lab,3,0,0,2,1,0,0
-E14000890,Reading West,Alok Sharma,Con,1,0,0,0,1,0,0
-E14000891,Redcar,Jacob Young,Con,6,1,0,3,1,0,1
-E14000892,Redditch,Rachel Maclean,Con,2,2,0,0,0,0,0
-E14000893,Reigate,Crispin Blunt,Con,1,0,0,1,0,0,0
-E14000894,Ribble Valley,Nigel Evans,Con,5,1,0,3,0,0,1
-E14000895,Richmond (Yorks),Rishi Sunak,Con,35,19,0,13,1,0,2
-E14000896,Richmond Park,Sarah Olney,LD,8,0,0,7,1,0,0
-E14000897,Rochdale,Tony Lloyd,Lab,3,0,0,0,1,0,2
-E14000898,Rochester and Strood,Kelly Jane Tolhurst,Con,12,0,0,10,1,0,1
-E14000899,Rochford and Southend East,James Duddridge,Con,2,0,0,1,0,0,1
-E14000900,Romford,Andrew Richard Rosindell,Con,2,0,0,1,1,0,0
-E14000901,Romsey and Southampton North,Caroline Nokes,Con,7,6,0,0,0,1,0
-E14000902,Rossendale and Darwen,Jake Berry,Con,8,0,0,2,2,0,4
-E14000903,Rother Valley,Alexander Stafford,Con,1,0,0,1,0,0,0
-E14000904,Rotherham,Sarah Champion,Lab,4,4,0,0,0,0,0
-E14000905,Rugby,Mark Pawsey,Con,8,8,0,0,0,0,0
-E14000906,"Ruislip, Northwood and Pinner",David Simmonds,Con,15,6,0,8,1,0,0
-E14000907,Runnymede and Weybridge,Ben Spencer,Con,3,0,0,1,1,1,0
-E14000908,Rushcliffe,Ruth Edwards,Con,5,2,0,0,0,0,3
-E14000909,Rutland and Melton,Alicia Kearns,Con,25,1,0,3,1,0,20
-E14000910,Saffron Walden,Kemi Badenoch,Con,10,2,0,3,0,1,4
-E14000911,Salford and Eccles,Rebecca Long Bailey,Lab,8,0,0,1,3,0,4
-E14000912,Salisbury,John Glen,Con,52,50,0,2,0,0,0
-E14000913,Scarborough and Whitby,Robert Goodwill,Con,24,22,0,1,0,0,1
-E14000914,Scunthorpe,Holly Mumby-Croft,Con,5,3,0,1,0,0,1
-E14000915,Sedgefield,Paul Howell,Con,4,0,0,3,1,0,0
-E14000916,Sefton Central,Bill Esterson,Lab,3,1,0,1,0,0,1
-E14000917,Selby and Ainsty,Keir Mather,Lab,25,19,0,4,0,1,1
-E14000918,Sevenoaks,Laura Trott,Con,3,1,0,1,0,1,0
-E14000919,Sheffield Central,Paul Blomfield,Lab,7,1,0,5,0,0,1
-E14000920,Sheffield South East,Clive Betts,Lab,0,0,0,0,0,0,0
-E14000921,"Sheffield, Brightside and Hillsborough",Gill Furniss,Lab,2,1,0,0,0,0,1
-E14000922,"Sheffield, Hallam",Olivia Frances Blake,Lab,5,4,0,1,0,0,0
-E14000923,"Sheffield, Heeley",Louise Haigh,Lab,2,0,0,0,0,1,1
-E14000924,Sherwood,Mark Spencer,Con,9,2,0,4,1,0,2
-E14000925,Shipley,Philip Davies,Con,4,2,0,0,0,1,1
-E14000926,Shrewsbury and Atcham,Daniel Kawczynski,Con,20,6,0,9,0,0,5
-E14000927,Sittingbourne and Sheppey,Gordon Henderson,Con,14,0,0,3,8,0,3
-E14000928,Skipton and Ripon,Julian Smith,Con,16,9,1,3,1,1,1
-E14000929,Sleaford and North Hykeham,Caroline Johnson,Con,21,4,0,3,2,1,11
-E14000930,Slough,Tan Dhesi,Lab,0,0,0,0,0,0,0
-E14000931,Solihull,Julian Knight,Con,0,0,0,0,0,0,0
-E14000932,Somerton and Frome,Sarah Dyke,LD,28,6,0,8,0,1,13
-E14000933,South Basildon and East Thurrock,Stephen Metcalfe,Con,3,1,0,1,1,0,0
-E14000934,South Cambridgeshire,Anthony Browne,Con,14,10,0,0,0,0,4
-E14000935,South Derbyshire,Heather Wheeler,Con,17,2,0,10,0,1,4
-E14000936,South Dorset,Richard Drax,Con,43,36,0,7,0,0,0
-E14000937,South East Cambridgeshire,Lucy Frazer,Con,10,6,0,1,2,0,1
-E14000938,South East Cornwall,Sheryll Murray,Con,80,65,0,11,0,0,4
-E14000939,South Holland and The Deepings,John Hayes,Con,12,4,0,3,2,0,3
-E14000940,South Leicestershire,Alberto Costa,Con,2,0,0,0,0,0,2
-E14000941,South Norfolk,Richard Bacon,Con,9,2,0,1,1,0,5
-E14000942,South Northamptonshire,Andrea Leadsom,Con,17,6,0,4,1,0,6
-E14000943,South Ribble,Katherine Fletcher,Con,3,2,0,0,0,0,1
-E14000944,South Shields,Emma Lewell-Buck,Lab,2,0,0,1,1,0,0
-E14000945,South Staffordshire,Gavin Williamson,Con,3,2,0,1,0,0,0
-E14000946,South Suffolk,James Cartlidge,Con,5,3,0,1,0,0,1
-E14000947,South Swindon,Robert Buckland,Con,8,7,0,1,0,0,0
-E14000948,South Thanet,Craig Mackinlay,Con,9,3,0,2,0,0,4
-E14000949,South West Bedfordshire,Andrew Selous,Con,2,1,0,1,0,0,0
-E14000950,South West Devon,Gary Streeter,Con,65,56,0,6,0,0,3
-E14000951,South West Hertfordshire,Gagan Mohindra,Con,0,0,0,0,0,0,0
-E14000952,South West Norfolk,Elizabeth Truss,Con,29,2,0,9,1,0,17
-E14000953,South West Surrey,Jeremy Hunt,Con,1,1,0,0,0,0,0
-E14000954,South West Wiltshire,Andrew Murrison,Con,30,25,0,4,0,0,1
-E14000955,"Southampton, Itchen",Royston Smith,Con,3,0,0,2,1,0,0
-E14000956,"Southampton, Test",Alan Whitehead,Lab,1,0,0,0,0,0,1
-E14000957,Southend West,Anna Firth,Con,1,0,0,0,1,0,0
-E14000958,Southport,Damien Moore,Con,5,0,0,0,4,0,1
-E14000959,Spelthorne,Kwasi Kwarteng,Con,1,0,0,0,0,0,1
-E14000960,St. Albans,Daisy Cooper,LD,2,0,0,2,0,0,0
-E14000961,St. Austell and Newquay,Steve Double,Con,15,7,0,8,0,0,0
-E14000962,St. Helens North,Conor McGinn,Lab,2,1,0,1,0,0,0
-E14000963,St. Helens South and Whiston,Marie Rimmer,Lab,11,2,0,3,3,0,3
-E14000964,St. Ives,Derek Thomas,Con,93,82,0,7,0,0,4
-E14000965,Stafford,Theo Clarke,Con,4,2,0,1,1,0,0
-E14000966,Staffordshire Moorlands,Karen Bradley,Con,13,6,0,7,0,0,0
-E14000967,Stalybridge and Hyde,Jonathan Reynolds,Lab,5,0,0,1,1,0,3
-E14000968,Stevenage,Stephen McPartland,Con,4,0,0,1,3,0,0
-E14000969,Stockport,Navendu Mishra,Lab,8,0,0,1,1,0,6
-E14000970,Stockton North,Alex Cunningham,Lab,2,0,0,2,0,0,0
-E14000971,Stockton South,Matt Vickers,Con,0,0,0,0,0,0,0
-E14000972,Stoke-on-Trent Central,Jo Gideon,Con,3,0,0,1,0,0,2
-E14000973,Stoke-on-Trent North,Jonathan Edward Gullis,Con,5,0,0,4,0,0,1
-E14000974,Stoke-on-Trent South,Jack Edgar Brereton,Con,2,0,0,1,0,0,1
-E14000975,Stone,Bill Cash,Con,6,2,0,3,1,0,0
-E14000976,Stourbridge,Suzanne Webb,Con,2,0,0,0,2,0,0
-E14000977,Stratford-on-Avon,Nadhim Zahawi,Con,10,6,0,2,0,0,2
-E14000978,Streatham,Bell Ribeiro-Addy,Lab,7,0,0,5,1,0,1
-E14000979,Stretford and Urmston,Andrew Western,Lab,3,0,0,0,2,0,1
-E14000980,Stroud,Siobhan Baillie,Con,14,1,0,2,2,0,9
-E14000981,Suffolk Coastal,Thérèse Coffey,Con,17,6,0,6,0,1,4
-E14000982,Sunderland Central,Julie Elliott,Lab,6,0,0,1,3,0,2
-E14000983,Surrey Heath,Michael Gove,Con,0,0,0,0,0,0,0
-E14000985,Sutton Coldfield,Andrew Mitchell,Con,1,0,0,0,1,0,0
-E14000984,Sutton and Cheam,Paul Scully,Con,0,0,0,0,0,0,0
-E14000986,Tamworth,Sarah Edwards,Lab,3,0,0,1,1,0,1
-E14000987,Tatton,Esther McVey,Con,6,2,0,3,1,0,0
-E14000988,Taunton Deane,Rebecca Pow,Con,15,9,0,5,1,0,0
-E14000989,Telford,Lucy Allan,Con,3,1,0,1,0,0,1
-E14000990,Tewkesbury,Laurence Robertson,Con,14,6,0,6,0,0,2
-E14000991,The Cotswolds,Geoffrey Robert Clifton-Brown,Con,33,21,0,6,1,0,5
-E14000992,The Wrekin,Mark Pritchard,Con,9,5,0,3,0,0,1
-E14000993,Thirsk and Malton,Kevin Hollinrake,Con,107,88,0,13,0,1,5
-E14000994,Thornbury and Yate,Luke Hall,Con,10,1,0,6,0,1,2
-E14000995,Thurrock,Jackie Doyle-Price,Con,3,0,0,1,0,1,1
-E14000996,Tiverton and Honiton,Richard Foord,LD,23,15,0,4,2,0,2
-E14000997,Tonbridge and Malling,Tom Tugendhat,Con,3,2,0,0,0,1,0
-E14000998,Tooting,Rosena Allin-Khan,Lab,2,0,0,2,0,0,0
-E14000999,Torbay,Kevin Foster,Con,8,1,0,4,0,2,1
-E14001000,Torridge and West Devon,Geoffrey Cox,Con,133,109,0,9,0,0,15
-E14001001,Totnes,Anthony Mangnall,Con,57,41,0,5,0,1,10
-E14001002,Tottenham,David Lammy,Lab,13,0,0,6,4,0,3
-E14001003,Truro and Falmouth,Cherilyn Mackrory,Con,24,16,0,5,0,1,2
-E14001004,Tunbridge Wells,Greg Clark,Con,6,2,0,1,1,2,0
-E14001005,Twickenham,Munira Wilson,LD,9,0,0,8,1,0,0
-E14001006,Tynemouth,Alan Campbell,Lab,0,0,0,0,0,0,0
-E14001007,Uxbridge and South Ruislip,Steve Tuckwell,Con,8,0,0,5,2,0,1
-E14001008,Vauxhall,Florence Eshalomi,Lab,5,0,0,4,1,0,0
-E14001009,Wakefield,Simon Lightwood,Lab,2,0,0,2,0,0,0
-E14001010,Wallasey,Angela Eagle,Lab,5,0,0,1,0,0,4
-E14001011,Walsall North,Eddie Hughes,Con,3,0,0,0,2,0,1
-E14001012,Walsall South,Valerie Vaz,Lab,6,0,0,0,4,1,1
-E14001013,Walthamstow,Stella Creasy,Lab,3,0,0,2,0,0,1
-E14001014,Wansbeck,Ian Lavery,Lab,5,1,0,4,0,0,0
-E14001015,Wantage,David Johnston,Con,10,7,0,1,0,0,2
-E14001016,Warley,John Francis Spellar,Lab,4,1,0,2,0,0,1
-E14001017,Warrington North,Charlotte Nichols,Lab,2,1,0,0,1,0,0
-E14001018,Warrington South,Andy Carter,Con,5,0,0,1,2,0,2
-E14001019,Warwick and Leamington,Matt Western,Lab,9,4,0,2,0,1,2
-E14001020,Washington and Sunderland West,Sharon Hodgson,Lab,3,0,0,2,0,0,1
-E14001021,Watford,Dean Russell,Con,2,0,0,2,0,0,0
-E14001022,Waveney,Peter Aldous,Con,11,1,0,5,1,0,4
-E14001023,Wealden,Nus Ghani,Con,4,2,0,0,0,1,1
-E14001024,Weaver Vale,Mike Amesbury,Lab,6,2,0,3,1,0,0
-E14001025,Wellingborough,Gen Kitchen,Lab,1,1,0,0,0,0,0
-E14001026,Wells,James Heappey,Con,24,17,0,2,0,0,5
-E14001027,Welwyn Hatfield,Grant Shapps,Con,3,0,0,3,0,0,0
-E14001028,Wentworth and Dearne,John Healey,Lab,8,4,0,3,0,0,1
-E14001029,West Bromwich East,Nicola Faye Richards,Con,2,0,0,1,0,1,0
-E14001030,West Bromwich West,Shaun Stephen Bailey,Con,0,0,0,0,0,0,0
-E14001031,West Dorset,Chris Loder,Con,82,71,0,8,0,1,2
-E14001032,West Ham,Lyn Brown,Lab,11,0,0,9,2,0,0
-E14001033,West Lancashire,Ashley Dalton,Lab,12,3,0,5,1,1,2
-E14001034,West Suffolk,Matt Hancock,Con,12,5,0,2,3,0,2
-E14001035,West Worcestershire,Harriett Mary Morrison Baldwin,Con,13,3,0,2,0,1,7
-E14001036,Westminster North,Karen Buck,Lab,5,0,0,3,0,0,2
-E14001037,Westmorland and Lonsdale,Tim Farron,LD,23,11,0,8,1,0,3
-E14001038,Weston-Super-Mare,John Penrose,Con,3,2,0,1,0,0,0
-E14001039,Wigan,Lisa Nandy,Lab,3,0,0,2,0,0,1
-E14001040,Wimbledon,Stephen Hammond,Con,7,0,0,6,0,1,0
-E14001041,Winchester,Steve Brine,Con,5,4,0,0,0,0,1
-E14001042,Windsor,Adam Afriyie,Con,3,0,0,2,0,1,0
-E14001043,Wirral South,Alison McGovern,Lab,4,1,0,2,0,1,0
-E14001044,Wirral West,Margaret Greenwood,Lab,1,0,0,0,0,0,1
-E14001045,Witham,Priti Patel,Con,7,2,0,3,2,0,0
-E14001046,Witney,Robert Alexander Courts,Con,8,7,0,0,0,0,1
-E14001047,Woking,Jonathan Lord,Con,4,0,0,1,2,1,0
-E14001048,Wokingham,John Redwood,Con,4,1,0,2,0,1,0
-E14001049,Wolverhampton North East,Jane Stevenson,Con,0,0,0,0,0,0,0
-E14001050,Wolverhampton South East,Pat McFadden,Lab,4,0,0,2,0,0,2
-E14001051,Wolverhampton South West,Stuart Paul Anderson,Con,2,0,0,0,0,0,2
-E14001052,Worcester,Robin Walker,Con,5,2,0,1,1,0,1
-E14001053,Workington,Mark Jenkinson,Con,13,4,0,2,2,0,5
-E14001054,Worsley and Eccles South,Barbara Keeley,Lab,1,0,0,0,0,0,1
-E14001055,Worthing West,Peter Bottomley,Con,2,0,0,1,0,0,1
-E14001056,Wycombe,Steve Baker,Con,3,2,0,0,0,1,0
-E14001058,Wyre Forest,Mark Garnier,Con,4,0,0,3,0,0,1
-E14001057,Wyre and Preston North,Ben Wallace,Con,1,0,0,1,0,0,0
-E14001059,Wythenshawe and Sale East,Mike Kane,Lab,2,0,0,2,0,0,0
-E14001060,Yeovil,Marcus Fysh,Con,12,3,0,4,0,1,4
-E14001061,York Central,Rachael Maskell,Lab,1,0,0,0,0,0,1
-E14001062,York Outer,Julian Sturdy,Con,0,0,0,0,0,0,0
+PCON10CD,Name,MP,Party short,Party,Type,Type,Type,Type,Type,Type,Type
+,,,,,All,Archaeology,Battlefield,Building or structure,Conservation area,Park and garden,Place of worship
+---,---,---,---,---,---,---,---,---,---,---,---
+E14000530,Aldershot,Leo Docherty,Con,Conservative,3,0,0,2,0,0,1
+E14000531,Aldridge-Brownhills,Wendy Morton,Con,Conservative,0,0,0,0,0,0,0
+E14000532,Altrincham and Sale West,Graham Brady,Con,Conservative,0,0,0,0,0,0,0
+E14000533,Amber Valley,Nigel Mills,Con,Conservative,6,1,0,5,0,0,0
+E14000534,Arundel and South Downs,Andrew Griffith,Con,Conservative,11,4,0,1,1,1,4
+E14000535,Ashfield,Lee Anderson,Con,Conservative,3,1,0,0,1,1,0
+E14000536,Ashford,Damian Green,Con,Conservative,5,1,0,4,0,0,0
+E14000537,Ashton-under-Lyne,Angela Rayner,Lab,Labour,4,0,0,0,0,0,4
+E14000538,Aylesbury,Rob Butler,Con,Conservative,5,4,0,0,0,1,0
+E14000539,Banbury,Victoria Prentis,Con,Conservative,6,1,0,1,2,0,2
+E14000540,Barking,Margaret Hodge,Lab,Labour,1,1,0,0,0,0,0
+E14000541,Barnsley Central,Dan Jarvis,Lab,Labour,2,1,0,0,0,0,1
+E14000542,Barnsley East,Stephanie Peacock,Lab,Labour,3,1,0,1,1,0,0
+E14000543,Barrow and Furness,Simon Fell,Con,Conservative,9,3,0,3,2,0,1
+E14000544,Basildon and Billericay,John Baron,Con,Conservative,0,0,0,0,0,0,0
+E14000545,Basingstoke,Maria Miller,Con,Conservative,0,0,0,0,0,0,0
+E14000546,Bassetlaw,Brendan Clarke-Smith,Con,Conservative,16,1,0,6,1,1,7
+E14000547,Bath,Wera Hobhouse,LD,Liberal Democrat,5,1,0,3,0,1,0
+E14000548,Batley and Spen,Kim Leadbeater,Lab,Labour,1,0,0,0,0,0,1
+E14000549,Battersea,Marsha de Cordova,Lab,Labour,3,0,0,3,0,0,0
+E14000550,Beaconsfield,Joy Morrissey,Con,Conservative,0,0,0,0,0,0,0
+E14000551,Beckenham,Bob Stewart,Con,Conservative,2,1,0,1,0,0,0
+E14000552,Bedford,Mohammad Yasin,Lab,Labour,2,0,0,0,1,0,1
+E14000553,Bermondsey and Old Southwark,Neil Coyle,Lab,Labour,13,2,0,9,0,0,2
+E14000554,Berwick-upon-Tweed,Anne-Marie Trevelyan,Con,Conservative,90,74,0,12,3,1,0
+E14000555,Bethnal Green and Bow,Rushanara Ali,Lab,Labour,17,1,0,9,3,0,4
+E14000556,Beverley and Holderness,Graham Stuart,Con,Conservative,23,20,0,2,0,0,1
+E14000557,Bexhill and Battle,Huw Merriman,Con,Conservative,5,1,0,3,0,0,1
+E14000558,Bexleyheath and Crayford,David Evennett,Con,Conservative,1,0,0,1,0,0,0
+E14000559,Birkenhead,Mick Whitley,Lab,Labour,4,0,0,0,3,1,0
+E14000560,"Birmingham, Edgbaston",Preet Kaur Gill,Lab,Labour,2,0,0,1,1,0,0
+E14000561,"Birmingham, Erdington",Paulette Hamilton,Lab,Labour,0,0,0,0,0,0,0
+E14000562,"Birmingham, Hall Green",Tahir Ali,Lab,Labour,7,0,0,3,1,1,2
+E14000563,"Birmingham, Hodge Hill",Liam Byrne,Lab,Labour,1,0,0,0,0,0,1
+E14000564,"Birmingham, Ladywood",Shabana Mahmood,Lab,Labour,13,0,0,4,4,0,5
+E14000565,"Birmingham, Northfield",Gary Sambrook,Con,Conservative,2,0,0,0,1,0,1
+E14000566,"Birmingham, Perry Barr",Khalid Mahmood,Lab,Labour,3,0,0,1,1,0,1
+E14000567,"Birmingham, Selly Oak",Steve McCabe,Lab,Labour,0,0,0,0,0,0,0
+E14000568,"Birmingham, Yardley",Jess Phillips,Lab,Labour,2,1,0,0,1,0,0
+E14000569,Bishop Auckland,Dehenna Davison,Con,Conservative,21,15,0,3,1,0,2
+E14000570,Blackburn,Kate Hollern,Lab,Labour,3,0,0,0,2,1,0
+E14000571,Blackley and Broughton,Graham Stringer,Lab,Labour,7,0,0,2,1,0,4
+E14000572,Blackpool North and Cleveleys,Paul Maynard,Con,Conservative,2,0,0,1,0,0,1
+E14000573,Blackpool South,Scott Lloyd Benton,Con,Conservative,2,0,0,1,0,0,1
+E14000574,Blaydon,Liz Twist,Lab,Labour,9,3,1,4,1,0,0
+E14000575,Blyth Valley,Ian Levy,Con,Conservative,6,0,0,3,1,1,1
+E14000576,Bognor Regis and Littlehampton,Nick Gibb,Con,Conservative,3,0,0,2,0,0,1
+E14000577,Bolsover,Mark Fletcher,Con,Conservative,7,2,0,2,3,0,0
+E14000578,Bolton North East,Mark Logan,Con,Conservative,4,0,0,0,0,0,4
+E14000579,Bolton South East,Yasmin Qureshi,Lab,Labour,3,0,0,1,0,0,2
+E14000580,Bolton West,Chris Green,Con,Conservative,1,0,0,0,0,0,1
+E14000581,Bootle,Peter Dowd,Lab,Labour,2,0,0,0,2,0,0
+E14000582,Boston and Skegness,Matt Warman,Con,Conservative,15,1,0,4,5,0,5
+E14000583,Bosworth,Luke Evans,Con,Conservative,4,0,0,0,3,0,1
+E14000584,Bournemouth East,Tobias Ellwood,Con,Conservative,4,1,0,0,1,0,2
+E14000585,Bournemouth West,Conor Burns,Con,Conservative,3,1,0,0,0,0,2
+E14000586,Bracknell,James Sunderland,Con,Conservative,1,0,0,0,0,1,0
+E14000587,Bradford East,Imran Hussain,Lab,Labour,5,0,0,1,2,0,2
+E14000588,Bradford South,Judith Cummins,Lab,Labour,1,0,0,0,1,0,0
+E14000589,Bradford West,Naz Shah,Lab,Labour,14,0,0,2,9,0,3
+E14000590,Braintree,James Cleverly,Con,Conservative,4,1,0,1,1,0,1
+E14000591,Brent Central,Dawn Butler,Lab,Labour,5,0,0,1,0,1,3
+E14000592,Brent North,Barry Gardiner,Lab,Labour,3,0,0,3,0,0,0
+E14000593,Brentford and Isleworth,Ruth Cadbury,Lab,Labour,17,0,0,14,2,1,0
+E14000594,Brentwood and Ongar,Alex Burghart,Con,Conservative,9,1,0,4,0,1,3
+E14000595,Bridgwater and West Somerset,Ian Liddell-Grainger,Con,Conservative,41,24,0,4,0,2,11
+E14000596,Brigg and Goole,Andrew Percy,Con,Conservative,12,4,0,1,2,0,5
+E14000597,"Brighton, Kemptown",Lloyd Russell-Moyle,Lab,Labour,5,0,0,2,2,0,1
+E14000598,"Brighton, Pavilion",Caroline Lucas,Green,Green,10,0,0,3,3,2,2
+E14000599,Bristol East,Kerry McCarthy,Lab,Labour,2,0,0,0,0,2,0
+E14000600,Bristol North West,Darren Jones,Lab,Labour,5,1,0,1,0,1,2
+E14000601,Bristol South,Karin Smyth,Lab,Labour,1,0,0,1,0,0,0
+E14000602,Bristol West,Thangam Debbonaire,Lab,Labour,7,2,0,3,1,0,1
+E14000603,Broadland,Jerome Mayhew,Con,Conservative,13,1,0,5,2,0,5
+E14000604,Bromley and Chislehurst,Bob Neill,Con,Conservative,7,1,0,6,0,0,0
+E14000605,Bromsgrove,Sajid Javid,Con,Conservative,8,1,0,2,1,1,3
+E14000606,Broxbourne,Charles Walker,Con,Conservative,4,2,0,0,2,0,0
+E14000607,Broxtowe,Darren George Henry,Con,Conservative,6,1,0,3,2,0,0
+E14000608,Buckingham,Greg Smith,Con,Conservative,15,2,0,6,0,1,6
+E14000609,Burnley,Antony Higginbotham,Con,Conservative,4,0,0,4,0,0,0
+E14000610,Burton,Kate Griffiths,Con,Conservative,1,0,0,1,0,0,0
+E14000611,Bury North,James Daly,Con,Conservative,5,0,0,1,2,0,2
+E14000612,Bury South,Christian Wakeford,Con,Conservative,1,0,0,0,0,0,1
+E14000613,Bury St. Edmunds,Jo Churchill,Con,Conservative,8,2,0,5,0,0,1
+E14000614,Calder Valley,Craig Whittaker,Con,Conservative,14,3,0,7,1,0,3
+E14000615,Camberwell and Peckham,Harriet Harman,Lab,Labour,17,0,0,14,1,1,1
+E14000616,Camborne and Redruth,George Eustice,Con,Conservative,19,10,0,7,0,0,2
+E14000617,Cambridge,Daniel Zeichner,Lab,Labour,2,0,0,1,0,0,1
+E14000618,Cannock Chase,Amanda Milling,Con,Conservative,0,0,0,0,0,0,0
+E14000619,Canterbury,Rosie Duffield,Lab,Labour,9,4,0,5,0,0,0
+E14000620,Carlisle,John Stevenson,Con,Conservative,3,1,0,0,2,0,0
+E14000621,Carshalton and Wallington,Elliot Colburn,Con,Conservative,6,0,0,5,0,0,1
+E14000622,Castle Point,Rebecca Harris,Con,Conservative,0,0,0,0,0,0,0
+E14000623,Central Devon,Mel Stride,Con,Conservative,54,44,0,2,2,0,6
+E14000624,Central Suffolk and North Ipswich,Daniel Poulter,Con,Conservative,18,1,0,10,0,1,6
+E14000625,Charnwood,Edward Argar,Con,Conservative,5,1,0,2,0,0,2
+E14000626,Chatham and Aylesford,Tracey Crouch,Con,Conservative,2,1,0,0,0,0,1
+E14000627,Cheadle,Mary Robinson,Con,Conservative,1,0,0,1,0,0,0
+E14000628,Chelmsford,Vicky Ford,Con,Conservative,1,0,0,0,1,0,0
+E14000629,Chelsea and Fulham,Greg Hands,Con,Conservative,4,0,0,3,0,0,1
+E14000630,Cheltenham,Alex Chalk,Con,Conservative,3,0,0,0,0,0,3
+E14000631,Chesham and Amersham,Sarah Green,LD,Liberal Democrat,2,0,0,2,0,0,0
+E14000632,Chesterfield,Toby Perkins,Lab,Labour,4,0,0,3,0,0,1
+E14000633,Chichester,Gillian Keegan,Con,Conservative,14,10,0,3,1,0,0
+E14000634,Chingford and Woodford Green,Iain Duncan Smith,Con,Conservative,4,0,0,3,0,0,1
+E14000635,Chippenham,Michelle Donelan,Con,Conservative,3,1,0,0,0,0,2
+E14000636,Chipping Barnet,Theresa Villiers,Con,Conservative,1,0,0,0,0,0,1
+E14000637,Chorley,Lindsay Hoyle,Spk,Speaker,3,1,0,1,0,0,1
+E14000638,Christchurch,Christopher Chope,Con,Conservative,8,8,0,0,0,0,0
+E14000639,Cities of London and Westminster,Nickie Aiken,Con,Conservative,16,0,0,8,0,0,8
+E14000640,City of Chester,Samantha Dixon,Lab,Labour,4,2,0,1,0,0,1
+E14000641,City of Durham,Mary Foy,Lab,Labour,10,1,0,8,0,1,0
+E14000642,Clacton,Giles Watling,Con,Conservative,9,0,0,4,4,0,1
+E14000643,Cleethorpes,Martin Vickers,Con,Conservative,12,7,0,3,1,0,1
+E14000644,Colchester,Will Quince,Con,Conservative,3,1,0,2,0,0,0
+E14000645,Colne Valley,Jason McCartney,Con,Conservative,8,1,0,5,0,0,2
+E14000646,Congleton,Fiona Bruce,Con,Conservative,7,1,0,2,2,0,2
+E14000647,Copeland,Trudy Harrison,Con,Conservative,21,12,0,4,1,0,4
+E14000648,Corby,Tom Pursglove,Con,Conservative,12,1,0,5,0,0,6
+E14000649,Coventry North East,Colleen Fletcher,Lab,Labour,0,0,0,0,0,0,0
+E14000650,Coventry North West,Taiwo Owatemi,Lab,Labour,2,1,0,0,1,0,0
+E14000651,Coventry South,Zarah Sultana,Lab,Labour,8,0,0,3,2,1,2
+E14000652,Crawley,Henry Smith,Con,Conservative,0,0,0,0,0,0,0
+E14000653,Crewe and Nantwich,Kieran John Mullan,Con,Conservative,6,1,0,4,0,1,0
+E14000654,Croydon Central,Sarah Jones,Lab,Labour,6,0,0,4,1,0,1
+E14000655,Croydon North,Steve Reed,Lab,Labour,4,0,0,1,1,0,2
+E14000656,Croydon South,Chris Philp,Con,Conservative,4,1,0,1,0,0,2
+E14000657,Dagenham and Rainham,Jon Cruddas,Lab,Labour,6,0,0,5,1,0,0
+E14000658,Darlington,Peter Gibson,Con,Conservative,4,0,0,1,2,0,1
+E14000659,Dartford,Gareth Johnson,Con,Conservative,2,2,0,0,0,0,0
+E14000660,Daventry,Chris Heaton-Harris,Con,Conservative,16,4,0,8,0,0,4
+E14000661,Denton and Reddish,Andrew Gwynne,Lab,Labour,5,0,0,3,0,0,2
+E14000662,Derby North,Amanda Solloway,Con,Conservative,3,0,0,3,0,0,0
+E14000663,Derby South,Margaret Beckett,Lab,Labour,1,0,0,0,0,0,1
+E14000664,Derbyshire Dales,Sarah Elizabeth Dines,Con,Conservative,10,3,0,2,0,0,5
+E14000665,Devizes,Danny Kruger,Con,Conservative,63,54,0,6,0,1,2
+E14000666,Dewsbury,Mark Eastwood,Con,Conservative,5,2,0,1,0,0,2
+E14000667,Don Valley,Nicholas Fletcher,Con,Conservative,9,5,0,1,2,0,1
+E14000668,Doncaster Central,Rosie Winterton,Lab,Labour,4,0,0,0,2,0,2
+E14000669,Doncaster North,Ed Miliband,Lab,Labour,12,4,0,1,3,0,4
+E14000670,Dover,Natalie Elphicke,Con,Conservative,11,1,0,5,3,0,2
+E14000671,Dudley North,Marco Longhi,Con,Conservative,4,1,0,0,0,0,3
+E14000672,Dudley South,Mike Wood,Con,Conservative,5,0,0,3,2,0,0
+E14000673,Dulwich and West Norwood,Helen Hayes,Lab,Labour,10,0,0,8,1,0,1
+E14000674,Ealing Central and Acton,Rupa Huq,Lab,Labour,7,0,0,2,3,1,1
+E14000675,Ealing North,James Murray,Lab,Labour,4,1,0,2,1,0,0
+E14000676,"Ealing, Southall",Virendra Sharma,Lab,Labour,5,1,0,3,1,0,0
+E14000677,Easington,Grahame Morris,Lab,Labour,1,0,0,0,1,0,0
+E14000678,East Devon,Simon Jupp,Con,Conservative,7,2,0,3,0,1,1
+E14000679,East Ham,Stephen Timms,Lab,Labour,8,0,0,8,0,0,0
+E14000680,East Hampshire,Damian Hinds,Con,Conservative,7,6,0,1,0,0,0
+E14000681,East Surrey,Claire Coutinho,Con,Conservative,2,0,0,1,0,0,1
+E14000682,East Worthing and Shoreham,Tim Loughton,Con,Conservative,2,0,0,0,1,0,1
+E14000683,East Yorkshire,Greg Knight,Con,Conservative,70,65,0,1,1,1,2
+E14000684,Eastbourne,Caroline Ansell,Con,Conservative,7,1,0,6,0,0,0
+E14000685,Eastleigh,Paul Holmes,Con,Conservative,1,1,0,0,0,0,0
+E14000686,Eddisbury,Edward Timpson,Con,Conservative,7,4,0,2,0,0,1
+E14000687,Edmonton,Kate Osamor,Lab,Labour,5,0,0,2,2,0,1
+E14000688,Ellesmere Port and Neston,Justin Madders,Lab,Labour,4,1,0,2,0,0,1
+E14000689,Elmet and Rothwell,Alec Shelbrooke,Con,Conservative,7,2,0,3,0,1,1
+E14000690,Eltham,Clive Efford,Lab,Labour,4,0,0,3,0,0,1
+E14000691,Enfield North,Feryal Clark,Lab,Labour,9,1,0,5,0,2,1
+E14000692,"Enfield, Southgate",Bambos Charalambous,Lab,Labour,7,0,0,4,0,3,0
+E14000693,Epping Forest,Eleanor Laing,Con,Conservative,7,2,0,2,3,0,0
+E14000694,Epsom and Ewell,Chris Grayling,Con,Conservative,3,0,0,0,2,1,0
+E14000695,Erewash,Maggie Throup,Con,Conservative,3,0,0,0,2,0,1
+E14000696,Erith and Thamesmead,Abena Oppong-Asare,Lab,Labour,1,0,0,1,0,0,0
+E14000697,Esher and Walton,Dominic Raab,Con,Conservative,2,0,0,2,0,0,0
+E14000698,Exeter,Ben Bradshaw,Lab,Labour,3,1,0,0,0,0,2
+E14000699,Fareham,Suella Braverman,Con,Conservative,2,0,0,2,0,0,0
+E14000700,Faversham and Mid Kent,Helen Whately,Con,Conservative,9,2,0,4,0,0,3
+E14000701,Feltham and Heston,Seema Malhotra,Lab,Labour,9,2,0,5,1,0,1
+E14000702,Filton and Bradley Stoke,Jack Lopresti,Con,Conservative,2,1,0,0,0,1,0
+E14000703,Finchley and Golders Green,Mike Freer,Con,Conservative,6,0,0,3,1,0,2
+E14000704,Folkestone and Hythe,Damian Collins,Con,Conservative,13,4,0,7,0,0,2
+E14000705,Forest of Dean,Mark Harper,Con,Conservative,16,8,0,4,0,0,4
+E14000706,Fylde,Mark Menzies,Con,Conservative,0,0,0,0,0,0,0
+E14000707,Gainsborough,Edward Leigh,Con,Conservative,26,8,0,6,4,0,8
+E14000708,Garston and Halewood,Maria Eagle,Lab,Labour,1,0,0,1,0,0,0
+E14000709,Gateshead,Ian Mearns,Lab,Labour,4,0,0,2,1,0,1
+E14000710,Gedling,Tom Randall,Con,Conservative,1,0,0,0,0,0,1
+E14000711,Gillingham and Rainham,Rehman Chishti,Con,Conservative,5,0,0,2,3,0,0
+E14000712,Gloucester,Richard Graham,Con,Conservative,14,2,0,10,1,0,1
+E14000713,Gosport,Caroline Dinenage,Con,Conservative,12,3,0,6,3,0,0
+E14000714,Grantham and Stamford,Gareth Davies,Con,Conservative,19,6,0,6,1,1,5
+E14000715,Gravesham,Adam Holloway,Con,Conservative,0,0,0,0,0,0,0
+E14000716,Great Grimsby,Lia Nici,Con,Conservative,7,0,0,2,4,0,1
+E14000717,Great Yarmouth,Brandon Lewis,Con,Conservative,17,1,0,5,4,0,7
+E14000718,Greenwich and Woolwich,Matthew Pennycook,Lab,Labour,9,0,0,5,2,1,1
+E14000719,Guildford,Angela Joy Richardson,Con,Conservative,2,0,0,0,0,0,2
+E14000720,Hackney North and Stoke Newington,Diane Abbott,Lab,Labour,16,0,0,8,0,1,7
+E14000721,Hackney South and Shoreditch,Meg Hillier,Lab,Labour,19,1,0,12,2,0,4
+E14000722,Halesowen and Rowley Regis,James Morris,Con,Conservative,1,0,0,1,0,0,0
+E14000723,Halifax,Holly Walker-Lynch,Lab,Labour,10,2,0,5,1,0,2
+E14000724,Haltemprice and Howden,David Davis,Con,Conservative,8,5,0,1,0,1,1
+E14000725,Halton,Derek Twigg,Lab,Labour,4,1,0,0,0,0,3
+E14000726,Hammersmith,Andy Slaughter,Lab,Labour,11,0,0,9,1,1,0
+E14000727,Hampstead and Kilburn,Tulip Siddiq,Lab,Labour,9,0,0,8,0,0,1
+E14000728,Harborough,Neil O'Brien,Con,Conservative,3,0,0,0,0,0,3
+E14000729,Harlow,Robert Halfon,Con,Conservative,4,1,0,0,2,1,0
+E14000730,Harrogate and Knaresborough,Andrew Jones,Con,Conservative,2,0,1,1,0,0,0
+E14000731,Harrow East,Bob Blackman,Con,Conservative,12,3,0,7,0,1,1
+E14000732,Harrow West,Gareth Thomas,Lab,Labour,3,1,0,2,0,0,0
+E14000733,Hartlepool,Jill Mortimer,Con,Conservative,8,2,0,0,4,0,2
+E14000734,Harwich and North Essex,Bernard Jenkin,Con,Conservative,10,4,0,5,1,0,0
+E14000735,Hastings and Rye,Sally-Ann Hart,Con,Conservative,16,0,0,9,1,0,6
+E14000736,Havant,Alan Mak,Con,Conservative,2,0,0,0,1,0,1
+E14000737,Hayes and Harlington,John McDonnell,Lab,Labour,24,0,0,17,6,0,1
+E14000738,Hazel Grove,William Wragg,Con,Conservative,2,0,0,0,0,0,2
+E14000739,Hemel Hempstead,Mike Penning,Con,Conservative,1,0,0,1,0,0,0
+E14000740,Hemsworth,Jon Trickett,Lab,Labour,4,3,0,1,0,0,0
+E14000741,Hendon,Matthew Offord,Con,Conservative,3,1,0,1,0,0,1
+E14000742,Henley,John Howell,Con,Conservative,11,7,0,4,0,0,0
+E14000743,Hereford and South Herefordshire,Jesse Norman,Con,Conservative,23,7,0,6,1,0,9
+E14000744,Hertford and Stortford,Julie Marson,Con,Conservative,2,0,0,1,0,1,0
+E14000745,Hertsmere,Oliver Dowden,Con,Conservative,0,0,0,0,0,0,0
+E14000746,Hexham,Guy Opperman,Con,Conservative,36,24,0,9,1,0,2
+E14000747,Heywood and Middleton,Chris Clarkson,Con,Conservative,9,0,0,3,2,0,4
+E14000748,High Peak,Robert Largan,Con,Conservative,7,2,0,3,0,0,2
+E14000749,Hitchin and Harpenden,Bim Afolami,Con,Conservative,2,0,0,2,0,0,0
+E14000750,Holborn and St. Pancras,Keir Starmer,Lab,Labour,24,0,0,11,0,0,13
+E14000751,Hornchurch and Upminster,Julia Lopez,Con,Conservative,8,2,0,6,0,0,0
+E14000752,Hornsey and Wood Green,Catherine West,Lab,Labour,8,0,0,5,1,0,2
+E14000753,Horsham,Jeremy Quin,Con,Conservative,5,2,0,2,1,0,0
+E14000754,Houghton and Sunderland South,Bridget Phillipson,Lab,Labour,1,1,0,0,0,0,0
+E14000755,Hove,Peter Kyle,Lab,Labour,5,0,0,1,2,0,2
+E14000756,Huddersfield,Barry Sheerman,Lab,Labour,6,0,0,2,0,0,4
+E14000757,Huntingdon,Jonathan Djanogly,Con,Conservative,3,0,0,1,0,0,2
+E14000758,Hyndburn,Sara Britcliffe,Con,Conservative,5,0,0,2,0,0,3
+E14000759,Ilford North,Wes Streeting,Lab,Labour,1,0,0,0,1,0,0
+E14000760,Ilford South,Sam Tarry,Lab,Labour,3,0,0,1,2,0,0
+E14000761,Ipswich,Tom Hunt,Con,Conservative,1,0,0,1,0,0,0
+E14000762,Isle of Wight,Bob Seely,Con,Conservative,27,2,0,8,6,2,9
+E14000763,Islington North,Jeremy Corbyn,Lab,Labour,5,0,0,2,2,0,1
+E14000764,Islington South and Finsbury,Emily Thornberry,Lab,Labour,23,0,0,10,6,0,7
+E14000765,Jarrow,Kate Osborne,Lab,Labour,5,0,0,1,2,0,2
+E14000766,Keighley,Robbie Moore,Con,Conservative,5,0,0,2,1,1,1
+E14000767,Kenilworth and Southam,Jeremy Wright,Con,Conservative,18,5,0,1,0,3,9
+E14000768,Kensington,Felicity Buchan,Con,Conservative,35,0,0,29,1,1,4
+E14000769,Kettering,Philip Hollobone,Con,Conservative,1,0,0,1,0,0,0
+E14000770,Kingston and Surbiton,Ed Davey,LD,Liberal Democrat,6,0,0,3,2,0,1
+E14000771,Kingston upon Hull East,Karl Turner,Lab,Labour,0,0,0,0,0,0,0
+E14000772,Kingston upon Hull North,Diana Johnson,Lab,Labour,1,0,0,0,1,0,0
+E14000773,Kingston upon Hull West and Hessle,Emma Hardy,Lab,Labour,2,0,0,0,2,0,0
+E14000774,Kingswood,Damien Egan,Lab,Labour,4,1,0,1,2,0,0
+E14000775,Knowsley,George Howarth,Lab,Labour,2,0,0,0,1,0,1
+E14000776,Lancaster and Fleetwood,Cat Smith,Lab,Labour,7,2,0,3,1,0,1
+E14000777,Leeds Central,Hilary Benn,Lab,Labour,8,0,0,5,2,0,1
+E14000778,Leeds East,Richard Burgon,Lab,Labour,2,0,0,1,0,0,1
+E14000779,Leeds North East,Fabian Hamilton,Lab,Labour,0,0,0,0,0,0,0
+E14000780,Leeds North West,Alex Sobel,Lab,Labour,4,3,0,0,0,0,1
+E14000781,Leeds West,Rachel Reeves,Lab,Labour,0,0,0,0,0,0,0
+E14000782,Leicester East,Claudia Webbe,Lab,Labour,2,0,0,2,0,0,0
+E14000783,Leicester South,Jon Ashworth,Lab,Labour,6,0,0,3,0,0,3
+E14000784,Leicester West,Liz Kendall,Lab,Labour,2,0,0,1,0,0,1
+E14000785,Leigh,James Grundy,Con,Conservative,4,0,0,2,2,0,0
+E14000786,Lewes,Maria Caulfield,Con,Conservative,10,5,0,3,0,0,2
+E14000787,Lewisham East,Janet Daby,Lab,Labour,11,0,0,11,0,0,0
+E14000788,Lewisham West and Penge,Ellie Reeves,Lab,Labour,9,0,0,7,0,1,1
+E14000789,"Lewisham, Deptford",Vicky Foxcroft,Lab,Labour,7,0,0,4,1,0,2
+E14000790,Leyton and Wanstead,John Cryer,Lab,Labour,13,0,0,7,1,1,4
+E14000791,Lichfield,Michael Fabricant,Con,Conservative,7,5,0,2,0,0,0
+E14000792,Lincoln,Karl McCartney,Con,Conservative,13,1,0,2,6,0,4
+E14000793,"Liverpool, Riverside",Kim Johnson,Lab,Labour,7,0,0,2,0,1,4
+E14000794,"Liverpool, Walton",Dan Carden,Lab,Labour,4,0,0,0,0,1,3
+E14000795,"Liverpool, Wavertree",Paula Barker,Lab,Labour,4,0,0,0,0,0,4
+E14000796,"Liverpool, West Derby",Ian Byrne,Lab,Labour,0,0,0,0,0,0,0
+E14000797,Loughborough,Jane Hunt,Con,Conservative,8,0,0,5,2,1,0
+E14000798,Louth and Horncastle,Victoria Atkins,Con,Conservative,44,14,0,8,4,0,18
+E14000799,Ludlow,Philip Dunne,Con,Conservative,48,21,0,11,0,0,16
+E14000800,Luton North,Sarah Owen,Lab,Labour,0,0,0,0,0,0,0
+E14000801,Luton South,Rachel Hopkins,Lab,Labour,3,0,0,0,3,0,0
+E14000802,Macclesfield,David Rutley,Con,Conservative,5,2,0,0,0,0,3
+E14000803,Maidenhead,Theresa May,Con,Conservative,5,3,0,1,1,0,0
+E14000804,Maidstone and The Weald,Helen Grant,Con,Conservative,4,0,0,3,0,0,1
+E14000805,Makerfield,Yvonne Fovargue,Lab,Labour,2,0,0,2,0,0,0
+E14000806,Maldon,John Whittingdale,Con,Conservative,4,0,0,1,1,1,1
+E14000807,Manchester Central,Lucy Powell,Lab,Labour,6,0,0,2,1,0,3
+E14000808,"Manchester, Gorton",Afzal Khan,Lab,Labour,2,0,0,0,0,0,2
+E14000809,"Manchester, Withington",Jeff Smith,Lab,Labour,4,0,0,0,0,0,4
+E14000810,Mansfield,Ben Bradley,Con,Conservative,3,1,0,0,1,0,1
+E14000811,Meon Valley,Flick Drummond,Con,Conservative,3,2,0,1,0,0,0
+E14000812,Meriden,Saqib Bhatti,Con,Conservative,1,0,0,1,0,0,0
+E14000813,Mid Bedfordshire,Alistair Strathern,Lab,Labour,9,2,0,1,0,1,5
+E14000814,Mid Derbyshire,Pauline Latham,Con,Conservative,8,0,0,5,1,0,2
+E14000815,Mid Dorset and North Poole,Michael Tomlinson,Con,Conservative,21,20,0,1,0,0,0
+E14000816,Mid Norfolk,George Freeman,Con,Conservative,17,3,0,4,1,0,9
+E14000817,Mid Sussex,Mims Davies,Con,Conservative,3,1,0,0,1,0,1
+E14000818,Mid Worcestershire,Nigel Huddleston,Con,Conservative,17,4,0,4,0,1,8
+E14000819,Middlesbrough,Andy McDonald,Lab,Labour,0,0,0,0,0,0,0
+E14000820,Middlesbrough South and East Cleveland,Simon Clarke,Con,Conservative,7,4,0,1,1,1,0
+E14000821,Milton Keynes North,Ben Everitt,Con,Conservative,5,3,0,0,1,0,1
+E14000822,Milton Keynes South,Iain Stewart,Con,Conservative,0,0,0,0,0,0,0
+E14000823,Mitcham and Morden,Siobhain McDonagh,Lab,Labour,8,1,0,7,0,0,0
+E14000824,Mole Valley,Paul Beresford,Con,Conservative,8,2,0,4,0,1,1
+E14000825,Morecambe and Lunesdale,David Morris,Con,Conservative,6,1,0,2,0,0,3
+E14000826,Morley and Outwood,Andrea Jenkyns,Con,Conservative,3,1,1,1,0,0,0
+E14000827,New Forest East,Julian Lewis,Con,Conservative,4,2,0,0,0,0,2
+E14000828,New Forest West,Desmond Swayne,Con,Conservative,6,6,0,0,0,0,0
+E14000829,Newark,Robert Jenrick,Con,Conservative,29,5,0,10,2,0,12
+E14000830,Newbury,Laura Farris,Con,Conservative,12,3,0,4,0,3,2
+E14000831,Newcastle upon Tyne Central,Chi Onwurah,Lab,Labour,8,0,0,3,0,2,3
+E14000832,Newcastle upon Tyne East,Nick Brown,Lab,Labour,4,0,0,1,0,0,3
+E14000833,Newcastle upon Tyne North,Catherine McKinnell,Lab,Labour,4,3,0,1,0,0,0
+E14000834,Newcastle-under-Lyme,Aaron Bell,Con,Conservative,1,0,0,1,0,0,0
+E14000835,Newton Abbot,Anne Marie Morris,Con,Conservative,8,3,0,2,0,2,1
+E14000836,"Normanton, Pontefract and Castleford",Yvette Cooper,Lab,Labour,7,2,0,3,1,0,1
+E14000837,North Cornwall,Scott Mann,Con,Conservative,56,37,0,9,1,0,9
+E14000838,North Devon,Selaine Saxby,Con,Conservative,34,17,0,5,1,0,11
+E14000839,North Dorset,Simon Hoare,Con,Conservative,62,56,0,5,0,0,1
+E14000840,North Durham,Kevan Jones,Lab,Labour,3,0,0,2,1,0,0
+E14000841,North East Bedfordshire,Richard Fuller,Con,Conservative,14,6,0,1,0,2,5
+E14000842,North East Cambridgeshire,Steve Barclay,Con,Conservative,14,8,0,0,5,0,1
+E14000843,North East Derbyshire,Lee Rowley,Con,Conservative,3,0,0,1,2,0,0
+E14000844,North East Hampshire,Ranil Jayawardena,Con,Conservative,3,0,0,1,0,2,0
+E14000845,North East Hertfordshire,Oliver Heald,Con,Conservative,13,5,0,3,0,1,4
+E14000846,North East Somerset,Jacob Rees-Mogg,Con,Conservative,11,7,0,1,3,0,0
+E14000847,North Herefordshire,Bill Wiggin,Con,Conservative,32,11,0,7,1,0,13
+E14000848,North Norfolk,Duncan Charles Baker,Con,Conservative,13,1,0,5,1,1,5
+E14000849,North Shropshire,Helen Morgan,LD,Liberal Democrat,14,6,0,6,0,0,2
+E14000850,North Somerset,Liam Fox,Con,Conservative,6,2,0,2,0,0,2
+E14000851,North Swindon,Justin Tomlinson,Con,Conservative,3,3,0,0,0,0,0
+E14000852,North Thanet,Roger Gale,Con,Conservative,7,3,0,1,0,0,3
+E14000853,North Tyneside,Mary Glindon,Lab,Labour,1,0,0,0,0,0,1
+E14000854,North Warwickshire,Craig Tracey,Con,Conservative,13,3,0,9,0,0,1
+E14000855,North West Cambridgeshire,Shailesh Vara,Con,Conservative,16,3,0,2,0,0,11
+E14000856,North West Durham,Richard Holden,Con,Conservative,13,3,0,8,0,0,2
+E14000857,North West Hampshire,Kit Malthouse,Con,Conservative,3,2,0,1,0,0,0
+E14000858,North West Leicestershire,Andrew Bridgen,Con,Conservative,7,0,0,2,0,0,5
+E14000859,North West Norfolk,James Wild,Con,Conservative,13,2,0,3,1,0,7
+E14000860,North Wiltshire,James Gray,Con,Conservative,17,9,0,4,0,0,4
+E14000861,Northampton North,Michael Ellis,Con,Conservative,0,0,0,0,0,0,0
+E14000862,Northampton South,Andrew Lewer,Con,Conservative,1,0,0,1,0,0,0
+E14000863,Norwich North,Chloe Smith,Con,Conservative,1,0,0,0,1,0,0
+E14000864,Norwich South,Clive Lewis,Lab,Labour,12,1,0,11,0,0,0
+E14000865,Nottingham East,Nadia Whittome,Lab,Labour,9,0,0,0,7,0,2
+E14000866,Nottingham North,Alex Norris,Lab,Labour,0,0,0,0,0,0,0
+E14000867,Nottingham South,Lilian Greenwood,Lab,Labour,12,0,0,3,5,0,4
+E14000868,Nuneaton,Marcus Jones,Con,Conservative,3,0,0,3,0,0,0
+E14000869,Old Bexley and Sidcup,Louie French,Con,Conservative,1,0,0,1,0,0,0
+E14000870,Oldham East and Saddleworth,Debbie Abrahams,Lab,Labour,5,0,0,0,1,0,4
+E14000871,Oldham West and Royton,Jim McMahon,Lab,Labour,4,0,0,2,1,0,1
+E14000872,Orpington,Gareth Bacon,Con,Conservative,8,1,0,6,1,0,0
+E14000873,Oxford East,Anneliese Dodds,Lab,Labour,3,0,0,1,0,0,2
+E14000874,Oxford West and Abingdon,Layla Moran,LD,Liberal Democrat,1,1,0,0,0,0,0
+E14000875,Pendle,Andrew Stephenson,Con,Conservative,1,0,0,0,1,0,0
+E14000876,Penistone and Stocksbridge,Miriam Joy Cates,Con,Conservative,12,5,0,5,0,1,1
+E14000877,Penrith and The Border,Neil Hudson,Con,Conservative,57,24,0,18,3,0,12
+E14000878,Peterborough,Paul Bristow,Con,Conservative,17,13,0,2,0,0,2
+E14000879,"Plymouth, Moor View",Johnny Mercer,Con,Conservative,7,3,0,4,0,0,0
+E14000880,"Plymouth, Sutton and Devonport",Luke Pollard,Lab,Labour,13,5,0,8,0,0,0
+E14000881,Poole,Robert Syms,Con,Conservative,1,0,0,0,1,0,0
+E14000882,Poplar and Limehouse,Apsana Begum,Lab,Labour,14,0,0,8,2,0,4
+E14000883,Portsmouth North,Penny Mordaunt,Con,Conservative,6,0,0,5,0,0,1
+E14000884,Portsmouth South,Stephen Morgan,Lab,Labour,10,0,0,8,0,0,2
+E14000885,Preston,Mark Hendrick,Lab,Labour,5,0,0,1,1,0,3
+E14000886,Pudsey,Stuart Andrew,Con,Conservative,3,1,0,1,0,1,0
+E14000887,Putney,Fleur Anderson,Lab,Labour,3,0,0,2,1,0,0
+E14000888,Rayleigh and Wickford,Mark Francois,Con,Conservative,0,0,0,0,0,0,0
+E14000889,Reading East,Matt Rodda,Lab,Labour,3,0,0,2,1,0,0
+E14000890,Reading West,Alok Sharma,Con,Conservative,1,0,0,0,1,0,0
+E14000891,Redcar,Jacob Young,Con,Conservative,6,1,0,3,1,0,1
+E14000892,Redditch,Rachel Maclean,Con,Conservative,2,2,0,0,0,0,0
+E14000893,Reigate,Crispin Blunt,Con,Conservative,1,0,0,1,0,0,0
+E14000894,Ribble Valley,Nigel Evans,Con,Conservative,5,1,0,3,0,0,1
+E14000895,Richmond (Yorks),Rishi Sunak,Con,Conservative,35,19,0,13,1,0,2
+E14000896,Richmond Park,Sarah Olney,LD,Liberal Democrat,8,0,0,7,1,0,0
+E14000897,Rochdale,George Galloway,WPB,Workers Party of Britain,3,0,0,0,1,0,2
+E14000898,Rochester and Strood,Kelly Jane Tolhurst,Con,Conservative,12,0,0,10,1,0,1
+E14000899,Rochford and Southend East,James Duddridge,Con,Conservative,2,0,0,1,0,0,1
+E14000900,Romford,Andrew Richard Rosindell,Con,Conservative,2,0,0,1,1,0,0
+E14000901,Romsey and Southampton North,Caroline Nokes,Con,Conservative,7,6,0,0,0,1,0
+E14000902,Rossendale and Darwen,Jake Berry,Con,Conservative,8,0,0,2,2,0,4
+E14000903,Rother Valley,Alexander Stafford,Con,Conservative,1,0,0,1,0,0,0
+E14000904,Rotherham,Sarah Champion,Lab,Labour,4,4,0,0,0,0,0
+E14000905,Rugby,Mark Pawsey,Con,Conservative,8,8,0,0,0,0,0
+E14000906,"Ruislip, Northwood and Pinner",David Simmonds,Con,Conservative,15,6,0,8,1,0,0
+E14000907,Runnymede and Weybridge,Ben Spencer,Con,Conservative,3,0,0,1,1,1,0
+E14000908,Rushcliffe,Ruth Edwards,Con,Conservative,5,2,0,0,0,0,3
+E14000909,Rutland and Melton,Alicia Kearns,Con,Conservative,25,1,0,3,1,0,20
+E14000910,Saffron Walden,Kemi Badenoch,Con,Conservative,10,2,0,3,0,1,4
+E14000911,Salford and Eccles,Rebecca Long Bailey,Lab,Labour,8,0,0,1,3,0,4
+E14000912,Salisbury,John Glen,Con,Conservative,52,50,0,2,0,0,0
+E14000913,Scarborough and Whitby,Robert Goodwill,Con,Conservative,24,22,0,1,0,0,1
+E14000914,Scunthorpe,Holly Mumby-Croft,Con,Conservative,5,3,0,1,0,0,1
+E14000915,Sedgefield,Paul Howell,Con,Conservative,4,0,0,3,1,0,0
+E14000916,Sefton Central,Bill Esterson,Lab,Labour,3,1,0,1,0,0,1
+E14000917,Selby and Ainsty,Keir Mather,Lab,Labour,25,19,0,4,0,1,1
+E14000918,Sevenoaks,Laura Trott,Con,Conservative,3,1,0,1,0,1,0
+E14000919,Sheffield Central,Paul Blomfield,Lab,Labour,7,1,0,5,0,0,1
+E14000920,Sheffield South East,Clive Betts,Lab,Labour,0,0,0,0,0,0,0
+E14000921,"Sheffield, Brightside and Hillsborough",Gill Furniss,Lab,Labour,2,1,0,0,0,0,1
+E14000922,"Sheffield, Hallam",Olivia Frances Blake,Lab,Labour,5,4,0,1,0,0,0
+E14000923,"Sheffield, Heeley",Louise Haigh,Lab,Labour,2,0,0,0,0,1,1
+E14000924,Sherwood,Mark Spencer,Con,Conservative,9,2,0,4,1,0,2
+E14000925,Shipley,Philip Davies,Con,Conservative,4,2,0,0,0,1,1
+E14000926,Shrewsbury and Atcham,Daniel Kawczynski,Con,Conservative,20,6,0,9,0,0,5
+E14000927,Sittingbourne and Sheppey,Gordon Henderson,Con,Conservative,14,0,0,3,8,0,3
+E14000928,Skipton and Ripon,Julian Smith,Con,Conservative,16,9,1,3,1,1,1
+E14000929,Sleaford and North Hykeham,Caroline Johnson,Con,Conservative,21,4,0,3,2,1,11
+E14000930,Slough,Tan Dhesi,Lab,Labour,0,0,0,0,0,0,0
+E14000931,Solihull,Julian Knight,Con,Conservative,0,0,0,0,0,0,0
+E14000932,Somerton and Frome,Sarah Dyke,LD,Liberal Democrat,28,6,0,8,0,1,13
+E14000933,South Basildon and East Thurrock,Stephen Metcalfe,Con,Conservative,3,1,0,1,1,0,0
+E14000934,South Cambridgeshire,Anthony Browne,Con,Conservative,14,10,0,0,0,0,4
+E14000935,South Derbyshire,Heather Wheeler,Con,Conservative,17,2,0,10,0,1,4
+E14000936,South Dorset,Richard Drax,Con,Conservative,43,36,0,7,0,0,0
+E14000937,South East Cambridgeshire,Lucy Frazer,Con,Conservative,10,6,0,1,2,0,1
+E14000938,South East Cornwall,Sheryll Murray,Con,Conservative,80,65,0,11,0,0,4
+E14000939,South Holland and The Deepings,John Hayes,Con,Conservative,12,4,0,3,2,0,3
+E14000940,South Leicestershire,Alberto Costa,Con,Conservative,2,0,0,0,0,0,2
+E14000941,South Norfolk,Richard Bacon,Con,Conservative,9,2,0,1,1,0,5
+E14000942,South Northamptonshire,Andrea Leadsom,Con,Conservative,17,6,0,4,1,0,6
+E14000943,South Ribble,Katherine Fletcher,Con,Conservative,3,2,0,0,0,0,1
+E14000944,South Shields,Emma Lewell-Buck,Lab,Labour,2,0,0,1,1,0,0
+E14000945,South Staffordshire,Gavin Williamson,Con,Conservative,3,2,0,1,0,0,0
+E14000946,South Suffolk,James Cartlidge,Con,Conservative,5,3,0,1,0,0,1
+E14000947,South Swindon,Robert Buckland,Con,Conservative,8,7,0,1,0,0,0
+E14000948,South Thanet,Craig Mackinlay,Con,Conservative,9,3,0,2,0,0,4
+E14000949,South West Bedfordshire,Andrew Selous,Con,Conservative,2,1,0,1,0,0,0
+E14000950,South West Devon,Gary Streeter,Con,Conservative,65,56,0,6,0,0,3
+E14000951,South West Hertfordshire,Gagan Mohindra,Con,Conservative,0,0,0,0,0,0,0
+E14000952,South West Norfolk,Elizabeth Truss,Con,Conservative,29,2,0,9,1,0,17
+E14000953,South West Surrey,Jeremy Hunt,Con,Conservative,1,1,0,0,0,0,0
+E14000954,South West Wiltshire,Andrew Murrison,Con,Conservative,30,25,0,4,0,0,1
+E14000955,"Southampton, Itchen",Royston Smith,Con,Conservative,3,0,0,2,1,0,0
+E14000956,"Southampton, Test",Alan Whitehead,Lab,Labour,1,0,0,0,0,0,1
+E14000957,Southend West,Anna Firth,Con,Conservative,1,0,0,0,1,0,0
+E14000958,Southport,Damien Moore,Con,Conservative,5,0,0,0,4,0,1
+E14000959,Spelthorne,Kwasi Kwarteng,Con,Conservative,1,0,0,0,0,0,1
+E14000960,St. Albans,Daisy Cooper,LD,Liberal Democrat,2,0,0,2,0,0,0
+E14000961,St. Austell and Newquay,Steve Double,Con,Conservative,15,7,0,8,0,0,0
+E14000962,St. Helens North,Conor McGinn,Lab,Labour,2,1,0,1,0,0,0
+E14000963,St. Helens South and Whiston,Marie Rimmer,Lab,Labour,11,2,0,3,3,0,3
+E14000964,St. Ives,Derek Thomas,Con,Conservative,93,82,0,7,0,0,4
+E14000965,Stafford,Theo Clarke,Con,Conservative,4,2,0,1,1,0,0
+E14000966,Staffordshire Moorlands,Karen Bradley,Con,Conservative,13,6,0,7,0,0,0
+E14000967,Stalybridge and Hyde,Jonathan Reynolds,Lab,Labour,5,0,0,1,1,0,3
+E14000968,Stevenage,Stephen McPartland,Con,Conservative,4,0,0,1,3,0,0
+E14000969,Stockport,Navendu Mishra,Lab,Labour,8,0,0,1,1,0,6
+E14000970,Stockton North,Alex Cunningham,Lab,Labour,2,0,0,2,0,0,0
+E14000971,Stockton South,Matt Vickers,Con,Conservative,0,0,0,0,0,0,0
+E14000972,Stoke-on-Trent Central,Jo Gideon,Con,Conservative,3,0,0,1,0,0,2
+E14000973,Stoke-on-Trent North,Jonathan Edward Gullis,Con,Conservative,5,0,0,4,0,0,1
+E14000974,Stoke-on-Trent South,Jack Edgar Brereton,Con,Conservative,2,0,0,1,0,0,1
+E14000975,Stone,Bill Cash,Con,Conservative,6,2,0,3,1,0,0
+E14000976,Stourbridge,Suzanne Webb,Con,Conservative,2,0,0,0,2,0,0
+E14000977,Stratford-on-Avon,Nadhim Zahawi,Con,Conservative,10,6,0,2,0,0,2
+E14000978,Streatham,Bell Ribeiro-Addy,Lab,Labour,7,0,0,5,1,0,1
+E14000979,Stretford and Urmston,Andrew Western,Lab,Labour,3,0,0,0,2,0,1
+E14000980,Stroud,Siobhan Baillie,Con,Conservative,14,1,0,2,2,0,9
+E14000981,Suffolk Coastal,Thérèse Coffey,Con,Conservative,17,6,0,6,0,1,4
+E14000982,Sunderland Central,Julie Elliott,Lab,Labour,6,0,0,1,3,0,2
+E14000983,Surrey Heath,Michael Gove,Con,Conservative,0,0,0,0,0,0,0
+E14000985,Sutton Coldfield,Andrew Mitchell,Con,Conservative,1,0,0,0,1,0,0
+E14000984,Sutton and Cheam,Paul Scully,Con,Conservative,0,0,0,0,0,0,0
+E14000986,Tamworth,Sarah Edwards,Lab,Labour,3,0,0,1,1,0,1
+E14000987,Tatton,Esther McVey,Con,Conservative,6,2,0,3,1,0,0
+E14000988,Taunton Deane,Rebecca Pow,Con,Conservative,15,9,0,5,1,0,0
+E14000989,Telford,Lucy Allan,Con,Conservative,3,1,0,1,0,0,1
+E14000990,Tewkesbury,Laurence Robertson,Con,Conservative,14,6,0,6,0,0,2
+E14000991,The Cotswolds,Geoffrey Robert Clifton-Brown,Con,Conservative,33,21,0,6,1,0,5
+E14000992,The Wrekin,Mark Pritchard,Con,Conservative,9,5,0,3,0,0,1
+E14000993,Thirsk and Malton,Kevin Hollinrake,Con,Conservative,107,88,0,13,0,1,5
+E14000994,Thornbury and Yate,Luke Hall,Con,Conservative,10,1,0,6,0,1,2
+E14000995,Thurrock,Jackie Doyle-Price,Con,Conservative,3,0,0,1,0,1,1
+E14000996,Tiverton and Honiton,Richard Foord,LD,Liberal Democrat,23,15,0,4,2,0,2
+E14000997,Tonbridge and Malling,Tom Tugendhat,Con,Conservative,3,2,0,0,0,1,0
+E14000998,Tooting,Rosena Allin-Khan,Lab,Labour,2,0,0,2,0,0,0
+E14000999,Torbay,Kevin Foster,Con,Conservative,8,1,0,4,0,2,1
+E14001000,Torridge and West Devon,Geoffrey Cox,Con,Conservative,133,109,0,9,0,0,15
+E14001001,Totnes,Anthony Mangnall,Con,Conservative,57,41,0,5,0,1,10
+E14001002,Tottenham,David Lammy,Lab,Labour,13,0,0,6,4,0,3
+E14001003,Truro and Falmouth,Cherilyn Mackrory,Con,Conservative,24,16,0,5,0,1,2
+E14001004,Tunbridge Wells,Greg Clark,Con,Conservative,6,2,0,1,1,2,0
+E14001005,Twickenham,Munira Wilson,LD,Liberal Democrat,9,0,0,8,1,0,0
+E14001006,Tynemouth,Alan Campbell,Lab,Labour,0,0,0,0,0,0,0
+E14001007,Uxbridge and South Ruislip,Steve Tuckwell,Con,Conservative,8,0,0,5,2,0,1
+E14001008,Vauxhall,Florence Eshalomi,Lab,Labour,5,0,0,4,1,0,0
+E14001009,Wakefield,Simon Lightwood,Lab,Labour,2,0,0,2,0,0,0
+E14001010,Wallasey,Angela Eagle,Lab,Labour,5,0,0,1,0,0,4
+E14001011,Walsall North,Eddie Hughes,Con,Conservative,3,0,0,0,2,0,1
+E14001012,Walsall South,Valerie Vaz,Lab,Labour,6,0,0,0,4,1,1
+E14001013,Walthamstow,Stella Creasy,Lab,Labour,3,0,0,2,0,0,1
+E14001014,Wansbeck,Ian Lavery,Lab,Labour,5,1,0,4,0,0,0
+E14001015,Wantage,David Johnston,Con,Conservative,10,7,0,1,0,0,2
+E14001016,Warley,John Francis Spellar,Lab,Labour,4,1,0,2,0,0,1
+E14001017,Warrington North,Charlotte Nichols,Lab,Labour,2,1,0,0,1,0,0
+E14001018,Warrington South,Andy Carter,Con,Conservative,5,0,0,1,2,0,2
+E14001019,Warwick and Leamington,Matt Western,Lab,Labour,9,4,0,2,0,1,2
+E14001020,Washington and Sunderland West,Sharon Hodgson,Lab,Labour,3,0,0,2,0,0,1
+E14001021,Watford,Dean Russell,Con,Conservative,2,0,0,2,0,0,0
+E14001022,Waveney,Peter Aldous,Con,Conservative,11,1,0,5,1,0,4
+E14001023,Wealden,Nus Ghani,Con,Conservative,4,2,0,0,0,1,1
+E14001024,Weaver Vale,Mike Amesbury,Lab,Labour,6,2,0,3,1,0,0
+E14001025,Wellingborough,Gen Kitchen,Lab,Labour,1,1,0,0,0,0,0
+E14001026,Wells,James Heappey,Con,Conservative,24,17,0,2,0,0,5
+E14001027,Welwyn Hatfield,Grant Shapps,Con,Conservative,3,0,0,3,0,0,0
+E14001028,Wentworth and Dearne,John Healey,Lab,Labour,8,4,0,3,0,0,1
+E14001029,West Bromwich East,Nicola Faye Richards,Con,Conservative,2,0,0,1,0,1,0
+E14001030,West Bromwich West,Shaun Stephen Bailey,Con,Conservative,0,0,0,0,0,0,0
+E14001031,West Dorset,Chris Loder,Con,Conservative,82,71,0,8,0,1,2
+E14001032,West Ham,Lyn Brown,Lab,Labour,11,0,0,9,2,0,0
+E14001033,West Lancashire,Ashley Dalton,Lab,Labour,12,3,0,5,1,1,2
+E14001034,West Suffolk,Matt Hancock,Con,Conservative,12,5,0,2,3,0,2
+E14001035,West Worcestershire,Harriett Mary Morrison Baldwin,Con,Conservative,13,3,0,2,0,1,7
+E14001036,Westminster North,Karen Buck,Lab,Labour,5,0,0,3,0,0,2
+E14001037,Westmorland and Lonsdale,Tim Farron,LD,Liberal Democrat,23,11,0,8,1,0,3
+E14001038,Weston-Super-Mare,John Penrose,Con,Conservative,3,2,0,1,0,0,0
+E14001039,Wigan,Lisa Nandy,Lab,Labour,3,0,0,2,0,0,1
+E14001040,Wimbledon,Stephen Hammond,Con,Conservative,7,0,0,6,0,1,0
+E14001041,Winchester,Steve Brine,Con,Conservative,5,4,0,0,0,0,1
+E14001042,Windsor,Adam Afriyie,Con,Conservative,3,0,0,2,0,1,0
+E14001043,Wirral South,Alison McGovern,Lab,Labour,4,1,0,2,0,1,0
+E14001044,Wirral West,Margaret Greenwood,Lab,Labour,1,0,0,0,0,0,1
+E14001045,Witham,Priti Patel,Con,Conservative,7,2,0,3,2,0,0
+E14001046,Witney,Robert Alexander Courts,Con,Conservative,8,7,0,0,0,0,1
+E14001047,Woking,Jonathan Lord,Con,Conservative,4,0,0,1,2,1,0
+E14001048,Wokingham,John Redwood,Con,Conservative,4,1,0,2,0,1,0
+E14001049,Wolverhampton North East,Jane Stevenson,Con,Conservative,0,0,0,0,0,0,0
+E14001050,Wolverhampton South East,Pat McFadden,Lab,Labour,4,0,0,2,0,0,2
+E14001051,Wolverhampton South West,Stuart Paul Anderson,Con,Conservative,2,0,0,0,0,0,2
+E14001052,Worcester,Robin Walker,Con,Conservative,5,2,0,1,1,0,1
+E14001053,Workington,Mark Jenkinson,Con,Conservative,13,4,0,2,2,0,5
+E14001054,Worsley and Eccles South,Barbara Keeley,Lab,Labour,1,0,0,0,0,0,1
+E14001055,Worthing West,Peter Bottomley,Con,Conservative,2,0,0,1,0,0,1
+E14001056,Wycombe,Steve Baker,Con,Conservative,3,2,0,0,0,1,0
+E14001058,Wyre Forest,Mark Garnier,Con,Conservative,4,0,0,3,0,0,1
+E14001057,Wyre and Preston North,Ben Wallace,Con,Conservative,1,0,0,1,0,0,0
+E14001059,Wythenshawe and Sale East,Mike Kane,Lab,Labour,2,0,0,2,0,0,0
+E14001060,Yeovil,Marcus Fysh,Con,Conservative,12,3,0,4,0,1,4
+E14001061,York Central,Rachael Maskell,Lab,Labour,1,0,0,0,0,0,1
+E14001062,York Outer,Julian Sturdy,Con,Conservative,0,0,0,0,0,0,0

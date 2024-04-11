@@ -133,15 +133,15 @@ foreach $t (sort(keys(%{$types}))){
 }
 @typ = sort(@typ);
 
-my $csv = "PCON10CD,Name,MP,Party";
+my $csv = "PCON10CD,Name,MP,Party short,Party";
 for($t=0;$t < @typ;$t++){
 	$csv .= ",Type";
 }
-$csv .= "\n,,,";
+$csv .= "\n,,,,";
 for($t=0;$t < @typ;$t++){
 	$csv .= ",".$typ[$t];
 }
-$csv .= "\n---,---,---,---";
+$csv .= "\n---,---,---,---,---";
 for($t=0;$t< @typ;$t++){
 	$csv .= ",---";
 }
@@ -154,7 +154,7 @@ foreach $pcon (sort(keys(%{$constituencies}))){
 		$pname = $constituencies->{$pcon}{'Historic England Name'}||$pcon;
 		$csv .= $pid.",".($pcon =~ /,/ ? "\"$pname\"" : $pname);
 		$csv .= ",".$mpdata->{$pid}{'MP'};
-		$csv .= ",".$mpdata->{$pid}{'Party'};
+		$csv .= ",".$mpdata->{$pid}{'Party'}.",".updatePartyName($mpdata->{$pid}{'Party'});
 		for($t=0;$t< @typ;$t++){
 			$csv .= ",".($counts->{$pid}{'types'}{$typ[$t]}||"0");
 		}
@@ -397,4 +397,20 @@ sub getCSV {
 	}else{
 		return @features;
 	}
+}
+
+sub updatePartyName {
+	my $party = shift;
+
+	if($party eq "Con"){ $party = "Conservative"; }
+	elsif($party eq "Lab"){ $party = "Labour"; }
+	elsif($party eq "LD" || $party eq "LDem"){ $party = "Liberal Democrat"; }
+	elsif($party eq "Grn"){ $party = "Green"; }
+	elsif($party eq "PC"){ $party = "Plaid Cymru"; }
+	elsif($party eq "Ind"){ $party = "Independent"; }
+	elsif($party eq "SF"){ $party = "Sinn Féin"; }
+	elsif($party eq "WPB"){ $party = "Workers Party of Britain"; }
+	elsif($party eq "Spk"){ $party = "Speaker"; }
+
+	return $party;
 }
