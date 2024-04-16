@@ -8,16 +8,10 @@ import { walkSync } from 'std/fs/mod.ts';
 import sitemap from "lume/plugins/sitemap.ts";		// To build a site map
 
 // Importing the OI Lume charts and utilities
-import oiCharts from "https://deno.land/x/oi_lume_viz@v0.14.12/mod.ts";
-import autoDependency from "https://deno.land/x/oi_lume_utils@v0.3.6/processors/auto-dependency.ts";
-import csvLoader from "https://deno.land/x/oi_lume_utils@v0.3.6/loaders/csv-loader.ts";
+import oiCharts from "https://deno.land/x/oi_lume_viz@v0.14.13/mod.ts";
+import autoDependency from "https://deno.land/x/oi_lume_utils@v0.4.0/processors/auto-dependency.ts";
+import csvLoader from "https://deno.land/x/oi_lume_utils@v0.4.0/loaders/csv-loader.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
-
-// A slightly pointless function for now but will let us add arguments to csvLoader
-async function csvLoaderSimple(path) {
-  return csvLoader(path);
-}
-
 
 const site = lume({
   src: './src',
@@ -32,7 +26,7 @@ site.use(sitemap({
 
 // Register a series of extensions to be loaded by the OI CSV loader
 // https://lume.land/docs/core/loaders/
-site.loadData([".csv", ".tsv", ".dat"], csvLoaderSimple);
+site.loadData([".csv", ".tsv", ".dat"], csvLoader({ basic: true }));
 site.loadData([".geojson"], jsonLoader);
 site.loadData([".hexjson"], jsonLoader);
 
