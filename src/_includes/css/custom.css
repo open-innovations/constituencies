@@ -46,7 +46,7 @@ input[type="range"].oi-slider-control:focus::-moz-range-thumb{ outline: 4px soli
 .oi-table table { border-collapse: collapse; }
 .oi-table table th { font-family: Poppins; }
 .oi-table table th,.oi-table table td { border-bottom: 1px solid #dfdfdf; }
-.oi-table table tr:hover { background: #dfdfdf; }
+.oi-table table tbody tr:hover { background: #dfdfdf; }
 .oi-map .data-layer > .outline * {
 	stroke: red;
 	stroke-width: 4px;

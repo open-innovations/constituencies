@@ -12,7 +12,7 @@ title: Search
 <noscript><p>Here is a list of hex cartograms you can view...</p></noscript>
 
 <ul id="pages">
-  {% for page in search.pages("theme_page theme!=undefined !draft created!=undefined", "order created=desc") %}
+  {% for page in search.pages("theme_page theme!=undefined !searchignore !draft created!=undefined", "order created=desc") %}
   <li data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}"><div class="page-title">{{ data.themes[page.theme].icon | safe }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
   {% endfor %}
 </ul>
