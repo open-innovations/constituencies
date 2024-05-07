@@ -9,6 +9,7 @@ keywords: [land,right-of-way,access,public,countryside]
 ---
 
 <p>The percentage of land in each of the future UK Parliamentary Constituencies that has public access rights under the Countryside and Rights Of Way Act, Section 15 Land.</p>
+<p>See also: <a href="../green-belt/">Green Belt (England)</a>.</p>
 
 {% comp 'hexmap', {
 	"config": {
@@ -51,7 +52,7 @@ keywords: [land,right-of-way,access,public,countryside]
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Percentage of land: <strong>{{ Percentage | toFixed(1) | toLocaleString() }}%</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />{{ Area | multiply(0.0001) | toFixed(0) | toLocaleString() }} hectares ({{ Percentage | toFixed(1) | toLocaleString() }}%)",
 		"attribution": "Data: <a href=\"https://environment.data.gov.uk/explore/72eda560-eee8-4667-a588-b5289c4ae011?download=true\">CRoW Act 2000 - Section 15 Land</a>, Natural England/Defra (OGLv3)"
 	},
 	"download": {"text": "CRoW Act 2000 - Section 15 Land", "type": "CSV"}
