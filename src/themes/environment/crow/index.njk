@@ -1,0 +1,60 @@
+---
+title: Countryside and Rights of Way (England)
+theme: environment
+created: 2024-05-07T17:30
+updated: 2024-05-07T17:30
+description: |
+  Land subject to pre-existing public access rights under the Countryside and Rights Of Way Act, Section 15 Land (England)
+keywords: [land,right-of-way,access,public,countryside]
+---
+
+<p>The percentage of land in each of the future UK Parliamentary Constituencies that has public access rights under the Countryside and Rights Of Way Act, Section 15 Land.</p>
+
+{% comp 'hexmap', {
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": "sources.environment.CROW",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Percentage",
+		"scale": "#dfdfdf 0%, #0DBC37 100%",
+		"min": 0,
+		"max": 25,
+		"matchKey": "Code",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 15,
+				"label": "15%"
+			},{
+				"value": 10,
+				"label": "10%"
+			},{
+				"value": 5,
+				"label": "5%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Percentage of land: <strong>{{ Percentage | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://environment.data.gov.uk/explore/72eda560-eee8-4667-a588-b5289c4ae011?download=true\">CRoW Act 2000 - Section 15 Land</a>, Natural England/Defra (OGLv3)"
+	},
+	"download": {"text": "CRoW Act 2000 - Section 15 Land", "type": "CSV"}
+} %}{% endcomp %}
+
+	
