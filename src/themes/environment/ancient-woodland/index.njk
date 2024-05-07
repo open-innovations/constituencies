@@ -1,21 +1,21 @@
 ---
-title: Countryside and Rights of Way (England)
+title: Ancient woodland (England)
 theme: environment
-created: 2024-05-07T17:30
-updated: 2024-05-07T17:30
+created: 2024-05-07T18:30
+updated: 2024-05-07T18:30
 description: |
-  Land subject to pre-existing public access rights under the Countryside and Rights Of Way Act, Section 15 Land (England)
-keywords: [land,right-of-way,access,public,countryside]
+  An area designated as ancient woodland by Natural England.
+keywords: [ancient,woodland]
 ---
 
-<p>The percentage of land in each of the future UK Parliamentary Constituencies that has public access rights under the Countryside and Rights Of Way Act, Section 15 Land.</p>
+<p>The percentage of land in each of the future UK Parliamentary Constituencies that is classed as ancient woodland.</p>
 <p>See also: <a href="../green-belt/">Green Belt (England)</a>.</p>
 
 {% comp 'hexmap', {
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2023",
-		"data": "sources.environment.CROW",
+		"data": "sources.environment.ancient-woodland",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ n }}"
@@ -23,14 +23,11 @@ keywords: [land,right-of-way,access,public,countryside]
 		"value": "Percentage",
 		"scale": "#dfdfdf 0%, #0DBC37 100%",
 		"min": 0,
-		"max": 25,
+		"max": 20,
 		"matchKey": "Code",
 		"legend":{
 			"position": "top right",
 			"items": [{
-				"value": 25,
-				"label": "25%"
-			},{
 				"value": 20,
 				"label": "20%"
 			},{
@@ -53,9 +50,9 @@ keywords: [land,right-of-way,access,public,countryside]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ Area | multiply(0.0001) | toFixed(0) | toLocaleString() }} hectares ({{ Percentage | toFixed(1) | toLocaleString() }}%)",
-		"attribution": "Data: <a href=\"https://environment.data.gov.uk/explore/72eda560-eee8-4667-a588-b5289c4ae011?download=true\">CRoW Act 2000 - Section 15 Land</a>, Natural England/Defra (OGLv3)"
+		"attribution": "Data: <a href=\"https://www.planning.data.gov.uk/dataset/ancient-woodland\">Ancient woodland</a>, Natural England and contains Ordnance Survey data © Crown copyright and database right 2024 (OGLv3)"
 	},
-	"download": {"text": "CRoW Act 2000 - Section 15 Land", "type": "CSV"}
+	"download": {"text": "Ancient woodland", "type": "CSV"}
 } %}{% endcomp %}
 
 <p>This was created by finding the area of overlap in QGIS.</p>
