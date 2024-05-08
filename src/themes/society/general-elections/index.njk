@@ -2,7 +2,7 @@
 title: General Elections (UK)
 theme: society
 created: 2023-08-24T15:05
-updated: 2024-05-02T19:00
+updated: 2024-05-08T13:40
 description: |
   General Election results by constituency (UK).
 ---
@@ -30,15 +30,17 @@ description: |
 			'Spk':'#909090',
 			'XSpk':'#909090',
 			'Monster':'#cccccc',
-			'WPB':'#1e28d8',
-			'none':'#dfdfdf'
+			'WPB':'#539acb',
+			'none':'#dfdfdf',
+			'Alba':'#0015ff',
+			'Ref':'#09d2e0'
 		},
 		width: 600,
 		hexjson: "hexjson.constituencies",
 		data: "sources.society.general-elections",
 		columns: [{
 			name: "filterLabel",
-			template: "{{ n }} ({{ a }})"
+			template: "{{ n }}, {{ a }} ({{Current MP }})"
 		}],
 		value: "Current",
 		matchKey: "const_id",
@@ -52,7 +54,7 @@ description: |
 				label: "Lab"
 			},{
 				colour: "LD",
-				label: "LDem"
+				label: "Lib Dem"
 			},{
 				colour: "SNP",
 				label: "SNP"
@@ -61,13 +63,10 @@ description: |
 				label: "PC"
 			},{
 				colour: "Green",
-				label: "Grn"
+				label: "Green"
 			},{
 				colour: "UKIP",
 				label: "UKIP"
-			},{
-				colour: "Ind",
-				label: "Ind"
 			},{
 				colour: "DUP",
 				label: "DUP"
@@ -87,8 +86,17 @@ description: |
 				colour: "WPB",
 				label: "WPB"
 			},{
+				colour: "Alba",
+				label: "Alba"
+			},{
+				colour: "Ref",
+				label: "Reform"
+			},{
+				colour: "Ind",
+				label: "Ind"
+			},{
 				colour: "Spk",
-				label: "Spk"
+				label: "Speaker"
 			}]
 		},
 		tools: {
@@ -98,17 +106,17 @@ description: |
 			slider: {
 				columns: ['GE 2010','GE 2015','GE 2017','GE 2019','Current'],
 				width: "500px",
-				position: "top"
+				position: "bottom"
 			}
 		},
 		tooltip: "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
-		attribution: 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+		attribution: 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), <a href="https://en.wikipedia.org/wiki/List_of_elected_British_politicians_who_have_changed_party_affiliation">Changes to party affiliation</a> (Wikipedia), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 },
 	"download": {"text": "General Election results by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
 <h2>Notes</h2>
-<p>For the "Current" position on the slider, we have applied <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a> up to 2nd May 2024.</p>
+<p>For the "Current" position on the slider, we have applied <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">the results of by-elections since 2019</a> and defections up to 8th May 2024.</p>
 
 
 
@@ -140,7 +148,7 @@ description: |
 					}
 				},
 				"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: {{ {{ _value }} }} / {{ {{ _value }} MP }}<br />Turnout:<br />2019: <strong>{{ GE 2019 turnout }}%</strong><br />2017: <strong>{{ GE 2017 turnout }}%</strong><br />2015: <strong>{{ GE 2015 turnout }}%</strong><br />2010 <strong>{{ GE 2010 turnout | toFixed(1) }}%</strong>",
-				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
+				"attribution": 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), <a href="https://en.wikipedia.org/wiki/List_of_elected_British_politicians_who_have_changed_party_affiliation">Changes to party affiliation</a> (Wikipedia), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 			},
 			"download": {"text": "General Election results by constituency", "type": "CSV"}
 		} %}{% endcomp %}
@@ -248,7 +256,7 @@ description: |
 
 	{% comp 'layout.panelSelector.panel', { id: "current", title: "Now", classes: "doublepadded" } %}
 
-		<h3>As of 2nd May 2024</h3>
+		<h3>As of 8th May 2024</h3>
 		{% comp 'wrapper', {
 			"component": comp.oi.map.hex_cartogram,
 			"config": {
