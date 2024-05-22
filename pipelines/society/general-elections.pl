@@ -28,8 +28,6 @@ foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pco
 
 saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
 
-print Dumper strftime();
-
 
 #######################
 
@@ -64,7 +62,7 @@ sub saveSummary {
 		$list = "";
 		if(defined($con->{$pcon}{'list'})){
 			for($i = 0; $i < @{$con->{$pcon}{'list'}}; $i++){
-				$list .= ($i == 0 ? "":"<br />")."<a href='https://candidates.democracyclub.org.uk/person/$con->{$pcon}{'list'}[$i]{'id'}/'>".$con->{$pcon}{'list'}[$i]{'name'}."</a> (".$con->{$pcon}{'list'}[$i]{'party'}.")";
+				$list .= ($i == 0 ? "":"<br />")."<a href='https://whocanivotefor.co.uk/person/$con->{$pcon}{'list'}[$i]{'id'}/'>".$con->{$pcon}{'list'}[$i]{'name'}."</a> (".$con->{$pcon}{'list'}[$i]{'party'}.")";
 			}
 		}
 		$csv .= ",\"$list\"";
