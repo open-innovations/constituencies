@@ -1,8 +1,12 @@
 #!/usr/bin/perl
 
-use utf8;
 use warnings;
 use strict;
+use utf8;
+use JSON::XS;
+use open qw(:std :encoding(UTF-8));
+binmode(STDOUT, ":utf8");
+binmode(STDIN, ":encoding(UTF-8)");
 
 ################
 # Subroutines
@@ -42,21 +46,15 @@ sub warning {
 	msg($str,"STDERR");
 }
 
-sub LoadCSV {
-	# version 1.2
-	my $file = shift;
+# Version 1.3
+sub ParseCSV {
+	my $str = shift;
 	my $config = shift;
+	my (@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2,$compact,$sline,$col);
 
-	my (@lines,$str,@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2,$compact,$sline,$col);
 	$compact = $config->{'compact'};
 	$sline = $config->{'startrow'}||0;
 	$col = $config->{'key'};
-
-	msg("Processing CSV from <cyan>$file<none>\n");
-	open(FILE,"<:utf8",$file);
-	@lines = <FILE>;
-	close(FILE);
-	$str = join("",@lines);
 
 	$n = () = $str =~ /\r\n/g;
 	$n2 = () = $str =~ /\n/g;
@@ -104,6 +102,18 @@ sub LoadCSV {
 	}else{
 		return @features;
 	}
+}
+
+sub LoadCSV {
+	# version 1.3
+	my $file = shift;
+	my $config = shift;
+	
+	msg("Processing CSV from <cyan>$file<none>\n");
+	open(FILE,"<:utf8",$file);
+	my @lines = <FILE>;
+	close(FILE);
+	return ParseCSV(join("",@lines),$config);
 }
 
 sub LoadJSON {
