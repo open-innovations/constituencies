@@ -1,0 +1,64 @@
+---
+title: Car or van availability (England & Wales)
+theme: transport
+created: 2024-05-22T15:50
+updated: 2024-05-22T15:50
+description: |
+  The availability of cars or vans by household from the 2021 Census
+keywords: [car,van,transport,household]
+---
+
+<p>The availability of cars or vans by household from the 2021 Census.</p>
+
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": "sources.transport.car-or-van-availability",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "1 or more cars or vans in household %",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON25CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["No cars or vans in household %","1 or more cars or vans in household %"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />One or more cars or vans: <strong>{{ 1 or more cars or vans in household % }}% / {{ 1 or more cars or vans in household | toLocaleString() }}</strong><br />No cars or vans: <strong>{{ No cars or vans in household % }}% / {{ No cars or vans in household | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.ons.gov.uk/datasets/RM015/editions/2021/versions/3\">Distance travelled to work by car or van availability</a> (ONS)"
+	},
+	"download": {"text": "Car or van availability", "type": "CSV"}
+} %}{% endcomp %}
+
+
+<h2>Notes{% comp 'anchor', { 'ref': 'notes'} %}{% endcomp %}</h2>
+<p>Percentages are calculated from the household figures and have been rounded to one decimal place so may not add up to 100%.</p>
