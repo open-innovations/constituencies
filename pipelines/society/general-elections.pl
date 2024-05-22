@@ -77,13 +77,13 @@ sub saveSummary {
 sub getCandidates {
 	my (@lines,$file,$fh,@candidates);
 	$file = $basedir."ge-2024-candidates.csv";
-	if(-e $file){
-		open($fh,"<:utf8",$file);
-		@lines = <$fh>;
-		close($fh);
-	}else{
+#	if(-e $file){
+#		open($fh,"<:utf8",$file);
+#		@lines = <$fh>;
+#		close($fh);
+#	}else{
 		@lines = `curl 'https://candidates.democracyclub.org.uk/data/export_csv/?election_date=2024-07-04'`; # -o "$file"
-	}
+#	}
 	return ParseCSV(join("",@lines));
 }
 
