@@ -2,7 +2,7 @@
 title: MPs / General Elections (UK)
 theme: society
 created: 2023-08-24T15:05
-updated: 2024-05-08T13:40
+updated: 2024-05-22T21:20
 description: |
   The political make-up of Parliamentary constituencies showing results of General Elections (UK).
 ---
@@ -10,6 +10,69 @@ description: |
 <p>The party-political make up of the UK Parliament.</p>
 
 {% comp 'layout.panelSelector.set', { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2024", title: "2024", classes: "doublepadded" } %}
+
+		<h3>General Election - 4 July 2024</h3>
+		<p>This map will soon start to show the candidates for the upcoming General Election. Note that the 2023 boundary reviews mean that many constituencies have changed compared to previous General Elections so this uses our new hex layout.</p>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"width": 600,
+				"hexjson": "hexjson.uk-constituencies-2023",
+				"data": "sources.society.general-elections-2024",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }}, {{ region }}"
+				}],
+				"value": "Number of Candidates",
+				"scale": "#dfdfdf 0%, #000000 100%",
+				"matchKey": "PCON24CD",
+				"min": 0,
+				"max": 8,
+				"legend": {
+					position: "top right",
+					items: [{
+						"value": 8,
+						"label": "8+"
+					},{
+						"value": 7,
+						"label": "7"
+					},{
+						"value": 6,
+						"label": "6"
+					},{
+						"value": 5,
+						"label": "5"
+					},{
+						"value": 4,
+						"label": "4"
+					},{
+						"value": 3,
+						"label": "3"
+					},{
+						"value": 2,
+						"label": "2"
+					},{
+						"value": 1,
+						"label": "1"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				tooltip: "<strong>{{ n }}</strong>{{ Candidates }}",
+				attribution: 'Data: <a href="https://candidates.democracyclub.org.uk/elections/parl.2024-07-04/">Candidates</a> (Democracy Club).'
+			},
+			"download": {"text": "General Election 2024 candidates by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
 
 	{% comp 'layout.panelSelector.panel', { id: "current", title: "Now", classes: "doublepadded" } %}
 
@@ -28,7 +91,7 @@ description: |
 				"value": "Current",
 				"matchKey": "const_id",
 				"legend": {
-					position: "top right",
+					position: "bottom",
 					items: buildLegend(sources.society['general-elections'],'Current',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
 				},
 				"tools": {
@@ -39,7 +102,7 @@ description: |
 				tooltip: "<strong>{{ n }}</strong><br />Current: {{ Current }} / {{ Current MP }}<br />2019: {{ GE 2019 }} /  {{ GE 2019 MP }}<br />2017: {{ GE 2017 }} / {{ GE 2017 MP }}<br />2015: {{ GE 2015 }} / {{ GE 2015 MP }}<br />2010: {{ GE 2010 }} / {{ GE 2010 MP }}",
 				attribution: 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), <a href="https://en.wikipedia.org/wiki/List_of_elected_British_politicians_who_have_changed_party_affiliation">Changes to party affiliation</a> (Wikipedia), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 			},
-			"download": {"text": "General Election results by constituency", "type": "CSV"}
+			"download": {"text": "Pre General Election 2024 by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
@@ -61,7 +124,7 @@ description: |
 				"value": "GE 2019",
 				"matchKey": "const_id",
 				"legend": {
-					position: "top right",
+					position: "bottom",
 					items: buildLegend(sources.society['general-elections'],'GE 2019',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
 				},
 				"tools": {
@@ -72,7 +135,7 @@ description: |
 				tooltip: "<strong>{{ n }}</strong><br />{{ GE 2019 MP }} ({{ GE 2019 }})<br />Turnout: <strong>{{ GE 2019 turnout }}%</strong>",
 				attribution: 'Data: General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>).'
 			},
-			"download": {"text": "General Election results by constituency", "type": "CSV"}
+			"download": {"text": "General Election 2019 results by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
@@ -94,7 +157,7 @@ description: |
 				"value": "GE 2017",
 				"matchKey": "const_id",
 				"legend": {
-					position: "top right",
+					position: "bottom",
 					items: buildLegend(sources.society['general-elections'],'GE 2017',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
 				},
 				"tools": {
@@ -105,7 +168,7 @@ description: |
 				tooltip: "<strong>{{ n }}</strong><br />{{ GE 2017 MP }} ({{ GE 2017 }})<br />Turnout: <strong>{{ GE 2017 turnout }}%</strong>",
 				attribution: 'Data: <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament).'
 			},
-			"download": {"text": "General Election results by constituency", "type": "CSV"}
+			"download": {"text": "General Election 2017 results by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
@@ -127,7 +190,7 @@ description: |
 				"value": "GE 2015",
 				"matchKey": "const_id",
 				"legend": {
-					position: "top right",
+					position: "bottom",
 					items: buildLegend(sources.society['general-elections'],'GE 2015',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
 				},
 				"tools": {
@@ -138,7 +201,7 @@ description: |
 				tooltip: "<strong>{{ n }}</strong><br />{{ GE 2015 MP }} ({{ GE 2015 }})<br />Turnout: <strong>{{ GE 2015 turnout }}%</strong>",
 				attribution: 'Data: <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament).'
 			},
-			"download": {"text": "General Election results by constituency", "type": "CSV"}
+			"download": {"text": "General Election 2015 results by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
@@ -160,7 +223,7 @@ description: |
 				"value": "GE 2010",
 				"matchKey": "const_id",
 				"legend": {
-					position: "top right",
+					position: "bottom",
 					items: buildLegend(sources.society['general-elections'],'GE 2010',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
 				},
 				"tools": {
@@ -171,7 +234,7 @@ description: |
 				tooltip: "<strong>{{ n }}</strong><br />{{ GE 2010 MP }} ({{ GE 2010 }})<br />Turnout: <strong>{{ GE 2010 turnout }}%</strong>",
 				attribution: 'Data: <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 			},
-			"download": {"text": "General Election results by constituency", "type": "CSV"}
+			"download": {"text": "General Election 2010 results by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
