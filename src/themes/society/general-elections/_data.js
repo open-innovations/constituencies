@@ -14,12 +14,12 @@ export function buildLegend(data,column,labels={}){
 		legend.push({'colour':party,'count':lookup[party],'label':(party in labels ? labels[party] : party)+' / '+lookup[party]});
 	}
 	legend.sort(function(a, b){
-		if(a.colour=="Spk") return 1;
-		if(b.colour=="Spk") return -1;
+		if(a.colour=="Spk") return -1;
+		if(b.colour=="Spk") return 1;
 		// Sort by count
-		if(a.count - b.count != 0) return -(a.count - b.count);
+		if(a.count - b.count != 0) return (a.count - b.count);
 		// Fall back to sorting by label
-		return (a.label.toLowerCase() < b.label.toLowerCase() ? -1 : 1);
+		return (a.label.toLowerCase() < b.label.toLowerCase() ? 1 : -1);
 	});
 
 	return legend;
