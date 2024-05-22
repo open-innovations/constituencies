@@ -28,7 +28,7 @@ foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pco
 
 saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
 
-
+print Dumper strftime();
 
 
 #######################
