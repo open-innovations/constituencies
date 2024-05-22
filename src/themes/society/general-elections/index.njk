@@ -6,6 +6,9 @@ updated: 2024-05-22T21:20
 description: |
   The political make-up of Parliamentary constituencies showing results of General Elections (UK).
 ---
+<style>
+  .oi-legend { margin-bottom: 1rem; }
+</style>
 
 <p>The party-political make up of the UK Parliament.</p>
 
@@ -66,8 +69,8 @@ description: |
 						label: "filterLabel"
 					}
 				},
-				tooltip: "<strong>{{ n }}</strong>{{ Candidates }}",
-				attribution: 'Data: <a href="https://candidates.democracyclub.org.uk/elections/parl.2024-07-04/">Candidates</a> (Democracy Club).'
+				tooltip: "<strong>{{ n }}</strong><br />{{ Candidates }}",
+				attribution: 'Data: <a href="https://candidates.democracyclub.org.uk/data/">Candidates 2024</a> (Democracy Club).'
 			},
 			"download": {"text": "General Election 2024 candidates by constituency", "type": "CSV"}
 		} %}{% endcomp %}

@@ -11,7 +11,7 @@ export function buildLegend(data,column,labels={}){
 
 	let legend = [];
 	for(var party in lookup){
-		legend.push({'colour':party,'count':lookup[party],'label':(party in labels ? labels[party] : party)+' / '+lookup[party]});
+		legend.push({'colour':party,'count':lookup[party],'label':(party in labels ? labels[party] : party)+': '+lookup[party]});
 	}
 	legend.sort(function(a, b){
 		if(a.colour=="Spk") return -1;
