@@ -26,9 +26,10 @@ foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pco
 
 @candidates = getCandidates();
 
-saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
-updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
-
+my $updated = saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
+if($updated){
+	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
+}
 
 #######################
 sub updateCreationTimestamp {
@@ -50,8 +51,15 @@ sub updateCreationTimestamp {
 sub saveSummary {
 	my $file = shift;
 	my @candidates = @_;
-	my ($i,$pcon,$con,$csv,$list,$fh,$name);
+	my ($i,$pcon,$con,$csv,$list,$fh,$name,$existing,@lines);
 	$con = {};
+
+	# Read in the existing summary
+	open($fh,$file);
+	@lines = <$fh>;
+	close($fh);
+	$existing = join("",@lines);
+
 	for($i = 0; $i < @candidates; $i++){
 		if($lookup->{$candidates[$i]{'post_label'}}){
 			$pcon = $lookup->{$candidates[$i]{'post_label'}};
@@ -70,8 +78,8 @@ sub saveSummary {
 			warning("No match for <yellow>$candidates[$i]{'post_label'}<none>\n");
 		}
 	}
+
 	$csv = "PCON24CD,Name,Number of Candidates,Candidates\n";
-	
 	foreach $pcon (sort(keys(%{$hexjson->{'hexes'}}))){
 		$csv .= "$pcon,\"$hexjson->{'hexes'}{$pcon}{'n'}\"";
 		$csv .= ",".($con->{$pcon}{'n'}||0);
@@ -84,10 +92,15 @@ sub saveSummary {
 		$csv .= ",\"$list\"";
 		$csv .= "\n";
 	}
-	open($fh,">",$file);
-	print $fh $csv;
-	close($fh);
-#print $csv;
+
+	if($existing ne $csv){
+		msg("Updating CSV at <cyan>$file<none>\n");
+		open($fh,">",$file);
+		print $fh $csv;
+		close($fh);
+		return 1;
+	}
+	return 0;
 }
 
 sub getCandidates {
