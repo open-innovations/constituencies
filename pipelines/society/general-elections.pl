@@ -4,6 +4,7 @@ use utf8;
 use warnings;
 use strict;
 use Data::Dumper;
+use POSIX qw(strftime);
 use Cwd qw(abs_path);
 use open qw(:std :encoding(UTF-8));
 binmode STDOUT, 'utf8';
@@ -23,13 +24,28 @@ $hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2023.hex
 $lookup = {};
 foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pcon}{'n'}} = $pcon; }
 
-
 @candidates = getCandidates();
 
 saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
+updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
 
 
 #######################
+sub updateCreationTimestamp {
+	my $file = shift;
+	my(@lines,$fh,$i,$dt);
+	open($fh,$file);
+	@lines = <$fh>;
+	close($fh);
+	$dt = strftime("%FT%H:%M", localtime);
+	for($i = 0; $i < @lines ; $i++){
+		$lines[$i] =~ s/^(updated: )(.*)/$1$dt/;
+	}
+	msg("Updating timestamp in <cyan>$file<none>\n");
+	open($fh,">",$file);
+	print $fh @lines;
+	close($fh);
+}
 
 sub saveSummary {
 	my $file = shift;
