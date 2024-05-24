@@ -2,7 +2,7 @@
 title: General Elections (UK)
 theme: society
 created: 2023-08-24T15:05
-updated: 2024-05-24T07:12
+updated: 2024-05-24T13:06
 description: |
   The political make-up of Parliamentary constituencies showing results of General Elections (UK).
 ---
@@ -106,6 +106,42 @@ description: |
 				attribution: 'Data: <a href="https://www.parliament.uk/about/how/elections-and-voting/by-elections/by-elections-2019/">By-elections since 2019</a> (UK Parliament), <a href="https://en.wikipedia.org/wiki/List_of_elected_British_politicians_who_have_changed_party_affiliation">Changes to party affiliation</a> (Wikipedia), General Election results <a href="https://ge2019.odileeds.org/">2019</a> (Britain Elects, New Statesman, Open Innovations; <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7979/" target="_parent">2017</a> (Parliament), <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7186/" target="_parent">2015</a> (Parliament) & <a href="https://docs.google.com/spreadsheets/d/1aU6xNJNdO4axSNidWPNSsJb4aNDq_TI6DIdSkcLHcmk/edit#gid=1">2010</a> (The Guardian).'
 			},
 			"download": {"text": "Pre General Election 2024 by constituency", "type": "CSV"}
+		} %}{% endcomp %}
+
+	{% endcomp %}
+
+	{% comp 'layout.panelSelector.panel', { id: "ge-2019-notional", title: "2019*", classes: "doublepadded" } %}
+
+		<h3>Notional General Election - 12 December 2019</h3>
+		<p>This map shows estimates of what the 2019 General Election result would have been if the upcoming constituency boundaries had been used.</p>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"colours": {"Con":'#0485A8',"Lab":'#DC4343','LD':'#EAA544','Green':'#5EBD4C','Brexit':'#0FA697','SNP':'#EBDB1C','UKIP':'#73537A','PC':'#4FBA7C','Ind':'#CCA7C6','DUP':'#BF3759','UUP':'#3b75a8','SF':'#2C604D','SDLP':'#53BC5B','Alliance':'#EAA544','APNI':'#EAA544','Spk':'#909090','XSpk':'#909090','Monster':'#cccccc','WPB':'#1e28d8','none':'#dfdfdf'},
+				"width": 600,
+				"hexjson": "hexjson.uk-constituencies-2023",
+				"data": "sources.society.general-elections-notional",
+				"columns": [{
+					name: "filterLabel",
+					template: "{{ n }}"
+				}],
+				"value": "GE 2019 Party",
+				"matchKey": "PCON24CD",
+				"min": 0,
+				"max": 8,
+				"legend": {
+					position: "bottom",
+					items: buildLegend(sources.society['general-elections-notional'],'GE 2019 Party',{"LD":"LDem","Alliance":"Alln","Green":"Grn","Ref":"Reform","Spk":"Speaker"})
+				},
+				"tools": {
+					filter: {
+						label: "filterLabel"
+					}
+				},
+				tooltip: "<strong>{{ n }}</strong><br />Party: {{ GE 2019 Party }}<br />Majority: <strong>{{ GE 2019 Majority }}%</strong>",
+				attribution: 'Data: <a href="https://electionresults.parliament.uk/general-elections/5">Notional General Election 2019</a> (Rallings & Thrasher, Professor David Denver (Scotland), Nicholas Whyte (NI) for Sky News, PA, BBC News and ITV News).'
+			},
+			"download": {"text": "Notional General Election 2019", "type": "CSV"}
 		} %}{% endcomp %}
 
 	{% endcomp %}
