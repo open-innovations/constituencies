@@ -138,7 +138,7 @@ description: |
 						label: "filterLabel"
 					}
 				},
-				tooltip: "<strong>{{ n }}</strong><br />Party: {{ GE 2019 Party }}<br />Majority: <strong>{{ GE 2019 Majority }}%</strong>",
+				tooltip: "<strong>{{ n }}</strong><br />Party: {{ GE 2019 Party }}<br />Majority: <strong>{{ GE 2019 Majority | toLocaleString() }}</strong>",
 				attribution: 'Data: <a href="https://electionresults.parliament.uk/general-elections/5">Notional General Election 2019</a> (Rallings & Thrasher, Professor David Denver (Scotland), Nicholas Whyte (NI) for Sky News, PA, BBC News and ITV News).'
 			},
 			"download": {"text": "Notional General Election 2019", "type": "CSV"}
