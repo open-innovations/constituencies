@@ -17,16 +17,18 @@ BEGIN {
 }
 require $basedir."../lib/lib.pl";
 
-my ($hexjson,$lookup,$pcon,@candidates);
+my ($hexjson,$lookup,$pcon,@candidates,$con);
+
 
 $hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2023.hexjson");
 # Build a lookup from constituency name to code
 $lookup = {};
 foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pcon}{'n'}} = $pcon; }
 
-@candidates = getCandidates();
+$con = addCandidateData($con,getCandidates());
 
-my $updated = saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",@candidates);
+my $csv = makeSummary($con);
+my $updated = saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",$csv);
 if($updated){
 	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
 }
@@ -47,19 +49,11 @@ sub updateCreationTimestamp {
 	print $fh @lines;
 	close($fh);
 }
-
-sub saveSummary {
-	my $file = shift;
+sub addCandidateData {
+	my $con = shift||{};
 	my @candidates = @_;
-	my ($i,$pcon,$con,$csv,$list,$fh,$name,$existing,@lines);
-	$con = {};
-
-	# Read in the existing summary
-	open($fh,$file);
-	@lines = <$fh>;
-	close($fh);
-	$existing = join("",@lines);
-
+	my ($i,$pcon,$name);
+	
 	for($i = 0; $i < @candidates; $i++){
 		if($lookup->{$candidates[$i]{'post_label'}}){
 			$pcon = $lookup->{$candidates[$i]{'post_label'}};
@@ -78,6 +72,12 @@ sub saveSummary {
 			warning("No match for <yellow>$candidates[$i]{'post_label'}<none>\n");
 		}
 	}
+	return $con;
+}
+
+sub makeSummary {
+	my $con = shift;
+	my ($i,$pcon,$csv,$list,$fh);
 
 	$csv = "PCON24CD,Name,Number of Candidates,Candidates\n";
 	foreach $pcon (sort(keys(%{$hexjson->{'hexes'}}))){
@@ -92,7 +92,20 @@ sub saveSummary {
 		$csv .= ",\"$list\"";
 		$csv .= "\n";
 	}
+	return $csv;
+}
 
+sub saveSummary {
+	my $file = shift;
+	my $csv = shift;
+	my ($fh,$existing,@lines);
+
+	# Read in the existing summary
+	open($fh,$file);
+	@lines = <$fh>;
+	close($fh);
+	$existing = join("",@lines);
+	
 	if($existing ne $csv){
 		msg("Updating CSV at <cyan>$file<none>\n");
 		open($fh,">",$file);
@@ -106,14 +119,19 @@ sub saveSummary {
 sub getCandidates {
 	my (@lines,$file,$fh,@candidates);
 	$file = $basedir."ge-2024-candidates.csv";
+	@lines = `curl 'https://candidates.democracyclub.org.uk/data/export_csv/?election_date=2024-07-04'`; # -o "$file"
+	return ParseCSV(join("",@lines));
+}
+
+#sub getCandidates {
+#	my (@lines,$file,$fh,@candidates);
+#	$file = $basedir."ge-2024-candidates.csv";
 #	if(-e $file){
 #		open($fh,"<:utf8",$file);
 #		@lines = <$fh>;
 #		close($fh);
 #	}else{
-		@lines = `curl 'https://candidates.democracyclub.org.uk/data/export_csv/?election_date=2024-07-04'`; # -o "$file"
+#		@lines = `curl 'https://candidates.democracyclub.org.uk/data/export_csv/?election_date=2024-07-04' -o "$file"`; # -o "$file"
 #	}
-	return ParseCSV(join("",@lines));
-}
-
-
+#	return ParseCSV(join("",@lines));
+#}
