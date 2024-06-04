@@ -77,7 +77,7 @@ description: |
 
 	{% endcomp %}
 
-	{% comp 'layout.panelSelector.panel', { id: "current", title: "Now", classes: "doublepadded" } %}
+	{#% comp 'layout.panelSelector.panel', { id: "current", title: "Now", classes: "doublepadded" } %}
 
 		<h3>As of 8th May 2024</h3>
 		{% comp 'wrapper', {
@@ -108,7 +108,7 @@ description: |
 			"download": {"text": "Pre General Election 2024 by constituency", "type": "CSV"}
 		} %}{% endcomp %}
 
-	{% endcomp %}
+	{% endcomp %#}
 
 	{% comp 'layout.panelSelector.panel', { id: "ge-2019-notional", title: "2019*", classes: "doublepadded" } %}
 
