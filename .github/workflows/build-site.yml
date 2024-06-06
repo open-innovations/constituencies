@@ -2,6 +2,11 @@ name: Build site
 
 'on':
   workflow_dispatch: {}
+  workflow_run:
+    workflows:
+      - General Election 2024 candidates
+    types:
+      - completed
   # schedule:
   #   # * is a special character in YAML so you have to quote this string
   #   - cron:  '45 23 * * *'
