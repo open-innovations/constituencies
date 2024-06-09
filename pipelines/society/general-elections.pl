@@ -31,6 +31,7 @@ my $csv = makeSummary($con);
 my $updated = saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",$csv);
 if($updated){
 	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
+	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/embeds/candidates-2024.njk");
 }
 
 #######################
