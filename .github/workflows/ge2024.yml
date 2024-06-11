@@ -48,6 +48,7 @@ jobs:
           git add src/_data/sources/society/general-elections-2024.csv
           git add src/_data/sources/society/general-elections-notional.csv
           git add src/themes/society/general-elections/index.njk
+          git add src/themes/society/general-elections/embeds/candidates-2024.njk
           git commit -m "Update General Election 2024 candidates" || exit 0
 
       - name: Push changes
