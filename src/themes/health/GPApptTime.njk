@@ -1,0 +1,162 @@
+---
+title: GP Appointment Times
+theme: health
+created: 2024-06-21T08:47
+updated: 2024-06-21T08:47
+description: |
+  Percentage satisfied with practice appointment times. Percentage of appointments taking place within 2 days of booking. Percentage of appointments taking place within 14 days of booking.
+keywords: [health]
+---
+
+<h2>Percentage satisfied with practice appointment times</h2>
+<p>The GP Patient Survey is an independent survey run by Ipsos on behalf of NHS England. The survey is sent out to over two million people across the UK. The results show how people feel about their GP practice.</p>
+<p>People were asked: "How satisfied are you with the general practice appointment times that are available to you?". The indicator value is the percentage of people who answered this question with "Very satisfied" or "Fairly satisfied" from all responses to this question.</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-93442",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "2023",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2018","2019","2020","2021","2022","2023"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />% satisfied with practice <br />appointment times: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93442\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+	}
+} %}{% endcomp %}
+
+
+<h2>Percentage of appointments taking place within 2 days of booking</h2>
+<p>Percentage of appointments taking place within 2 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-93944",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Mar 2024",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Oct 2022" , "Nov 2022" , "Dec 2022" , "Jan 2023" , "Feb 2023" , "Mar 2023" , "Apr 2023" , "May 2023" , "Jun 2023" , "Jul 2023" , "Aug 2023" , "Sep 2023" , "Oct 2023" , "Nov 2023" , "Dec 2023" , "Jan 2024" , "Feb 2024" , "Mar 2024"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Percentage of appointments taking place within 2 days of booking: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93944\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+	}
+} %}{% endcomp %}
+
+<h2>Percentage of appointments taking place within 14 days of booking</h2>
+<p>Percentage of appointments taking place within 14 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
+
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-93935",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Mar 2024",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Oct 2022" , "Nov 2022" , "Dec 2022" , "Jan 2023" , "Feb 2023" , "Mar 2023" , "Apr 2023" , "May 2023" , "Jun 2023" , "Jul 2023" , "Aug 2023" , "Sep 2023" , "Oct 2023" , "Nov 2023" , "Dec 2023" , "Jan 2024" , "Feb 2024" , "Mar 2024"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Percentage of appointments taking place within 14 days of booking: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93935\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+	}
+} %}{% endcomp %}
