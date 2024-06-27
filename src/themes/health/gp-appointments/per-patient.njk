@@ -1,0 +1,62 @@
+---
+title: GP appointment per patient (England)
+theme: health
+created: 2024-06-21T08:47
+updated: 2024-06-21T08:47
+description: |
+  Average number of appointments per registered patient
+keywords: [health]
+---
+
+<h2>Appointments per registered patient</h2>
+<p>12 months rolling sum of appointments in general practice per registered patient</p>
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-93934",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Mar 2024",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 10,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 8,
+				"label": "8"
+			},{
+				"value": 6,
+				"label": "6"
+			},{
+				"value": 4,
+				"label": "4"
+			},{
+				"value": 2,
+				"label": "2"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Oct 2022" , "Nov 2022" , "Dec 2022" , "Jan 2023" , "Feb 2023" , "Mar 2023" , "Apr 2023" , "May 2023" , "Jun 2023" , "Jul 2023" , "Aug 2023" , "Sep 2023" , "Oct 2023" , "Nov 2023" , "Dec 2023" , "Jan 2024" , "Feb 2024" , "Mar 2024"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Average number of appointments per registered patient: <strong>{{ {{ _value }} | toFixed(2) }}</strong>",
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93934\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	}
+} %}{% endcomp %}
