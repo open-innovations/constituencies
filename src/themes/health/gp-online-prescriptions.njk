@@ -1,5 +1,5 @@
 ---
-title: GP Online Perscription Services
+title: GP online perscription services
 theme: health
 created: 2024-06-27T09:30
 updated: 2024-06-27T09:30
@@ -8,7 +8,8 @@ description: |
 keywords: [health]
 ---
 
-<h2>Percentage of patients enabled to order repeat prescriptions online</h2>
+<section>
+<h2>Patients enabled to order repeat prescriptions online{% comp 'anchor', { 'ref': 'online-repeat'} %}{% endcomp %}</h2>
 <p>The percentage of patients registered at the practice who are able to use an online service for ordering repeat prescriptions, as recorded on the last day of the reporting period.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
@@ -54,11 +55,13 @@ keywords: [health]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />% patients enabled to order repeat prescriptions online: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93941\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93941\">OHID Fingertips</a> / Visualisation: <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
 	}
 } %}{% endcomp %}
+</section>
 
-<h2>Percentage of Electronic prescription items of all items prescribed</h2>
+<section>
+<h2>Electronic prescription items{% comp 'anchor', { 'ref': 'electronic-prescriptions'} %}{% endcomp %}</h2>
 <p>The percentage of prescription items issued by the practice through the electronic prescription service. The number of items refers to the number of times a product appears on a prescription form, not the quantity prescribed. Items that have been referred back, disallowed or not dispensed are excluded from all item counts.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
@@ -104,6 +107,7 @@ keywords: [health]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />% Electronic prescription items of all items prescribed: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93953\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93953\">OHID Fingertips</a> / Visualisation: <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
 	}
 } %}{% endcomp %}
+</section>

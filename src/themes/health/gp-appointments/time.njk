@@ -1,5 +1,5 @@
 ---
-title: GP Appointment Times
+title: GP appointment times
 theme: health
 created: 2024-06-21T08:47
 updated: 2024-06-21T08:47
@@ -8,7 +8,8 @@ description: |
 keywords: [health]
 ---
 
-<h2>Percentage satisfied with practice appointment times</h2>
+<section>
+<h2>Satisfied with practice appointment times{% comp 'anchor', { 'ref': 'satisfied'} %}{% endcomp %}</h2>
 <p>The GP Patient Survey is an independent survey run by Ipsos on behalf of NHS England. The survey is sent out to over two million people across the UK. The results show how people feel about their GP practice.</p>
 <p>People were asked: "How satisfied are you with the general practice appointment times that are available to you?". The indicator value is the percentage of people who answered this question with "Very satisfied" or "Fairly satisfied" from all responses to this question.</p>
 {% comp 'wrapper', {
@@ -55,12 +56,14 @@ keywords: [health]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />% satisfied with practice <br />appointment times: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93442\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93442\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
 	}
 } %}{% endcomp %}
+</section>
 
 
-<h2>Percentage of appointments taking place within 2 days of booking</h2>
+<section>
+<h2>Appointments taking place within 2 days of booking{% comp 'anchor', { 'ref': 'within-2-days'} %}{% endcomp %}</h2>
 <p>Percentage of appointments taking place within 2 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
@@ -106,11 +109,14 @@ keywords: [health]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Percentage of appointments taking place within 2 days of booking: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93944\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93944\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
 	}
 } %}{% endcomp %}
+</section>
 
-<h2>Percentage of appointments taking place within 14 days of booking</h2>
+
+<section>
+<h2>Appointments taking place within 14 days of booking{% comp 'anchor', { 'ref': 'within-14-days'} %}{% endcomp %}</h2>
 <p>Percentage of appointments taking place within 14 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
 
 {% comp 'wrapper', {
@@ -157,6 +163,7 @@ keywords: [health]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Percentage of appointments taking place within 14 days of booking: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-		"attribution": "<a href=\"https://fingertips.phe.org.uk/search/93935\">OHID Fingertips</a>. Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>."
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93935\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
 	}
 } %}{% endcomp %}
+</section>
