@@ -14,8 +14,6 @@
 
 	<a class="skip-to-content-link button" href="#main">Skip to main content</a>
 
-	<!--<div class="centred padded warning">This site is currently under development so may not be stable. Things may move around or change as we work out what we are doing.</div>-->
-
 	{% include 'partials/header.njk' %}
 
 	<div class="b6-bg" id="main">
@@ -23,6 +21,10 @@
 		{{ content | safe }}
 		</div>
 	</div>
+
+	{% for row in sources.co2.rows %}
+		{% if url == row.Path %}<div class="b2-bg doublepadded centred" style="text-wrap: balance;"><div class="holder">This page generates around {{ row.CO2 | round(2) }}g of CO2 emissions per visit (last checked {{ row.Date | date('do MMMM yyyy')}})</div></div>{% endif %}
+	{% endfor %}
 
 	{% include 'partials/footer.njk' %}
 
