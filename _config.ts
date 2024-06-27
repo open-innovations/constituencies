@@ -57,6 +57,7 @@ site.copy(dataPath);
 remoteTree('src/_data/hexjson', '/assets/hexjson/');
 // Copy /data to live site
 site.copy('/assets/hexjson/');
+site.copy([".png"]);
 
 // Register an HTML processor
 // https://lume.land/docs/core/processors/
@@ -65,7 +66,7 @@ site.process([".html"], (pages) => pages.forEach(autoDependency));
 
 site.loadAssets([".css"]);
 site.loadAssets([".js"]);
-site.loadAssets([".svg"]);
+//site.loadAssets([".svg"]);
 site.loadAssets([".hexjson"]);
 
 // Import lume viz
