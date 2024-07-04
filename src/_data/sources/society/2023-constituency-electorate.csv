@@ -544,63 +544,63 @@ PCON25NM,PCON25CD,Electorate
 "Yeovil",E14001603,76056
 "York Central",E14001604,74854
 "York Outer",E14001605,72720
-"Aberdeen South",586,76560
-"Aberdeen North",614,76895
-"Aberdeenshire North and Moray East",602,71485
-"Airdrie and Shotts",564,70420
-"Alloa and Grangemouth",570,72265
-"Angus and Perthshire Glens",578,77006
-"Arbroath and Broughty Ferry",562,76810
-"Argyll, Bute and South Lochaber",582,71707
-"Ayr, Carrick and Cumnock",589,72057
-"Berwickshire, Roxburgh and Selkirk",561,74687
-"Bathgate and Linlithgow",597,71650
-"Caithness, Sutherland and Easter Ross",603,75173
-"Central Ayrshire",590,69779
-"Coatbridge and Bellshill",610,72507
-"Cowdenbeath and Kirkcaldy",585,70329
-"Cumbernauld and Kirkintilloch",609,70579
-"Dumfries and Galloway",600,76863
-"Dumfriesshire, Clydesdale and Tweeddale",615,70738
-"Dundee Central",595,75298
-"Dunfermline and Dollar",563,70725
-"East Kilbride and Strathaven",565,75161
-"East Renfrewshire",566,72959
-"Edinburgh East and Musselburgh",567,75705
-"Edinburgh North and Leith",568,76770
-"Edinburgh South",599,70980
-"Edinburgh South West",569,73315
-"Edinburgh West",587,76723
-"Falkirk",596,75067
-"Glasgow East",604,69748
-"Glasgow North",606,73210
-"Glasgow North East",613,75236
-"Glasgow South",607,71344
-"Glasgow South West",571,70431
-"Glasgow West",608,72499
-"Glenrothes and Mid Fife",617,69734
-"Gordon and Buchan",584,70238
-"Hamilton and Clyde Valley",611,74577
-"Inverclyde and Renfrewshire West",572,70418
-"Inverness, Skye and West Ross-shire",598,76903
-"Kilmarnock and Loudoun",573,74801
-"Livingston",574,75454
-"Lothian East",588,71287
-"Mid Dunbartonshire",605,75099
-"Midlothian",575,71210
-"Moray West, Nairn and Strathspey",581,76237
-"Motherwell, Wishaw and Carluke",576,72318
-"Na h-Eileanan an Iar",592,21177
-"North Ayrshire and Arran",593,73588
-"North East Fife",616,70452
-"Orkney and Shetland",591,34824
-"Paisley and Renfrewshire North",601,69941
-"Paisley and Renfrewshire South",577,69813
-"Perth and Kinross-shire",594,76320
-"Rutherglen",612,71612
-"Stirling and Strathallan",579,77008
-"West Aberdeenshire and Kincardine",583,73634
-"West Dunbartonshire",580,70286
+"Aberdeen South",S14000061,76560
+"Aberdeen North",S14000060,76895
+"Aberdeenshire North and Moray East",S14000062,71485
+"Airdrie and Shotts",S14000063,70420
+"Alloa and Grangemouth",S14000064,72265
+"Angus and Perthshire Glens",S14000065,77006
+"Arbroath and Broughty Ferry",S14000066,76810
+"Argyll, Bute and South Lochaber",S14000067,71707
+"Ayr, Carrick and Cumnock",S14000107,72057
+"Berwickshire, Roxburgh and Selkirk",S14000108,74687
+"Bathgate and Linlithgow",S14000068,71650
+"Caithness, Sutherland and Easter Ross",S14000069,75173
+"Central Ayrshire",S14000109,69779
+"Coatbridge and Bellshill",S14000070,72507
+"Cowdenbeath and Kirkcaldy",S14000071,70329
+"Cumbernauld and Kirkintilloch",S14000072,70579
+"Dumfries and Galloway",S14000073,76863
+"Dumfriesshire, Clydesdale and Tweeddale",S14000074,70738
+"Dundee Central",S14000075,75298
+"Dunfermline and Dollar",S14000076,70725
+"East Kilbride and Strathaven",S14000077,75161
+"East Renfrewshire",S14000021,72959
+"Edinburgh East and Musselburgh",S14000078,75705
+"Edinburgh North and Leith",S14000079,76770
+"Edinburgh South",S14000080,70980
+"Edinburgh South West",S14000081,73315
+"Edinburgh West",S14000082,76723
+"Falkirk",S14000083,75067
+"Glasgow East",S14000083,69748
+"Glasgow North",S14000085,73210
+"Glasgow North East",S14000086,75236
+"Glasgow South",S14000087,71344
+"Glasgow South West",S14000088,70431
+"Glasgow West",S14000089,72499
+"Glenrothes and Mid Fife",S14000090,69734
+"Gordon and Buchan",S14000091,70238
+"Hamilton and Clyde Valley",S14000092,74577
+"Inverclyde and Renfrewshire West",S14000093,70418
+"Inverness, Skye and West Ross-shire",S14000094,76903
+"Kilmarnock and Loudoun",S14000110,74801
+"Livingston",S14000095,75454
+"Lothian East",S14000096,71287
+"Mid Dunbartonshire",S14000097,75099
+"Midlothian",S14000045,71210
+"Moray West, Nairn and Strathspey",S14000098,76237
+"Motherwell, Wishaw and Carluke",S14000099,72318
+"Na h-Eileanan an Iar",S14000027,21177
+"North Ayrshire and Arran",S14000048,73588
+"North East Fife",S14000100,70452
+"Orkney and Shetland",S14000051,34824
+"Paisley and Renfrewshire North",S14000101,69941
+"Paisley and Renfrewshire South",S14000102,69813
+"Perth and Kinross-shire",S14000103,76320
+"Rutherglen",S14000104,71612
+"Stirling and Strathallan",S14000105,77008
+"West Aberdeenshire and Kincardine",S14000111,73634
+"West Dunbartonshire",S14000106,70286
 "Aberafan Maesteg",W07000081,69817
 "Alyn and Deeside",W07000082,75695
 "Bangor Aberconwy",W07000083,70468
@@ -633,21 +633,21 @@ PCON25NM,PCON25CD,Electorate
 "Vale of Glamorgan",W07000110,70426
 "Wrexham",W07000111,70964
 "Ynys Môn",W07000112,52415
-"Belfast East",557,70076
-"Belfast North",547,71372
-"Belfast South and Mid Down",559,71978
-"Belfast West",558,71921
-"East Antrim",543,69936
-"East Londonderry",548,72213
-"Fermanagh and South Tyrone",553,74643
-"Foyle",550,69890
-"Lagan Valley",545,76332
-"Mid Ulster",552,70094
-"Newry and Armagh",560,74585
-"North Antrim",551,71165
-"North Down",555,70412
-"South Antrim",544,71646
-"South Down",554,71772
-"Strangford",556,70070
-"Upper Bann",546,76969
-"West Tyrone",549,70614
+"Belfast East",N05000001,70076
+"Belfast North",N05000002,71372
+"Belfast South and Mid Down",N05000003,71978
+"Belfast West",N05000004,71921
+"East Antrim",N05000005,69936
+"East Londonderry",N05000006,72213
+"Fermanagh and South Tyrone",N05000007,74643
+"Foyle",N05000008,69890
+"Lagan Valley",N05000009,76332
+"Mid Ulster",N05000010,70094
+"Newry and Armagh",N05000011,74585
+"North Antrim",N05000012,71165
+"North Down",N05000013,70412
+"South Antrim",N05000014,71646
+"South Down",N05000015,71772
+"Strangford",N05000016,70070
+"Upper Bann",N05000017,76969
+"West Tyrone",N05000018,70614
