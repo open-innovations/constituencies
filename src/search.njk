@@ -13,7 +13,7 @@ title: Search
 
 <ul id="pages">
   {% for page in search.pages("theme_page theme!=undefined !searchignore !draft created!=undefined", "order created=desc") %}
-  <li data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}"><div class="page-title">{{ data.themes[page.theme].icon | safe }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
+  <li data-update="{{ page.updated }}" data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}"><div class="page-title">{{ data.themes[page.theme].icon | safe }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
   {% endfor %}
 </ul>
 
@@ -26,6 +26,7 @@ function ListItem(li){
 	this.description = (li.querySelector('.description') ? li.querySelector('.description').innerHTML : "");
 	this.keywords = li.getAttribute('data-keywords')||"";
 	this.theme = li.getAttribute('data-theme')||"";
+	this.updated = li.getAttribute('data-update')||"";
 	if(li.querySelector('.keywords')) li.querySelector('.keywords').style.display = "none";
 	this.show = function(el){
 		el.appendChild(this.el);
@@ -37,7 +38,10 @@ function ListItem(li){
 	}
 	this.rank = function(val){
 		var words = val.split(/ /);
-		var r = 0,v,re,rw,ok = true;
+		var r = 0,v,re,rw,ok = true,weight;
+		var now = new Date();
+		var then;
+		var halflife = 31*86400000;
 		for(var i = 0; i < words.length; i++){
 			v = words[i];
 			rw = 0;
@@ -48,8 +52,14 @@ function ListItem(li){
 			if(this.description.toLowerCase().indexOf(v) >= 0) rw += 0.5;	// Description contains search
 			if(this.keywords.toLowerCase().indexOf(v) >= 0) rw += 2;		// Keywords contains search
 			if(this.theme.toLowerCase().indexOf(v) >= 0) rw += 2;			// Theme contains search
+			if(this.updated){
+				then = new Date(this.updated);
+				if(now >= then) weight = Math.exp(-(now-then)/halflife);	// Decay weight with half-life
+			}else{
+				weight = 1;
+			}
 			if(rw == 0) ok = false;
-			r += rw;
+			r += rw*weight;
 		}
 		return (ok ? r : 0);
 	}
