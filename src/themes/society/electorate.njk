@@ -8,7 +8,6 @@ description: |
 keywords: [electorate,people]
 ---
 
-<h2>2023 Constituencies</h2>
 <p>Initial electorate values from the 2023 boundary reviews.</p>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
@@ -51,53 +50,4 @@ keywords: [electorate,people]
 	},
 	"download": {"text": "Electorate estimates by constituency (2023)", "type": "CSV"}
 } %}{% endcomp %}
-
-<h2>Pre-2023 Constituencies</h2>
-<p>Electoral registrations from 2015 to 2023. Prior to 2015 there are some differences in Scottish constituencies.</p>
-{% comp 'wrapper', {
-	"component": comp.oi.map.hex_cartogram,
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.constituency-electorate",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "Electoral registrations December 2022",
-		"scale": "Viridis",
-		"min": 50000,
-		"max": 80000,
-		"matchKey": "Code",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 80000,
-				"label": ">80,000"
-			},{
-				"value": 70000,
-				"label": "70000"
-			},{
-				"value": 60000,
-				"label": "60000"
-			},{
-				"value": 50000,
-				"label": "<50000"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			},
-			"slider": {
-				columns: ['Total electors 2015','Total electors 2016','Total electors 2017','Total electors 2018','Electoral registrations December 2019','Electoral registrations March 2020','Electoral registrations December 2020','Electoral registrations December 2021','Electoral registrations December 2022'],
-				width: "500px"
-			}
-		},
-		"tooltip": "<strong>{{ n }}</strong><br />Electorate: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/elections/electoralregistration/datasets/electoralstatisticsforuk\">Electoral statistics for the UK</a> (Office of National Statistics)"
-	},
-	"download": {"text": "Electorate by constituency (up to 2022)", "type": "CSV"}
-} %}{% endcomp %}
-
 

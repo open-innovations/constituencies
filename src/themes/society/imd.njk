@@ -9,8 +9,6 @@ keywords: [IMD]
 
 <p>This page provides constituency-level data on composite IMD scores (2020). See the <a href="#notes">notes below</a>.</p>
 
-<h2>2023 Constituencies</h2>
-
 {% comp 'hexmap', {
 	"config": {
 		width: 600,
@@ -55,57 +53,9 @@ keywords: [IMD]
         "tooltip": "<strong>{{ n }}</strong><br />Deprivation score: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
         "attribution": "Data: <a href=\"https://pages.mysociety.org/composite_uk_imd/datasets/uk_index/latest\">composite 2020 UK index of multiple deprivation version: 3.2.0</a> (MySociety, <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY</a>)."
 	},
-	"download": {"text": "composite IMD by constituency (2023 constituencies)", "type": "CSV"}
+	"download": {"text": "composite IMD by constituency (2024 constituencies)", "type": "CSV"}
 } %}{% endcomp %}
 
-
-<h2>Pre-2023 Constituencies</h2>
-{% comp 'hexmap', {
-	"config": {
-		width: 600,
-		hexjson: "hexjson.constituencies",
-		data: "sources.society.constituency_imd",
-		columns: [{
-			name: "filterLabel",
-			template: "{{ n }} ({{ a }})"
-		}],
-		value: "pcon-deprivation-score",
-		scale: "Viridis",
-		min: 0,
-		max: 100,
-		matchKey: "gss-code",
-		legend: {
-			position: "top right",
-			items: [{
-				value: 100,
-				label: "most deprived"
-			},{
-				value: 80,
-				label: ""
-			},{
-				value: 60,
-				label: ""
-			},{
-				value: 40,
-				label: ""
-			},{
-				value: 20,
-				label: ""
-			},{
-				value: 0,
-				label: "least deprived"
-			}]
-		},
-		tools: {
-			filter: {
-				label: "filterLabel"
-			}
-		},
-        "tooltip": "<strong>{{ n }}</strong><br />Deprivation score: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
-        "attribution": "Data: <a href=\"https://pages.mysociety.org/composite_uk_imd/datasets/uk_index/latest\">composite 2020 UK index of multiple deprivation version: 3.2.0</a> (MySociety, <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY</a>)."
-	},
-	"download": {"text": "composite IMD by constituency", "type": "CSV"}
-} %}{% endcomp %}
 
 <h2>Notes{% comp 'anchor', { 'ref': 'notes'} %}{% endcomp %}</h2>
 <p>IMD scores at constituency level are <a href="https://pages.mysociety.org/composite_uk_imd/analysis/methodology_and_analysis.html">created by MySociety</a> using methodology from a paper by <a href="https://bmjopen.bmj.com/content/6/11/e012750">Gary A Abel, Matthew E Barclay, and Rupert A Payne</a> to create a composite measure of multiple deprivation across the UK. This set of indexes follows the general convention that higher scores show 'worse' deprivation. The most deprived area is the one with the highest score.</p>

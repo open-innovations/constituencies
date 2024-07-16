@@ -7,84 +7,6 @@ description: |
   Showing constituencies by nation and region (UK).
 ---
 
-<h2>Existing constituencies</h2>
-{% comp 'wrapper', {
-	"component": comp.oi.map.hex_cartogram,
-	"config": {
-		"colours": {
-			"North East": "#d60303",
-			"North West": "#1dd3a7",
-			"Yorkshire and the Humber": "#f9bc26",
-			"East Midlands": "#00b6ff",
-			"West Midlands": "#e6007c",
-			"East of England": "#ff6700",
-			"London": "#d73058",
-			"South East": "#67e767",
-			"South West": "#178cff",
-			"Wales": "#0dbc37",
-			"Scotland": "#2254f4",
-			"Northern Ireland": "#722ea5"
-		},
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.population-2020",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "a",
-		"matchKey": "PCON11CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"colour": "North East",
-				"label": "North East"
-			},{
-				"colour": "North West",
-				"label": "North West"
-			},{
-				"colour": "Yorkshire and the Humber",
-				"label": "Yorkshire and the Humber"
-			},{
-				"colour": "East Midlands",
-				"label": "East Midlands"
-			},{
-				"colour": "West Midlands",
-				"label": "West Midlands"
-			},{
-				"colour": "East of England",
-				"label": "East of England"
-			},{
-				"colour": "London",
-				"label": "London"
-			},{
-				"colour": "South East",
-				"label": "South East"
-			},{
-				"colour": "South West",
-				"label": "South West"
-			},{
-				"colour": "Wales",
-				"label": "Wales"
-			},{
-				"colour": "Scotland",
-				"label": "Scotland"
-			},{
-				"colour": "Northern Ireland",
-				"label": "Northern Ireland"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
-		},
-		"tooltip": "<strong>{{ n }}</strong><br /><strong>{{ a }}</strong>",
-		"attribution": ""
-	}
-} %}{% endcomp %}
-
-<h2>2023 constituencies</h2>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
@@ -156,7 +78,7 @@ description: |
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br /><strong>{{ region }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />PCON24CD: <strong>{{ _id }}</strong><br />Region: <strong>{{ region }}</strong>",
 		"attribution": ""
 	}
 } %}{% endcomp %}
