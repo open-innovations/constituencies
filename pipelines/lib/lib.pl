@@ -11,21 +11,21 @@ binmode(STDIN, ":encoding(UTF-8)");
 ################
 # Subroutines
 
-my %colours = (
-	'black'=>"\033[0;30m",
-	'red'=>"\033[0;31m",
-	'green'=>"\033[0;32m",
-	'yellow'=>"\033[0;33m",
-	'blue'=>"\033[0;34m",
-	'magenta'=>"\033[0;35m",
-	'cyan'=>"\033[0;36m",
-	'white'=>"\033[0;37m",
-	'none'=>"\033[0m"
-);
-
 sub msg {
 	my $str = $_[0];
 	my $dest = $_[1]||"STDOUT";
+	
+	my %colours = (
+		'black'=>"\033[0;30m",
+		'red'=>"\033[0;31m",
+		'green'=>"\033[0;32m",
+		'yellow'=>"\033[0;33m",
+		'blue'=>"\033[0;34m",
+		'magenta'=>"\033[0;35m",
+		'cyan'=>"\033[0;36m",
+		'white'=>"\033[0;37m",
+		'none'=>"\033[0m"
+	);
 	foreach my $c (keys(%colours)){ $str =~ s/\< ?$c ?\>/$colours{$c}/g; }
 	if($dest eq "STDERR"){
 		print STDERR $str;
@@ -42,9 +42,24 @@ sub error {
 
 sub warning {
 	my $str = $_[0];
-	$str =~ s/(^[\t\s]*)/$1$colours{'yellow'}WARNING:$colours{'none'} /;
+	$str =~ s/(^[\t\s]*)/$1<yellow>WARNING:<none> /;
 	msg($str,"STDERR");
 }
+
+
+sub makeDir {
+	my $str = $_[0];
+	my @bits = split(/\//,$str);
+	my $tdir = "";
+	my $i;
+	for($i = 0; $i < @bits; $i++){
+		$tdir .= $bits[$i]."/";
+		if(!-d $tdir){
+			`mkdir $tdir`;
+		}
+	}
+}
+
 
 # Version 1.3
 sub ParseCSV {
@@ -128,4 +143,40 @@ sub LoadJSON {
 	if(!$str){ $str = "{}"; }
 	return JSON::XS->new->decode($str);
 }
+
+sub SaveFromURL {
+	my $url = shift;
+	my $file = shift;
+	my $args = shift;
+	my ($age,$now,$epoch_timestamp,$arguments,$h);
+
+	msg("URL: <yellow>$url<none>\n");
+
+	$age = 100000;
+	if(-e $file){
+		$epoch_timestamp = (stat($file))[9];
+		$now = time;
+		$age = ($now-$epoch_timestamp);
+	}
+
+	msg("File: <cyan>$file<none>\n");
+	if($age >= 86400 || -s $file == 0){
+		$arguments = "";
+		if($args->{'headers'}){
+			foreach $h (keys(%{$args->{'headers'}})){
+				$arguments .= ($arguments ? " " : "")."-H \"$h: $args->{'headers'}{$h}\"";
+			}
+		}
+		if($args->{'method'}){
+			$arguments .= " -X $args->{'method'}"
+		}
+		if($args->{'form'}){
+			$arguments .= " --data-raw \'$args->{'form'}\'";
+		}
+		`curl -s --insecure -L $arguments --compressed -o $file "$url"`;
+		msg("Downloaded to $file\n");
+	}
+	return $file;
+}
+
 1;
