@@ -2,26 +2,24 @@
 title: House prices (England & Wales)
 theme: economy
 created: 2023-08-10T20:05
-updated: 2023-08-10T20:05
+updated: 2024-07-23T14:50
 description: |
   Constituency-level data on house prices. The house price figures used are the median price paid for properties over the twelve months to the date shown.
 ---
 
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-
-<p>This page provides constituency-level data on house prices in England and Wales. The house price figures used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
+<p>This page provides constituency-level data on house prices in England and Wales. The <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas">house price figures</a> used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
 
 {% comp 'hexmap', {
     "config": {
         "width": 600,
         "test": true,
-        "hexjson": hexjson.constituencies,
+        "hexjson": "hexjson.uk-constituencies-2023",
         "data": house_prices,
         "columns": [{
             "name": "filterLabel",
             "template": "{{ n }} ({{ a }})"
         }],
-        "value": "2022-12-01",
+        "value": "2023-09-01",
         "scale": "Viridis",
         "min": 0,
         "max": 1000000,
@@ -70,6 +68,7 @@ description: |
 
 
 <h3>House price to wages ratio</h3>
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024) whilst we wait for <a href="https://www.nomisweb.co.uk/query/construct/components/stdListComponent.asp?menuopt=12&subcomp=100">NOMIS</a> to provide data by the new constituencies.</div>
 {% comp 'hexmap', {
     "config": {
 		"width": 600,
@@ -121,5 +120,4 @@ description: |
 <ul>
 <li>The median is the point at which half of house prices in the data are higher and half are lower.</li>
 <li>The median house price is for the rolling year to the end of the month specified.</li>
-<li>The source data are provided for pre-2023 constituencies.</li>
 </ul>
