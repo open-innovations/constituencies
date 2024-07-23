@@ -6,7 +6,7 @@ import numpy as np
 
 # Setting up the directories.
 DATA_DIR = 'src/_data/sources/'
-ECON_DATA_DIR = os.path.join(DATA_DIR, 'economy')
+ECON_DATA_DIR = 'src/themes/economy/_data/'
 ENVIRON_DATA_DIR = os.path.join(DATA_DIR, 'environment')
 ENERGY_DATA_DIR = os.path.join(DATA_DIR, 'energy')
 HEALTH_DATA_DIR = os.path.join(DATA_DIR, 'health')

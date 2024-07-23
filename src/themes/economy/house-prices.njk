@@ -5,74 +5,6 @@ created: 2023-08-10T20:05
 updated: 2023-08-10T20:05
 description: |
   Constituency-level data on house prices. The house price figures used are the median price paid for properties over the twelve months to the date shown.
-viz:
-  - width: 600
-    test: true
-    hexjson: hexjson.constituencies
-    data: sources.economy.house_prices
-    columns:
-      - name: "filterLabel"
-        template: "{{ n }} ({{ a }})"
-    value: "2022-12-01"
-    scale: Viridis
-    min: 0
-    max: 1000000
-    matchKey: "ONSConstID"
-    legend:
-      position: top right
-      items:
-      - value: 1000000
-        label: £1m
-      - value: 800000
-        label: £800k
-      - value: 600000
-        label: £600k
-      - value: 400000
-        label: £400k
-      - value: 200000
-        label: £200k
-      - value: 0
-        label: '0'
-    tools:
-      filter:
-        label: filterLabel
-      slider:
-        columns: ['1995-12-31','1996-12-31','1997-12-31','1998-12-31','1999-12-31','2000-12-31','2001-12-31','2002-12-31','2003-12-31','2004-12-31','2005-12-31','2006-12-31','2007-12-31','2008-12-31','2009-12-31','2010-12-31','2011-12-31','2012-12-31','2013-12-31','2014-12-31','2015-12-31','2016-12-31','2017-12-31','2018-12-01','2019-12-01','2020-12-01','2021-12-01','2022-12-01']
-        width: 500px
-    tooltip: "<strong>{{ n }}</strong><br />Median House Price ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>"
-    attribution: |
-      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a>
-  - width: 600
-    hexjson: hexjson.constituencies
-    data: sources.economy.house_price_wage_ratio
-    columns:
-      - name: "filterLabel"
-        template: "{{ ConstituencyName }} ({{ RegionName }})"
-    value: "2022-12-01"
-    scale: Viridis
-    min: 0
-    max: 30
-    matchKey: "ONSConstID"
-    legend:
-      position: top right
-      items:
-      - value: 30
-        label: "&times;30"
-      - value: 20
-        label: "&times;20"
-      - value: 10
-        label: "&times;10"
-      - value: 0
-        label: '0'
-    tools:
-      filter:
-        label: filterLabel
-      slider:
-        columns: ['1995-12-31','1996-12-31','1997-12-31','1998-12-31','1999-12-31','2000-12-31','2001-12-31','2002-12-31','2003-12-31','2004-12-31','2005-12-31','2006-12-31','2007-12-31','2008-12-31','2009-12-31','2010-12-31','2011-12-31','2012-12-31','2013-12-31','2014-12-31','2015-12-31','2016-12-31','2017-12-31','2018-12-01','2019-12-01','2020-12-01','2021-12-01','2022-12-01']
-        width: 500px
-    tooltip: "<strong>{{ n }}</strong><br />House price to wages ratio ({{ _value }}): &times;<strong>{{ {{ _value }} | toFixed(2) }}</strong>"
-    attribution: |
-      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-house-prices/">House prices (House of Commons Library)</a>
 ---
 
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
@@ -80,14 +12,107 @@ viz:
 <p>This page provides constituency-level data on house prices in England and Wales. The house price figures used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
 
 {% comp 'hexmap', {
-	"config": viz[0],
-	"download": {"text": "House prices by constituency", "type": "CSV"}
+    "config": {
+        "width": 600,
+        "test": true,
+        "hexjson": hexjson.constituencies,
+        "data": house_prices,
+        "columns": [{
+            "name": "filterLabel",
+            "template": "{{ n }} ({{ a }})"
+        }],
+        "value": "2022-12-01",
+        "scale": "Viridis",
+        "min": 0,
+        "max": 1000000,
+        "matchKey": "ONSConstID",
+        "legend": {
+            "position": "top right",
+            "items": [{
+                "value": 1000000,
+                "label": "£1m"
+            },{
+                "value": 800000,
+                "label": "£800k"
+            },{
+                "value": 600000,
+                "label": "£600k"
+            },{
+                "value": 400000,
+                "label": "£400k"
+            },{
+                "value": 200000,
+                "label": "£200k"
+            },{
+                "value": 0,
+                "label": "0"
+            }]
+        },
+        "tools": {
+            "filter": {
+                "label": "filterLabel"
+            },
+            "slider": {
+                "columns": [
+                    "1995-12-31","1996-12-31","1997-12-31","1998-12-31","1999-12-31","2000-12-31","2001-12-31","2002-12-31","2003-12-31","2004-12-31","2005-12-31","2006-12-31","2007-12-31","2008-12-31","2009-12-31","2010-12-31","2011-12-31","2012-12-31","2013-12-31","2014-12-31","2015-12-31","2016-12-31","2017-12-31","2018-12-01","2019-12-01","2020-12-01","2021-12-01","2022-12-01"
+                ],
+                "width": "500px"
+            }
+        },
+        "tooltip": "<strong>{{ n }}</strong><br />Median House Price ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
+        "attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-house-prices/\">House prices (House of Commons Library)</a>"
+    },
+    "download": {
+        "text": "House prices by constituency",
+        "type": "CSV"
+    }
 } %}{% endcomp %}
+
 
 <h3>House price to wages ratio</h3>
 {% comp 'hexmap', {
-	"config": viz[1],
-	"download": {"text": "House price wage ratio by constituency", "type": "CSV"}
+    "config": {
+		"width": 600,
+		"hexjson": hexjson.constituencies,
+		"data": house_price_wage_ratio,
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ ConstituencyName }} ({{ RegionName }})"
+		}],
+		"value": "2022-12-01",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 30,
+		"matchKey": "ONSConstID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "&times;30"
+			},{
+				"value": 20,
+				"label": "&times;20"
+			},{
+				"value": 10,
+				"label": "&times;10"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["1995-12-31","1996-12-31","1997-12-31","1998-12-31","1999-12-31","2000-12-31","2001-12-31","2002-12-31","2003-12-31","2004-12-31","2005-12-31","2006-12-31","2007-12-31","2008-12-31","2009-12-31","2010-12-31","2011-12-31","2012-12-31","2013-12-31","2014-12-31","2015-12-31","2016-12-31","2017-12-31","2018-12-01","2019-12-01","2020-12-01","2021-12-01","2022-12-01"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />House price to wages ratio ({{ _value }}): &times;<strong>{{ {{ _value }} | toFixed(2) }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-house-prices/\">House prices (House of Commons Library)</a>"
+	},
+    "download": {"text": "House price wage ratio by constituency", "type": "CSV"}
 } %}{% endcomp %}
 
 

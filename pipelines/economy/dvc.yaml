@@ -10,15 +10,15 @@ stages:
       - raw-data/unemployment.xlsx
       - raw-data/median-wages.csv
     outs:
-      - src/_data/sources/economy/covid_grants_arg.csv:
+      - src/themes/economy/_data/covid_grants_arg.csv:
           cache: false
-      - src/_data/sources/economy/covid_grants_ohlg.csv:
+      - src/themes/economy/_data/covid_grants_ohlg.csv:
           cache: false
-      - src/_data/sources/economy/wages.csv:
+      - src/themes/economy/_data/wages.csv:
           cache: false
-      - src/_data/sources/economy/house_prices.csv:
+      - src/themes/economy/_data/house_prices.csv:
           cache: false
-      - src/_data/sources/economy/house_price_wage_ratio.csv:
+      - src/themes/economy/_data/house_price_wage_ratio.csv:
           cache: false
-      - src/_data/sources/economy/unemployment_rate.csv:
+      - src/themes/economy/_data/unemployment_rate.csv:
           cache: false
