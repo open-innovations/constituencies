@@ -28,7 +28,7 @@ foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pco
 $con = addCandidateData($con,getCandidates());
 
 my $csv = makeSummary($con);
-my $updated = saveSummary($basedir."../../src/_data/sources/society/general-elections-2024.csv",$csv);
+my $updated = saveSummary($basedir."../../src/themes/society/general-elections/embeds/_data/ge2024_candidates.csv",$csv);
 if($updated){
 	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/index.njk");
 	updateCreationTimestamp($basedir."../../src/themes/society/general-elections/embeds/candidates-2024.njk");
