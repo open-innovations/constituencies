@@ -21,7 +21,7 @@ my $outfile = $basedir."../../src/themes/society/food-banks/_data/foodbanks.csv"
 # Get a new copy of the food bank data
 SaveFromURL("https://www.givefood.org.uk/api/2/foodbanks/",$fbkfile);
 
-my (@items,$i,$lookup,$pcon,$totals,$name);
+my (@items,$i,$lookup,$pcon,$totals,$name,$namesafe);
 
 # Read in the HexJSON and build the lookup
 my $hexjson = LoadJSON($hexfile);
@@ -52,9 +52,11 @@ for($i = 0; $i < @items; $i++){
 
 
 open(my $fh,">:utf8",$outfile) || error("Unable to save to <cyan>$outfile<none>\n");
-print $fh "Code,Constituency,Region,Food banks\n";
+print $fh "Code,Constituency,Slug,Region,Food banks\n";
 foreach $name (sort{ $lookup->{$a}{'id'} cmp $lookup->{$b}{'id'} }(keys(%{$lookup}))){
-	print $fh ($lookup->{$name}{'id'}||"").",".($name =~ /\,/ ? "\"$name\"" : $name).",".($lookup->{$name}{'region'}||"").",".($lookup->{$name}{'total'}||"0")."\n";
+	$namesafe = lc($name);
+	$namesafe =~ s/ /\-/g;
+	print $fh ($lookup->{$name}{'id'}||"").",".($name =~ /\,/ ? "\"$name\"" : $name).",".($namesafe =~ /\,/ ? "\"$namesafe\"" : $namesafe).",".($lookup->{$name}{'region'}||"").",".($lookup->{$name}{'total'}||"0")."\n";
 }
 close($fh);
 msg("Saved to <cyan>$outfile<none>\n");
