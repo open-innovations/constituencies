@@ -1,11 +1,13 @@
 package OpenInnovations::XLSX;
 
-# Version 1.0
+# Version 1.1
 
 use strict;
 use warnings;
 use Data::Dumper;
 use Encode;
+use XML::Simple;
+use Time::HiRes qw( time );
 use open qw(:std :encoding(UTF-8));
 binmode(STDOUT, ":utf8");
 binmode(STDIN, ":encoding(UTF-8)");
@@ -42,6 +44,44 @@ sub load {
 	return $self;
 }
 
+sub getXLSXSharedStrings {
+	my $self = shift;
+	my ($parser,$str,$t,$i,$n);
+	# First we need to get the sharedStrings.xml
+	$str = `unzip -p $self->{'file'} xl/sharedStrings.xml 2>/dev/null`;
+	if(!utf8::is_utf8($str)){ $str = decode_utf8($str); }
+	$parser = XMLin($str);
+	$n = @{$parser->{'si'}};
+	for($i = 0; $i < $n; $i++){
+		if(ref($parser->{'si'}[$i]{'t'}) eq "HASH"){
+			$self->{'strings'}[$i] = $parser->{'si'}[$i]{'t'}{'content'};
+		}else{
+			$self->{'strings'}[$i] = $parser->{'si'}[$i]{'t'};
+		}
+	}
+	return @{$self->{'strings'}};
+}
+
+sub getXLSXSheets {
+	my $self = shift;
+	my ($str,$parse,$id,$rid,$attr);
+
+	$str =  `unzip -p $self->{'file'} xl/workbook.xml`;
+	$str =~ s/<definedNames>.*?<\/definedNames>//;
+	my $parser = XMLin($str);
+	foreach $id (keys(%{$parser->{'sheets'}{'sheet'}})){
+		$rid = $parser->{'sheets'}{'sheet'}{$id}{'r:id'};
+		$rid =~ s/^rId/sheet/;
+		$attr = {
+			'name'=>$id,
+			'id'=>$rid,
+			'sheetId'=>$parser->{'sheets'}{'sheet'}{$id}{'sheetId'}
+		};
+		push(@{$self->{'sheets'}},$attr);
+	}
+	return @{$self->{'sheets'}};
+}
+
 sub loadSheet {
 	my $self = shift;
 	my $sheet = shift;
@@ -50,7 +90,7 @@ sub loadSheet {
 
 	msg("\tProcessing sheet <yellow>$sheet<none>\n");
 
-	my ($txt,$xlsx,$found,$s,$str,$sheetcontent,$props,$row,$attr,$rowdata,$col,$c,$n,@rows,$r,$head,$headers,$datum,$key,@features);
+	my ($stime,$etime,$txt,$xlsx,$parser,$nrows,$ncols,$found,$s,$str,$sheetcontent,$props,$row,$attr,$rowdata,$col,$c,$a,$n,@rows,$r,$head,$headers,$datum,$key,@features);
 	$xlsx = {};
 
 	# See if the sheet matches
@@ -75,66 +115,68 @@ sub loadSheet {
 	$str = `unzip -p $self->{'file'} xl/worksheets/$self->{'sheets'}[$found]{'id'}.xml`;
 	if(!utf8::is_utf8($str)){ $str = decode_utf8($str); }
 	$str = decode_utf8(join("",$str));
+	
+	$stime = time();
+	$parser = XMLin($str);
+	$nrows = @{$parser->{'sheetData'}{'row'}};
+	$ncols = 0;
 
-	if($str =~ /<sheetData>(.*?)<\/sheetData>/){
-		$sheetcontent = $1;
-		while($sheetcontent =~ s/<row([^\>]*?)>(.*?)<\/row>//){
-			$props = $1;
-			$row = $2;
-			$attr = {};
-			while($props =~ s/([^\s]+)="([^\"]+)"//){ $attr->{$1} = $2; }
-			$rowdata = {};
-			$rowdata->{'cols'} = ();
-			while($row =~ s/<c([^\>]*?)>(.*?)<\/c>//){
-				$props = $1;
-				$col = $2;
-				$col =~ s/<[^\>]+>//g;
-				$attr = {};
-				while($props =~ s/([^\s]+)="([^\"]+)"//){ $attr->{$1} = $2; }
-				if($attr->{'r'} =~ /^([A-Z]+)([0-9]+)/){
-					$c = $1;
+	for($r = 0; $r < $nrows; $r++){
+		if(ref($parser->{'sheetData'}{'row'}[$r]{'c'}) eq "HASH"){
+			$parser->{'sheetData'}{'row'}[$r]{'c'} = [$parser->{'sheetData'}{'row'}[$r]{'c'}];
+		}
+		if(ref($parser->{'sheetData'}{'row'}[$r]{'c'}) eq "ARRAY"){
+			$ncols = @{$parser->{'sheetData'}{'row'}[$r]{'c'}};
+			$rowdata = ();
+			for($c = 0; $c < $ncols; $c++){
+				if($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'r'} =~ /^([A-Z]+)([0-9]+)/){
+					$a = $1;
 					$n = $2;
-					if(!defined($attr->{'t'})){ $attr->{'t'} = ""; }
-					if($attr->{'t'} eq "s"){
-						$rowdata->{'cols'}{$c} = $self->{'strings'}[$col];
+					$col = $parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'v'};
+					if(!defined($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'})){ $parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'} = ""; }
+					if($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'} eq "s"){
+						$rowdata->{$a} = $self->{'strings'}[$col];
 					}else{
-						$rowdata->{'cols'}{$c} = $col;
+						$rowdata->{$a} = $col;
 					}
 				}
 			}
-			push(@rows,$rowdata);
+			$rows[$r] = $rowdata;
+		}else{
+			warning("Not an array of columns on row <yellow>$r<none>\n");
 		}
 	}
+	$etime = time();
+	msg("\tParsed data in <green>".sprintf("%.2f",$etime - $stime)."<none>s\n");
 
 	foreach $r (sort(@{$args->{'header'}})){
-		foreach $col (keys(%{$rows[$r]{'cols'}})){
-			$head = $rows[$r]{'cols'}{$col};
+		foreach $col (keys(%{$rows[$r]})){
+			$head = $rows[$r]{$col};
 			if(defined($args->{'rename'})){
-				$head = $args->{'rename'}->($rows[$r]{'cols'}{$col});
+				$head = $args->{'rename'}->($rows[$r]{$col});
 			}
 			$headers->{$col} .= ($headers->{$col} ? "→" : "").$head;
 		}
 	}
 
-	for($r = $args->{'header'}[@{$args->{'header'}}-1]+1; $r < @rows; $r++){
-
-		if($r >= $args->{'startrow'}){
-			$datum = {};
-			foreach $key (keys(%{$headers})){
-				if($rows[$r]->{'cols'}{$key}){
-					$datum->{$headers->{$key}} = $rows[$r]->{'cols'}{$key};
-				}	
-			}
-			push(@features,$datum);
-		}
-	}
-
+	# Build output
 	$xlsx = {
 		'headers'=>{
 			'lookup'=>$headers,
 		}
 	};
-	@{$xlsx->{'rows'}} = @features;
+	my @heads = keys(%{$headers});
+	for($r = $args->{'header'}[@{$args->{'header'}}-1]+1; $r < @rows; $r++){
+
+		if($r >= $args->{'startrow'}){
+			$datum = {};
+			foreach $key (@heads){
+				if(!defined($rows[$r]->{$key})){ $rows[$r]->{$key} = ""; }
+				$datum->{$headers->{$key}} = $rows[$r]->{$key};
+			}
+			push(@{$xlsx->{'rows'}},$datum);
+		}
+	}
 	@{$xlsx->{'headers'}{'columns'}} = sort{length($a) <=> length($b) || $a cmp $b}(keys(%{$headers}));
 	for($r = 0 ; $r < @{$xlsx->{'headers'}{'columns'}}; $r++){
 		$xlsx->{'headers'}{'columns'}[$r] = {
@@ -143,40 +185,6 @@ sub loadSheet {
 		};
 	}
 	return $xlsx;
-}
-
-sub getXLSXSharedStrings {
-	my $self = shift;
-	my (@strings,$str,$t);
-	# First we need to get the sharedStrings.xml
-	$str = `unzip -p $self->{'file'} xl/sharedStrings.xml 2>/dev/null`;
-	if(!utf8::is_utf8($str)){ $str = decode_utf8($str); }
-	while($str =~ s/<si>(.*?)<\/si>//){
-		$t = $1;
-		$t =~ s/<[^\>]+>//g;
-		push(@strings,$t);
-	}
-	@{$self->{'strings'}} = @strings;
-	return @strings;
-}
-
-sub getXLSXSheets {
-	my $self = shift;
-	my ($str,@lines,$i,@sheets,$props,$attr);
-
-	$str =  `unzip -p $self->{'file'} xl/workbook.xml`;
-	while($str =~ s/<sheet([^\>]*)\/>//){
-		$props = $1;
-		$attr = {};
-		while($props =~ s/([^\s]+)="([^\"]+)"//){ $attr->{$1} = $2; }
-		$attr->{'id'} = $attr->{'r:id'};
-		$attr->{'id'} =~ s/^rId//;
-		$attr->{'id'} = "sheet".$attr->{'id'};
-		push(@sheets,$attr);
-		
-	}
-	@{$self->{'sheets'}} = @sheets;
-	return @sheets;
 }
 
 

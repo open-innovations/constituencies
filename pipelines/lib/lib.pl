@@ -174,7 +174,7 @@ sub SaveFromURL {
 			$arguments .= " --data-raw \'$args->{'form'}\'";
 		}
 		`curl -s --insecure -L $arguments --compressed -o $file "$url"`;
-		msg("Downloaded to $file\n");
+		msg("Downloaded to <cyan>$file<none>\n");
 	}
 	return $file;
 }
