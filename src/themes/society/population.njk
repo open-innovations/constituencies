@@ -2,21 +2,19 @@
 title: Population (UK)
 theme: society
 created: 2023-09-13T13:32
-updated: 2023-09-13T13:32
+updated: 2024-07-24T17:35
 description: |
   Population by constituency (UK).
 keywords: [population,people,age,breakdown]
 ---
-
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 
 <h2>Total population{% comp 'anchor', { 'ref': 'total'} %}{% endcomp %}</h2>
 {% comp 'wrapper', {
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.population-2020",
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": population_2022,
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
@@ -25,7 +23,7 @@ keywords: [population,people,age,breakdown]
 		"scale": "Viridis",
 		"min": 50000,
 		"max": 150000,
-		"matchKey": "PCON11CD",
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -45,9 +43,9 @@ keywords: [population,people,age,breakdown]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Total: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>)"
 	},
-	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
+	"download": {"text": "Population by constituency (2021/22)", "type": "CSV"}
 } %}{% endcomp %}
 
 
@@ -57,8 +55,8 @@ keywords: [population,people,age,breakdown]
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.population-2020",
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": population_2022,
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
@@ -67,7 +65,7 @@ keywords: [population,people,age,breakdown]
 		"scale": "Viridis",
 		"min": 0,
 		"max": 100000,
-		"matchKey": "PCON11CD",
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -97,7 +95,7 @@ keywords: [population,people,age,breakdown]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>)"
 	},
 	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
 } %}{% endcomp %}
@@ -111,8 +109,8 @@ keywords: [population,people,age,breakdown]
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.population-2020",
+		"hexjson": "hexjson.uk-constituencies-2023",
+		"data": population_2022,
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
@@ -121,7 +119,7 @@ keywords: [population,people,age,breakdown]
 		"scale": "Viridis",
 		"min": 0,
 		"max": 4000,
-		"matchKey": "PCON11CD",
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -151,7 +149,7 @@ keywords: [population,people,age,breakdown]
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates\">Parliamentary Constituency Mid-Year Population Estimates (Experimental Statistics)</a>, NRS <a href=\"http://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/2011-based-special-area-population-estimates/ukpc-population-estimates\">UK Parliamentary Constituency Population Estimates</a>, NISRA <a href=\"https://www.nisra.gov.uk/statistics/population/mid-year-population-estimates\">Mid-Year Population Estimates for Northern Ireland</a>)"
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>)"
 	},
 	"download": {"text": "Population by constituency (2020)", "type": "CSV"}
 } %}{% endcomp %}
