@@ -50,11 +50,11 @@ def df_latlong2constituency(df, opts={}):
     if not 'year' in opts:
         opts['year'] = 'XXXX'
     if not 'key' in opts:
-        opts['key'] = 'PCON22CD'
+        opts['key'] = 'PCON24CD'
     if not 'name' in opts:
-        opts['name'] = 'PCON22NM'
+        opts['name'] = 'PCON24NM'
     if not 'geojson' in opts:
-        opts['geojson'] = basedir+'../../src/_data/geojson/constituencies-2022.geojson'
+        opts['geojson'] = basedir+'../../src/_data/geojson/constituencies-2024.geojson'
 
     # load the geojson
     with open(opts['geojson']) as f:
@@ -111,7 +111,7 @@ def df_latlong2constituency(df, opts={}):
         print("Can't save file "+basedir+'../../raw-data/storm_overflows_latlong-'+opts['year']+'.csv')
 
     # Limit the columns
-    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON22CD', 'PCON22NM']]
+    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON24CD', 'PCON24NM']]
     # remove non-numeric entries
     df.replace(['#N/a', 'N/a', '-'], '', inplace=True)
     #df.to_csv('../../src/_data/sources/environment/storm_overflows_by_constituency.csv')
@@ -168,12 +168,12 @@ def storm_overflows():
         df = df_grid2latlong({'base':basedir,'data':years[y]})
 
         # convert latlong to a constituency using shapely to check polygons
-        df = df_latlong2constituency(df,{'year':y,'key':'PCON22CD','geojson':basedir+'../../src/_data/geojson/constituencies-2022.geojson'})
+        df = df_latlong2constituency(df,{'year':y,'key':'PCON24CD','geojson':basedir+'../../src/_data/geojson/constituencies-2024.geojson'})
 
         df['Total Duration (hrs) all spills prior to processing through 12-24h count method'] = pd.to_numeric(df['Total Duration (hrs) all spills prior to processing through 12-24h count method'], errors='coerce')
-        total_duration = df.groupby(['PCON22CD', 'PCON22NM'])['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
+        total_duration = df.groupby(['PCON24CD', 'PCON24NM'])['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
         df['Counted spills using 12-24h count method'] = pd.to_numeric(df['Counted spills using 12-24h count method'], errors='coerce')
-        total_spills = df.groupby(['PCON22CD', 'PCON22NM'])['Counted spills using 12-24h count method'].sum().reset_index()
+        total_spills = df.groupby(['PCON24CD', 'PCON24NM'])['Counted spills using 12-24h count method'].sum().reset_index()
 
         merged_df = total_spills.merge(total_duration, how='inner')
         
@@ -190,15 +190,15 @@ def storm_overflows():
     # Join all the data_sets
     full = pd.concat(data_sets,ignore_index=True)
 
-    pivotted = full.pivot_table(index=['PCON22CD'], columns=['Year'], values=['Counted spills using 12-24h count method','Total Duration (hrs) all spills prior to processing through 12-24h count method'])
+    pivotted = full.pivot_table(index=['PCON24CD'], columns=['Year'], values=['Counted spills using 12-24h count method','Total Duration (hrs) all spills prior to processing through 12-24h count method'])
     
     # Add a column at the start which is a duplicate of the index (so we can not print the index column)
-    pivotted.insert(0,'PCON22CD',pivotted.index)
+    pivotted.insert(0,'PCON24CD',pivotted.index)
 
     # Add the Names back
-    pivotted.insert(1,'PCON22NM',pivotted.PCON22CD.map(full.set_index('PCON22CD')['PCON22NM'].to_dict()),True)
+    pivotted.insert(1,'PCON24NM',pivotted.PCON24CD.map(full.set_index('PCON24CD')['PCON24NM'].to_dict()),True)
 
-    pivotted.pipe(save_tidy_csv, basedir, '../../src/_data/sources/environment/storm_overflows.csv')
+    pivotted.pipe(save_tidy_csv, basedir, '../../src/themes/environment/storm-overflows/_data/storm_overflows.csv')
     print(pivotted);
     
     return pivotted

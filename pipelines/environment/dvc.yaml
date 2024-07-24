@@ -26,11 +26,11 @@ stages:
       - storm-overflows.py
       - ../util.py
       - ../../raw-data/spills-by-constituency.json
-      - ../../src/_data/geojson/constituencies-2022.geojson
+      - ../../src/_data/geojson/constituencies-2024.geojson
       - ../../raw-data/EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx
       - ../../raw-data/EDM_2023_Storm_Overflow_Annual_Return/EDM 2023 Storm Overflow Annual Return - all water and sewerage companies.xlsx
     outs:
-      - ../../src/_data/sources/environment/spills_by_constituency.csv:
-          cache: false
-      - ../../src/_data/sources/environment/storm_overflows.csv:
+      #- ../../src/_data/sources/environment/spills_by_constituency.csv:
+      #    cache: false
+      - ../../src/themes/environment/storm-overflows/_data/storm_overflows.csv:
           cache: false
