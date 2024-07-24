@@ -14,7 +14,7 @@ BEGIN {
 use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
-my $hexfile = $basedir."../../src/_data/hexjson/uk-constituencies-2023.hexjson";
+my $hexfile = $basedir."../../src/_data/hexjson/uk-constituencies-2024.hexjson";
 my $fbkfile = $basedir."../../raw-data/society/foodbanks.json";
 my $outfile = $basedir."../../src/themes/society/food-banks/_data/foodbanks.csv";
 

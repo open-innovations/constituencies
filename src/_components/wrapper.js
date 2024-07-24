@@ -5,7 +5,7 @@ export default function ({ comp, component, config, download }) {
 
 	if(!config.attribution) config.attribution = "";
 	if(config.hexjson=="hexjson.constituencies") config.attribution += (config.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
-	if(config.hexjson=="hexjson.uk-constituencies-2023" || config.hexjson=="hexjson.uk-constituencies-2023-temporary") config.attribution += (config.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
+	if(config.hexjson=="hexjson.uk-constituencies-2024" || config.hexjson=="hexjson.uk-constituencies-2023-temporary") config.attribution += (config.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
 
 	config.attribution += '<div class="menu" data-dependencies="/assets/js/menu.js">';
 	if(typeof config.data==="string"){

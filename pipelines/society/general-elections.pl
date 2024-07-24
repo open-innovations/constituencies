@@ -20,7 +20,7 @@ require $basedir."../lib/lib.pl";
 my ($hexjson,$lookup,$pcon,@candidates,$con);
 
 
-$hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2023.hexjson");
+$hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2024.hexjson");
 # Build a lookup from constituency name to code
 $lookup = {};
 foreach $pcon (keys(%{$hexjson->{'hexes'}})){ $lookup->{$hexjson->{'hexes'}{$pcon}{'n'}} = $pcon; }

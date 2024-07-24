@@ -20,7 +20,7 @@ my ($match,$r,@rows,@fields,$datadir,$dir,$geo,$dh,$fh,$filename,$coordlookup,$c
 # Set some variables
 my $ofile = $basedir."../../src/_data/sources/society/crime-data.csv";
 my $tempdir = $basedir."../../raw-data/society/police/";
-my $hexjson = $basedir.'../../src/_data/hexjson/uk-constituencies-2023.hexjson';
+my $hexjson = $basedir.'../../src/_data/hexjson/uk-constituencies-2024.hexjson';
 my $geojson = $basedir."../../raw-data/geojson/constituencies-2023-hires.geojson";
 my $popdata = $basedir."../../src/_data/sources/society/population.csv";	# Derived from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates
 
