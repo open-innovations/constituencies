@@ -11,17 +11,20 @@ BEGIN {
 	# Get the real base directory for this script
 	($basedir, $path) = abs_path($0) =~ m{(.*/)?([^/]+)$};
 }
-require $basedir."../util.pl";
+use lib $basedir."../lib/";	# Custom functions
+require "lib.pl";
 
-my $hexfile = $basedir."../../src/_data/hexjson/constituencies.hexjson";
+my $hexfile = $basedir."../../src/_data/hexjson/uk-constituencies-2023.hexjson";
 my $fbkfile = $basedir."../../raw-data/society/foodbanks.json";
-my $outfile = $basedir."../../src/_data/sources/society/foodbanks.csv";
+my $outfile = $basedir."../../src/themes/society/food-banks/_data/foodbanks.csv";
 
+# Get a new copy of the food bank data
+SaveFromURL("https://www.givefood.org.uk/api/2/foodbanks/",$fbkfile);
 
 my (@items,$i,$lookup,$pcon,$totals,$name);
 
 # Read in the HexJSON and build the lookup
-my $hexjson = loadJSON($hexfile);
+my $hexjson = LoadJSON($hexfile);
 @items = keys(%{$hexjson->{'hexes'}});
 $lookup = {};
 for($i = 0; $i < @items; $i++){
@@ -29,7 +32,7 @@ for($i = 0; $i < @items; $i++){
 }
 
 # Read in the Food Banks data
-my $json = loadJSON($fbkfile);
+my $json = LoadJSON($fbkfile);
 @items = @{$json};
 $totals = {};
 for($i = 0; $i < @items; $i++){
@@ -48,12 +51,12 @@ for($i = 0; $i < @items; $i++){
 }
 
 
-open(my $fh,">",$outfile) || error("Unable to save to <cyan>$outfile<none>\n");
+open(my $fh,">:utf8",$outfile) || error("Unable to save to <cyan>$outfile<none>\n");
 print $fh "Code,Constituency,Region,Food banks\n";
 foreach $name (sort{ $lookup->{$a}{'id'} cmp $lookup->{$b}{'id'} }(keys(%{$lookup}))){
-	print $fh $lookup->{$name}{'id'}.",".($name =~ /\,/ ? "\"$name\"" : $name).",".($lookup->{$name}{'region'}).",".($lookup->{$name}{'total'})."\n";
+	print $fh ($lookup->{$name}{'id'}||"").",".($name =~ /\,/ ? "\"$name\"" : $name).",".($lookup->{$name}{'region'}||"").",".($lookup->{$name}{'total'}||"0")."\n";
 }
 close($fh);
 msg("Saved to <cyan>$outfile<none>\n");
 
-
+updateCreationTimestamp($basedir."../../src/themes/society/food-banks/index.njk");

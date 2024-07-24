@@ -4,6 +4,7 @@ use warnings;
 use strict;
 use utf8;
 use JSON::XS;
+use POSIX qw(strftime);
 use open qw(:std :encoding(UTF-8));
 binmode(STDOUT, ":utf8");
 binmode(STDIN, ":encoding(UTF-8)");
@@ -60,6 +61,21 @@ sub makeDir {
 	}
 }
 
+sub updateCreationTimestamp {
+	my $file = shift;
+	my(@lines,$fh,$i,$dt);
+	open($fh,$file);
+	@lines = <$fh>;
+	close($fh);
+	$dt = strftime("%FT%H:%M", localtime);
+	for($i = 0; $i < @lines ; $i++){
+		$lines[$i] =~ s/^(updated: )(.*)/$1$dt/;
+	}
+	msg("Updating timestamp in <cyan>$file<none>\n");
+	open($fh,">",$file);
+	print $fh @lines;
+	close($fh);
+}
 
 # Version 1.3
 sub ParseCSV {
