@@ -1,5 +1,4 @@
 layout: template/page.njk
-date: Git Last Modified
 
 # Override the site logo colour here. Any CSS colour will work.
 logo_colour: white
