@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="https://open-innovations.org/resources/images/logos/oi-square-black.svg" />
+	<title>404 | {% if theme and themes[theme]['title']!=title %}{{ themes[theme]['title'] }} | {% endif %}{{ metas.site }}</title>
+	<style>
+	/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: italic;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiDyp8kv8JHgFVrJJLmr19VFteOcEg.woff2) format('woff2');
+	  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+	}
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: italic;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiDyp8kv8JHgFVrJJLmr19VGdeOcEg.woff2) format('woff2');
+	  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	}
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: italic;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2');
+	  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+	  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+	}
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+	  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	}
+	@font-face {
+	  font-family: 'Poppins';
+	  font-style: normal;
+	  font-weight: 600;
+	  font-display: swap;
+	  src: url(https://open-innovations.org/resources/fonts/Poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+	  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	body { background-color: white; font-family: Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; background-color: black; }
+	a { color: inherit; }
+
+	body { height: 100%; min-height: 100%; }
+	.center-block {
+		top:50%;
+		left: 50%;
+		transform: translate3d(-50%,-50%, 0);
+		position: absolute;
+		text-align: center;
+		margin-right: -50%;
+	}
+	.center-block-big {
+		top: 0%;
+		margin-top: 32px;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		margin-right: -50%;
+		transform: translate3d(-50%,0%, 0);
+	}
+	h1, h2, h3 { font-family: "Poppins", sans-serif; }
+	h1 { font-size: 2em; margin-top: 0; margin-bottom: 0; line-height: 0.75em; }
+	h2 { margin-bottom: 1em; }
+	img { width: 6em; max-width: 100%; }
+	p { color: inherit; margin-bottom: 16px; }
+	a { text-decoration: none; color: inherit!important; }
+	.oi-logo { width: 200px; margin-bottom: 0.25em; }
+	.message { font-family: Poppins; font-size: 2em; line-height: 1.25em; margin: 2em 0; }
+
+	.c1-bg, a.c1-bg, .elsewhere .facebook:hover { background-color: #2254F4; color: white; }
+	.c2-bg, a.c2-bg, .c2-bg:visited { background-color: #178CFF; color: black; }
+	.c3-bg, a.c3-bg, .elsewhere .twitter:hover { background-color: #00B6FF; color: black; }
+	.c4-bg, a.c4-bg { background-color: #08DEF9; color: black; }
+	.c5-bg, a.c5-bg { background-color: #1DD3A7; color: black; }
+	.c6-bg, a.c6-bg { background-color: #0DBC37; color: black; }
+	.c7-bg, a.c7-bg { background-color: #67E767; color: black; }
+	.c8-bg, a.c8-bg { background-color: #722EA5; color: white; }
+	.c9-bg, a.c9-bg, .elsewhere .instagram:hover { background-color: #E6007C; color: white; }
+	.c10-bg, a.c10-bg, .elsewhere .flickr:hover { background-color: #EF3AAB; color: black; }
+	.c11-bg, a.c11-bg { background-color: #D73058; color: white; }
+	.c12-bg, a.c12-bg, .elsewhere .youtube:hover { background-color: #D60303; color: white; }
+	.c13-bg, a.c13-bg, .seasonal-accent { background-color: #FF6700; color: black; }
+	.c14-bg, a.c14-bg, .seasonal, .seasonal:hover { background-color: #F9BC26; color: black; }
+	.s1-bg { background-color: #2f529f; color: white!important; }
+	.s2-bg { background-color: #00ace8; color: black; }
+	.s3-bg { background-color: #7dc5ea; color: black; }
+	.b1-bg { background-color: #000000; color: white!important; }
+	.b2-bg { background-color: #333333; color: white!important; }
+	.bk-bg { background-color: #6D6D6D; color: white!important; }
+	.b3-bg, .elsewhere .github:hover { background-color: #999999; color: black!important; }
+	.b4-bg { background-color: #bbbbbb; color: black!important; }
+	.b5-bg { background-color: #dfdfdf; color: black!important; }
+	.b6-bg { background-color: #ffffff; color: black!important; }
+	a.c1-bg:hover, a.c2-bg:hover, a.c3-bg:hover, a.c4-bg:hover, a.c5-bg:hover, a.c6-bg:hover, a.c7-bg:hover, a.c8-bg:hover, a.c9-bg:hover, a.c10-bg:hover, a.c11-bg:hover, a.c12-bg:hover, a.c13-bg:hover, a.c14-bg:hover, a.seasonal:hover, a.b1-bg:hover, a.b2-bg:hover, a.b3-bg:hover, a.b4-bg:hover, a.b5-bg:hover, a.s1-bg:hover, a.s2-bg:hover, a.s3-bg:hover, a.c1-bg:focus, a.c2-bg:focus, a.c3-bg:focus, a.c4-bg:focus, a.c5-bg:focus, a.c6-bg:focus, a.c7-bg:focus, a.c8-bg:focus, a.c9-bg:focus, a.c10-bg:focus, a.c11-bg:focus, a.c12-bg:focus, a.c13-bg:focus, a.c14-bg:focus, a.seasonal:focus, a.b1-bg:focus, a.b2-bg:focus, a.b3-bg:focus, a.b4-bg:focus, a.b5-bg:focus, a.s1-bg:focus, a.s2-bg:focus, a.s3-bg:focus { background-color: #000000; color: white!important; }
+	.b6-bg .button { background-color: black; color: white!important; }
+
+	@media screen and (max-height: 500px) {
+		.center-block {
+			position: relative;
+			left: 0;
+			transform: none;
+			top: 0%;
+			width: 100%;
+			padding: 1em;
+		}
+		.oi-logo { max-width: 100%; }
+	}
+
+	</style>
+</head>
+<body class="c6-bg">
+	<div class="center-block">
+		<svg class="oi-logo" overflow="auto" viewBox="-32 -32 64 64" xmlns="http://www.w3.org/2000/svg">
+			<title>Open Innovations</title>
+			<mask id="oi-person"><path d="m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0" fill="#fff"></path></mask>
+			<g id="oi-logo" fill="black"><circle r="32" mask="url(#oi-person)"></circle></g>
+		</svg>
+		<h1>Open Innovations</h1>
+		{{ content | safe }}
+		<p class="message">"These are not the data you are looking for."</p>
+		<p>You could try our <a href="https://open-innovations.org/">homepage</a>, <a href="https://github.com/open-innovations/">github</a>, <a href="https://open-innovations.org/dashboard/">dashboard</a>, or <a href="https://open-innovations.org/search/">search</a>.</p>
+	</div>
+
+	<script src="https://open-innovations.org/resources/oi.log.js"></script>
+	<script>
+	OI.log.setup({'id':'errors','target':['open-innovations.org']}).add('action=view&error=404');
+	</script>
+
+</body>
+</html>
