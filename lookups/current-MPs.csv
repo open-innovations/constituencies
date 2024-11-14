@@ -1,0 +1,651 @@
+PCON24CD,PCON24NM,MP,MP ID,Start date,Party,Party name,BG,FG
+E14001063,Aldershot,Alex Baker,5173,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001064,Aldridge-Brownhills,Wendy Morton,4358,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001065,Altrincham and Sale West,Mr Connor Rand,5159,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001066,Amber Valley,Linsey Farnsworth,5107,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001067,Arundel and South Downs,Andrew Griffith,4874,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001068,Ashfield,Lee Anderson,4743,2019-12-12T00:00:00,RUK,Reform UK,#12b6cf,#ffffff
+E14001069,Ashford,Sojan Joseph,5247,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001070,Ashton-under-Lyne,Angela Rayner,4356,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001071,Aylesbury,Laura Kyrke-Smith,5341,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001072,Banbury,Sean Woodcock,5328,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001073,Barking,Nesil Caliskan,5180,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001074,Barnsley North,Dan Jarvis,4243,2011-03-03T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001075,Barnsley South,Stephanie Peacock,4607,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001076,Barrow and Furness,Michelle Scrogham,5049,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001077,Basildon and Billericay,Mr Richard Holden,4813,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001078,Basingstoke,Luke Murphy,5248,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001079,Bassetlaw,Jo White,5105,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001080,Bath,Wera Hobhouse,4602,2017-06-08T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001081,Battersea,Marsha De Cordova,4676,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001082,Beaconsfield,Joy Morrissey,4759,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001083,Beckenham and Penge,Liam Conlon,5132,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001084,Bedford,Mohammad Yasin,4598,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001085,Bermondsey and Old Southwark,Neil Coyle,4368,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001086,Bethnal Green and Stepney,Rushanara Ali,4138,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001087,Beverley and Holderness,Graham Stuart,1482,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001088,Bexhill and Battle,Dr Kieran Mullan,4860,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001089,Bexleyheath and Crayford,Daniel Francis,5184,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001090,Bicester and Woodstock,Calum Miller,5346,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001091,Birkenhead,Alison McGovern,4083,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001092,Birmingham Edgbaston,Preet Kaur Gill,4603,2017-06-08T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001093,Birmingham Erdington,Paulette Hamilton,4938,2022-03-03T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001094,Birmingham Hall Green and Moseley,Tahir Ali,4747,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001095,Birmingham Hodge Hill and Solihull North,Liam Byrne,1171,2004-07-15T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001096,Birmingham Ladywood,Shabana Mahmood,3914,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001097,Birmingham Northfield,Laurence Turner,5234,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001098,Birmingham Perry Barr,Ayoub Khan,5357,2024-07-04T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001099,Birmingham Selly Oak,Al Carns,5235,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001100,Birmingham Yardley,Jess Phillips,4370,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001101,Bishop Auckland,Sam Rushworth,5108,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001102,Blackburn,Mr Adnan Hussain,5231,2024-07-04T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001103,Blackley and Middleton South,Graham Stringer,449,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001104,Blackpool North and Fleetwood,Lorraine Beavers,5232,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001105,Blackpool South,Chris Webb,5025,2024-05-02T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001106,Blaydon and Consett,Liz Twist,4618,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001107,Blyth and Ashington,Ian Lavery,4139,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001108,Bognor Regis and Littlehampton,Alison Griffiths,5203,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001109,Bolsover,Natalie Fleet,5053,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001110,Bolton North East,Kirith Entwistle,5095,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001111,Bolton South and Walkden,Yasmin Qureshi,3924,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001112,Bolton West,Phil Brickell,5128,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001113,Bootle,Peter Dowd,4397,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001114,Boston and Skegness,Richard Tice,5161,2024-07-04T00:00:00,RUK,Reform UK,#12b6cf,#ffffff
+E14001115,Bournemouth East,Tom Hayes,5210,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001116,Bournemouth West,Jessica Toale,5202,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001117,Bracknell,Peter Swallow,5165,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001118,Bradford East,Imran Hussain,4394,2015-05-07T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001119,Bradford South,Judith Cummins,4391,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001120,Bradford West,Naz Shah,4409,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001121,Braintree,Mr James Cleverly,4366,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001122,Brent East,Dawn Butler,1489,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001123,Brent West,Barry Gardiner,146,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001124,Brentford and Isleworth,Ruth Cadbury,4389,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001125,Brentwood and Ongar,Alex Burghart,4613,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001126,Bridgwater,Sir Ashley Fox,5101,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001127,Bridlington and The Wolds,Charlie Dewhirst,5169,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001128,Brigg and Immingham,Martin Vickers,3957,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001129,Brighton Kemptown and Peacehaven,Chris Ward,5276,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001130,Brighton Pavilion,Siân Berry,5314,2024-07-04T00:00:00,Green,Green Party,#78b82a,#FFFFFF
+E14001131,Bristol Central,Carla Denyer,5102,2024-07-04T00:00:00,Green,Green Party,#78b82a,#FFFFFF
+E14001132,Bristol East,Kerry McCarthy,1491,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001133,Bristol North East,Damien Egan,5010,2024-02-15T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001134,Bristol North West,Darren Jones,4621,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001135,Bristol South,Karin Smyth,4444,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001136,Broadland and Fakenham,Jerome Mayhew,4739,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001137,Bromley and Biggin Hill,Peter Fortune,5209,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001138,Bromsgrove,Bradley Thomas,5186,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001139,Broxbourne,Lewis Cocking,5050,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001140,Broxtowe,Juliet Campbell,5058,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001141,Buckingham and Bletchley,Callum Anderson,5193,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001142,Burnley,Oliver Ryan,5135,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001143,Burton and Uttoxeter,Jacob Collier,5077,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001144,Bury North,Mr James Frith,4637,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001145,Bury South,Christian Wakeford,4871,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001146,Bury St Edmunds and Stowmarket,Peter Prinsley,5163,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001147,Calder Valley,Josh Fenton-Glynn,5295,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001148,Camborne and Redruth,Perran Moon,5208,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001149,Cambridge,Daniel Zeichner,4382,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001150,Cannock Chase,Josh Newbury,5034,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001151,Canterbury,Rosie Duffield,4616,2017-06-08T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001152,Carlisle,Ms Julie Minns,5094,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001153,Carshalton and Wallington,Bobby Dean,5083,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001154,Castle Point,Rebecca Harris,3948,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001155,Central Devon,Mel Stride,3935,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001156,Central Suffolk and North Ipswich,Patrick Spencer,5303,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001157,Chatham and Aylesford,Tristan Osborne,5220,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001158,Cheadle,Tom Morrison,5090,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001159,Chelmsford,Marie Goldman,5073,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001160,Chelsea and Fulham,Ben Coleman,5344,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001161,Cheltenham,Max Wilkinson,5055,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001162,Chesham and Amersham,Sarah Green,4918,2021-06-17T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001163,Chester North and Neston,Samantha Dixon,4976,2022-12-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001164,Chester South and Eddisbury,Aphra Brandreth,5241,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001165,Chesterfield,Mr Toby Perkins,3952,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001166,Chichester,Jess Brown-Fuller,5335,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001167,Chingford and Woodford Green,Sir Iain Duncan Smith,152,1992-04-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001168,Chippenham,Sarah Gibson,5239,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001169,Chipping Barnet,Dan Tomlinson,5282,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001170,Chorley,Sir Lindsay Hoyle,467,1997-05-01T00:00:00,Spk,Speaker,#4d4d4d,#ffffff
+E14001171,Christchurch,Sir Christopher Chope,242,1997-05-01T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001172,Cities of London and Westminster,Rachel Blake,5257,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001173,City of Durham,Mary Kelly Foy,4753,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001174,Clacton,Nigel Farage,5091,2024-07-04T00:00:00,RUK,Reform UK,#12b6cf,#ffffff
+E14001175,Clapham and Brixton Hill,Bell Ribeiro-Addy,4764,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001176,Colchester,Pam Cox,5042,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001177,Colne Valley,Paul Davies,5317,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001178,Congleton,Mrs Sarah Russell,5324,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001179,Corby and East Northamptonshire,Lee Barron,5315,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001180,Coventry East,Mary Creagh,1579,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001181,Coventry North West,Taiwo Owatemi,4779,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001182,Coventry South,Zarah Sultana,4786,2019-12-12T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001183,Cramlington and Killingworth,Emma Foody,5029,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001184,Crawley,Peter Lamb,5345,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001185,Crewe and Nantwich,Connor Naismith,5273,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001186,Croydon East,Natasha Irons,5119,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001187,Croydon South,Chris Philp,4503,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001188,Croydon West,Sarah Jones,4631,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001189,Dagenham and Rainham,Margaret Mullane,5272,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001190,Darlington,Lola McEvoy,5037,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001191,Dartford,Jim Dickson,5223,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001192,Daventry,Stuart Andrew,4032,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001193,Derby North,Catherine Atkinson,5143,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001194,Derby South,Baggy Shanker,5176,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001195,Derbyshire Dales,John Whitby,5342,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001196,Dewsbury and Batley,Iqbal Mohamed,5268,2024-07-04T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001197,Didcot and Wantage,Olly Glover,5318,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001198,Doncaster Central,Sally Jameson,5178,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001199,Doncaster East and the Isle of Axholme,Lee Pitcher,5233,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001200,Doncaster North,Ed Miliband,1510,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001201,Dorking and Horley,Chris Coghlan,5198,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001202,Dover and Deal,Mike Tapp,5266,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001203,Droitwich and Evesham,Nigel Huddleston,4407,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001204,Dudley,Sonia Kumar,5274,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001205,Dulwich and West Norwood,Helen Hayes,4510,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001206,Dunstable and Leighton Buzzard,Alex Mayer,5141,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001207,Ealing Central and Acton,Dr Rupa Huq,4511,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001208,Ealing North,James Murray,4797,2019-12-12T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001209,Ealing Southall,Deirdre Costigan,5075,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001210,Earley and Woodley,Yuan Yang,5267,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001211,Easington,Grahame Morris,3973,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001212,East Grinstead and Uckfield,Mims Davies,4513,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001213,East Ham,Sir Stephen Timms,163,1994-06-09T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001214,East Hampshire,Damian Hinds,3969,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001215,East Surrey,Claire Coutinho,4806,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001216,East Thanet,Ms Polly Billington,5123,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001217,East Wiltshire,Danny Kruger,4858,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001218,East Worthing and Shoreham,Tom Rutland,5222,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001219,Eastbourne,Josh Babarinde,5086,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001220,Eastleigh,Liz Jarvis,5040,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001221,Edmonton and Winchmore Hill,Kate Osamor,4515,2015-05-07T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001222,Ellesmere Port and Bromborough,Justin Madders,4418,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001223,Eltham and Chislehurst,Clive Efford,165,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001224,Ely and East Cambridgeshire,Charlotte Cane,5182,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001225,Enfield North,Feryal Clark,4822,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001226,Epping Forest,Dr Neil Hudson,4853,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001227,Epsom and Ewell,Helen Maguire,5336,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001228,Erewash,Adam Thompson,5044,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001229,Erith and Thamesmead,Ms Abena Oppong-Asare,4820,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001230,Esher and Walton,Monica Harding,5299,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001231,Exeter,Steve Race,5064,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001232,Exmouth and Exeter East,David Reed,5347,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001233,Fareham and Waterlooville,Suella Braverman,4475,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001234,Farnham and Bordon,Gregory Stafford,5351,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001235,Faversham and Mid Kent,Helen Whately,4527,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001236,Feltham and Heston,Seema Malhotra,4253,2011-12-15T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001237,Filton and Bradley Stoke,Claire Hazelgrove,5306,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001238,Finchley and Golders Green,Sarah Sackman,5204,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001239,Folkestone and Hythe,Tony Vaughan,5067,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001240,Forest of Dean,Matt Bishop,5323,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001241,Frome and East Somerset,Anna Sabine,5286,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001242,Fylde,Mr Andrew Snowden,5072,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001243,Gainsborough,Sir Edward Leigh,345,1983-06-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001244,Gateshead Central and Whickham,Mark Ferguson,5031,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001245,Gedling,Michael Payne,5146,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001246,Gillingham and Rainham,Naushabah Khan,5215,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001247,Glastonbury and Somerton,Sarah Dyke,4995,2023-07-20T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001248,Gloucester,Alex McIntyre,5349,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001249,Godalming and Ash,Jeremy Hunt,1572,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001250,Goole and Pocklington,David Davis,373,2008-07-10T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001251,Gorton and Denton,Andrew Gwynne,1506,2005-05-05T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001252,Gosport,Dame Caroline Dinenage,4008,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001253,Grantham and Bourne,Gareth Davies,4850,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001254,Gravesham,Dr Lauren Sullivan,5269,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001255,Great Grimsby and Cleethorpes,Melanie Onn,4464,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001256,Great Yarmouth,Rupert Lowe,5158,2024-07-04T00:00:00,RUK,Reform UK,#12b6cf,#ffffff
+E14001257,Greenwich and Woolwich,Matthew Pennycook,4520,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001258,Guildford,Zöe Franklin,5313,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001259,Hackney North and Stoke Newington,Ms Diane Abbott,172,1987-06-11T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001260,Hackney South and Shoreditch,Dame Meg Hillier,1524,2005-05-05T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001261,Halesowen,Alex Ballinger,5238,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001262,Halifax,Kate Dearden,5224,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001263,Hamble Valley,Paul Holmes,4803,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001264,Hammersmith and Chiswick,Andy Slaughter,1516,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001265,Hampstead and Highgate,Tulip Siddiq,4518,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001266,"Harborough, Oadby and Wigston",Neil O'Brien,4679,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001267,Harlow,Chris Vince,5237,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001268,Harpenden and Berkhamsted,Victoria Collins,5201,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001269,Harrogate and Knaresborough,Tom Gordon,5032,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001270,Harrow East,Bob Blackman,4005,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001271,Harrow West,Gareth Thomas,177,1997-05-01T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001272,Hartlepool,Mr Jonathan Brash,5045,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001273,Harwich and North Essex,Sir Bernard Jenkin,40,1992-04-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001274,Hastings and Rye,Helena Dollimore,5192,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001275,Havant,Alan Mak,4484,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001276,Hayes and Harlington,John McDonnell,178,1997-05-01T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001277,Hazel Grove,Lisa Smart,5070,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001278,Hemel Hempstead,David Taylor,5348,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001279,Hendon,David Pinto-Duschinsky,5360,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001280,Henley and Thame,Freddie van Mierlo,5296,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001281,Hereford and South Herefordshire,Jesse Norman,3991,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001282,Herne Bay and Sandwich,Sir Roger Gale,87,1983-06-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001283,Hertford and Stortford,Josh Dean,5187,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001284,Hertsmere,Sir Oliver Dowden,4441,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001285,Hexham,Joe Morris,5081,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001286,Heywood and Middleton North,Mrs Elsie Blundell,5084,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001287,High Peak,Jon Pearce,5115,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001288,Hinckley and Bosworth,Dr Luke Evans,4781,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001289,Hitchin,Alistair Strathern,5000,2023-10-19T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001290,Holborn and St Pancras,Sir Keir Starmer,4514,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001291,Honiton and Sidmouth,Richard Foord,4942,2022-06-23T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001292,Hornchurch and Upminster,Julia Lopez,4647,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001293,Hornsey and Friern Barnet,Catherine West,4523,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001294,Horsham,John Milne,5329,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001295,Houghton and Sunderland South,Bridget Phillipson,4046,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001296,Hove and Portslade,Peter Kyle,4505,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001297,Huddersfield,Harpreet Uppal,5289,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001298,Huntingdon,Ben Obese-Jecty,5089,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001299,Hyndburn,Sarah Smith,5117,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001300,Ilford North,Wes Streeting,4504,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001301,Ilford South,Jas Athwal,5227,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001302,Ipswich,Jack Abbott,5131,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001303,Isle of Wight East,Joe Robertson,5255,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001304,Isle of Wight West,Mr Richard Quigley,5144,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001305,Islington North,Jeremy Corbyn,185,1983-06-09T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001306,Islington South and Finsbury,Emily Thornberry,1536,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001307,Jarrow and Gateshead East,Kate Osborne,4783,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001308,Keighley and Ilkley,Robbie Moore,4861,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001309,Kenilworth and Southam,Sir Jeremy Wright,1560,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001310,Kensington and Bayswater,Joe Powell,5229,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001311,Kettering,Rosie Wrighting,5331,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001312,Kingston and Surbiton,Ed Davey,188,2017-06-08T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001313,Kingston upon Hull East,Karl Turner,4030,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001314,Kingston upon Hull North and Cottingham,Dame Diana Johnson,1533,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001315,Kingston upon Hull West and Haltemprice,Emma Hardy,4645,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001316,Kingswinford and South Staffordshire,Mike Wood,4384,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001317,Knowsley,Anneliese Midgley,5038,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001318,Lancaster and Wyre,Cat Smith,4436,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001319,Leeds Central and Headingley,Alex Sobel,4658,2017-06-08T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001320,Leeds East,Richard Burgon,4493,2015-05-07T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001321,Leeds North East,Fabian Hamilton,415,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001322,Leeds North West,Katie White,5260,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001323,Leeds South,Hilary Benn,413,1999-06-10T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001324,Leeds South West and Morley,Mark Sewards,5166,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001325,Leeds West and Pudsey,Rachel Reeves,4031,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001326,Leicester East,Shivani Raja,5068,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001327,Leicester South,Shockat Adam,5120,2024-07-04T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001328,Leicester West,Liz Kendall,4026,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001329,Leigh and Atherton,Jo Platt,4673,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001330,Lewes,James MacCleary,5265,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001331,Lewisham East,Janet Daby,4698,2018-06-14T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001332,Lewisham North,Vicky Foxcroft,4491,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001333,Lewisham West and East Dulwich,Ellie Reeves,4620,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001334,Leyton and Wanstead,Mr Calvin Bailey,5054,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001335,Lichfield,Dave Robertson,5126,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001336,Lincoln,Mr Hamish Falconer,5148,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001337,Liverpool Garston,Maria Eagle,483,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001338,Liverpool Riverside,Kim Johnson,4824,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001339,Liverpool Walton,Dan Carden,4651,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001340,Liverpool Wavertree,Paula Barker,4828,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001341,Liverpool West Derby,Ian Byrne,4831,2019-12-12T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001342,Loughborough,Dr Jeevun Sandher,5259,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001343,Louth and Horncastle,Victoria Atkins,4399,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001344,Lowestoft,Jess Asato,5156,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001345,Luton North,Sarah Owen,4777,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001346,Luton South and South Bedfordshire,Rachel Hopkins,4873,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001347,Macclesfield,Tim Roca,5287,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001348,Maidenhead,Mr Joshua Reynolds,5343,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001349,Maidstone and Malling,Helen Grant,4018,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001350,Makerfield,Josh Simons,5060,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001351,Maldon,Sir John Whittingdale,39,1992-04-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001352,Manchester Central,Lucy Powell,4263,2012-11-15T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001353,Manchester Rusholme,Afzal Khan,4671,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001354,Manchester Withington,Jeff Smith,4456,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001355,Mansfield,Steve Yemm,5194,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001356,Melksham and Devizes,Brian Mathew,5214,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001357,Melton and Syston,Edward Argar,4362,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001358,Meriden and Solihull East,Saqib Bhatti,4818,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001359,Mid Bedfordshire,Blake Stephenson,5100,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001360,Mid Buckinghamshire,Greg Smith,4778,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001361,Mid Cheshire,Andrew Cooper,5195,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001362,Mid Derbyshire,Jonathan Davies,5256,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001363,Mid Dorset and North Poole,Vikki Slade,5327,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001364,Mid Leicestershire,Mr Peter Bedford,5330,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001365,Mid Norfolk,George Freeman,4020,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001366,Mid Sussex,Alison Bennett,5283,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001367,Middlesbrough and Thornaby East,Andy McDonald,4269,2012-11-29T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001368,Middlesbrough South and East Cleveland,Luke Myer,5147,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001369,Milton Keynes Central,Emily Darlington,5139,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001370,Milton Keynes North,Chris Curtis,5118,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001371,Mitcham and Morden,Dame Siobhain McDonagh,193,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001372,Morecambe and Lunesdale,Lizzi Collinge,5225,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001373,New Forest East,Sir Julian Lewis,54,1997-05-01T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001374,New Forest West,Sir Desmond Swayne,55,1997-05-01T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001375,Newark,Robert Jenrick,4320,2014-06-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001376,Newbury,Mr Lee Dillon,5310,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001377,Newcastle upon Tyne Central and West,Chi Onwurah,4124,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001378,Newcastle upon Tyne East and Wallsend,Mary Glindon,4126,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001379,Newcastle upon Tyne North,Catherine McKinnell,4125,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001380,Newcastle-under-Lyme,Adam Jogee,5168,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001381,Newton Abbot,Martin Wrigley,5111,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001382,Newton Aycliffe and Spennymoor,Alan Strickland,5080,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001383,Normanton and Hemsworth,Jon Trickett,410,1996-02-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001384,North Bedfordshire,Richard Fuller,3912,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001385,North Cornwall,Ben Maguire,5350,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001386,North Cotswolds,Sir Geoffrey Clifton-Brown,249,1992-04-09T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001387,North Devon,Ian Roome,5138,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001388,North Dorset,Simon Hoare,4494,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001389,North Durham,Luke Akehurst,5112,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001390,North East Cambridgeshire,Steve Barclay,4095,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001391,North East Derbyshire,Louise Jones,5258,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001392,North East Hampshire,Alex Brewer,5263,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001393,North East Hertfordshire,Chris Hinchliff,5244,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001394,North East Somerset and Hanham,Dan Norris,221,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001395,North Herefordshire,Ellie Chowns,5249,2024-07-04T00:00:00,Green,Green Party,#78b82a,#FFFFFF
+E14001396,North Norfolk,Steff Aquarone,5164,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001397,North Northumberland,David Smith,5218,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001398,North Shropshire,Helen Morgan,4934,2021-12-16T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001399,North Somerset,Sadik Al-Hassan,5312,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001400,North Warwickshire and Bedworth,Rachel Taylor,5065,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001401,North West Cambridgeshire,Sam Carling,5308,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001402,North West Essex,Mrs Kemi Badenoch,4597,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001403,North West Hampshire,Kit Malthouse,4495,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001404,North West Leicestershire,Amanda Hack,5149,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001405,North West Norfolk,James Wild,4787,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001406,Northampton North,Lucy Rigby,5333,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001407,Northampton South,Mike Reader,5316,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001408,Norwich North,Alice Macdonald,5133,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001409,Norwich South,Clive Lewis,4500,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001410,Nottingham East,Nadia Whittome,4869,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001411,Nottingham North and Kimberley,Alex Norris,4641,2017-06-08T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001412,Nottingham South,Lilian Greenwood,4029,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001413,Nuneaton,Jodie Gosling,5036,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001414,Old Bexley and Sidcup,Mr Louie French,4932,2021-12-02T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001415,Oldham East and Saddleworth,Debbie Abrahams,4212,2011-01-13T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001416,"Oldham West, Chadderton and Royton",Jim McMahon,4569,2015-12-03T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001417,Orpington,Gareth Bacon,4798,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001418,Ossett and Denby Dale,Jade Botterill,5236,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001419,Oxford East,Anneliese Dodds,4657,2017-06-08T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001420,Oxford West and Abingdon,Layla Moran,4656,2017-06-08T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001421,Peckham,Miatta Fahnbulleh,5099,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001422,Pendle and Clitheroe,Jonathan Hinder,5264,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001423,Penistone and Stocksbridge,Dr Marie Tidball,5098,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001424,Penrith and Solway,Markus Campbell-Savours,5124,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001425,Peterborough,Andrew Pakes,5243,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001426,Plymouth Moor View,Fred Thomas,5174,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001427,Plymouth Sutton and Devonport,Luke Pollard,4682,2017-06-08T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001428,"Pontefract, Castleford and Knottingley",Yvette Cooper,420,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001429,Poole,Neil Duncan-Jordan,5359,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001430,Poplar and Limehouse,Apsana Begum,4790,2019-12-12T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001431,Portsmouth North,Amanda Martin,5294,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001432,Portsmouth South,Stephen Morgan,4653,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001433,Preston,Sir Mark Hendrick,473,2000-11-23T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001434,Putney,Fleur Anderson,4788,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001435,Queen's Park and Maida Vale,Georgia Gould,5305,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001436,Rawmarsh and Conisbrough,John Healey,400,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001437,Rayleigh and Wickford,Mr Mark Francois,1444,2001-06-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001438,Reading Central,Matt Rodda,4654,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001439,Reading West and Mid Berkshire,Olivia Bailey,5337,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001440,Redcar,Anna Turley,4449,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001441,Redditch,Chris Bloore,5109,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001442,Reigate,Rebecca Paul,5297,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001443,Ribble Valley,Maya Ellis,5228,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001444,Richmond and Northallerton,Rishi Sunak,4483,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001445,Richmond Park,Sarah Olney,4591,2019-12-12T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001446,Rochdale,Paul Waugh,5071,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001447,Rochester and Strood,Lauren Edwards,5298,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001448,Romford,Andrew Rosindell,1447,2001-06-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001449,Romsey and Southampton North,Caroline Nokes,4048,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001450,Rossendale and Darwen,Andy MacNae,5134,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001451,Rother Valley,Jake Richards,5082,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001452,Rotherham,Sarah Champion,4267,2012-11-29T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001453,Rugby,John Slinger,5127,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001454,"Ruislip, Northwood and Pinner",David Simmonds,4872,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001455,Runcorn and Helsby,Mike Amesbury,4667,2017-06-08T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001456,Runnymede and Weybridge,Dr Ben Spencer,4785,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001457,Rushcliffe,James Naish,5047,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001458,Rutland and Stamford,Alicia Kearns,4805,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001459,Salford,Rebecca Long Bailey,4396,2015-05-07T00:00:00,Ind,Independent,#909090,#FFFFFF
+E14001460,Salisbury,John Glen,4051,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001461,Scarborough and Whitby,Alison Hume,5254,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001462,Scunthorpe,Sir Nicholas Dakin,4056,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001463,Sefton Central,Bill Esterson,4061,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001464,Selby,Keir Mather,4993,2023-07-20T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001465,Sevenoaks,Laura Trott,4780,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001466,Sheffield Brightside and Hillsborough,Gill Furniss,4571,2016-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001467,Sheffield Central,Abtisam Mohamed,5142,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001468,Sheffield Hallam,Olivia Blake,4864,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001469,Sheffield Heeley,Louise Haigh,4473,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001470,Sheffield South East,Mr Clive Betts,394,1992-04-09T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001471,Sherwood Forest,Michelle Welsh,5226,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001472,Shipley,Anna Dixon,5281,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001473,Shrewsbury,Julia Buckley,5171,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001474,Sittingbourne and Sheppey,Kevin McKenna,5300,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001475,Skipton and Ripon,Sir Julian Smith,4118,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001476,Sleaford and North Hykeham,Dr Caroline Johnson,4592,2016-12-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001477,Slough,Mr Tanmanjeet Singh Dhesi,4638,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001478,Smethwick,Gurinder Singh Josan,5059,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001479,Solihull West and Shirley,Dr Neil Shastri-Hurst,5197,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001480,South Basildon and East Thurrock,James McMurdock,5361,2024-07-04T00:00:00,RUK,Reform UK,#12b6cf,#ffffff
+E14001481,South Cambridgeshire,Pippa Heylings,5078,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001482,South Cotswolds,Dr Roz Savage,5352,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001483,South Derbyshire,Samantha Niblett,5150,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001484,South Devon,Caroline Voaden,5216,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001485,South Dorset,Lloyd Hatton,5217,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001486,South East Cornwall,Anna Gelderd,5353,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001487,South Holland and The Deepings,Sir John Hayes,350,1997-05-01T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001488,South Leicestershire,Alberto Costa,4439,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001489,South Norfolk,Ben Goldsborough,5205,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001490,South Northamptonshire,Sarah Bool,5355,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001491,South Ribble,Mr Paul Foster,5074,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001492,South Shields,Mrs Emma Lewell-Buck,4277,2013-05-02T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001493,South Shropshire,Stuart Anderson,4742,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001494,South Suffolk,James Cartlidge,4519,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001495,South West Devon,Rebecca Smith,5301,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001496,South West Hertfordshire,Mr Gagan Mohindra,4804,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001497,South West Norfolk,Terry Jermy,5338,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001498,South West Wiltshire,Dr Andrew Murrison,1466,2001-06-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001499,Southampton Itchen,Darren Paffey,5270,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001500,Southampton Test,Satvir Kaur,5271,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001501,Southend East and Rochford,Mr Bayo Alaba,5097,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001502,Southend West and Leigh,David Burton-Sampson,5106,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001503,Southgate and Wood Green,Bambos Charalambous,4610,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001504,Southport,Patrick Hurley,5052,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001505,Spelthorne,Lincoln Jopp,5332,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001506,Spen Valley,Kim Leadbeater,4923,2021-07-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001507,St Albans,Daisy Cooper,4769,2019-12-12T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001508,St Austell and Newquay,Noah Law,5302,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001509,St Helens North,David Baines,5092,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001510,St Helens South and Whiston,Ms Marie Rimmer,4457,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001511,St Ives,Andrew George,227,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001512,St Neots and Mid Cambridgeshire,Ian Sollom,5096,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001513,Stafford,Leigh Ingham,5290,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001514,Staffordshire Moorlands,Dame Karen Bradley,4110,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001515,Stalybridge and Hyde,Jonathan Reynolds,4119,2010-05-06T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001516,Stevenage,Kevin Bonavia,5051,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001517,Stockport,Navendu Mishra,4811,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001518,Stockton North,Chris McDonald,5116,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001519,Stockton West,Matt Vickers,4844,2019-12-12T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001520,Stoke-on-Trent Central,Gareth Snell,4595,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001521,Stoke-on-Trent North,David Williams,5151,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001522,Stoke-on-Trent South,Dr Allison Gardner,5334,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001523,"Stone, Great Wyrley and Penkridge",Sir Gavin Williamson,4108,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001524,Stourbridge,Cat Eccles,5293,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001525,Stratford and Bow,Uma Kumaran,5278,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001526,Stratford-on-Avon,Manuela Perteghella,5122,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001527,Streatham and Croydon North,Steve Reed,4268,2012-11-29T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001528,Stretford and Urmston,Andrew Western,4979,2022-12-15T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001529,Stroud,Dr Simon Opher,5030,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001530,Suffolk Coastal,Jenny Riddell-Carpenter,5160,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001531,Sunderland Central,Lewis Atkinson,5028,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001532,Surrey Heath,Dr Al Pinkerton,5288,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001533,Sussex Weald,Ms Nusrat Ghani,4460,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001534,Sutton and Cheam,Luke Taylor,5103,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001535,Sutton Coldfield,Mr Andrew Mitchell,1211,2001-06-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001536,Swindon North,Will Stone,5035,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001537,Swindon South,Heidi Alexander,4038,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001538,Tamworth,Sarah Edwards,5001,2023-10-19T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001539,Tatton,Esther McVey,4084,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001540,Taunton and Wellington,Gideon Amos,5250,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001541,Telford,Shaun Davies,5041,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001542,Tewkesbury,Cameron Thomas,5354,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001543,The Wrekin,Mark Pritchard,1576,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001544,Thirsk and Malton,Kevin Hollinrake,4474,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001545,Thornbury and Yate,Claire Young,5140,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001546,Thurrock,Jen Craft,5056,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001547,Tipton and Wednesbury,Antonia Bance,5048,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001548,Tiverton and Minehead,Rachel Gilmour,5252,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001549,Tonbridge,Tom Tugendhat,4462,2015-05-07T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001550,Tooting,Dr Rosena Allin-Khan,4573,2016-06-16T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001551,Torbay,Steve Darling,5066,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001552,Torridge and Tavistock,Sir Geoffrey Cox,1508,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001553,Tottenham,Mr David Lammy,206,2000-06-22T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001554,Truro and Falmouth,Jayne Kirkham,5279,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001555,Tunbridge Wells,Mike Martin,5219,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001556,Twickenham,Munira Wilson,4776,2019-12-12T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001557,Tynemouth,Sir Alan Campbell,529,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001558,Uxbridge and South Ruislip,Danny Beales,5339,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001559,Vauxhall and Camberwell Green,Florence Eshalomi,4870,2019-12-12T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001560,Wakefield and Rothwell,Simon Lightwood,4943,2022-06-23T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001561,Wallasey,Dame Angela Eagle,491,1992-04-09T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001562,Walsall and Bloxwich,Valerie Vaz,4076,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001563,Walthamstow,Ms Stella Creasy,4088,2010-05-06T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001564,Warrington North,Charlotte Nichols,4799,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001565,Warrington South,Sarah Hall,5154,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001566,Warwick and Leamington,Matt Western,4617,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001567,Washington and Gateshead South,Mrs Sharon Hodgson,1521,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001568,Watford,Matt Turmaine,5130,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001569,Waveney Valley,Adrian Ramsay,5320,2024-07-04T00:00:00,Green,Green Party,#78b82a,#FFFFFF
+E14001570,Weald of Kent,Katie Lam,5285,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001571,Wellingborough and Rushden,Gen Kitchen,5011,2024-02-15T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001572,Wells and Mendip Hills,Tessa Munt,4089,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001573,Welwyn Hatfield,Andrew Lewin,5061,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001574,West Bromwich,Sarah Coombes,5088,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001575,West Dorset,Edward Morello,5326,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001576,West Ham and Beckton,James Asser,5211,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001577,West Lancashire,Ashley Dalton,4981,2023-02-09T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001578,West Suffolk,Nick Timothy,5062,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001579,West Worcestershire,Dame Harriett Baldwin,4107,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001580,Westmorland and Lonsdale,Tim Farron,1591,2005-05-05T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001581,Weston-super-Mare,Dan Aldridge,5172,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001582,Wetherby and Easingwold,Sir Alec Shelbrooke,3997,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001583,Whitehaven and Workington,Josh MacAlister,5033,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001584,Widnes and Halewood,Derek Twigg,429,1997-05-01T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001585,Wigan,Lisa Nandy,4082,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001586,Wimbledon,Mr Paul Kohler,5321,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001587,Winchester,Dr Danny Chambers,5304,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001588,Windsor,Jack Rankin,5340,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001589,Wirral West,Matthew Patrick,5162,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001590,Witham,Priti Patel,4066,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001591,Witney,Charlie Maynard,5325,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001592,Woking,Mr Will Forster,5322,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001593,Wokingham,Clive Jones,5207,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001594,Wolverhampton North East,Mrs Sureena Brackenridge,5152,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001595,Wolverhampton South East,Pat McFadden,1587,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001596,Wolverhampton West,Warinder Juss,5230,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001597,Worcester,Tom Collins,5087,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001598,Worsley and Eccles,Michael Wheeler,5242,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001599,Worthing West,Dr Beccy Cooper,5307,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001600,Wycombe,Emma Reynolds,4077,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001601,Wyre Forest,Mark Garnier,4074,2010-05-06T00:00:00,Con,Conservative,#0063ba,#ffffff
+E14001602,Wythenshawe and Sale East,Mike Kane,4316,2014-02-13T00:00:00,Lab,Labour,#d50000,#ffffff
+E14001603,Yeovil,Adam Dance,5191,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+E14001604,York Central,Rachael Maskell,4471,2015-05-07T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+E14001605,York Outer,Mr Luke Charters,5199,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+N05000001,Belfast East,Gavin Robinson,4360,2015-05-07T00:00:00,DUP,Democratic Unionist Party,#d46a4c,#FFFFFF
+N05000002,Belfast North,John Finucane,4823,2019-12-12T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000003,Belfast South and Mid Down,Claire Hanna,4827,2019-12-12T00:00:00,SDLP,Social Democratic & Labour Party,#4ea268,#000000
+N05000004,Belfast West,Paul Maskey,4245,2011-06-09T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000005,East Antrim,Sammy Wilson,1593,2005-05-05T00:00:00,DUP,Democratic Unionist Party,#d46a4c,#FFFFFF
+N05000006,East Londonderry,Mr Gregory Campbell,1409,2001-06-07T00:00:00,DUP,Democratic Unionist Party,#d46a4c,#FFFFFF
+N05000007,Fermanagh and South Tyrone,Pat Cullen,5261,2024-07-04T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000008,Foyle,Colum Eastwood,4846,2019-12-12T00:00:00,SDLP,Social Democratic & Labour Party,#4ea268,#000000
+N05000009,Lagan Valley,Sorcha Eastwood,5125,2024-07-04T00:00:00,APNI,Alliance,#cdaf2d,#FFFFFF
+N05000010,Mid Ulster,Mr Cathal Mallaghan,5153,2024-07-04T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000011,Newry and Armagh,Dáire Hughes,5292,2024-07-04T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000012,North Antrim,Jim Allister,5356,2024-07-04T00:00:00,TUV,Traditional Unionist Voice,#0c3a6a,#ffffff
+N05000013,North Down,Alex Easton,5262,2024-07-04T00:00:00,Ind,Independent,#909090,#FFFFFF
+N05000014,South Antrim,Robin Swann,5319,2024-07-04T00:00:00,UUP,Ulster Unionist Party,#a1cdf0,#FFFFFF
+N05000015,South Down,Chris Hazzard,4636,2017-06-08T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+N05000016,Strangford,Jim Shannon,4131,2010-05-06T00:00:00,DUP,Democratic Unionist Party,#d46a4c,#FFFFFF
+N05000017,Upper Bann,Carla Lockhart,4857,2019-12-12T00:00:00,DUP,Democratic Unionist Party,#d46a4c,#FFFFFF
+N05000018,West Tyrone,Órfhlaith Begley,4697,2018-05-03T00:00:00,SF,Sinn Féin,#02665f,#FFFFFF
+S14000021,East Renfrewshire,Blair McDougall,5076,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000027,Na h-Eileanan an Iar,Torcuil Crichton,5246,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000045,Midlothian,Kirsty McNeill,5114,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+S14000048,North Ayrshire and Arran,Irene Campbell,5145,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000051,Orkney and Shetland,Mr Alistair Carmichael,1442,2001-06-07T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000060,Aberdeen North,Kirsty Blackman,4357,2015-05-07T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000061,Aberdeen South,Stephen Flynn,4735,2019-12-12T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000062,Aberdeenshire North and Moray East,Seamus Logan,5280,2024-07-04T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000063,Airdrie and Shotts,Kenneth Stevenson,5200,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000064,Alloa and Grangemouth,Brian Leishman,5196,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000065,Angus and Perthshire Glens,Dave Doogan,4736,2019-12-12T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000066,Arbroath and Broughty Ferry,Stephen Gethins,4434,2024-07-04T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000067,"Argyll, Bute and South Lochaber",Brendan O'Hara,4371,2015-05-07T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000068,Bathgate and Linlithgow,Kirsteen Sullivan,5179,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+S14000069,"Caithness, Sutherland and Easter Ross",Jamie Stone,4612,2017-06-08T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000070,Coatbridge and Bellshill,Frank McNally,5183,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000071,Cowdenbeath and Kirkcaldy,Melanie Ward,5240,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000072,Cumbernauld and Kirkintilloch,Katrina Murray,5309,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000073,Dumfries and Galloway,John Cooper,5358,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+S14000074,"Dumfriesshire, Clydesdale and Tweeddale",David Mundell,1512,2005-05-05T00:00:00,Con,Conservative,#0063ba,#ffffff
+S14000075,Dundee Central,Chris Law,4403,2015-05-07T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000076,Dunfermline and Dollar,Graeme Downie,5275,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000077,East Kilbride and Strathaven,Joani Reid,5079,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000078,Edinburgh East and Musselburgh,Chris Murray,5245,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000079,Edinburgh North and Leith,Tracy Gilbert,5188,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000080,Edinburgh South,Ian Murray,3966,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000081,Edinburgh South West,Dr Scott Arthur,5212,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000082,Edinburgh West,Christine Jardine,4634,2017-06-08T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000083,Falkirk,Euan Stainbank,5110,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000084,Glasgow East,John Grady,5170,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000085,Glasgow North,Martin Rhodes,5251,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000086,Glasgow North East,Maureen Burke,5137,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000087,Glasgow South,Gordon McKee,5189,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000088,Glasgow South West,Dr Zubir Ahmed,5213,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000089,Glasgow West,Patricia Ferguson,5190,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000090,Glenrothes and Mid Fife,Richard Baker,5253,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000091,Gordon and Buchan,Harriet Cross,5311,2024-07-04T00:00:00,Con,Conservative,#0063ba,#ffffff
+S14000092,Hamilton and Clyde Valley,Imogen Walker,5136,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000093,Inverclyde and Renfrewshire West,Martin McCluskey,5129,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000094,"Inverness, Skye and West Ross-shire",Mr Angus MacDonald,5362,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000095,Livingston,Gregor Poynton,5167,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000096,Lothian East,Mr Douglas Alexander,632,2024-07-04T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+S14000097,Mid Dunbartonshire,Susan Murray,5157,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000098,"Moray West, Nairn and Strathspey",Graham Leadbitter,5277,2024-07-04T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000099,"Motherwell, Wishaw and Carluke",Pamela Nash,3909,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000100,North East Fife,Wendy Chamberlain,4765,2019-12-12T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+S14000101,Paisley and Renfrewshire North,Alison Taylor,5093,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000102,Paisley and Renfrewshire South,Johanna Baxter,5063,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000103,Perth and Kinross-shire,Pete Wishart,1440,2001-06-07T00:00:00,SNP,Scottish National Party,#fff685,#000000
+S14000104,Rutherglen,Michael Shanks,4998,2023-10-05T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000105,Stirling and Strathallan,Chris Kane,5155,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000106,West Dunbartonshire,Douglas McAllister,5057,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000107,"Ayr, Carrick and Cumnock",Elaine Stewart,5206,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000108,"Berwickshire, Roxburgh and Selkirk",John Lamont,4608,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+S14000109,Central Ayrshire,Alan Gemmell,5185,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000110,Kilmarnock and Loudoun,Lillian Jones,5043,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+S14000111,West Aberdeenshire and Kincardine,Andrew Bowie,4601,2017-06-08T00:00:00,Con,Conservative,#0063ba,#ffffff
+W07000081,Aberafan Maesteg,Stephen Kinnock,4359,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000082,Alyn and Deeside,Mark Tami,1383,2001-06-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000083,Bangor Aberconwy,Claire Hughes,5113,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000084,Blaenau Gwent and Rhymney,Nick Smith,3928,2010-05-06T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000085,"Brecon, Radnor and Cwm Tawe",David Chadwick,5284,2024-07-04T00:00:00,LD,Liberal Democrat,#faa01a,#FFFFFF
+W07000086,Bridgend,Chris Elmore,4572,2016-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000087,Caerfyrddin,Ann Davies,5177,2024-07-04T00:00:00,PC,Plaid Cymru,#348837,#ffffff
+W07000088,Caerphilly,Chris Evans,4040,2010-05-06T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+W07000089,Cardiff East,Jo Stevens,4425,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000090,Cardiff North,Anna McMorrin,4632,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000091,Cardiff South and Penarth,Stephen Doughty,4264,2012-11-15T00:00:00,Lab,Labour (Co-op),#d50000,#ffffff
+W07000092,Cardiff West,Mr Alex Barros-Curtis,5175,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000093,Ceredigion Preseli,Ben Lake,4630,2017-06-08T00:00:00,PC,Plaid Cymru,#348837,#ffffff
+W07000094,Clwyd East,Becky Gittins,5181,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000095,Clwyd North,Gill German,5104,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000096,Dwyfor Meirionnydd,Liz Saville Roberts,4521,2015-05-07T00:00:00,PC,Plaid Cymru,#348837,#ffffff
+W07000097,Gower,Tonia Antoniazzi,4623,2017-06-08T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000098,Llanelli,Dame Nia Griffith,1541,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000099,Merthyr Tydfil and Aberdare,Gerald Jones,4501,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000100,Mid and South Pembrokeshire,Henry Tufnell,5121,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000101,Monmouthshire,Catherine Fookes,5291,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000102,Montgomeryshire and Glyndŵr,Steve Witherden,5221,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000103,Neath and Swansea East,Carolyn Harris,4480,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000104,Newport East,Jessica Morden,1548,2005-05-05T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000105,Newport West and Islwyn,Ruth Jones,4716,2019-04-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000106,Pontypridd,Alex Davies-Jones,4849,2019-12-12T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000107,Rhondda and Ogmore,Chris Bryant,1446,2001-06-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000108,Swansea West,Torsten Bell,5069,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000109,Torfaen,Nick Thomas-Symonds,4479,2015-05-07T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000110,Vale of Glamorgan,Kanishka Narayan,5039,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000111,Wrexham,Andrew Ranger,5046,2024-07-04T00:00:00,Lab,Labour,#d50000,#ffffff
+W07000112,Ynys Môn,Llinos Medi,5085,2024-07-04T00:00:00,PC,Plaid Cymru,#348837,#ffffff
