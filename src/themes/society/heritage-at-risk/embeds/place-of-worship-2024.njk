@@ -1,5 +1,5 @@
 ---
-title: Places of worship at risk
+title: Places of Worship on the Heritage at Risk Register
 searchignore: true
 updated: 2024-11-14T15:00+0100
 layout: template/embed-national-churches-trust.njk
@@ -9,8 +9,14 @@ layout: template/embed-national-churches-trust.njk
 .footnote { margin-bottom: 0; }
 </style>
 
-<p>Places of worship on <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/" target="_parent">Historic England's Heritage at Risk Register</a> by UK Parliamentary Constituency.</p>
 
+<p>Each year, Historic England publish a new <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/" target="_parent">Heritage at Risk Register</a>. The Register gives an annual snapshot of the health of England’s valued historic buildings and places. It helps to ensure they can be protected and continue to be enjoyed in the future. The latest Register was published on 14 November 2024.</p>
+
+<p>Places of Worship are a key part of the Heritage at Risk Register. The overwhelming majority of these are churches, chapels and meeting houses, with a small number of synagogues, mosques and temples.</p>
+
+<p>Our map of Places of Worship shows those on the Heritage at Risk Register by Parliamentary Constituency. You can use the Map view, or the Table view to find details about Places of Worship in your constituency, and listed by Member of Parliament.  You can also use the Search facility.</p>
+
+<p>In the Table view, by clicking on the name of the MP, you can find how to contact them by email.</p>
 
 {% comp 'layout.panelSelector.set', { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } %}
 
@@ -62,7 +68,7 @@ layout: template/embed-national-churches-trust.njk
 					}
 				},
 				"tooltip": "<strong>{{ PCON24NM }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>",
-				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2024-registers/\">Heritage at Risk 2024 Register</a> (Historic England)"
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk 2024 Register</a> (Historic England)"
 			},
 			"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
 		} %}{% endcomp %}
@@ -130,7 +136,7 @@ layout: template/embed-national-churches-trust.njk
 						"label": "filterLabel"
 					}
 				},
-				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2023-registers/\">Heritage at Risk 2023 Register</a> (Historic England) / Constituency boundaries: ONS"
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk 2024 Register</a> (Historic England) / Constituency boundaries: ONS"
 			},
 			"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
 		} %}{% endcomp %}
@@ -190,7 +196,7 @@ layout: template/embed-national-churches-trust.njk
 					"max": 20,
 					"sortable": true
 				}],
-				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2023-registers/\" target=\"_parent\">Heritage at Risk 2023 Register</a> (Historic England)"
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\" target=\"_parent\">Heritage at Risk 2024 Register</a> (Historic England)"
 			},
 			"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
 		} %}{% endcomp %}
