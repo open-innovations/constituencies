@@ -26,7 +26,7 @@ layout: template/embed-national-churches-trust.njk
 				"data": HAR2024,
 				"columns":[{
 					"name": "filterLabel",
-					"template": "{{ Constituency }} ({{ MP }}, {{ Party }})"
+					"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
 				},{
 					"name": "URL",
 					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
@@ -61,7 +61,7 @@ layout: template/embed-national-churches-trust.njk
 						"label": "filterLabel"
 					}
 				},
-				"tooltip": "<strong>{{ Constituency }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Constituency }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>",
+				"tooltip": "<strong>{{ PCON24NM }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>",
 				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2024-registers/\">Heritage at Risk 2024 Register</a> (Historic England)"
 			},
 			"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
@@ -83,7 +83,7 @@ layout: template/embed-national-churches-trust.njk
 				"data": HAR2024,
 				"columns":[{
 					"name": "filterLabel",
-					"template": "{{ Constituency }} ({{ MP }}, {{ Party }})"
+					"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
 				},{
 					"name": "URL",
 					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
@@ -99,7 +99,7 @@ layout: template/embed-national-churches-trust.njk
 					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
 					"min": 0,
 					"max": 20,
-					"tooltip": "<strong>{{ Constituency }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Constituency }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>"
+					"tooltip": "<strong>{{ PCON24NM }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>"
 				}],
 				"legend":{
 					"position": "top right",
