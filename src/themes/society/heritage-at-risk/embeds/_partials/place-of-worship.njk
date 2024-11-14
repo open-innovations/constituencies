@@ -2,11 +2,11 @@
 	"component": comp.oi.map.hex_cartogram,
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.heritage-at-risk",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": HAR2024,
 		"columns":[{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ MP }}, {{ Party }})"
+			"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
 		},{
 			"name": "Place of worship",
 			"template": "{{ Type→Place of worship }}"
@@ -15,7 +15,7 @@
 		"scale": "#ffffcc 0%, #b62126 80%, #771e1c 100%",
 		"min": 0,
 		"max": 20,
-		"matchKey": "PCON10CD",
+		"matchKey": "PCON24CD",
 		"legend":{
 			"position": "top right",
 			"items": [{
@@ -52,8 +52,8 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />{{ MP }} ({{ Party }})<br />Places of worship at risk: <strong>{{ Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Name }}&hc=Listed Place of Worship&searchtype=harsearch\">More details</a>",
-		"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2023-registers/\">Heritage at Risk 2023 Register</a> (Historic England)"
+		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Places of worship at risk: <strong>{{ Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Place of Worship&searchtype=harsearch\">More details</a>",
+		"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk Register</a> 2024 (Historic England)"
 	},
 	"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
 } %}{% endcomp %}

@@ -1,11 +1,16 @@
 ---
 title: Places of worship at risk
 searchignore: true
-updated: 2024-04-16T18:00Z
+updated: 2024-11-13T18:50+0100
 layout: template/embed-national-churches-trust.njk
 ---
+<style>
+.tooltip .info { border-top: 4px solid black; }
+.footnote { margin-bottom: 0; }
+</style>
 
-<p>Places of worship on <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/" target="_parent">Historic England's Heritage at Risk Register</a> by UK Parliamentary Constituency.</p>
+<p>Places of worship on <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/" target="_parent">Historic England's Heritage at Risk Register</a> by UK Parliamentary Constituency.</p>
+
 
 {% comp 'layout.panelSelector.set', { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } %}
 
@@ -17,20 +22,20 @@ layout: template/embed-national-churches-trust.njk
 			"component": comp.oi.map.hex_cartogram,
 			"config": {
 				"width": 600,
-				"hexjson": "hexjson.constituencies",
-				"data": HAR2023,
+				"hexjson": "hexjson.uk-constituencies-2024",
+				"data": HAR2024,
 				"columns":[{
 					"name": "filterLabel",
-					"template": "{{ n }} ({{ MP }}, {{ Party }})"
+					"template": "{{ Constituency }} ({{ MP }}, {{ Party }})"
 				},{
-					"name": "Place of worship",
-					"template": "{{ Type→Place of worship }}"
+					"name": "URL",
+					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
 				}],
-				"value": "Place of worship",
+				"value": "Type→Place of worship",
 				"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
 				"min": 0,
 				"max": 20,
-				"matchKey": "PCON10CD",
+				"matchKey": "PCON24CD",
 				"legend":{
 					"position": "top right",
 					"continuous": true,
@@ -56,8 +61,8 @@ layout: template/embed-national-churches-trust.njk
 						"label": "filterLabel"
 					}
 				},
-				"tooltip": "<strong>{{ Name }}</strong><br />{{ MP | \"?\" }} ({{ Party }})<br />Places of worship at risk: <strong>{{ Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a>",
-				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2023-registers/\">Heritage at Risk 2023 Register</a> (Historic England)"
+				"tooltip": "<strong>{{ Constituency }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Constituency }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>",
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/images-books/publications/har-2024-registers/\">Heritage at Risk 2024 Register</a> (Historic England)"
 			},
 			"download": {"text": "Heritage at risk by constituency", "type": "CSV"}
 		} %}{% endcomp %}
@@ -72,13 +77,16 @@ layout: template/embed-national-churches-trust.njk
 			"config": {
 				"width": 800,
 				"geojson": {
-					"data": "geojson.Westminster_Parliamentary_Constituencies_Dec_2022_UK_BUC",
-					"key": "PCON22CD"
+					"data": "geojson.constituencies-2024",
+					"key": "PCON24CD"
 				},
-				"data": HAR2023,
+				"data": HAR2024,
 				"columns":[{
 					"name": "filterLabel",
-					"template": "{{ Name }} ({{ MP }}, {{ Party }})"
+					"template": "{{ Constituency }} ({{ MP }}, {{ Party }})"
+				},{
+					"name": "URL",
+					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
 				}],
 				"projection": {
 					"name": "osgb"
@@ -86,12 +94,12 @@ layout: template/embed-national-churches-trust.njk
 				"padding": 30,
 				"layers": [{
 					"type": "data",
-					"key": "PCON10CD",
+					"key": "PCON24CD",
 					"value": "Type→Place of worship",
 					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
 					"min": 0,
 					"max": 20,
-					"tooltip": "<strong>{{ Name }}</strong><br />{{ MP | \"?\" }} ({{ Party | \"?\" }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | \"?\" | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a>"
+					"tooltip": "<strong>{{ Constituency }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Constituency }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>"
 				}],
 				"legend":{
 					"position": "top right",
@@ -112,6 +120,10 @@ layout: template/embed-national-churches-trust.njk
 						"value": 0,
 						"label": "0"
 					}]
+				},
+				"bounds": {
+					"lat": { "min": 49.9, "max": 56 },
+					"lon": { "min": -6.5, "max": 2 }
 				},
 				"tools":{
 					"filter":{
@@ -156,14 +168,14 @@ layout: template/embed-national-churches-trust.njk
 				"sort": ["Places of worship at risk","Constituency"],
 				"reverse": true,
 				"width": "100%",
-				"data": HAR2023,
+				"data": HAR2024,
 				"columns":[{
 					"name": "Constituency",
-					"template": "<a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">{{ Name }}</a>",
+					"template": "<a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ Constituency }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">{{ Constituency }}</a>",
 					"sortable": true
 				},{
 					"name": "Member of Parliament",
-					"template": "{{ MP }}",
+					"template": "<a href=\"https://members.parliament.uk/member/{{ ID }}/contact\">{{ MP }}</a>",
 					"sortable": true
 				},{
 					"name": "Party",
