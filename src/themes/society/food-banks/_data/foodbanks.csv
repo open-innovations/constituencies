@@ -20,7 +20,7 @@ E14001080,Bath,bath,,1
 E14001081,Battersea,battersea,,1
 E14001082,Beaconsfield,beaconsfield,,0
 E14001083,Beckenham and Penge,beckenham-and-penge,,2
-E14001084,Bedford,bedford,,1
+E14001084,Bedford,bedford,,2
 E14001085,Bermondsey and Old Southwark,bermondsey-and-old-southwark,,0
 E14001086,Bethnal Green and Stepney,bethnal-green-and-stepney,,0
 E14001087,Beverley and Holderness,beverley-and-holderness,,2
@@ -34,16 +34,16 @@ E14001094,Birmingham Hall Green and Moseley,birmingham-hall-green-and-moseley,,0
 E14001095,Birmingham Hodge Hill and Solihull North,birmingham-hodge-hill-and-solihull-north,,0
 E14001096,Birmingham Ladywood,birmingham-ladywood,,5
 E14001097,Birmingham Northfield,birmingham-northfield,,2
-E14001098,Birmingham Perry Barr,birmingham-perry-barr,,1
-E14001099,Birmingham Selly Oak,birmingham-selly-oak,,0
+E14001098,Birmingham Perry Barr,birmingham-perry-barr,,2
+E14001099,Birmingham Selly Oak,birmingham-selly-oak,,1
 E14001100,Birmingham Yardley,birmingham-yardley,,1
 E14001101,Bishop Auckland,bishop-auckland,,2
 E14001102,Blackburn,blackburn,,1
 E14001103,Blackley and Middleton South,blackley-and-middleton-south,,2
-E14001104,Blackpool North and Fleetwood,blackpool-north-and-fleetwood,,1
+E14001104,Blackpool North and Fleetwood,blackpool-north-and-fleetwood,,2
 E14001105,Blackpool South,blackpool-south,,1
 E14001106,Blaydon and Consett,blaydon-and-consett,,1
-E14001107,Blyth and Ashington,blyth-and-ashington,,1
+E14001107,Blyth and Ashington,blyth-and-ashington,,2
 E14001108,Bognor Regis and Littlehampton,bognor-regis-and-littlehampton,,3
 E14001109,Bolsover,bolsover,,3
 E14001110,Bolton North East,bolton-north-east,,1
@@ -56,7 +56,7 @@ E14001116,Bournemouth West,bournemouth-west,,1
 E14001117,Bracknell,bracknell,,2
 E14001118,Bradford East,bradford-east,,1
 E14001119,Bradford South,bradford-south,,3
-E14001120,Bradford West,bradford-west,,2
+E14001120,Bradford West,bradford-west,,3
 E14001121,Braintree,braintree,,1
 E14001122,Brent East,brent-east,,2
 E14001123,Brent West,brent-west,,0
@@ -74,7 +74,7 @@ E14001134,Bristol North West,bristol-north-west,,2
 E14001135,Bristol South,bristol-south,,2
 E14001136,Broadland and Fakenham,broadland-and-fakenham,,0
 E14001137,Bromley and Biggin Hill,bromley-and-biggin-hill,,0
-E14001138,Bromsgrove,bromsgrove,,1
+E14001138,Bromsgrove,bromsgrove,,2
 E14001139,Broxbourne,broxbourne,,1
 E14001140,Broxtowe,broxtowe,,4
 E14001141,Buckingham and Bletchley,buckingham-and-bletchley,,0
@@ -97,7 +97,7 @@ E14001157,Chatham and Aylesford,chatham-and-aylesford,,2
 E14001158,Cheadle,cheadle,,0
 E14001159,Chelmsford,chelmsford,,1
 E14001160,Chelsea and Fulham,chelsea-and-fulham,,3
-E14001161,Cheltenham,cheltenham,,1
+E14001161,Cheltenham,cheltenham,,2
 E14001162,Chesham and Amersham,chesham-and-amersham,,1
 E14001163,Chester North and Neston,chester-north-and-neston,,1
 E14001164,Chester South and Eddisbury,chester-south-and-eddisbury,,0
@@ -113,8 +113,8 @@ E14001173,City of Durham,city-of-durham,,0
 E14001174,Clacton,clacton,,1
 E14001175,Clapham and Brixton Hill,clapham-and-brixton-hill,,0
 E14001176,Colchester,colchester,,0
-E14001177,Colne Valley,colne-valley,,1
-E14001178,Congleton,congleton,,3
+E14001177,Colne Valley,colne-valley,,2
+E14001178,Congleton,congleton,,4
 E14001179,Corby and East Northamptonshire,corby-and-east-northamptonshire,,3
 E14001180,Coventry East,coventry-east,,1
 E14001181,Coventry North West,coventry-north-west,,0
@@ -124,14 +124,14 @@ E14001184,Crawley,crawley,,1
 E14001185,Crewe and Nantwich,crewe-and-nantwich,,2
 E14001186,Croydon East,croydon-east,,0
 E14001187,Croydon South,croydon-south,,1
-E14001188,Croydon West,croydon-west,,0
+E14001188,Croydon West,croydon-west,,1
 E14001189,Dagenham and Rainham,dagenham-and-rainham,,3
 E14001190,Darlington,darlington,,1
 E14001191,Dartford,dartford,,1
 E14001192,Daventry,daventry,,2
 E14001193,Derby North,derby-north,,0
-E14001194,Derby South,derby-south,,1
-E14001195,Derbyshire Dales,derbyshire-dales,,2
+E14001194,Derby South,derby-south,,2
+E14001195,Derbyshire Dales,derbyshire-dales,,3
 E14001196,Dewsbury and Batley,dewsbury-and-batley,,1
 E14001197,Didcot and Wantage,didcot-and-wantage,,2
 E14001198,Doncaster Central,doncaster-central,,1
@@ -216,7 +216,7 @@ E14001276,Hayes and Harlington,hayes-and-harlington,,1
 E14001277,Hazel Grove,hazel-grove,,1
 E14001278,Hemel Hempstead,hemel-hempstead,,1
 E14001279,Hendon,hendon,,1
-E14001280,Henley and Thame,henley-and-thame,,1
+E14001280,Henley and Thame,henley-and-thame,,2
 E14001281,Hereford and South Herefordshire,hereford-and-south-herefordshire,,1
 E14001282,Herne Bay and Sandwich,herne-bay-and-sandwich,,0
 E14001283,Hertford and Stortford,hertford-and-stortford,,2
@@ -226,7 +226,7 @@ E14001286,Heywood and Middleton North,heywood-and-middleton-north,,1
 E14001287,High Peak,high-peak,,2
 E14001288,Hinckley and Bosworth,hinckley-and-bosworth,,1
 E14001289,Hitchin,hitchin,,1
-E14001290,Holborn and St Pancras,holborn-and-st-pancras,,7
+E14001290,Holborn and St Pancras,holborn-and-st-pancras,,6
 E14001291,Honiton and Sidmouth,honiton-and-sidmouth,,6
 E14001292,Hornchurch and Upminster,hornchurch-and-upminster,,1
 E14001293,Hornsey and Friern Barnet,hornsey-and-friern-barnet,,3
@@ -244,12 +244,12 @@ E14001304,Isle of Wight West,isle-of-wight-west,,1
 E14001305,Islington North,islington-north,,3
 E14001306,Islington South and Finsbury,islington-south-and-finsbury,,2
 E14001307,Jarrow and Gateshead East,jarrow-and-gateshead-east,,1
-E14001308,Keighley and Ilkley,keighley-and-ilkley,,0
+E14001308,Keighley and Ilkley,keighley-and-ilkley,,1
 E14001309,Kenilworth and Southam,kenilworth-and-southam,,1
 E14001310,Kensington and Bayswater,kensington-and-bayswater,,1
 E14001311,Kettering,kettering,,3
 E14001312,Kingston and Surbiton,kingston-and-surbiton,,1
-E14001313,Kingston upon Hull East,kingston-upon-hull-east,,0
+E14001313,Kingston upon Hull East,kingston-upon-hull-east,,1
 E14001314,Kingston upon Hull North and Cottingham,kingston-upon-hull-north-and-cottingham,,0
 E14001315,Kingston upon Hull West and Haltemprice,kingston-upon-hull-west-and-haltemprice,,1
 E14001316,Kingswinford and South Staffordshire,kingswinford-and-south-staffordshire,,0
@@ -279,7 +279,7 @@ E14001339,Liverpool Walton,liverpool-walton,,1
 E14001340,Liverpool Wavertree,liverpool-wavertree,,1
 E14001341,Liverpool West Derby,liverpool-west-derby,,0
 E14001342,Loughborough,loughborough,,1
-E14001343,Louth and Horncastle,louth-and-horncastle,,3
+E14001343,Louth and Horncastle,louth-and-horncastle,,4
 E14001344,Lowestoft,lowestoft,,1
 E14001345,Luton North,luton-north,,0
 E14001346,Luton South and South Bedfordshire,luton-south-and-south-bedfordshire,,1
@@ -287,7 +287,7 @@ E14001347,Macclesfield,macclesfield,,1
 E14001348,Maidenhead,maidenhead,,1
 E14001349,Maidstone and Malling,maidstone-and-malling,,1
 E14001350,Makerfield,makerfield,,1
-E14001351,Maldon,maldon,,1
+E14001351,Maldon,maldon,,2
 E14001352,Manchester Central,manchester-central,,4
 E14001353,Manchester Rusholme,manchester-rusholme,,4
 E14001354,Manchester Withington,manchester-withington,,2
@@ -298,7 +298,7 @@ E14001358,Meriden and Solihull East,meriden-and-solihull-east,,0
 E14001359,Mid Bedfordshire,mid-bedfordshire,,0
 E14001360,Mid Buckinghamshire,mid-buckinghamshire,,0
 E14001361,Mid Cheshire,mid-cheshire,,1
-E14001362,Mid Derbyshire,mid-derbyshire,,0
+E14001362,Mid Derbyshire,mid-derbyshire,,1
 E14001363,Mid Dorset and North Poole,mid-dorset-and-north-poole,,1
 E14001364,Mid Leicestershire,mid-leicestershire,,1
 E14001365,Mid Norfolk,mid-norfolk,,1
@@ -314,7 +314,7 @@ E14001374,New Forest West,new-forest-west,,2
 E14001375,Newark,newark,,1
 E14001376,Newbury,newbury,,1
 E14001377,Newcastle upon Tyne Central and West,newcastle-upon-tyne-central-and-west,,2
-E14001378,Newcastle upon Tyne East and Wallsend,newcastle-upon-tyne-east-and-wallsend,,1
+E14001378,Newcastle upon Tyne East and Wallsend,newcastle-upon-tyne-east-and-wallsend,,2
 E14001379,Newcastle upon Tyne North,newcastle-upon-tyne-north,,1
 E14001380,Newcastle-under-Lyme,newcastle-under-lyme,,1
 E14001381,Newton Abbot,newton-abbot,,2
@@ -327,7 +327,7 @@ E14001387,North Devon,north-devon,,0
 E14001388,North Dorset,north-dorset,,3
 E14001389,North Durham,north-durham,,2
 E14001390,North East Cambridgeshire,north-east-cambridgeshire,,1
-E14001391,North East Derbyshire,north-east-derbyshire,,1
+E14001391,North East Derbyshire,north-east-derbyshire,,2
 E14001392,North East Hampshire,north-east-hampshire,,1
 E14001393,North East Hertfordshire,north-east-hertfordshire,,1
 E14001394,North East Somerset and Hanham,north-east-somerset-and-hanham,,1
@@ -378,7 +378,7 @@ E14001438,Reading Central,reading-central,,2
 E14001439,Reading West and Mid Berkshire,reading-west-and-mid-berkshire,,0
 E14001440,Redcar,redcar,,1
 E14001441,Redditch,redditch,,2
-E14001442,Reigate,reigate,,2
+E14001442,Reigate,reigate,,3
 E14001443,Ribble Valley,ribble-valley,,0
 E14001444,Richmond and Northallerton,richmond-and-northallerton,,3
 E14001445,Richmond Park,richmond-park,,1
@@ -408,10 +408,10 @@ E14001468,Sheffield Hallam,sheffield-hallam,,0
 E14001469,Sheffield Heeley,sheffield-heeley,,2
 E14001470,Sheffield South East,sheffield-south-east,,2
 E14001471,Sherwood Forest,sherwood-forest,,2
-E14001472,Shipley,shipley,,0
+E14001472,Shipley,shipley,,1
 E14001473,Shrewsbury,shrewsbury,,1
 E14001474,Sittingbourne and Sheppey,sittingbourne-and-sheppey,,1
-E14001475,Skipton and Ripon,skipton-and-ripon,,1
+E14001475,Skipton and Ripon,skipton-and-ripon,,2
 E14001476,Sleaford and North Hykeham,sleaford-and-north-hykeham,,1
 E14001477,Slough,slough,,1
 E14001478,Smethwick,smethwick,,2
@@ -428,8 +428,8 @@ E14001488,South Leicestershire,south-leicestershire,,2
 E14001489,South Norfolk,south-norfolk,,0
 E14001490,South Northamptonshire,south-northamptonshire,,2
 E14001491,South Ribble,south-ribble,,0
-E14001492,South Shields,south-shields,,1
-E14001493,South Shropshire,south-shropshire,,4
+E14001492,South Shields,south-shields,,2
+E14001493,South Shropshire,south-shropshire,,5
 E14001494,South Suffolk,south-suffolk,,2
 E14001495,South West Devon,south-west-devon,,2
 E14001496,South West Hertfordshire,south-west-hertfordshire,,2
@@ -437,7 +437,7 @@ E14001497,South West Norfolk,south-west-norfolk,,4
 E14001498,South West Wiltshire,south-west-wiltshire,,3
 E14001499,Southampton Itchen,southampton-itchen,,0
 E14001500,Southampton Test,southampton-test,,1
-E14001501,Southend East and Rochford,southend-east-and-rochford,,1
+E14001501,Southend East and Rochford,southend-east-and-rochford,,2
 E14001502,Southend West and Leigh,southend-west-and-leigh,,0
 E14001503,Southgate and Wood Green,southgate-and-wood-green,,2
 E14001504,Southport,southport,,2
@@ -518,7 +518,7 @@ E14001578,West Suffolk,west-suffolk,,3
 E14001579,West Worcestershire,west-worcestershire,,2
 E14001580,Westmorland and Lonsdale,westmorland-and-lonsdale,,3
 E14001581,Weston-super-Mare,weston-super-mare,,1
-E14001582,Wetherby and Easingwold,wetherby-and-easingwold,,1
+E14001582,Wetherby and Easingwold,wetherby-and-easingwold,,2
 E14001583,Whitehaven and Workington,whitehaven-and-workington,,0
 E14001584,Widnes and Halewood,widnes-and-halewood,,1
 E14001585,Wigan,wigan,,1
@@ -561,7 +561,7 @@ N05000016,Strangford,strangford,,2
 N05000017,Upper Bann,upper-bann,,1
 N05000018,West Tyrone,west-tyrone,,2
 S14000021,East Renfrewshire,east-renfrewshire,,1
-S14000027,Na h-Eileanan an Iar,na-h-eileanan-an-iar,,5
+S14000027,Na h-Eileanan an Iar,na-h-eileanan-an-iar,,4
 S14000045,Midlothian,midlothian,,2
 S14000048,North Ayrshire and Arran,north-ayrshire-and-arran,,2
 S14000051,Orkney and Shetland,orkney-and-shetland,,2
@@ -570,7 +570,7 @@ S14000061,Aberdeen South,aberdeen-south,,1
 S14000062,Aberdeenshire North and Moray East,aberdeenshire-north-and-moray-east,,0
 S14000063,Airdrie and Shotts,airdrie-and-shotts,,1
 S14000064,Alloa and Grangemouth,alloa-and-grangemouth,,1
-S14000065,Angus and Perthshire Glens,angus-and-perthshire-glens,,1
+S14000065,Angus and Perthshire Glens,angus-and-perthshire-glens,,0
 S14000066,Arbroath and Broughty Ferry,arbroath-and-broughty-ferry,,0
 S14000067,"Argyll, Bute and South Lochaber","argyll,-bute-and-south-lochaber",,6
 S14000068,Bathgate and Linlithgow,bathgate-and-linlithgow,,1
@@ -578,7 +578,7 @@ S14000069,"Caithness, Sutherland and Easter Ross","caithness,-sutherland-and-eas
 S14000070,Coatbridge and Bellshill,coatbridge-and-bellshill,,1
 S14000071,Cowdenbeath and Kirkcaldy,cowdenbeath-and-kirkcaldy,,1
 S14000072,Cumbernauld and Kirkintilloch,cumbernauld-and-kirkintilloch,,2
-S14000073,Dumfries and Galloway,dumfries-and-galloway,,5
+S14000073,Dumfries and Galloway,dumfries-and-galloway,,6
 S14000074,"Dumfriesshire, Clydesdale and Tweeddale","dumfriesshire,-clydesdale-and-tweeddale",,1
 S14000075,Dundee Central,dundee-central,,1
 S14000076,Dunfermline and Dollar,dunfermline-and-dollar,,2
@@ -586,14 +586,14 @@ S14000077,East Kilbride and Strathaven,east-kilbride-and-strathaven,,2
 S14000078,Edinburgh East and Musselburgh,edinburgh-east-and-musselburgh,,0
 S14000079,Edinburgh North and Leith,edinburgh-north-and-leith,,1
 S14000080,Edinburgh South,edinburgh-south,,1
-S14000081,Edinburgh South West,edinburgh-south-west,,2
+S14000081,Edinburgh South West,edinburgh-south-west,,3
 S14000082,Edinburgh West,edinburgh-west,,0
 S14000083,Falkirk,falkirk,,2
 S14000084,Glasgow East,glasgow-east,,3
 S14000085,Glasgow North,glasgow-north,,1
 S14000086,Glasgow North East,glasgow-north-east,,0
 S14000087,Glasgow South,glasgow-south,,2
-S14000088,Glasgow South West,glasgow-south-west,,4
+S14000088,Glasgow South West,glasgow-south-west,,5
 S14000089,Glasgow West,glasgow-west,,3
 S14000090,Glenrothes and Mid Fife,glenrothes-and-mid-fife,,3
 S14000091,Gordon and Buchan,gordon-and-buchan,,1
@@ -613,7 +613,7 @@ S14000104,Rutherglen,rutherglen,,1
 S14000105,Stirling and Strathallan,stirling-and-strathallan,,2
 S14000106,West Dunbartonshire,west-dunbartonshire,,2
 S14000107,"Ayr, Carrick and Cumnock","ayr,-carrick-and-cumnock",,0
-S14000108,"Berwickshire, Roxburgh and Selkirk","berwickshire,-roxburgh-and-selkirk",,2
+S14000108,"Berwickshire, Roxburgh and Selkirk","berwickshire,-roxburgh-and-selkirk",,3
 S14000109,Central Ayrshire,central-ayrshire,,1
 S14000110,Kilmarnock and Loudoun,kilmarnock-and-loudoun,,1
 S14000111,West Aberdeenshire and Kincardine,west-aberdeenshire-and-kincardine,,1
@@ -621,10 +621,10 @@ W07000081,Aberafan Maesteg,aberafan-maesteg,,1
 W07000082,Alyn and Deeside,alyn-and-deeside,,0
 W07000083,Bangor Aberconwy,bangor-aberconwy,,3
 W07000084,Blaenau Gwent and Rhymney,blaenau-gwent-and-rhymney,,2
-W07000085,"Brecon, Radnor and Cwm Tawe","brecon,-radnor-and-cwm-tawe",,5
+W07000085,"Brecon, Radnor and Cwm Tawe","brecon,-radnor-and-cwm-tawe",,6
 W07000086,Bridgend,bridgend,,1
 W07000087,Caerfyrddin,caerfyrddin,,3
-W07000088,Caerphilly,caerphilly,,2
+W07000088,Caerphilly,caerphilly,,3
 W07000089,Cardiff East,cardiff-east,,0
 W07000090,Cardiff North,cardiff-north,,0
 W07000091,Cardiff South and Penarth,cardiff-south-and-penarth,,1
