@@ -77,14 +77,18 @@ sub updateCreationTimestamp {
 	close($fh);
 }
 
-# Version 1.3
+# Version 1.4
 sub ParseCSV {
 	my $str = shift;
 	my $config = shift;
-	my (@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2,$compact,$sline,$col);
+	my (@rows,@cols,@header,$r,$c,@features,$data,$key,$k,$f,$n,$n2,$compact,$hline,$sline,$col);
 
 	$compact = $config->{'compact'};
-	$sline = $config->{'startrow'}||0;
+	if(not defined($config->{'header'})){ $config->{'header'} = {}; }
+	if(not defined($config->{'header'}{'start'})){ $config->{'header'}{'start'} = 0; }
+	if(not defined($config->{'header'}{'spacer'})){ $config->{'header'}{'spacer'} = 0; }
+	if(not defined($config->{'header'}{'join'})){ $config->{'header'}{'join'} = "→"; }
+	$sline = $config->{'startrow'}||1;
 	$col = $config->{'key'};
 
 	$n = () = $str =~ /\r\n/g;
@@ -96,12 +100,12 @@ sub ParseCSV {
 	@rows = split(/[\n]/,$str);
 
 	$n = @rows;
-	
-	for($r = $sline; $r < @rows; $r++){
+
+	for($r = $config->{'header'}{'start'}; $r < @rows; $r++){
 		$rows[$r] =~ s/[\n\r]//g;
 		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
 
-		if($r < $sline+1){
+		if($r < $sline-$config->{'header'}{'spacer'}){
 			# Header
 			if(!@header){
 				for($c = 0; $c < @cols; $c++){
@@ -110,10 +114,11 @@ sub ParseCSV {
 				@header = @cols;
 			}else{
 				for($c = 0; $c < @cols; $c++){
-					$header[$c] .= "\n".$cols[$c];
+					if($cols[$c]){ $header[$c] .= $config->{'header'}{'join'}.$cols[$c]; }
 				}
 			}
-		}else{
+		}
+		if($r >= $sline){
 			$data = {};
 			for($c = 0; $c < @cols; $c++){
 				$cols[$c] =~ s/(^\"|\"$)//g;
