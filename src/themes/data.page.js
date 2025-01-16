@@ -47,7 +47,7 @@ export default function*({search}){
 
 			const pageurl = url+id+'.json';
 
-			index[page.theme].data.push({'url':site.url(pageurl, true)});
+			index[page.theme].data.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
 			
 			yield {'url':pageurl,'content':niceJSON(data)};
 		}
