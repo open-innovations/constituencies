@@ -11,8 +11,10 @@ header_class: c8-bg
 # See https://lume.land/plugins/metas/
 metas:
   site: UK Constituency Data Hex Maps
-  description: Mapping data for UK Westminster Constituencies on hex cartograms
+  title: "$ title"
+  description: "=description || Mapping data for UK Westminster Constituencies on hex cartograms"
   image: https://open-innovations.org/resources/images/logos/oi-square.png
   twitter: openinnovates
   lang: en
   keywords: [data, hex, map, hexmap, constituencies]
+  theme-color: "#722ea5"
