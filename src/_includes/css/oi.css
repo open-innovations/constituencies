@@ -104,7 +104,7 @@ a.button:hover, button:hover, button:focus, a.button:focus { background-color: #
 .b6-bg { background-color: #ffffff; color: black!important; }
 .c1-bg, .elsewhere .facebook:hover, .c1-bg-hover:hover, .c1-bg:visited, .seasonal, .seasonal:visited, .seasonal:hover { background-color: #2254F4; color: white; }
 .c2-bg, .c2-bg-hover:hover, .c2-bg:visited { background-color: #178CFF; color: black; }
-.c3-bg, .elsewhere .twitter:hover, .c3-bg-hover:hover, .c3-bg:visited { background-color: #00B6FF; color: black; }
+.c3-bg, .elsewhere .bluesky:hover, .c3-bg-hover:hover, .c3-bg:visited { background-color: #00B6FF; color: black; }
 .c4-bg, .c4-bg-hover:hover, .c4-bg:visited, .seasonal-accent, .seasonal-accent:hover, .seasonal-accent:visited { background-color: #08DEF9; color: black; }
 .c5-bg, .c5-bg-hover:hover, .c5-bg:visited { background-color: #1DD3A7; color: black; }
 .c6-bg, .c6-bg-hover:hover, .c6-bg:visited { background-color: #0DBC37; color: black; }
