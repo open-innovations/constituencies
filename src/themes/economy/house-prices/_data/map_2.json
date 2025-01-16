@@ -1,4 +1,5 @@
 {
+	"title": "House price wage ratio",
     "config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",

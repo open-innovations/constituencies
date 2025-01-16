@@ -1,4 +1,5 @@
 {
+	"title": "House prices",
     "config": {
         "width": 600,
         "test": true,
