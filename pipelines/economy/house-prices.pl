@@ -14,7 +14,7 @@ use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 use OpenInnovations::XLSX;
 
-my $url = "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas/2023/hpssabyparlicons.xlsx";
+my $url = "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas/yearendingmarch2024/housepricestatisticsforsmallareasbyparliamentaryconstituency.xlsx";
 my $file = $basedir."../../raw-data/hpssabyparlicons.xlsx";
 my $odir = $basedir."../../src/themes/economy/_data/";
 
@@ -64,10 +64,13 @@ saveSheet($odir."house_prices.csv",$prices);
 sub saveSheet {
 	my $file = shift;
 	my $data = shift;
-	my @headers = @{$data->{'headers'}{'columns'}};
+	my @rawheaders = @{$data->{'headers'}{'columns'}};
 	my @rows = @{$data->{'rows'}};
-	my ($r,$c,$fh,$v);
-	
+	my ($r,$c,$fh,$v,@headers);
+
+	# Sort the headers
+	@headers = sort{ sprintf("%3s",$a->{'key'}) cmp sprintf("%3s",$b->{'key'})}(@rawheaders);
+
 	msg("Saving to <cyan>$file<none>\n");
 	open($fh,">",$file);
 	# Create header row
