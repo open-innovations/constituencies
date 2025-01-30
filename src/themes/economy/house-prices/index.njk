@@ -12,8 +12,9 @@ datafiles:
 
 <p>This page provides constituency-level data on house prices in England and Wales. The <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas">house price figures</a> used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
 
-{{ comp.hexmap({
-    "config": {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
         "width": 600,
         "test": true,
         "hexjson": "hexjson.uk-constituencies-2024",
@@ -67,12 +68,13 @@ datafiles:
         "text": "House prices by constituency",
         "type": "CSV"
     }
-}) }}
+} %}{% endcomp %}
 
 <h3>House price to wages ratio</h3>
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024) whilst we wait for <a href="https://www.nomisweb.co.uk/query/construct/components/stdListComponent.asp?menuopt=12&subcomp=100">NOMIS</a> to provide data by the new constituencies.</div>
-{{ comp.hexmap({
-    "config": {
+{% comp 'wrapper', {
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
 		"width": 600,
 		"hexjson": hexjson.constituencies,
 		"data": house_price_wage_ratio,
@@ -114,7 +116,8 @@ datafiles:
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-house-prices/\">House prices (House of Commons Library)</a>"
 	},
     "download": {"text": "House price wage ratio by constituency", "type": "CSV"}
-}) }}
+
+} %}{% endcomp %}
 
 
 <h2>Notes</h2>
