@@ -1,0 +1,79 @@
+---
+title: "MPs: Left vs Right (UK)"
+theme: society
+created: "2025-02-05T22:45"
+updated: "2025-02-05T22:45"
+description: "The left-right positions of British MPs inferred from a survey of local councillors (UK)."
+---
+<style>
+.oi-legend { margin-right: 1rem; }
+</style>
+
+
+<p>The <a href="https://mpsleftright.co.uk/">left-right positions of British MPs</a> inferred from a survey of local councillors.</p>
+
+{{ comp.wrapper({
+	"component": comp.oi.map.hex_cartogram,
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": summary_statistics_file,
+		"value": "econ_mean",
+		"matchKey": "PCON24CD",
+		"scale": "Turbo_r",
+		"min": 0,
+		"max": 100,
+		"columns": [{
+			name: "filterLabel",
+			template: "{{ n }} ({{ DisplayName }})"
+		}],
+		"legend": {
+			"position": "top right",
+			"continuous": true,
+			"direction": "horizontal",
+			"items": [{
+				"value": 100,
+				"label": "Right"
+			},{
+				"value": 0,
+				"label": "Left"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"width": "200px",
+				"columns": [{
+					"value": "econ_mean",
+					"label": "Economy"
+				},{
+					"value": "cult_mean",
+					"label": "Culture",
+				}]
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br /><a href=\"{{ wikidata }}\">{{ DisplayName }}</a> / {{ Party.24 }}<br />Score: <strong>{{ econ_mean | toFixed(1) }}</strong> on a scale from 0-100<br />Economy range: {{ econ_lo | toFixed(1) }} &rarr; {{ econ_hi | toFixed(1) }}<br />Culture range: {{ cult_lo | toFixed(1) }} &rarr; {{ cult_hi | toFixed(1) }}",
+		"boundaries": {
+		  "country": {
+			"stroke": "white",
+			"stroke-width": 1.5,
+			"stroke-linecap": "round"
+		  },
+		  region: "country"
+		},
+		"attribution": 'Data: <a href="https://github.com/chrishanretty/pairwise_mps_2024">MPs: Left vs Right</a> (Royal Holloway / Survation / UK in a Changing Europe).'
+	},
+	"download": {"text": "Pairwise comparisons of MPs", "type": "CSV"}
+}) }}
+
+<h2>Notes</h2>
+
+<p>These figures are based on two large surveys of local councillors. The first survey was done between August and September 2023; the second survey was done in October 2024. 1486 councillors responded to the first survey; 1027 to the second survey. These councillors were asked to compare MPs in their local area two at a time. The survey asked them to pick the MP that was 'more left-wing' (first survey wording) or 'more economically conservative' (second survey wording). The figures here are based on those pairwise comparisons. In total, the study modelled 13,680 pairwise comparisons, or just over fourteen comparisons for each of the 953 MPs in the data.</p>
+
+<p>The study asked respondents to think about left and right in economic terms. Scores of zero and one hundred are the most left-wing and most right-wing that it is possible for an MP in the 2024 parliament to be. These figures are relative figures. If a more extreme MP was added, the numbers would have to be recalculated. A score of 50 just means that someone is roughly in the middle of the distribution of MPs for the 2019 and 2024 parliaments. It doesn't mean that they are centrist in any meaningful sense.</p>
+
+<p>Some politicians are not present in this data either because there were no councillors in their area who answered the survey, or because they did not feature in the (randomly-generated) comparisons between MPs in the area, or because all councillors who did see an MP in a comparison said that they didn't know whether that person was more or less left-wing or economically conservative than the other MP.</p>
+
+<p>The full methodology is described in the <a href="https://github.com/chrishanretty/pairwise_mps_2024/blob/main/article/article.pdf">working paper</a>.</p>
