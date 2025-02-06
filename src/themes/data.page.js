@@ -70,13 +70,13 @@ export default function*({search}){
 				index[page.theme] = {
 					'title':page.themes[page.theme].title,
 					'description':page.themes[page.theme].description,
-					'data':[]
+					'visualisations':[]
 				};
 			}
 
 			const pageurl = url+id+'.json';
 
-			index[page.theme].data.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
+			index[page.theme].visualisations.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
 			
 			yield {'url':pageurl,'content':niceJSON(data,2)};
 		}
