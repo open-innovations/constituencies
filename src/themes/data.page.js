@@ -70,7 +70,7 @@ export default function*({search}){
 			data.legend = config.legend;
 
 			// Add to themes
-			if(!(page.theme in index)){
+			if(!(page.theme in index.themes)){
 				index.themes[page.theme] = {
 					'title':page.themes[page.theme].title,
 					'description':page.themes[page.theme].description,
