@@ -9,7 +9,10 @@ function resolveData(ref,context){
 export default function*({search}){
 	
 	const pages = search.pages("datafiles!=undefined");
-	let index = {};
+	let index = {
+		"notes": "This is an experimental API for the Open Innovations Consitituency Data site",
+		"themes": {}
+	};
 
 	for(const page of pages){
 
@@ -22,6 +25,7 @@ export default function*({search}){
 			const config = {...page[id].config};
 			const data = {};
 
+			data.notes = "This is an experimental API for the Open Innovations Consitituency Data site";
 			data.title = page[id].title;
 			data.key = config.matchKey;
 			data.value = config.value;
@@ -67,7 +71,7 @@ export default function*({search}){
 
 			// Add to themes
 			if(!(page.theme in index)){
-				index[page.theme] = {
+				index.themes[page.theme] = {
 					'title':page.themes[page.theme].title,
 					'description':page.themes[page.theme].description,
 					'visualisations':[]
@@ -76,13 +80,13 @@ export default function*({search}){
 
 			const pageurl = url+id+'.json';
 
-			index[page.theme].visualisations.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
+			index.themes[page.theme].visualisations.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
 			
 			yield {'url':pageurl,'content':niceJSON(data,2)};
 		}
 	}
 
-	yield {'url':'./index.json','content':niceJSON(index,3)};	
+	yield {'url':'./index.json','content':niceJSON(index,4)};	
 }
 
 function escapeRegExp(string){
