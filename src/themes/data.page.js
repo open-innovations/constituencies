@@ -3,8 +3,6 @@ import site from '../../_config.ts';
 function resolveData(ref,context){
 	let result = context;
 	for (const key of ref.split('.')) result = result[key];
-	
-	if("rows" in result) result = result.rows;
 	return result;
 }
 
@@ -23,25 +21,28 @@ export default function*({search}){
 
 			const config = {...page[id].config};
 			const data = {};
-			
+
+			data.title = page[id].title;
 			data.key = config.matchKey;
 			data.value = config.value;
-
+			
+			data.data = {};
+			data.data.attribution = config.attribution.replace(/^Data: ?/,'');
 			if(config.data in page){
 				// We have the data in the page
-				data.data = page[config.data].rows;
+				data.data.rows = page[config.data].rows;
 			}else{
 				// See if the data is nested in the page
-				data.data = resolveData(config.data,page);
+				data.data.rows = resolveData(config.data,page).rows;
 			}
+			data.data.constituencies = {};
+			for(let r = 0; r < data.data.rows.length; r++){
+				data.data.constituencies[data.data.rows[r][data.key]] = data.data.rows[r];
+			}
+			delete data.data.rows;
 
 			//if("tools" in config && "slider" in config.tools) data.values = config.tools.slider.columns;
 			
-			data.scale = {};
-			//if("scale" in config) data.scale.type = config.scale;
-			if("min" in config) data.scale.min = config.min;
-			if("max" in config) data.scale.max = config.max;
-
 			if(config.hexjson=="hexjson.constituencies"){
 				data.hexjson = {
 					"url":"https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson",
@@ -55,7 +56,13 @@ export default function*({search}){
 			}else{
 				data.hexjson = {"url":data.hexjson};
 			}
-			data.attribution = config.attribution.replace(/^Data: ?/,'');
+
+			data.scale = {};
+			//if("scale" in config) data.scale.type = config.scale;
+			if("min" in config) data.scale.min = config.min;
+			if("max" in config) data.scale.max = config.max;
+
+
 			data.legend = config.legend;
 
 			// Add to themes
@@ -71,7 +78,7 @@ export default function*({search}){
 
 			index[page.theme].data.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
 			
-			yield {'url':pageurl,'content':niceJSON(data)};
+			yield {'url':pageurl,'content':niceJSON(data,2)};
 		}
 	}
 
