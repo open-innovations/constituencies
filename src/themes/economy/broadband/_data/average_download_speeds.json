@@ -1,11 +1,5 @@
----
-title: Average download speeds
----
-<h2>Average download speeds (May 2023){% comp 'anchor', { 'ref': 'average'} %}{% endcomp %}</h2>
-
-<p>Speeds actually being received based on the mean average. This may reflect consumer choice as well as line quality, since users sometimes have access to packages offering higher speeds than those they are actually receiving. This is a mean average, meaning that lines with high speeds (e.g. gigabit speeds) will have a disproportionate impact on the average. Ofcom’s source data contains median download speeds for constituencies.</p>
-
-{% comp 'hexmap', {
+{
+	"title": "Average download speeds",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -45,6 +39,5 @@ title: Average download speeds
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Average speed: <strong>{{ {{ _value }} | toLocaleString() }}Mbps</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
-	},
-	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
-} %}{% endcomp %}
+	}
+}

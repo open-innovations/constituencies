@@ -49,9 +49,5 @@
         },
         "tooltip": "<strong>{{ n }}</strong><br />Median House Price ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
         "attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas\">House prices (ONS Housing Analysis Team)</a>"
-    },
-    "download": {
-        "text": "House prices by constituency",
-        "type": "CSV"
     }
 }

@@ -1,10 +1,5 @@
----
-title: Receiving over 30 Mbps
----
-
-<h2>Receiving over 30 Mbps (January 2024){% comp 'anchor', { 'ref': 'over-30Mbps'} %}{% endcomp %}</h2>
-<p>The percentage of lines actually receiving superfast download speeds (over 30 Mbps). Note that this does not show what lines are capable of receiving. Some lines not receiving 30 Mbps have the option of faster speeds available to them. A lower-than-average figure on this measure may indicate that consumers have chosen not to (or are unable to) adopt superfast packages, rather than worse connectivity in the area.</p>
-{% comp 'hexmap', {
+{
+	"title": "Superfast availability",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -13,7 +8,7 @@ title: Receiving over 30 Mbps
 			"name": "filterLabel",
 			"template": "{{ Name }}"
 		}],
-		"value": "Receiving over 30 Mbps (%)",
+		"value": "Superfast availability (%)",
 		"scale": "Viridis",
 		"min": 50,
 		"max": 100,
@@ -47,6 +42,5 @@ title: Receiving over 30 Mbps
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
-	},
-	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
-} %}{% endcomp %}
+	}
+}

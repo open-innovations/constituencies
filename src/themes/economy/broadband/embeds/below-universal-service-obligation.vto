@@ -1,0 +1,14 @@
+---
+title: Below universal service obligation
+---
+
+<h2>Below universal service obligation (January 2024){{ comp.anchor({'ref': 'below-universal-service-obligation'}) }}</h2>
+<p>The percentage of premises unable to receive 10 Mbps download speed or 1 Mbps upload speed, which Ofcom regards as necessary components of ‘decent broadband’. This measure counts only premises that cannot receive the above speeds from fixed broadband, fixed wireless technologies, and mobile broadband.</p>
+
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "below_universal_service_obligation",
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+}) }}

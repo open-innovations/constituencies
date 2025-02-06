@@ -40,6 +40,5 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />House price to wages ratio ({{ _value }}): &times;<strong>{{ {{ _value }} | toFixed(2) }}</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-house-prices/\">House prices (House of Commons Library)</a>"
-	},
-    "download": {"text": "House price wage ratio by constituency", "type": "CSV"}
+	}
 }

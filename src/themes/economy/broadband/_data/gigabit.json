@@ -1,10 +1,5 @@
----
-title: Gigabit availability
----
-
-<h2>Gigabit availability (January 2024){% comp 'anchor', { 'ref': 'gigabit'} %}{% endcomp %}</h2>
-<p>The percentage of premises that were capable of receiving speeds of 1 gigabit per second (1 Gbps).</p>
-{% comp 'hexmap', {
+{
+	"title": "Gigabit availability",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -47,6 +42,5 @@ title: Gigabit availability
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
-	},
-	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
-} %}{% endcomp %}
+	}
+}

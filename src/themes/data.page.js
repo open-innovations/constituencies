@@ -1,5 +1,11 @@
 import site from '../../_config.ts';
 
+function resolveData(ref,context){
+	let result = context;
+	for (const key of ref.split('.')) result = result[key];
+	return result;
+}
+
 export default function*({search}){
 	
 	const pages = search.pages("datafiles!=undefined");
@@ -18,7 +24,14 @@ export default function*({search}){
 			
 			data.key = config.matchKey;
 			data.value = config.value;
-			data.data = page[config.data].rows;
+
+			if(config.data in page){
+				// We have the data in the page
+				data.data = page[config.data].rows;
+			}else{
+				// See if the data is nested in the page
+				data.data = resolveData(config.data,page);
+			}
 
 			//if("tools" in config && "slider" in config.tools) data.values = config.tools.slider.columns;
 			

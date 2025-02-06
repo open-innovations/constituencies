@@ -4,6 +4,8 @@ theme: society
 created: "2025-02-05T22:45"
 updated: "2025-02-05T22:45"
 description: "The left-right positions of British MPs inferred from a survey of local councillors (UK)."
+datafiles:
+  - mps_left_right
 ---
 <style>
 .oi-legend { margin-right: 1rem; }
@@ -13,59 +15,9 @@ description: "The left-right positions of British MPs inferred from a survey of 
 <p>The <a href="https://mpsleftright.co.uk/">left-right positions of British MPs</a> inferred from a survey of local councillors.</p>
 
 {{ comp.wrapper({
+	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": summary_statistics_file,
-		"value": "econ_mean",
-		"matchKey": "PCON24CD",
-		"scale": "Turbo_r",
-		"min": 0,
-		"max": 100,
-		"columns": [{
-			name: "filterLabel",
-			template: "{{ n }} ({{ DisplayName }})"
-		}],
-		"legend": {
-			"position": "top right",
-			"continuous": true,
-			"direction": "horizontal",
-			"size": "100px",
-			"items": [{
-				"value": 100,
-				"label": "Right"
-			},{
-				"value": 0,
-				"label": "Left"
-			}]
-		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			},
-			"slider": {
-				"width": "200px",
-				"columns": [{
-					"value": "econ_mean",
-					"label": "Economy"
-				},{
-					"value": "cult_mean",
-					"label": "Culture",
-				}]
-			}
-		},
-		"tooltip": "<strong>{{ n }}</strong><br /><a href=\"{{ wikidata }}\">{{ DisplayName }}</a> / {{ Party.24 }}<br />Score: <strong>{{ econ_mean | toFixed(1) }}</strong> on a scale from 0-100<br />Economy range: {{ econ_lo | toFixed(1) }} &rarr; {{ econ_hi | toFixed(1) }}<br />Culture range: {{ cult_lo | toFixed(1) }} &rarr; {{ cult_hi | toFixed(1) }}",
-		"boundaries": {
-		  "country": {
-			"stroke": "white",
-			"stroke-width": 1.5,
-			"stroke-linecap": "round"
-		  },
-		  region: "country"
-		},
-		"attribution": 'Data: <a href="https://github.com/chrishanretty/pairwise_mps_2024">MPs: Left vs Right</a> (Royal Holloway / Survation / UK in a Changing Europe).'
-	},
+	"config": "mps_left_right",
 	"download": {"text": "Pairwise comparisons of MPs", "type": "CSV"}
 }) }}
 

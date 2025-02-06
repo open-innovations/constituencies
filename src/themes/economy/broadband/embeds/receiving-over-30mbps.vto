@@ -1,0 +1,12 @@
+---
+title: Receiving over 30 Mbps
+---
+
+<h2>Receiving over 30 Mbps (January 2024){{ comp.anchor({'ref':'over-30Mbps'}) }}</h2>
+<p>The percentage of lines actually receiving superfast download speeds (over 30 Mbps). Note that this does not show what lines are capable of receiving. Some lines not receiving 30 Mbps have the option of faster speeds available to them. A lower-than-average figure on this measure may indicate that consumers have chosen not to (or are unable to) adopt superfast packages, rather than worse connectivity in the area.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "receiving_over_30mbps",
+	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
+}) }}

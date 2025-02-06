@@ -1,10 +1,5 @@
----
-title: Below universal service obligation
----
-
-<h2>Below universal service obligation (January 2024){% comp 'anchor', { 'ref': 'below-universal-service-obligation'} %}{% endcomp %}</h2>
-<p>The percentage of premises unable to receive 10 Mbps download speed or 1 Mbps upload speed, which Ofcom regards as necessary components of ‘decent broadband’. This measure counts only premises that cannot receive the above speeds from fixed broadband, fixed wireless technologies, and mobile broadband.</p>
-{% comp 'hexmap', {
+{
+	"title": "Below universal service obligation",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -44,6 +39,5 @@ title: Below universal service obligation
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Below universal service obligation: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
-	},
-	"download": {"text": "Broadband speeds and availability", "type": "CSV"}
-} %}{% endcomp %}
+	}
+}
