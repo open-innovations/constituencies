@@ -3,6 +3,8 @@ import site from '../../_config.ts';
 function resolveData(ref,context){
 	let result = context;
 	for (const key of ref.split('.')) result = result[key];
+	
+	if("rows" in result) result = result.rows;
 	return result;
 }
 
@@ -41,12 +43,19 @@ export default function*({search}){
 			if("max" in config) data.scale.max = config.max;
 
 			if(config.hexjson=="hexjson.constituencies"){
-				data.hexjson = "https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson";
-				data.attribution = config.attribution + (config.attribution ? ' / ' : '') + '<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
+				data.hexjson = {
+					"url":"https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson",
+					"attribution": '<a href="https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)'
+				};
 			}else if(config.hexjson=="hexjson.uk-constituencies-2024" || config.hexjson=="hexjson.uk-constituencies-2023-temporary"){
-				data.hexjson = "https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson";
-				data.attribution = config.attribution + (config.attribution ? ' / ' : '') + '<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
+				data.hexjson = {
+					"url": "https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson",
+					"attribution": '<a href="https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)'
+				}
+			}else{
+				data.hexjson = {"url":data.hexjson};
 			}
+			data.attribution = config.attribution.replace(/^Data: ?/,'');
 			data.legend = config.legend;
 
 			// Add to themes
