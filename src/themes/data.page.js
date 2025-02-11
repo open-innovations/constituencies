@@ -10,7 +10,7 @@ export default function*({search}){
 	
 	const pages = search.pages("datafiles!=undefined");
 	let index = {
-		"notes": "This is an experimental API for the Open Innovations Consitituency Data site",
+		"notes": "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and may change depending on feedback. Be very careful about relying on it for now.",
 		"themes": {}
 	};
 
