@@ -1,0 +1,25 @@
+---
+title: Child poverty (UK)
+theme: society
+created: 2023-08-24T15:59
+updated: 2025-02-11T16:05
+description: |
+  Constituency-level data on child poverty (UK).
+keywords: [relative,absolute,poverty,children,JRF,inequality]
+datafiles:
+  - map_1
+---
+
+<p>This page provides constituency-level data on child poverty in the UK (2022/23).</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1",
+	"download": { "text": "Child poverty by constituency", "type": "CSV" }
+}) }}
+
+<h2>Notes</h2>
+<p>These figures were published by the Joseph Rowntree Foundation in their <a href="https://www.jrf.org.uk/uk-poverty-2025-the-essential-guide-to-understanding-poverty-in-the-uk">UK Poverty Report 2025</a> appendix: UK Poverty 2025 charts and tables.</p>
+<p>The <a href="https://endchildpoverty.org.uk/child-poverty-2024/">data comes from Loughborough University</a>. They took 2023 data from the Department for Work and Pensions, HMRC and Department of Communities in Northern Ireland obtained under FOI, to get figures for the old pre-2024 electoral boundaries. They then modelled that data onto the new election boundaries.</p>
+<p>The GSS codes given by Loughborough for five Scottish constituencies have been manually updated to their 2024 values.</p>
