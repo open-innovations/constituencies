@@ -1,5 +1,5 @@
 {
-	"title": "Child poverty",
+	"title": "Percentage of children affected by two-child limit",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -8,28 +8,28 @@
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "Percentage of children living in poverty",
+		"value": "Percentage of children affected by two-child limit",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 100,
+		"max": 50,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 100,
-				"label": "100%"
-			},{
-				"value": 80,
-				"label": "80%"
-			},{
-				"value": 60,
-				"label": "60%"
+				"value": 50,
+				"label": "50%"
 			},{
 				"value": 40,
 				"label": "40%"
 			},{
+				"value": 30,
+				"label": "30%"
+			},{
 				"value": 20,
 				"label": "20%"
+			},{
+				"value": 10,
+				"label": "10%"
 			},{
 				"value": 0,
 				"label": "0%"
@@ -40,7 +40,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Child poverty rate: <strong>{{ Percentage of children living in poverty | toFixed(1) }}%</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Children affected by two-child limit: <strong>{{ Percentage of children affected by two-child limit | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-child-poverty/\">Child poverty rate estimates, after housing costs</a> (Loughborough University/JRF 2022/23)."
 	}
 }

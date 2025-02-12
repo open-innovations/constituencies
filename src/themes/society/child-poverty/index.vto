@@ -8,6 +8,7 @@ description: |
 keywords: [relative,absolute,poverty,children,JRF,inequality]
 datafiles:
   - map_1
+  - map_2
 ---
 
 <p>This page provides constituency-level data on child poverty in the UK (2022/23).</p>
@@ -17,6 +18,15 @@ datafiles:
 	"component": comp.oi.map.hex_cartogram,
 	"config": "map_1",
 	"download": { "text": "Child poverty by constituency", "type": "CSV" }
+}) }}
+
+<h2>Two-child limit</h2>
+<p>The percentage of children affected by the two-child limit.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_2",
+	"download": { "text": "Percentage of children affected by two-child limit", "type": "CSV" }
 }) }}
 
 <h2>Notes</h2>
