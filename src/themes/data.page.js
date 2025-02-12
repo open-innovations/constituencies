@@ -7,10 +7,10 @@ function resolveData(ref,context){
 }
 
 export default function*({search}){
-	
+	const notes = "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org";
 	const pages = search.pages("datafiles!=undefined");
 	let index = {
-		"notes": "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and may change depending on feedback. Be very careful about relying on it for now.",
+		"notes": notes,
 		"themes": {}
 	};
 
@@ -25,7 +25,7 @@ export default function*({search}){
 			const config = {...page[id].config};
 			const data = {};
 
-			data.notes = "This is an experimental API for the Open Innovations Consitituency Data site";
+			data.notes = notes;
 			data.title = page[id].title;
 			data.key = config.matchKey;
 			data.value = config.value;
