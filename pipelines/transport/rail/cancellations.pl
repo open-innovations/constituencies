@@ -61,7 +61,9 @@ $lookup = {
 };
 
 foreach $pcon (keys(%{$hexes})){
-	$data->{$pcon} = {'name'=>$hexes->{$pcon}{'n'}};
+	if($pcon !~ /^N/){
+		$data->{$pcon} = {'name'=>$hexes->{$pcon}{'n'}};
+	}
 }
 
 foreach $station (sort(keys(%{$cancellations}))){
