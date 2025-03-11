@@ -13,10 +13,11 @@ datafiles:
 <p>We have used <a href="https://dataportal.orr.gov.uk/statistics/performance/performance-at-stations">Table 3130</a> (Apr 2024 to Mar 2025 Period 11) from the Office of Rail and Road to calculate the percentage of rail cancellations by UK Parlimentary Constituency. To do this we first calculated the number of cancellations for each station before adding up by constituency.</p>
 <p>There are some constituencies without mainline stations included in Table 3130 so these will have no cancellations.</p>
 
-
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
 	"config": "rail_cancellations",
 	"download": {"text": "Rail cancellations", "type": "CSV"}
 }) }}
+
+<p>The BBC have <a href="https://www.bbc.co.uk/news/articles/c39vzg1rezno">a list of the worst individual stations for cancellations</a>.</p>
