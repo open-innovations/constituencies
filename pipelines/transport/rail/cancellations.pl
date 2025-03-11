@@ -84,7 +84,7 @@ foreach $station (sort(keys(%{$cancellations}))){
 	$data->{$pcon}{'Recorded station stops'} += $cancellations->{$station}{'Recorded station stops'};
 	$c = int($cancellations->{$station}{'Scheduled stops'}*$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}/100);
 	$data->{$pcon}{'Cancellations'} += $c;
-	$data->{$pcon}{'stations'}{$stations->{$station}{'Station name'}} = $stations->{$station}{'Station code'};
+	$data->{$pcon}{'stations'}{$stations->{$station}{'Station name'}} = {'code'=>$stations->{$station}{'Station code'},'cancelled'=>$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}};
 }
 
 
@@ -105,7 +105,7 @@ foreach $pcon (sort(keys(%{$data}))){
 	if(defined($data->{$pcon}{'stations'})){
 		$str = "";
 		foreach $station (sort(keys(%{$data->{$pcon}{'stations'}}))){
-			$str .= "<li>$station ($data->{$pcon}{'stations'}{$station})</li>";
+			$str .= "<li>$station ($data->{$pcon}{'stations'}{$station}{'code'}) - <strong>".sprintf("%0.1f",$data->{$pcon}{'stations'}{$station}{'cancelled'})."%</strong></li>";
 		}
 		$csv .= ($str ? "<ul>":"").$str.($str ? "</ul>":"");
 	}
