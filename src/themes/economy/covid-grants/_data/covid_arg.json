@@ -1,0 +1,40 @@
+{
+	"title": "Covid: Additional Restrictions Grant",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "covid_grants_arg",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ Parlimentary Constituency Name }} ({{ Region }})"
+		}],
+		"value": "Value of Grants Paid",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 12000000,
+		"matchKey": "ONS (pcon) Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 12000000,
+				"label": "£12m+"
+			},{
+				"value": 8000000,
+				"label": "£8m"
+			},{
+				"value": 4000000,
+				"label": "£4m"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />ARG: <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/publications/coronavirus-business-grant-funding-by-parliamentary-constituency-and-local-authority\">Coronavirus business grant funding</a> (gov.uk)"
+	}
+}

@@ -1,22 +1,9 @@
----
-title: Wages (England, Scotland & Wales)
-theme: economy
-created: 2023-08-10T20:35
-updated: 2024-04-02T22:20
-description: |
-  Constituency-level data on wages.
-keywords: [wages,median,pay]
----
-
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-
-<p>This page provides constituency-level data on wages in England, Scotland, and Wales as of December 2022.</p>
-
-{% comp 'hexmap', {
+{
+	"title": "Wages",
 	"config": {
 		"width": 600,
-		"hexjson": hexjson.constituencies,
-		"data": wages,
+		"hexjson": "hexjson.constituencies",
+		"data": "wages",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
@@ -59,15 +46,5 @@ keywords: [wages,median,pay]
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Median gross annual pay ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://www.nomisweb.co.uk/articles/295.aspx\">The Annual Survey of Hours and Earnings</a> &copy; ONS Crown Copyright (from Nomis on 2 April 2024)"
-	},
-	"download": {"text": "Wages by constituency", "type": "CSV"}
-} %}{% endcomp %}
-
-<h2>Notes</h2>
-
-<ul>
-<li>The values are the median full-time employee salary for residents of the constituency.</li>
-<li>Self-employed people and part-time workers are not included.</li>
-<li>In years where figures for a particular constituency have been suppressed by ONS as statistically unreliable, previous year's values have been used. There are some gaps in the 2010 data as there is no previous data.</li>
-<li>The source data are provided for pre-2023 constituencies.</li>
-</ul>
+	}
+}
