@@ -1,0 +1,88 @@
+---
+title: Active Travel (England)
+theme: transport
+created: 2023-09-13T18:51
+updated: 2023-09-13T18:51
+description: |
+  Walking and cycling (England) based on the National Travel Survey and Active Lives Survey.
+keywords: [walking,cycling,active,travel,cycle,adults]
+datafiles:
+  - active_travel_cycle_once_a_month
+  - active_travel_cycle_once_a_week
+  - active_travel_cycle_three_times_a_week
+  - active_travel_walk_once_a_month
+  - active_travel_walk_once_a_week
+  - active_travel_walk_three_times_a_week
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<p>Data and statistics about <a href="#walk">walking</a> and <a href="#cycle">cycling</a>, based on the National Travel Survey and Active Lives Survey.</p>
+
+<h2>Cycling{{ comp.anchor({ 'ref': 'cycle'}) }}</h2>
+
+<h3>At least once a month{{ comp.anchor({ 'ref': 'cycle-monthly'}) }}</h3>
+<p>The proportion of adults that cycle at least once a month.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_cycle_once_a_month"
+}) }}
+
+
+<h3>At least once a week{{ comp.anchor({ 'ref': 'cycle-weekly'}) }}</h3>
+<p>The proportion of adults that cycle at least once a week.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_cycle_once_a_week"
+}) }}
+
+
+<h3>At least three times a week{{ comp.anchor({ 'ref': 'cycle-3perweek'}) }}</h3>
+<p>The proportion of adults that cycle at least three times a week.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_cycle_three_times_a_week"
+}) }}
+
+
+<h2>Walking{{ comp.anchor({ 'ref': 'walk'}) }}</h2>
+
+<h3>At least once a month{{ comp.anchor({ 'ref': 'walk-monthly'}) }}</h3>
+<p>The proportion of adults that walk at least once a month.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_walk_once_a_month"
+}) }}
+
+
+
+<h3>At least once a week{{ comp.anchor({ 'ref': 'walk-weekly'}) }}</h3>
+<p>The proportion of adults that walk at least once a week.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_walk_once_a_week"
+}) }}
+
+
+
+<h3>At least three times a week{{ comp.anchor({ 'ref': 'walk-3perweek'}) }}</h3>
+<p>The proportion of adults that walk at least three times a week.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "active_travel_walk_three_times_a_week"
+}) }}
+
+
+
+<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<p>"Walking" refers to any continuous walk of over 10 minutes, irrespective of purpose.</p>
+<p>"Cycling" refers to any cycling, irrespective of length or purpose.</p>
+<p>These statistics cover the time period mid-November to mid-November for each year. For example, if data is labelled as 2021, this covers mid-November 2020 to mid-November 2021.</p>
+<p>The data from the Active Lives Survey is produced at local authority level and covers where respondents live, which may not be the same as the area where they walk or cycle.. For each local authority we have calculated the number of respondents for each category using the <code>Weighted_sample</code> column. We have then apportioned these respondents between the constituencies associated with that local authority by the amount of geographic overlap. In some cases - where a constituency is entirely within a particular local authority - the value will match that local authority. For instance, the constituency of <em>Oxford East</em> is entirely within the local authority of <em>Oxford</em> so has the same values. However <em>Oxford West and Abingdon</em> is partly in <em>Oxford</em>, partly in <em>Vale of White Horse</em> and partly in <em>Cherwell</em> so gets a contribution from each.</p>
+<p>The constituency values vary a lot between constituencies and between years. This could be, for example, because of small sample sizes in some areas and/or few people cycling.</p>

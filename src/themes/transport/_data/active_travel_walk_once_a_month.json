@@ -1,0 +1,47 @@
+{
+	"title": "Active travel: walk at least once a month",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Walk once a month 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Walk once a month 2016","Walk once a month 2017","Walk once a month 2018","Walk once a month 2019","Walk once a month 2020","Walk once a month 2021","Walk once a month 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Walks once a month<br />2016: <strong>{{ Walk once a month 2016 }}%</strong><br />2017: <strong>{{ Walk once a month 2017 }}%</strong><br />2018: <strong>{{ Walk once a month 2018 }}%</strong><br />2019: <strong>{{ Walk once a month 2019 }}%</strong><br />2020: <strong>{{ Walk once a month 2020 }}%</strong><br />2021: <strong>{{ Walk once a month 2021 }}%</strong><br />2022: <strong>{{ Walk once a month 2022 }}%</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	}
+}

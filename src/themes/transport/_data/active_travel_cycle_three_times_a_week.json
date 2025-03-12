@@ -1,0 +1,47 @@
+{
+	"title": "Active travel: cycle three times a week",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.active-travel",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Cycle three times a week 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Cycle three times a week 2016","Cycle three times a week 2017","Cycle three times a week 2018","Cycle three times a week 2019","Cycle three times a week 2020","Cycle three times a week 2021","Cycle three times a week 2022"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Cycles three times a week<br />2016: <strong>{{ Cycle three times a week 2016 }}%</strong><br />2017: <strong>{{ Cycle three times a week 2017 }}%</strong><br />2018: <strong>{{ Cycle three times a week 2018 }}%</strong><br />2019: <strong>{{ Cycle three times a week 2019 }}%</strong><br />2020: <strong>{{ Cycle three times a week 2020 }}%</strong><br />2021: <strong>{{ Cycle three times a week 2021 }}%</strong><br />2022: <strong>{{ Cycle three times a week 2022 }}%</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw\">Participation in walking and cycling (local authority rates)</a> (Active Lives Survey by Sport England)"
+	}
+}
