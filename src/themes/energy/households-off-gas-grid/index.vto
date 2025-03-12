@@ -6,38 +6,8 @@ updated: 2023-10-05T14:38
 description: |
   Estimates of households that are off the gas grid (England, Scotland, and Wales)
 keywords: [gas,grid,home,mains]
-config:
-  ref:
-    width: 600
-    hexjson: hexjson.constituencies
-    data: sources.energy.OffGasGridDashboard_DataFile
-    columns:
-      - name: "filterLabel"
-        template: "{{ n }} ({{ a }})"
-    value: "Estimated percentage of properties not on the gas grid"
-    scale: "Viridis"
-    min: 0
-    max: 40
-    matchKey: "Constituency code"
-    legend:
-      position: top right
-      items:
-      - value: 40
-        label: "40%+"
-      - value: 30
-        label: "30%"
-      - value: 20
-        label: "20%"
-      - value: 10
-        label: "10%"
-      - value: 0
-        label: '0%'
-    tools:
-      filter:
-        label: filterLabel
-    tooltip: "<strong>{{ n }}</strong><br />Households off the gas grid: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>"
-    attribution: |
-      Data: <a href="https://commonslibrary.parliament.uk/constituency-data-households-off-the-gas-grid/">Households off the gas grid</a> (House of Commons Library / Department for Energy Security and Net Zero)
+datafiles:
+  - map_1
 ---
 
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
@@ -45,11 +15,11 @@ config:
 <p>Accessing the mains gas grid is the most common way in England, Wales, and Scotland to heat a home.</p>
 
 <p>Properties that are off the gas grid do not have access to mains gas and rely on alternative sources of fuel such as heating oil, electric heating, liquefied petroleum gas (LPG), or <a href="https://en.wikipedia.org/wiki/District_heating">district heating systems</a>.</p>
-
-{% comp 'hexmap', {
-	"config": config.ref,
-	"download": {"text": "Households off the gas grid", "type": "CSV"}
-} %}{% endcomp %}
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
 
 <h2>Notes</h2>
 

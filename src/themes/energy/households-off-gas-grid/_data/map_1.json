@@ -1,0 +1,51 @@
+{
+	"title": "Households off the gas grid",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.energy.OffGasGridDashboard_DataFile",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Estimated percentage of properties not on the gas grid",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 40,
+		"matchKey": "Constituency code",
+		"legend": {
+			"position": "top right",
+			"items": [
+				{
+					"value": 40,
+					"label": "40%+"
+				},
+				{
+					"value": 30,
+					"label": "30%"
+				},
+				{
+					"value": 20,
+					"label": "20%"
+				},
+				{
+					"value": 10,
+					"label": "10%"
+				},
+				{
+					"value": 0,
+					"label": "0%"
+				}
+			]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Households off the gas grid: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-households-off-the-gas-grid/\">Households off the gas grid</a> (House of Commons Library / Department for Energy Security and Net Zero)\n"
+	}
+}

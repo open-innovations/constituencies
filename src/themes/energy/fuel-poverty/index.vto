@@ -1,0 +1,36 @@
+---
+title: Fuel poverty (England)
+theme: energy
+created: 2023-10-05T14:38
+updated: 2023-10-05T14:38
+description: |
+  Fuel poverty in England is measured using the Low Income Low Energy Efficiency (LILEE) indicator.
+keywords: [fuel,poverty,heat,home,prices]
+datafiles:
+  - fuel_poverty
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "fuel_poverty"
+}) }}
+
+
+<h2>Notes</h2>
+
+<p>Fuel poverty in England is measured using the Low Income Low Energy Efficiency (LILEE) indicator. Under this indicator, a household is considered to be fuel poor if:</p>
+<ul>
+	<li>they are living in a property with a fuel poverty energy efficiency rating of band D or below</li>
+</ul>
+<p>and</p>
+<ul>
+	<li>when they spend the required amount to heat their home, they are left with a residual income below the official poverty line</li>
+</ul>
+<p>There are 3 important elements in determining whether a household is fuel poor:</p>
+<ul>
+	<li>household income</li>
+	<li>household energy requirements</li>
+	<li>fuel prices</li>
+</ul>

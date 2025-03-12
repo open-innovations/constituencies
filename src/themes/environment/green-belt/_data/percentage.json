@@ -1,11 +1,5 @@
----
-title: Total green belt
----
-
-<h2>Total green belt (31 March 2023)</h2>
-
-{% comp "wrapper", {
-	"component": comp.oi.map.hex_cartogram,
+{
+	"title": "Green belt: percentage",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -15,24 +9,33 @@ title: Total green belt
 			"template": "{{ n }}"
 		}],
 		"min": 0,
-		"max": 30000,
-		"value": "Green Belt land (hectares)",
+		"max": 100,
+		"value": "% Green Belt",
 		"scale": "#dfdfdf 0%, #0DBC37 100%",
 		"matchKey": "ONS code",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 30000,
-				"label": "&ge;30,000 ha"
+				"value": 100,
+				"label": "100%"
 			},{
-				"value": 20000,
-				"label": "20,000 ha"
+				"value": 80,
+				"label": "80%"
 			},{
-				"value": 10000,
-				"label": "10,000 ha"
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 10,
+				"label": "10%"
 			},{
 				"value": 0,
-				"label": "0 ha"
+				"label": "0%"
 			}]
 		},
 		"tools": {
@@ -42,6 +45,5 @@ title: Total green belt
 		},
 		"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
 		"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library/DLUHC)"
-	},
-	"download": {"text": "Green Belt land - future", "type": "CSV"}
-} %}{% endcomp %}
+	}
+}

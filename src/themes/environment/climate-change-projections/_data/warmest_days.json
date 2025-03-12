@@ -1,0 +1,40 @@
+{
+	"title": "Climate change: warmest days",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": 0,
+		"max": 7.5,
+		"value": "warmest_dayofyear_change_oC_2065",
+		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 7.5,
+				"label": "+7.5&deg;C"
+			},{
+				"value": 5,
+				"label": "+5&deg;C"
+			},{
+				"value": 2.5,
+				"label": "+2.5&deg;C"
+			},{
+				"value": 0,
+				"label": "0&deg;C"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Change in temperature of warmest day of year: <strong>{{ warmest_dayofyear_change_oC_2065 | toFixed(2) }}&deg;C</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	}
+}

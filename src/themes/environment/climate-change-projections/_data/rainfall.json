@@ -1,0 +1,55 @@
+{
+	"title": "Climate change: rainfall",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -0.4,
+		"max": 0.4,
+		"value": "ann_rain_change_mmday_2065",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.4,
+				"label": "+0.4 mm/day"
+			},{
+				"value": 0.3,
+				"label": "+0.3 mm/day"
+			},{
+				"value": 0.2,
+				"label": "+0.2 mm/day"
+			},{
+				"value": 0.1,
+				"label": "+0.1 mm/day"
+			},{
+				"value": 0,
+				"label": "0.0 mm/day"
+			},{
+				"value": -0.1,
+				"label": "-0.1 mm/day"
+			},{
+				"value": -0.2,
+				"label": "-0.2 mm/day"
+			},{
+				"value": -0.3,
+				"label": "-0.3 mm/day"
+			},{
+				"value": -0.4,
+				"label": "-0.4 mm/day"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Annual mean change in rainfall: <strong>{{ ann_rain_change_mmday_2065 | toFixed(3) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	}
+}

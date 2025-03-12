@@ -1,0 +1,61 @@
+{
+	"title": "City and town classification",
+	"config": {
+		"colours": {
+			"Core City (London)": "#3e3e3e",
+			"Core City (outside London)": "#3e3e3e",
+			"Other City": "#b950b4",
+			"Large Town": "#c79329",
+			"Medium Town": "#3058be",
+			"Small Town": "#189657",
+			"Village or smaller": "#c1c1c1"
+		},
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.city_town_classification",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ constituency_name }} ({{ a }})"
+			}
+		],
+		"value": "classification",
+		"matchKey": "constituency_code",
+		"legend": {
+			"position": "top right",
+			"items": [
+				{
+					"colour": "Core City (London)",
+					"label": "Core city"
+				},
+				{
+					"colour": "Other City",
+					"label": "Other city"
+				},
+				{
+					"colour": "Large Town",
+					"label": "Large town"
+				},
+				{
+					"colour": "Medium Town",
+					"label": "Medium town"
+				},
+				{
+					"colour": "Small Town",
+					"label": "Small town"
+				},
+				{
+					"colour": "Village or smaller",
+					"label": "Village or smaller"
+				}
+			]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Classification: <strong>{{ classification }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-8322/\">City and Town Classification of Constituencies</a> (House of Commons Library)\n"
+	}
+}

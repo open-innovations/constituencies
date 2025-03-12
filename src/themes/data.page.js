@@ -6,13 +6,20 @@ function resolveData(ref,context){
 	return result;
 }
 
-export default function*({search}){
+export default function*({search,themes}){
 	const notes = "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org";
 	const pages = search.pages("datafiles!=undefined");
 	let index = {
 		"notes": notes,
 		"themes": {}
 	};
+	for(let theme in themes){
+		index.themes[theme] = {
+			'title':themes[theme].title,
+			'description':themes[theme].description,
+			'visualisations':[]
+		};
+	}
 
 	for(const page of pages){
 
@@ -89,6 +96,10 @@ export default function*({search}){
 			
 			yield {'url':pageurl,'content':niceJSON(data,2)};
 		}
+	}
+	
+	for(let theme in index.themes){
+		index.themes[theme].visualisations.sort((a,b) => (a.title > b.title ? 1 : (b.title > a.title ? -1 : 0)));
 	}
 
 	yield {'url':'./index.json','content':niceJSON(index,4)};	

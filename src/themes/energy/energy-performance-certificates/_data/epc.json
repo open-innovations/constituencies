@@ -1,0 +1,52 @@
+{
+	"title": "Efficiency of Housing",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.energy.energyefficiencyofhousingbyparliconsenglandandwalesuptomarch2023",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "All dwellings",
+		"scale": "#000000 0%, #e9153b 1%, #e9153b 20%, #ef8023 21%, #ef8023 38%, #fcaa65 39%, #fcaa65 54%, #ffd500 55%, #ffd500 68%, #8dce46 69%, #8dce46 80%, #19b459 81%, #19b459 91%, #00c781 92%, #00c781 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Code",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 92,
+				"label": "A (92+)"
+			},{
+				"value": 81,
+				"label": "B (81-91)"
+			},{
+				"value": 69,
+				"label": "C (69-80)"
+			},{
+				"value": 55,
+				"label": "D (55-68)"
+			},{
+				"value": 39,
+				"label": "E (39-54)"
+			},{
+				"value": 21,
+				"label": "F (21-38)"
+			},{
+				"value": 1,
+				"label": "G (1-20)"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider":{
+				"columns": ["All dwellings","Detached","Semi-detached","Terraced","Flats and maisonettes","Owner-occupied","Private rent","Social rent","Pre 1930","1930 to 1982","1983 to 2011","2012 onwards"]
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Median values<br />All dwellings: <strong>{{ All dwellings | toLocaleString() }}</strong><br />Detached housing: <strong>{{ Detached | toLocaleString() }}</strong><br />Semi-detached housing: <strong>{{ Semi-detached | toLocaleString() }}</strong><br />Terraced housing: <strong>{{ Terraced | toLocaleString() }}</strong><br />Flats and maisonettes: <strong>{{ Flats and maisonettes | toLocaleString() }}</strong><br />Owner-occupied: <strong>{{ Owner-occupied | toLocaleString() }}</strong><br />Private rent: <strong>{{ Private rent | toLocaleString() }}</strong><br />Social rent: <strong>{{ Social rent | toLocaleString() }}</strong><br />Pre 1930: <strong>{{ Pre 1930 | toLocaleString() }}</strong><br />1930 to 1982: <strong>{{ 1930 to 1982 | toLocaleString() }}</strong><br />1983 to 2011: <strong>{{ 1983 to 2011 | toLocaleString() }}</strong><br />2012 onwards: <strong>{{ 2012 onwards | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/adhocs/1635efficiencyofhousingbywestminsterparliamentaryconstituenciesenglandandwalesallrecordsuptofinancialyearendingmarch2023\">Efficiency of Housing by Westminster parliamentary constituencies, England and Wales, all records up to financial year ending March 2023</a> (ONS)"
+	}
+}

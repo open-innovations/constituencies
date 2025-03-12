@@ -1,0 +1,46 @@
+{
+	"title": "Climate change: rainfall anomaly",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -0.8,
+		"max": 0.8,
+		"value": "ann_rain_2019",
+		"scale": "#a50026 0%, #d73027 10%, #f46d43 20%, #fdae61 30%, #fee090 40%, #ffffbf 50%, #e0f3f8 60%, #abd9e9 70%, #74add1 80%, #4575b4 90%, #313695 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.8,
+				"label": "+0.8 mm/day"
+			},{
+				"value": 0.6,
+				"label": "+0.6 mm/day"
+			},{
+				"value": 0.4,
+				"label": "+0.4 mm/day"
+			},{
+				"value": 0.2,
+				"label": "+0.2 mm/day"
+			},{
+				"value": 0,
+				"label": "0.0 mm/day"
+			},{
+				"value": -0.2,
+				"label": "-0.2 mm/day"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Observed rainfall anomaly (2019): <strong>{{ ann_rain_2019 | toFixed(3) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	}
+}

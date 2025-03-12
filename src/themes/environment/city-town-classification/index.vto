@@ -5,54 +5,18 @@ created: 2023-08-17T17:15
 updated: 2023-08-17T17:15
 description: |
   The House of Commons Library's classification according to the size of the settlements people live in.
-config:
-  colours:
-    Core City (London): "#3e3e3e"
-    Core City (outside London): "#3e3e3e"
-    Other City: "#b950b4"
-    Large Town: "#c79329"
-    Medium Town: "#3058be"
-    Small Town: "#189657"
-    Village or smaller: "#c1c1c1"
-  width: 600
-  hexjson: hexjson.constituencies
-  data: sources.environment.city_town_classification
-  columns:
-    - name: "filterLabel"
-      template: "{{ constituency_name }} ({{ a }})"
-  value: "classification"
-  matchKey: "constituency_code"
-  legend:
-    position: top right
-    items:
-    - colour: "Core City (London)"
-      label: "Core city"
-    - colour: "Other City"
-      label: "Other city"
-    - colour: "Large Town"
-      label: "Large town"
-    - colour: "Medium Town"
-      label: "Medium town"
-    - colour: "Small Town"
-      label: "Small town"
-    - colour: "Village or smaller"
-      label: "Village or smaller"
-  tools:
-    filter:
-      label: filterLabel
-  tooltip: "<strong>{{ n }}</strong><br />Classification: <strong>{{ classification }}</strong>"
-  attribution: |
-    Data: <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-8322/">City and Town Classification of Constituencies</a> (House of Commons Library)
+datafiles:
+  - map_1
 ---
 
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 
 <p>In 2018 <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-8322/">the House of Commons Library developed a classification of constituency areas according to the size of the settlements</a> people live in. The classification is intended to assist in analysing data, and understanding differences, trends and inequalities across Great Britain. Each constituency and local authority is assigned to one of six categories, e.g. “Core City” or “Small Town”, which most closely matches its population distribution. This is intended to offer an alternative to rural/urban classifications in analysing variation.</p>
-
-{% comp 'hexmap', {
-	"config": config,
-	"download": {"text": "City and town classification by constituency", "type": "CSV"}
-} %}{% endcomp %}
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
 
 <h2>Notes</h2>
 

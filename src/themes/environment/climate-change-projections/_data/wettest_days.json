@@ -1,0 +1,43 @@
+{
+	"title": "Climate change: wettest days",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.environment.climate_projections_oacd-ucl",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"min": -30,
+		"max": 30,
+		"value": "max5day_rain_mm_change_2065",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
+		"matchKey": "ons_id",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": ">30 mm/day"
+			},{
+				"value": 20,
+				"label": "+20 mm/day"
+			},{
+				"value": 10,
+				"label": "+10 mm/day"
+			},{
+				"value": 0,
+				"label": "0 mm/day"
+			},{
+				"value": -10,
+				"label": "-10 mm/day"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Change in amount of rain falling over wettest 5 days of the year: <strong>{{ max5day_rain_mm_change_2065 | toFixed(2) }} mm/day</strong>",
+		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	}
+}

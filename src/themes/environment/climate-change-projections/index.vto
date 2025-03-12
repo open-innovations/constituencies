@@ -1,0 +1,95 @@
+---
+title: Climate change projections (England, Scotland and Wales)
+theme: environment
+created: 2023-10-10T18:35
+updated: 2023-10-10T18:35
+description: |
+  Projections taken from the Met Office's UKCP18 dataset. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010.
+datafiles:
+  - rainfall
+  - rainfall_anomaly
+  - wettest_days
+  - temperature
+  - drought
+  - heatwaves
+  - warmest_days
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<p>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010. These changes are the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. There are maps for:</p>
+<ul>
+	<li><a href="#rainfall-anomaly">observed rainfall anomaly in 2019 (mm/day)</a></li>
+	<li><a href="#rainfall">annual mean change in rainfall (mm/day)</a></li>
+	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
+	<li><a href="#temperature">annual temperature change (&deg;C)</a></li>
+	<li><a href="#drought">difference in the number of days experiencing drought per year</a></li>
+	<li><a href="#heatwaves">change in the number of days categorised as a heatwave by the regional publich health authorities</a></li>
+	<li><a href="#warmest">how much hotter the warmest day of the average year will be in future (in &deg;C)</a></li>
+</ul>
+<div class="warning padded padded-bottom">The projections use a scenario of global carbon emissions called <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway#RCP_8.5">RCP8.5</a> - a high-emissions scenario sometimes referred to as "business as usual" - which thankfully we are not currently following.</div>
+<p>This <a href="https://oacd-ucl.github.io/climate-hexmaps/">analysis of projections was undertaken by Georgia Willits</a> as part of her dissertation research for her Climate Change MSc at UCL Geography. Prof. Chris Brierley supervised the research.</p>
+    
+
+<h2>Rainfall anomaly{{ comp.anchor({ 'ref': 'rainfall-anomaly'}) }}</h2>
+<p>The observed rainfall anomaly in 2019 (mm/day).</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rainfall_anomaly"
+}) }}
+
+
+<h2>Rainfall{{ comp.anchor({ 'ref': 'rainfall'}) }}</h2>
+<p>Annual mean change in rainfall (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Some western coastal areas will be getting more rain per day on average but most of the country will be getting less rain across the year.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rainfall"
+}) }}
+
+
+<h2>Wettest days{{ comp.anchor({ 'ref': 'wettest'}) }}</h2>
+<p>The change in the amount of rain falling over the wettest 5 days of the year (mm/day) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. For most of the country the wettest days will be getting wetter. Almost everywhere will be getting more rain on the five wettest days of the year. The western side of the country, particularly parts of Wales and Cumbria will be getting significantly more rain on those days.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "wettest_days"
+}) }}
+
+
+<h2>Temperature{{ comp.anchor({ 'ref': 'temperature'}) }}</h2>
+<p>Annual mean change in temperature by 2065 (°C) for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Everywhere will be hotter but it will be more pronounced in the south and London.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "temperature"
+}) }}
+
+
+<h2>Drought{{ comp.anchor({ 'ref': 'drought'}) }}</h2>
+<p>The number of extra days experiencing drought for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Almost everywhere will be experiencing more days of drought. The effects won't be as large in Scotland, the north west of England, and parts of Wales.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "drought"
+}) }}
+
+
+<h2>Heatwaves{{ comp.anchor({ 'ref': 'heatwaves'}) }}</h2>
+<p>The change in the number of days classed as heatwaves for the years 2051-2080 (so roughly 2065) compared to 1981-2010. Everywhere will be getting more days of heatwaves but the situation will be worst in the south eastern part of England.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "heatwaves"
+}) }}
+
+
+
+<h2>Warmest day{{ comp.anchor({ 'ref': 'warmest'}) }}</h2>
+<p>The change in the temperature of the warmest day of year for the years 2051-2080 (so roughly 2065) compared to 1981-2010.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "warmest_days"
+}) }}

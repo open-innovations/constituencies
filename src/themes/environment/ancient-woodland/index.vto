@@ -1,0 +1,21 @@
+---
+title: Ancient woodland (England)
+theme: environment
+created: 2024-05-07T18:30
+updated: 2024-05-07T18:30
+description: |
+  An area designated as ancient woodland by Natural England.
+keywords: [ancient,woodland]
+datafiles:
+  - map_1
+---
+
+<p>The percentage of land in each of the future UK Parliamentary Constituencies that is classed as ancient woodland.</p>
+<p>See also: <a href="../green-belt/">Green Belt (England)</a>.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+<p>This was created by finding the area of overlap in QGIS.</p>

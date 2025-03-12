@@ -1,0 +1,21 @@
+---
+title: Countryside and Rights of Way (England)
+theme: environment
+created: 2024-05-07T17:30
+updated: 2024-05-07T17:30
+description: |
+  Land subject to pre-existing public access rights under the Countryside and Rights Of Way Act, Section 15 Land (England)
+keywords: [land,right-of-way,access,public,countryside]
+datafiles:
+  - map_1
+---
+
+<p>The percentage of land in each of the future UK Parliamentary Constituencies that has public access rights under the Countryside and Rights Of Way Act, Section 15 Land.</p>
+<p>See also: <a href="../green-belt/">Green Belt (England)</a>.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+<p>This was created by finding the area of overlap in QGIS.</p>

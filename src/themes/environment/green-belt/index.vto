@@ -5,18 +5,20 @@ created: 2024-01-16T09:21
 updated: 2024-01-16T09:21
 description: Fraction of each constituency that constitutes green belt.
 keywords: [green belt,hectares,urban]
+datafiles:
+  - percentage
+  - total
 ---
 
 <p>The government states that the <a href="https://www.gov.uk/government/publications/national-planning-policy-framework--2">"fundamental aim" of the green belt</a> "is to prevent urban sprawl by keeping land permanently open" around urban areas. England had around 16,384 km&sup2; (or 6,326 square miles) of green belt land at the end of March 2023, covering 12.6% of England's land area. The green belt is clustered around 15 urban cores; the largest are London (5,085 km&sup2;), Merseyside and Greater Manchester (2,477 km&sup2;) and South and West Yorkshire (including Sheffield, Leeds and Bradford, 2,465 km&sup2;).</p>
 <p>See also: <a href="../crow/">Countryside and Rights of Way (England)</a>.</p>
 
 
-
-{% include "./embeds/percentage.njk" %}
+{{ include "./embeds/percentage.vto" }}
 <a href="{{ url + "embeds/percentage" }}" class="embed">Standalone version of green belt percentages</a>
 
 
-{% include "./embeds/total.njk" %}
+{{ include "./embeds/total.vto" }}
 <a href="{{ url + "embeds/total" }}" class="embed">Standalone version of green belt totals</a>
 
 <h2>Notes</h2>
