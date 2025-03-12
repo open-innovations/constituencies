@@ -1,0 +1,52 @@
+{
+	"title": "Bus service changes",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023-temporary",
+		"data": "sources.transport.bustrip-trends-new-parliamentary_constituency_1",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ Trips per hour % change: 2010-2023 }}%)"
+		}],
+		"value": "Trips per hour % change: 2010-2023",
+		"scale": "RdBu",
+		"min": -100,
+		"max": 100,
+		"matchKey": "ID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 75,
+				"label": "+75%"
+			},{
+				"value": 50,
+				"label": "+50%"
+			},{
+				"value": 25,
+				"label": "+25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			},{
+				"value": -25,
+				"label": "-25%"
+			},{
+				"value": -50,
+				"label": "-50%"
+			},{
+				"value": -75,
+				"label": "-75%"
+			},{
+				"value": -100,
+				"label": "-100%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString }}%</strong>",
+		"attribution": "Data: <a href=\"https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined\">How Britain’s bus services have drastically declined</a> (Friends of the Earth & University of Leeds 2023)"
+	}
+}
