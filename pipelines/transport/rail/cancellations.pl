@@ -1,17 +1,26 @@
 #!/usr/bin/perl
 
+use utf8;
+use warnings;
+use strict;
 use lib "./../../lib/";	# Custom functions
 use Data::Dumper;
 use JSON::XS;
 use Encode;
-require "lib.pl";
+use Scalar::Util qw(looks_like_number);
+use Cwd qw(abs_path);
+# Get the real base directory for this script
+my $basedir = "./";
+if(abs_path($0) =~ /^(.*\/)[^\/]*/){ $basedir = $1; }
+my $repodir = $basedir."../../../";
+require $basedir."../../lib/lib.pl";
 
-my $filestations = "GB-stations-pcon-sorted.csv";
-my $filecancellations = "table-3130-time-to-3-and-cancellations-by-station-and-operator.csv";
-my $filecons = "../../../src/_data/hexjson/uk-constituencies-2024.hexjson";
+my $filestations = $basedir."GB-stations-pcon-sorted.csv";
+my $filecancellations = $basedir."table-3130-time-to-3-and-cancellations-by-station-and-operator.csv";
+my $filecons = $repodir."src/_data/hexjson/uk-constituencies-2024.hexjson";
 
 
-my ($station,$stations,$cancellations,$hexes,$data,$pcon,$c,$lookup,$str);
+my ($station,$renamedstation,$stations,$cancellations,$hexes,$data,$pcon,$c,$lookup,$str);
 
 $stations = LoadCSV($filestations,{'key'=>'Station name'});
 $cancellations = LoadCSV($filecancellations,{'key'=>'Station name'});
@@ -67,26 +76,34 @@ foreach $pcon (keys(%{$hexes})){
 }
 
 foreach $station (sort(keys(%{$cancellations}))){
+	$renamedstation = $station;
 	if(!defined($stations->{$station}) && defined($lookup->{$station})){
-		$station = $lookup->{$station};
+		$renamedstation = $lookup->{$station};
 	}
-	$pcon = $stations->{$station}{'PCON24CD'};
+	$pcon = $stations->{$renamedstation}{'PCON24CD'};
 	if(!defined($pcon)){
 		msg("No station found for <yellow>$station<none>\n");
-		#print Dumper $stations->{$station};
-		#print Dumper $cancellations->{$station};
 	}
 	if(!defined($data->{$pcon})){
-		$data->{$pcon} = {'name'=>$stations->{$station}{'PCON24NM'}};
+		$data->{$pcon} = {'name'=>$stations->{$renamedstation}{'PCON24NM'}};
 	}
 	if(!defined($data->{$pcon}{'stations'})){
 		$data->{$pcon}{'stations'} = {};
 	}
-	$data->{$pcon}{'Scheduled stops'} += $cancellations->{$station}{'Scheduled stops'};
-	$data->{$pcon}{'Recorded station stops'} += $cancellations->{$station}{'Recorded station stops'};
-	$c = int($cancellations->{$station}{'Scheduled stops'}*$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}/100);
+	if(looks_like_number($cancellations->{$station}{'Scheduled stops'})){
+		$data->{$pcon}{'Scheduled stops'} += $cancellations->{$station}{'Scheduled stops'};
+	}
+
+	if(looks_like_number($cancellations->{$station}{'Recorded station stops'})){
+		$data->{$pcon}{'Recorded station stops'} += $cancellations->{$station}{'Recorded station stops'};
+	}
+	if(looks_like_number($cancellations->{$station}{'Scheduled stops'}) && looks_like_number($cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'})){
+		$c = int($cancellations->{$station}{'Scheduled stops'}*$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}/100);
+	}else{
+		$c = 0;
+	}
 	$data->{$pcon}{'Cancellations'} += $c;
-	$data->{$pcon}{'stations'}{$stations->{$station}{'Station name'}} = {'code'=>$stations->{$station}{'Station code'},'cancelled'=>$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}};
+	$data->{$pcon}{'stations'}{$stations->{$renamedstation}{'Station name'}} = {'code'=>$stations->{$renamedstation}{'Station code'},'cancelled'=>$cancellations->{$station}{'Cancellations (percentage) [note 4, 5]'}};
 }
 
 
@@ -107,14 +124,34 @@ foreach $pcon (sort(keys(%{$data}))){
 	if(defined($data->{$pcon}{'stations'})){
 		$str = "";
 		foreach $station (sort(keys(%{$data->{$pcon}{'stations'}}))){
-			$str .= "<li>$station ($data->{$pcon}{'stations'}{$station}{'code'}) - <strong>".sprintf("%0.1f",$data->{$pcon}{'stations'}{$station}{'cancelled'})."%</strong></li>";
+			$str .= "<li>$station ($data->{$pcon}{'stations'}{$station}{'code'}) - <strong>";
+			#print "$station = $data->{$pcon}{'stations'}{$station}{'cancelled'}\n";
+
+			if(looks_like_number($data->{$pcon}{'stations'}{$station}{'cancelled'})){
+				$str .= sprintf("%0.1f",$data->{$pcon}{'stations'}{$station}{'cancelled'})."%";
+			}else{
+				$str .= convertNote($data->{$pcon}{'stations'}{$station}{'cancelled'}||"");
+			}
+			$str .= "</strong></li>";
 		}
 		$csv .= ($str ? "<ul>":"").$str.($str ? "</ul>":"");
 	}
 	$csv .= "\n";
 }
 
-open(my $fh,">../../../src/_data/sources/transport/rail-cancellations.csv");
+open(my $fh,">:utf8",$repodir."src/_data/sources/transport/rail-cancellations.csv");
 print $fh $csv;
 close($fh);
 #print Dumper $data->{'E14001325'};
+
+
+sub convertNote {
+	my $v = shift;
+	if($v eq "[u]"){
+		return "low quality data";
+	}elsif($v eq "[z]"){
+		return "data not applicable";
+	}else{
+		return $v;
+	}
+}
