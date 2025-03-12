@@ -1,0 +1,22 @@
+---
+title: Car or van availability (England & Wales)
+theme: transport
+created: 2024-05-22T15:50
+updated: 2024-05-22T15:50
+description: |
+  The availability of cars or vans by household from the 2021 Census
+keywords: [car,van,transport,household]
+datafiles:
+  - car_or_van_availability
+---
+
+<p>The availability of cars or vans by household from the 2021 Census.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "car_or_van_availability"
+}) }}
+
+<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<p>Percentages are calculated from the household figures and have been rounded to one decimal place so may not add up to 100%.</p>

@@ -1,0 +1,40 @@
+{
+	"title": "EV: home charging",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "home-2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 600,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 600,
+				"label": "600"
+			},{
+				"value": 400,
+				"label": "400"
+			},{
+				"value": 200,
+				"label": "200"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Home charging devices: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
+	}
+}

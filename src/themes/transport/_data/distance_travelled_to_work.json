@@ -1,19 +1,5 @@
----
-title: Distance travelled to work (England and Wales)
-theme: transport
-created: 2023-10-10T20:58
-updated: 2023-10-10T20:58
-description: |
-  This dataset provides Census 2021 estimates that classify usual residents aged 16 years and over in employment the week before the census in England and Wales by the distance they travelled to work.
-keywords: [distance,work,employment,km]
----
-
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-
-<p>This dataset provides Census 2021 estimates that classify usual residents aged 16 years and over in employment the week before the census in England and Wales by the distance they travelled to work. The estimates are as at Census Day, 21 March 2021. This visualisation only shows those who travel to work. It does not include those who work at home, in no fixed place, outside the UK, or on an offshore installation.</p>
-
-{% comp 'wrapper', {
-	"component": comp.oi.map.hex_cartogram,
+{
+	"title": "Distance travelled to work",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
@@ -57,7 +43,5 @@ keywords: [distance,work,employment,km]
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString }}</strong>",
 		"attribution": "<a href=\"https://www.ons.gov.uk/datasets/TS058/editions/2021/versions/3\">Distance travelled to work</a> (ONS Census 2021)"
-	},
-	"download": {"text": "Distance travelled to work", "type": "CSV"}
-} %}{% endcomp %}
-
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"title": "EV: public charging",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "public-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 600,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1200,
+				"label": "1200+"
+			},{
+				"value": 800,
+				"label": "800"
+			},{
+				"value": 400,
+				"label": "400"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Public charging sockets: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023\"> Electric Vehicle Charging Device Statistics</a> (DfT)"
+	}
+}

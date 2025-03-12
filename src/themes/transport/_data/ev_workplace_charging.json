@@ -1,0 +1,40 @@
+{
+	"title": "EV: workplace charging points",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.transport.ev_charging_points",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "workplace-2023-04",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 300,
+		"matchKey": "PCON22CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 300,
+				"label": "300+"
+			},{
+				"value": 200,
+				"label": "200"
+			},{
+				"value": 100,
+				"label": "100"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Workplace charging sockets: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
+	}
+}
