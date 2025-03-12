@@ -91,5 +91,6 @@ site.use(base_path());
 
 site.copy('CNAME');
 site.copy('.nojekyll');
+site.copy('/assets/css/fonts/');
 
 export default site;
