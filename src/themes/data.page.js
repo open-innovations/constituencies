@@ -52,10 +52,15 @@ export default function*({search}){
 					"url":"https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson",
 					"attribution": '<a href="https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)'
 				};
-			}else if(config.hexjson=="hexjson.uk-constituencies-2024" || config.hexjson=="hexjson.uk-constituencies-2023-temporary"){
+			}else if(config.hexjson=="hexjson.uk-constituencies-2024"){
 				data.hexjson = {
 					"url": "https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson",
 					"attribution": '<a href="https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)'
+				}
+			}else if(config.hexjson=="hexjson.uk-constituencies-2023-temporary"){
+				data.hexjson = {
+					"url": "https://raw.githubusercontent.com/open-innovations/constituencies/refs/heads/main/src/_data/hexjson/uk-constituencies-2023-temporary.hexjson",
+					"attribution": '<a href="https://raw.githubusercontent.com/open-innovations/constituencies/refs/heads/main/src/_data/hexjson/uk-constituencies-2023-temporary.hexjson">2024 constituencies</a> (Open Innovations and contributors)'
 				}
 			}else{
 				data.hexjson = {"url":data.hexjson};
