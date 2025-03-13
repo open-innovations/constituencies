@@ -6,6 +6,7 @@ import metas from "lume/plugins/metas.ts";
 import postcss from "lume/plugins/postcss.ts";
 import { walkSync } from 'std/fs/mod.ts';
 import sitemap from "lume/plugins/sitemap.ts";		// To build a site map
+import { expandGlobSync } from "lume/deps/fs.ts";
 
 // Importing the OI Lume charts and utilities
 import oiViz from "https://deno.land/x/oi_lume_viz@v0.16.9/mod.ts";
@@ -92,5 +93,16 @@ site.use(base_path());
 site.copy('CNAME');
 site.copy('.nojekyll');
 site.copy('/assets/css/fonts/');
+
+
+// Copy over any "_data/release/*.csv" files
+const csvFiles = expandGlobSync('src/**/_data/release/**/*.csv').map(f => f.path);
+csvFiles.forEach((file: string) => {
+    const remote = import.meta.resolve(file);
+    const local = file.replace(site.src() + '/', '').replace('_data/release/', '');
+    // console.debug({ local, remote });
+    site.remoteFile(local, remote);
+})
+site.copy(['.csv']);
 
 export default site;
