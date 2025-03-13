@@ -2,37 +2,33 @@
 	"title": "Households off the gas grid",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.energy.OffGasGridDashboard_DataFile",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Estimates_of_properties_not_connected_to_the_gas_grid",
 		"columns": [
 			{
 				"name": "filterLabel",
 				"template": "{{ n }} ({{ a }})"
 			}
 		],
-		"value": "Estimated percentage of properties not on the gas grid",
+		"value": "2023",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 40,
-		"matchKey": "Constituency code",
+		"max": 50,
+		"matchKey": "Code",
 		"legend": {
 			"position": "top right",
 			"items": [
 				{
-					"value": 40,
-					"label": "40%+"
+					"value": 60,
+					"label": "60%+"
 				},
 				{
-					"value": 30,
-					"label": "30%"
+					"value": 40,
+					"label": "40%"
 				},
 				{
 					"value": 20,
 					"label": "20%"
-				},
-				{
-					"value": 10,
-					"label": "10%"
 				},
 				{
 					"value": 0,
@@ -43,9 +39,14 @@
 		"tools": {
 			"filter": {
 				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+				"width": "500px",
+				"position": "bottom"
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Households off the gas grid: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-households-off-the-gas-grid/\">Households off the gas grid</a> (House of Commons Library / Department for Energy Security and Net Zero)\n"
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/parliamentary-constituency-estimates-of-properties-not-connected-to-the-gas-network\">Households off the gas grid</a> (Department for Energy Security and Net Zero)\n"
 	}
 }
