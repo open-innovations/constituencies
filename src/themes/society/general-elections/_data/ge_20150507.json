@@ -1,5 +1,5 @@
 {
-	"title": "",
+	"title": "General Election: 7 May 2015",
 	"config": {
 		"colours": {"Con":"#0485A8","Lab":"#DC4343","LD":"#EAA544","Green":"#5EBD4C","Brexit":"#0FA697","SNP":"#EBDB1C","UKIP":"#73537A","PC":"#4FBA7C","Ind":"#CCA7C6","DUP":"#BF3759","UUP":"#3b75a8","SF":"#2C604D","SDLP":"#53BC5B","Alliance":"#EAA544","Spk":"#909090","XSpk":"#909090","Monster":"#cccccc","WPB":"#1e28d8","none":"#dfdfdf"},
 		"width": 600,
