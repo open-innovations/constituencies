@@ -51,6 +51,16 @@ export default function (input) {
 	}
 	if(api.file) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
 	conf.attribution += '</div>'
+	if(!conf.boundaries){
+		conf.boundaries = {
+			"country": {
+				"stroke": "white",
+				"stroke-width": 1.5,
+				"stroke-linecap": "round"
+			},
+			"region": "country"
+		};
+	}
 
 	str += component({'config':conf});
 	
