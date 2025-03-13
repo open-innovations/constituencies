@@ -1,0 +1,49 @@
+{
+	"title": "Heritage at Risk: conservation area",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "HAR2024",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
+		},{
+			"name": "Conservation area",
+			"template": "{{ Type→Conservation area }}"
+		}],
+		"value": "Conservation area",
+		"scale": "#ffffcc 0%, #b62126 80%, #771e1c 100%",
+		"min": 0,
+		"max": 10,
+		"matchKey": "PCON24CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 10,
+				"label": "10+"
+			},{
+				"value": 8,
+				"label": "8"
+			},{
+				"value": 6,
+				"label": "6"
+			},{
+				"value": 4,
+				"label": "4"
+			},{
+				"value": 2,
+				"label": "2"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Conservation areas at risk: <strong>{{ Conservation area | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Conservation area&searchtype=harsearch\">More details</a>",
+		"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk Register</a> 2024 (Historic England)"
+	}
+}

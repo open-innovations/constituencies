@@ -1,0 +1,48 @@
+---
+title: GP appointment booking (England)
+theme: health
+created: 2024-06-21T08:47
+updated: 2024-06-21T08:47
+description: |
+  Patients reporting a good experience of booking appointment. Patients able to book or cancel online. Percentage of DNA appointments.
+keywords: [health]
+api:
+  - good_experience
+  - book_online
+  - not_attended
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<section>
+<h2>Good overall experience of making an appointment{{ comp.anchor({ 'ref': 'good-experience'}) }}</h2>
+<p>The GP Patient Survey is an independent survey run by Ipsos on behalf of NHS England. The survey is sent out to over two million people across the UK. The results show how people feel about their GP practice.</p>
+<p>People were asked: "Overall, how would you describe your experience of making an appointment?". The indicator value is the percentage of people who answered this question with "Very good" or "Fairly good" from all responses to this question.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "good_experience"
+}) }}
+</section>
+
+
+<section>
+<h2>Patients enabled to book and cancel appointments online{{ comp.anchor({ 'ref': 'book-online'}) }}</h2>
+<p>The percentage of patients registered at the practice who are able to use an online service for booking and/or cancelling appointments, as recorded on the last day of the reporting period.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "book_online"
+}) }}
+</section>
+
+
+<section>
+<h2>Not attended appointments (DNA){{ comp.anchor({ 'ref': 'dna'}) }}</h2>
+<p>Percentage of appointments which were booked but not attended by the patient.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "not_attended"
+}) }}
+</section>

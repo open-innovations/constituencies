@@ -1,0 +1,47 @@
+{
+	"title": "Population: by age",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "population_2022",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "0",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 4000,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 4000,
+				"label": ">4000"
+			},{
+				"value": 3000,
+				"label": "3000"
+			},{
+				"value": 2000,
+				"label": "2000"
+			},{
+				"value": 1000,
+				"label": "1000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90+"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Aged {{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>)"
+	}
+}

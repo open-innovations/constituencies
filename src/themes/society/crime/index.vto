@@ -1,0 +1,185 @@
+---
+title: Crime (England, Wales & Northern Ireland)
+theme: society
+created: 2024-04-03T22:30
+updated: 2024-04-04T17:45
+description: |
+    A breakdown of UK Police open data for 2021-2023.
+keywords: ['crime','anti-social behaviour','drugs','bicycle','theft','arson','violence','sexual','criminal']
+api:
+  - all
+  - anti_social_behaviour
+  - bicycle_theft
+  - burglary
+  - criminal_damage
+  - drugs
+  - weapons
+  - public_order
+  - robbery
+  - shoplifting
+  - theft_from_the_person
+  - vehicle
+  - violence
+  - other
+---
+
+<p>{{ description }} There are views for <a href="#all">all crime</a>, <a href="#anti-social-behaviour">anti-social behaviour</a>, <a href="#bicycle-theft">bicycle theft</a>, <a href="#burglary">burglary</a>, <a href="#criminal-damage">criminal damage and arson</a>, <a href="#drugs">drugs</a>, <a href="#weapons">possession of weapons</a>, <a href="#public-order">public order</a>, <a href="#robbery">robbery</a>, <a href="#shoplifting">shoplifting</a>, <a href="#theft-from-the-person">theft from the person</a>, <a href="#vehicle">vehicle crime</a>, <a href="#violence">violence and sexual offences</a>, as well as <a href="#other">other crime</a>.</p>
+
+<section>
+	<h2>All crime{{ comp.anchor({ 'ref': 'all'}) }}</h2>
+	<p>This cartogram shows the sum of all crimes. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "all"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Anti-social behaviour{{ comp.anchor({ 'ref': 'anti-social-behaviour'}) }}</h2>
+	<p>This cartogram shows anti-social behaviour crime. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "anti_social_behaviour"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Bicycle theft{{ comp.anchor({ 'ref': 'bicycle-theft'}) }}</h2>
+	<p>This cartogram shows bicycle theft crime. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "bicycle_theft"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Burglary{{ comp.anchor({ 'ref': 'burglary'}) }}</h2>
+	<p>This cartogram shows burglary. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "burglary"
+	}) }}
+</section>
+
+<section>
+	<h2>Criminal damage and arson{{ comp.anchor({ 'ref': 'criminal-damage'}) }}</h2>
+	<p>This cartogram shows criminal damage and arson. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "criminal_damage"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Drugs{{ comp.anchor({ 'ref': 'drugs'}) }}</h2>
+	<p>This cartogram shows drugs related crime. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "drugs"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Possession of weapons{{ comp.anchor({ 'ref': 'weapons'}) }}</h2>
+	<p>This cartogram shows crime related to possession of weapons. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "weapons"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Public order{{ comp.anchor({ 'ref': 'public-order'}) }}</h2>
+	<p>This cartogram shows public order offences. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "public_order"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Robbery{{ comp.anchor({ 'ref': 'robbery'}) }}</h2>
+	<p>This cartogram shows robbery. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "robbery"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Shoplifting{{ comp.anchor({ 'ref': 'shoplifting'}) }}</h2>
+	<p>This cartogram shows shoplifting. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "shoplifting"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Theft from the person{{ comp.anchor({ 'ref': 'theft-from-the-person'}) }}</h2>
+	<p>This cartogram shows theft from the person. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "theft_from_the_person"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Vehicle crime{{ comp.anchor({ 'ref': 'vehicle'}) }}</h2>
+	<p>This cartogram shows vehicle crime. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "vehicle"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Violence and sexual offences{{ comp.anchor({ 'ref': 'violence'}) }}</h2>
+	<p>This cartogram shows violence and sexual offences. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "violence"
+	}) }}
+</section>
+
+
+<section>
+	<h2>Other crime{{ comp.anchor({ 'ref': 'other'}) }}</h2>
+	<p>This cartogram shows other crime that isn't in one of the categories above. See <a href="#notes">notes</a>.</p>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "other"
+	}) }}
+</section>
+
+
+<h2 id="notes">Notes</h2>
+<p>The data are published by the Single Online Home National Digital Team, and are provided by the 43 geographic police forces in England and Wales, the British Transport Police, the Police Service of Northern Ireland and the Ministry of Justice.</p>
+<p>The values above are for reports of crimes. They include cases where no suspect was identified or no further action was taken.</p>
+<p>Crimes that have no location recorded are not included here. Crimes whose location took place in rivers, estuaries, or at sea are first checked to see if they are within 200 metres of a constituency boundary. If they are they will be attached to that constituency. Otherwise they are not included with any constituency.</p>
+<p>Some police forces may not have submitted data in certain years. For example, Greater Manchester Police are missing for 2021/2022/2023 and Devon & Cornwall Police are missing in 2023. Crimes may have been recorded as happening within these police force areas by other police forces.</p>

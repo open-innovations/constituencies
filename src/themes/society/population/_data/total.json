@@ -1,0 +1,37 @@
+{
+	"title": "Population",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "population_2022",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "total",
+		"scale": "Viridis",
+		"min": 50000,
+		"max": 150000,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 150000,
+				"label": ">150,000"
+			},{
+				"value": 100000,
+				"label": "100,000"
+			},{
+				"value": 50000,
+				"label": "<50000"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population by constituency</a> (House of Commons Library using ONS <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>)"
+	}
+}

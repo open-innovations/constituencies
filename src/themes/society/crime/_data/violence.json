@@ -1,0 +1,60 @@
+{
+	"title": "Crime: violence and sexual offences",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.crime-data",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "2021",
+			"template": "{{ Violence and sexual offences→2021 }}"
+		},{
+			"name": "2022",
+			"template": "{{ Violence and sexual offences→2022 }}"
+		},{
+			"name": "2023",
+			"template": "{{ Violence and sexual offences→2023 }}"
+		}],
+		"value": "2021",
+		"matchKey": "PCON25CD",
+		"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
+		"min": 0,
+		"max": 16000,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 16001,
+				"label": ">16,000"
+			},{
+				"value": 16000,
+				"label": "16,000"
+			},{
+				"value": 12000,
+				"label": "12,000"
+			},{
+				"value": 8000,
+				"label": "8,000"
+			},{
+				"value": 4000,
+				"label": "4,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2021","2022","2023"],
+				"width": "500px",
+				"position": "bottom"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://data.police.uk/data/archive/\">crime data</a> (data.police.uk)."
+	}
+}

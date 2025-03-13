@@ -1,0 +1,35 @@
+---
+title: GP online perscription services (England)
+theme: health
+created: 2024-06-27T09:30
+updated: 2024-06-27T09:30
+description: |
+  Percentage of patients enabled to order repeat prescriptions online. Percentage of Electronic prescription items of all items prescribed.
+keywords: [health]
+api:
+  - online_repeat
+  - electronic_prescriptions
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<section>
+<h2>Patients enabled to order repeat prescriptions online{{ comp.anchor({ 'ref': 'online-repeat'}) }}</h2>
+<p>The percentage of patients registered at the practice who are able to use an online service for ordering repeat prescriptions, as recorded on the last day of the reporting period.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "online_repeat"
+}) }}
+</section>
+
+
+<section>
+<h2>Electronic prescription items{{ comp.anchor({ 'ref': 'electronic-prescriptions'}) }}</h2>
+<p>The percentage of prescription items issued by the practice through the electronic prescription service. The number of items refers to the number of times a product appears on a prescription form, not the quantity prescribed. Items that have been referred back, disallowed or not dispensed are excluded from all item counts.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "electronic_prescriptions"
+}) }}
+</section>

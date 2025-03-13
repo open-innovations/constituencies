@@ -1,0 +1,46 @@
+{
+	"title": "Educational attainment: KS2 Attainment",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.education-attainment",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "KS2 met expected / 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Constituency ID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />KS2 met expected standard: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-educational-attainment/\">educational attainment</a> (House of Commons Library; OGL)."
+	}
+}

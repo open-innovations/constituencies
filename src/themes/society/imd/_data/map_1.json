@@ -1,0 +1,46 @@
+{
+	"title": "Indicies of Multiple Deprivation",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2023-temporary",
+		"data": "sources.society.parl25_imd",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "parl25-deprivation-score",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "parl25",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "most deprived"
+			},{
+				"value": 80,
+				"label": ""
+			},{
+				"value": 60,
+				"label": ""
+			},{
+				"value": 40,
+				"label": ""
+			},{
+				"value": 20,
+				"label": ""
+			},{
+				"value": 0,
+				"label": "least deprived"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+        "tooltip": "<strong>{{ n }}</strong><br />Deprivation score: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+        "attribution": "Data: <a href=\"https://pages.mysociety.org/composite_uk_imd/datasets/uk_index/latest\">composite 2020 UK index of multiple deprivation version: 3.2.0</a> (MySociety, <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY</a>)."
+	}
+}

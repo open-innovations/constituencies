@@ -1,0 +1,203 @@
+---
+title: Places of Worship on the Heritage at Risk Register
+searchignore: true
+updated: 2024-11-14T15:00+0100
+layout: template/embed-national-churches-trust.njk
+---
+<style>
+.tooltip .info { border-top: 4px solid black; }
+.footnote { margin-bottom: 0; }
+</style>
+
+
+<p>Each year, Historic England publish a new <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/" target="_parent">Heritage at Risk Register</a>. The Register gives an annual snapshot of the health of England’s valued historic buildings and places. It helps to ensure they can be protected and continue to be enjoyed in the future. The latest Register was published on 14 November 2024.</p>
+
+<p>Places of Worship are a key part of the Heritage at Risk Register. The overwhelming majority of these are churches, chapels and meeting houses, with a small number of synagogues, mosques and temples.</p>
+
+<p>Our map of Places of Worship shows those on the Heritage at Risk Register by Parliamentary Constituency. You can use the Map view, or the Table view to find details about Places of Worship in your constituency, and listed by Member of Parliament.  You can also use the Search facility.</p>
+
+<p>By clicking on the name of the MP, you can find how to contact them by email.</p>
+
+{{ comp layout.panelSelector.set { label: 'Choose the visualisation layer', titleSelector: "h3", position: "top" } }}
+
+	{{ comp layout.panelSelector.panel { id: "place-of-worship-hex", "title": "Cartogram", classes: "doublepadded" } }}
+
+		<p class="not-capture">This cartogram gives every constituency the same size - a hexagon - and that makes it a useful way to visualise the relative numbers of places at risk in different constituencies. Unlike the map view, this means that it is not an accurate representation of geography - so some constituencies may not be where you might expect - although it was <a href="https://open-innovations.org/blog/2024-03-05-uk-constituency-data-hex-maps" target="_parent">designed to keep regions/nations together</a>. Use the search <svg xmlns="https://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 13"><g stroke-width="2" stroke="currentColor" fill="none"><path d="M11.29 11.71l-4-4"></path><circle cx="5" cy="5" r="4"></circle></g></svg> to identify a particular constituency by name or by MP.</p>
+
+		{{ comp.wrapper({
+			"page": page,
+			"component": comp.oi.map.hex_cartogram,
+			"config": {
+				"width": 600,
+				"hexjson": "hexjson.uk-constituencies-2024",
+				"data": "HAR2024",
+				"columns":[{
+					"name": "filterLabel",
+					"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
+				},{
+					"name": "URL",
+					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
+				}],
+				"value": "Type→Place of worship",
+				"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
+				"min": 0,
+				"max": 20,
+				"matchKey": "PCON24CD",
+				"legend":{
+					"position": "top right",
+					"continuous": true,
+					"items": [{
+						"value": 20,
+						"label": "20+"
+					},{
+						"value": 15,
+						"label": "15"
+					},{
+						"value": 10,
+						"label": "10"
+					},{
+						"value": 5,
+						"label": "5"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"tools":{
+					"filter":{
+						"label": "filterLabel"
+					}
+				},
+				"tooltip": "<strong>{{ PCON24NM }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>",
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk 2024 Register</a> (Historic England)"
+			}
+		}) }}
+	{{ /comp }}
+
+	{{ comp layout.panelSelector.panel { id: "place-of-worship-map", "title": "Map", classes: "doublepadded" } }}
+
+		<p class="not-capture">This is a "heat map" view of the numbers of places at risk in different constituencies. This accurately represents the geographic placement of constituencies but can make it harder to see smaller constituencies. Use the search <svg xmlns="https://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 12 13"><g stroke-width="2" stroke="currentColor" fill="none"><path d="M11.29 11.71l-4-4"></path><circle cx="5" cy="5" r="4"></circle></g></svg> to identify a particular constituency by name or by MP.</p>
+
+		{{ comp.wrapper({
+			"page": page,
+			"component": comp.oi.map.svg,
+			"config": {
+				"width": 800,
+				"geojson": {
+					"data": "geojson.Westminster_Parliamentary_Constituencies_July_2024_Boundaries_UK_BUC",
+					"key": "PCON24CD"
+				},
+				"data": "HAR2024",
+				"columns":[{
+					"name": "filterLabel",
+					"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
+				},{
+					"name": "URL",
+					"template": "https://members.parliament.uk/member/{{ ID }}/contact"
+				}],
+				"projection": {
+					"name": "osgb"
+				},
+				"padding": 30,
+				"layers": [{
+					"type": "data",
+					"key": "PCON24CD",
+					"value": "Type→Place of worship",
+					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
+					"min": 0,
+					"max": 20,
+					"tooltip": "<strong>{{ PCON24NM }}</strong><div class=\"info\" style=\"border-color:{{ BG }};\"><a href=\"{{ URL }}\" target=\"_parent\">{{ MP }}</a> ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&hc=Listed Place of Worship&searchtype=harsearch\" target=\"_parent\">More details</a></div>"
+				}],
+				"legend":{
+					"position": "top right",
+					"continuous": true,
+					"items": [{
+						"value": 20,
+						"label": "20+"
+					},{
+						"value": 15,
+						"label": "15"
+					},{
+						"value": 10,
+						"label": "10"
+					},{
+						"value": 5,
+						"label": "5"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"bounds": {
+					"lat": { "min": 49.9, "max": 56 },
+					"lon": { "min": -6.5, "max": 2 }
+				},
+				"tools":{
+					"filter":{
+						"label": "filterLabel"
+					}
+				},
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk 2024 Register</a> (Historic England) / Constituency boundaries: ONS"
+			}
+		}) }}
+	{{ /comp }}
+
+	{{ comp layout.panelSelector.panel { id: "place-of-worship-table", "title": "Table", classes: "doublepadded" } }}
+
+		<p>Click a column heading to sort the table by that column. Click again to reverse the order.</p>
+		{{ comp.wrapper({
+			"page": page,
+			"component": comp.oi.table,
+			"config": {
+				"colours": {
+					"Con":'#0485A8',
+					"Lab":'#DC4343',
+					'LD':'#EAA544',
+					'Green':'#5EBD4C',
+					'Brexit':'#0FA697',
+					'SNP':'#EBDB1C',
+					'UKIP':'#73537A',
+					'PC':'#4FBA7C',
+					'Ind':'#CCA7C6',
+					'DUP':'#BF3759',
+					'UUP':'#3b75a8',
+					'SF':'#2C604D',
+					'SDLP':'#53BC5B',
+					'Alliance':'#EAA544',
+					'Spk':'#909090',
+					'XSpk':'#909090',
+					'Monster':'#cccccc',
+					'WPB':'#1e28d8',
+					'none':'#dfdfdf'
+				},
+				"debug": true,
+				"sort": ["Places of worship at risk","Constituency"],
+				"reverse": true,
+				"width": "100%",
+				"data": "HAR2024",
+				"columns":[{
+					"name": "Constituency",
+					"template": "<a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Place of Worship&searchtype=harsearch\" target=\"_parent\">{{ PCON24NM }}</a>",
+					"sortable": true
+				},{
+					"name": "Member of Parliament",
+					"template": "<a href=\"https://members.parliament.uk/member/{{ ID }}/contact\">{{ MP }}</a>",
+					"sortable": true
+				},{
+					"name": "Party",
+					"template": "{{ Party }}",
+					"sortable": true
+				},{
+					"name": "Places of worship at risk",
+					"template": "{{ Type→Place of worship }}",
+					"align": "center",
+					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
+					"min": 0,
+					"max": 20,
+					"sortable": true
+				}],
+				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\" target=\"_parent\">Heritage at Risk 2024 Register</a> (Historic England)"
+			}
+		}) }}
+	{{ /comp }}
+{{ /comp }}

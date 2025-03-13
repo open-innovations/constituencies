@@ -1,0 +1,19 @@
+---
+title: Electorate (UK)
+theme: society
+created: 2023-08-16T20:06
+updated: 2023-08-16T20:06
+description: |
+  Electorate by constituency (UK) for both the new and existing constituencies
+keywords: [electorate,people]
+api:
+  - map_1
+---
+
+<p>Initial electorate values from the 2023 boundary reviews.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+

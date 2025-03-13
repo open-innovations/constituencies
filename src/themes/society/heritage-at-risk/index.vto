@@ -1,0 +1,69 @@
+---
+title: Heritage at risk (England)
+theme: society
+created: 2024-03-28T11:42
+updated: 2024-11-14T09:40
+description: |
+  Historic England's Heritage at Risk (HAR) programme helps to understand the overall state of England's historic sites. It identifies those sites that are most at risk of being lost as a result of neglect, decay or inappropriate development. We've taken the 2023 version of Historic England's Heritage at Risk register and summed up all entries by constituency. We have views for all entries, archaeology, building or structure, conservation area, and place of worship.
+keywords: [history,historic,archaeology,building,structure,conservation,area,worship,place-of-worship]
+api:
+  - all
+  - archaeology
+  - building_or_structure
+  - conservation_area
+  - place_of_worship
+---
+
+<p>Historic England's Heritage at Risk (HAR) programme helps to understand the overall state of England's historic sites. It identifies those sites that are most at risk of being lost as a result of neglect, decay or inappropriate development. We've taken the <a href="https://historicengland.org.uk/content/docs/har/har-2024-entries-additions-removals/">2024 version</a> of Historic England's <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/">Heritage at Risk register</a> and summed up all entries by constituency. We have views for <a href="#all">all entries</a>, <a href="#archaeology">archaeology</a>, <a href="#building-or-structure">building or structure</a>, <a href="#conservation-area">conservation area</a>, and <a href="#place-of-worship">place of worship</a>.</p>
+
+<section>
+	<h2>All entries{{ comp.anchor({ 'ref': 'all'}) }}</h2>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "all"
+	}) }}
+</section>
+
+<section>
+	<h2>Archaeology{{ comp.anchor({ 'ref': 'archaeology'}) }}</h2>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "archaeology"
+	}) }}
+</section>
+
+<section>
+	<h2>Building or structure{{ comp.anchor({ 'ref': 'building-or-structure'}) }}</h2>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "building_or_structure"
+	}) }}
+</section>
+
+<section>
+	<h2>Conservation area{{ comp.anchor({ 'ref': 'conservation-area'}) }}</h2>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "conservation_area"
+	}) }}
+</section>
+
+<section>
+	<h2>Place of worship{{ comp.anchor({ 'ref': 'place-of-worship'}) }}</h2>
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "place_of_worship"
+	}) }}
+</section>
+
+
+
+
+<h2>Notes</h2>
+<p>There are 4890 entries in the Heritage at Risk 2024 Register (up from 4871 in 2023) and 135 of them are associated with multiple constituencies. To show the correct picture for each constituency we've counted an entry towards each constituency it is associated with. As a result, adding up the totals across all constituencies may give a higher number than the total number of entries on the register.</p>
+

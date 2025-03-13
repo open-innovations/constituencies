@@ -1,0 +1,25 @@
+{
+	"title": "",
+	"config": {
+		"colours": {"Con":"#0485A8","Lab":"#DC4343","LD":"#EAA544","Green":"#5EBD4C","Brexit":"#0FA697","SNP":"#EBDB1C","UKIP":"#73537A","PC":"#4FBA7C","Ind":"#CCA7C6","DUP":"#BF3759","UUP":"#3b75a8","SF":"#2C604D","SDLP":"#53BC5B","Alliance":"#EAA544","Spk":"#909090","XSpk":"#909090","Monster":"#cccccc","WPB":"#1e28d8","none":"#dfdfdf"},
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.general-elections",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}, {{ a }} ({{ GE 2015 MP }})"
+		}],
+		"value": "GE 2015",
+		"matchKey": "const_id",
+		"legend": {
+			"position": "bottom"
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ GE 2015 MP }} ({{ GE 2015 }})<br />Turnout: <strong>{{ GE 2015 turnout }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7186/\" target=\"_parent\">2015</a> (Parliament)."
+	}
+}

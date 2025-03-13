@@ -1,0 +1,41 @@
+---
+title: Population (UK)
+theme: society
+created: 2023-09-13T13:32
+updated: 2024-07-24T17:35
+description: |
+  Population by constituency (UK).
+keywords: [population,people,age,breakdown]
+api:
+  - total
+  - by_group
+  - by_age
+---
+
+<h2>Total population{{ comp.anchor({ 'ref': 'total'}) }}</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "total"
+}) }}
+
+
+<h2>Age breakdown by age groups{{ comp.anchor({ 'ref': 'by-group'}) }}</h2>
+<p>Split into the groups: under 18, 18-64, 65 and over.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "by_group"
+}) }}
+
+
+<h2>Age breakdown by year{{ comp.anchor({ 'ref': 'by-age'}) }}</h2>
+<p>Use the slider to select a specific age from 0-90+.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "by_age"
+}) }}
+
+
+

@@ -1,0 +1,55 @@
+{
+	"title": "Disability",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.disability",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Con_pc",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 0.25,
+		"matchKey": "ONSConstID",
+		"legend": {
+			"position": "top right",
+			"items": [
+				{
+					"value": 0.25,
+					"label": "25%+"
+				},
+				{
+					"value": 0.2,
+					"label": "20%"
+				},
+				{
+					"value": 0.15,
+					"label": "15%"
+				},
+				{
+					"value": 0.1,
+					"label": "10%"
+				},
+				{
+					"value": 0.05,
+					"label": "5%"
+				},
+				{
+					"value": 0,
+					"label": "0%"
+				}
+			]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Disability (2021 census): <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-self-reported-health-2021-census/\">Self-reported health, 2021 census</a> (House of Commons Library)\n"
+	}
+}

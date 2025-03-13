@@ -1,0 +1,44 @@
+{
+	"title": "Educational attainment: KS4 Attainment 8",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.education-attainment",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "KS4 Attainment 8 / 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 90,
+		"matchKey": "Constituency ID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 90,
+				"label": "90"
+			},{
+				"value": 60,
+				"label": "60"
+			},{
+				"value": 30,
+				"label": "30"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["KS4 Attainment 8 / 2017","KS4 Attainment 8 / 2018","KS4 Attainment 8 / 2019","KS4 Attainment 8 / 2022"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Attainment 8: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-educational-attainment/\">educational attainment</a> (House of Commons Library; OGL)."
+	}
+}

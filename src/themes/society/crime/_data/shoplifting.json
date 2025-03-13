@@ -1,0 +1,57 @@
+{
+	"title": "Crime: shoplifting",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.crime-data",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "2021",
+			"template": "{{ Shoplifting→2021 }}"
+		},{
+			"name": "2022",
+			"template": "{{ Shoplifting→2022 }}"
+		},{
+			"name": "2023",
+			"template": "{{ Shoplifting→2023 }}"
+		}],
+		"value": "2021",
+		"matchKey": "PCON25CD",
+		"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
+		"min": 0,
+		"max": 6000,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 6001,
+				"label": ">6,000"
+			},{
+				"value": 6000,
+				"label": "6,000"
+			},{
+				"value": 4000,
+				"label": "4,000"
+			},{
+				"value": 2000,
+				"label": "2,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2021","2022","2023"],
+				"width": "500px",
+				"position": "bottom"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://data.police.uk/data/archive/\">crime data</a> (data.police.uk)."
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"title": "General Election: 4 July 2024 candidates",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "ge2024_candidates",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Number of Candidates",
+		"scale": "#dfdfdf 0%, #000000 100%",
+		"matchKey": "PCON24CD",
+		"min": 0,
+		"max": 10,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 10,
+				"label": "10+"
+			},{
+				"value": 9,
+				"label": "9"
+			},{
+				"value": 8,
+				"label": "8"
+			},{
+				"value": 7,
+				"label": "7"
+			},{
+				"value": 6,
+				"label": "6"
+			},{
+				"value": 5,
+				"label": "5"
+			},{
+				"value": 4,
+				"label": "4"
+			},{
+				"value": 3,
+				"label": "3"
+			},{
+				"value": 2,
+				"label": "2"
+			},{
+				"value": 1,
+				"label": "1"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"boundaries": {
+		  "country": {
+			"stroke": "white",
+			"stroke-width": 1.5,
+			"stroke-linecap": "round"
+		  },
+		  "region": "country"
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ Candidates }}",
+		"attribution": "Data: <a href=\"https://candidates.democracyclub.org.uk/data/\">Candidates 2024</a> (Democracy Club)."
+	}
+}

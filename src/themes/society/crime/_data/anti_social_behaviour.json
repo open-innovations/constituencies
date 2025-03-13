@@ -1,0 +1,60 @@
+{
+	"title": "Crime: anti-social behaviour",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.crime-data",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		},{
+			"name": "2021",
+			"template": "{{ Anti-social behaviour→2021 }}"
+		},{
+			"name": "2022",
+			"template": "{{ Anti-social behaviour→2022 }}"
+		},{
+			"name": "2023",
+			"template": "{{ Anti-social behaviour→2023 }}"
+		}],
+		"value": "2021",
+		"matchKey": "PCON25CD",
+		"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
+		"min": 0,
+		"max": 12000,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 12001,
+				"label": ">12,000"
+			},{
+				"value": 12000,
+				"label": "12,000"
+			},{
+				"value": 9000,
+				"label": "9,000"
+			},{
+				"value": 6000,
+				"label": "6,000"
+			},{
+				"value": 3000,
+				"label": "3,000"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2021","2022","2023"],
+				"width": "500px",
+				"position": "bottom"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://data.police.uk/data/archive/\">crime data</a> (data.police.uk)."
+	}
+}

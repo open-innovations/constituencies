@@ -1,0 +1,33 @@
+{
+	"title": "General Election: 4 July 2024",
+	"config": {
+		"colours": {"Con":"#0485A8","Lab":"#DC4343","LD":"#EAA544","Green":"#5EBD4C","Brexit":"#0FA697","SNP":"#EBDB1C","UKIP":"#73537A","PC":"#4FBA7C","Ind":"#CCA7C6","DUP":"#BF3759","UUP":"#3b75a8","SF":"#2C604D","SDLP":"#53BC5B","APNI":"#EAA544","Spk":"#909090","XSpk":"#909090","Monster":"#cccccc","WPB":"#539acb","Alba":"#0015ff","Ref":"#09d2e0","none":"#dfdfdf","TUV":"#6dcad2"},
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.general-elections-2024",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}, {{ a }} ({{ MP }})"
+		}],
+		"value": "Party",
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "bottom"
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"boundaries": {
+		  "country": {
+			"stroke": "white",
+			"stroke-width": 1.5,
+			"stroke-linecap": "round"
+		  },
+		  "region": "country"
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ MP }} / {{ Party name }}<br />Vote share: <strong>{{ Share }}%</strong><br />Majority: <strong>{{ Majority | toLocaleString() }}</strong><br />Turnout: <strong>{{ Turnout }}%</strong>",
+		"attribution": "Data: <a href=\"https://ge2024.hexmap.uk/\">2024 election results</a> (Open Innovations)."
+	}
+}

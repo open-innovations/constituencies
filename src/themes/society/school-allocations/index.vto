@@ -1,0 +1,46 @@
+---
+title: School funding (England)
+theme: society
+created: 2023-10-24T17:10
+updated: 2023-10-24T17:10
+description: |
+  School funding by constituency (England).
+keywords: [school,funding,allocations,per pupil]
+api:
+  - real
+  - nominal
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<p>This page provides <a href="https://commonslibrary.parliament.uk/constituency-data-schools-funding/">constituency-level data on school funding for mainstream state-funded schools in England</a>. Use the slider to change years.</p>
+
+
+<h2>Allocations per pupil (real){{ comp.anchor({ 'ref': 'real'}) }}</h2>
+<p>Funding allocations per pupil are shown after adjusting for inflation (in 2022-23 prices).</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "real"
+}) }}
+
+
+<h2>Allocations per pupil (nominal){{ comp.anchor({ 'ref': 'nominal'}) }}</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "nominal"
+}) }}
+
+<h2>Notes</h2>
+<p>Data is for mainstream state-funded schools in England only. Schools with 20 or fewer pupils have been excluded.</p>
+
+<p>The schools block excludes high (special) needs funding, early years funding, and the pupil premium.</p>
+
+<p>2021-22 and 2022-23 figures include protected funding for the teachers’ pay and pension grants. In previous years this was excluded. This means that caution should be taken when making comparisons before and after 2021-22.</p>
+
+<p>Constituency level figures have been built up from school-level schools block allocations (all schools which receive schools block funding are included) and are what schools actually receive.</p>
+
+<p>School level allocations between 2014-15 and 2018-19 published by the Department for Education rounded to the nearest £1,000. From 2019-20 exact allocations were published.</p>
+
+<p>Data is in real terms (2022-23 prices). The pandemic has caused unusual movements in the GDP deflator, which is used to measure inflation in the economy. This means that for 2020-21 and 2021-22 it does not provide an accurate representation of price changes over this period. GDP deflator growth for 2020-21 and 2021-22 have been averaged across the two years to smooth the distortions caused by pandemic-related factors. OBR forecasts are used for 2021-22.</p>

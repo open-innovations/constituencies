@@ -1,0 +1,33 @@
+{
+	"title": "General Election (notional): 12 December 2019",
+	"config": {
+		"colours": {"Con":"#0485A8","Lab":"#DC4343","LD":"#EAA544","Green":"#5EBD4C","Brexit":"#0FA697","SNP":"#EBDB1C","UKIP":"#73537A","PC":"#4FBA7C","Ind":"#CCA7C6","DUP":"#BF3759","UUP":"#3b75a8","SF":"#2C604D","SDLP":"#53BC5B","Alliance":"#EAA544","APNI":"#EAA544","Spk":"#909090","XSpk":"#909090","Monster":"#cccccc","WPB":"#1e28d8","none":"#dfdfdf"},
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.general-elections-notional",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "GE 2019 Party",
+		"matchKey": "PCON24CD",
+		"boundaries": {
+		  "country": {
+			"stroke": "white",
+			"stroke-width": 1.5,
+			"stroke-linecap": "round"
+		  },
+		  "region": "country"
+		},
+		"legend": {
+			"position": "bottom"
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Party: {{ GE 2019 Party }}<br />Majority: <strong>{{ GE 2019 Majority | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://electionresults.parliament.uk/general-elections/5\">Notional General Election 2019</a> (Rallings & Thrasher, Professor David Denver (Scotland), Nicholas Whyte (NI) for Sky News, PA, BBC News and ITV News)."
+	}
+}

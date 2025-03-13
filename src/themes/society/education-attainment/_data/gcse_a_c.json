@@ -1,0 +1,50 @@
+{
+	"title": "Educational attainment: GCSE A*-C English/Maths",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.education-attainment",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "A*-C % / 2022",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Constituency ID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["A*-C % / 2011","A*-C % / 2012","A*-C % / 2013","A*-C % / 2014","A*-C % / 2015","A*-C % / 2016","A*-C % / 2017","A*-C % / 2018","A*-C % / 2019","A*-C % / 2020","A*-C % / 2021","A*-C % / 2022"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-educational-attainment/\">educational attainment</a> (House of Commons Library; OGL)."
+	}
+}

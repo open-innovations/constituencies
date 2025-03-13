@@ -1,0 +1,21 @@
+---
+title: GP appointment per patient (England)
+theme: health
+created: 2024-06-21T08:47
+updated: 2024-06-21T08:47
+description: |
+  Average number of appointments per registered patient
+keywords: [health]
+api:
+  - per_patient
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+
+<h2>Appointments per registered patient</h2>
+<p>12 months rolling sum of appointments in general practice per registered patient</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "per_patient"
+}) }}

@@ -1,0 +1,47 @@
+{
+	"title": "GPs: electronic prescription items",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-93953",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Jan 2024",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Jan 2023" , "Feb 2023" , "Mar 2023" , "Apr 2023" , "May 2023" , "Jun 2023" , "Jul 2023" , "Aug 2023" , "Sep 2023" , "Oct 2023" , "Nov 2023" , "Dec 2023" , "Jan 2024"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />% Electronic prescription items of all items prescribed: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93953\">OHID Fingertips</a> / Visualisation: <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	}
+}

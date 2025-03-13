@@ -1,0 +1,37 @@
+{
+	"title": "EU referendum using 2024 consituencies",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.society.eu_referendum_2024_boundaries",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "LeavePct",
+		"scale": "#F9BC26 0%, #2254F4 100%",
+		"min": 0,
+		"max": 1,
+		"matchKey": "gss_code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1,
+				"label": "Leave"
+			},{
+				"value": 0.5,
+				"label": "50/50"
+			},{
+				"value": 0,
+				"label": "Remain"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Estimated leave vote: <strong>{{ LeavePct | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://docs.google.com/spreadsheets/d/1mtph-ml7CYVoeEUIc1g_IbOvbiZMa_ezRGQlHQoCpF4/edit?gid=341382343#gid=341382343\">EU referendum estimates</a> for 2024 boundaries"
+	}
+}

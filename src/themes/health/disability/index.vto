@@ -1,0 +1,24 @@
+---
+title: Disability (England & Wales)
+theme: health
+created: 2023-08-16T15:37
+updated: 2023-08-16T15:37
+description: |
+  Disability as measured in the 2021 census at constituency-level (England & Wales).
+keywords: [disability,health,covid]
+api:
+  - disability
+---
+
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "disability"
+}) }}
+
+<h2>Notes</h2>
+
+<ul>
+<li>The 2021 census in England and Wales was undertaken during the coronavirus pandemic, which may have influenced how people perceive their health status.</li>
+</ul>

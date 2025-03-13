@@ -1,0 +1,47 @@
+{
+	"title": "GP appointments: good overall experience of making an appointment",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.health.PHE-indicator-349",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "2023",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Area Code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+				"width": "600px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />% reporting good overallexperience <br />of making an appointment: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/349\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"title": "School allocations per pupil (real)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "sources.society.school-allocations",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Allocation per pupil (real) / 2022-23",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 8000,
+		"matchKey": "ONSconstID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 8000,
+				"label": "£8k"
+			},{
+				"value": 6000,
+				"label": "£6k"
+			},{
+				"value": 4000,
+				"label": "£4k"
+			},{
+				"value": 2000,
+				"label": "£2k"
+			},{
+				"value": 0,
+				"label": "£0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["Allocation per pupil (real) / 2014-15","Allocation per pupil (real) / 2015-16","Allocation per pupil (real) / 2016-17","Allocation per pupil (real) / 2017-18","Allocation per pupil (real) / 2018-19","Allocation per pupil (real) / 2019-20","Allocation per pupil (real) / 2020-21","Allocation per pupil (real) / 2021-22","Allocation per pupil (real) / 2022-23"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>&pound;{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-schools-funding/\">schools funding</a> (House of Commons Library; OGL)."
+	}
+}

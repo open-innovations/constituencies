@@ -1,4 +1,5 @@
 import site from '../../_config.ts';
+import { expandGlobSync } from "lume/deps/fs.ts";
 
 function resolveData(ref,context){
 	let result = context;
@@ -7,8 +8,9 @@ function resolveData(ref,context){
 }
 
 export default function*({search,themes}){
+
 	const notes = "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org";
-	const pages = search.pages("datafiles!=undefined");
+	const pages = search.pages("api!=undefined");
 	let index = {
 		"notes": notes,
 		"themes": {}
@@ -23,10 +25,10 @@ export default function*({search,themes}){
 
 	for(const page of pages){
 
-		const datafiles = page.datafiles;
+		const api = page.api;
 		const url = page.url;
 		const theme = page.theme;
-		for(const id of datafiles){
+		for(const id of api){
 			console.log(theme,id,url+id+'.json');
 
 			const config = {...page[id].config};
