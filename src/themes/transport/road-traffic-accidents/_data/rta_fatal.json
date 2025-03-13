@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.road_traffic_accidents_fatal_or_serious",
+		"data": "release.road_traffic_accidents_fatal_or_serious",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }}"

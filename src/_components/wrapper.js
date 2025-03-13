@@ -28,14 +28,16 @@ export default function (input) {
 	if(conf.hexjson=="hexjson.uk-constituencies-2023-temporary") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://github.com/open-innovations/constituencies/blob/main/src/_data/hexjson/uk-constituencies-2023-temporary.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
 
 	conf.attribution += '<div class="menu" data-dependencies="/assets/js/menu.js">';
-	if(api.file) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
 	if(typeof conf.data==="string"){
-		if(download && typeof download.text=="string"){
-		//	conf.attribution += '<div class="menu-item">'+dataPath+'<a href="' + dataPath + '/'+ conf.data.replace(/\./g,"\/").replace(/^sources\//,"")+".csv" + '" class="download"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>'+ download.text + (download.type ? ' ('+download.type+')':'')+'</a></div>';
+		// Are we referencing local data in a release sub-directory?
+		if(conf.data.indexOf('release.')==0){
+			let release = conf.data.substr(8);
+			conf.data = input.page.data.release[release];
+			conf.attribution += '<div class="menu-item CSV"><a href="' + release.replace(/\./g,"\/") + ".csv" + '">CSV</a></div>'
 		}
 		// If we are referencing local data (without "." separators),
 		// we need to pass in "page" to the component.
-		if(conf.data.indexOf('.') < 0){
+		if(typeof conf.data==="string" && conf.data.indexOf('.') < 0){
 			if(input.page){
 				if(!(conf.data in input.page.data)){
 					throw new Error("Unable to find "+conf.data+" in page");
@@ -47,6 +49,7 @@ export default function (input) {
 			}
 		}
 	}
+	if(api.file) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
 	conf.attribution += '</div>'
 
 	str += component({'config':conf});

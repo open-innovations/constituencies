@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "sources.transport.rail-cancellations",
+		"data": "release.rail-cancellations",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ n }}"
