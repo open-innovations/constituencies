@@ -7,9 +7,6 @@
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
-		},{
-			"name": "Place of worship",
-			"template": "{{ Type→Place of worship }}"
 		}],
 		"value": "Type→Place of worship",
 		"scale": "#ffffcc 0%, #b62126 80%, #771e1c 100%",
@@ -52,7 +49,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Places of worship at risk: <strong>{{ Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Place of Worship&searchtype=harsearch\">More details</a>",
+		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Places of worship at risk: <strong>{{ Type→Place of worship | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Place of Worship&searchtype=harsearch\">More details</a>",
 		"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk Register</a> 2024 (Historic England)"
 	}
 }

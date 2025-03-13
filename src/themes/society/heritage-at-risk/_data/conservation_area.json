@@ -7,9 +7,6 @@
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ PCON24NM }} ({{ MP }}, {{ Party }})"
-		},{
-			"name": "Conservation area",
-			"template": "{{ Type→Conservation area }}"
 		}],
 		"value": "Type→Conservation area",
 		"scale": "#ffffcc 0%, #b62126 80%, #771e1c 100%",
@@ -43,7 +40,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Conservation areas at risk: <strong>{{ Conservation area | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Conservation area&searchtype=harsearch\">More details</a>",
+		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />Conservation areas at risk: <strong>{{ Type→Conservation area | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Conservation area&searchtype=harsearch\">More details</a>",
 		"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk Register</a> 2024 (Historic England)"
 	}
 }
