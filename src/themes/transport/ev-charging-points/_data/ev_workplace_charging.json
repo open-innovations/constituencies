@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.ev_charging_points",
+		"data": "release.ev_charging_points",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"

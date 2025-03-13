@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.national_charge_point_registry_by_constituency",
+		"data": "release.national_charge_point_registry_by_constituency",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"

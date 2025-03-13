@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
-		"data": "sources.transport.distance_travelled_to_work",
+		"data": "release.TS058-2021-3",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"

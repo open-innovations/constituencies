@@ -6,7 +6,7 @@ use JSON::XS;
 use OpenInnovations::GeoJSON;
 require "lib.pl";
 
-my $outputfile = "../../src/_data/sources/transport/national_charge_point_registry_by_constituency.csv";
+my $outputfile = "../../src/themes/transport/ev-charging-points/_data/release/national_charge_point_registry_by_constituency.csv";
 my $geojsonfile = "../../src/_data/geojson/constituencies-2022.geojson";
 my $popfile = "../../raw-data/Population.csv";
 my $key = "PCON22CD";

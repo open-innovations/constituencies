@@ -5,9 +5,7 @@ use Data::Dumper;
 $file = $ARGV[0]||"TS058-2021-3-filtered-2023-10-10T18 09 15Z.csv";
 
 if(!-e $file){
-	print "Usage:\n";
-	print "perl grouprows.pl <file> -groupby <column> -code <column> -value <column> -order <col1>,<col2>,<col3>\n";
-	#perl grouprows.pl raw-data/school_funding.csv -groupby "Year" -value "\"Cons, Total Schools Block Allocation (Nominal)\",\"Cons, Total Schools Block Allocation (Real)\"" -code "ONSconstID" -order "ONSconstID,Region,Cons Total Number of Pupils,\"Cons, Allocation per Pupil (Nominal)\",\"Cons, Allocation per Pupil (Real)\""
+	usage();
 	exit;
 }
 
@@ -57,11 +55,13 @@ for($i = 0; $i < @ARGV; $i++){
 }
 
 if(@values < 1){
+	usage();
 	print "No value column(s) provided (comma separated):\n";
 	print "  -value <value>\n";
 	exit;
 }
 if(!$colcode){
+	usage();
 	print "No constituency code column provided with:\n";
 	print "  -code <value>\n";
 	exit;
@@ -145,3 +145,10 @@ foreach $id (sort(keys(%{$constituencies}))){
 	$csv .= "\n";
 }
 print $csv;
+
+
+sub usage {
+	print "Usage:\n";
+	print "perl grouprows.pl <file> -groupby <column> -code <column> -value <column> -order <col1>,<col2>,<col3>\n";
+	#print "perl grouprows.pl raw-data/school_funding.csv -groupby \"Year\" -value \"\\"Cons, Total Schools Block Allocation (Nominal)\",\"Cons, Total Schools Block Allocation (Real)\"" -code "ONSconstID" -order "ONSconstID,Region,Cons Total Number of Pupils,\"Cons, Allocation per Pupil (Nominal)\",\"Cons, Allocation per Pupil (Real)\\\"\";
+}
