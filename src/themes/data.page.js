@@ -82,6 +82,7 @@ export default function*({search,themes}){
 
 
 			data.legend = config.legend;
+			data.data.virtualColumns = config.columns;
 
 			// Add to themes
 			if(!(page.theme in index.themes)){
