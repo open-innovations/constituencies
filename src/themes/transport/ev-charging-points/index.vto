@@ -2,7 +2,7 @@
 title: Electric Vehicle Charging
 theme: transport
 created: 2023-08-31T16:40
-updated: 2023-08-31T16:40
+updated: 2025-03-31T16:25
 description: |
   Electric vehicle charging points by constituency (UK).
 keywords: [EV,home,workplace,public,National Chargepoint Registry,sockets,charging,emissions,OZEV]
@@ -12,11 +12,11 @@ api:
   - ev_workplace_charging
 ---
 
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-
 <p>This page aims to present data on electric vehicle (EV) charging for <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> (ONS/ZapMap and <a href="#ncr">National Chargepoint Registry</a>), and <a href="#combined">combined</a> charging sockets/devices/connections.</p>
 
+
 <h2>Combined charging availability{{ comp.anchor({ 'ref': 'combined'}) }}</h2>
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 <p>To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
 {{ comp.wrapper({
 	"page": page,
@@ -27,6 +27,7 @@ api:
 
 
 <h2>Home charging sockets and devices (2022){{ comp.anchor({ 'ref': 'home'}) }}</h2>
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 <p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants (EVHS, DRS, and EVCG) for domestic charging devices. These figures will not include home charging devices that have been installed without a grant. See <a href="#notes-home">notes on home charging data</a>.</p>
 {{ comp.wrapper({
 	"page": page,
@@ -37,6 +38,7 @@ api:
 
 
 <h2>Workplace charging sockets and devices (April 2023){{ comp.anchor({ 'ref': 'work'}) }}</h2>
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 <p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants through the Workplace Charging Scheme (WCS). The statistics provided are for the number of "Sockets Installed".</p>
 {{ comp.wrapper({
 	"page": page,
@@ -48,18 +50,15 @@ api:
 
 <h2>Public charging sockets and devices{{ comp.anchor({ 'ref': 'public'}) }}</h2>
 
-<h3>ONS/ZapMap (April 2023)</h3>
-<p>For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries. The data are provided aggregated to lower tier local authority district so have been apportioned to constituencies based on the amount of geographic overlap.</p>
+<h3>ONS/ZapMap (January 2025)</h3>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
 	"config": "ev_public_charging"
 }) }}
 
-
-
-
 <h3>National Chargepoint Registry (September 2023){{ comp.anchor({ 'ref': 'ncr'}) }}</h3>
+<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024). Note that the National Chargepoint Registry was withdrawn in November 2024 by the UK Government.</div>
 <p>Publicly accessible chargepoints per 100,000 people from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a> (see <a href="#notes-public">notes</a>). Use the slider to see numbers of connections per 100,000 population for slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), and ultra (>100 KW) charging.</p>
 {{ comp.wrapper({
 	"page": page,

@@ -2,28 +2,31 @@
 	"title": "EV: public charging",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "release.ev_charging_points",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.electric-vehicle-public-charging-infrastructure-statistics-january-2025-table-7a",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "public-2023-04",
+		"value": "Jan-25",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 600,
-		"matchKey": "PCON22CD",
+		"max": 1000,
+		"matchKey": "Parliamentary constituency Code",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 1200,
-				"label": "1200+"
+				"value": 1000,
+				"label": "1000"
 			},{
-				"value": 800,
-				"label": "800"
+				"value": 750,
+				"label": "750"
 			},{
-				"value": 400,
-				"label": "400"
+				"value": 500,
+				"label": "500"
+			},{
+				"value": 250,
+				"label": "250"
 			},{
 				"value": 0,
 				"label": "0"
@@ -35,6 +38,6 @@
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Public charging sockets: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023\"> Electric Vehicle Charging Device Statistics</a> (DfT)"
+		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-public-charging-infrastructure-statistics-january-2025\">Electric Vehicle Charging Device Statistics</a> (DfT)"
 	}
 }
