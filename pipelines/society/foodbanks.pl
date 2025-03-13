@@ -61,4 +61,4 @@ foreach $name (sort{ $lookup->{$a}{'id'} cmp $lookup->{$b}{'id'} }(keys(%{$looku
 close($fh);
 msg("Saved to <cyan>$outfile<none>\n");
 
-updateCreationTimestamp($basedir."../../src/themes/society/food-banks/index.njk");
+updateCreationTimestamp($basedir."../../src/themes/society/food-banks/index.vto");
