@@ -13,3 +13,5 @@ raw-data/
 # Ignore profiles
 *.heapprofile
 *.cpuprofile
+
+__pycache__
