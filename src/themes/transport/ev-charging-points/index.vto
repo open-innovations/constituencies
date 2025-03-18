@@ -2,7 +2,7 @@
 title: Electric Vehicle Charging
 theme: transport
 created: 2023-08-31T16:40
-updated: 2025-03-13T16:25
+updated: 2025-03-18T17:00
 description: |
   Electric vehicle charging points by constituency (UK).
 keywords: [EV,home,workplace,public,National Chargepoint Registry,sockets,charging,emissions,OZEV]
@@ -16,7 +16,7 @@ api:
 
 
 <h2>Combined charging availability{{ comp.anchor({ 'ref': 'combined'}) }}</h2>
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+{{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
 <p>To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
 {{ comp.wrapper({
 	"page": page,
@@ -26,9 +26,9 @@ api:
 
 
 
-<h2>Home charging sockets and devices (2022){{ comp.anchor({ 'ref': 'home'}) }}</h2>
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-<p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants (EVHS, DRS, and EVCG) for domestic charging devices. These figures will not include home charging devices that have been installed without a grant. See <a href="#notes-home">notes on home charging data</a>.</p>
+<h2>Home charging sockets and devices installed (Total, 2014-2022){{ comp.anchor({ 'ref': 'home'}) }}</h2>
+{{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
+<p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants (EVHS only) for domestic charging devices. These figures will not include home charging devices that have been installed without a grant. See <a href="#notes-home">notes on home charging data</a>.</p>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
@@ -37,8 +37,8 @@ api:
 
 
 
-<h2>Workplace charging sockets and devices (April 2023){{ comp.anchor({ 'ref': 'work'}) }}</h2>
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
+<h2>Workplace charging sockets and devices (January 2025){{ comp.anchor({ 'ref': 'work'}) }}</h2>
+{{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
 <p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants through the Workplace Charging Scheme (WCS). The statistics provided are for the number of "Sockets Installed".</p>
 {{ comp.wrapper({
 	"page": page,
@@ -70,13 +70,12 @@ api:
 <p>For each source we have had to use different concepts of "connections".</p>
 
 <h3>Home{{ comp.anchor({ 'ref': 'notes-home'}) }}</h3>
-<p>A single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data. At some point this will update with a 2023 value and we will need to see if they also use updated geographies.</p>
-<p>The EV chargepoint grant (EVCG) provides funding of up to 75% towards the cost of installing electric vehicle smart chargepoints at domestic properties across the UK. It replaced the Electric Vehicle Homecharge Scheme (EVHS) on 1 April 2022.</p>
-<p>The EVHS provided grant funding for up to 75% of the cost of installing electric vehicle charging devices at domestic properties across the UK.</p>
-
+<p>A single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data from the Electric Vehicle Homecharge Scheme (EVHS).</p>
+<p>The EVHS provided grant funding for up to 75% of the cost of installing electric vehicle charging devices at domestic properties across the UK. The EVHS was replaced by the EV chargepoint grant (EVCG) on 1 April 2022.</p>
+<p>The EVCG provides funding of up to 75% towards the cost of installing electric vehicle smart chargepoints at domestic properties across the UK. Currently, there are no sub-regional data for the EVCG so we cannot provide a meaningful constituency-based estimate here.</p>
 <h3>Workplace{{ comp.anchor({ 'ref': 'notes-work'}) }}</h3>
 <p>Workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
-	The data are provided at lower-tier 2022 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses April 2023 data.</p>
+	The data are provided at lower-tier 2023 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses January 2025 data.</p>
 
 <h3>Public{{ comp.anchor({ 'ref': 'notes-public'}) }}</h3>
 <ul>
