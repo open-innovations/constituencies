@@ -2,7 +2,7 @@
 	"title": "EV: combined charging availability",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
+		"hexjson": "hexjson.uk-constituencies-2024",
 		"data": "release.ev_charging_points",
 		"columns": [{
 			"name": "filterLabel",
@@ -11,16 +11,16 @@
 		"value": "total",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 1200,
-		"matchKey": "PCON22CD",
+		"max": 2500,
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
+				"value": 2500,
+				"label": "2500+"
+			},{
 				"value": 1500,
 				"label": "1500"
-			},{
-				"value": 1000,
-				"label": "1000"
 			},{
 				"value": 500,
 				"label": "500"
