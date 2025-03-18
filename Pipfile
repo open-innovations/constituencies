@@ -11,3 +11,6 @@ notebook = "*"
 ipykernel = "*"
 shapely = "*"
 odfpy = "*"
+appnope = "*"
+
+[dev-packages]
