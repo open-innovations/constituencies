@@ -34,7 +34,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong>Total charging points: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Total charging points: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-statistics-july-2023\">Electric Vehicle Charging Device Statistics</a> and <a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
 	}
 }
