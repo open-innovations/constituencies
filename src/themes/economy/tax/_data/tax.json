@@ -1,5 +1,5 @@
 {
-	"title": "Tax",
+	"title": "Total tax amount",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",

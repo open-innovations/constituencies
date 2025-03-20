@@ -1,0 +1,46 @@
+{
+	"title": "Total income: median",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "Table_3_15a_2223_median",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Total income: Median (Central Estimate)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 50000,
+		"matchKey": "Parliamentary Constituency Codes",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 50000,
+				"label": ">£50k"
+			},{
+				"value": 40000,
+				"label": "£40k"
+			},{
+				"value": 30000,
+				"label": "£30k"
+			},{
+				"value": 20000,
+				"label": "£20k"
+			},{
+				"value": 10000,
+				"label": "£10k"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total income: median (Central Estimate): <strong>&pound;{{ Total income: Median (Central Estimate) | toLocaleString() }}</strong><br />Range (95% CI): <strong>&pound;{{ Total income: Median (Lower 95% CI) | toLocaleString() }} - &pound;{{ Total income: Median (Upper 95% CI) | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/income-and-tax-by-parliamentary-constituency-confidence-intervals\">Table 3.15a Income and tax by Parliamentary constituency, confidence intervals </a> &copy; HMRC"
+	}
+}
