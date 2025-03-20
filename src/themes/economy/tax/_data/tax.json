@@ -1,0 +1,43 @@
+{
+	"title": "Tax",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "Table_3_15a_2223",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Total tax: Amount (Central Estimate)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 2000,
+		"matchKey": "Parliamentary Constituency Codes",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 2000,
+				"label": "£2Bn"
+			},{
+				"value": 1500,
+				"label": "£1.5Bn"
+			},{
+				"value": 1000,
+				"label": "£1Bn"
+			},{
+				"value": 500,
+				"label": "£500m"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total tax (Central Estimate): <strong>&pound;{{ Total tax: Amount (Central Estimate) | toLocaleString() }} million</strong><br />Range (95% CI): <strong>&pound;{{ Total tax: Amount (Lower 95% CI) | toLocaleString() }} - &pound;{{ Total tax: Amount (Upper 95% CI) | toLocaleString() }} million</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/income-and-tax-by-parliamentary-constituency-confidence-intervals\">Table 3.15a Income and tax by Parliamentary constituency, confidence intervals </a> &copy; HMRC"
+	}
+}

@@ -1,0 +1,23 @@
+---
+title: Tax (UK)
+theme: economy
+created: 2025-03-20T15:35
+updated: 2025-03-20T15:35
+description: |
+  Constituency-level data on tax.
+keywords: [tax,median]
+api:
+  - tax
+---
+
+<p>This page provides constituency-level data on tax for 2022 to 2023.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "tax"
+}) }}
+
+<h2>Notes</h2>
+
+<ul></ul>
