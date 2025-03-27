@@ -1,0 +1,23 @@
+---
+title: Pubs and bars (UK)
+theme: society
+created: 2025-03-26T15:40
+updated: 2025-03-26T15:40
+description: |
+  Pubs and bars included in OpenStreetMap (UK).
+keywords: [pub,pubs,bar,bars,public house]
+api:
+  - map_1
+---
+
+<p>This page provides constituency-level data on the number of pubs included in <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as of March 2025.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+
+<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<p>No de-duplication has been performed. If pubs have been included in OpenStreetMap in multiple forms (as, say, both points and polyons) they will be counted multiple times and this will inflate the totals.</p>

@@ -1,0 +1,40 @@
+{
+	"title": "Pubs",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.pubs",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "2025-03",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 300,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 300,
+				"label": "300+"
+			},{
+				"value": 100,
+				"label": "100"
+			},{
+				"value": 200,
+				"label": "200"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+        "tooltip": "<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-03 }}</strong>",
+        "attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors)."
+	}
+}
