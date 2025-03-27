@@ -1,0 +1,35 @@
+{
+	"title": "Train stations",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ RLY }})"
+		}],
+		"value": "RLY",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 25,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "30+"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 10,
+				"label": "10"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stations: <strong>{{ RLY | toLocaleString }}</strong>"	}
+}

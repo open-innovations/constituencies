@@ -1,0 +1,38 @@
+{
+	"title": "All stop types",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ alltypes }})"
+		}],
+		"value": "alltypes",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 1800,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1800,
+				"label": "1800+"
+			},{
+				"value": 1200,
+				"label": "1200"
+			},{
+				"value": 600,
+				"label": "600"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ alltypes | toLocaleString }}</strong>"	}
+}

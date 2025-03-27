@@ -1,0 +1,35 @@
+{
+	"title": "Tram and metro stops",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ MET }})"
+		}],
+		"value": "MET",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 30,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "30+"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 10,
+				"label": "10"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ MET | toLocaleString }}</strong>"	}
+}

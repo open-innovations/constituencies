@@ -1,0 +1,68 @@
+---
+title: Transport stops (GB)
+theme: transport
+created: 2025-03-27T11:00
+updated: 2025-03-27T11:44
+description: |
+  Constituency level data on the location of public transport access points.
+keywords: [bus,tram,metro,rail,services,train,public,stops,transit,transport,coach]
+#api:
+#  - stops
+---
+
+<h3>All transport access points</h3>
+<p>"All transport access points" includes every stop type for bus, coach, rail, tram, metro, ferry, taxi, air, car, and telecabine. See <a href="#stops_access_nodes">the notes on stops versus access points</a>.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "all_stops"
+}) }}
+
+<h3>On street bus & coach stops</h3>
+<p>Please see <a href="#bus_coach">the notes</a> for how we count the number of stops.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "bus_coach"
+}) }}
+
+<h3>Tram & metro stops</h3>
+<p>Please see <a href="#tram_metro">the notes</a> for how we count the number of stops.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "tramMetro"
+}) }}
+
+<h3>Train stations</h3>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rail"
+}) }}
+
+{{# Commenting out for now as not much data on taxi ranks #}}
+{{# <h3>Taxi ranks</h3>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "taxi"
+}) }} #}}
+
+<h2>Notes</h2>
+<p>Data come from the <a href="https://beta-naptan.dft.gov.uk/">National Public Transport Access Nodes (NaPTAN) dataset</a>.
+NaPTAN is the national dataset for uniquely identifying all public transport access points in England, Scotland and Wales.
+</p>
+<h3>"Stops" versus "access points"{{ comp.anchor({'ref': 'stops_access_nodes'}) }}</h3>
+<p>
+What we may think of as an individual "stop" (e.g. a bus stop or train station) may be represented by multiple "access nodes". For example, a train station could have a node for its entrance, a node for each platform, and a node for the main area of platforms.
+For the visualisation on "all transport access points", we do not differentiate between different types of stops.
+</p>
+<h3>Bus and coach stops{{ comp.anchor({'ref': 'bus_coach'}) }}</h3>
+<p>For bus and coach stops, we only count StopType <code>BCT</code>, which corresponds to "On street" bus or coach stops.</p>
+
+<h3>Tram/metro, and train stations{{ comp.anchor({'ref': 'tram_metro'}) }}</h3>
+<p>
+For tram/metro, and train station stops, we only count stops denoted as "<em>Access areas</em>". According to the <a href="https://naptan.dft.gov.uk/naptan/schema/2.5/doc/NaPTANSchemaGuide-2.5-v0.67.pdf">NaPTAN schema guide</a>, an access area is defined as: "an interchange area within the station - typically the main area of
+platforms.". We do this to provide an estimate for the number of stations/stops that you could travel between and to hoepfully avoid any double counting based on the number of platforms or multiple entrances.
+</p>
