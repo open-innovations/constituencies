@@ -21,7 +21,7 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 
 
-my ($hexjson,$json,$l,$t,@types,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$args,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt);
+my ($hexjson,$json,$l,$t,@types,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$args,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept);
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -37,7 +37,9 @@ $o5mfile = $rawdir.$json->{'prefix'}.".o5m";
 
 # Get the constituencies
 # Originally from https://geoportal.statistics.gov.uk/datasets/e489d4e5fe9f4f9caa6af161da5442af_0/explore then reduced with MapShaper
+msg("Loading constituencies and finding bounding boxes\n");
 $constituencies = addBoundingBoxes(LoadJSON($rawdir.$json->{'constituencies'}{'file'}));
+
 
 # Create a progress bar
 $progress = OpenInnovations::ProgressBar->new();
@@ -61,13 +63,13 @@ $dt = strftime("%Y-%m", localtime((stat($pbffile))[9]));
 
 for($l = 0; $l < @layers; $l++){
 
-	msg("Processing <yellow>$layers[$l]{'id'}<none>:\n");
+	msg("Processing layer <yellow>$layers[$l]{'id'}<none>:\n");
 
 	$data = {};
 
 	$osmfile = $rawdir.$json->{'prefix'}."-$layers[$l]{'id'}.osm";
 	$update = 0;
-	if(!-e $osmfile){
+	if(!-e $osmfile || -s $osmfile==0){
 		$update = 1;
 	}else{
 		
@@ -80,16 +82,28 @@ for($l = 0; $l < @layers; $l++){
 
 	if($update){
 		$args = "";
-		if(defined($layers[$l]{'keep'}) && $layers[$l]{'keep'}){
-			$args .= ($args ? " ":"")."--keep=\"$layers[$l]{'keep'}\"";
+		if(defined($layers[$l]{'keep'})){
+			if(ref($layers[$l]{'keep'}) eq "STRING"){
+				$args .= ($args ? " ":"")."--keep=\"$layers[$l]{'keep'}\"";
+			}elsif(ref($layers[$l]{'keep'}) eq "ARRAY"){
+				$args .= ($args ? " ":"")."--keep=\"";
+				for(my $k = 0; $k < @{$layers[$l]{'keep'}}; $k++){
+					$args .= ($k > 0 ? " or ":"").$layers[$l]{'keep'}[$k];
+				}
+				$args .= "\"";
+			}
 		}
 		if(defined($layers[$l]{'drop'}) && $layers[$l]{'drop'}){
 			$args .= ($args ? " ":"")."--drop=\"$layers[$l]{'drop'}\"";
 		}
 		msg("\tFiltering to <cyan>$o5mfile<none> (may take some time)\n");
-		`osmfilter $o5mfile $args > $osmfile`;
+		# Filter the o5m file using the keep/drop layers and ignoring dependencies
+		# (Usually all objects which are used by an object which is included will be kept in the data as well)
+		`osmfilter $o5mfile $args --drop-relations > $osmfile`;
 	}
 
+	$geojson = {};
+	$geojson->{'features'} = ();
 	for($t = 0; $t < @types; $t++){
 		$ifile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".osm";
 		$ofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}."-".$types[$t].".geojson";
@@ -100,12 +114,19 @@ for($l = 0; $l < @layers; $l++){
 			$tempgeo = LoadJSON($ofile);
 			if(defined($tempgeo->{'features'})){
 				$n = @{$tempgeo->{'features'}};
-				msg("\t\t<yellow>$n<none> features\n");
-				if($t==0){
-					$geojson = $tempgeo;
-				}else{
-					push(@{$geojson->{'features'}},@{$tempgeo->{'features'}});
+				$kept = 0;
+				msg("\t\tOsmfilter: <yellow>$n<none> features\n");
+				for($f = 0; $f < $n; $f++){
+					# Simple check if item should have been kept 
+					# as sometimes osmfilter includes wrong things
+					if(shouldBeKept($tempgeo->{'features'}[$f],@{$layers[$l]{'keep'}})){
+						push(@{$geojson->{'features'}},$tempgeo->{'features'}[$f]);
+						$kept++;
+					}
 				}
+				msg("\t\tValid: <yellow>$kept<none> features\n");
+				# Add all in one go
+				#push(@{$geojson->{'features'}},@{$tempgeo->{'features'}});
 			}
 			`rm $ofile`;
 		}else{
@@ -114,7 +135,6 @@ for($l = 0; $l < @layers; $l++){
 	}
 	
 	$n = @{$geojson->{'features'}};
-
 	$data = {};
 
 	# Loop over all features and process them
@@ -129,6 +149,11 @@ for($l = 0; $l < @layers; $l++){
 
 		@coord = getFirstPoint($geojson->{'features'}[$f]);
 		$cn = @coord;
+#		if(defined($geojson->{'features'}[$f]{'properties'}{"name"}) && $geojson->{'features'}[$f]{'properties'}{"name"} eq "Hope & Anchor" && defined($geojson->{'features'}[$f]{'properties'}{"other_tags"}{"addr:street"}) && $geojson->{'features'}[$f]{'properties'}{"other_tags"}{"addr:street"} eq "Lower High Street"){
+#			print Dumper $geojson->{'features'}[$f]{'properties'};
+#			print Dumper @coord;
+#			exit;
+#		}
 		if(@coord==2){
 			$id = getFeature($f,$json->{'constituencies'}{'id'},$coord[0],$coord[1],@{$constituencies->{'features'}});
 			if($id){
@@ -214,6 +239,24 @@ sub ParseJSON {
 	};
 	if($@){ error("\tInvalid output: $str\n"); }
 	return $json;
+}
+
+sub shouldBeKept {
+	my $feature = shift;
+	my @keep = @_;
+	my $match = 0;
+	my ($k,$key,$value);
+
+	#print Dumper $feature->{'properties'};
+
+	for($k = 0; $k < @keep; $k++){
+		($key,$value) = split(/=/,$keep[$k]);
+		if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
+			$match++;
+		}
+		#print "$key = $value\n";
+	}
+	return ($match > 0);
 }
 
 sub LoadJSON {
@@ -582,50 +625,37 @@ sub withinPolygon {
 	return 0;
 }
 
+sub getBounds {
+	my $bounds = shift;
+	my @features = @_;
+	my ($i,$values,$n);
+	$n = @features;
+	$values = 0;
+	for($i = 0; $i < @features; $i++){
+		if(ref($features[$i]) eq "ARRAY"){	
+			$bounds = getBounds($bounds,@{$features[$i]});
+		}else{
+			$values++;
+		}
+	}
+	if($values==2){
+		if($features[0] < $bounds->{'lon'}{'min'}){ $bounds->{'lon'}{'min'} = $features[0]; }
+		if($features[0] > $bounds->{'lon'}{'max'}){ $bounds->{'lon'}{'max'} = $features[0]; }
+		if($features[1] < $bounds->{'lat'}{'min'}){ $bounds->{'lat'}{'min'} = $features[1]; }
+		if($features[1] > $bounds->{'lat'}{'max'}){ $bounds->{'lat'}{'max'} = $features[1]; }
+	}
+	return $bounds;
+}
+
 sub addBoundingBoxes {
 	my $geojson = shift;
 	my $nf = @{$geojson->{'features'}};
-	my ($f,$minlat,$maxlat,$minlon,$maxlon,$n,$p);
+	my ($f,$minlat,$maxlat,$minlon,$maxlon,$n,$p,$bounds);
 	# Loop over features and add rough bounding box
 	for($f = 0; $f < $nf; $f++){
-		$minlat = 90;
-		$maxlat = -90;
-		$minlon = 180;
-		$maxlon = -180;
-		if($geojson->{'features'}[$f]->{'geometry'}->{'type'} eq "Polygon"){
-			($minlat,$maxlat,$minlon,$maxlon) = getBBox($minlat,$maxlat,$minlon,$maxlon,@{$geojson->{'features'}[$f]->{'geometry'}->{'coordinates'}});
-			# Set the bounding box
-			$geojson->{'features'}[$f]->{'geometry'}{'bbox'} = {'lat'=>{'min'=>$minlat,'max'=>$maxlat},'lon'=>{'min'=>$minlon,'max'=>$maxlon}};
-		}elsif($geojson->{'features'}[$f]->{'geometry'}->{'type'} eq "MultiPolygon"){
-			$n = @{$geojson->{'features'}[$f]->{'geometry'}->{'coordinates'}};
-			for($p = 0; $p < $n; $p++){
-				($minlat,$maxlat,$minlon,$maxlon) = getBBox($minlat,$maxlat,$minlon,$maxlon,@{$geojson->{'features'}[$f]->{'geometry'}->{'coordinates'}[$p]});
-			}
-			# Set the bounding box
-			$geojson->{'features'}[$f]->{'geometry'}{'bbox'} = {'lat'=>{'min'=>$minlat,'max'=>$maxlat},'lon'=>{'min'=>$minlon,'max'=>$maxlon}};
-		}else{
-			#print "ERROR: Unknown geometry type $features[$f]->{'geometry'}->{'type'}\n";
-		}
-
+		$bounds = getBounds({"lat"=>{"min"=>90,"max"=>-90},"lon"=>{"min"=>180,"max"=>-180}},$geojson->{'features'}[$f]{'geometry'}{'coordinates'});
+		$geojson->{'features'}[$f]->{'geometry'}{'bbox'} = $bounds;
 	}
 	return $geojson;
-}
-
-sub getBBox {
-	my @gs = @_;
-	my ($minlat,$maxlat,$minlon,$maxlon,$n,$i);
-	$minlat = shift(@gs);
-	$maxlat = shift(@gs);
-	$minlon = shift(@gs);
-	$maxlon = shift(@gs);
-	$n = @{$gs[0]};
-
-	for($i = 0; $i < $n; $i++){
-		if($gs[0][$i][0] < $minlon){ $minlon = $gs[0][$i][0]; }
-		if($gs[0][$i][0] > $maxlon){ $maxlon = $gs[0][$i][0]; }
-		if($gs[0][$i][1] < $minlat){ $minlat = $gs[0][$i][1]; }
-		if($gs[0][$i][1] > $maxlat){ $maxlat = $gs[0][$i][1]; }
-	}
-	return ($minlat,$maxlat,$minlon,$maxlon);
 }
 

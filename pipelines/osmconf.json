@@ -11,11 +11,11 @@
 	"precision": 0.00001,
 	"layers": [{
 		"id": "postoffices",
-		"keep": "amenity=post_office",
+		"keep": ["amenity=post_office"],
 		"output": "../src/themes/society/post-offices/_data/release/postoffices.csv"
 	},{
 		"id": "pubs",
-		"keep": "amenity=bar or amenity=pub",
+		"keep": ["amenity=bar","amenity=pub"],
 		"output": "../src/themes/society/pubs/_data/release/pubs.csv"
 	}]
 }
