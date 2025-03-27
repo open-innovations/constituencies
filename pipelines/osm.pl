@@ -21,7 +21,7 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 
 
-my ($hexjson,$json,$l,$t,@types,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$args,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept);
+my ($hexjson,$json,$l,$t,@types,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$args,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -33,47 +33,42 @@ $hexjson = LoadJSON($basedir.$json->{'hexjson'});
 $osmconf = $basedir."osmconf.ini";
 $rawdir = $basedir.$json->{'working'};
 $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
-$o5mfile = $rawdir.$json->{'prefix'}.".o5m";
 
 # Get the constituencies
 # Originally from https://geoportal.statistics.gov.uk/datasets/e489d4e5fe9f4f9caa6af161da5442af_0/explore then reduced with MapShaper
 msg("Loading constituencies and finding bounding boxes\n");
 $constituencies = addBoundingBoxes(LoadJSON($rawdir.$json->{'constituencies'}{'file'}));
 
-
 # Create a progress bar
 $progress = OpenInnovations::ProgressBar->new();
 $progress->len(100);
 
-# Make sure we have the o5m file
-if(!-e $o5mfile){
-	if(!-e $pbffile){
-		msg("Downloading PBF (may take some time)\n");
-		`wget -O $pbffile "$json->{'pbf'}"`;
-	}
-	msg("Converting to <cyan>$o5mfile<none> (may take some time)\n");
-	`osmconvert $pbffile -o=$o5mfile`;
+# Make sure we have the PBF file
+if(!-e $pbffile){
+	msg("Downloading PBF (may take some time)\n");
+	`wget -O $pbffile "$json->{'pbf'}"`;
 }
 
 # Create a YYYY-MM date from the PBF file last-modified date
 $dt = strftime("%Y-%m", localtime((stat($pbffile))[9]));
 
-@types = @{$json->{'types'}};
 @layers = @{$json->{'layers'}};
 
 for($l = 0; $l < @layers; $l++){
 
-	msg("Processing layer <yellow>$layers[$l]{'id'}<none>:\n");
+	msg("<green>$layers[$l]{'id'}<none>:\n");
 
 	$data = {};
 
-	$osmfile = $rawdir.$json->{'prefix'}."-$layers[$l]{'id'}.osm";
+	$osmfile = $rawdir.$json->{'prefix'}."-$layers[$l]{'id'}.osm.pbf";
+	$geofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".geojson";
+
 	$update = 0;
 	if(!-e $osmfile || -s $osmfile==0){
 		$update = 1;
 	}else{
 		
-		if((stat($osmfile))[9] < (stat($o5mfile))[9]){
+		if((stat($osmfile))[9] < (stat($pbffile))[9]){
 			$update = 1;
 			# Remove the old file if it exists
 			if(-e $osmfile){ `rm $osmfile`; }
@@ -81,98 +76,53 @@ for($l = 0; $l < @layers; $l++){
 	}
 
 	if($update){
-		$args = "";
-		if(defined($layers[$l]{'keep'})){
-			if(ref($layers[$l]{'keep'}) eq "STRING"){
-				$args .= ($args ? " ":"")."--keep=\"$layers[$l]{'keep'}\"";
-			}elsif(ref($layers[$l]{'keep'}) eq "ARRAY"){
-				$args .= ($args ? " ":"")."--keep=\"";
-				for(my $k = 0; $k < @{$layers[$l]{'keep'}}; $k++){
-					$args .= ($k > 0 ? " or ":"").$layers[$l]{'keep'}[$k];
-				}
-				$args .= "\"";
-			}
-		}
-		if(defined($layers[$l]{'drop'}) && $layers[$l]{'drop'}){
-			$args .= ($args ? " ":"")."--drop=\"$layers[$l]{'drop'}\"";
-		}
-		msg("\tFiltering to <cyan>$o5mfile<none> (may take some time)\n");
-		# Filter the o5m file using the keep/drop layers and ignoring dependencies
-		# (Usually all objects which are used by an object which is included will be kept in the data as well)
-		`osmfilter $o5mfile $args --drop-relations > $osmfile`;
-	}
 
-	$geojson = {};
-	$geojson->{'features'} = ();
-	for($t = 0; $t < @types; $t++){
-		$ifile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".osm";
-		$ofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}."-".$types[$t].".geojson";
-		if(-e $ifile){
-			msg("\t<green>$types[$t]<none>:\n");
-			`ogr2ogr -overwrite --config OSM_CONFIG_FILE $osmconf -skipfailures -f GeoJSON $ofile $ifile $types[$t] 2>&1`;
-
-			$tempgeo = LoadJSON($ofile);
-			if(defined($tempgeo->{'features'})){
-				$n = @{$tempgeo->{'features'}};
-				$kept = 0;
-				msg("\t\tOsmfilter: <yellow>$n<none> features\n");
-				for($f = 0; $f < $n; $f++){
-					# Simple check if item should have been kept 
-					# as sometimes osmfilter includes wrong things
-					if(shouldBeKept($tempgeo->{'features'}[$f],@{$layers[$l]{'keep'}})){
-						push(@{$geojson->{'features'}},$tempgeo->{'features'}[$f]);
-						$kept++;
-					}
-				}
-				msg("\t\tValid: <yellow>$kept<none> features\n");
-				# Add all in one go
-				#push(@{$geojson->{'features'}},@{$tempgeo->{'features'}});
-			}
-			`rm $ofile`;
+		$args = $layers[$l]{'keep'}||"";
+		if($args){
+			`osmium tags-filter --overwrite -o $osmfile $pbffile /$args`;
 		}else{
-			warning("File <cyan>$ifile<none> doesn't exist for <yellow>$layers[$l]{'id'}<none> / <yellow>$types[$t]<none>\n");
+			error("No keep types provided\n");
+			exit;
 		}
 	}
-	
+
+	msg("\tCreate GeoJSON version <cyan>$geofile<none>\n");
+	`osmium export $osmfile --overwrite -o $geofile`;
+	$geojson = LoadJSON($geofile);
+
 	$n = @{$geojson->{'features'}};
 	$data = {};
 
 	# Loop over all features and process them
 	msg("\tProcessing features\n");
 	$progress->max($n);
+	$count = 0;
 	for($f = 0; $f < $n; $f++){
-		if(defined($geojson->{'features'}[$f]{'properties'}{'other_tags'})){
-			$geojson->{'features'}[$f]{'properties'}{'other_tags'} =~ s/\=\>/\:/g;
-			$geojson->{'features'}[$f]{'properties'}{'other_tags'} =~ s/[\n\r]+/\\n/g;
-			$geojson->{'features'}[$f]{'properties'}{'other_tags'} = ParseJSON("{".$geojson->{'features'}[$f]{'properties'}{'other_tags'}."}");
-		}
-
-		@coord = getFirstPoint($geojson->{'features'}[$f]);
-		$cn = @coord;
-#		if(defined($geojson->{'features'}[$f]{'properties'}{"name"}) && $geojson->{'features'}[$f]{'properties'}{"name"} eq "Hope & Anchor" && defined($geojson->{'features'}[$f]{'properties'}{"other_tags"}{"addr:street"}) && $geojson->{'features'}[$f]{'properties'}{"other_tags"}{"addr:street"} eq "Lower High Street"){
-#			print Dumper $geojson->{'features'}[$f]{'properties'};
-#			print Dumper @coord;
-#			exit;
-#		}
-		if(@coord==2){
-			$id = getFeature($f,$json->{'constituencies'}{'id'},$coord[0],$coord[1],@{$constituencies->{'features'}});
-			if($id){
-				$geojson->{'features'}[$f]{'properties'}{$json->{'constituencies'}{'id'}} = $id;
-				if(!defined($data->{$id})){
-					$data->{$id} = {};
-					$data->{$id}{$json->{'constituencies'}{'id'}} = $id;
+		if($geojson->{'features'}[$f]{'geometry'}{'type'} ne "LineString"){
+			@coord = getFirstPoint($geojson->{'features'}[$f]);
+			$cn = @coord;
+			if(@coord==2){
+				$id = getFeature($f,$json->{'constituencies'}{'id'},$coord[0],$coord[1],@{$constituencies->{'features'}});
+				if($id){
+					$geojson->{'features'}[$f]{'properties'}{$json->{'constituencies'}{'id'}} = $id;
+					if(!defined($data->{$id})){
+						$data->{$id} = {};
+						$data->{$id}{$json->{'constituencies'}{'id'}} = $id;
+					}
+					$data->{$id}{$dt}++;
+				}else{
+					warning("\tNo constituency found for $f ($coord[1]/$coord[0]) / ".($geojson->{'features'}[$f]{'geometry'}{'type'})." / ".($geojson->{'features'}[$f]{'properties'}{'name'}||"")."\n");
 				}
-				$data->{$id}{$dt}++;
+				$count++;
 			}else{
-				warning("No constituency found for $f ($coord[1]/$coord[0]) / ".($geojson->{'features'}[$f]{'geometry'}{'type'})." / ".($geojson->{'features'}[$f]{'properties'}{'name'}||"")." / ".($geojson->{'features'}[$f]{'properties'}{'osm_id'}||$geojson->{'features'}[$f]{'properties'}{'osm_way_id'}||"")."\n");
+				warning("No coordinates found\n");
+				print Dumper $geojson->{'features'}[$f];
 			}
-		}else{
-			warning("No coordinates found\n");
-			print Dumper $geojson->{'features'}[$f];
 		}
 		$progress->update($f,"\t");
 	}
 	$progress->update($n,"\t");
+	msg("\tIdentified constituencies for <yellow>$count<none> features\n");
 
 	# Save the combined GeoJSON
 	$geofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".geojson";
@@ -319,7 +269,7 @@ sub LoadCSVSimple {
 		always_quote => 1,        # to keep your numbers quoted
 	});
 	$n = 0;
-	msg("Processing CSV from <cyan>$file<none>\n");
+	msg("\tProcessing CSV from <cyan>$file<none>\n");
 	open(my $fh,"<:utf8",$file);
 	while ($row = $csv->getline( $fh )) {
 		# Check for BOM
@@ -424,7 +374,7 @@ sub AugmentCSV {
 		$csv .= "\n";
 	}
 
-	msg("Updated <cyan>$file<none>\n");
+	msg("\tUpdated <cyan>$file<none>\n");
 	open($fh,">",$file);
 	print $fh $csv;
 	close($fh);
