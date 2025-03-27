@@ -1,0 +1,21 @@
+{
+	"pbf": "https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf",
+	"working": "../raw-data/osm/",
+	"prefix": "united-kingdom-latest",
+	"constituencies": {
+		"file": "Westminster_Parliamentary_Constituencies_July_2024_Boundaries_UK_BFE.geojson",
+		"id": "PCON24CD"
+	},
+	"hexjson": "../src/_data/hexjson/uk-constituencies-2024.hexjson",
+	"types": ["points","lines","multilinestrings","multipolygons","other_relations"],
+	"precision": 0.00001,
+	"layers": [{
+		"id": "postoffices",
+		"keep": "amenity=post_office",
+		"output": "../src/themes/society/post-offices/_data/release/postoffices.csv"
+	},{
+		"id": "pubs",
+		"keep": "amenity=bar or amenity=pub",
+		"output": "../src/themes/society/pubs/_data/release/pubs.csv"
+	}]
+}
