@@ -1,0 +1,12 @@
+md5: c08a1263d0fbd7f8cb49d613afbd0fb6
+frozen: true
+deps:
+- checksum: '242141033660018043631838554108743658578'
+  size: 101106249
+  hash: md5
+  path: https://naptan.api.dft.gov.uk/v1/access-nodes?dataFormat=CSV
+outs:
+- md5: ef0150189f8d89fbbccbac2f6700b847
+  size: 101106249
+  hash: md5
+  path: stops.csv
