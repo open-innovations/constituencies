@@ -9,8 +9,10 @@ osgridconverter = "*"
 jupyter = "*"
 notebook = "*"
 ipykernel = "*"
-shapely = "*"
 odfpy = "*"
 appnope = "*"
+geopandas = "*"
+bng-latlon = "*"
+shapely = "*"
 
 [dev-packages]
