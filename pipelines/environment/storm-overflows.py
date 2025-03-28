@@ -8,9 +8,10 @@ import json
 from OSGridConverter import grid2latlong
 from shapely.geometry import shape, Point
 from shapely.validation import make_valid
+import datetime
 
-def df_grid2latlong(opts={}):
 
+def df_create(opts={}):
     file = opts['base']+opts['data']['xls'];
 
     print('Read ',file)
@@ -22,21 +23,24 @@ def df_grid2latlong(opts={}):
         data = pd.read_excel(file, sheet_name=name, keep_default_na=True, na_values='', skiprows=opts['data']['skiprows'])
         data_sets.append(data)
     df = pd.concat(data_sets,ignore_index=True)
+    return df
+    
+def df_grid2latlong(df,gridref):
 
-    if("gridref" in opts['data']):
+    if(gridref):
         
-        df[opts['data']['gridref']] = df[opts['data']['gridref']].str.replace('.*([A-Z]{2}\s?[0-9]{5}\s?[0-9]{5}).*', lambda x: x[1], regex=True)
+        df[gridref] = df[gridref].str.replace('.*([A-Z]{2}\s?[0-9]{5}\s?[0-9]{5}).*', lambda x: x[1], regex=True)
 
         df["lon"] = np.nan
         df["lat"] = np.nan
 
         for i in range(len(df)):
             try:
-                l = grid2latlong(df[opts['data']['gridref']][i])
+                l = grid2latlong(df[gridref][i])
                 df.at[i,'lon'] = l.longitude
                 df.at[i,'lat'] = l.latitude
             except:
-                print("Bad gridref on row ",i,df[opts['data']['gridref']][i])
+                print("Bad gridref on row ",i,df[gridref][i])
 
     df.columns = df.columns.str.replace('\n',' ')
     return df
@@ -55,6 +59,10 @@ def df_latlong2constituency(df, opts={}):
         opts['name'] = 'PCON24NM'
     if not 'geojson' in opts:
         opts['geojson'] = basedir+'../../src/_data/geojson/constituencies-2024.geojson'
+    if not 'countedspills' in opts:
+        opts['countedspills'] = 'Counted spills using 12-24h count method'
+    if not 'totalduration' in opts:
+        opts['totalduration'] = 'Total Duration (hrs) all spills prior to processing through 12-24h count method'
 
     # load the geojson
     with open(opts['geojson']) as f:
@@ -111,7 +119,7 @@ def df_latlong2constituency(df, opts={}):
         print("Can't save file "+basedir+'../../raw-data/storm_overflows_latlong-'+opts['year']+'.csv')
 
     # Limit the columns
-    df = df.loc[:, ['Total Duration (hrs) all spills prior to processing through 12-24h count method', 'Counted spills using 12-24h count method', 'PCON24CD', 'PCON24NM']]
+    df = df.loc[:, [opts['totalduration'], opts['countedspills'], 'PCON24CD', 'PCON24NM']]
     # remove non-numeric entries
     df.replace(['#N/a', 'N/a', '-'], '', inplace=True)
     #df.to_csv('../../src/_data/sources/environment/storm_overflows_by_constituency.csv')
@@ -140,6 +148,18 @@ def save_tidy_csv(df, directory, filename, with_index=True):
     text_file.write(csv)
     text_file.close()
 
+def to_decimal_hours(dt):
+    if isinstance(dt, str):
+        if dt is None:
+            return 0
+        if "-" not in dt:
+            dt = "1899-12-31 "+dt
+        dt = datetime.datetime.strptime(dt, "%Y-%m-%d %H:%M:%S")
+    if isinstance(dt,datetime.time):
+        dt = datetime.datetime.combine(datetime.date(1899, 12, 31), dt)
+    duration = dt - datetime.datetime(1899, 12, 31, 0, 0, 0);
+    return (duration.total_seconds() / 3600)
+
 def storm_overflows():
 
     basedir = getBaseDir()
@@ -151,35 +171,63 @@ def storm_overflows():
             "xls":"../../raw-data/EDM_2022_Storm_Overflow_Annual_Return/EDM 2022 Storm Overflow Annual Return - all water and sewerage companies.xlsx",
             "gridref": "Outlet Discharge NGR\n(EA Consents Database)",
             "name": "Site Name\n(EA Consents Database)",
+            "totalduration": "Total Duration (hrs) all spills prior to processing through 12-24h count method",
+            "countedspills": "Counted spills using 12-24h count method",
             "skiprows": 1
         },
         "2023":{
             "xls":"../../raw-data/EDM_2023_Storm_Overflow_Annual_Return/EDM 2023 Storm Overflow Annual Return - all water and sewerage companies.xlsx",
             "gridref": "Outlet Discharge NGR\n(EA Consents Database)",
             "name": "Site Name\n(EA Consents Database)",
+            "totalduration": "Total Duration (hrs) all spills prior to processing through 12-24h count method",
+            "countedspills": "Counted spills using 12-24h count method",
+            "skiprows": 1
+        },
+        "2024":{
+            "xls":"../../raw-data/EDM_2024_Storm_Overflow_Annual_Return/EDM 2024 Storm Overflow Annual Return - all water and sewerage companies.xlsx",
+            "gridref": "Outlet Discharge NGR\n(EA Consents Database)",
+            "name": "Site Name\n(WaSC operational)\n[optional]",
+            "totalduration": "Total Duration (hh:mm:ss) all spills prior to processing through 12-24h count method",
+            "countedspills": "Counted spills using 12-24h count method",
             "skiprows": 1
         }
     }
 
+    header_total_duration = 'Total Duration (hrs) all spills prior to processing through 12-24h count method'
+    header_counted_spills = 'Counted spills using 12-24h count method'
     data_sets = []
     for y in years:
         print("Processing year "+y)
+
+        df = df_create({'base':basedir,'data':years[y]});
+
         #convert the OSgrid to latlong coords
-        df = df_grid2latlong({'base':basedir,'data':years[y]})
+        df = df_grid2latlong(df,years[y]['gridref'])
+
+        # Move columns to standard name
+        df[header_total_duration] =  df[years[y]['totalduration']]
+        df[header_counted_spills] =  df[years[y]['countedspills']]
+
+        # Need to convert 2024's not-actually-hh::mm:ss date format into decimal hours
+        if(years[y]['totalduration'] == 'Total Duration (hh:mm:ss) all spills prior to processing through 12-24h count method'):
+            # Fix empty values
+            df[header_total_duration].fillna("00:00:00", inplace = True)
+            for index, row in df.iterrows():
+                df.at[index,header_total_duration] = to_decimal_hours(df.at[index,header_total_duration])
 
         # convert latlong to a constituency using shapely to check polygons
-        df = df_latlong2constituency(df,{'year':y,'key':'PCON24CD','geojson':basedir+'../../src/_data/geojson/constituencies-2024.geojson'})
+        df = df_latlong2constituency(df,{'year':y,'key':'PCON24CD','geojson':basedir+'../../src/_data/geojson/constituencies-2024.geojson','totalduration':header_total_duration,'countedspills':header_counted_spills})
 
-        df['Total Duration (hrs) all spills prior to processing through 12-24h count method'] = pd.to_numeric(df['Total Duration (hrs) all spills prior to processing through 12-24h count method'], errors='coerce')
-        total_duration = df.groupby(['PCON24CD', 'PCON24NM'])['Total Duration (hrs) all spills prior to processing through 12-24h count method'].sum().reset_index()
-        df['Counted spills using 12-24h count method'] = pd.to_numeric(df['Counted spills using 12-24h count method'], errors='coerce')
-        total_spills = df.groupby(['PCON24CD', 'PCON24NM'])['Counted spills using 12-24h count method'].sum().reset_index()
+        df[header_total_duration] = pd.to_numeric(df[header_total_duration], errors='coerce')
+        total_duration = df.groupby(['PCON24CD', 'PCON24NM'])[header_total_duration].sum().reset_index()
+        df[header_counted_spills] = pd.to_numeric(df[header_counted_spills], errors='coerce')
+        total_spills = df.groupby(['PCON24CD', 'PCON24NM'])[header_counted_spills].sum().reset_index()
 
         merged_df = total_spills.merge(total_duration, how='inner')
         
         # Round columns
-        merged_df['Total Duration (hrs) all spills prior to processing through 12-24h count method'] = merged_df['Total Duration (hrs) all spills prior to processing through 12-24h count method'].round(2)
-        merged_df['Counted spills using 12-24h count method'] = merged_df['Counted spills using 12-24h count method'].round(0).astype(int)
+        merged_df[header_total_duration] = merged_df[header_total_duration].round(2)
+        merged_df[header_counted_spills] = merged_df[header_counted_spills].round(0).astype(int)
 
         # Add a column with the year
         merged_df["Year"] = y
@@ -190,7 +238,7 @@ def storm_overflows():
     # Join all the data_sets
     full = pd.concat(data_sets,ignore_index=True)
 
-    pivotted = full.pivot_table(index=['PCON24CD'], columns=['Year'], values=['Counted spills using 12-24h count method','Total Duration (hrs) all spills prior to processing through 12-24h count method'])
+    pivotted = full.pivot_table(index=['PCON24CD'], columns=['Year'], values=[header_counted_spills,header_total_duration])
     
     # Add a column at the start which is a duplicate of the index (so we can not print the index column)
     pivotted.insert(0,'PCON24CD',pivotted.index)
