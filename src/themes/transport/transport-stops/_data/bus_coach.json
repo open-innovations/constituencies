@@ -34,5 +34,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ BCT | toLocaleString }}</strong>"	}
+		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ BCT | toLocaleString }}</strong>",
+		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
+	}
 }

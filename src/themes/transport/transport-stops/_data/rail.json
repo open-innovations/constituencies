@@ -31,5 +31,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stations: <strong>{{ RLY | toLocaleString }}</strong>"	}
+		"tooltip": "<strong>{{ n }}</strong><br />Stations: <strong>{{ RLY | toLocaleString }}</strong>",
+		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>" 
+	}
 }
