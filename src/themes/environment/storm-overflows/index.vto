@@ -2,7 +2,7 @@
 title: Storm overflows (England)
 theme: environment
 created: 2023-08-22T17:44
-updated: 2024-07-24T18:35
+updated: 2025-03-28T11:30
 description: |
   Constituency-level data on sewage overflows.
 keywords: [water,storm,overflow,spill,sewage]
@@ -11,7 +11,7 @@ api:
   - spills
 ---
 
-<p>The Water and Sewerage Companies provide data to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations. We took the OS Grid Reference for every storm overflow event reported in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring datasets</a> (2022 and 2023) and found the corresponding Parliamentary constituency to create the visualisations for <a href="#spills">total number of spills</a> and <a href="#duration">total duration in hours</a>.</p>
+<p>The Water and Sewerage Companies provide data to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations. We took the OS Grid Reference for every storm overflow event reported in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring datasets</a> (2022, 2023 and 2024) and found the corresponding Parliamentary constituency to create the visualisations for <a href="#spills">total number of spills</a> and <a href="#duration">total duration in hours</a>.</p>
 
 <section>
 	<h2>Total spills{{ comp.anchor({ 'ref': 'spills'}) }}</h2>
@@ -24,8 +24,9 @@ api:
 	<h2>Total duration (hours){{ comp.anchor({ 'ref': 'duration'}) }}</h2>
 	{{ include "./embeds/total-duration.vto" }}
 	<a href="{{ url + "embeds/total-duration" }}" class="embed">Standalone version of total duration (hours)</a>
-	<p>This visualisation shows the result of adding up the values in the <code>Total Duration (hrs) all spills prior to processing through 12-24h count method</code> column by constituency calculated from the OS Grid Reference.</p>
+	<p>This visualisation shows the result of adding up the values in the <code>Total Duration (hrs) all spills prior to processing through 12-24h count method</code> or <code>Total Duration (hh:mm:ss) all spills prior to processing through 12-24h count method</code> columns by constituency calculated from the OS Grid Reference.</p>
 </section>
 
 <h2>Notes</h2>
 <p>The totals are similar but not-quite-the-same-as those shown at <a href="https://top-of-the-poops.org/">Top of the Poops</a>. We haven't been able to determine why there are differences.</p>
+<p>The 2024 data has a column <code>Total Duration (hh:mm:ss) all spills prior to processing through 12-24h count method</code> which should be in "hh:mm:ss" format but which has been converted to a date string by Excel i.e. a date since 1900. As Excel incorrectly thinks 1900 was a leap year, this means that long duration spills (that Excel thinks extend beyond the end of February) may be wrong by 24 hours.</p>
