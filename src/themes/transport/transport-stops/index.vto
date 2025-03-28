@@ -6,8 +6,10 @@ updated: 2025-03-27T18:45
 description: |
   Constituency level data on the location of public transport access points.
 keywords: [bus,tram,metro,rail,services,train,public,stops,transit,transport,coach]
-#api:
-#  - stops
+api:
+  - bus_coach
+  - tram_metro
+  - rail
 ---
 <p>
 The <a href="https://beta-naptan.dft.gov.uk/">National Public Transport Access Nodes</a> (NaPTAN) dataset provides the locations and details for uniquely identifying all public transport access points in England, Scotland and Wales.
@@ -35,7 +37,7 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "tramMetro"
+	"config": "tram_metro"
 }) }}
 
 <h3>Train stations</h3>
