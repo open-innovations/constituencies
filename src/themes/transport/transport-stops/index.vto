@@ -8,8 +8,11 @@ description: |
 keywords: [bus,tram,metro,rail,services,train,public,stops,transit,transport,coach]
 api:
   - bus_coach
+  - bct_density
   - tram_metro
+  - met_density
   - rail
+  - rly_density
 ---
 <p>
 The <a href="https://beta-naptan.dft.gov.uk/">National Public Transport Access Nodes</a> (NaPTAN) dataset provides the locations and details for uniquely identifying all public transport access points in England, Scotland and Wales.
@@ -32,6 +35,13 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 	"config": "bus_coach"
 }) }}
 
+<h3>On street bus & coach stops per square kilometre</h3>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "bct_density"
+}) }}
+
 <h3>Tram & metro stops</h3>
 <p>Please see the notes for <a href="#tram_metro">how we count the number of stops</a>.</p>
 {{ comp.wrapper({
@@ -40,12 +50,26 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 	"config": "tram_metro"
 }) }}
 
+<h3>Tram & metro stops per square kilometre</h3>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "met_density"
+}) }}
+
 <h3>Train stations</h3>
 <p>Please see the notes for <a href="#tram_metro">how we count the number of stops</a>.</p>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
 	"config": "rail"
+}) }}
+
+<h3>Train stations per square kilometre</h3>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rly_density"
 }) }}
 
 {{# Commenting out for now as not much data on taxi ranks #}}

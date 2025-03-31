@@ -1,0 +1,40 @@
+{
+	"title": "Train stations",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ RLY_density }})"
+		}],
+		"value": "RLY_density",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 0.4,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.4,
+				"label": "> 0.4 / square km"
+			},{
+				"value": 0.3,
+				"label": "0.3 / square km"
+			},{
+				"value": 0.2,
+				"label": "0.2 / square km"
+			},{
+				"value": 0.1,
+				"label": "0.1 / square km"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stations / square km: <strong>{{ RLY_density | toLocaleString }}</strong>",
+		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>" 
+	}
+}

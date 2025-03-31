@@ -1,0 +1,37 @@
+{
+	"title": "Tram and metro stops",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ MET_density }})"
+		}],
+		"value": "MET_density",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 0.75,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 0.75,
+				"label": "0.75 / square km"
+			},{
+				"value": 0.5,
+				"label": "0.5 / square km"
+			},{
+				"value": 0.25,
+				"label": "0.25 / square km"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ MET_density | toLocaleString }}</strong>",
+		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
+	}
+}

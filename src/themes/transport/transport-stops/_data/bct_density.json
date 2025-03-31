@@ -1,0 +1,37 @@
+{
+	"title": "Bus stops",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.all",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ BCT_density }})"
+		}],
+		"value": "BCT_density",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 12,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 12,
+				"label": "12+ / square km"
+			},{
+				"value": 6,
+				"label": "6 / square km"
+			},{
+				"value": 0,
+				"label": "0 / square km"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ BCT_density | toLocaleString }}</strong>",
+		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
+	}
+}
