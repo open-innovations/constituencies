@@ -11,25 +11,22 @@
 		"value": "2025-03",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 250,
+		"max": 400,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 250,
-				"label": "250+"
+				"value": 400,
+				"label": "400+"
+			},{
+				"value": 300,
+				"label": "300"
 			},{
 				"value": 200,
 				"label": "200"
 			},{
-				"value": 150,
-				"label": "150"
-			},{
 				"value": 100,
 				"label": "100"
-			},{
-				"value": 50,
-				"label": "50"
 			},{
 				"value": 0,
 				"label": "0"
