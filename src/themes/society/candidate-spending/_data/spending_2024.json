@@ -1,0 +1,42 @@
+{
+	"title": "Candidate spending: 2024",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.UKPGE_candidate_spending_2024",
+		"value": "total",
+		"matchKey": "Constituency ID",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100000,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100000,
+				"label": "£100k"
+			},{
+				"value": 80000,
+				"label": "£80k"
+			},{
+				"value": 60000,
+				"label": "£60k"
+			},{
+				"value": 40000,
+				"label": "£40k"
+			},{
+				"value": 20000,
+				"label": "£20k"
+			},{
+				"value": 0,
+				"label": "£0k"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "n"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Total: <strong>£{{ total | toLocaleString() }}</strong><br />{{ candidates }}",
+		"attribution": "Data: <a href=\"https://www.electoralcommission.org.uk/political-registration-and-regulation/financial-reporting/campaign-spending-candidates/2024-uk-parliamentary-general-election-candidate-spending\">2024 UK Parliamentary general election candidate spending</a> (Electoral Commission)."
+	}
+}

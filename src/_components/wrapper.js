@@ -32,22 +32,32 @@ export default function (input) {
 		// Are we referencing local data in a release sub-directory?
 		if(conf.data.indexOf('release.')==0){
 			let release = conf.data.substr(8);
-			conf.data = input.page.data.release[release];
+			if(conf.dataRows){
+				conf.data = conf.dataRows;
+			}else{
+				conf.data = input.page.data.release[release];
+			}
 			conf.attribution += '<div class="menu-item CSV"><a href="' + release.replace(/\./g,"\/") + ".csv" + '">CSV</a></div>'
 		}
 		// If we are referencing local data (without "." separators),
 		// we need to pass in "page" to the component.
-		if(typeof conf.data==="string" && conf.data.indexOf('.') < 0){
-			if(input.page){
-				if(!(conf.data in input.page.data)){
-					throw new Error("Unable to find "+conf.data+" in page");
+		if(conf.dataRows){
+			conf.data = conf.dataRows;
+		}else{
+			if(typeof conf.data==="string" && conf.data.indexOf('.') < 0){
+				if(input.page){
+					if(!(conf.data in input.page.data)){
+						throw new Error("Unable to find "+conf.data+" in page");
+					}else{
+						conf.data = input.page.data[conf.data];
+					} 
 				}else{
-					conf.data = input.page.data[conf.data];
-				} 
-			}else{
-				throw new Error("Data is set to \""+conf.data+"\" but no \"page\" data is provided.");
+					throw new Error("Data is set to \""+conf.data+"\" but no \"page\" data is provided.");
+				}
 			}
 		}
+	}else{
+		if(conf.dataRows) conf.data = conf.dataRows;
 	}
 	if(api.file) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
 	conf.attribution += '</div>'
