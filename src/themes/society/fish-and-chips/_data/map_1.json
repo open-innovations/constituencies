@@ -1,9 +1,9 @@
 {
-	"title": "Pubs",
+	"title": "Fish and chip shops",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "release.pubs",
+		"data": "release.fish_and_chips",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
@@ -11,25 +11,19 @@
 		"value": "2025-03",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 250,
+		"max": 30,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 250,
-				"label": "250+"
+				"value": 30,
+				"label": "30"
 			},{
-				"value": 200,
-				"label": "200"
+				"value": 20,
+				"label": "20"
 			},{
-				"value": 150,
-				"label": "150"
-			},{
-				"value": 100,
-				"label": "100"
-			},{
-				"value": 50,
-				"label": "50"
+				"value": 10,
+				"label": "10"
 			},{
 				"value": 0,
 				"label": "0"
@@ -40,7 +34,7 @@
 				"label": "filterLabel"
 			}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-03 }}</strong>",
+        "tooltip": "<strong>{{ n }}</strong><br />Fish and chip shops: <strong>{{ 2025-03 }}</strong>",
         "attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors)."
 	}
 }

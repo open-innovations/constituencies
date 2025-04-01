@@ -1,0 +1,34 @@
+---
+title: Fish and chip shops (UK)
+theme: society
+created: 2025-04-01T13:50
+updated: 2025-04-01T13:50
+description: |
+  Fish and chip shops included in OpenStreetMap (UK).
+keywords: [fish,chips,fish and chips]
+api:
+  - map_1
+---
+
+<p>This page provides constituency-level data on the number of fish and chip shops included in <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as of March 2025.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+
+<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<p>No de-duplication has been performed. That means that post offices which are included as both points and (multi)polyons can be included more than once.</p>
+<p>Although constituencies have a broadly similar number of people, the geographic size varies hugely. So large rural constituencies may contain a greater number of post offices but people in those constituencies may have futher to go to get to a post office.</p>
+<p>The locations of post offices are broadly set by government policy. In return for its funding, the Post Office is committed to investing in the network, and maintaining around 11,500 branches with no further substantive reductions and continued accessibility for all at the national level.</p>
+<p>The Post Office is required by government to meet six "access criteria":</p>
+<ol>
+	<li>99% of the UK population to be within three miles of their nearest post office outlet</li>
+	<li>90% of the UK population to be within one mile of their nearest post office outlet</li>
+	<li>99% of the total population in deprived urban areas across the UK to be within one mile of their nearest post office outlet</li>
+	<li>95% of the total urban population across the UK to be within one mile of their nearest post office outlet</li>
+	<li>95% of the total rural population across the UK to be within three miles of their nearest post office outlet</li>
+	<li>95% of the population of every postcode district to be within six miles of their nearest post office outlet</li>
+</ol>

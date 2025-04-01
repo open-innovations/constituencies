@@ -36,7 +36,7 @@ $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
 
 # Get the constituencies
 # Originally from https://geoportal.statistics.gov.uk/datasets/e489d4e5fe9f4f9caa6af161da5442af_0/explore then reduced with MapShaper
-msg("Loading constituencies and finding bounding boxes\n");
+msg("Loading constituencies and finding bounding boxes.");
 $constituencies = addBoundingBoxes(LoadJSON($rawdir.$json->{'constituencies'}{'file'}));
 
 # Create a progress bar
@@ -54,6 +54,7 @@ $dt = strftime("%Y-%m", localtime((stat($pbffile))[9]));
 
 @layers = @{$json->{'layers'}};
 
+msg("Processing layers\n");
 for($l = 0; $l < @layers; $l++){
 
 	msg("<green>$layers[$l]{'id'}<none>:\n");
@@ -79,7 +80,7 @@ for($l = 0; $l < @layers; $l++){
 
 		$args = $layers[$l]{'keep'}||"";
 		if($args){
-			`osmium tags-filter --overwrite -o $osmfile $pbffile /$args`;
+			`osmium tags-filter --overwrite -o $osmfile $pbffile -R $args`;
 		}else{
 			error("No keep types provided\n");
 			exit;
@@ -191,24 +192,6 @@ sub ParseJSON {
 	return $json;
 }
 
-sub shouldBeKept {
-	my $feature = shift;
-	my @keep = @_;
-	my $match = 0;
-	my ($k,$key,$value);
-
-	#print Dumper $feature->{'properties'};
-
-	for($k = 0; $k < @keep; $k++){
-		($key,$value) = split(/=/,$keep[$k]);
-		if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
-			$match++;
-		}
-		#print "$key = $value\n";
-	}
-	return ($match > 0);
-}
-
 sub LoadJSON {
 	my (@files,$str,@lines,$json);
 	my $file = $_[0];
@@ -311,12 +294,37 @@ sub AugmentCSV {
 	my $file = shift;
 	my $data = shift;
 	my $key = shift;
+	my ($odata,@rows,@head,$r,$c,$rowlookup,$id,@row,$col,$csv,@extrahead,$arow,@header,@ids);
 	
-	# Should read in any existing output CSV here
-	my $odata = LoadCSVSimple($file,{'key'=>$key});
-	my @rows = @{$odata->{'rows'}};
-	my @head = @{$odata->{'head'}};
-	my ($r,$c,$rowlookup,$id,@row,$col,$csv,@extrahead);
+	if(-e $file){
+		# Should read in any existing output CSV here
+		$odata = LoadCSVSimple($file,{'key'=>$key});
+	}else{
+		# Build the data
+		$odata = {
+			'rows'=>[],
+			'head'=>[],
+			'columns'=>{}
+		};
+		@ids = sort(keys(%{$data}));
+		for($r = 0; $r < @ids; $r++){
+			if($r == 0){
+				@header = reverse(sort(keys(%{$data->{$ids[$r]}})));
+				@{$odata->{'head'}} = @header;
+			}
+			@row = ();
+			for($c = 0; $c < @{$odata->{'head'}}; $c++){
+				$row[$c] = $data->{$ids[$r]}{$odata->{'head'}[$c]};
+			}
+			@{$odata->{'rows'}[$r]} = @row;
+		}
+		for($c = 0; $c < @header; $c++){
+			$odata->{'columns'}{$header[$c]} = $c;
+		}
+	}
+
+	@rows = @{$odata->{'rows'}};
+	@head = @{$odata->{'head'}};
 	# Loop through the rows to find all the things we have by "$key"
 	for($r = 0; $r < @rows; $r++){
 		$rowlookup->{$rows[$r][$odata->{'columns'}{$key}]} = $r;
