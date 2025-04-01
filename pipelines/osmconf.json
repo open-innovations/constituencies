@@ -7,18 +7,17 @@
 		"id": "PCON24CD"
 	},
 	"hexjson": "../src/_data/hexjson/uk-constituencies-2024.hexjson",
-	"types": ["points","lines","multilinestrings","multipolygons","other_relations"],
 	"layers": [{
 		"id": "postoffices",
-		"keep": "/amenity=post_office",
+		"keep": "amenity=post_office",
 		"output": "../src/themes/society/post-offices/_data/release/postoffices.csv"
 	},{
 		"id": "pubs",
-		"keep": "/amenity=bar,pub",
+		"keep": "amenity=bar,pub",
 		"output": "../src/themes/society/pubs/_data/release/pubs.csv"
 	},{
 		"id": "fish_and_chips",
-		"keep": "/cuisine=fish_and_chips",
+		"keep": "cuisine=fish_and_chips",
 		"output": "../src/themes/society/fish-and-chips/_data/release/fish_and_chips.csv"
 	}]
 }

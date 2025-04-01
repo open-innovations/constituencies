@@ -21,7 +21,7 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 
 
-my ($hexjson,$json,$l,$t,@types,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$args,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
+my ($hexjson,$json,$l,$t,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -77,12 +77,10 @@ for($l = 0; $l < @layers; $l++){
 	}
 
 	if($update){
-
-		$args = $layers[$l]{'keep'}||"";
-		if($args){
-			`osmium tags-filter --overwrite -o $osmfile $pbffile -R $args`;
+		if($layers[$l]{'keep'}){
+			`osmium tags-filter --overwrite -o $osmfile $pbffile $layers[$l]{'keep'}`;
 		}else{
-			error("No keep types provided\n");
+			error("No keep provided\n");
 			exit;
 		}
 	}
@@ -99,7 +97,7 @@ for($l = 0; $l < @layers; $l++){
 	$progress->max($n);
 	$count = 0;
 	for($f = 0; $f < $n; $f++){
-		if($geojson->{'features'}[$f]{'geometry'}{'type'} ne "LineString"){
+		if(shouldBeKept($geojson->{'features'}[$f],$layers[$l]{'keep'})){
 			@coord = getFirstPoint($geojson->{'features'}[$f]);
 			$cn = @coord;
 			if(@coord==2){
@@ -289,6 +287,31 @@ sub LoadCSVSimple {
 	return {'rows'=>\@rows,'head'=>\@header,'columns'=>$columns};
 }
 
+sub shouldBeKept {
+	my $feature = shift;
+	my $keep = shift;
+	my ($k,$key,$value,@keepers,@values,$v,$match,$m2);
+
+	@keepers = split(" ",$keep);
+
+	$match = 0;
+	for($k = 0; $k < @keepers; $k++){
+		($key,$value) = split(/=/,$keepers[$k]);
+		@values = split(",",$value);
+		$m2 = 0;
+		for($v = 0; $v < @values; $v++){
+			$value = $values[$v];
+			if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
+				$m2++;
+			}
+		}
+		if($m2 == @keepers){
+			$match++;
+		}
+	}
+
+	return ($match == @keepers > 0);
+}
 
 sub AugmentCSV {
 	my $file = shift;
