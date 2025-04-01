@@ -17,7 +17,7 @@
 			"position": "top right",
 			"items": [{
 				"value": 1,
-				"label": ">1 / square km"
+				"label": "1+ / square km"
 			},{
 				"value": 0.75,
 				"label": "0.75 / square km"
