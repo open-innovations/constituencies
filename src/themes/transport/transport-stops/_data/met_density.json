@@ -11,19 +11,19 @@
 		"value": "MET_density",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 0.75,
+		"max": 1.8,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 0.75,
-				"label": "0.75 / square km"
+				"value": 1.8,
+				"label": "1.8+ / square km"
 			},{
-				"value": 0.5,
-				"label": "0.5 / square km"
+				"value": 1.2,
+				"label": "1.2 / square km"
 			},{
-				"value": 0.25,
-				"label": "0.25 / square km"
+				"value": 0.6,
+				"label": "0.6 / square km"
 			}]
 		},
 		"tools": {
