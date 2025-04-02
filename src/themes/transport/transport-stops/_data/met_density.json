@@ -1,5 +1,5 @@
 {
-	"title": "Tram and metro stops",
+	"title": "Tram and metro stops per square km",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
