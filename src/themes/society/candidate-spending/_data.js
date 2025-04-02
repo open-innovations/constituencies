@@ -26,12 +26,12 @@ export function buildSpending(data,matchKey){
 
 	for(r = 0; r < rows.length; r++){
 		rows[r].total = parseFloat(rows[r].total.toFixed(2));
-		str = "Name / Party / Vote share / Spending";
+		str = "<tr><th>Name (Party)</th><th>Vote share</th><th>Spending</th></tr>";
 		rows[r].candidates.sort((a, b) => (a.position - b.position));
 		for(c = 0; c < rows[r].candidates.length; c++){
-			str += (str ? "\n" : "")+(rows[r].candidates[c].name||"")+" / "+rows[r].candidates[c].party+" / "+rows[r].candidates[c].share+"% / &pound;"+(rows[r].candidates[c].total).toLocaleString();
+			str += "<tr><td>"+(rows[r].candidates[c].name||"")+" ("+rows[r].candidates[c].party+")</td><td>"+rows[r].candidates[c].share+"%</td><td>&pound;"+(rows[r].candidates[c].total).toLocaleString()+"</td></tr>";
 		}
-		rows[r].candidates = str;
+		rows[r].candidates = '<div class="oi-table"><table>'+str+"</table></div>";
 	}
 	return rows;
 }

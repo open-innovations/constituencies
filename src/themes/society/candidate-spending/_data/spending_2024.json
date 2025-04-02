@@ -8,13 +8,10 @@
 		"matchKey": "Constituency ID",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 100000,
+		"max": 80000,
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 100000,
-				"label": "£100k"
-			},{
 				"value": 80000,
 				"label": "£80k"
 			},{
