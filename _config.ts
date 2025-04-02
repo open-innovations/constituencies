@@ -11,7 +11,7 @@ import { expandGlobSync } from "lume/deps/fs.ts";
 // Importing the OI Lume charts and utilities
 import oiViz from "https://deno.land/x/oi_lume_viz@v0.16.10/mod.ts";
 import autoDependency from "https://deno.land/x/oi_lume_utils@v0.4.0/processors/auto-dependency.ts";
-import csvLoader from "https://deno.land/x/oi_lume_utils@v0.4.0/loaders/csv-loader.ts";
+import csvLoaderBasic from "./src/_lib/csv-loader-basic.ts";
 import jsonLoader from "lume/core/loaders/json.ts";
 
 
@@ -28,7 +28,7 @@ site.use(sitemap({
 
 // Register a series of extensions to be loaded by the OI CSV loader
 // https://lume.land/docs/core/loaders/
-site.loadData([".csv", ".tsv", ".dat"], csvLoader({ basic: true }));
+site.loadData([".csv", ".tsv", ".dat"], csvLoaderBasic());
 site.loadData([".geojson"], jsonLoader);
 site.loadData([".hexjson"], jsonLoader);
 
