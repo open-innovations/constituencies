@@ -10,10 +10,8 @@ api:
 
 <p>The spending by candidates in the 2024 General Election campaign.</p>
 
-
 {{ > spending_2024.config.dataRows = buildSpending(release.UKPGE_candidate_spending_2024, spending_2024.config.matchKey) }}
 
-{{# spending_2024.config |> JSON.stringify #}}
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
