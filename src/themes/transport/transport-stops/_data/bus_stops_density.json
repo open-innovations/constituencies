@@ -6,9 +6,9 @@
 		"data": "release.all",
 		"columns": [{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ BCT_density }})"
+			"template": "{{ n }} ({{ bus_stops_density }})"
 		}],
-		"value": "BCT_density",
+		"value": "bus_stops_density",
 		"scale": "Viridis",
 		"min": 0,
 		"max": 30,
@@ -31,7 +31,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ BCT_density | toLocaleString }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ bus_stops_density | toLocaleString }}</strong>",
 		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
 	}
 }

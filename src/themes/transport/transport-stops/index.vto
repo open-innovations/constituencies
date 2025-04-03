@@ -7,12 +7,12 @@ description: |
   Constituency level data on the location of public transport access points.
 keywords: [bus,tram,metro,rail,services,train,public,stops,transit,transport,coach]
 api:
-  - bus_coach
-  - bct_density
-  - tram_metro
-  - met_density
-  - rail
-  - rly_density
+  - bus_stops
+  - bus_stops_density
+  - tram_metro_stops
+  - tram_metro_stops_density
+  - rail_stops
+  - rail_stops_density
 ---
 <p>
 The <a href="https://beta-naptan.dft.gov.uk/">National Public Transport Access Nodes</a> (NaPTAN) dataset provides the locations and details for uniquely identifying all public transport access points in England, Scotland and Wales.
@@ -32,14 +32,14 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "bus_coach"
+	"config": "bus_stops"
 }) }}
 
 <h3>On street bus & coach stops per square kilometre</h3>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "bct_density"
+	"config": "bus_stops_density"
 }) }}
 
 <h3>Tram & metro stops</h3>
@@ -48,14 +48,14 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "tram_metro"
+	"config": "tram_metro_stops"
 }) }}
 
 <h3>Tram & metro stops per square kilometre</h3>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "met_density"
+	"config": "tram_metro_stops_density"
 }) }}
 
 <h3>Train stations</h3>
@@ -63,14 +63,14 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "rail"
+	"config": "rail_stops"
 }) }}
 
 <h3>Train stations per square kilometre</h3>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
-	"config": "rly_density"
+	"config": "rail_stops_density"
 }) }}
 
 {{# Commenting out for now as not much data on taxi ranks #}}

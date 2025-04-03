@@ -1,32 +1,29 @@
 {
-	"title": "Bus stops",
+	"title": "Tram and metro stops per square km",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
 		"data": "release.all",
 		"columns": [{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ BCT }})"
+			"template": "{{ n }} ({{ tram_metro_stops_density }})"
 		}],
-		"value": "BCT",
+		"value": "tram_metro_stops_density",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 1800,
+		"max": 1.8,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 1800,
-				"label": "1800+"
+				"value": 1.8,
+				"label": "1.8+ / square km"
 			},{
-				"value": 1200,
-				"label": "1200"
+				"value": 1.2,
+				"label": "1.2 / square km"
 			},{
-				"value": 600,
-				"label": "600"
-			},{
-				"value": 0,
-				"label": "0"
+				"value": 0.6,
+				"label": "0.6 / square km"
 			}]
 		},
 		"tools": {
@@ -34,7 +31,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ BCT | toLocaleString }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ tram_metro_stops_density | toLocaleString }}</strong>",
 		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
 	}
 }

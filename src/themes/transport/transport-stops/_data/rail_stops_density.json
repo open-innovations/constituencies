@@ -1,29 +1,32 @@
 {
-	"title": "Train stations",
+	"title": "Train stations per square km",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
 		"data": "release.all",
 		"columns": [{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ RLY }})"
+			"template": "{{ n }} ({{ rail_stops_density }})"
 		}],
-		"value": "RLY",
+		"value": "rail_stops_density",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 25,
+		"max": 1,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 30,
-				"label": "30"
+				"value": 1,
+				"label": "1+ / square km"
 			},{
-				"value": 20,
-				"label": "20"
+				"value": 0.75,
+				"label": "0.75 / square km"
 			},{
-				"value": 10,
-				"label": "10"
+				"value": 0.5,
+				"label": "0.5 / square km"
+			},{
+				"value": 0.25,
+				"label": "0.25 / square km"
 			}]
 		},
 		"tools": {
@@ -31,7 +34,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stations: <strong>{{ RLY | toLocaleString }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Stations / square km: <strong>{{ rail_stops_density | toLocaleString }}</strong>",
 		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>" 
 	}
 }
