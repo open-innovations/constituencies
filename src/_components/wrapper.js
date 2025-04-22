@@ -23,8 +23,8 @@ export default function (input) {
 	const dataPath = '/data';
 
 	if(typeof conf.attribution!=="string") conf.attribution = "";
-	if(conf.hexjson=="hexjson.constituencies") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
-	if(conf.hexjson=="hexjson.uk-constituencies-2024") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://github.com/odileeds/hexmaps/blob/gh-pages/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
+	if(conf.hexjson=="hexjson.constituencies") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson">2010 constituencies</a> (Open Innovations and contributors)';
+	if(conf.hexjson=="hexjson.uk-constituencies-2024") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://open-innovations.org/projects/hexmaps/hexjson">Hex layout</a>: <a href="https://open-innovations.org/projects/hexmaps/maps/uk-constituencies-2023.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
 	if(conf.hexjson=="hexjson.uk-constituencies-2023-temporary") conf.attribution += (conf.attribution ? ' / ' : '')+'<a href="https://github.com/open-innovations/constituencies/blob/main/src/_data/hexjson/uk-constituencies-2023-temporary.hexjson">2024 constituencies</a> (Open Innovations and contributors)';
 
 	conf.attribution += '<div class="menu" data-dependencies="/assets/js/menu.js">';
