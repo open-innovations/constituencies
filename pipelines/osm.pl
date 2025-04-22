@@ -412,6 +412,7 @@ sub AugmentCSV {
 	return;
 }
 
+# Version 2.0
 sub getFirstPoint {
 	my $c = shift;
 	my (@coord,$n);
@@ -432,6 +433,7 @@ sub getFirstPoint {
 	return;
 }
 
+# Version 1.0
 sub getCentre {
 	my $c = shift;
 	my ($i,$a,$b,$cx,$cy,$n,@coords);
