@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "sources.economy.BroadbandDashboardDataFile",
+		"data": "BroadbandDashboardDataFile",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ Name }}"
@@ -17,19 +17,19 @@
 			"position": "top right",
 			"items":[{
 				"value": 200,
-				"label": "200+ Mbps"
+				"label": "200+ Mb/s"
 			},{
 				"value": 150,
-				"label": "150 Mbps"
+				"label": "150 Mb/s"
 			},{
 				"value": 100,
-				"label": "100 Mbps"
+				"label": "100 Mb/s"
 			},{
 				"value": 50,
-				"label": "50 Mbps"
+				"label": "50 Mb/s"
 			},{
 				"value": 0,
-				"label": "0 Mbps"
+				"label": "0 Mb/s"
 			}]
 		},
 		"tools": {
@@ -37,7 +37,11 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Average speed: <strong>{{ {{ _value }} | toLocaleString() }}Mbps</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Average speed: <strong>{{ {{ _value }} | toLocaleString() }}Mb/s</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"date": "2023-05",
+	"units":{
+		"value": "Mb/s"
 	}
 }

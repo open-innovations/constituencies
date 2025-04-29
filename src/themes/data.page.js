@@ -60,7 +60,6 @@ export default function*({search,themes}){
 				data.hexjson = {"url":data.hexjson};
 			}
 
-
 			data.data = {};
 			data.data.attribution = config.attribution.replace(/^Data: ?/,'');
 			if(config.data in page){
@@ -87,7 +86,16 @@ export default function*({search,themes}){
 
 
 			data.legend = config.legend;
+
+			if("date" in page[id]){
+				data.data.date = page[id].date;
+			}
+
 			data.data.virtualColumns = config.columns;
+
+			if("units" in page[id]){
+				data.units = {...page[id].units};
+			}
 
 			// Add to themes
 			if(!(page.theme in index.themes)){

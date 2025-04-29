@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "sources.economy.BroadbandDashboardDataFile",
+		"data": "BroadbandDashboardDataFile",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ Name }}"
@@ -42,5 +42,9 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
+	},
+	"date": "2023-05",
+	"units":{
+		"value": "percent"
 	}
 }
