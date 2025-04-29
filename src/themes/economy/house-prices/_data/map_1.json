@@ -1,52 +1,169 @@
 {
 	"title": "House prices",
-    "config": {
-        "width": 600,
-        "hexjson": "hexjson.uk-constituencies-2024",
-        "data": "house_prices",
-        "columns": [{
-            "name": "filterLabel",
-            "template": "{{ n }} ({{ a }})"
-        }],
-        "value": "2023-09",
-        "scale": "Viridis",
-        "min": 0,
-        "max": 1000000,
-        "matchKey": "ONSConstID",
-        "legend": {
-            "position": "top right",
-            "items": [{
-                "value": 1000000,
-                "label": "£1m"
-            },{
-                "value": 800000,
-                "label": "£800k"
-            },{
-                "value": 600000,
-                "label": "£600k"
-            },{
-                "value": 400000,
-                "label": "£400k"
-            },{
-                "value": 200000,
-                "label": "£200k"
-            },{
-                "value": 0,
-                "label": "0"
-            }]
-        },
-        "tools": {
-            "filter": {
-                "label": "filterLabel"
-            },
-            "slider": {
-                "columns": [
-                    "1995-12","1996-12","1997-12","1998-12","1999-12","2000-12","2001-12","2002-12","2003-12","2004-12","2005-12","2006-12","2007-12","2008-12","2009-12","2010-12","2011-12","2012-12","2013-12","2014-12","2015-12","2016-12","2017-12","2018-12","2019-12","2020-12","2021-12","2022-12","2023-09"
-                ],
-                "width": "500px"
-            }
-        },
-        "tooltip": "<strong>{{ n }}</strong><br />Median House Price ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
-        "attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas\">House prices (ONS Housing Analysis Team)</a>"
-    }
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "house_prices",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "2023-09",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 1000000,
+		"matchKey": "ONSConstID",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1000000,
+				"label": "£1m"
+			},{
+				"value": 800000,
+				"label": "£800k"
+			},{
+				"value": 600000,
+				"label": "£600k"
+			},{
+				"value": 400000,
+				"label": "£400k"
+			},{
+				"value": 200000,
+				"label": "£200k"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					"1995-12","1996-12","1997-12","1998-12","1999-12","2000-12","2001-12","2002-12","2003-12","2004-12","2005-12","2006-12","2007-12","2008-12","2009-12","2010-12","2011-12","2012-12","2013-12","2014-12","2015-12","2016-12","2017-12","2018-12","2019-12","2020-12","2021-12","2022-12","2023-09"
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Median House Price ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas\">House prices (ONS Housing Analysis Team)</a>"
+	},
+	"date": "2023-09",
+	"units":{
+		"1995-12":{"value":"GBP","category":"currency"},
+		"1996-03":{"value":"GBP","category":"currency"},
+		"1996-06":{"value":"GBP","category":"currency"},
+		"1996-09":{"value":"GBP","category":"currency"},
+		"1996-12":{"value":"GBP","category":"currency"},
+		"1997-03":{"value":"GBP","category":"currency"},
+		"1997-06":{"value":"GBP","category":"currency"},
+		"1997-09":{"value":"GBP","category":"currency"},
+		"1997-12":{"value":"GBP","category":"currency"},
+		"1998-03":{"value":"GBP","category":"currency"},
+		"1998-06":{"value":"GBP","category":"currency"},
+		"1998-09":{"value":"GBP","category":"currency"},
+		"1998-12":{"value":"GBP","category":"currency"},
+		"1999-03":{"value":"GBP","category":"currency"},
+		"1999-06":{"value":"GBP","category":"currency"},
+		"1999-09":{"value":"GBP","category":"currency"},
+		"1999-12":{"value":"GBP","category":"currency"},
+		"2000-03":{"value":"GBP","category":"currency"},
+		"2000-06":{"value":"GBP","category":"currency"},
+		"2000-09":{"value":"GBP","category":"currency"},
+		"2000-12":{"value":"GBP","category":"currency"},
+		"2001-03":{"value":"GBP","category":"currency"},
+		"2001-06":{"value":"GBP","category":"currency"},
+		"2001-09":{"value":"GBP","category":"currency"},
+		"2001-12":{"value":"GBP","category":"currency"},
+		"2002-03":{"value":"GBP","category":"currency"},
+		"2002-06":{"value":"GBP","category":"currency"},
+		"2002-09":{"value":"GBP","category":"currency"},
+		"2002-12":{"value":"GBP","category":"currency"},
+		"2003-03":{"value":"GBP","category":"currency"},
+		"2003-06":{"value":"GBP","category":"currency"},
+		"2003-09":{"value":"GBP","category":"currency"},
+		"2003-12":{"value":"GBP","category":"currency"},
+		"2004-03":{"value":"GBP","category":"currency"},
+		"2004-06":{"value":"GBP","category":"currency"},
+		"2004-09":{"value":"GBP","category":"currency"},
+		"2004-12":{"value":"GBP","category":"currency"},
+		"2005-03":{"value":"GBP","category":"currency"},
+		"2005-06":{"value":"GBP","category":"currency"},
+		"2005-09":{"value":"GBP","category":"currency"},
+		"2005-12":{"value":"GBP","category":"currency"},
+		"2006-03":{"value":"GBP","category":"currency"},
+		"2006-06":{"value":"GBP","category":"currency"},
+		"2006-09":{"value":"GBP","category":"currency"},
+		"2006-12":{"value":"GBP","category":"currency"},
+		"2007-03":{"value":"GBP","category":"currency"},
+		"2007-06":{"value":"GBP","category":"currency"},
+		"2007-09":{"value":"GBP","category":"currency"},
+		"2007-12":{"value":"GBP","category":"currency"},
+		"2008-03":{"value":"GBP","category":"currency"},
+		"2008-06":{"value":"GBP","category":"currency"},
+		"2008-09":{"value":"GBP","category":"currency"},
+		"2008-12":{"value":"GBP","category":"currency"},
+		"2009-03":{"value":"GBP","category":"currency"},
+		"2009-06":{"value":"GBP","category":"currency"},
+		"2009-09":{"value":"GBP","category":"currency"},
+		"2009-12":{"value":"GBP","category":"currency"},
+		"2010-03":{"value":"GBP","category":"currency"},
+		"2010-06":{"value":"GBP","category":"currency"},
+		"2010-09":{"value":"GBP","category":"currency"},
+		"2010-12":{"value":"GBP","category":"currency"},
+		"2011-03":{"value":"GBP","category":"currency"},
+		"2011-06":{"value":"GBP","category":"currency"},
+		"2011-09":{"value":"GBP","category":"currency"},
+		"2011-12":{"value":"GBP","category":"currency"},
+		"2012-03":{"value":"GBP","category":"currency"},
+		"2012-06":{"value":"GBP","category":"currency"},
+		"2012-09":{"value":"GBP","category":"currency"},
+		"2012-12":{"value":"GBP","category":"currency"},
+		"2013-03":{"value":"GBP","category":"currency"},
+		"2013-06":{"value":"GBP","category":"currency"},
+		"2013-09":{"value":"GBP","category":"currency"},
+		"2013-12":{"value":"GBP","category":"currency"},
+		"2014-03":{"value":"GBP","category":"currency"},
+		"2014-06":{"value":"GBP","category":"currency"},
+		"2014-09":{"value":"GBP","category":"currency"},
+		"2014-12":{"value":"GBP","category":"currency"},
+		"2015-03":{"value":"GBP","category":"currency"},
+		"2015-06":{"value":"GBP","category":"currency"},
+		"2015-09":{"value":"GBP","category":"currency"},
+		"2015-12":{"value":"GBP","category":"currency"},
+		"2016-03":{"value":"GBP","category":"currency"},
+		"2016-06":{"value":"GBP","category":"currency"},
+		"2016-09":{"value":"GBP","category":"currency"},
+		"2016-12":{"value":"GBP","category":"currency"},
+		"2017-03":{"value":"GBP","category":"currency"},
+		"2017-06":{"value":"GBP","category":"currency"},
+		"2017-09":{"value":"GBP","category":"currency"},
+		"2017-12":{"value":"GBP","category":"currency"},
+		"2018-03":{"value":"GBP","category":"currency"},
+		"2018-06":{"value":"GBP","category":"currency"},
+		"2018-09":{"value":"GBP","category":"currency"},
+		"2018-12":{"value":"GBP","category":"currency"},
+		"2019-03":{"value":"GBP","category":"currency"},
+		"2019-06":{"value":"GBP","category":"currency"},
+		"2019-09":{"value":"GBP","category":"currency"},
+		"2019-12":{"value":"GBP","category":"currency"},
+		"2020-03":{"value":"GBP","category":"currency"},
+		"2020-06":{"value":"GBP","category":"currency"},
+		"2020-09":{"value":"GBP","category":"currency"},
+		"2020-12":{"value":"GBP","category":"currency"},
+		"2021-03":{"value":"GBP","category":"currency"},
+		"2021-06":{"value":"GBP","category":"currency"},
+		"2021-09":{"value":"GBP","category":"currency"},
+		"2021-12":{"value":"GBP","category":"currency"},
+		"2022-03":{"value":"GBP","category":"currency"},
+		"2022-06":{"value":"GBP","category":"currency"},
+		"2022-09":{"value":"GBP","category":"currency"},
+		"2022-12":{"value":"GBP","category":"currency"},
+		"2023-03":{"value":"GBP","category":"currency"},
+		"2023-06":{"value":"GBP","category":"currency"},
+		"2023-09":{"value":"GBP","category":"currency"},
+		"2023-12":{"value":"GBP","category":"currency"},
+		"2024-03":{"value":"GBP","category":"currency"}
+	}
 }

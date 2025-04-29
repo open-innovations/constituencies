@@ -39,5 +39,11 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Total tax (Central Estimate): <strong>&pound;{{ Total tax: Amount (Central Estimate) | toLocaleString() }} million</strong><br />Range (95% CI): <strong>&pound;{{ Total tax: Amount (Lower 95% CI) | toLocaleString() }} - &pound;{{ Total tax: Amount (Upper 95% CI) | toLocaleString() }} million</strong>",
 		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/income-and-tax-by-parliamentary-constituency-confidence-intervals\">Table 3.15a Income and tax by Parliamentary constituency, confidence intervals </a> &copy; HMRC"
+	},
+	"date": "2025-03-12",
+	"units":{
+		"Total tax: Amount (Lower 95% CI)":{"value": "GBP","category": "currency","scale":1000000},
+		"Total tax: Amount (Central Estimate)":{"value": "GBP","category": "currency","scale":1000000},
+		"Total tax: Amount (Upper 95% CI)":{"value": "GBP","category": "currency","scale":1000000}
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"title": "House price wage ratio",
-    "config": {
+	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
 		"data": "house_price_wage_ratio",
@@ -40,5 +40,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />House price to wages ratio ({{ _value }}): &times;<strong>{{ {{ _value }} | toFixed(2) }}</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-house-prices/\">House prices (House of Commons Library)</a>"
-	}
+	},
+	"date": "2023-09"
 }

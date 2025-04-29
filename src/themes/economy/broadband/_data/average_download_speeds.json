@@ -3,7 +3,7 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "BroadbandDashboardDataFile",
+		"data": "release.BroadbandDashboardDataFile",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ Name }}"
@@ -42,6 +42,11 @@
 	},
 	"date": "2023-05",
 	"units":{
-		"value": "Mb/s"
+		"Superfast availability (%)":{ "value": "percent" },
+		"Gigabit availability (%)":{ "value": "percent" },
+		"Below universal service obligation (%)":{ "value": "percent" },
+		"Average download speed (Mbps)":{ "value": "Mb/s" },
+		"Receiving under 10 Mbps (%)":{ "value": "percent" },
+		"Receiving over 30 Mbps (%)":{ "value": "percent" }
 	}
 }
