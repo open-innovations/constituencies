@@ -48,5 +48,17 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Households off the gas grid: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/parliamentary-constituency-estimates-of-properties-not-connected-to-the-gas-network\">Households off the gas grid</a> (Department for Energy Security and Net Zero)\n"
+	},
+	"date": "2023",
+	"units": {
+		"2023":{"value":"percent"},
+		"2022":{"value":"percent"},
+		"2021":{"value":"percent"},
+		"2020":{"value":"percent"},
+		"2019":{"value":"percent"},
+		"2018":{"value":"percent"},
+		"2017":{"value":"percent"},
+		"2016":{"value":"percent"},
+		"2015":{"value":"percent"}
 	}
 }

@@ -48,5 +48,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Median values<br />All dwellings: <strong>{{ All dwellings | toLocaleString() }}</strong><br />Detached housing: <strong>{{ Detached | toLocaleString() }}</strong><br />Semi-detached housing: <strong>{{ Semi-detached | toLocaleString() }}</strong><br />Terraced housing: <strong>{{ Terraced | toLocaleString() }}</strong><br />Flats and maisonettes: <strong>{{ Flats and maisonettes | toLocaleString() }}</strong><br />Owner-occupied: <strong>{{ Owner-occupied | toLocaleString() }}</strong><br />Private rent: <strong>{{ Private rent | toLocaleString() }}</strong><br />Social rent: <strong>{{ Social rent | toLocaleString() }}</strong><br />Pre 1930: <strong>{{ Pre 1930 | toLocaleString() }}</strong><br />1930 to 1982: <strong>{{ 1930 to 1982 | toLocaleString() }}</strong><br />1983 to 2011: <strong>{{ 1983 to 2011 | toLocaleString() }}</strong><br />2012 onwards: <strong>{{ 2012 onwards | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/adhocs/1635efficiencyofhousingbywestminsterparliamentaryconstituenciesenglandandwalesallrecordsuptofinancialyearendingmarch2023\">Efficiency of Housing by Westminster parliamentary constituencies, England and Wales, all records up to financial year ending March 2023</a> (ONS)"
-	}
+	},
+	"date": "2023-03"
 }
