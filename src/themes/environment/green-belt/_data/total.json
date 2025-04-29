@@ -36,5 +36,11 @@
 		},
 		"tooltip": "<strong>{{ Constituency }}</strong>:<br />{{ Green Belt land (hectares) | \"<5\" | toLocaleString() }} hectares ({{ % Green Belt | \"0\" }}%)",
 		"attribution": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn00934/\">Green belt data</a> (House of Commons Library/DLUHC)"
+	},
+	"date":"2023-03-31",
+	"units":{
+		"Green Belt land (hectares)":{"value":"ha"},
+		"Total area (hectares)":{"value":"ha"},
+		"% Green Belt":{"value":"percent"}
 	}
 }

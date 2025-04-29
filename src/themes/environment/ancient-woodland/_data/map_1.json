@@ -39,5 +39,10 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ Area | multiply(0.0001) | toFixed(0) | toLocaleString() }} hectares ({{ Percentage | toFixed(1) | toLocaleString() }}%)",
 		"attribution": "Data: <a href=\"https://www.planning.data.gov.uk/dataset/ancient-woodland\">Ancient woodland</a>, Natural England and contains Ordnance Survey data © Crown copyright and database right 2024 (OGLv3)"
+	},
+	"date": "2024-05",
+	"units":{
+		"Area":{"value":"ha","scale":0.0001},
+		"Percentage":{"value":"percent"}
 	}
 }

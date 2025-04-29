@@ -49,5 +49,11 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Total spills 2024: <strong>{{ Counted spills using 12-24h count method→2024 | toLocaleString() }}</strong><br />Total spills 2023: <strong>{{ Counted spills using 12-24h count method→2023 | toLocaleString() }}</strong><br />Total spills 2022: <strong>{{ Counted spills using 12-24h count method→2022 | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac\">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)"
+	},
+	"date": "2025-03-27",
+	"units": {
+		"Total Duration (hrs) all spills prior to processing through 12-24h count method→2022":{"value":"hr"},
+		"Total Duration (hrs) all spills prior to processing through 12-24h count method→2023":{"value":"hr"},
+		"Total Duration (hrs) all spills prior to processing through 12-24h count method→2024":{"value":"hr"}
 	}
 }

@@ -42,5 +42,10 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ Area | multiply(0.0001) | toFixed(0) | toLocaleString() }} hectares ({{ Percentage | toFixed(1) | toLocaleString() }}%)",
 		"attribution": "Data: <a href=\"https://environment.data.gov.uk/explore/72eda560-eee8-4667-a588-b5289c4ae011?download=true\">CRoW Act 2000 - Section 15 Land</a>, Natural England/Defra (OGLv3)"
+	},
+	"date": "2024-05",
+	"units":{
+		"Area":{"value":"ha","scale":0.0001},
+		"Percentage":{"value":"percent"}
 	}
 }

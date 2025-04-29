@@ -37,7 +37,17 @@ export default function*({search,themes}){
 			data.notes = notes;
 			data.title = page[id].title;
 			data.key = config.matchKey;
-			data.values = ("tools" in config && "slider" in config.tools && "columns" in config.tools.slider) ? config.tools.slider.columns : [config.value];
+			data.values = [config.value];
+			if("tools" in config && "slider" in config.tools && "columns" in config.tools.slider){
+				data.values = new Array(config.tools.slider.columns.length);
+				for(let c = 0; c < config.tools.slider.columns.length; c++){
+					if(typeof config.tools.slider.columns[c]==="string"){
+						data.values[c] = config.tools.slider.columns[c]
+					}else{
+						data.values[c] = config.tools.slider.columns[c].value;
+					}
+				}
+			}
 			
 			let hexjson = getObject(config.hexjson,page);
 
@@ -60,6 +70,7 @@ export default function*({search,themes}){
 				data.hexjson = {"url":data.hexjson};
 			}
 
+
 			data.data = {};
 			data.data.attribution = config.attribution.replace(/^Data: ?/,'');
 			if(config.data in page){
@@ -69,12 +80,13 @@ export default function*({search,themes}){
 				// See if the data is nested in the page
 				data.data.rows = resolveData(config.data,page).rows;
 			}
+
 			data.data.constituencies = {};
 			for(let r = 0; r < data.data.rows.length; r++){
 				// Only include it if the code is in the HexJSON
 				let code = data.data.rows[r][data.key];
 				if(code in hexjson.hexes){
-					data.data.constituencies[code] = clone(data.data.rows[r]);
+					data.data.constituencies[code] = (data.data.rows[r]);
 					// Scale any values that need it
 					/*if("units" in page[id]){
 						for(let c in page[id].units){

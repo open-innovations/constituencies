@@ -57,5 +57,9 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Classification: <strong>{{ classification }}</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-8322/\">City and Town Classification of Constituencies</a> (House of Commons Library)\n"
+	},
+	"date": "2018",
+	"units": {
+		"percent_of_constituency": {"value":"percent","scale":100}
 	}
 }

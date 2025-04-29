@@ -1,5 +1,5 @@
-,PCON24CD,PCON24NM,Counted spills using 12-24h count method,Counted spills using 12-24h count method,Counted spills using 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method
-Year,,,2022,2023,2024,2022,2023,2024
+Year,PCON24CD,PCON24NM,Counted spills using 12-24h count method,Counted spills using 12-24h count method,Counted spills using 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method,Total Duration (hrs) all spills prior to processing through 12-24h count method
+,,,2022,2023,2024,2022,2023,2024
 ---,---,---,---,---,---,---,---,---
 1,E14001063,Aldershot,13.0,33.0,60.0,83.89,282.25,523.75
 2,E14001064,Aldridge-Brownhills,81.0,91.0,93.0,90.41,295.73,160.82
