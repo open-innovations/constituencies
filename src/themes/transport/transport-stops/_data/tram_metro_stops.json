@@ -8,7 +8,7 @@
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ MET }})"
 		}],
-		"value": "MET",
+		"value": "tram_metro_stops",
 		"scale": "Viridis",
 		"min": 0,
 		"max": 30,
