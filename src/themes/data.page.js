@@ -37,7 +37,7 @@ export default function*({search,themes}){
 			data.notes = notes;
 			data.title = page[id].title;
 			data.key = config.matchKey;
-			data.value = config.value;
+			data.value = ("tools" in config && "slider" in config.tools && "columns" in config.tools.slider) ? config.tools.slider.columns : [config.value];
 			
 			let hexjson = getObject(config.hexjson,page);
 
