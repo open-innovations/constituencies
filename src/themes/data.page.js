@@ -39,23 +39,8 @@ export default function*({search,themes}){
 			data.key = config.matchKey;
 			data.value = config.value;
 			
-			data.data = {};
-			data.data.attribution = config.attribution.replace(/^Data: ?/,'');
-			if(config.data in page){
-				// We have the data in the page
-				data.data.rows = page[config.data].rows;
-			}else{
-				// See if the data is nested in the page
-				data.data.rows = resolveData(config.data,page).rows;
-			}
-			data.data.constituencies = {};
-			for(let r = 0; r < data.data.rows.length; r++){
-				data.data.constituencies[data.data.rows[r][data.key]] = data.data.rows[r];
-			}
-			delete data.data.rows;
+			let hexjson = getObject(config.hexjson,page);
 
-			//if("tools" in config && "slider" in config.tools) data.values = config.tools.slider.columns;
-			
 			if(config.hexjson=="hexjson.constituencies"){
 				data.hexjson = {
 					"url":"https://open-innovations.org/projects/hexmaps/maps/constituencies.hexjson",
@@ -74,6 +59,26 @@ export default function*({search,themes}){
 			}else{
 				data.hexjson = {"url":data.hexjson};
 			}
+
+
+			data.data = {};
+			data.data.attribution = config.attribution.replace(/^Data: ?/,'');
+			if(config.data in page){
+				// We have the data in the page
+				data.data.rows = page[config.data].rows;
+			}else{
+				// See if the data is nested in the page
+				data.data.rows = resolveData(config.data,page).rows;
+			}
+			data.data.constituencies = {};
+			for(let r = 0; r < data.data.rows.length; r++){
+				// Only include it if the code is in the HexJSON
+				let code = data.data.rows[r][data.key];
+				if(code in hexjson.hexes) data.data.constituencies[code] = data.data.rows[r];
+			}
+			delete data.data.rows;
+
+			//if("tools" in config && "slider" in config.tools) data.values = config.tools.slider.columns;
 
 			data.scale = {};
 			//if("scale" in config) data.scale.type = config.scale;
@@ -118,4 +123,15 @@ function niceJSON(data,depth=1){
 	content = content.replace(new RegExp('[\n]\t{'+(depth+1)+',}', "g"),'');
 	content = content.replace(new RegExp('[\n]\t{'+(depth)+'}(\}|\])(\,|\n)', "g"),function(m,p1,p2){ return p1+p2; });
 	return content;
+}
+
+function getObject(str,obj){
+	if(str in obj) return obj[str];
+	let idx = str.indexOf('.');
+	if(idx > 0){
+		let key = str.substring(0,idx);
+		let rest = str.substring(idx+1);
+		if(key in obj) return getObject(rest,obj[key]);
+	}
+	return null;
 }
