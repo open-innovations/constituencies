@@ -36,5 +36,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ Food banks }}</strong><br /><a href=\"https://www.givefood.org.uk/needs/in/constituency/{{ Slug }}/\">See details</a>",
 		"attribution": "Data: <a href=\"https://www.givefood.org.uk/api/\">Food banks</a> (Give Food)."
-	}
+	},
+	"date": "2025-05-01T16:25"
 }

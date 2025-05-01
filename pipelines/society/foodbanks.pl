@@ -62,3 +62,4 @@ close($fh);
 msg("Saved to <cyan>$outfile<none>\n");
 
 updateCreationTimestamp($basedir."../../src/themes/society/food-banks/index.vto");
+updateCreationTimestamp($basedir."../../src/themes/society/food-banks/_data/total.json");

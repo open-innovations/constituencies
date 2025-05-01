@@ -70,6 +70,7 @@ sub updateCreationTimestamp {
 	$dt = strftime("%FT%H:%M", localtime);
 	for($i = 0; $i < @lines ; $i++){
 		$lines[$i] =~ s/^(updated: )(.*)/$1$dt/;
+		$lines[$i] =~ s/^([\t\s]+)"date": ?"[^\"]*"/$1"date": "$dt"/;
 	}
 	msg("Updating timestamp in <cyan>$file<none>\n");
 	open($fh,">",$file);
