@@ -34,11 +34,26 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["KS4 Attainment 8 / 2017","KS4 Attainment 8 / 2018","KS4 Attainment 8 / 2019","KS4 Attainment 8 / 2022"],
+				"columns": ["KS4 Attainment 8 / 2017","KS4 Attainment 8 / 2018","KS4 Attainment 8 / 2019","KS4 Attainment 8 / 2020","KS4 Attainment 8 / 2021","KS4 Attainment 8 / 2022"],
 				"width": "500px"
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Attainment 8: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-educational-attainment/\">educational attainment</a> (House of Commons Library; OGL)."
+	},
+	"date": "2023",
+	"units":{
+		"KS4 Attainment 8 / 2011":{"value":"percent"},
+		"KS4 Attainment 8 / 2012":{"value":"percent"},
+		"KS4 Attainment 8 / 2013":{"value":"percent"},
+		"KS4 Attainment 8 / 2014":{"value":"percent"},
+		"KS4 Attainment 8 / 2015":{"value":"percent"},
+		"KS4 Attainment 8 / 2016":{"value":"percent"},
+		"KS4 Attainment 8 / 2017":{"value":"percent"},
+		"KS4 Attainment 8 / 2018":{"value":"percent"},
+		"KS4 Attainment 8 / 2019":{"value":"percent"},
+		"KS4 Attainment 8 / 2020":{"value":"percent"},
+		"KS4 Attainment 8 / 2021":{"value":"percent"},
+		"KS4 Attainment 8 / 2022":{"value":"percent"}
 	}
 }

@@ -35,5 +35,9 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Total: <strong>£{{ total | toLocaleString() }}</strong><br />{{ candidates }}",
 		"attribution": "Data: <a href=\"https://www.electoralcommission.org.uk/political-registration-and-regulation/financial-reporting/campaign-spending-candidates/2024-uk-parliamentary-general-election-candidate-spending\">2024 UK Parliamentary general election candidate spending</a> (Electoral Commission)."
+	},
+	"date": "2024-07-04",
+	"units": {
+		"percent_of_constituency": {"value":"GBP","category":"currency"}
 	}
 }

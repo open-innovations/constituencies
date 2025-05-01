@@ -46,5 +46,20 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toFixed(0) | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-educational-attainment/\">educational attainment</a> (House of Commons Library; OGL)."
+	},
+	"date": "2023",
+	"units":{
+		"A*-C % / 2011":{"value":"percent"},
+		"A*-C % / 2012":{"value":"percent"},
+		"A*-C % / 2013":{"value":"percent"},
+		"A*-C % / 2014":{"value":"percent"},
+		"A*-C % / 2015":{"value":"percent"},
+		"A*-C % / 2016":{"value":"percent"},
+		"A*-C % / 2017":{"value":"percent"},
+		"A*-C % / 2018":{"value":"percent"},
+		"A*-C % / 2019":{"value":"percent"},
+		"A*-C % / 2020":{"value":"percent"},
+		"A*-C % / 2021":{"value":"percent"},
+		"A*-C % / 2022":{"value":"percent"}
 	}
 }

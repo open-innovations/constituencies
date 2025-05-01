@@ -42,5 +42,10 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Children affected by two-child limit: <strong>{{ Percentage of children affected by two-child limit | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-child-poverty/\">Child poverty rate estimates, after housing costs</a> (Loughborough University/JRF 2022/23)."
+	},
+	"date": "2023",
+	"units":{
+		"Percentage of children affected by two-child limit":{"value":"percent"},
+		"Percentage of children living in poverty":{"value":"percent"}
 	}
 }

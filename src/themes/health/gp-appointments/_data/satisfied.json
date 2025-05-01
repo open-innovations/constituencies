@@ -43,5 +43,14 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />% satisfied with practice <br />appointment times: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93442\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	},
+	"date": "2024-03",
+	"units":{
+		"2018":{"value":"percent"},
+		"2019":{"value":"percent"},
+		"2020":{"value":"percent"},
+		"2021":{"value":"percent"},
+		"2022":{"value":"percent"},
+		"2023":{"value":"percent"}
 	}
 }

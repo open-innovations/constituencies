@@ -43,5 +43,26 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Percentage of appointments taking place within 2 days of booking: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/93944\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	},
+	"date": "2024-03",
+	"units":{
+		"Oct 2022":{"value":"percent"},
+		"Nov 2022":{"value":"percent"},
+		"Dec 2022":{"value":"percent"},
+		"Jan 2023":{"value":"percent"},
+		"Feb 2023":{"value":"percent"},
+		"Mar 2023":{"value":"percent"},
+		"Apr 2023":{"value":"percent"},
+		"May 2023":{"value":"percent"},
+		"Jun 2023":{"value":"percent"},
+		"Jul 2023":{"value":"percent"},
+		"Aug 2023":{"value":"percent"},
+		"Sep 2023":{"value":"percent"},
+		"Oct 2023":{"value":"percent"},
+		"Nov 2023":{"value":"percent"},
+		"Dec 2023":{"value":"percent"},
+		"Jan 2024":{"value":"percent"},
+		"Feb 2024":{"value":"percent"},
+		"Mar 2024":{"value":"percent"}
 	}
 }

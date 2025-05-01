@@ -43,5 +43,20 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />% reporting good overallexperience <br />of making an appointment: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://fingertips.phe.org.uk/search/349\">OHID Fingertips</a> / Visualisation <a href=\"https://github.com/WolfieKnee\">David Wolfson</a>"
+	},
+	"date": "2024-03",
+	"units":{
+		"2012":{"value":"percent"},
+		"2013":{"value":"percent"},
+		"2014":{"value":"percent"},
+		"2015":{"value":"percent"},
+		"2016":{"value":"percent"},
+		"2017":{"value":"percent"},
+		"2018":{"value":"percent"},
+		"2019":{"value":"percent"},
+		"2020":{"value":"percent"},
+		"2021":{"value":"percent"},
+		"2022":{"value":"percent"},
+		"2023":{"value":"percent"}
 	}
 }
