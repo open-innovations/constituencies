@@ -60,6 +60,6 @@
 	},
 	"date": "2018",
 	"units": {
-		"percent_of_constituency": {"value":"percent","scale":100}
+		"percent_of_constituency": {"value":"percent","scaleBy":100}
 	}
 }

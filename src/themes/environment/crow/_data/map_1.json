@@ -45,7 +45,7 @@
 	},
 	"date": "2024-05",
 	"units":{
-		"Area":{"value":"ha","scale":0.0001},
+		"Area":{"value":"ha","scaleBy":0.0001},
 		"Percentage":{"value":"percent"}
 	}
 }

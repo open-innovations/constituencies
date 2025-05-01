@@ -36,5 +36,15 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Annual mean change in temperature: <strong>{{ ann_warming_oC_2065 | toFixed(2) }} &deg;C</strong>",
 		"attribution": "<a href=\"https://www.metoffice.gov.uk/research/approach/collaboration/ukcp\">UKCP18 dataset</a> (MET Office; processing by Georgia Willits, UCL)"
+	},
+	"date": "2022",
+	"units": {
+		"drought_day_change_2065":{"value":"day"},
+		"ann_rain_2019":{"value":"mm"},
+		"max5day_rain_mm_change_2065":{"value":"mm"},
+		"ann_rain_change_mmday_2065":{"value":"mm/day"},
+		"warmest_dayofyear_change_oC_2065":{"value":"degC"},
+		"ann_warming_oC_2065":{"value":"degC"},
+		"number_heatwave_days_change_2065":{"value":"day"}
 	}
 }

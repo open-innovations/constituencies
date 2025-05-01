@@ -42,8 +42,8 @@
 	},
 	"date": "2025-03-12",
 	"units":{
-		"Total tax: Amount (Lower 95% CI)":{"value": "GBP","category": "currency","scale":1000000},
-		"Total tax: Amount (Central Estimate)":{"value": "GBP","category": "currency","scale":1000000},
-		"Total tax: Amount (Upper 95% CI)":{"value": "GBP","category": "currency","scale":1000000}
+		"Total tax: Amount (Lower 95% CI)":{"value": "GBP","category": "currency","scaleBy":1000000},
+		"Total tax: Amount (Central Estimate)":{"value": "GBP","category": "currency","scaleBy":1000000},
+		"Total tax: Amount (Upper 95% CI)":{"value": "GBP","category": "currency","scaleBy":1000000}
 	}
 }
