@@ -78,7 +78,7 @@ sub updateCreationTimestamp {
 	close($fh);
 }
 
-# Version 1.4
+# Version 1.5
 sub ParseCSV {
 	my $str = shift;
 	my $config = shift;
@@ -89,7 +89,7 @@ sub ParseCSV {
 	if(not defined($config->{'header'}{'start'})){ $config->{'header'}{'start'} = 0; }
 	if(not defined($config->{'header'}{'spacer'})){ $config->{'header'}{'spacer'} = 0; }
 	if(not defined($config->{'header'}{'join'})){ $config->{'header'}{'join'} = "→"; }
-	$sline = $config->{'startrow'}||1;
+	$sline = (defined($config->{'startrow'})) ? $config->{'startrow'} : 1;
 	$col = $config->{'key'};
 
 	$n = () = $str =~ /\r\n/g;
@@ -101,6 +101,10 @@ sub ParseCSV {
 	@rows = split(/[\n]/,$str);
 
 	$n = @rows;
+
+	if(defined($config->{'header'}{'columns'})){
+		@header = @{$config->{'header'}{'columns'}};
+	}
 
 	for($r = $config->{'header'}{'start'}; $r < @rows; $r++){
 		$rows[$r] =~ s/[\n\r]//g;

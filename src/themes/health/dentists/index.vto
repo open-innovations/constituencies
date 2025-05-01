@@ -1,0 +1,21 @@
+---
+title: Dentists (England)
+theme: health
+created: 2025-05-01T18:20
+updated: 2025-05-01T18:38
+description: |
+  Dentists by constituency (UK).
+api:
+  - map-1
+---
+
+<p>This page provides constituency-level totals of dentists in the UK using data from <a href="https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous">the NHS</a>.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map-1"
+}) }}
+
+<h2>Notes</h2>
+<p>These figures have been calculated by finding which constituency each dentist postcode is within.</p>

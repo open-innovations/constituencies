@@ -1,0 +1,47 @@
+{
+	"title": "Dentists",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.dentists",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "All dentists",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 30,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "30+"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": ["All dentists","NHS dentists","Private dentists"],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />All dentists: <strong>{{ All dentists | toLocaleString() }}</strong><br />NHS: <strong>{{ NHS dentists | toLocaleString() }}</strong><br />Private-only: <strong>{{ Private dentists | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-self-reported-health-2021-census/\">Self-reported health, 2021 census</a> (House of Commons Library)\n"
+	},
+	"date": "2025-05-01T18:38"
+}
