@@ -159,6 +159,7 @@ for($i = 0; $i < @alldentists; $i++){
 				$constituencies->{$code}{'all'}++;
 			}elsif($alldentists[$i]->{'type'} eq "GDS"){
 				$constituencies->{$code}{'all'}++;
+				$constituencies->{$code}{'NHS'}++;
 			}else{
 				warning("Bad sub-type code <green>".$alldentists[$i]->{'type'}."<none>\n");
 			}

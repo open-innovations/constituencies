@@ -36,12 +36,12 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["All dentists","NHS dentists","Private dentists"],
+				"columns": ["All dentists",{"label":"NHS/HSC/PHS dentists","value":"NHS dentists"},"Private dentists"],
 				"width": "500px"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />All dentists: <strong>{{ All dentists | toLocaleString() }}</strong><br />NHS: <strong>{{ NHS dentists | toLocaleString() }}</strong><br />Private-only: <strong>{{ Private dentists | toLocaleString() }}</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />All dentists: <strong>{{ All dentists | toLocaleString() }}</strong><br />NHS/HSC/PHS: <strong>{{ NHS dentists | toLocaleString() }}</strong><br />Private-only: <strong>{{ Private dentists | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous\">General Dental Practices</a> (NHS England), <a href=\"https://www.opendata.nhs.scot/dataset/dental-practices-and-patient-registrations\">Dental Practices and Patient Registrations</a> (PHS Dental Care Team), <a href=\"https://admin.opendatani.gov.uk/dataset/general-dental-services-statistics\">Dentist and Surgery List</a> (Business Services Organisation)\n"
 	},
-	"date": "2025-05-06T11:12"
+	"date": "2025-05-06T11:28"
 }
