@@ -40,7 +40,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Vehicle crime→2023","label":"2021"},{"value":"Vehicle crime→2023","label":"2022"},{"value":"Vehicle crime→2023","label":"2023"}],
+				"columns": [{"value":"Vehicle crime→2021","label":"2021"},{"value":"Vehicle crime→2022","label":"2022"},{"value":"Vehicle crime→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

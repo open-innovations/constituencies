@@ -37,7 +37,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Bicycle theft→2023","label":"2021"},{"value":"Bicycle theft→2023","label":"2022"},{"value":"Bicycle theft→2023","label":"2023"}],
+				"columns": [{"value":"Bicycle theft→2021","label":"2021"},{"value":"Bicycle theft→2022","label":"2022"},{"value":"Bicycle theft→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

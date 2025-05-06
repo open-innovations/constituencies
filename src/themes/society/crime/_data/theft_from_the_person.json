@@ -37,7 +37,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Theft from the person→2023","label":"2021"},{"value":"Theft from the person→2023","label":"2022"},{"value":"Theft from the person→2023","label":"2023"}],
+				"columns": [{"value":"Theft from the person→2021","label":"2021"},{"value":"Theft from the person→2022","label":"2022"},{"value":"Theft from the person→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

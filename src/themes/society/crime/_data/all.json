@@ -43,7 +43,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"All→2023","label":"2021"},{"value":"All→2023","label":"2022"},{"value":"All→2023","label":"2023"}],
+				"columns": [{"value":"All→2021","label":"2021"},{"value":"All→2022","label":"2022"},{"value":"All→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

@@ -37,7 +37,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Shoplifting→2023","label":"2021"},{"value":"Shoplifting→2023","label":"2022"},{"value":"Shoplifting→2023","label":"2023"}],
+				"columns": [{"value":"Shoplifting→2021","label":"2021"},{"value":"Shoplifting→2022","label":"2022"},{"value":"Shoplifting→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

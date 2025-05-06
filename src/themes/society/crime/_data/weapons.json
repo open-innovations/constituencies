@@ -43,7 +43,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Possession of weapons→2023","label":"2021"},{"value":"Possession of weapons→2023","label":"2022"},{"value":"Possession of weapons→2023","label":"2023"}],
+				"columns": [{"value":"Possession of weapons→2021","label":"2021"},{"value":"Possession of weapons→2022","label":"2022"},{"value":"Possession of weapons→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

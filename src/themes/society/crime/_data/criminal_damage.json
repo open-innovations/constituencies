@@ -37,7 +37,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Criminal damage and arson→2023","label":"2021"},{"value":"Criminal damage and arson→2023","label":"2022"},{"value":"Criminal damage and arson→2023","label":"2023"}],
+				"columns": [{"value":"Criminal damage and arson→2021","label":"2021"},{"value":"Criminal damage and arson→2022","label":"2022"},{"value":"Criminal damage and arson→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}
