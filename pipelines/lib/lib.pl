@@ -146,12 +146,16 @@ sub ParseCSV {
 }
 
 sub LoadCSV {
-	# version 1.3
+	# version 1.3.1
 	my $file = shift;
 	my $config = shift;
 	
 	msg("Processing CSV from <cyan>$file<none>\n");
-	open(FILE,"<:utf8",$file);
+	if($config->{'ANSI'}){
+		open(FILE,"<:encoding(cp1252)",$file);
+	}else{
+		open(FILE,"<:utf8",$file);
+	}
 	my @lines = <FILE>;
 	close(FILE);
 	return ParseCSV(join("",@lines),$config);

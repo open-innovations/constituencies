@@ -1,5 +1,5 @@
 {
-	"title": "Dentists (England & Wales)",
+	"title": "Dentists (UK)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -41,7 +41,7 @@
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />All dentists: <strong>{{ All dentists | toLocaleString() }}</strong><br />NHS: <strong>{{ NHS dentists | toLocaleString() }}</strong><br />Private-only: <strong>{{ Private dentists | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-self-reported-health-2021-census/\">Self-reported health, 2021 census</a> (House of Commons Library)\n"
+		"attribution": "Data: <a href=\"https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous\">General Dental Practices</a> (NHS England), <a href=\"https://www.opendata.nhs.scot/dataset/dental-practices-and-patient-registrations\">Dental Practices and Patient Registrations</a> (PHS Dental Care Team), <a href=\"https://admin.opendatani.gov.uk/dataset/general-dental-services-statistics\">Dentist and Surgery List</a> (Business Services Organisation)\n"
 	},
-	"date": "2025-05-01T18:38"
+	"date": "2025-05-06T11:12"
 }

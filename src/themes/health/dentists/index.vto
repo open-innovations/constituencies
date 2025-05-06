@@ -1,15 +1,15 @@
 ---
-title: Dentists (England & Wales)
+title: Dentists (UK)
 theme: health
 created: 2025-05-01T18:20
-updated: 2025-05-01T18:38
+updated: 2025-05-06T11:12
 description: |
   Dentists by constituency (UK).
 api:
   - map-1
 ---
 
-<p>This page provides constituency-level totals of dentists in the UK using data from <a href="https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous">the NHS</a>.</p>
+<p>This page provides constituency-level totals of dentists in the UK using data from <a href="https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous">NHS England</a>, <a href=\"https://www.opendata.nhs.scot/dataset/dental-practices-and-patient-registrations\">Public Health Scotland</a>, and the <a href=\"https://admin.opendatani.gov.uk/dataset/general-dental-services-statistics\">Business Services Organisation, Northern Ireland</a>.</p>
 
 {{ comp.wrapper({
 	"page": page,
@@ -18,4 +18,6 @@ api:
 }) }}
 
 <h2>Notes</h2>
-<p>These figures have been calculated by finding which constituency each dentist postcode is within.</p>
+<p>These figures have been calculated by using each dentist's postcode centroid.</p>
+<p>Scotland figures only include NHS dentists.</p>
+<p>Northern Ireland figures are for Health and Social Care Northern Ireland dentists.</p>
