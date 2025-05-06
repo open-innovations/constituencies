@@ -9,10 +9,10 @@ function resolveData(ref,context){
 
 export default function*({search,themes}){
 
-	const notes = "This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org";
+	const notes = {"version":"0.2","notes":"This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org"};
 	const pages = search.pages("api!=undefined");
 	let index = {
-		"notes": notes,
+		"api": notes,
 		"themes": {}
 	};
 	for(let theme in themes){
@@ -34,7 +34,7 @@ export default function*({search,themes}){
 			const config = {...page[id].config};
 			const data = {};
 
-			data.notes = notes;
+			data.api = notes;
 			data.title = page[id].title;
 			data.key = config.matchKey;
 			data.values = [config.value];
