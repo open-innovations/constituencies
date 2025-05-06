@@ -7,15 +7,6 @@
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }}"
-		},{
-			"name": "2021",
-			"template": "{{ All→2021 }}"
-		},{
-			"name": "2022",
-			"template": "{{ All→2022 }}"
-		},{
-			"name": "2023",
-			"template": "{{ All→2023 }}"
 		}],
 		"value": "2021",
 		"matchKey": "PCON25CD",
@@ -52,7 +43,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["2021","2022","2023"],
+				"columns": [{"value":"All→2023","label":"2021"},{"value":"All→2023","label":"2022"},{"value":"All→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

@@ -7,17 +7,8 @@
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
-		},{
-			"name": "2021",
-			"template": "{{ Anti-social behaviour→2021 }}"
-		},{
-			"name": "2022",
-			"template": "{{ Anti-social behaviour→2022 }}"
-		},{
-			"name": "2023",
-			"template": "{{ Anti-social behaviour→2023 }}"
 		}],
-		"value": "2021",
+		"value": "Anti-social behaviour→2021",
 		"matchKey": "PCON25CD",
 		"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 		"min": 0,
@@ -49,7 +40,7 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["2021","2022","2023"],
+				"columns": [{"value":"Anti-social behaviour→2023","label":"2021"},{"value":"Anti-social behaviour→2023","label":"2022"},{"value":"Anti-social behaviour→2023","label":"2023"}],
 				"width": "500px",
 				"position": "bottom"
 			}

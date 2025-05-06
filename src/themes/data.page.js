@@ -9,7 +9,7 @@ function resolveData(ref,context){
 
 export default function*({search,themes}){
 
-	const notes = {"version":"0.2","notes":"This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org"};
+	const notes = {"version":"0.3","notes":"This is an experimental API for the Open Innovations Consitituency Data site. The format is not finalised yet and is likely to change. Be very careful about relying on it for now. Feedback on how we could improve it is welcome hello@open-innovations.org"};
 	const pages = search.pages("api!=undefined");
 	let index = {
 		"api": notes,
@@ -37,14 +37,14 @@ export default function*({search,themes}){
 			data.api = notes;
 			data.title = page[id].title;
 			data.key = config.matchKey;
-			data.values = [config.value];
+			data.values = [{"value":config.value,"label":config.value}];
 			if("tools" in config && "slider" in config.tools && "columns" in config.tools.slider){
 				data.values = new Array(config.tools.slider.columns.length);
 				for(let c = 0; c < config.tools.slider.columns.length; c++){
 					if(typeof config.tools.slider.columns[c]==="string"){
-						data.values[c] = config.tools.slider.columns[c]
+						data.values[c] = {"value":config.tools.slider.columns[c],"label":config.tools.slider.columns[c]};
 					}else{
-						data.values[c] = config.tools.slider.columns[c].value;
+						data.values[c] = config.tools.slider.columns[c];
 					}
 				}
 			}
