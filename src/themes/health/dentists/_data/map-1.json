@@ -10,7 +10,7 @@
 				"template": "{{ n }} ({{ a }})"
 			}
 		],
-		"value": "All dentists",
+		"value": "NHS dentists",
 		"scale": "Viridis",
 		"min": 0,
 		"max": 30,
