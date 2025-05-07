@@ -19,9 +19,9 @@ require "lib.pl";
 my ($baseurl,$tmpdir,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon);
 
 $tmpdir = $basedir."../../raw-data/";
-if(!-d $tmpdir){
-	`mkdir $tmpdir`;
-}
+$dir = $tmpdir."society/parliament/";
+if(!-d $dir){ makeDir($dir); }
+
 
 # Get Constituency IDs from HexJSON
 $hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2024.hexjson");
@@ -33,7 +33,7 @@ foreach $id (keys(%{$hexjson->{'hexes'}})){
 # TheyWorkForYou MPs CSV
 $twfyfile = $tmpdir."society/parliament/twfy.csv";
 msg("Saving They Work For You MP data to <cyan>$twfyfile<none>\n");
-$txt = CacheDownload("https://www.theyworkforyou.com/mps/?f=csv",$twfyfile,86400);
+CacheDownload("https://www.theyworkforyou.com/mps/?f=csv",$twfyfile,86400);
 
 
 # Get all current, sitting, MPs from Parliament
@@ -43,7 +43,6 @@ $p = 1;
 $count = 0;
 $total = 650;
 $out = {'MPs'=>[]};
-$dir = $tmpdir."society/parliament/";
 msg("Saving API data to <cyan>$dir<none>\n");
 while($count < $total){
 	$url = $baseurl."?".$qs."&skip=$count&take=20";
