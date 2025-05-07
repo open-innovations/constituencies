@@ -16,7 +16,12 @@ BEGIN {
 use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
-my ($baseurl,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon);
+my ($baseurl,$tmpdir,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon);
+
+$tmpdir = $basedir."../../raw-data/";
+if(!-d $tmpdir){
+	`mkdir $tmpdir`;
+}
 
 # Get Constituency IDs from HexJSON
 $hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2024.hexjson");
@@ -26,7 +31,7 @@ foreach $id (keys(%{$hexjson->{'hexes'}})){
 
 
 # TheyWorkForYou MPs CSV
-$twfyfile = $basedir."../../raw-data/society/parliament/twfy.csv";
+$twfyfile = $tmpdir."society/parliament/twfy.csv";
 msg("Saving They Work For You MP data to <cyan>$twfyfile<none>\n");
 $txt = CacheDownload("https://www.theyworkforyou.com/mps/?f=csv",$twfyfile,86400);
 
@@ -38,7 +43,7 @@ $p = 1;
 $count = 0;
 $total = 650;
 $out = {'MPs'=>[]};
-$dir = $basedir."../../raw-data/society/parliament/";
+$dir = $tmpdir."society/parliament/";
 msg("Saving API data to <cyan>$dir<none>\n");
 while($count < $total){
 	$url = $baseurl."?".$qs."&skip=$count&take=20";
