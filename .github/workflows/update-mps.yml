@@ -34,8 +34,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add lookup/current-MPs.csv
-          git add lookup/current-MPs.json
+          git add lookups/current-MPs.csv
+          git add lookups/current-MPs.json
           git commit -m "Update MPs" || exit 0
 
       - name: Push changes
