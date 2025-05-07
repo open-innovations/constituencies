@@ -1,4 +1,4 @@
-name: Data Pipeline
+name: Update MPs
 
 "on":
   workflow_dispatch:
