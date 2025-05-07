@@ -1,4 +1,7 @@
 #!/usr/bin/perl
+# Process police.uk data
+# First download police data from https://data.police.uk/data/archive/ and extract it into raw-data/society/police/
+# perl police-data.pl <dir>
 
 use utf8;
 use warnings;
@@ -14,15 +17,15 @@ use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 use OpenInnovations::GeoJSON;
 
-my ($match,$r,@rows,@fields,$datadir,$dir,$geo,$dh,$fh,$filename,$coordlookup,$c,@dirs,$d,@files,$f,$nocoord,$nomatch,$matched,$dist,$i,$crimes,$pcon,$typ,$yy,$mm,$types,@years,$year,@ctypes,$t,@ys,$y);
+my ($match,$r,@rows,@fields,$datadir,$dir,$geo,$dh,$fh,$filename,$coordlookup,$c,@dirs,$d,@files,$f,$nocoord,$nomatch,$matched,$dist,$i,$crimes,$pcon,$typ,$yy,$mm,$types,@years,$year,@ctypes,$t,@ys,$y,$lastmonth);
 
 
 # Set some variables
-my $ofile = $basedir."../../src/_data/sources/society/crime-data.csv";
+my $ofile = $basedir."../../src/themes/society/crime/_data/release/crime-data.csv";
 my $tempdir = $basedir."../../raw-data/society/police/";
 my $hexjson = $basedir.'../../src/_data/hexjson/uk-constituencies-2024.hexjson';
-my $geojson = $basedir."../../raw-data/geojson/constituencies-2023-hires.geojson";
-my $popdata = $basedir."../../src/_data/sources/society/population.csv";	# Derived from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates
+my $geojson = $basedir."../../raw-data/Westminster_Parliamentary_Constituencies_July_2024_Boundaries_UK_BGC.geojson";
+my $popdata = $basedir."../../src/themes/society/population/_data/population_2022.csv";	# Derived from https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/parliamentaryconstituencymidyearpopulationestimates
 
 
 # Find all the month directories
@@ -32,7 +35,7 @@ $datadir = $ARGV[0];
 makeDir($tempdir);
 
 # Load some population data
-$popdata = LoadCSV($popdata,{'key'=>'PCON25CD'});
+$popdata = LoadCSV($popdata,{'key'=>'PCON24CD'});
 
 # Load the hexes
 $hexjson = LoadJSON($hexjson);
@@ -45,10 +48,12 @@ $geo->load($geojson);
 $crimes = {};
 $types = {'All'=>0};
 $year = {};
+$lastmonth = "";
 
 
 if(!$datadir || !-d $datadir){
-	error("No directory for source data has been provided.\n");
+
+	error("No directory for source data has been provided so loading from <cyan>$tempdir<none>.\n");
 	# Read from tempdir
 	opendir($dh,$tempdir);
 	while( ($filename = readdir($dh))) {
@@ -76,25 +81,25 @@ if(!$datadir || !-d $datadir){
 	for($d = 0; $d < @dirs; $d++){
 		opendir($dh,$dirs[$d]);
 		while( ($filename = readdir($dh))) {
-			if($filename =~ /\.csv$/){
+			if($filename =~ /\.csv$/ && $filename =~ /\-street\./){
 				push(@files,{'dir'=>$dirs[$d],'file'=>$filename});
 			}
 		}
 		closedir($dh);
 	}
 
-
 	$nocoord = 0;
 	$nomatch = 0;
 	$matched = 0;
 
-	@fields = ('PCON10CD','Crime type','Last outcome category');
+	@fields = ('CID','PCON24CD','Crime type');
 
 	# Loop over files
+	msg("Processing files\n");
 	for($f = 0; $f < @files; $f++){
 		if(!-e $tempdir.$files[$f]{'file'}){
 			@rows = LoadCSV($files[$f]{'dir'}.$files[$f]{'file'});
-			# Add PCON10CD to each row
+			# Add PCON24CD to each row
 			for($r = 0; $r < @rows; $r++){
 				if($rows[$r]->{'Latitude'} && $rows[$r]->{'Longitude'}){
 					$c = $rows[$r]->{'Latitude'}."/".$rows[$r]->{'Longitude'};
@@ -104,19 +109,19 @@ if(!$datadir || !-d $datadir){
 						# Keep a copy of the lookup
 						$coordlookup->{$c} = $match->{'properties'};
 					}
-					if(!$coordlookup->{$c}){
+					if(!defined($coordlookup->{$c})){
 						# Get nearest feature
 						($i,$dist) = $geo->closestFeature($rows[$r]->{'Longitude'},$rows[$r]->{'Latitude'});
 						if($dist < 200){
-							msg("\tRow <green>$r<none> ($rows[$r]->{'Latitude'}/$rows[$r]->{'Longitude'}) is not in a polygon but $geo->{'features'}[$i]{'properties'}{'Name'} is <cyan>".int($dist)."m<none> away.\n");
+							msg("\tRow <green>$r<none> ($rows[$r]->{'Latitude'}/$rows[$r]->{'Longitude'}) is not in a polygon but ".($geo->{'features'}[$i]{'properties'}{'PCON24NM'}||"")." is <cyan>".int($dist)."m<none> away.\n");
 							$coordlookup->{$c} = $geo->{'features'}[$i]{'properties'};
 						}else{
-							warning("\tRow <green>$r<none> ($rows[$r]->{'Latitude'}/$rows[$r]->{'Longitude'}) is too far from $geo->{'features'}[$i]{'properties'}{'Name'} (<cyan>".int($dist)."m<none> away) $nomatch/$matched.\n");
+							warning("\tRow <green>$r<none> ($rows[$r]->{'Latitude'}/$rows[$r]->{'Longitude'}) is too far from $geo->{'features'}[$i]{'properties'}{'PCON24NM'} (<cyan>".int($dist)."m<none> away) $nomatch/$matched.\n");
 							$coordlookup->{$c} = {};
 						}
 					}
-					if($coordlookup->{$c}{'ID'} && $coordlookup->{$c}{'Name'}){
-						$rows[$r]->{'PCON10CD'} = $coordlookup->{$c}{'ID'};
+					if($coordlookup->{$c}{'PCON24CD'} && $coordlookup->{$c}{'PCON24NM'}){
+						$rows[$r]->{'PCON24CD'} = $coordlookup->{$c}{'PCON24CD'};
 						$matched++;
 					}else{
 						$nomatch++;
@@ -139,7 +144,15 @@ if(!$datadir || !-d $datadir){
 			close($fh);
 		}
 	}
+}
 
+for($f = 0; $f < @files; $f++){
+	$files[$f]{'file'} =~ /([0-9]{4})-([0-9]{2})/;
+	$yy = $1;
+	$mm = $2;
+	if($yy."-".$mm gt $lastmonth){
+		$lastmonth = $yy."-".$mm;
+	}
 }
 
 $nocoord = 0;
@@ -151,8 +164,8 @@ for($f = 0; $f < @files; $f++){
 	$year->{$yy} = 1;
 	@rows = LoadCSV($tempdir.$files[$f]{'file'});
 	for($r = 0; $r < @rows; $r++){
-		if($rows[$r]->{'PCON10CD'} && $rows[$r]->{'Crime type'}){
-			$pcon = $rows[$r]->{'PCON10CD'};
+		if($rows[$r]->{'PCON24CD'} && $rows[$r]->{'Crime type'}){
+			$pcon = $rows[$r]->{'PCON24CD'};
 			$typ = $rows[$r]->{'Crime type'};
 			if($typ && $pcon =~ /[ENSW][0-9]{8}/){
 				if(!$types->{$typ}){ $types->{$typ} = 0; }
@@ -178,12 +191,33 @@ for($f = 0; $f < @files; $f++){
 saveData();
 
 
+updateCreationTimestamp($basedir."../../src/themes/society/crime/index.vto");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/all.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/anti_social_behaviour.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/bicycle_theft.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/burglary.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/criminal_damage.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/drugs.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/other.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/public_order.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/robbery.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/shoplifting.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/theft_from_the_person.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/vehicle.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/violence.json");
+updateCreationTimestamp($basedir."../../src/themes/society/crime/_data/weapons.json");
+
+
+
+
+############################################
+
 sub saveData {
 	my ($t,$y,$csv,$pcon,$v,@ctypes,@ys,@pcons);
 	@ctypes = sort(keys(%{$types}));
 	@ys = sort(keys(%{$year}));
 
-	$csv = "PCON25CD,PCON25NM,Population";
+	$csv = "PCON24CD,PCON24NM,Population (2022)";
 	for($t=0;$t < @ctypes;$t++){
 		for($y=0;$y < @ys;$y++){
 			$csv .= ",$ctypes[$t]";
@@ -219,11 +253,11 @@ sub saveData {
 	foreach $pcon (@pcons){
 		$csv .= $pcon;
 		$csv .= ",\"".($hexjson->{'hexes'}{$pcon}{'n'}||"")."\"";
-		if(!defined($popdata->{$pcon}{'Mid 2022'})){
+		if(!defined($popdata->{$pcon}{'total'})){
 			warning("No population data for $pcon.\n");
 			$csv .= ",0";
 		}else{
-			$csv .= ",".$popdata->{$pcon}{'Mid 2022'};
+			$csv .= ",".$popdata->{$pcon}{'total'};
 		}
 		for($t = 0 ; $t < @ctypes ; $t++){
 			for($y = 0 ; $y < @ys ; $y++){
@@ -245,23 +279,9 @@ sub saveData {
 
 
 	msg("Saving to <cyan>$ofile<none>\n");
-	open($fh,">",$ofile);
+	open($fh,">:utf8",$ofile);
 	print $fh $csv;
 	close($fh);
 
 }
 
-
-
-sub makeDir {
-	my $str = $_[0];
-	my @bits = split(/\//,$str);
-	my $tdir = "";
-	my $i;
-	for($i = 0; $i < @bits; $i++){
-		$tdir .= $bits[$i]."/";
-		if(!-d $tdir){
-			`mkdir $tdir`;
-		}
-	}
-}

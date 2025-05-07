@@ -3,13 +3,13 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "sources.society.crime-data",
+		"data": "release.crime-data",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "Violence and sexual offences→2021",
-		"matchKey": "PCON25CD",
+		"value": "Violence and sexual offences→2024",
+		"matchKey": "PCON24CD",
 		"scale": "#dfdfdf 0%, #1b4080 100%, #000000 100%",
 		"min": 0,
 		"max": 16000,
@@ -40,12 +40,13 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": [{"value":"Violence and sexual offences→2021","label":"2021"},{"value":"Violence and sexual offences→2022","label":"2022"},{"value":"Violence and sexual offences→2023","label":"2023"}],
+				"columns": [{"value":"Violence and sexual offences→2017","label":"2017"},{"value":"Violence and sexual offences→2018","label":"2018"},{"value":"Violence and sexual offences→2019","label":"2019"},{"value":"Violence and sexual offences→2020","label":"2020"},{"value":"Violence and sexual offences→2021","label":"2021"},{"value":"Violence and sexual offences→2022","label":"2022"},{"value":"Violence and sexual offences→2023","label":"2023"},{"value":"Violence and sexual offences→2024","label":"2024"}],
 				"width": "500px",
 				"position": "bottom"
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://data.police.uk/data/archive/\">crime data</a> (data.police.uk)."
-	}
+	},
+	"date": "2025-05-07T12:50"
 }

@@ -63,11 +63,14 @@ sub makeDir {
 
 sub updateCreationTimestamp {
 	my $file = shift;
-	my(@lines,$fh,$i,$dt);
+	my $dt = shift;
+	my(@lines,$fh,$i);
 	open($fh,$file);
 	@lines = <$fh>;
 	close($fh);
-	$dt = strftime("%FT%H:%M", localtime);
+	if(!defined($dt)){
+		$dt = strftime("%FT%H:%M", localtime);
+	}
 	for($i = 0; $i < @lines ; $i++){
 		$lines[$i] =~ s/^(updated: )(.*)/$1$dt/;
 		$lines[$i] =~ s/^([\t\s]+)"date": ?"[^\"]*"/$1"date": "$dt"/;
