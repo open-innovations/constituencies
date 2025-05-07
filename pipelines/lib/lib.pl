@@ -148,8 +148,8 @@ sub ParseCSV {
 	}
 }
 
+# version 1.3.1
 sub LoadCSV {
-	# version 1.3.1
 	my $file = shift;
 	my $config = shift;
 	
@@ -164,6 +164,19 @@ sub LoadCSV {
 	return ParseCSV(join("",@lines),$config);
 }
 
+sub ParseJSON {
+	my $str = shift;
+	my $json = {};
+	# Error check for JS variable e.g. South Tyneside https://maps.southtyneside.gov.uk/warm_spaces/assets/data/wsst_council_spaces.geojson.js
+	$str =~ s/[^\{]*var [^\{]+ = //g;
+	if(!$str){ $str = "{}"; }
+	eval {
+		$json = JSON::XS->new->decode($str);
+	};
+	if($@){ error("\tInvalid output.\n"); }
+	return $json;
+}
+
 sub LoadJSON {
 	my (@files,$str,@lines);
 	my $file = $_[0];
@@ -171,10 +184,36 @@ sub LoadJSON {
 	@lines = <FILE>;
 	close(FILE);
 	$str = (join("",@lines));
-	# Error check for JS variable e.g. South Tyneside https://maps.southtyneside.gov.uk/warm_spaces/assets/data/wsst_council_spaces.geojson.js
-	$str =~ s/[^\{]*var [^\{]+ = //g;
-	if(!$str){ $str = "{}"; }
-	return JSON::XS->new->decode($str);
+	return ParseJSON($str);
+}
+
+# Version 1.1
+sub SaveJSON {
+	my $json = shift;
+	my $file = shift;
+	my $depth = shift;
+	my $oneline = shift;
+	if(!defined($depth)){ $depth = 0; }
+	my $d = $depth+1;
+	my ($txt,$fh);
+	
+
+	$txt = JSON::XS->new->canonical(1)->pretty->space_before(0)->encode($json);
+	$txt =~ s/   /\t/g;
+	$txt =~ s/\n\t{$d,}//g;
+	$txt =~ s/\n\t{$depth}\}(\,|\n)/\}$1/g;
+	$txt =~ s/": /":/g;
+
+	if($oneline){
+		$txt =~ s/\n[\t\s]*//g;
+	}
+
+	msg("Save JSON to <cyan>$file<none>\n");
+	open($fh,">:utf8",$file);
+	print $fh $txt;
+	close($fh);
+
+	return $txt;
 }
 
 sub SaveFromURL {
@@ -211,5 +250,39 @@ sub SaveFromURL {
 	}
 	return $file;
 }
+
+
+# Version 1.1
+sub CacheDownload {
+	my $url = shift;
+	my $file = shift;
+	my $expireafter = shift||86400;
+	my (@lines,$fh,$epoch_timestamp,$now,$age);
+
+	$age = 100000;
+	if(-e $file){
+		$epoch_timestamp = (stat($file))[9];
+		$now = time;
+		$age = ($now-$epoch_timestamp);
+	}
+
+	if(!-e $file || -s $file == 0 || $age >= $expireafter){ SaveURL($url,$file); }
+	open($fh,"<:utf8",$file);
+	@lines = <$fh>;
+	close($fh);
+	return join("",@lines);
+}
+
+sub GetURL {
+	my $url = shift;
+	return `wget -q -e robots=off  --no-check-certificate -O- "$url"`;
+}
+
+sub SaveURL {
+	my $url = shift;
+	my $file = shift;
+	return `wget -q -e robots=off  --no-check-certificate -O $file "$url"`;
+}
+
 
 1;

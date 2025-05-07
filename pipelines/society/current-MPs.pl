@@ -8,18 +8,27 @@ use Data::Dumper;
 use Cwd qw(abs_path);
 binmode STDOUT, 'utf8';
 binmode STDERR, 'utf8';
-
-# Get the real base directory for this script
 my ($basedir, $path);
-BEGIN { ($basedir, $path) = abs_path($0) =~ m{(.*/)?([^/]+)$}; push @INC, $basedir; }
+BEGIN {
+	# Get the real base directory for this script
+	($basedir, $path) = abs_path($0) =~ m{(.*/)?([^/]+)$};
+}
+use lib $basedir."../lib/";	# Custom functions
+require "lib.pl";
 
-my ($baseurl,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows);
+my ($baseurl,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon);
 
 # Get Constituency IDs from HexJSON
 $hexjson = LoadJSON($basedir."../../src/_data/hexjson/uk-constituencies-2024.hexjson");
 foreach $id (keys(%{$hexjson->{'hexes'}})){
 	$hexlookup{$hexjson->{'hexes'}{$id}{'n'}} = $id;
 }
+
+
+# TheyWorkForYou MPs CSV
+$twfyfile = $basedir."../../raw-data/society/parliament/twfy.csv";
+msg("Saving They Work For You MP data to <cyan>$twfyfile<none>\n");
+$txt = CacheDownload("https://www.theyworkforyou.com/mps/?f=csv",$twfyfile,86400);
 
 
 # Get all current, sitting, MPs from Parliament
@@ -34,7 +43,7 @@ msg("Saving API data to <cyan>$dir<none>\n");
 while($count < $total){
 	$url = $baseurl."?".$qs."&skip=$count&take=20";
 	$file = $dir."MPs-$p.json";
-	$txt = CacheDownload($url,$file);
+	$txt = CacheDownload($url,$file,86400);
 	$json = ParseJSON($txt);
 	$n = @{$json->{'items'}};
 	for($i = 0; $i < $n; $i++){
@@ -45,8 +54,9 @@ while($count < $total){
 			'ID'=>$json->{'items'}[$i]{'value'}{'id'},
 			'Gender'=>$json->{'items'}[$i]{'value'}{'gender'},
 			'MP'=>$json->{'items'}[$i]{'value'}{'nameDisplayAs'},
+			'PCON24CD'=>$hexlookup{$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipFrom'}},
 			'PCON24NM'=>$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipFrom'},
-			'StartDate'=>$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipStartDate'},
+			'Start date'=>$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipStartDate'},
 			'Thumbnail'=>$json->{'items'}[$i]{'value'}{'thumbnailUrl'},
 			'Party'=>$json->{'items'}[$i]{'value'}{'latestParty'}{'abbreviation'},
 			'Party name'=>$json->{'items'}[$i]{'value'}{'latestParty'}{'name'},
@@ -59,19 +69,35 @@ while($count < $total){
 	$p++;
 }
 
-SaveJSON($out,$basedir."../../raw-data/society/parliament/MPs-all.json",2);
+
+$json = LoadCSV($twfyfile,{'key'=>'Constituency'});
+
+for($i = 0; $i < @{$out->{'MPs'}};$i++){
+	$pcon = $out->{'MPs'}[$i]{'PCON24NM'};
+	if(defined($json->{$pcon})){
+		$out->{'MPs'}[$i]{'TheyWorkForYou ID'} = $json->{$pcon}{'Person ID'};
+		$out->{'MPs'}[$i]{'TheyWorkForYou URI'} = $json->{$pcon}{'URI'};
+	}
+}
+
+
+SaveJSON($out,$basedir."../../lookups/current-MPs.json",2);
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	$mp = $out->{'MPs'}[$i];
 	$code = $hexlookup{$mp->{'PCON24NM'}};
 	$row = $code;
 	$row .= ",".($mp->{'PCON24NM'} =~ /,/ ? "\"$mp->{'PCON24NM'}\"":$mp->{'PCON24NM'});
 	$row .= ",".($mp->{'MP'} =~ /,/ ? "\"$mp->{'MP'}\"":$mp->{'MP'});
+	$row .= ",".$mp->{'Gender'};
 	$row .= ",".$mp->{'ID'};
-	$row .= ",".$mp->{'StartDate'};
+	$row .= ",".($mp->{'TheyWorkForYou ID'}||"");
+	$row .= ",".($mp->{'TheyWorkForYou URI'}||"");
+	$row .= ",".$mp->{'Start date'};
 	$row .= ",".($mp->{'Party'} =~ /,/ ? "\"$mp->{'Party'}\"":$mp->{'Party'});
 	$row .= ",".($mp->{'Party name'} =~ /,/ ? "\"$mp->{'Party name'}\"":$mp->{'Party name'});
 	$row .= ",".$mp->{'Party bg'};
 	$row .= ",".$mp->{'Party fg'};
+	$row .= ",".$mp->{'Thumbnail'};
 	$row .= "\n";
 	push(@rows,$row);
 }
@@ -79,130 +105,8 @@ for($i = 0; $i < @{$out->{'MPs'}};$i++){
 $file = $basedir."../../lookups/current-MPs.csv";
 msg("Saving lookup to <cyan>$file<none>\n");
 open($fh,">:utf8",$file);
-print $fh "PCON24CD,PCON24NM,MP,MP ID,Start date,Party,Party name,BG,FG\n";
+print $fh "PCON24CD,PCON24NM,MP,Gender,ID,TheyWorkForYou ID,TheyWorkForYou URI,Start date,Party,Party name,Party bg,Party fg,Thumbnail\n";
 print $fh @rows;
 close($fh);
 
 
-
-############################
-
-sub msg {
-	my $str = $_[0];
-	my $dest = $_[1]||"STDOUT";
-	
-	my %colours = (
-		'black'=>"\033[0;30m",
-		'red'=>"\033[0;31m",
-		'green'=>"\033[0;32m",
-		'yellow'=>"\033[0;33m",
-		'blue'=>"\033[0;34m",
-		'magenta'=>"\033[0;35m",
-		'cyan'=>"\033[0;36m",
-		'white'=>"\033[0;37m",
-		'none'=>"\033[0m"
-	);
-	foreach my $c (keys(%colours)){ $str =~ s/\< ?$c ?\>/$colours{$c}/g; }
-	if($dest eq "STDERR"){
-		print STDERR $str;
-	}else{
-		print STDOUT $str;
-	}
-}
-
-sub error {
-	my $str = $_[0];
-	$str =~ s/(^[\t\s]*)/$1<red>ERROR:<none> /;
-	msg($str,"STDERR");
-}
-
-sub warning {
-	my $str = $_[0];
-	$str =~ s/(^[\t\s]*)/$1<yellow>WARNING:<none> /;
-	msg($str,"STDERR");
-}
-
-# Version 1.1
-sub CacheDownload {
-	my $url = shift;
-	my $file = shift;
-	my $expireafter = shift||86400;
-	my (@lines,$fh,$epoch_timestamp,$now,$age);
-
-	$age = 100000;
-	if(-e $file){
-		$epoch_timestamp = (stat($file))[9];
-		$now = time;
-		$age = ($now-$epoch_timestamp);
-	}
-
-	if(!-e $file || -s $file == 0 || $age >= $expireafter){ SaveURL($url,$file); }
-	open($fh,"<:utf8",$file);
-	@lines = <$fh>;
-	close($fh);
-	return join("",@lines);
-}
-
-sub GetURL {
-	my $url = shift;
-	return `wget -q -e robots=off  --no-check-certificate -O- "$url"`;
-}
-
-sub SaveURL {
-	my $url = shift;
-	my $file = shift;
-	return `wget -q -e robots=off  --no-check-certificate -O $file "$url"`;
-}
-
-
-sub ParseJSON {
-	my $str = shift;
-	my $json = {};
-	if(!$str){ $str = "{}"; }
-	eval {
-		$json = JSON::XS->new->decode($str);
-	};
-	if($@){ error("\tInvalid output.\n"); }
-	return $json;
-}
-
-sub LoadJSON {
-	my (@files,$str,@lines,$json);
-	my $file = $_[0];
-	open(FILE,"<:utf8",$file);
-	@lines = <FILE>;
-	close(FILE);
-	$str = (join("",@lines));
-	# Error check for JS variable e.g. South Tyneside https://maps.southtyneside.gov.uk/warm_spaces/assets/data/wsst_council_spaces.geojson.js
-	$str =~ s/[^\{]*var [^\{]+ = //g;
-	return ParseJSON($str);
-}
-
-# Version 1.1
-sub SaveJSON {
-	my $json = shift;
-	my $file = shift;
-	my $depth = shift;
-	my $oneline = shift;
-	if(!defined($depth)){ $depth = 0; }
-	my $d = $depth+1;
-	my ($txt,$fh);
-	
-
-	$txt = JSON::XS->new->canonical(1)->pretty->space_before(0)->encode($json);
-	$txt =~ s/   /\t/g;
-	$txt =~ s/\n\t{$d,}//g;
-	$txt =~ s/\n\t{$depth}\}(\,|\n)/\}$1/g;
-	$txt =~ s/": /":/g;
-
-	if($oneline){
-		$txt =~ s/\n[\t\s]*//g;
-	}
-
-	msg("Save JSON to <cyan>$file<none>\n");
-	open($fh,">:utf8",$file);
-	print $fh $txt;
-	close($fh);
-
-	return $txt;
-}
