@@ -55,9 +55,9 @@ while($count < $total){
 			warning("No colour for $json->{'items'}[$i]{'value'}{'nameDisplayAs'}\n");
 		}
 		push(@{$out->{'MPs'}},{
+			'MP'=>$json->{'items'}[$i]{'value'}{'nameDisplayAs'},
 			'ID'=>$json->{'items'}[$i]{'value'}{'id'},
 			'Gender'=>$json->{'items'}[$i]{'value'}{'gender'},
-			'MP'=>$json->{'items'}[$i]{'value'}{'nameDisplayAs'},
 			'PCON24CD'=>$hexlookup{$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipFrom'}},
 			'PCON24NM'=>$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipFrom'},
 			'Start date'=>$json->{'items'}[$i]{'value'}{'latestHouseMembership'}{'membershipStartDate'},
@@ -85,7 +85,14 @@ for($i = 0; $i < @{$out->{'MPs'}};$i++){
 }
 
 
-SaveJSON($out,$basedir."../../lookups/current-MPs.json",2);
+$json = {};
+for($i = 0; $i < @{$out->{'MPs'}};$i++){
+	$json->{$out->{'MPs'}[$i]{'PCON24CD'}} = $out->{'MPs'}[$i];
+}
+SaveJSON($json,$basedir."../../lookups/current-MPs.json",1);
+
+
+
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	$mp = $out->{'MPs'}[$i];
 	$code = $hexlookup{$mp->{'PCON24NM'}};
