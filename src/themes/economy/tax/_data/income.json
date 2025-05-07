@@ -45,8 +45,20 @@
 	},
 	"date": "2025-03-12",
 	"units":{
-		"Total tax: Amount (Lower 95% CI)":{"value": "GBP","category": "currency"},
-		"Total tax: Amount (Central Estimate)":{"value": "GBP","category": "currency"},
-		"Total tax: Amount (Upper 95% CI)":{"value": "GBP","category": "currency"}
+		"Self-employment income: Median (Lower 95% CI)":{"value": "GBP","category": "currency"},
+		"Self-employment income: Median (Central Estimate)":{"value": "GBP","category": "currency"},
+		"Self-employment income: Median (Upper 95% CI)":{"value": "GBP","category": "currency"},
+		"Employment income: Median (Lower 95% CI)":{"value": "GBP","category": "currency"},
+		"Employment income: Median (Central Estimate)":{"value": "GBP","category": "currency"},
+		"Employment income: Median (Upper 95% CI)":{"value": "GBP","category": "currency"},
+		"Pension income: Median (Lower 95% CI)":{"value": "GBP","category": "currency"},
+		"Pension income: Median (Central Estimate)":{"value": "GBP","category": "currency"},
+		"Pension income: Median (Upper 95% CI)":{"value": "GBP","category": "currency"},
+		"Total income: Median (Lower 95% CI)":{"value": "GBP","category": "currency"},
+		"Total income: Median (Central Estimate)":{"value": "GBP","category": "currency"},
+		"Total income: Median (Upper 95% CI)":{"value": "GBP","category": "currency"},
+		"Total tax: Median (Lower 95% CI)":{"value": "GBP","category": "currency"},
+		"Total tax: Median (Central Estimate)":{"value": "GBP","category": "currency"},
+		"Total tax: Median (Upper 95% CI)":{"value": "GBP","category": "currency"}
 	}
 }
