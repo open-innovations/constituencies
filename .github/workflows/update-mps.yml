@@ -1,0 +1,46 @@
+name: Data Pipeline
+
+"on":
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "30 17 * * 5"
+
+# Cancel any in-flight jobs
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install cpanm and multiple modules
+        uses: perl-actions/install-with-cpanm@v1
+        with:
+          cpanfile: cpanfile
+
+      # Runs script
+      - name: Run tests
+        working-directory: ./
+        run: |
+          perl pipelines/society/current-MPs.pl
+
+      - name: Commit changes to files
+        working-directory: ./
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add lookup/current-MPs.csv
+          git add lookup/current-MPs.json
+          git commit -m "Update MPs" || exit 0
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
