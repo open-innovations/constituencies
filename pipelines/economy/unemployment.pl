@@ -17,13 +17,19 @@ require "lib.pl";
 
 my $odir = $basedir."data/";
 
-my ($url,$syear,$eyear,$y,$file,$dl,@files,$i,@rows,$r,$data,$dates,@dts,$csv,$pcon,$ofile,$json,$cfile,$lbl,$months,$vfile);
+my ($url,$syear,$eyear,$y,$file,$dl,@files,$i,@rows,$r,$data,$dates,@dts,$csv,$pcon,$ofile,$json,$cfile,$lbl,$months,$vfile,$conlookup);
 
 $ofile = $basedir."../../src/themes/economy/unemployment/_data/release/unemployment_rate.csv";
 $cfile = $basedir."../../src/themes/economy/unemployment/_data/unemployment.json";
 $vfile = $basedir."../../src/themes/economy/unemployment/index.vto";
 $months = {'01'=>'Jan','02'=>'Feb','03'=>'Mar','04'=>'Apr','05'=>'May','06'=>'Jun','07'=>'Jul','08'=>'Aug','09'=>'Sep','10'=>'Oct','11'=>'Nov','12'=>'Dec'};
-
+$conlookup = {
+	'S14000006'=>'S14000107',
+	'S14000008'=>'S14000108',
+	'S14000010'=>'S14000109',
+	'S14000040'=>'S14000110',
+	'S14000058'=>'S14000111'
+};
 $syear = "2014";
 $eyear = strftime "%Y", gmtime;
 
@@ -49,10 +55,12 @@ for($i = 0; $i < @files; $i++){
 	for($r = 0; $r < @rows; $r++){
 		if($rows[$r]{'MEASURE_CODE'} eq "2" && $rows[$r]{'DATE_CODE'} =~ /-(03|06|09|12)$/){
 			$dates->{$rows[$r]{'DATE_CODE'}} = 1;
-			if(!defined($data->{$rows[$r]{'GEOGRAPHY_CODE'}})){
-				$data->{$rows[$r]{'GEOGRAPHY_CODE'}} = {};
+			$pcon = $rows[$r]{'GEOGRAPHY_CODE'};
+			if(defined($conlookup->{$pcon})){ $pcon = $conlookup->{$pcon}; }
+			if(!defined($data->{$pcon})){
+				$data->{$pcon} = {};
 			}
-			$data->{$rows[$r]{'GEOGRAPHY_CODE'}}{$rows[$r]{'DATE_CODE'}} = $rows[$r]{'OBS_VALUE'};
+			$data->{$pcon}{$rows[$r]{'DATE_CODE'}} = $rows[$r]{'OBS_VALUE'};
 		}
 	}
 }
