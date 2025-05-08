@@ -1,6 +1,6 @@
 {
 	"config":{
-		"attribution":"Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-people-claiming-unemployment-benefits/\">People claiming unemployment benefits</a> (House of Commons Library)",
+		"attribution":"Data: <a href=\"https://www.nomisweb.co.uk/datasets/ucjsa\">Claimant count by sex and age</a> (NOMIS)",
 		"columns":[
 			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
 		],
