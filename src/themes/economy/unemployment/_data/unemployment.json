@@ -1,67 +1,209 @@
 {
-	"title": "Unemployment",
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "unemployment_rate",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "2023-12-01",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 0.1,
-		"matchKey": "ONSConstID",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 0.1,
-				"label": "10%"
-			},{
-				"value": 0.08,
-				"label": "8%"
-			},{
-				"value": 0.06,
-				"label": "6%"
-			},{
-				"value": 0.04,
-				"label": "4%"
-			},{
-				"value": 0.02,
-				"label": "2%"
-			},{
-				"value": 0,
-				"label": "0"
-			}]
+	"config":{
+		"attribution":"Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-people-claiming-unemployment-benefits/\">People claiming unemployment benefits</a> (House of Commons Library)",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.unemployment_rate",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"10%","value":10},{"label":"8%","value":8},{"label":"6%","value":6},{"label":"4%","value":4},{"label":"2%","value":2},{"label":"0","value":0}],
+			"position":"top right"
 		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			},
-			"slider": {
-				"columns": ["2010-12-01","2011-12-01","2012-12-01","2013-12-01","2014-12-01","2015-12-01","2016-12-01","2017-12-01","2018-12-01","2019-12-01","2020-12-01","2021-12-01","2022-12-01","2023-12-01"],
-				"width": "500px"
-			}
+		"matchKey":"PCON24CD",
+		"max":10,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"},
+			"slider":{"columns":[{"label":"Mar 2014","value":"2014-03"},{"label":"Jun 2014","value":"2014-06"},{"label":"Sep 2014","value":"2014-09"},{"label":"Dec 2014","value":"2014-12"},{"label":"Mar 2015","value":"2015-03"},{"label":"Jun 2015","value":"2015-06"},{"label":"Sep 2015","value":"2015-09"},{"label":"Dec 2015","value":"2015-12"},{"label":"Mar 2016","value":"2016-03"},{"label":"Jun 2016","value":"2016-06"},{"label":"Sep 2016","value":"2016-09"},{"label":"Dec 2016","value":"2016-12"},{"label":"Mar 2017","value":"2017-03"},{"label":"Jun 2017","value":"2017-06"},{"label":"Sep 2017","value":"2017-09"},{"label":"Dec 2017","value":"2017-12"},{"label":"Mar 2018","value":"2018-03"},{"label":"Jun 2018","value":"2018-06"},{"label":"Sep 2018","value":"2018-09"},{"label":"Dec 2018","value":"2018-12"},{"label":"Mar 2019","value":"2019-03"},{"label":"Jun 2019","value":"2019-06"},{"label":"Sep 2019","value":"2019-09"},{"label":"Dec 2019","value":"2019-12"},{"label":"Mar 2020","value":"2020-03"},{"label":"Jun 2020","value":"2020-06"},{"label":"Sep 2020","value":"2020-09"},{"label":"Dec 2020","value":"2020-12"},{"label":"Mar 2021","value":"2021-03"},{"label":"Jun 2021","value":"2021-06"},{"label":"Sep 2021","value":"2021-09"},{"label":"Dec 2021","value":"2021-12"},{"label":"Mar 2022","value":"2022-03"},{"label":"Jun 2022","value":"2022-06"},{"label":"Sep 2022","value":"2022-09"},{"label":"Dec 2022","value":"2022-12"},{"label":"Mar 2023","value":"2023-03"},{"label":"Jun 2023","value":"2023-06"},{"label":"Sep 2023","value":"2023-09"},{"label":"Dec 2023","value":"2023-12"},{"label":"Mar 2024","value":"2024-03"},{"label":"Jun 2024","value":"2024-06"},{"label":"Sep 2024","value":"2024-09"},{"label":"Dec 2024","value":"2024-12"},{"label":"Mar 2025","value":"2025-03"}],"width":"500px"}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Unemployment rate ({{ _value }}): <strong>{{ {{ _value }} | multiply(100) | toFixed(2) }}%</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-people-claiming-unemployment-benefits/\">People claiming unemployment benefits</a> (House of Commons Library)"
+		"tooltip":"<strong>{{ n }}</strong><br />Unemployment rate ({{ _value }}): <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"value":"2025-03",
+		"width":600
 	},
-	"date": "2024",
+	"date": "2025-03",
+	"title":"Unemployment",
 	"units":{
-		"2010-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2011-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2012-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2013-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2014-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2015-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2016-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2017-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2018-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2019-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2020-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2021-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2022-12-01":{"value":"percent","scaleBy":100,"precision":0.01},
-		"2023-12-01":{"value":"percent","scaleBy":100,"precision":0.01}
+		"2014-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2014-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2014-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2014-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2015-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2015-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2015-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2015-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2016-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2016-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2016-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2016-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2017-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2017-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2017-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2017-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2018-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2018-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2018-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2018-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2019-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2019-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2019-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2019-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2020-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2020-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2020-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2020-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2021-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2021-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2021-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2021-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2022-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2022-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2022-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2022-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2023-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2023-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2023-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2023-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2024-03":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2024-06":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2024-09":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2024-12":{
+			"precision":0.1,
+			"value":"percent"
+		},
+		"2025-03":{
+			"precision":0.1,
+			"value":"percent"
+		}
 	}
 }

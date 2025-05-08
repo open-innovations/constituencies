@@ -187,7 +187,7 @@ sub LoadJSON {
 	return ParseJSON($str);
 }
 
-# Version 1.1
+# Version 1.1.1
 sub SaveJSON {
 	my $json = shift;
 	my $file = shift;
@@ -201,7 +201,7 @@ sub SaveJSON {
 	$txt = JSON::XS->new->canonical(1)->pretty->space_before(0)->encode($json);
 	$txt =~ s/   /\t/g;
 	$txt =~ s/\n\t{$d,}//g;
-	$txt =~ s/\n\t{$depth}\}(\,|\n)/\}$1/g;
+	$txt =~ s/\n\t{$depth}([\}\]])(\,|\n)/$1$2/g;
 	$txt =~ s/": /":/g;
 
 	if($oneline){
