@@ -1,0 +1,32 @@
+---
+title: Central heating (UK)
+theme: energy
+created: 2025-05-08T10:43
+updated: 2025-05-08T10:43
+description: |
+  Breakdown of central heating types (England, Scotland, and Wales)
+keywords: [gas,central,heating,electric]
+api:
+  - map_1
+---
+
+<P>A breakdown of central heating by type.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+<h2>Notes</h2>
+
+<p>Central heating is a system to heat multiple rooms in a building by circulating air or heated water through pipes to radiators or vents. Single or multiple fuel sources can fuel these systems.</p>
+<p>The House of Commons library have aggregated central heating types used in the census data into broader groups that allow for consistent comparisons across the UK:</p>
+<ul>
+	<li>England and Wales: Office for National Statistics,&nbsp;<a href="https://www.ons.gov.uk/datasets/TS046/editions/2021/versions/1/filter-outputs/b0d7e627-8f09-48cc-8fb3-69d9b7c04cc7#get-data">2021 census table TS046</a></li>
+	<li>Northern Ireland: Northern Ireland Statistics and Research Agency,&nbsp;<a href="https://build.nisra.gov.uk/en/custom/data?d=HOUSEHOLD&amp;v=LGD14&amp;v=HH_CENTRAL_HEATING_AGG10">2021 census table MS-E11</a></li>
+	<li>Scotland: Scotland’s census,&nbsp;<a href="https://www.scotlandscensus.gov.uk/search-the-census#/search-by">Search census data</a>, Table UV407</li>
+</ul>
+<p>‘Other’ central heating includes the categories: other central heating, district or communal heat networks, renewable energy, solid fuel (for example coal), wood, biomass (including logs, pellets, chippings).</p>
+<p>The definition of ‘two of more types of central heating’ refers to households using two or more types including renewable energy or not including renewable energy.</p>
+<p>Central heating systems that are unused or not working are still counted. No information is available for households with no usual residents.</p>
+<p>Percentages have been rounded so the sum of the individual values may not add up to 100%.</p>

@@ -1,0 +1,65 @@
+{
+	"title": "Central heating (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.central_heating",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Con_pc / Mains gas only",
+		"matchKey": "ONSConstID",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 1,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1,
+				"label": "100%"
+			},{
+				"value": 0.8,
+				"label": "80%"
+			},{
+				"value": 0.6,
+				"label": "80%"
+			},{
+				"value": 0.4,
+				"label": "40%"
+			},{
+				"value": 0.2,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [{"value":"Con_pc / Mains gas only","label":"Mains gas only"},{"value":"Con_pc / Electric only","label":"Electric only"},{"value":"Con_pc / Oil only","label":"Oil only"},{"value":"Con_pc / Tank or bottled gas only","label":"Tank or bottled gas only"},{"value":"Con_pc / Two or more types of central heating","label":"Two or more types"},{"value":"Con_pc / Other","label":"Other"},{"value":"Con_pc / No central heating","label":"No central heating"}],
+				"width": "500px",
+				"position": "bottom"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Mains gas only: <strong>{{ Con_pc / Mains gas only | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />Electric only: <strong>{{ Con_pc / Electric only | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />Oil only: <strong>{{ Con_pc / Oil only | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />Tank or bottled gas only: <strong>{{ Con_pc / Tank or bottled gas only | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />Two or more types: <strong>{{ Con_pc / Two or more types of central heating | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />Other: <strong>{{ Con_pc / Other | multiply(100) | toFixed(1) | toLocaleString() }}%</strong><br />No central heating: <strong>{{ Con_pc / No central heating | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-central-heating-2021-census/\">Central heating</a> (House of Commons Library)\n"
+	},
+	"date": "2023",
+	"units": {
+		"2023":{"value":"percent"},
+		"2022":{"value":"percent"},
+		"2021":{"value":"percent"},
+		"2020":{"value":"percent"},
+		"2019":{"value":"percent"},
+		"2018":{"value":"percent"},
+		"2017":{"value":"percent"},
+		"2016":{"value":"percent"},
+		"2015":{"value":"percent"}
+	}
+}

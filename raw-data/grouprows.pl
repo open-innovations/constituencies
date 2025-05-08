@@ -74,8 +74,7 @@ close(FILE);
 $constituencies = {};
 $lookup = {};
 for($r = 0; $r < @lines; $r++){
-	$lines[$r] =~ s/[\n\r]//g;
-	
+	$lines[$r] =~ s/[\n\r]+//g;
 	@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$lines[$r]);
 	for($c = 0; $c < @cols; $c++){
 		$cols[$c] =~ s/(^\"|\"$)//g;
@@ -127,10 +126,11 @@ if(@normalise > 0){
 }
 
 
-
+my @cons = keys(%{$constituencies});
 if(@order <= 0){
-	@order = (sort(keys(%{$constituencies->{'E14000530'}})));
+	@order = (sort(keys(%{$constituencies->{$cons[0]}})));
 }
+
 $csv = "";
 for($c = 0; $c < @order; $c++){
 	$csv .= ($c==0 ? "":",").($order[$c] =~ /,/ ? "\"" : "").$order[$c].($order[$c] =~ /,/ ? "\"" : "");
