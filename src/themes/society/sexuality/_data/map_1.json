@@ -1,17 +1,17 @@
 {
-	"title": "Sexuality",
+	"title": "Sexuality (UK)",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "sources.society.sexuality",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.lgbt_census",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
 		"min": 0,
-		"value": "Straight or Heterosexual %",
+		"value": "Straight or Heterosexual",
 		"scale": "Viridis",
-		"matchKey": "Westminster Parliamentary constituencies Code",
+		"matchKey": "ONSConstID",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -24,8 +24,7 @@
 			},{
 				"value": "25%"
 			},{
-				"value": 0,
-				"label": "0"
+				"value": "0%"
 			}]
 		},
 		"tools": {
@@ -33,11 +32,26 @@
 				"label": "filterLabel"
 			},
 			"slider": {
-				"columns": ["Straight or Heterosexual %","Gay or Lesbian %","Bisexual %","All other sexual orientations %","Not answered %"],
+				"columns": [{
+					"value":"Straight or Heterosexual",
+					"label":"Straight or Heterosexual"
+				},{
+					"value":"Gay or Lesbian",
+					"label":"Gay or Lesbian"
+				},{
+					"value":"Bisexual",
+					"label":"Bisexual"
+				},{
+					"value":"All other sexual orientations",
+					"label":"All other sexual orientations"
+				},{
+					"value":"Not answered",
+					"label":"Not answered / prefer not to say"
+				}],
 				"width": "600px"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Straight or Heterosexual: <strong>{{ Straight or Heterosexual % | toLocaleString() }}%</strong><br />Gay or Lesbian: <strong>{{ Gay or Lesbian % | toLocaleString() }}%</strong><br />Bisexual: <strong>{{ Bisexual % | toLocaleString() }}%</strong><br />All other sexual orientations: <strong>{{ All other sexual orientations % | toLocaleString() }}%</strong><br />Not answered: <strong>{{ Not answered % | toLocaleString() }}%</strong>",
+		"tooltip": "<strong>{{ n }}</strong><br />Straight or Heterosexual: <strong>{{ Straight or Heterosexual | multiply(100) | toFixed(1) }}%</strong><br />Gay or Lesbian: <strong>{{ Gay or Lesbian | multiply(100) | toFixed(1) }}%</strong><br />Bisexual: <strong>{{ Bisexual | multiply(100) | toFixed(1) }}%</strong><br />All other sexual orientations: <strong>{{ All other sexual orientations | multiply(100) | toFixed(1) }}%</strong><br />Not answered: <strong>{{ Not answered | multiply(100) | toFixed(1) }}%</strong>",
 		"attribution": "Data: <a href=\"https://www.ons.gov.uk/datasets/TS077/editions/2021/versions/2\">Census 2021: Sexual orientation</a> (ONS"
 	}
 }

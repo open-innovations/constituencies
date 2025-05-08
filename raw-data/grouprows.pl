@@ -1,6 +1,13 @@
 #!/usr/bin/perl
 
+use utf8;
+use warnings;
+use strict;
 use Data::Dumper;
+binmode STDOUT, 'utf8';
+binmode STDERR, 'utf8';
+
+my ($file,$rename,$i,$groupby,$colcode,$valuestr,@values,$c,@order,@bits,$old,$new,@normalise,@lines,$constituencies,$lookup,$r,@cols,@headers,$id,$grouped,$v,$total,$csv,$key);
 
 $file = $ARGV[0]||"TS058-2021-3-filtered-2023-10-10T18 09 15Z.csv";
 
@@ -139,6 +146,7 @@ $csv .= "\n";
 foreach $id (sort(keys(%{$constituencies}))){
 	$c = 0;
 	foreach $key (@order){
+		if(!defined($constituencies->{$id}{$key})){ $constituencies->{$id}{$key} = ""; }
 		$csv .= ($c==0 ? "":",").($constituencies->{$id}{$key} =~ /,/ ? "\"" : "").$constituencies->{$id}{$key}.($constituencies->{$id}{$key} =~ /,/ ? "\"" : "");
 		$c++;
 	}
