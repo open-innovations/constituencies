@@ -1,0 +1,52 @@
+{
+	"title": "Domestic solar - capacity (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Solar_photovoltaics_deployment",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Installed capacity (MW)",
+		"matchKey": "Constituency Code",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 25,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": "25 MW+"
+			},{
+				"value": 20,
+				"label": "20 MW"
+			},{
+				"value": 15,
+				"label": "15 MW"
+			},{
+				"value": 10,
+				"label": "10 MW"
+			},{
+				"value": 5,
+				"label": "5 MW"
+			},{
+				"value": 0,
+				"label": "0 MW"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Installed capacity: <strong>{{ Installed capacity (MW) | toLocaleString() }}&thinsp;MW</strong><br />Installations: <strong>{{ Number of installations | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/solar-photovoltaics-deployment\">Solar photovoltaics deployment</a> (Department for Energy Security and Net Zero )\n"
+	},
+	"date": "2024-12",
+	"units": {
+		"Installed capacity (MW)":{"value":"MW"}
+	}
+}

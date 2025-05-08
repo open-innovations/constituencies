@@ -1,0 +1,664 @@
+Constituency Code,Country/Region,Constituency,Installed capacity (MW),Number of installations
+E92000001,England,,-,-
+E12000001,North East,,-,-
+E14001101,North East,Bishop Auckland,11.0,2941
+E14001106,North East,Blaydon and Consett,6.2,1849
+E14001107,North East,Blyth and Ashington,9.6,3216
+E14001173,North East,City of Durham,9.2,2645
+E14001183,North East,Cramlington and Killingworth,9.4,3213
+E14001190,North East,Darlington,7.3,2133
+E14001211,North East,Easington,6.3,1824
+E14001244,North East,Gateshead Central and Whickham,3.1,945
+E14001272,North East,Hartlepool,7.5,2411
+E14001285,North East,Hexham,13.3,3477
+E14001295,North East,Houghton and Sunderland South,12.3,4730
+E14001307,North East,Jarrow and Gateshead East,5.5,1635
+E14001367,North East,Middlesbrough and Thornaby East,4.5,1300
+E14001368,North East,Middlesbrough South and East Cleveland,8.2,2550
+E14001377,North East,Newcastle upon Tyne Central and West,5.0,1611
+E14001378,North East,Newcastle upon Tyne East and Wallsend,5.7,1959
+E14001379,North East,Newcastle upon Tyne North,6.0,1807
+E14001382,North East,Newton Aycliffe and Spennymoor,8.8,2435
+E14001389,North East,North Durham,7.8,2196
+E14001397,North East,North Northumberland,14.7,4112
+E14001440,North East,Redcar,6.4,1961
+E14001492,North East,South Shields,5.9,2028
+E14001518,North East,Stockton North,7.6,2252
+E14001519,North East,Stockton West,9.4,2556
+E14001531,North East,Sunderland Central,5.8,2074
+E14001557,North East,Tynemouth,6.1,1991
+E14001567,North East,Washington and Gateshead South,10.7,4173
+E12000002,North West,,-,-
+E14001065,North West,Altrincham and Sale West,3.7,1033
+E14001070,North West,Ashton-under-Lyne,5.9,2064
+E14001076,North West,Barrow and Furness,7.6,2122
+E14001091,North West,Birkenhead,4.2,1222
+E14001102,North West,Blackburn,7.7,2323
+E14001103,North West,Blackley and Middleton South,8.2,2748
+E14001104,North West,Blackpool North and Fleetwood,4.4,1234
+E14001105,North West,Blackpool South,3.2,966
+E14001110,North West,Bolton North East,4.3,1227
+E14001111,North West,Bolton South and Walkden,7.5,2478
+E14001112,North West,Bolton West,5.4,1370
+E14001113,North West,Bootle,2.6,751
+E14001142,North West,Burnley,5.7,1642
+E14001144,North West,Bury North,5.2,1382
+E14001145,North West,Bury South,3.4,925
+E14001152,North West,Carlisle,8.4,2320
+E14001158,North West,Cheadle,5.0,1456
+E14001163,North West,Chester North and Neston,7.4,1991
+E14001164,North West,Chester South and Eddisbury,13.8,3270
+E14001170,North West,Chorley,7.3,2599
+E14001178,North West,Congleton,8.9,2194
+E14001185,North West,Crewe and Nantwich,7.0,1963
+E14001222,North West,Ellesmere Port and Bromborough,4.9,1498
+E14001242,North West,Fylde,6.1,1534
+E14001251,North West,Gorton and Denton,5.6,1982
+E14001277,North West,Hazel Grove,6.1,1953
+E14001286,North West,Heywood and Middleton North,5.6,1756
+E14001299,North West,Hyndburn,4.5,1242
+E14001317,North West,Knowsley,8.2,2877
+E14001318,North West,Lancaster and Wyre,9.0,2076
+E14001329,North West,Leigh and Atherton,6.3,2120
+E14001337,North West,Liverpool Garston,7.0,2297
+E14001338,North West,Liverpool Riverside,3.1,1014
+E14001339,North West,Liverpool Walton,4.1,1514
+E14001340,North West,Liverpool Wavertree,3.0,920
+E14001341,North West,Liverpool West Derby,4.3,1460
+E14001347,North West,Macclesfield,7.2,1836
+E14001350,North West,Makerfield,5.6,1686
+E14001352,North West,Manchester Central,4.0,1225
+E14001353,North West,Manchester Rusholme,2.8,1073
+E14001354,North West,Manchester Withington,5.8,2090
+E14001361,North West,Mid Cheshire,7.9,2428
+E14001372,North West,Morecambe and Lunesdale,9.5,2460
+E14001415,North West,Oldham East and Saddleworth,4.8,1346
+E14001416,North West,"Oldham West, Chadderton and Royton",4.9,1466
+E14001422,North West,Pendle and Clitheroe,9.4,2343
+E14001424,North West,Penrith and Solway,14.6,3689
+E14001433,North West,Preston,5.2,1642
+E14001443,North West,Ribble Valley,10.4,2955
+E14001446,North West,Rochdale,4.6,1373
+E14001450,North West,Rossendale and Darwen,8.0,2182
+E14001455,North West,Runcorn and Helsby,7.7,2058
+E14001459,North West,Salford,3.4,1241
+E14001463,North West,Sefton Central,5.4,1473
+E14001491,North West,South Ribble,7.6,2035
+E14001504,North West,Southport,5.5,1346
+E14001509,North West,St Helens North,5.8,1837
+E14001510,North West,St Helens South and Whiston,5.2,1679
+E14001515,North West,Stalybridge and Hyde,6.6,2142
+E14001517,North West,Stockport,6.0,2194
+E14001528,North West,Stretford and Urmston,3.7,1006
+E14001539,North West,Tatton,8.8,2245
+E14001561,North West,Wallasey,4.6,1401
+E14001564,North West,Warrington North,8.3,2944
+E14001565,North West,Warrington South,6.9,2050
+E14001577,North West,West Lancashire,7.4,2023
+E14001580,North West,Westmorland and Lonsdale,16.0,4262
+E14001583,North West,Whitehaven and Workington,6.6,1715
+E14001584,North West,Widnes and Halewood,5.6,1743
+E14001585,North West,Wigan,4.9,1523
+E14001589,North West,Wirral West,6.3,1667
+E14001598,North West,Worsley and Eccles,5.5,1689
+E14001602,North West,Wythenshawe and Sale East,4.4,1590
+E12000003,Yorkshire and The Humber,,-,-
+E14001074,Yorkshire and The Humber,Barnsley North,9.2,2698
+E14001075,Yorkshire and The Humber,Barnsley South,9.1,2819
+E14001087,Yorkshire and The Humber,Beverley and Holderness,10.5,2599
+E14001118,Yorkshire and The Humber,Bradford East,3.1,908
+E14001119,Yorkshire and The Humber,Bradford South,5.1,1359
+E14001120,Yorkshire and The Humber,Bradford West,3.2,835
+E14001127,Yorkshire and The Humber,Bridlington and The Wolds,12.5,2956
+E14001128,Yorkshire and The Humber,Brigg and Immingham,13.2,3349
+E14001147,Yorkshire and The Humber,Calder Valley,7.5,1994
+E14001177,Yorkshire and The Humber,Colne Valley,7.8,2199
+E14001196,Yorkshire and The Humber,Dewsbury and Batley,5.6,1620
+E14001198,Yorkshire and The Humber,Doncaster Central,10.2,2822
+E14001199,Yorkshire and The Humber,Doncaster East and the Isle of Axholme,14.8,3946
+E14001200,Yorkshire and The Humber,Doncaster North,10.0,2994
+E14001250,Yorkshire and The Humber,Goole and Pocklington,13.8,3314
+E14001255,Yorkshire and The Humber,Great Grimsby and Cleethorpes,6.3,1698
+E14001262,Yorkshire and The Humber,Halifax,6.0,1562
+E14001269,Yorkshire and The Humber,Harrogate and Knaresborough,6.0,1774
+E14001297,Yorkshire and The Humber,Huddersfield,6.3,1967
+E14001308,Yorkshire and The Humber,Keighley and Ilkley,5.9,1600
+E14001313,Yorkshire and The Humber,Kingston upon Hull East,5.6,1666
+E14001314,Yorkshire and The Humber,Kingston upon Hull North and Cottingham,5.1,1448
+E14001315,Yorkshire and The Humber,Kingston upon Hull West and Haltemprice,4.4,1256
+E14001319,Yorkshire and The Humber,Leeds Central and Headingley,2.4,762
+E14001320,Yorkshire and The Humber,Leeds East,5.6,1745
+E14001321,Yorkshire and The Humber,Leeds North East,4.6,1394
+E14001322,Yorkshire and The Humber,Leeds North West,6.0,1661
+E14001323,Yorkshire and The Humber,Leeds South,4.3,1444
+E14001324,Yorkshire and The Humber,Leeds South West and Morley,6.0,1646
+E14001325,Yorkshire and The Humber,Leeds West and Pudsey,3.9,1239
+E14001383,Yorkshire and The Humber,Normanton and Hemsworth,10.2,3205
+E14001418,Yorkshire and The Humber,Ossett and Denby Dale,8.3,2351
+E14001423,Yorkshire and The Humber,Penistone and Stocksbridge,9.2,2511
+E14001428,Yorkshire and The Humber,"Pontefract, Castleford and Knottingley",7.9,2329
+E14001436,Yorkshire and The Humber,Rawmarsh and Conisbrough,8.8,2535
+E14001444,Yorkshire and The Humber,Richmond and Northallerton,15.6,3749
+E14001451,Yorkshire and The Humber,Rother Valley,10.0,2798
+E14001452,Yorkshire and The Humber,Rotherham,7.5,2621
+E14001461,Yorkshire and The Humber,Scarborough and Whitby,9.2,2573
+E14001462,Yorkshire and The Humber,Scunthorpe,15.2,4278
+E14001464,Yorkshire and The Humber,Selby,13.8,3359
+E14001466,Yorkshire and The Humber,Sheffield Brightside and Hillsborough,4.7,1474
+E14001467,Yorkshire and The Humber,Sheffield Central,2.4,686
+E14001468,Yorkshire and The Humber,Sheffield Hallam,8.1,2245
+E14001469,Yorkshire and The Humber,Sheffield Heeley,4.1,1405
+E14001470,Yorkshire and The Humber,Sheffield South East,7.2,2059
+E14001472,Yorkshire and The Humber,Shipley,5.4,1473
+E14001475,Yorkshire and The Humber,Skipton and Ripon,12.6,3038
+E14001506,Yorkshire and The Humber,Spen Valley,6.4,1983
+E14001544,Yorkshire and The Humber,Thirsk and Malton,18.1,4596
+E14001560,Yorkshire and The Humber,Wakefield and Rothwell,7.3,2156
+E14001582,Yorkshire and The Humber,Wetherby and Easingwold,14.1,3500
+E14001604,Yorkshire and The Humber,York Central,6.2,1951
+E14001605,Yorkshire and The Humber,York Outer,10.5,2838
+E12000004,East Midlands,,-,-
+E14001066,East Midlands,Amber Valley,7.0,1933
+E14001068,East Midlands,Ashfield,8.4,2352
+E14001079,East Midlands,Bassetlaw,16.0,4388
+E14001109,East Midlands,Bolsover,10.5,2827
+E14001114,East Midlands,Boston and Skegness,20.8,5086
+E14001140,East Midlands,Broxtowe,7.0,1912
+E14001165,East Midlands,Chesterfield,9.1,2608
+E14001179,East Midlands,Corby and East Northamptonshire,11.7,3244
+E14001192,East Midlands,Daventry,12.7,3109
+E14001193,East Midlands,Derby North,7.9,2649
+E14001194,East Midlands,Derby South,7.9,2456
+E14001195,East Midlands,Derbyshire Dales,13.5,3334
+E14001228,East Midlands,Erewash,6.8,1919
+E14001243,East Midlands,Gainsborough,16.0,3995
+E14001245,East Midlands,Gedling,7.4,2131
+E14001253,East Midlands,Grantham and Bourne,13.0,3271
+E14001266,East Midlands,"Harborough, Oadby and Wigston",9.1,2313
+E14001287,East Midlands,High Peak,6.4,1705
+E14001288,East Midlands,Hinckley and Bosworth,10.4,2664
+E14001311,East Midlands,Kettering,8.6,2640
+E14001326,East Midlands,Leicester East,8.6,2563
+E14001327,East Midlands,Leicester South,4.9,1602
+E14001328,East Midlands,Leicester West,8.7,2734
+E14001336,East Midlands,Lincoln,7.9,2168
+E14001342,East Midlands,Loughborough,8.1,2049
+E14001343,East Midlands,Louth and Horncastle,17.1,4432
+E14001355,East Midlands,Mansfield,8.7,2301
+E14001357,East Midlands,Melton and Syston,11.7,2847
+E14001362,East Midlands,Mid Derbyshire,8.2,2260
+E14001364,East Midlands,Mid Leicestershire,8.5,2298
+E14001375,East Midlands,Newark,16.5,4084
+E14001391,East Midlands,North East Derbyshire,8.8,2360
+E14001404,East Midlands,North West Leicestershire,9.4,2511
+E14001406,East Midlands,Northampton North,6.0,1974
+E14001407,East Midlands,Northampton South,9.5,3088
+E14001410,East Midlands,Nottingham East,6.0,2126
+E14001411,East Midlands,Nottingham North and Kimberley,11.3,3953
+E14001412,East Midlands,Nottingham South,9.0,3057
+E14001457,East Midlands,Rushcliffe,12.7,3235
+E14001458,East Midlands,Rutland and Stamford,13.4,3409
+E14001471,East Midlands,Sherwood Forest,12.6,3163
+E14001476,East Midlands,Sleaford and North Hykeham,16.1,4021
+E14001483,East Midlands,South Derbyshire,9.6,2392
+E14001487,East Midlands,South Holland and The Deepings,17.0,4372
+E14001488,East Midlands,South Leicestershire,11.0,2727
+E14001490,East Midlands,South Northamptonshire,11.2,2591
+E14001571,East Midlands,Wellingborough and Rushden,8.2,2262
+E12000005,West Midlands,,-,-
+E14001064,West Midlands,Aldridge-Brownhills,4.4,1267
+E14001092,West Midlands,Birmingham Edgbaston,4.0,1385
+E14001093,West Midlands,Birmingham Erdington,3.6,1277
+E14001094,West Midlands,Birmingham Hall Green and Moseley,3.5,971
+E14001095,West Midlands,Birmingham Hodge Hill and Solihull North,4.9,1587
+E14001096,West Midlands,Birmingham Ladywood,3.4,1224
+E14001097,West Midlands,Birmingham Northfield,3.7,1318
+E14001098,West Midlands,Birmingham Perry Barr,3.7,1262
+E14001099,West Midlands,Birmingham Selly Oak,2.9,861
+E14001100,West Midlands,Birmingham Yardley,2.9,910
+E14001138,West Midlands,Bromsgrove,7.8,1936
+E14001143,West Midlands,Burton and Uttoxeter,8.5,2206
+E14001150,West Midlands,Cannock Chase,7.2,2062
+E14001180,West Midlands,Coventry East,5.9,1754
+E14001181,West Midlands,Coventry North West,3.6,1050
+E14001182,West Midlands,Coventry South,4.8,1358
+E14001203,West Midlands,Droitwich and Evesham,12.4,3517
+E14001204,West Midlands,Dudley,3.5,1117
+E14001261,West Midlands,Halesowen,4.4,1220
+E14001281,West Midlands,Hereford and South Herefordshire,14.3,3425
+E14001309,West Midlands,Kenilworth and Southam,12.0,3093
+E14001316,West Midlands,Kingswinford and South Staffordshire,5.4,1380
+E14001335,West Midlands,Lichfield,8.2,1992
+E14001358,West Midlands,Meriden and Solihull East,5.8,1469
+E14001380,West Midlands,Newcastle-under-Lyme,6.3,1946
+E14001395,West Midlands,North Herefordshire,21.9,4713
+E14001398,West Midlands,North Shropshire,15.2,3744
+E14001400,West Midlands,North Warwickshire and Bedworth,6.5,1723
+E14001413,West Midlands,Nuneaton,5.6,1579
+E14001441,West Midlands,Redditch,7.2,1919
+E14001453,West Midlands,Rugby,8.2,2086
+E14001473,West Midlands,Shrewsbury,9.7,2381
+E14001478,West Midlands,Smethwick,2.9,791
+E14001479,West Midlands,Solihull West and Shirley,4.1,1062
+E14001493,West Midlands,South Shropshire,16.4,3705
+E14001513,West Midlands,Stafford,9.9,2588
+E14001514,West Midlands,Staffordshire Moorlands,8.1,2124
+E14001520,West Midlands,Stoke-on-Trent Central,9.8,3387
+E14001521,West Midlands,Stoke-on-Trent North,9.1,3135
+E14001522,West Midlands,Stoke-on-Trent South,10.4,3363
+E14001523,West Midlands,"Stone, Great Wyrley and Penkridge",8.5,2130
+E14001524,West Midlands,Stourbridge,4.1,1090
+E14001526,West Midlands,Stratford-on-Avon,11.5,3095
+E14001535,West Midlands,Sutton Coldfield,4.9,1262
+E14001538,West Midlands,Tamworth,6.4,1702
+E14001541,West Midlands,Telford,6.8,1950
+E14001543,West Midlands,The Wrekin,11.3,2814
+E14001547,West Midlands,Tipton and Wednesbury,3.4,1019
+E14001562,West Midlands,Walsall and Bloxwich,5.0,1570
+E14001566,West Midlands,Warwick and Leamington,7.7,2298
+E14001574,West Midlands,West Bromwich,4.6,1409
+E14001579,West Midlands,West Worcestershire,16.9,4453
+E14001594,West Midlands,Wolverhampton North East,4.6,1318
+E14001595,West Midlands,Wolverhampton South East,4.3,1275
+E14001596,West Midlands,Wolverhampton West,4.4,1270
+E14001597,West Midlands,Worcester,7.0,2045
+E14001601,West Midlands,Wyre Forest,7.2,1919
+E12000006,East,,-,-
+E14001077,East,Basildon and Billericay,5.9,1586
+E14001084,East,Bedford,6.1,1647
+E14001121,East,Braintree,10.2,2624
+E14001125,East,Brentwood and Ongar,6.3,1598
+E14001136,East,Broadland and Fakenham,17.1,4388
+E14001139,East,Broxbourne,4.1,1231
+E14001146,East,Bury St Edmunds and Stowmarket,16.5,4379
+E14001149,East,Cambridge,9.4,3207
+E14001154,East,Castle Point,5.5,1559
+E14001156,East,Central Suffolk and North Ipswich,15.7,4010
+E14001159,East,Chelmsford,7.3,2001
+E14001174,East,Clacton,11.5,3235
+E14001176,East,Colchester,13.7,4225
+E14001206,East,Dunstable and Leighton Buzzard,6.3,1639
+E14001224,East,Ely and East Cambridgeshire,17.3,4392
+E14001226,East,Epping Forest,4.3,1190
+E14001256,East,Great Yarmouth,10.9,2961
+E14001267,East,Harlow,6.0,1581
+E14001268,East,Harpenden and Berkhamsted,9.0,2406
+E14001273,East,Harwich and North Essex,15.2,3967
+E14001278,East,Hemel Hempstead,5.2,1463
+E14001283,East,Hertford and Stortford,6.7,1829
+E14001284,East,Hertsmere,4.4,1121
+E14001289,East,Hitchin,8.7,2571
+E14001298,East,Huntingdon,14.2,3442
+E14001302,East,Ipswich,8.1,2455
+E14001344,East,Lowestoft,9.7,2620
+E14001345,East,Luton North,4.6,1533
+E14001346,East,Luton South and South Bedfordshire,4.4,1269
+E14001351,East,Maldon,12.4,3166
+E14001359,East,Mid Bedfordshire,9.1,2435
+E14001365,East,Mid Norfolk,19.2,4663
+E14001384,East,North Bedfordshire,12.7,3016
+E14001390,East,North East Cambridgeshire,13.4,3497
+E14001393,East,North East Hertfordshire,9.5,2787
+E14001396,East,North Norfolk,17.4,4092
+E14001401,East,North West Cambridgeshire,16.4,4849
+E14001402,East,North West Essex,13.5,3847
+E14001405,East,North West Norfolk,13.5,3208
+E14001408,East,Norwich North,8.1,2385
+E14001409,East,Norwich South,6.9,2049
+E14001425,East,Peterborough,22.5,7194
+E14001437,East,Rayleigh and Wickford,7.1,2132
+E14001480,East,South Basildon and East Thurrock,5.2,1626
+E14001481,East,South Cambridgeshire,23.5,6215
+E14001489,East,South Norfolk,20.5,5134
+E14001494,East,South Suffolk,18.1,5047
+E14001496,East,South West Hertfordshire,5.4,1519
+E14001497,East,South West Norfolk,16.1,3975
+E14001501,East,Southend East and Rochford,5.0,1514
+E14001502,East,Southend West and Leigh,4.3,1369
+E14001507,East,St Albans,7.4,2134
+E14001512,East,St Neots and Mid Cambridgeshire,17.4,4739
+E14001516,East,Stevenage,5.8,1656
+E14001530,East,Suffolk Coastal,18.2,4643
+E14001546,East,Thurrock,4.3,1669
+E14001568,East,Watford,3.4,985
+E14001569,East,Waveney Valley,19.8,4933
+E14001573,East,Welwyn Hatfield,6.5,1803
+E14001578,East,West Suffolk,16.0,3884
+E14001590,East,Witham,11.9,3152
+E12000007,London,,-,-
+E14001073,London,Barking,3.6,1221
+E14001081,London,Battersea,1.4,335
+E14001083,London,Beckenham and Penge,2.7,766
+E14001085,London,Bermondsey and Old Southwark,2.3,296
+E14001086,London,Bethnal Green and Stepney,1.4,264
+E14001089,London,Bexleyheath and Crayford,3.7,1100
+E14001122,London,Brent East,2.7,678
+E14001123,London,Brent West,2.9,711
+E14001124,London,Brentford and Isleworth,3.2,881
+E14001137,London,Bromley and Biggin Hill,4.1,1111
+E14001153,London,Carshalton and Wallington,3.7,1126
+E14001160,London,Chelsea and Fulham,0.9,291
+E14001167,London,Chingford and Woodford Green,3.0,1015
+E14001169,London,Chipping Barnet,4.0,1233
+E14001172,London,Cities of London and Westminster,2.1,382
+E14001175,London,Clapham and Brixton Hill,1.8,420
+E14001186,London,Croydon East,3.3,1070
+E14001187,London,Croydon South,5.8,1595
+E14001188,London,Croydon West,2.7,714
+E14001189,London,Dagenham and Rainham,3.6,1494
+E14001205,London,Dulwich and West Norwood,2.3,733
+E14001207,London,Ealing Central and Acton,3.0,661
+E14001208,London,Ealing North,3.9,1198
+E14001209,London,Ealing Southall,2.4,717
+E14001213,London,East Ham,1.2,394
+E14001221,London,Edmonton and Winchmore Hill,2.1,592
+E14001223,London,Eltham and Chislehurst,2.9,857
+E14001225,London,Enfield North,2.8,811
+E14001229,London,Erith and Thamesmead,3.0,1052
+E14001236,London,Feltham and Heston,3.4,896
+E14001238,London,Finchley and Golders Green,2.5,706
+E14001257,London,Greenwich and Woolwich,3.2,588
+E14001259,London,Hackney North and Stoke Newington,1.8,509
+E14001260,London,Hackney South and Shoreditch,2.4,413
+E14001264,London,Hammersmith and Chiswick,1.7,445
+E14001265,London,Hampstead and Highgate,1.9,495
+E14001270,London,Harrow East,3.6,874
+E14001271,London,Harrow West,2.4,714
+E14001276,London,Hayes and Harlington,2.7,737
+E14001279,London,Hendon,2.4,621
+E14001290,London,Holborn and St Pancras,1.6,350
+E14001292,London,Hornchurch and Upminster,4.1,1621
+E14001293,London,Hornsey and Friern Barnet,2.4,699
+E14001300,London,Ilford North,2.8,834
+E14001301,London,Ilford South,2.1,619
+E14001305,London,Islington North,1.7,486
+E14001306,London,Islington South and Finsbury,1.9,338
+E14001310,London,Kensington and Bayswater,1.1,288
+E14001312,London,Kingston and Surbiton,3.4,1036
+E14001331,London,Lewisham East,2.1,608
+E14001332,London,Lewisham North,2.3,607
+E14001333,London,Lewisham West and East Dulwich,2.3,713
+E14001334,London,Leyton and Wanstead,2.4,793
+E14001371,London,Mitcham and Morden,3.0,865
+E14001414,London,Old Bexley and Sidcup,2.9,845
+E14001417,London,Orpington,4.2,1287
+E14001421,London,Peckham,2.2,404
+E14001430,London,Poplar and Limehouse,2.1,290
+E14001434,London,Putney,1.7,547
+E14001435,London,Queen's Park and Maida Vale,1.5,365
+E14001445,London,Richmond Park,3.7,1061
+E14001448,London,Romford,3.0,882
+E14001454,London,"Ruislip, Northwood and Pinner",3.8,998
+E14001503,London,Southgate and Wood Green,2.4,696
+E14001525,London,Stratford and Bow,1.5,386
+E14001527,London,Streatham and Croydon North,2.5,749
+E14001534,London,Sutton and Cheam,3.4,898
+E14001550,London,Tooting,1.8,499
+E14001553,London,Tottenham,1.7,456
+E14001556,London,Twickenham,3.7,1206
+E14001558,London,Uxbridge and South Ruislip,3.2,841
+E14001559,London,Vauxhall and Camberwell Green,1.5,333
+E14001563,London,Walthamstow,3.7,1347
+E14001576,London,West Ham and Beckton,1.6,468
+E14001586,London,Wimbledon,3.8,1098
+E12000008,South East,,-,-
+E14001063,South East,Aldershot,6.3,1906
+E14001067,South East,Arundel and South Downs,13.4,3425
+E14001069,South East,Ashford,11.9,3247
+E14001071,South East,Aylesbury,7.8,2106
+E14001072,South East,Banbury,10.7,2746
+E14001078,South East,Basingstoke,6.9,1827
+E14001082,South East,Beaconsfield,6.7,1705
+E14001088,South East,Bexhill and Battle,11.0,2703
+E14001090,South East,Bicester and Woodstock,12.3,3195
+E14001108,South East,Bognor Regis and Littlehampton,8.3,2250
+E14001117,South East,Bracknell,6.8,1796
+E14001129,South East,Brighton Kemptown and Peacehaven,7.0,2195
+E14001130,South East,Brighton Pavilion,4.4,1238
+E14001141,South East,Buckingham and Bletchley,9.7,2658
+E14001151,South East,Canterbury,9.8,2523
+E14001157,South East,Chatham and Aylesford,4.8,1333
+E14001162,South East,Chesham and Amersham,8.2,2154
+E14001166,South East,Chichester,13.6,3759
+E14001184,South East,Crawley,7.0,1991
+E14001191,South East,Dartford,5.3,1775
+E14001197,South East,Didcot and Wantage,11.9,3011
+E14001201,South East,Dorking and Horley,9.8,2828
+E14001202,South East,Dover and Deal,8.8,2382
+E14001210,South East,Earley and Woodley,7.7,2051
+E14001212,South East,East Grinstead and Uckfield,13.2,3305
+E14001214,South East,East Hampshire,14.4,4153
+E14001215,South East,East Surrey,9.0,2523
+E14001216,South East,East Thanet,6.3,1725
+E14001218,South East,East Worthing and Shoreham,6.9,1867
+E14001219,South East,Eastbourne,6.7,1851
+E14001220,South East,Eastleigh,8.4,2794
+E14001227,South East,Epsom and Ewell,5.9,1700
+E14001230,South East,Esher and Walton,5.6,1500
+E14001233,South East,Fareham and Waterlooville,9.4,2758
+E14001234,South East,Farnham and Bordon,10.1,2838
+E14001235,South East,Faversham and Mid Kent,8.3,2295
+E14001239,South East,Folkestone and Hythe,8.8,2312
+E14001246,South East,Gillingham and Rainham,4.4,1115
+E14001249,South East,Godalming and Ash,10.1,2809
+E14001252,South East,Gosport,8.2,2463
+E14001254,South East,Gravesham,8.3,2795
+E14001258,South East,Guildford,8.2,2367
+E14001263,South East,Hamble Valley,11.9,3653
+E14001274,South East,Hastings and Rye,7.5,2068
+E14001275,South East,Havant,8.9,2569
+E14001280,South East,Henley and Thame,11.0,2694
+E14001282,South East,Herne Bay and Sandwich,9.3,2474
+E14001294,South East,Horsham,10.9,2758
+E14001296,South East,Hove and Portslade,4.3,1221
+E14001303,South East,Isle of Wight East,7.2,2129
+E14001304,South East,Isle of Wight West,15.4,2788
+E14001330,South East,Lewes,13.5,3600
+E14001348,South East,Maidenhead,8.8,2283
+E14001349,South East,Maidstone and Malling,6.6,2261
+E14001360,South East,Mid Buckinghamshire,11.4,2827
+E14001366,South East,Mid Sussex,10.1,3101
+E14001369,South East,Milton Keynes Central,9.4,2494
+E14001370,South East,Milton Keynes North,9.1,2460
+E14001373,South East,New Forest East,10.9,2985
+E14001374,South East,New Forest West,11.9,3247
+E14001376,South East,Newbury,8.4,2104
+E14001392,South East,North East Hampshire,10.8,3190
+E14001403,South East,North West Hampshire,10.6,2600
+E14001419,South East,Oxford East,5.6,1690
+E14001420,South East,Oxford West and Abingdon,8.1,2043
+E14001431,South East,Portsmouth North,5.7,1622
+E14001432,South East,Portsmouth South,3.1,771
+E14001438,South East,Reading Central,5.7,1715
+E14001439,South East,Reading West and Mid Berkshire,8.8,2476
+E14001442,South East,Reigate,8.5,2409
+E14001447,South East,Rochester and Strood,5.2,1482
+E14001449,South East,Romsey and Southampton North,13.2,3257
+E14001456,South East,Runnymede and Weybridge,7.1,1975
+E14001465,South East,Sevenoaks,8.1,2179
+E14001474,South East,Sittingbourne and Sheppey,7.5,2113
+E14001477,South East,Slough,3.6,1104
+E14001499,South East,Southampton Itchen,5.4,1882
+E14001500,South East,Southampton Test,5.6,1889
+E14001505,South East,Spelthorne,5.1,1593
+E14001532,South East,Surrey Heath,7.8,2058
+E14001533,South East,Sussex Weald,13.7,3224
+E14001549,South East,Tonbridge,9.4,2251
+E14001555,South East,Tunbridge Wells,10.0,2576
+E14001570,South East,Weald of Kent,14.0,3335
+E14001587,South East,Winchester,15.5,3968
+E14001588,South East,Windsor,5.4,1471
+E14001591,South East,Witney,10.9,2985
+E14001592,South East,Woking,7.6,2163
+E14001593,South East,Wokingham,10.4,2534
+E14001599,South East,Worthing West,7.6,2062
+E14001600,South East,Wycombe,6.1,1675
+E12000009,South West,,-,-
+E14001080,South West,Bath,6.2,1896
+E14001115,South West,Bournemouth East,5.0,1501
+E14001116,South West,Bournemouth West,7.6,2391
+E14001126,South West,Bridgwater,11.6,3196
+E14001131,South West,Bristol Central,4.3,1249
+E14001132,South West,Bristol East,5.3,1745
+E14001133,South West,Bristol North East,5.5,1818
+E14001134,South West,Bristol North West,7.7,2436
+E14001135,South West,Bristol South,5.4,1823
+E14001148,South West,Camborne and Redruth,17.0,4607
+E14001155,South West,Central Devon,23.4,5835
+E14001161,South West,Cheltenham,7.7,2379
+E14001168,South West,Chippenham,10.0,2648
+E14001171,South West,Christchurch,8.8,2412
+E14001217,South West,East Wiltshire,13.9,3379
+E14001231,South West,Exeter,7.2,2316
+E14001232,South West,Exmouth and Exeter East,14.4,4191
+E14001237,South West,Filton and Bradley Stoke,8.0,2332
+E14001240,South West,Forest of Dean,16.1,4367
+E14001241,South West,Frome and East Somerset,12.7,3412
+E14001247,South West,Glastonbury and Somerton,17.5,4271
+E14001248,South West,Gloucester,7.9,2281
+E14001291,South West,Honiton and Sidmouth,18.3,4942
+E14001356,South West,Melksham and Devizes,14.5,3815
+E14001363,South West,Mid Dorset and North Poole,12.5,3482
+E14001381,South West,Newton Abbot,12.7,3268
+E14001385,South West,North Cornwall,25.9,6358
+E14001386,South West,North Cotswolds,12.8,2832
+E14001387,South West,North Devon,20.4,5136
+E14001388,South West,North Dorset,15.6,3611
+E14001394,South West,North East Somerset and Hanham,10.6,2885
+E14001399,South West,North Somerset,17.3,4986
+E14001426,South West,Plymouth Moor View,13.8,5029
+E14001427,South West,Plymouth Sutton and Devonport,5.3,1700
+E14001429,South West,Poole,9.4,3167
+E14001460,South West,Salisbury,13.6,3482
+E14001482,South West,South Cotswolds,13.2,3052
+E14001484,South West,South Devon,20.6,5412
+E14001485,South West,South Dorset,10.7,3015
+E14001486,South West,South East Cornwall,18.8,4944
+E14001495,South West,South West Devon,14.9,4174
+E14001498,South West,South West Wiltshire,12.5,3427
+E14001508,South West,St Austell and Newquay,16.0,4340
+E14001511,South West,St Ives,17.1,4486
+E14001529,South West,Stroud,13.411,3662
+E14001536,South West,Swindon North,8.158,2221
+E14001537,South West,Swindon South,9.0,2678
+E14001540,South West,Taunton and Wellington,13.2,3731
+E14001542,South West,Tewkesbury,10.5,3138
+E14001545,South West,Thornbury and Yate,13.4,3623
+E14001548,South West,Tiverton and Minehead,19.9,5178
+E14001551,South West,Torbay,6.9,1953
+E14001552,South West,Torridge and Tavistock,22.7,5650
+E14001554,South West,Truro and Falmouth,16.3,4090
+E14001572,South West,Wells and Mendip Hills,19.3,5081
+E14001575,South West,West Dorset,19.4,4393
+E14001581,South West,Weston-Super-Mare,11.0,3895
+E14001603,South West,Yeovil,13.8,3538
+W92000004,Wales,,-,-
+W07000081,Wales,Aberafan Maesteg,5.7,1710
+W07000082,Wales,Alyn and Deeside,10.2,3045
+W07000083,Wales,Bangor Aberconwy,11.0,2926
+W07000084,Wales,Blaenau Gwent and Rhymney,5.8,2066
+W07000085,Wales,"Brecon, Radnor and Cwm Tawe",18.3,4701
+W07000086,Wales,Bridgend,6.9,1971
+W07000087,Wales,Caerfyrddin,21.5,5362
+W07000088,Wales,Caerphilly,6.8,2157
+W07000089,Wales,Cardiff East,5.4,1767
+W07000090,Wales,Cardiff North,5.0,1482
+W07000091,Wales,Cardiff South and Penarth,5.0,1528
+W07000092,Wales,Cardiff West,5.2,1528
+W07000093,Wales,Ceredigion Preseli,26.4,6825
+W07000094,Wales,Clwyd East,18.1,4977
+W07000095,Wales,Clwyd North,9.3,2829
+W07000096,Wales,Dwyfor Meirionnydd,17.5,4604
+W07000097,Wales,Gower,9.9,2635
+W07000098,Wales,Llanelli,10.9,2849
+W07000099,Wales,Merthyr Tydfil and Aberdare,6.2,1878
+W07000100,Wales,Mid and South Pembrokeshire,20.5,5294
+W07000101,Wales,Monmouthshire,18.2,5095
+W07000102,Wales,Montgomeryshire and Glyndwr,20.8,5923
+W07000103,Wales,Neath and Swansea East,6.3,1825
+W07000104,Wales,Newport East,7.6,2400
+W07000105,Wales,Newport West and Islwyn,6.5,1923
+W07000106,Wales,Pontypridd,8.0,2312
+W07000107,Wales,Rhondda and Ogmore,6.3,2130
+W07000108,Wales,Swansea West,5.4,1560
+W07000109,Wales,Torfaen,8.1,2679
+W07000110,Wales,Vale of Glamorgan,8.6,2279
+W07000111,Wales,Wrexham,10.3,3925
+W07000112,Wales,Ynys M?n,17.9,5246
+S92000003,Scotland,,-,-
+S14000060,Scotland,Aberdeen North,4.9,1389
+S14000061,Scotland,Aberdeen South,3.9,1042
+S14000062,Scotland,Aberdeenshire North and Moray East,18.3,4914
+S14000063,Scotland,Airdrie and Shotts,4.6,1542
+S14000064,Scotland,Alloa and Grangemouth,5.4,1687
+S14000065,Scotland,Angus and Perthshire Glens,17.8,5234
+S14000066,Scotland,Arbroath and Broughty Ferry,10.3,2841
+S14000067,Scotland,"Argyll, Bute and South Lochaber",11.9,3301
+S14000107,Scotland,"Ayr, Carrick and Cumnock",6.8,1984
+S14000068,Scotland,Bathgate and Linlithgow,6.4,1836
+S14000108,Scotland,"Berwickshire, Roxburgh and Selkirk",18.2,4912
+S14000069,Scotland,"Caithness, Sutherland and Easter Ross",15.409,4426
+S14000109,Scotland,Central Ayrshire,6.572,2276
+S14000070,Scotland,Coatbridge and Bellshill,2.9,1112
+S14000071,Scotland,Cowdenbeath and Kirkcaldy,6.5,2085
+S14000072,Scotland,Cumbernauld and Kirkintilloch,5.2,1644
+S14000073,Scotland,Dumfries and Galloway,14.7,4133
+S14000074,Scotland,"Dumfriesshire, Clydesdale and Tweeddale",15.8,4368
+S14000075,Scotland,Dundee Central,2.8,1014
+S14000076,Scotland,Dunfermline and Dollar,6.8,2010
+S14000077,Scotland,East Kilbride and Strathaven,4.4,1360
+S14000021,Scotland,East Renfrewshire,3.5,1040
+S14000078,Scotland,Edinburgh East and Musselburgh,2.6,908
+S14000079,Scotland,Edinburgh North and Leith,1.3,412
+S14000080,Scotland,Edinburgh South,4.5,1446
+S14000081,Scotland,Edinburgh South West,3.2,974
+S14000082,Scotland,Edinburgh West,5.4,1820
+S14000083,Scotland,Falkirk,5.0,1557
+S14000084,Scotland,Glasgow East,2.8,1265
+S14000085,Scotland,Glasgow North,1.6,672
+S14000086,Scotland,Glasgow North East,2.4,956
+S14000087,Scotland,Glasgow South,1.5,802
+S14000088,Scotland,Glasgow South West,2.2,896
+S14000089,Scotland,Glasgow West,1.5,500
+S14000090,Scotland,Glenrothes and Mid Fife,5.9,2123
+S14000091,Scotland,Gordon and Buchan,16.5,4715
+S14000092,Scotland,Hamilton and Clyde Valley,5.9,2007
+S14000093,Scotland,Inverclyde and Renfrewshire West,3.6,1255
+S14000094,Scotland,"Inverness, Skye and West Ross-shire",10.4,3054
+S14000110,Scotland,Kilmarnock and Loudoun,5.6,1755
+S14000095,Scotland,Livingston,7.7,2371
+S14000096,Scotland,Lothian East,10.0,3296
+S14000097,Scotland,Mid Dunbartonshire,4.2,1260
+S14000045,Scotland,Midlothian,7.2,2391
+S14000098,Scotland,"Moray West, Nairn and Strathspey",16.3,4661
+S14000099,Scotland,"Motherwell, Wishaw and Carluke",5.4,1960
+S14000027,Scotland,Na h-Eileanan an Iar,2.1,583
+S14000048,Scotland,North Ayrshire and Arran,8.1,2772
+S14000100,Scotland,North East Fife,10.3,3009
+S14000051,Scotland,Orkney and Shetland,3.5,912
+S14000101,Scotland,Paisley and Renfrewshire North,3.1,1206
+S14000102,Scotland,Paisley and Renfrewshire South,4.459,1611
+S14000103,Scotland,Perth and Kinross-shire,11.622,3118
+S14000104,Scotland,Rutherglen,3.503,1553
+S14000105,Scotland,Stirling and Strathallan,18.6,5542
+S14000111,Scotland,West Aberdeenshire and Kincardine,18.3,4937
+S14000106,Scotland,West Dunbartonshire,3.7,1292
+N92000002,Northern Ireland,,-,-
+N05000001,Northern Ireland,Belfast East,3.0,685
+N05000002,Northern Ireland,Belfast North,3.2,869
+N05000003,Northern Ireland,Belfast South and Mid Down,4.2,992
+N05000004,Northern Ireland,Belfast West,2.5,676
+N05000005,Northern Ireland,East Antrim,8.1,1805
+N05000006,Northern Ireland,East Londonderry,9.1,1958
+N05000007,Northern Ireland,Fermanagh and South Tyrone,10.9,2180
+N05000008,Northern Ireland,Foyle,3.9,1214
+N05000009,Northern Ireland,Lagan Valley,9.0,1928
+N05000010,Northern Ireland,Mid Ulster,10.5,1803
+N05000011,Northern Ireland,Newry and Armagh,8.0,1746
+N05000012,Northern Ireland,North Antrim,8.2,1718
+N05000013,Northern Ireland,North Down,5.7,1394
+N05000014,Northern Ireland,South Antrim,8.7,1869
+N05000015,Northern Ireland,South Down,10.4,2338
+N05000016,Northern Ireland,Strangford,9.1,2049
+N05000017,Northern Ireland,Upper Bann,7.1,1616
+N05000018,Northern Ireland,West Tyrone,10.1,2030

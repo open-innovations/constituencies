@@ -1,0 +1,29 @@
+---
+title: Solar (UK)
+theme: energy
+created: 2025-05-08T19:20
+updated: 2025-05-08T19:20
+description: |
+  Domestic solar photovoltaic capacity in the United Kingdom (UK)
+keywords: [solar,PV,electric]
+api:
+  - installations
+---
+
+<h2>Installed capacity - domestic (December 2024)</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "capacity"
+}) }}
+
+<h2>Number of installations - domestic (December 2024)</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "installations"
+}) }}
+
+<h2>Notes</h2>
+
+<p>Installations that are recorded as being on domestic properties by the MCS or OFGEM in the Central FiTs Register (CFR). The breakdown by parliamentary constituencies is based on the recorded postcode and a look-up table published by the Office for National Statistics (ONS).</p>

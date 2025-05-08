@@ -83,7 +83,7 @@ header a { text-decoration: none; }
 footer { width: 100%; padding-bottom: 3em; }
 footer h2 + p { margin-top: 1em; }
 footer a { color: #1DD3A7; }
-code,pre { font-family: monospace; color: #444; background-color: #efefef; }
+code,pre { font-family: monospace; color: #444; background-color: #efefef; tab-size: 4; }
 code { padding: 0.125em 0.25em; }
 pre { max-width: 100%; overflow-x: auto; padding: 16px; margin-bottom: 16px; }
 pre code { padding: 0; }
