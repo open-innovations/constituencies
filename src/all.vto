@@ -1,0 +1,26 @@
+---
+title: All visualisations
+description: |
+  The full list of visualisations on this site.
+---
+
+<p>The number of visualisations included here will grow as we become aware of more constituency-level datasets. If you know of any that you think we should include, please <a href="https://github.com/open-innovations/constituencies/issues/new/choose">let us know</a> about the dataset.</p>
+
+
+{{ set themeData = search.data("themes/") }}
+{{ set themes = themeData.themes }}
+{{ for theme, data of themes }}
+	{{ if !("draft" in data) }}
+		<h2><a href="/themes/{{ data.url }}"><div class="theme-icon {{ data.class }}">{{ data.icon }}</div>{{ data.title }}</a></h2>
+		<ul>
+			{{ for page of search.pages("theme="+theme+" !draft updated!=undefined") }}
+				<li>
+					<a href="{{ page.url }}">{{ page.title }}</a> / {{ page.updated |> date('do MMMM yyyy') }}
+				</li>
+			{{ /for }}
+		</ul>
+	{{ /if }}
+{{ /for }}
+
+
+<p><a href="/themes/index.json">Machine readable list (JSON)</a></p>
