@@ -33,5 +33,10 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Estimated leave vote: <strong>{{ LeavePct | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://docs.google.com/spreadsheets/d/1mtph-ml7CYVoeEUIc1g_IbOvbiZMa_ezRGQlHQoCpF4/edit?gid=341382343#gid=341382343\">EU referendum estimates</a> for 2024 boundaries"
+	},
+	"date": "2024",
+	"units": {
+		"LeavePct":{"value":"percent","scaleBy":100},
+		"RemainPct":{"value":"percent","scaleBy":100}
 	}
 }

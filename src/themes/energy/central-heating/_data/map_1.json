@@ -52,14 +52,14 @@
 	},
 	"date": "2023",
 	"units": {
-		"2023":{"value":"percent"},
-		"2022":{"value":"percent"},
-		"2021":{"value":"percent"},
-		"2020":{"value":"percent"},
-		"2019":{"value":"percent"},
-		"2018":{"value":"percent"},
-		"2017":{"value":"percent"},
-		"2016":{"value":"percent"},
-		"2015":{"value":"percent"}
+		"2023":{"value":"percent","scaleBy":100},
+		"2022":{"value":"percent","scaleBy":100},
+		"2021":{"value":"percent","scaleBy":100},
+		"2020":{"value":"percent","scaleBy":100},
+		"2019":{"value":"percent","scaleBy":100},
+		"2018":{"value":"percent","scaleBy":100},
+		"2017":{"value":"percent","scaleBy":100},
+		"2016":{"value":"percent","scaleBy":100},
+		"2015":{"value":"percent","scaleBy":100}
 	}
 }
