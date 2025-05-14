@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" href="https://open-innovations.org/resources/images/logos/oi-square-black.svg" />
-	<title>404 | {% if theme and themes[theme]['title']!=title %}{{ themes[theme]['title'] }} | {% endif %}{{ metas.site }}</title>
+	<title>404 | {{ if theme && themes[theme]['title']!=title }}{{ themes[theme]['title'] }} | {{ /if }}{{ metas.site }}</title>
 	<style>
 	/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
@@ -136,7 +136,7 @@
 			<g id="oi-logo" fill="black"><circle r="32" mask="url(#oi-person)"></circle></g>
 		</svg>
 		<h1>Open Innovations</h1>
-		{{ content | safe }}
+		{{ content }}
 		<p class="message">"These are not the data you are looking for."</p>
 		<p>You could try our <a href="https://open-innovations.org/">homepage</a>, <a href="https://github.com/open-innovations/">github</a>, <a href="https://open-innovations.org/dashboard/">dashboard</a>, or <a href="https://open-innovations.org/search/">search</a>.</p>
 	</div>

@@ -1,4 +1,4 @@
-layout: template/page.njk
+layout: template/page.vto
 
 # Override the site logo colour here. Any CSS colour will work.
 logo_colour: white
