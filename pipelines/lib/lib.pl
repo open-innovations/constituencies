@@ -81,7 +81,7 @@ sub updateCreationTimestamp {
 	close($fh);
 }
 
-# Version 1.5
+# Version 1.5.1
 sub ParseCSV {
 	my $str = shift;
 	my $config = shift;
@@ -122,7 +122,7 @@ sub ParseCSV {
 				@header = @cols;
 			}else{
 				for($c = 0; $c < @cols; $c++){
-					if($cols[$c]){ $header[$c] .= $config->{'header'}{'join'}.$cols[$c]; }
+					if($cols[$c] && $cols[$c] ne "---"){ $header[$c] .= $config->{'header'}{'join'}.$cols[$c]; }
 				}
 			}
 		}
