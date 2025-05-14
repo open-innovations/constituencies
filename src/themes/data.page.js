@@ -36,6 +36,7 @@ export default function*({search,themes}){
 
 			data.api = notes;
 			data.title = page[id].title;
+			data.url = url;
 			data.key = config.matchKey;
 			data.values = [{"value":config.value,"label":config.value}];
 			if("tools" in config && "slider" in config.tools && "columns" in config.tools.slider){
