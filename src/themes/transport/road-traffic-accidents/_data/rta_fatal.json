@@ -2,37 +2,35 @@
 	"title": "Road traffic accidents: fatal",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "release.road_traffic_accidents_fatal_or_serious",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.stats19",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }}"
 		}],
-		"value": "2021",
+		"value": "2023→Fatal",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 150,
-		"matchKey": "PCON10CD",
+		"max": 20,
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
-			"items": [
-				{
-					"value": 150,
-					"label": "150+"
-				},
-				{
-					"value": 100,
-					"label": "100"
-				},
-				{
-					"value": 50,
-					"label": "50"
-				},
-				{
-					"value": 0,
-					"label": "0"
-				}
-			]
+			"items": [{
+				"value": 20,
+				"label": "20+"
+			},{
+				"value": 15,
+				"label": "15"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 5,
+				"label": "5"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
 		},
 		"tools": {
 			"filter": {
@@ -40,33 +38,36 @@
 			},
 			"slider": {
 				"columns": [
-					"2000",
-					"2001",
-					"2002",
-					"2003",
-					"2004",
-					"2005",
-					"2006",
-					"2007",
-					"2008",
-					"2009",
-					"2010",
-					"2011",
-					"2012",
-					"2013",
-					"2014",
-					"2015",
-					"2016",
-					"2017",
-					"2018",
-					"2019",
-					"2020",
-					"2021"
+					{"label":"2000","value":"2000→Fatal"},
+					{"label":"2001","value":"2001→Fatal"},
+					{"label":"2002","value":"2002→Fatal"},
+					{"label":"2003","value":"2003→Fatal"},
+					{"label":"2004","value":"2004→Fatal"},
+					{"label":"2005","value":"2005→Fatal"},
+					{"label":"2006","value":"2006→Fatal"},
+					{"label":"2007","value":"2007→Fatal"},
+					{"label":"2008","value":"2008→Fatal"},
+					{"label":"2009","value":"2009→Fatal"},
+					{"label":"2010","value":"2010→Fatal"},
+					{"label":"2011","value":"2011→Fatal"},
+					{"label":"2012","value":"2012→Fatal"},
+					{"label":"2013","value":"2013→Fatal"},
+					{"label":"2014","value":"2014→Fatal"},
+					{"label":"2015","value":"2015→Fatal"},
+					{"label":"2016","value":"2016→Fatal"},
+					{"label":"2017","value":"2017→Fatal"},
+					{"label":"2018","value":"2018→Fatal"},
+					{"label":"2019","value":"2019→Fatal"},
+					{"label":"2020","value":"2020→Fatal"},
+					{"label":"2021","value":"2021→Fatal"},
+					{"label":"2022","value":"2022→Fatal"},
+					{"label":"2023","value":"2023→Fatal"}
 				],
 				"width": "500px"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />All road accidents ({{ _value }}): <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"attribution": "Data: <a href=\"https://roadtraffic.dft.gov.uk/custom-downloads/road-accidents/reports/fea81bec-6ebb-43aa-9fca-5578791c9ccc\">Stats19 Road accidents and safety statistics</a> (DfT)\n"
-	}
+		"tooltip": "<strong>{{ n }}</strong><br />Fatal road accidents ({{ _value }}): <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data\">Road Safety Data - Collisions</a> (Department for Transport, OGL)"
+	},
+	"date": "2023-12-31"
 }

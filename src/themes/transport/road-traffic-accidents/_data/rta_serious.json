@@ -1,0 +1,73 @@
+{
+	"title": "Road traffic accidents: serious",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.stats19",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "2023→Serious",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 200,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 200,
+				"label": "200+"
+			},{
+				"value": 150,
+				"label": "150"
+			},{
+				"value": 100,
+				"label": "100"
+			},{
+				"value": 50,
+				"label": "50"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"label":"2000","value":"2000→Serious"},
+					{"label":"2001","value":"2001→Serious"},
+					{"label":"2002","value":"2002→Serious"},
+					{"label":"2003","value":"2003→Serious"},
+					{"label":"2004","value":"2004→Serious"},
+					{"label":"2005","value":"2005→Serious"},
+					{"label":"2006","value":"2006→Serious"},
+					{"label":"2007","value":"2007→Serious"},
+					{"label":"2008","value":"2008→Serious"},
+					{"label":"2009","value":"2009→Serious"},
+					{"label":"2010","value":"2010→Serious"},
+					{"label":"2011","value":"2011→Serious"},
+					{"label":"2012","value":"2012→Serious"},
+					{"label":"2013","value":"2013→Serious"},
+					{"label":"2014","value":"2014→Serious"},
+					{"label":"2015","value":"2015→Serious"},
+					{"label":"2016","value":"2016→Serious"},
+					{"label":"2017","value":"2017→Serious"},
+					{"label":"2018","value":"2018→Serious"},
+					{"label":"2019","value":"2019→Serious"},
+					{"label":"2020","value":"2020→Serious"},
+					{"label":"2021","value":"2021→Serious"},
+					{"label":"2022","value":"2022→Serious"},
+					{"label":"2023","value":"2023→Serious"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Serious road accidents ({{ _value }}): <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data\">Road Safety Data - Collisions</a> (Department for Transport, OGL)"
+	},
+	"date": "2023-12-31"
+}
