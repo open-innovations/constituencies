@@ -12,7 +12,7 @@ api:
   - by_age
 ---
 
-<h2>Total population{{ comp.anchor({ 'ref': 'total'}) }}</h2>
+<h2>Total population{{ comp.anchor({ anchor: 'total'}) }}</h2>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
@@ -20,7 +20,7 @@ api:
 }) }}
 
 
-<h2>Age breakdown by age groups{{ comp.anchor({ 'ref': 'by-group'}) }}</h2>
+<h2>Age breakdown by age groups{{ comp.anchor({ anchor: 'by-group'}) }}</h2>
 <p>Split into the groups: under 18, 18-64, 65 and over.</p>
 {{ comp.wrapper({
 	"page": page,
@@ -29,7 +29,7 @@ api:
 }) }}
 
 
-<h2>Age breakdown by year{{ comp.anchor({ 'ref': 'by-age'}) }}</h2>
+<h2>Age breakdown by year{{ comp.anchor({ anchor: 'by-age'}) }}</h2>
 <p>Use the slider to select a specific age from 0-90+.</p>
 {{ comp.wrapper({
 	"page": page,

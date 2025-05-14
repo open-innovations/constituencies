@@ -15,7 +15,7 @@ api:
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 
 <section>
-<h2>Satisfied with practice appointment times{{ comp.anchor({ 'ref': 'satisfied'}) }}</h2>
+<h2>Satisfied with practice appointment times{{ comp.anchor({ anchor: 'satisfied'}) }}</h2>
 <p>The GP Patient Survey is an independent survey run by Ipsos on behalf of NHS England. The survey is sent out to over two million people across the UK. The results show how people feel about their GP practice.</p>
 <p>People were asked: "How satisfied are you with the general practice appointment times that are available to you?". The indicator value is the percentage of people who answered this question with "Very satisfied" or "Fairly satisfied" from all responses to this question.</p>
 {{ comp.wrapper({
@@ -27,7 +27,7 @@ api:
 
 
 <section>
-<h2>Appointments taking place within 2 days of booking{{ comp.anchor({ 'ref': 'within-2-days'}) }}</h2>
+<h2>Appointments taking place within 2 days of booking{{ comp.anchor({ anchor: 'within-2-days'}) }}</h2>
 <p>Percentage of appointments taking place within 2 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
 {{ comp.wrapper({
 	"page": page,
@@ -38,7 +38,7 @@ api:
 
 
 <section>
-<h2>Appointments taking place within 14 days of booking{{ comp.anchor({ 'ref': 'within-14-days'}) }}</h2>
+<h2>Appointments taking place within 14 days of booking{{ comp.anchor({ anchor: 'within-14-days'}) }}</h2>
 <p>Percentage of appointments taking place within 14 days (same day or next day) of booking. Only appointments in the following categories are counted: General Consultation Routine, General Consultation Acute, Unplanned Clinical Activity, Walk-in, Clinical Triage, Home Visit, Care Home Visit</p>
 {{ comp.wrapper({
 	"page": page,

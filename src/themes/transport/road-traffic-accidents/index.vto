@@ -22,21 +22,21 @@ api:
 }) }}
 #}}
 
-<h2>Fatal collisions{{ comp.anchor({ 'ref': 'fatal'}) }}</h2>
+<h2>Fatal collisions{{ comp.anchor({ anchor: "fatal" }) }}</h2>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
 	"config": "rta_fatal"
 }) }}
 
-<h2>Serious collisions{{ comp.anchor({ 'ref': 'serious'}) }}</h2>
+<h2>Serious collisions{{ comp.anchor({ anchor: "serious"}) }}</h2>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,
 	"config": "rta_serious"
 }) }}
 
-<h2>Slight collisions{{ comp.anchor({ 'ref': 'slight'}) }}</h2>
+<h2>Slight collisions{{ comp.anchor({ anchor: "slight"}) }}</h2>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,

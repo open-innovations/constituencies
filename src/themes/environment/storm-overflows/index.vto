@@ -14,14 +14,14 @@ api:
 <p>The Water and Sewerage Companies provide data to the Environment Agency each year as part of their regulatory Annual Return, to fulfil their permitted conditions to discharge from these storm overflows under the Environmental Permitting Regulations. We took the OS Grid Reference for every storm overflow event reported in the Environment Agency's <a href="https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac">Event Duration Monitoring datasets</a> (2022, 2023 and 2024) and found the corresponding Parliamentary constituency to create the visualisations for <a href="#spills">total number of spills</a> and <a href="#duration">total duration in hours</a>.</p>
 
 <section>
-	<h2>Total spills{{ comp.anchor({ 'ref': 'spills'}) }}</h2>
+	<h2>Total spills{{ comp.anchor({ anchor: 'spills'}) }}</h2>
 	{{ include "./embeds/total-spills.vto" }}
 	<a href="{{ url + "embeds/total-spills" }}" class="embed">Standalone version of total spills</a>
 	<p>This visualisation shows the result of adding up the values in the <code>Counted spills using 12-24h count method</code> column by constituency calculated from the OS Grid Reference.</p>
 </section>
 
 <section>
-	<h2>Total duration (hours){{ comp.anchor({ 'ref': 'duration'}) }}</h2>
+	<h2>Total duration (hours){{ comp.anchor({ anchor: 'duration'}) }}</h2>
 	{{ include "./embeds/total-duration.vto" }}
 	<a href="{{ url + "embeds/total-duration" }}" class="embed">Standalone version of total duration (hours)</a>
 	<p>This visualisation shows the result of adding up the values in the <code>Total Duration (hrs) all spills prior to processing through 12-24h count method</code> or <code>Total Duration (hh:mm:ss) all spills prior to processing through 12-24h count method</code> columns by constituency calculated from the OS Grid Reference.</p>

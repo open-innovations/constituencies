@@ -26,7 +26,7 @@ api:
 <p>{{ description }} There are views for <a href="#all">all crime</a>, <a href="#anti-social-behaviour">anti-social behaviour</a>, <a href="#bicycle-theft">bicycle theft</a>, <a href="#burglary">burglary</a>, <a href="#criminal-damage">criminal damage and arson</a>, <a href="#drugs">drugs</a>, <a href="#weapons">possession of weapons</a>, <a href="#public-order">public order</a>, <a href="#robbery">robbery</a>, <a href="#shoplifting">shoplifting</a>, <a href="#theft-from-the-person">theft from the person</a>, <a href="#vehicle">vehicle crime</a>, <a href="#violence">violence and sexual offences</a>, as well as <a href="#other">other crime</a>.</p>
 
 <section>
-	<h2>All crime{{ comp.anchor({ 'ref': 'all'}) }}</h2>
+	<h2>All crime{{ comp.anchor({ anchor: "all" }) }}</h2>
 	<p>This cartogram shows the sum of all crimes. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -37,7 +37,7 @@ api:
 
 
 <section>
-	<h2>Anti-social behaviour{{ comp.anchor({ 'ref': 'anti-social-behaviour'}) }}</h2>
+	<h2>Anti-social behaviour{{ comp.anchor({ anchor: "anti-social-behaviour"}) }}</h2>
 	<p>This cartogram shows anti-social behaviour crime. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -48,7 +48,7 @@ api:
 
 
 <section>
-	<h2>Bicycle theft{{ comp.anchor({ 'ref': 'bicycle-theft'}) }}</h2>
+	<h2>Bicycle theft{{ comp.anchor({ anchor: 'bicycle-theft'}) }}</h2>
 	<p>This cartogram shows bicycle theft crime. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -59,7 +59,7 @@ api:
 
 
 <section>
-	<h2>Burglary{{ comp.anchor({ 'ref': 'burglary'}) }}</h2>
+	<h2>Burglary{{ comp.anchor({ anchor: 'burglary'}) }}</h2>
 	<p>This cartogram shows burglary. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -69,7 +69,7 @@ api:
 </section>
 
 <section>
-	<h2>Criminal damage and arson{{ comp.anchor({ 'ref': 'criminal-damage'}) }}</h2>
+	<h2>Criminal damage and arson{{ comp.anchor({ anchor: 'criminal-damage'}) }}</h2>
 	<p>This cartogram shows criminal damage and arson. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -80,7 +80,7 @@ api:
 
 
 <section>
-	<h2>Drugs{{ comp.anchor({ 'ref': 'drugs'}) }}</h2>
+	<h2>Drugs{{ comp.anchor({ anchor: 'drugs'}) }}</h2>
 	<p>This cartogram shows drugs related crime. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -91,7 +91,7 @@ api:
 
 
 <section>
-	<h2>Possession of weapons{{ comp.anchor({ 'ref': 'weapons'}) }}</h2>
+	<h2>Possession of weapons{{ comp.anchor({ anchor: 'weapons'}) }}</h2>
 	<p>This cartogram shows crime related to possession of weapons. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -102,7 +102,7 @@ api:
 
 
 <section>
-	<h2>Public order{{ comp.anchor({ 'ref': 'public-order'}) }}</h2>
+	<h2>Public order{{ comp.anchor({ anchor: 'public-order'}) }}</h2>
 	<p>This cartogram shows public order offences. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -113,7 +113,7 @@ api:
 
 
 <section>
-	<h2>Robbery{{ comp.anchor({ 'ref': 'robbery'}) }}</h2>
+	<h2>Robbery{{ comp.anchor({ anchor: 'robbery'}) }}</h2>
 	<p>This cartogram shows robbery. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -124,7 +124,7 @@ api:
 
 
 <section>
-	<h2>Shoplifting{{ comp.anchor({ 'ref': 'shoplifting'}) }}</h2>
+	<h2>Shoplifting{{ comp.anchor({ anchor: 'shoplifting'}) }}</h2>
 	<p>This cartogram shows shoplifting. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -135,7 +135,7 @@ api:
 
 
 <section>
-	<h2>Theft from the person{{ comp.anchor({ 'ref': 'theft-from-the-person'}) }}</h2>
+	<h2>Theft from the person{{ comp.anchor({ anchor: 'theft-from-the-person'}) }}</h2>
 	<p>This cartogram shows theft from the person. The <em>Cities of London and Westminster</em> constituency has far higher values than everywhere else so we've limited the colour scale range. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -146,7 +146,7 @@ api:
 
 
 <section>
-	<h2>Vehicle crime{{ comp.anchor({ 'ref': 'vehicle'}) }}</h2>
+	<h2>Vehicle crime{{ comp.anchor({ anchor: 'vehicle'}) }}</h2>
 	<p>This cartogram shows vehicle crime. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -157,7 +157,7 @@ api:
 
 
 <section>
-	<h2>Violence and sexual offences{{ comp.anchor({ 'ref': 'violence'}) }}</h2>
+	<h2>Violence and sexual offences{{ comp.anchor({ anchor: 'violence'}) }}</h2>
 	<p>This cartogram shows violence and sexual offences. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,
@@ -168,7 +168,7 @@ api:
 
 
 <section>
-	<h2>Other crime{{ comp.anchor({ 'ref': 'other'}) }}</h2>
+	<h2>Other crime{{ comp.anchor({ anchor: 'other'}) }}</h2>
 	<p>This cartogram shows other crime that isn't in one of the categories above. See <a href="#notes">notes</a>.</p>
 	{{ comp.wrapper({
 		"page": page,

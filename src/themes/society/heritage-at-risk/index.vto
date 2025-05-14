@@ -17,7 +17,7 @@ api:
 <p>Historic England's Heritage at Risk (HAR) programme helps to understand the overall state of England's historic sites. It identifies those sites that are most at risk of being lost as a result of neglect, decay or inappropriate development. We've taken the <a href="https://historicengland.org.uk/content/docs/har/har-2024-entries-additions-removals/">2024 version</a> of Historic England's <a href="https://historicengland.org.uk/advice/heritage-at-risk/search-register/">Heritage at Risk register</a> and summed up all entries by constituency. We have views for <a href="#all">all entries</a>, <a href="#archaeology">archaeology</a>, <a href="#building-or-structure">building or structure</a>, <a href="#conservation-area">conservation area</a>, and <a href="#place-of-worship">place of worship</a>.</p>
 
 <section>
-	<h2>All entries{{ comp.anchor({ 'ref': 'all'}) }}</h2>
+	<h2>All entries{{ comp.anchor({ anchor: 'all'}) }}</h2>
 	{{ comp.wrapper({
 		"page": page,
 		"component": comp.oi.map.hex_cartogram,
@@ -26,7 +26,7 @@ api:
 </section>
 
 <section>
-	<h2>Archaeology{{ comp.anchor({ 'ref': 'archaeology'}) }}</h2>
+	<h2>Archaeology{{ comp.anchor({ anchor: 'archaeology'}) }}</h2>
 	{{ comp.wrapper({
 		"page": page,
 		"component": comp.oi.map.hex_cartogram,
@@ -35,7 +35,7 @@ api:
 </section>
 
 <section>
-	<h2>Building or structure{{ comp.anchor({ 'ref': 'building-or-structure'}) }}</h2>
+	<h2>Building or structure{{ comp.anchor({ anchor: 'building-or-structure'}) }}</h2>
 	{{ comp.wrapper({
 		"page": page,
 		"component": comp.oi.map.hex_cartogram,
@@ -44,7 +44,7 @@ api:
 </section>
 
 <section>
-	<h2>Conservation area{{ comp.anchor({ 'ref': 'conservation-area'}) }}</h2>
+	<h2>Conservation area{{ comp.anchor({ anchor: 'conservation-area'}) }}</h2>
 	{{ comp.wrapper({
 		"page": page,
 		"component": comp.oi.map.hex_cartogram,
@@ -53,7 +53,7 @@ api:
 </section>
 
 <section>
-	<h2>Place of worship{{ comp.anchor({ 'ref': 'place-of-worship'}) }}</h2>
+	<h2>Place of worship{{ comp.anchor({ anchor: 'place-of-worship'}) }}</h2>
 	{{ comp.wrapper({
 		"page": page,
 		"component": comp.oi.map.hex_cartogram,

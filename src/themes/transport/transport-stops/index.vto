@@ -82,14 +82,14 @@ Below we present visualisations for various different <code>StopType</code>. Rea
 }) }} #}}
 
 <h2>Notes</h2>
-<h3>"Stops" versus "access points"{{ comp.anchor({'ref': 'stops_access_nodes'}) }}</h3>
+<h3>"Stops" versus "access points"{{ comp.anchor({anchor: 'stops_access_nodes'}) }}</h3>
 <p>
 What we may think of as an individual "stop" (e.g. a bus stop or train station) may be represented by multiple "access nodes". For example, a train station could have a node for its entrance, a node for each platform, and a node for the main area of platforms.
 </p>
-<h3>Bus and coach stops{{ comp.anchor({'ref': 'bus_coach'}) }}</h3>
+<h3>Bus and coach stops{{ comp.anchor({anchor: 'bus_coach'}) }}</h3>
 <p>For bus and coach stops, we only count StopType <code>BCT</code>, which corresponds to "On street" bus or coach stops.</p>
 
-<h3>Tram/metro, and train stations{{ comp.anchor({'ref': 'tram_metro'}) }}</h3>
+<h3>Tram/metro, and train stations{{ comp.anchor({anchor: 'tram_metro'}) }}</h3>
 <p>
 For tram/metro, and train station stops, we only count stops denoted as "<em>Access areas</em>". According to the <a href="https://naptan.dft.gov.uk/naptan/schema/2.5/doc/NaPTANSchemaGuide-2.5-v0.67.pdf">NaPTAN schema guide</a>, an access area is defined as: "an interchange area within the station - typically the main area of
 platforms.". We do this to provide an estimate for the number of stations/stops that you could travel between and to hopefully avoid any double counting based on the number of platforms or multiple entrances.

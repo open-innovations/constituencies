@@ -16,7 +16,7 @@ api:
 <p>This page provides <a href="https://commonslibrary.parliament.uk/constituency-data-schools-funding/">constituency-level data on school funding for mainstream state-funded schools in England</a>. Use the slider to change years.</p>
 
 
-<h2>Allocations per pupil (real){{ comp.anchor({ 'ref': 'real'}) }}</h2>
+<h2>Allocations per pupil (real){{ comp.anchor({ anchor: 'real'}) }}</h2>
 <p>Funding allocations per pupil are shown after adjusting for inflation (in 2022-23 prices).</p>
 {{ comp.wrapper({
 	"page": page,
@@ -25,7 +25,7 @@ api:
 }) }}
 
 
-<h2>Allocations per pupil (nominal){{ comp.anchor({ 'ref': 'nominal'}) }}</h2>
+<h2>Allocations per pupil (nominal){{ comp.anchor({ anchor: 'nominal'}) }}</h2>
 {{ comp.wrapper({
 	"page": page,
 	"component": comp.oi.map.hex_cartogram,

@@ -15,7 +15,7 @@ api:
 <p>This page aims to present data on electric vehicle (EV) charging for <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> (ONS/ZapMap and <a href="#ncr">National Chargepoint Registry</a>), and <a href="#combined">combined</a> charging sockets/devices/connections.</p>
 
 
-<h2>Combined charging availability{{ comp.anchor({ 'ref': 'combined'}) }}</h2>
+<h2>Combined charging availability{{ comp.anchor({ anchor: 'combined'}) }}</h2>
 {{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
 <p>To present an idea of the full picture we combine the number of <a href="#home">home</a>, <a href="#work">workplace</a>, <a href="#public">public</a> charging sockets/devices/connections (see <a href="#notes">notes</a> below).</p>
 {{ comp.wrapper({
@@ -26,7 +26,7 @@ api:
 
 
 
-<h2>Home charging sockets and devices installed (Total, 2014-2022){{ comp.anchor({ 'ref': 'home'}) }}</h2>
+<h2>Home charging sockets and devices installed (Total, 2014-2022){{ comp.anchor({ anchor: 'home'}) }}</h2>
 {{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
 <p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants (EVHS only) for domestic charging devices. These figures will not include home charging devices that have been installed without a grant. See <a href="#notes-home">notes on home charging data</a>.</p>
 {{ comp.wrapper({
@@ -37,7 +37,7 @@ api:
 
 
 
-<h2>Workplace charging sockets and devices (January 2025){{ comp.anchor({ 'ref': 'work'}) }}</h2>
+<h2>Workplace charging sockets and devices (January 2025){{ comp.anchor({ anchor: 'work'}) }}</h2>
 {{# <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div> #}}
 <p>This map shows where the Office for Zero Emission Vehicles (OZEV) has provided grants through the Workplace Charging Scheme (WCS). The statistics provided are for the number of "Sockets Installed".</p>
 {{ comp.wrapper({
@@ -48,7 +48,7 @@ api:
 
 
 
-<h2>Public charging sockets and devices{{ comp.anchor({ 'ref': 'public'}) }}</h2>
+<h2>Public charging sockets and devices{{ comp.anchor({ anchor: 'public'}) }}</h2>
 
 <h3>ONS/ZapMap (January 2025)</h3>
 {{ comp.wrapper({
@@ -57,7 +57,7 @@ api:
 	"config": "ev_public_charging"
 }) }}
 
-<h3>National Chargepoint Registry (September 2023){{ comp.anchor({ 'ref': 'ncr'}) }}</h3>
+<h3>National Chargepoint Registry (September 2023){{ comp.anchor({ anchor: 'ncr'}) }}</h3>
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024). Note that the National Chargepoint Registry was withdrawn in November 2024 by the UK Government.</div>
 <p>Publicly accessible chargepoints per 100,000 people from <a href="https://chargepoints.dft.gov.uk/login">The National Chargepoint Registry</a> (see <a href="#notes-public">notes</a>). Use the slider to see numbers of connections per 100,000 population for slow (3-6 KW), fast (7-22 KW), rapid (25-100 KW), and ultra (>100 KW) charging.</p>
 {{ comp.wrapper({
@@ -66,18 +66,18 @@ api:
 	"config": "ev_ncr"
 }) }}
 
-<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
 <p>For each source we have had to use different concepts of "connections".</p>
 
-<h3>Home{{ comp.anchor({ 'ref': 'notes-home'}) }}</h3>
+<h3>Home{{ comp.anchor({ anchor: 'notes-home'}) }}</h3>
 <p>A single device could have a number of connectors of varying speeds but these are counted as one "connection" here because the data do not provide information on the number of individual sockets each one has. For homecharging we are using 2022 data from the Electric Vehicle Homecharge Scheme (EVHS).</p>
 <p>The EVHS provided grant funding for up to 75% of the cost of installing electric vehicle charging devices at domestic properties across the UK. The EVHS was replaced by the EV chargepoint grant (EVCG) on 1 April 2022.</p>
 <p>The EVCG provides funding of up to 75% towards the cost of installing electric vehicle smart chargepoints at domestic properties across the UK. Currently, there are no sub-regional data for the EVCG so we cannot provide a meaningful constituency-based estimate here.</p>
-<h3>Workplace{{ comp.anchor({ 'ref': 'notes-work'}) }}</h3>
+<h3>Workplace{{ comp.anchor({ anchor: 'notes-work'}) }}</h3>
 <p>Workplace statistics are for the number of "Sockets Installed", which we also count as one unit.
 	The data are provided at lower-tier 2023 local authority district level so these figures have been apportioned to constituencies using the percentage of geographic overlap. Workplace charging uses January 2025 data.</p>
 
-<h3>Public{{ comp.anchor({ 'ref': 'notes-public'}) }}</h3>
+<h3>Public{{ comp.anchor({ anchor: 'notes-public'}) }}</h3>
 <ul>
 	<li><strong>ONS/ZapMap</strong>: publicly available "devices" represent charging devices at all speeds. The Electric Vehicle Charging Device Statistics (ONS/ZapMap) references 44,020 devices (July 2023). <a href="https://www.zap-map.com/ev-stats/how-many-charging-points">According to ZapMap</a> "there were 48,450 electric vehicle charging points across the UK, across 29,062 charging locations" as of the end of August 2023. A device can have a number of connectors of varying speeds. We count each of these "devices" as one unit as there is no way to know how many individual sockets they have. For public charging points we are not using most recent July 2023 data because they have changed the geographic boundaries.</li>
 	<li><strong>National Chargepoint Registry</strong>: As of early September 2023, the National Chargepoint Registry contains 49,343 <code>In service</code> connections from 31,589 devices. So the NCR's <em>connections</em> appear to be comparable to ZapMap's <em>devices</em>. The NCR data include latitudes/longitudes for each device and that makes it possible to aggregate by constituency easily. In <a href="https://open-innovations.org/blog/2022-04-27-planning-electric-vehicle-bulk-charging-locations-with-open-data">our previous analysis (April 2022)</a> we identified at least 50 chargepoints that had been given incorrect coordinates by their operators; some had their latitudes/longitudes swapped around, some had the wrong sign on the longitude, and some had duplicated the latitude in the longitude value. In the current dataset it hasn't been possible to associate 134 locations (149 connections) with constituencies.</li>

@@ -14,7 +14,7 @@ api:
 <div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
 
 <section>
-<h2>Patients enabled to order repeat prescriptions online{{ comp.anchor({ 'ref': 'online-repeat'}) }}</h2>
+<h2>Patients enabled to order repeat prescriptions online{{ comp.anchor({ anchor: 'online-repeat'}) }}</h2>
 <p>The percentage of patients registered at the practice who are able to use an online service for ordering repeat prescriptions, as recorded on the last day of the reporting period.</p>
 {{ comp.wrapper({
 	"page": page,
@@ -25,7 +25,7 @@ api:
 
 
 <section>
-<h2>Electronic prescription items{{ comp.anchor({ 'ref': 'electronic-prescriptions'}) }}</h2>
+<h2>Electronic prescription items{{ comp.anchor({ anchor: 'electronic-prescriptions'}) }}</h2>
 <p>The percentage of prescription items issued by the practice through the electronic prescription service. The number of items refers to the number of times a product appears on a prescription form, not the quantity prescribed. Items that have been referred back, disallowed or not dispensed are excluded from all item counts.</p>
 {{ comp.wrapper({
 	"page": page,

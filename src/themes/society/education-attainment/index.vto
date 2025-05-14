@@ -17,7 +17,7 @@ api:
 <p>This page provides <a href="https://commonslibrary.parliament.uk/constituency-data-educational-attainment/">constituency-level data on educational attainment in state-funded schools in England</a>. There are breakdowns of <a href="#gcse-a-c">GCSE A*-C</a>, <a href="#ks4-attainment8">KS4 Attainment 8</a> and <a href="#ks2">KS2 Attainment</a>.</p>
 
 
-<h2>GCSE A*-C English/Maths{{ comp.anchor({ 'ref': 'gcse-a-c'}) }}</h2>
+<h2>GCSE A*-C English/Maths{{ comp.anchor({ anchor: 'gcse-a-c'}) }}</h2>
 <p>Proportion of pupils attending schools in the constituency achieving A*-C or 9-4 grades in English and Maths. See information on <a href="https://ofqual.blog.gov.uk/2018/03/02/gcse-9-to-1-grades-a-brief-guide-for-parents/">converting letter grades to numbers</a>.</p>
 {{ comp.wrapper({
 	"page": page,
@@ -25,7 +25,7 @@ api:
 	"config": "gcse_a_c"
 }) }}
 
-<h2>KS4 Attainment 8{{ comp.anchor({ 'ref': 'ks4-attainment8'}) }}</h2>
+<h2>KS4 Attainment 8{{ comp.anchor({ anchor: 'ks4-attainment8'}) }}</h2>
 <p>Attainment 8 is an average score based on a pupil’s best eight grades in a group of GCSEs. The maximum a pupil can achieve is 90 points. Excludes non-maintained special schools, hospital schools, pupil referral units and alternative provision.</p>
 {{ comp.wrapper({
 	"page": page,
@@ -34,7 +34,7 @@ api:
 }) }}
 
 
-<h2>KS2 Attainment{{ comp.anchor({ 'ref': 'ks2'}) }}</h2>
+<h2>KS2 Attainment{{ comp.anchor({ anchor: 'ks2'}) }}</h2>
 <p>The percentage of pupils achieving the expected standard. The expected standard is where a pupil achieves a scaled score of 100 or more in the reading and maths national curriculum assessments at key stage 2 (taken at the end of year 6). As well as an outcome of 'reaching the expected standard' or 'working at greater depth' in the writing Teacher Assessment. Attainment data is for state-funded schools in England only and excludes independent schools, independent special schools, non-maintained special schools, hospital schools, pupil referral units and alternative provision.</p>
 {{ comp.wrapper({
 	"page": page,
