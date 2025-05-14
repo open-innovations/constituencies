@@ -1,7 +1,8 @@
 Path,Date,CO2
-/,2024-06-27,0.005
+/,2025-05-14,0.005
 /about/,2023-08-17,0.005
-/search/,2024-04-04,0.006
+/all/,2025-05-08,0.005
+/search/,2025-04-01,0.006
 /themes/,2023-08-17,0.005
 /themes/economy/,2023-08-17,0.005
 /themes/economy/atms/,2025-03-27,0.022
@@ -13,9 +14,11 @@ Path,Date,CO2
 /themes/economy/unemployment/,2024-04-04,0.025
 /themes/economy/wages/,2023-08-17,0.019
 /themes/energy/,2023-10-10,0.005
+/themes/energy/central-heating/,2025-05-08,0.032
 /themes/energy/energy-performance-certificates/,2024-05-14,0.026
 /themes/energy/fuel-poverty/,2023-10-10,0.016
 /themes/energy/households-off-gas-grid/,2023-10-10,0.017
+/themes/energy/solar/,2025-05-14,0.027
 /themes/environment/,2023-08-22,0.005
 /themes/environment/ancient-woodland/,2024-05-14,0.018
 /themes/environment/city-town-classification/,2023-08-23,0.015
@@ -28,12 +31,14 @@ Path,Date,CO2
 /themes/environment/storm-overflows/embeds/total-duration/,2025-02-25,0.021
 /themes/environment/storm-overflows/embeds/total-spills/,2024-05-01,0.021
 /themes/health/,2023-08-17,0.005
+/themes/health/dentists/,2025-05-07,0.023
 /themes/health/disability/,2023-08-22,0.016
 /themes/health/gp-appointments/booking/,2024-06-27,0.067
 /themes/health/gp-appointments/per-patient/,2024-06-27,0.026
 /themes/health/gp-appointments/time/,2024-06-27,0.055
 /themes/health/gp-online-prescriptions/,2024-06-27,0.054
 /themes/society/,2023-08-17,0.005
+/themes/society/candidate-spending/,2025-04-02,0.043
 /themes/society/child-poverty/,2023-08-30,0.03
 /themes/society/crime/,2024-04-04,0.142
 /themes/society/education-attainment/,2023-11-01,0.052
