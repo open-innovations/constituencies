@@ -3,7 +3,7 @@ title: Search
 ---
 
 
-{% set data = search.data("themes/") %}
+{{ set data = search.data("themes/") }}
 
 <div id="filter" style="display:none">
 	<label for="filter-input"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></label>
@@ -12,9 +12,9 @@ title: Search
 <noscript><p>Here is a list of hex cartograms you can view...</p></noscript>
 
 <ul id="pages">
-  {% for page in search.pages("theme_page theme!=undefined !searchignore !draft created!=undefined", "order created=desc") %}
-  <li data-update="{{ page.updated }}" data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class | safe }}"><div class="page-title">{{ data.themes[page.theme].icon | safe }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
-  {% endfor %}
+  {{ for page of search.pages("theme_page theme!=undefined !searchignore !draft created!=undefined", "order created=desc") }}
+  <li data-update="{{ page.updated }}" data-theme="{{ page.theme }}" data-keywords="{{ page.keywords }}"><a href="{{ page.url }}" class="{{ data.themes[page.theme].class }}"><div class="page-title">{{ data.themes[page.theme].icon }}{{ page.title }}</div><div class="description">{{ page.description }}</div></a></li>
+  {{ /for }}
 </ul>
 
 <script>
@@ -41,7 +41,7 @@ function ListItem(li){
 		var r = 0,v,re,rw,ok = true,weight;
 		var now = new Date();
 		var then;
-		var halflife = 31*86400000;
+		var halflife = 12*31*86400000;
 		for(var i = 0; i < words.length; i++){
 			v = words[i];
 			rw = 0;

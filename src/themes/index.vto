@@ -7,12 +7,12 @@ description: |
 <p>The number of visualisations included here will grow as we become aware of more constituency-level datasets. If you know of any that you think we should include, please <a href="https://github.com/open-innovations/constituencies/issues/new/choose">let us know</a> about the dataset.</p>
 
 <ul class="grid-list">
-{% for theme, data in themes %}
-	{% if not themes[theme]['draft'] %}
-	<li>{% if search.pages("theme="+theme+" !draft") | length > 1 %}<a href="{{ data['url'] }}" class="{{ data['class'] }}">{% else %}<div class="b5-bg">{% endif %}{{ data['icon'] | safe }}<h2>{{ data['title'] }}</h2><p>
-	{{ data['description'] }}</p>{% if search.pages("theme="+theme+" !draft") | length > 1 %}</a>{% else %}</div>{% endif %}</li>
-	{% endif %}
-{% endfor %}
+{{ for theme, data of themes }}
+	{{ if !themes[theme].draft }}
+	<li>{{ if search.pages("theme="+theme+" !draft").length > 1 }}<a href="{{ data['url'] }}" class="{{ data['class'] }}">{{ else }}<div class="b5-bg">{{ /if }}{{ data['icon'] }}<h2>{{ data['title'] }}</h2><p>
+	{{ data['description'] }}</p>{{ if search.pages("theme="+theme+" !draft").length > 1 }}</a>{{ else }}</div>{{ /if }}</li>
+	{{ /if }}
+{{ /for }}
 </ul>
 
 <p><a href="index.json">Machine readable (JSON)</a></p>
