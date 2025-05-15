@@ -1,5 +1,5 @@
 {
-	"title": "Population: by age",
+	"title": "Population: by age (UK)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",

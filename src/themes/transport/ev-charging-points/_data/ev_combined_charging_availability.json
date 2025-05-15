@@ -1,5 +1,5 @@
 {
-	"title": "EV: combined charging availability",
+	"title": "EV: combined charging availability (UK)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
