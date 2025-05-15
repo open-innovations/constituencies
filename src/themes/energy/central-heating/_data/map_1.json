@@ -53,7 +53,7 @@
 	"date": "2023",
 	"units": {
 		"Con_pc / Electric only":{"value":"percent","scaleBy":100},
-		"Con_pc / Mains gas only":{"value":"percent","scaleBy":100};
+		"Con_pc / Mains gas only":{"value":"percent","scaleBy":100},
 		"Con_pc / No central heating":{"value":"percent","scaleBy":100},
 		"Con_pc / Oil only":{"value":"percent","scaleBy":100},
 		"Con_pc / Other":{"value":"percent","scaleBy":100},
