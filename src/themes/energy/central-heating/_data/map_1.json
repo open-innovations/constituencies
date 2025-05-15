@@ -52,14 +52,12 @@
 	},
 	"date": "2023",
 	"units": {
-		"2023":{"value":"percent","scaleBy":100},
-		"2022":{"value":"percent","scaleBy":100},
-		"2021":{"value":"percent","scaleBy":100},
-		"2020":{"value":"percent","scaleBy":100},
-		"2019":{"value":"percent","scaleBy":100},
-		"2018":{"value":"percent","scaleBy":100},
-		"2017":{"value":"percent","scaleBy":100},
-		"2016":{"value":"percent","scaleBy":100},
-		"2015":{"value":"percent","scaleBy":100}
+		"Con_pc / Electric only":{"value":"percent","scaleBy":100},
+		"Con_pc / Mains gas only":{"value":"percent","scaleBy":100};
+		"Con_pc / No central heating":{"value":"percent","scaleBy":100},
+		"Con_pc / Oil only":{"value":"percent","scaleBy":100},
+		"Con_pc / Other":{"value":"percent","scaleBy":100},
+		"Con_pc / Tank or bottled gas only":{"value":"percent","scaleBy":100},
+		"Con_pc / Two or more types of central heating":{"value":"percent","scaleBy":100}
 	}
 }
