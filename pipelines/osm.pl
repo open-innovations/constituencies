@@ -21,7 +21,7 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 
 
-my ($hexjson,$json,$l,$t,@layers,$osmconf,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
+my ($hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -30,7 +30,6 @@ $json = LoadJSON($basedir."osmconf.json");
 $hexjson = LoadJSON($basedir.$json->{'hexjson'});
 
 # Set variables
-$osmconf = $basedir."osmconf.ini";
 $rawdir = $basedir.$json->{'working'};
 $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
 
