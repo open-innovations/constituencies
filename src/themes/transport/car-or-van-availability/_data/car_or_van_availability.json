@@ -43,5 +43,9 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />One or more cars or vans: <strong>{{ 1 or more cars or vans in household % }}% / {{ 1 or more cars or vans in household | toLocaleString() }}</strong><br />No cars or vans: <strong>{{ No cars or vans in household % }}% / {{ No cars or vans in household | toLocaleString() }}</strong>",
 		"attribution": "<a href=\"https://www.ons.gov.uk/datasets/RM015/editions/2021/versions/3\">Distance travelled to work by car or van availability</a> (ONS)"
+	},
+	"units":{
+		"No cars or vans in household %":{"value":"percent","precision":0.1},
+		"1 or more cars or vans in household %":{"value":"percent","precision":0.1}
 	}
 }
