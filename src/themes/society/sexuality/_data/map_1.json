@@ -55,10 +55,10 @@
 		"attribution": "Data: <a href=\"https://www.ons.gov.uk/datasets/TS077/editions/2021/versions/2\">Census 2021: Sexual orientation</a> (ONS"
 	},
 	"units":{
-		"Straight or Heterosexual":{"value":"percent","scaleBy":100},
-		"Gay or Lesbian":{"value":"percent","scaleBy":100},
-		"Bisexual":{"value":"percent","scaleBy":100},
-		"All other sexual orientations":{"value":"percent","scaleBy":100},
-		"Not answered":{"value":"percent","scaleBy":100}
+		"Straight or Heterosexual":{"value":"percent","scaleBy":100,"precision":0.1},
+		"Gay or Lesbian":{"value":"percent","scaleBy":100,"precision":0.1},
+		"Bisexual":{"value":"percent","scaleBy":100,"precision":0.1},
+		"All other sexual orientations":{"value":"percent","scaleBy":100,"precision":0.1},
+		"Not answered":{"value":"percent","scaleBy":100,"precision":0.1}
 	}
 }
