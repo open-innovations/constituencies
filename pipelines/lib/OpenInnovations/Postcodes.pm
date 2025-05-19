@@ -14,6 +14,7 @@ sub new {
 	
 	$self->{'postcodelookup'} = {};
 	$self->{'postcodes'} = {};
+	$self->{'location'} = "https://odileeds.github.io/Postcodes2LatLon/postcodes/";
 
     return $self;
 }
@@ -51,6 +52,13 @@ sub warning {
 	my $str = $_[0];
 	$str =~ s/(^[\t\s]*)/$1<yellow>WARNING:<none> /;
 	msg($str,"STDERR");
+}
+
+# Can set a local or alternate path to the postcode splits by LAD code
+sub setLocation {
+	my ($self, $file) = @_;
+	$self->{'location'} = $file;
+	return $self;
 }
 
 sub setFile {
@@ -102,11 +110,17 @@ sub save {
 sub getPostcode {
 	my ($self, $postcode) = @_;
 	
-	my ($i,$pcd,$fh,@lines,$p,$lat,$lon,$url);
+	my ($i,$pcd,$fh,@lines,$p,$lat,$lon,$file);
 
+	$postcode = uc($postcode);
 	$postcode =~ /^([A-Z]{1,2})/;
 	$pcd = $1;
 	$postcode =~ s/ //g;
+	
+	if(!defined($pcd)){
+		error("Bad postcode <yellow>$postcode<none>\n");
+		exit;
+	}
 	
 	if(defined($self->{'postcodelookup'}{$postcode})){
 		return $self->{'postcodelookup'}{$postcode};
@@ -114,9 +128,20 @@ sub getPostcode {
 	if(!defined($self->{'postcodes'}{$pcd})){
 		$self->{'postcodelookup'}{$postcode} = {'lat'=>undef,'lon'=>undef};
 		$self->{'postcodes'}{$pcd} = {};
-		$url = "https://odileeds.github.io/Postcodes2LatLon/postcodes/".$pcd.".csv";
-		msg("Need to download <green>$pcd<none> postcodes from <cyan>$url<none>\n");
-		@lines = `curl -s --insecure --compressed "$url"`;
+		$file = $self->{'location'}.$pcd.".csv";
+		if(!-e $file){
+			if($file =~ /^https?\:\/\//){
+				msg("Need to download <green>$pcd<none> postcodes from <cyan>$file<none>\n");
+				@lines = `curl -s --insecure --compressed "$file"`;
+			}else{
+				error("Bad location for postcodes <cyan>$file<none>\n");
+				exit;
+			}
+		}else{
+			open($fh,$file);
+			@lines = <$fh>;
+			close($fh);
+		}
 
 		if(@lines > 1){
 			for($i = 1; $i < @lines; $i++){
