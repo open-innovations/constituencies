@@ -2,8 +2,8 @@
 	"title": "Fuel poverty",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.constituencies",
-		"data": "release.fuel-poverty-sub-regional-statistics-5-december-2024-update",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.fuel-poverty-sub-regional-statistics-2025",
 		"columns": [
 			{
 				"name": "filterLabel",
@@ -20,7 +20,7 @@
 			"items": [
 				{
 					"value": 25,
-					"label": "25%+"
+					"label": "25%"
 				},
 				{
 					"value": 20,
@@ -50,9 +50,9 @@
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Fuel poverty: <strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}%</strong>",
-		"attribution": "Data: <a href=\"https://www.gov.uk/government/collections/fuel-poverty-statistics\">Fuel poverty statistics 2024 (2022 data) Table 4</a> (Department for Energy Security and Net Zero and Department for Business, Energy & Industrial Strategy)\n"
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2025-2023-data\">Sub-regional fuel poverty data 2025 (2023 data) Table 4</a> (Department for Energy Security and Net Zero)\n"
 	},
-	"date": "2022",
+	"date": "2023",
 	"units":{
 		"Proportion of households fuel poor (%)":{"value":"percent"}
 	}
