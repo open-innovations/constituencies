@@ -1,0 +1,50 @@
+{
+	"title": "Gambling premises (GB)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.premises",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Total",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 25,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": "25+"
+			},{
+				"value": 20,
+				"label": "20+"
+			},{
+				"value": 15,
+				"label": "15"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 5,
+				"label": "5"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider":{
+				"columns":["Total","Adult Gaming Centre","Betting Shop","Bingo","Casino","Casino 2005","Family Entertainment Centre","Pool Betting"],
+				"width": "500px"
+			}
+		},
+        "tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} }}</strong>",
+        "attribution": "Data: <a href=\"https://www.gamblingcommission.gov.uk/public-register/premises/download\">the register of gambling premises</a> (&copy; Gambling Commission)."
+	}
+}
