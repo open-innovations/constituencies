@@ -1,0 +1,50 @@
+{
+	"title": "Health-related social security (England & Wales)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.jrf",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Percent",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 20,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+					"value": 20,
+					"label": "20%+"
+				},{
+					"value": 15,
+					"label": "15%"
+				},{
+					"value": 10,
+					"label": "10%"
+				},{
+					"value": 5,
+					"label": "5%"
+				},{
+					"value": 0,
+					"label": "0%"
+				}
+			]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Percentage: <strong>{{ Percent }}%</strong><br />Count: <strong>{{ Count | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://flo.uri.sh/visualisation/22415078/embed?auto=1\">Working-age population in receipt of health-related social security</a> (JRF / DWP)\n"
+	},
+	"date": "2025",
+	"units": {
+		"Percent":{"value":"percent"}
+	}
+}

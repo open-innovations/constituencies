@@ -1,0 +1,25 @@
+---
+title: Health-related social security (England & Wales)
+theme: health
+created: 2025-05-20T11:09
+updated: 2025-05-20T11:09
+description: |
+  Proportion of working-age population in receipt of health-related social security (England & Wales).
+keywords: [disability,health,social security,PIP,allowance,universal credit]
+api:
+  - map_1
+---
+
+<p>This is a <a href="https://www.jrf.org.uk/social-security/where-will-cuts-to-sickness-and-disability-benefits-fall-hardest">JRF analysis of health-related social security</a> using data from DWP, Stat-Xplore.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_1"
+}) }}
+
+<h2>Notes</h2>
+
+<ul>
+<li>Health-related social security includes working-age Personal Independence Payments, Disability Living Allowance, Universal Credit Limited Capability for Work-Related Activity ('health element'), and the Support group of Employment and Support Allowance.</li>
+<li>Uses ONS Parliamentary constituency population estimates from mid-2022.</li>
+</ul>
