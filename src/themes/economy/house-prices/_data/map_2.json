@@ -1,5 +1,5 @@
 {
-	"title": "House price wage ratio",
+	"title": "House price wage ratio (England & Wales)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",

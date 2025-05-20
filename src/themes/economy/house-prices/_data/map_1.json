@@ -1,5 +1,5 @@
 {
-	"title": "House prices",
+	"title": "House prices (England & Wales)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
