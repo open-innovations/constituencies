@@ -1,0 +1,65 @@
+{
+	"title": "Access to green space (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.access_to_greenspace",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Scenario 1→Percentage with access",
+		"scale": "#dfdfdf 0%, #0DBC37 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON24CD",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider": {
+				"width": "500px",
+				"columns": [
+					{"value":"Scenario 1→Percentage with access","label":"All green space"},
+					{"value":"Scenario 2→Percentage with access","label":"All green space with rights of way"},
+					{"value":"Scenario 3→Percentage with access","label":"Doorstep standard"},
+					{"value":"Scenario 4→Percentage with access","label":"Local standard"},
+					{"value":"Scenario 5→Percentage with access","label":"Neighbourhood standard"},
+					{"value":"Scenario 6→Percentage with access","label":"Combined"},
+					{"value":"Scenario 7→Percentage with access","label":"Partial-combined"}
+				]
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Households with access to:<br />All green space: <strong>{{ Scenario 1→Percentage with access }}%</strong><br />All green space with rights of way: <strong>{{ Scenario 2→Percentage with access }}%</strong><br />Doorstep standard: <strong>{{ Scenario 3→Percentage with access }}%</strong><br />Local standard: <strong>{{ Scenario 4→Percentage with access }}%</strong><br />Neighbourhood standard: <strong>{{ Scenario 5→Percentage with access }}%</strong><br />Combined: <strong>{{ Scenario 6→Percentage with access }}%</strong><br />Partial-combined: <strong>{{ Scenario 7→Percentage with access }}%</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/access-to-green-space-in-england/access-to-green-space-in-england\">Access to green space in England</a>, (DEFRA)"
+	},
+	"date": "2025-05-13",
+	"units":{
+		"Scenario 1→Percentage with access":{"value":"percent"},
+		"Scenario 2→Percentage with access":{"value":"percent"},
+		"Scenario 3→Percentage with access":{"value":"percent"},
+		"Scenario 4→Percentage with access":{"value":"percent"},
+		"Scenario 5→Percentage with access":{"value":"percent"},
+		"Scenario 6→Percentage with access":{"value":"percent"},
+		"Scenario 7→Percentage with access":{"value":"percent"}
+	}
+}

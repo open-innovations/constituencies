@@ -1,0 +1,31 @@
+---
+title: Access to green space (England)
+theme: environment
+created: 2025-05-20T15:54
+updated: 2025-05-20T15:54
+description: |
+  The percentage of households that are within different walking distances of different types of green space in England.
+keywords: [ancient,woodland]
+api:
+  - scenarios
+---
+
+<p>The percentage of households that are within different walking distances of different types of green space in England</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "scenarios"
+}) }}
+
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+<p>DEFRA calculated the distance to green space for every household in England measured along a network of walkable streets and paths. They produce totals of household by Output Area (OA). Each Output Area in England is made up of between 40 and 250 households, and usually has a resident population of between 100 and 625 persons. There are over 6,800 MSOAs in England. We added the values for each Output Area within a constituency and found the percent of households with access under the following scenarios:</p>
+<ol>
+	<li>All green space – considered all accessible green spaces 2 hectares or larger, and a distance threshold of 1 km</li>
+    <li>All green space with rights of way – considered all accessible green spaces 2 hectares or larger as well as rural rights of way as a type of green space experience, and a distance threshold of 1 km</li>
+    <li>Doorstep standard – considered all accessible green spaces of at least 0.5 ha within 200 metres (under 5 mins walk from home). This scenario corresponds to Natural England’s Doorstep Accessible Greenspace standard</li>
+    <li>Local standard – considered all accessible green spaces of at least 2 ha within 300 metres (5 mins walk from home). This scenario corresponds to Natural England’s Local Accessible Natural Greenspace</li>
+    <li>Neighbourhood standard – considered all accessible green spaces of at least 10 ha within 1 km (15 minutes’ walk from home). This scenario corresponds to Natural England’s Neighbourhood Accessible Natural Greenspace</li>
+    <li>Combined – Scenarios 3 to 5 combined, where a household is considered to have access to green space if they meet the criteria of the doorstep scenario (Scenario 3) and the Local standard (Scenario 4) and the Neighbourhood standard (Scenario 5) concurrently</li>
+    <li>Partial-combined – a mixture of Scenarios 3 to 5. In this scenario, households are considered to have accessible green space where the Neighbourhood standard (Scenario 5), and one of either the Doorstep standard (Scenario 3) or Local standard (Scenario 4) have been met</li>
+</ol>
