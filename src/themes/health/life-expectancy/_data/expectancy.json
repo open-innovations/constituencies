@@ -1,0 +1,59 @@
+{
+	"title": "Life expectancy (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.lebyparliamentaryconstituency2022datatable",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Life expectancy (years)",
+		"scale": "Viridis",
+		"min": 74,
+		"max": 85,
+		"matchKey": "Code",
+		"legend": {
+			"position": "top right",
+			"items": [
+				{
+					"value": 86,
+					"label": "86"
+				},{
+					"value": 84,
+					"label": "84"
+				},{
+					"value": 82,
+					"label": "82"
+				},{
+					"value": 80,
+					"label": "80"
+				},{
+					"value": 78,
+					"label": "78"
+				},{
+					"value": 76,
+					"label": "76"
+				},{
+					"value": 74,
+					"label": "74"
+				}
+			]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Life expectancy (2022): <strong>{{ Life expectancy (years) }} years</strong><br />95% confidence: <strong>{{ Lower 95% confidence interval }}&mdash;{{ Upper 95% confidence interval }} years</strong>",
+		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/adhocs/2557lifeexpectancyatbirthforparliamentaryconstituenciesintheuk2022\">Life expectancy at birth 2022</a> (ONS)\n"
+	},
+	"date": "2022",
+	"units": {
+		"Life expectancy (years)":{"value":"yr"},
+		"Lower 95% confidence interval":{"value":"yr"},
+		"Upper 95% confidence interval":{"value":"yr"}
+	}
+}

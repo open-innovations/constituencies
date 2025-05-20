@@ -1,0 +1,651 @@
+Period,Code,Area type,Area name,Sex,Sex code,Ageband,Age group,Life expectancy (years),Lower 95% confidence interval,Upper 95% confidence interval
+2022,E14001063,Parliamentary Constituency,Aldershot,Persons,3,1,<1,82.25,81.41,83.09
+2022,E14001064,Parliamentary Constituency,Aldridge-Brownhills,Persons,3,1,<1,81.62,80.76,82.47
+2022,E14001065,Parliamentary Constituency,Altrincham and Sale West,Persons,3,1,<1,82.50,81.72,83.28
+2022,E14001066,Parliamentary Constituency,Amber Valley,Persons,3,1,<1,80.23,79.31,81.16
+2022,E14001067,Parliamentary Constituency,Arundel and South Downs,Persons,3,1,<1,83.68,82.89,84.48
+2022,E14001068,Parliamentary Constituency,Ashfield,Persons,3,1,<1,78.91,77.99,79.84
+2022,E14001069,Parliamentary Constituency,Ashford,Persons,3,1,<1,81.51,80.75,82.27
+2022,E14001070,Parliamentary Constituency,Ashton-under-Lyne,Persons,3,1,<1,78.28,77.47,79.10
+2022,E14001071,Parliamentary Constituency,Aylesbury,Persons,3,1,<1,80.63,79.81,81.46
+2022,E14001072,Parliamentary Constituency,Banbury,Persons,3,1,<1,82.47,81.71,83.22
+2022,E14001073,Parliamentary Constituency,Barking,Persons,3,1,<1,79.64,78.81,80.46
+2022,E14001074,Parliamentary Constituency,Barnsley North,Persons,3,1,<1,78.11,77.28,78.93
+2022,E14001075,Parliamentary Constituency,Barnsley South,Persons,3,1,<1,77.29,76.43,78.15
+2022,E14001076,Parliamentary Constituency,Barrow and Furness,Persons,3,1,<1,79.15,78.33,79.97
+2022,E14001077,Parliamentary Constituency,Basildon and Billericay,Persons,3,1,<1,82.31,81.54,83.08
+2022,E14001078,Parliamentary Constituency,Basingstoke,Persons,3,1,<1,81.79,80.97,82.61
+2022,E14001079,Parliamentary Constituency,Bassetlaw,Persons,3,1,<1,80.11,79.31,80.92
+2022,E14001080,Parliamentary Constituency,Bath,Persons,3,1,<1,83.19,82.42,83.95
+2022,E14001081,Parliamentary Constituency,Battersea,Persons,3,1,<1,83.32,82.27,84.36
+2022,E14001082,Parliamentary Constituency,Beaconsfield,Persons,3,1,<1,83.88,83.08,84.67
+2022,E14001083,Parliamentary Constituency,Beckenham and Penge,Persons,3,1,<1,83.57,82.74,84.40
+2022,E14001084,Parliamentary Constituency,Bedford,Persons,3,1,<1,79.85,79.02,80.67
+2022,E14001085,Parliamentary Constituency,Bermondsey and Old Southwark,Persons,3,1,<1,81.74,80.72,82.76
+2022,E14001086,Parliamentary Constituency,Bethnal Green and Stepney,Persons,3,1,<1,79.54,78.59,80.48
+2022,E14001087,Parliamentary Constituency,Beverley and Holderness,Persons,3,1,<1,82.20,81.45,82.95
+2022,E14001088,Parliamentary Constituency,Bexhill and Battle,Persons,3,1,<1,81.71,80.76,82.65
+2022,E14001089,Parliamentary Constituency,Bexleyheath and Crayford,Persons,3,1,<1,82.10,81.29,82.90
+2022,E14001090,Parliamentary Constituency,Bicester and Woodstock,Persons,3,1,<1,83.11,82.32,83.89
+2022,E14001091,Parliamentary Constituency,Birkenhead,Persons,3,1,<1,77.61,76.80,78.42
+2022,E14001092,Parliamentary Constituency,Birmingham Edgbaston,Persons,3,1,<1,80.89,79.89,81.88
+2022,E14001093,Parliamentary Constituency,Birmingham Erdington,Persons,3,1,<1,76.92,76.12,77.72
+2022,E14001094,Parliamentary Constituency,Birmingham Hall Green and Moseley,Persons,3,1,<1,81.16,80.30,82.03
+2022,E14001095,Parliamentary Constituency,Birmingham Hodge Hill and Solihull North,Persons,3,1,<1,78.22,77.42,79.02
+2022,E14001096,Parliamentary Constituency,Birmingham Ladywood,Persons,3,1,<1,77.93,77.04,78.82
+2022,E14001097,Parliamentary Constituency,Birmingham Northfield,Persons,3,1,<1,79.55,78.73,80.36
+2022,E14001098,Parliamentary Constituency,Birmingham Perry Barr,Persons,3,1,<1,79.54,78.61,80.47
+2022,E14001099,Parliamentary Constituency,Birmingham Selly Oak,Persons,3,1,<1,79.48,78.67,80.29
+2022,E14001100,Parliamentary Constituency,Birmingham Yardley,Persons,3,1,<1,78.19,77.33,79.04
+2022,E14001101,Parliamentary Constituency,Bishop Auckland,Persons,3,1,<1,79.30,78.38,80.22
+2022,E14001102,Parliamentary Constituency,Blackburn,Persons,3,1,<1,77.85,77.05,78.65
+2022,E14001103,Parliamentary Constituency,Blackley and Middleton South,Persons,3,1,<1,77.63,76.80,78.46
+2022,E14001104,Parliamentary Constituency,Blackpool North and Fleetwood,Persons,3,1,<1,79.17,78.30,80.04
+2022,E14001105,Parliamentary Constituency,Blackpool South,Persons,3,1,<1,75.86,74.98,76.74
+2022,E14001106,Parliamentary Constituency,Blaydon and Consett,Persons,3,1,<1,80.07,79.17,80.96
+2022,E14001107,Parliamentary Constituency,Blyth and Ashington,Persons,3,1,<1,78.20,77.35,79.05
+2022,E14001108,Parliamentary Constituency,Bognor Regis and Littlehampton,Persons,3,1,<1,80.78,79.99,81.57
+2022,E14001109,Parliamentary Constituency,Bolsover,Persons,3,1,<1,79.56,78.80,80.32
+2022,E14001110,Parliamentary Constituency,Bolton North East,Persons,3,1,<1,78.66,77.85,79.48
+2022,E14001111,Parliamentary Constituency,Bolton South and Walkden,Persons,3,1,<1,76.94,76.15,77.73
+2022,E14001112,Parliamentary Constituency,Bolton West,Persons,3,1,<1,80.82,80.03,81.62
+2022,E14001113,Parliamentary Constituency,Bootle,Persons,3,1,<1,76.95,76.07,77.84
+2022,E14001114,Parliamentary Constituency,Boston and Skegness,Persons,3,1,<1,77.95,77.11,78.79
+2022,E14001115,Parliamentary Constituency,Bournemouth East,Persons,3,1,<1,80.45,79.68,81.22
+2022,E14001116,Parliamentary Constituency,Bournemouth West,Persons,3,1,<1,80.22,79.34,81.11
+2022,E14001117,Parliamentary Constituency,Bracknell,Persons,3,1,<1,82.46,81.68,83.24
+2022,E14001118,Parliamentary Constituency,Bradford East,Persons,3,1,<1,77.66,76.82,78.50
+2022,E14001119,Parliamentary Constituency,Bradford South,Persons,3,1,<1,78.19,77.34,79.05
+2022,E14001120,Parliamentary Constituency,Bradford West,Persons,3,1,<1,77.30,76.43,78.16
+2022,E14001121,Parliamentary Constituency,Braintree,Persons,3,1,<1,82.61,81.87,83.36
+2022,E14001122,Parliamentary Constituency,Brent East,Persons,3,1,<1,82.12,81.29,82.95
+2022,E14001123,Parliamentary Constituency,Brent West,Persons,3,1,<1,83.44,82.61,84.26
+2022,E14001124,Parliamentary Constituency,Brentford and Isleworth,Persons,3,1,<1,82.37,81.60,83.14
+2022,E14001125,Parliamentary Constituency,Brentwood and Ongar,Persons,3,1,<1,83.73,82.97,84.48
+2022,E14001126,Parliamentary Constituency,Bridgwater,Persons,3,1,<1,81.13,80.35,81.91
+2022,E14001127,Parliamentary Constituency,Bridlington and The Wolds,Persons,3,1,<1,80.80,79.95,81.65
+2022,E14001128,Parliamentary Constituency,Brigg and Immingham,Persons,3,1,<1,80.76,79.93,81.58
+2022,E14001129,Parliamentary Constituency,Brighton Kemptown and Peacehaven,Persons,3,1,<1,81.33,80.47,82.19
+2022,E14001130,Parliamentary Constituency,Brighton Pavilion,Persons,3,1,<1,81.26,80.36,82.17
+2022,E14001131,Parliamentary Constituency,Bristol Central,Persons,3,1,<1,81.80,80.67,82.94
+2022,E14001132,Parliamentary Constituency,Bristol East,Persons,3,1,<1,79.17,78.36,79.98
+2022,E14001133,Parliamentary Constituency,Bristol North East,Persons,3,1,<1,79.43,78.53,80.33
+2022,E14001134,Parliamentary Constituency,Bristol North West,Persons,3,1,<1,81.29,80.49,82.10
+2022,E14001135,Parliamentary Constituency,Bristol South,Persons,3,1,<1,79.64,78.81,80.48
+2022,E14001136,Parliamentary Constituency,Broadland and Fakenham,Persons,3,1,<1,81.90,80.97,82.82
+2022,E14001137,Parliamentary Constituency,Bromley and Biggin Hill,Persons,3,1,<1,84.49,83.67,85.31
+2022,E14001138,Parliamentary Constituency,Bromsgrove,Persons,3,1,<1,81.58,80.79,82.37
+2022,E14001139,Parliamentary Constituency,Broxbourne,Persons,3,1,<1,83.13,82.37,83.89
+2022,E14001140,Parliamentary Constituency,Broxtowe,Persons,3,1,<1,81.71,80.87,82.54
+2022,E14001141,Parliamentary Constituency,Buckingham and Bletchley,Persons,3,1,<1,81.89,81.05,82.73
+2022,E14001142,Parliamentary Constituency,Burnley,Persons,3,1,<1,78.30,77.48,79.11
+2022,E14001143,Parliamentary Constituency,Burton and Uttoxeter,Persons,3,1,<1,81.04,80.23,81.85
+2022,E14001144,Parliamentary Constituency,Bury North,Persons,3,1,<1,79.14,78.29,79.98
+2022,E14001145,Parliamentary Constituency,Bury South,Persons,3,1,<1,79.83,79.02,80.63
+2022,E14001146,Parliamentary Constituency,Bury St Edmunds and Stowmarket,Persons,3,1,<1,82.66,81.86,83.45
+2022,E14001147,Parliamentary Constituency,Calder Valley,Persons,3,1,<1,81.26,80.45,82.08
+2022,E14001148,Parliamentary Constituency,Camborne and Redruth,Persons,3,1,<1,80.61,79.78,81.44
+2022,E14001149,Parliamentary Constituency,Cambridge,Persons,3,1,<1,81.50,80.67,82.32
+2022,E14001150,Parliamentary Constituency,Cannock Chase,Persons,3,1,<1,80.50,79.70,81.30
+2022,E14001151,Parliamentary Constituency,Canterbury,Persons,3,1,<1,82.40,81.66,83.13
+2022,E14001152,Parliamentary Constituency,Carlisle,Persons,3,1,<1,79.74,78.89,80.59
+2022,E14001153,Parliamentary Constituency,Carshalton and Wallington,Persons,3,1,<1,81.73,80.91,82.55
+2022,E14001154,Parliamentary Constituency,Castle Point,Persons,3,1,<1,82.31,81.59,83.03
+2022,E14001155,Parliamentary Constituency,Central Devon,Persons,3,1,<1,83.66,82.86,84.47
+2022,E14001156,Parliamentary Constituency,Central Suffolk and North Ipswich,Persons,3,1,<1,82.82,81.91,83.73
+2022,E14001157,Parliamentary Constituency,Chatham and Aylesford,Persons,3,1,<1,79.98,79.14,80.81
+2022,E14001158,Parliamentary Constituency,Cheadle,Persons,3,1,<1,83.49,82.72,84.25
+2022,E14001159,Parliamentary Constituency,Chelmsford,Persons,3,1,<1,82.48,81.72,83.23
+2022,E14001160,Parliamentary Constituency,Chelsea and Fulham,Persons,3,1,<1,83.31,82.53,84.10
+2022,E14001161,Parliamentary Constituency,Cheltenham,Persons,3,1,<1,82.32,81.51,83.13
+2022,E14001162,Parliamentary Constituency,Chesham and Amersham,Persons,3,1,<1,84.30,83.55,85.05
+2022,E14001163,Parliamentary Constituency,Chester North and Neston,Persons,3,1,<1,80.81,79.90,81.72
+2022,E14001164,Parliamentary Constituency,Chester South and Eddisbury,Persons,3,1,<1,83.34,82.48,84.20
+2022,E14001165,Parliamentary Constituency,Chesterfield,Persons,3,1,<1,79.58,78.77,80.39
+2022,E14001166,Parliamentary Constituency,Chichester,Persons,3,1,<1,81.64,80.80,82.47
+2022,E14001167,Parliamentary Constituency,Chingford and Woodford Green,Persons,3,1,<1,82.94,82.10,83.77
+2022,E14001168,Parliamentary Constituency,Chippenham,Persons,3,1,<1,82.09,81.35,82.83
+2022,E14001169,Parliamentary Constituency,Chipping Barnet,Persons,3,1,<1,83.64,82.85,84.43
+2022,E14001170,Parliamentary Constituency,Chorley,Persons,3,1,<1,79.99,79.11,80.86
+2022,E14001171,Parliamentary Constituency,Christchurch,Persons,3,1,<1,83.04,82.15,83.94
+2022,E14001172,Parliamentary Constituency,Cities of London and Westminster,Persons,3,1,<1,84.61,83.70,85.53
+2022,E14001173,Parliamentary Constituency,City of Durham,Persons,3,1,<1,80.88,80.06,81.71
+2022,E14001174,Parliamentary Constituency,Clacton,Persons,3,1,<1,79.56,78.71,80.41
+2022,E14001175,Parliamentary Constituency,Clapham and Brixton Hill,Persons,3,1,<1,80.27,79.30,81.25
+2022,E14001176,Parliamentary Constituency,Colchester,Persons,3,1,<1,80.70,79.90,81.50
+2022,E14001177,Parliamentary Constituency,Colne Valley,Persons,3,1,<1,80.88,80.00,81.76
+2022,E14001178,Parliamentary Constituency,Congleton,Persons,3,1,<1,82.66,81.85,83.46
+2022,E14001179,Parliamentary Constituency,Corby and East Northamptonshire,Persons,3,1,<1,80.22,79.49,80.95
+2022,E14001180,Parliamentary Constituency,Coventry East,Persons,3,1,<1,78.46,77.64,79.27
+2022,E14001181,Parliamentary Constituency,Coventry North West,Persons,3,1,<1,80.30,79.50,81.10
+2022,E14001182,Parliamentary Constituency,Coventry South,Persons,3,1,<1,80.18,79.34,81.01
+2022,E14001183,Parliamentary Constituency,Cramlington and Killingworth,Persons,3,1,<1,81.38,80.61,82.16
+2022,E14001184,Parliamentary Constituency,Crawley,Persons,3,1,<1,82.37,81.56,83.18
+2022,E14001185,Parliamentary Constituency,Crewe and Nantwich,Persons,3,1,<1,80.07,79.30,80.84
+2022,E14001186,Parliamentary Constituency,Croydon East,Persons,3,1,<1,83.10,82.28,83.91
+2022,E14001187,Parliamentary Constituency,Croydon South,Persons,3,1,<1,83.37,82.59,84.15
+2022,E14001188,Parliamentary Constituency,Croydon West,Persons,3,1,<1,80.44,79.63,81.26
+2022,E14001189,Parliamentary Constituency,Dagenham and Rainham,Persons,3,1,<1,79.94,79.15,80.73
+2022,E14001190,Parliamentary Constituency,Darlington,Persons,3,1,<1,79.31,78.48,80.14
+2022,E14001191,Parliamentary Constituency,Dartford,Persons,3,1,<1,81.07,80.26,81.88
+2022,E14001192,Parliamentary Constituency,Daventry,Persons,3,1,<1,82.82,82.05,83.58
+2022,E14001193,Parliamentary Constituency,Derby North,Persons,3,1,<1,79.65,78.84,80.45
+2022,E14001194,Parliamentary Constituency,Derby South,Persons,3,1,<1,78.00,77.17,78.82
+2022,E14001195,Parliamentary Constituency,Derbyshire Dales,Persons,3,1,<1,82.76,81.90,83.61
+2022,E14001196,Parliamentary Constituency,Dewsbury and Batley,Persons,3,1,<1,78.62,77.67,79.57
+2022,E14001197,Parliamentary Constituency,Didcot and Wantage,Persons,3,1,<1,83.13,82.35,83.91
+2022,E14001198,Parliamentary Constituency,Doncaster Central,Persons,3,1,<1,78.42,77.59,79.25
+2022,E14001199,Parliamentary Constituency,Doncaster East and the Isle of Axholme,Persons,3,1,<1,79.69,78.79,80.59
+2022,E14001200,Parliamentary Constituency,Doncaster North,Persons,3,1,<1,79.42,78.58,80.26
+2022,E14001201,Parliamentary Constituency,Dorking and Horley,Persons,3,1,<1,83.73,82.99,84.48
+2022,E14001202,Parliamentary Constituency,Dover and Deal,Persons,3,1,<1,80.56,79.79,81.33
+2022,E14001203,Parliamentary Constituency,Droitwich and Evesham,Persons,3,1,<1,82.28,81.56,83.00
+2022,E14001204,Parliamentary Constituency,Dudley,Persons,3,1,<1,79.63,78.78,80.48
+2022,E14001205,Parliamentary Constituency,Dulwich and West Norwood,Persons,3,1,<1,81.85,80.91,82.78
+2022,E14001206,Parliamentary Constituency,Dunstable and Leighton Buzzard,Persons,3,1,<1,81.51,80.72,82.30
+2022,E14001207,Parliamentary Constituency,Ealing Central and Acton,Persons,3,1,<1,82.46,81.66,83.25
+2022,E14001208,Parliamentary Constituency,Ealing North,Persons,3,1,<1,82.88,82.02,83.74
+2022,E14001209,Parliamentary Constituency,Ealing Southall,Persons,3,1,<1,81.90,81.11,82.69
+2022,E14001210,Parliamentary Constituency,Earley and Woodley,Persons,3,1,<1,82.51,81.68,83.33
+2022,E14001211,Parliamentary Constituency,Easington,Persons,3,1,<1,78.63,77.80,79.45
+2022,E14001212,Parliamentary Constituency,East Grinstead and Uckfield,Persons,3,1,<1,83.79,83.04,84.53
+2022,E14001213,Parliamentary Constituency,East Ham,Persons,3,1,<1,81.20,80.28,82.13
+2022,E14001214,Parliamentary Constituency,East Hampshire,Persons,3,1,<1,83.92,83.14,84.69
+2022,E14001215,Parliamentary Constituency,East Surrey,Persons,3,1,<1,83.46,82.74,84.18
+2022,E14001216,Parliamentary Constituency,East Thanet,Persons,3,1,<1,78.99,78.18,79.80
+2022,E14001217,Parliamentary Constituency,East Wiltshire,Persons,3,1,<1,82.95,82.21,83.68
+2022,E14001218,Parliamentary Constituency,East Worthing and Shoreham,Persons,3,1,<1,82.70,81.87,83.53
+2022,E14001219,Parliamentary Constituency,Eastbourne,Persons,3,1,<1,81.44,80.64,82.23
+2022,E14001220,Parliamentary Constituency,Eastleigh,Persons,3,1,<1,83.73,82.99,84.47
+2022,E14001221,Parliamentary Constituency,Edmonton and Winchmore Hill,Persons,3,1,<1,82.23,81.41,83.05
+2022,E14001222,Parliamentary Constituency,Ellesmere Port and Bromborough,Persons,3,1,<1,80.57,79.76,81.39
+2022,E14001223,Parliamentary Constituency,Eltham and Chislehurst,Persons,3,1,<1,82.66,81.85,83.47
+2022,E14001224,Parliamentary Constituency,Ely and East Cambridgeshire,Persons,3,1,<1,83.54,82.76,84.31
+2022,E14001225,Parliamentary Constituency,Enfield North,Persons,3,1,<1,82.64,81.82,83.46
+2022,E14001226,Parliamentary Constituency,Epping Forest,Persons,3,1,<1,82.24,81.49,82.99
+2022,E14001227,Parliamentary Constituency,Epsom and Ewell,Persons,3,1,<1,83.99,83.17,84.81
+2022,E14001228,Parliamentary Constituency,Erewash,Persons,3,1,<1,79.21,78.30,80.12
+2022,E14001229,Parliamentary Constituency,Erith and Thamesmead,Persons,3,1,<1,80.63,79.86,81.39
+2022,E14001230,Parliamentary Constituency,Esher and Walton,Persons,3,1,<1,84.15,83.32,84.97
+2022,E14001231,Parliamentary Constituency,Exeter,Persons,3,1,<1,81.03,80.23,81.84
+2022,E14001232,Parliamentary Constituency,Exmouth and Exeter East,Persons,3,1,<1,82.53,81.66,83.40
+2022,E14001233,Parliamentary Constituency,Fareham and Waterlooville,Persons,3,1,<1,83.08,82.29,83.87
+2022,E14001234,Parliamentary Constituency,Farnham and Bordon,Persons,3,1,<1,83.94,83.24,84.64
+2022,E14001235,Parliamentary Constituency,Faversham and Mid Kent,Persons,3,1,<1,82.09,81.25,82.94
+2022,E14001236,Parliamentary Constituency,Feltham and Heston,Persons,3,1,<1,81.30,80.51,82.09
+2022,E14001237,Parliamentary Constituency,Filton and Bradley Stoke,Persons,3,1,<1,82.51,81.77,83.26
+2022,E14001238,Parliamentary Constituency,Finchley and Golders Green,Persons,3,1,<1,84.39,83.68,85.10
+2022,E14001239,Parliamentary Constituency,Folkestone and Hythe,Persons,3,1,<1,79.31,78.42,80.20
+2022,E14001240,Parliamentary Constituency,Forest of Dean,Persons,3,1,<1,81.21,80.30,82.12
+2022,E14001241,Parliamentary Constituency,Frome and East Somerset,Persons,3,1,<1,82.64,81.83,83.44
+2022,E14001242,Parliamentary Constituency,Fylde,Persons,3,1,<1,81.18,80.40,81.96
+2022,E14001243,Parliamentary Constituency,Gainsborough,Persons,3,1,<1,81.55,80.77,82.33
+2022,E14001244,Parliamentary Constituency,Gateshead Central and Whickham,Persons,3,1,<1,78.75,77.85,79.66
+2022,E14001245,Parliamentary Constituency,Gedling,Persons,3,1,<1,81.50,80.65,82.35
+2022,E14001246,Parliamentary Constituency,Gillingham and Rainham,Persons,3,1,<1,81.33,80.52,82.13
+2022,E14001247,Parliamentary Constituency,Glastonbury and Somerton,Persons,3,1,<1,82.47,81.63,83.32
+2022,E14001248,Parliamentary Constituency,Gloucester,Persons,3,1,<1,79.30,78.55,80.05
+2022,E14001249,Parliamentary Constituency,Godalming and Ash,Persons,3,1,<1,83.29,82.53,84.06
+2022,E14001250,Parliamentary Constituency,Goole and Pocklington,Persons,3,1,<1,82.30,81.56,83.03
+2022,E14001251,Parliamentary Constituency,Gorton and Denton,Persons,3,1,<1,77.85,77.01,78.70
+2022,E14001252,Parliamentary Constituency,Gosport,Persons,3,1,<1,81.75,80.93,82.58
+2022,E14001253,Parliamentary Constituency,Grantham and Bourne,Persons,3,1,<1,81.76,80.95,82.58
+2022,E14001254,Parliamentary Constituency,Gravesham,Persons,3,1,<1,81.05,80.26,81.83
+2022,E14001255,Parliamentary Constituency,Great Grimsby and Cleethorpes,Persons,3,1,<1,78.40,77.60,79.20
+2022,E14001256,Parliamentary Constituency,Great Yarmouth,Persons,3,1,<1,78.98,78.13,79.84
+2022,E14001257,Parliamentary Constituency,Greenwich and Woolwich,Persons,3,1,<1,80.50,79.60,81.40
+2022,E14001258,Parliamentary Constituency,Guildford,Persons,3,1,<1,84.17,83.34,85.01
+2022,E14001259,Parliamentary Constituency,Hackney North and Stoke Newington,Persons,3,1,<1,81.30,80.30,82.30
+2022,E14001260,Parliamentary Constituency,Hackney South and Shoreditch,Persons,3,1,<1,79.38,78.34,80.42
+2022,E14001261,Parliamentary Constituency,Halesowen,Persons,3,1,<1,81.46,80.61,82.30
+2022,E14001262,Parliamentary Constituency,Halifax,Persons,3,1,<1,79.13,78.29,79.97
+2022,E14001263,Parliamentary Constituency,Hamble Valley,Persons,3,1,<1,83.78,83.02,84.54
+2022,E14001264,Parliamentary Constituency,Hammersmith and Chiswick,Persons,3,1,<1,83.85,82.95,84.74
+2022,E14001265,Parliamentary Constituency,Hampstead and Highgate,Persons,3,1,<1,84.03,83.12,84.93
+2022,E14001266,Parliamentary Constituency,"Harborough, Oadby and Wigston",Persons,3,1,<1,82.32,81.58,83.05
+2022,E14001267,Parliamentary Constituency,Harlow,Persons,3,1,<1,81.86,81.11,82.60
+2022,E14001268,Parliamentary Constituency,Harpenden and Berkhamsted,Persons,3,1,<1,84.54,83.77,85.31
+2022,E14001269,Parliamentary Constituency,Harrogate and Knaresborough,Persons,3,1,<1,81.97,81.20,82.74
+2022,E14001270,Parliamentary Constituency,Harrow East,Persons,3,1,<1,83.44,82.61,84.26
+2022,E14001271,Parliamentary Constituency,Harrow West,Persons,3,1,<1,83.16,82.35,83.97
+2022,E14001272,Parliamentary Constituency,Hartlepool,Persons,3,1,<1,78.42,77.48,79.36
+2022,E14001273,Parliamentary Constituency,Harwich and North Essex,Persons,3,1,<1,81.89,81.00,82.77
+2022,E14001274,Parliamentary Constituency,Hastings and Rye,Persons,3,1,<1,79.36,78.54,80.19
+2022,E14001275,Parliamentary Constituency,Havant,Persons,3,1,<1,80.86,80.05,81.68
+2022,E14001276,Parliamentary Constituency,Hayes and Harlington,Persons,3,1,<1,80.43,79.62,81.24
+2022,E14001277,Parliamentary Constituency,Hazel Grove,Persons,3,1,<1,81.32,80.55,82.08
+2022,E14001278,Parliamentary Constituency,Hemel Hempstead,Persons,3,1,<1,81.69,80.90,82.48
+2022,E14001279,Parliamentary Constituency,Hendon,Persons,3,1,<1,83.94,83.11,84.78
+2022,E14001280,Parliamentary Constituency,Henley and Thame,Persons,3,1,<1,84.39,83.62,85.17
+2022,E14001281,Parliamentary Constituency,Hereford and South Herefordshire,Persons,3,1,<1,82.14,81.38,82.91
+2022,E14001282,Parliamentary Constituency,Herne Bay and Sandwich,Persons,3,1,<1,81.79,80.99,82.58
+2022,E14001283,Parliamentary Constituency,Hertford and Stortford,Persons,3,1,<1,82.93,82.21,83.65
+2022,E14001284,Parliamentary Constituency,Hertsmere,Persons,3,1,<1,83.18,82.35,84.02
+2022,E14001285,Parliamentary Constituency,Hexham,Persons,3,1,<1,83.21,82.36,84.05
+2022,E14001286,Parliamentary Constituency,Heywood and Middleton North,Persons,3,1,<1,78.66,77.87,79.46
+2022,E14001287,Parliamentary Constituency,High Peak,Persons,3,1,<1,81.63,80.81,82.44
+2022,E14001288,Parliamentary Constituency,Hinckley and Bosworth,Persons,3,1,<1,81.58,80.77,82.39
+2022,E14001289,Parliamentary Constituency,Hitchin,Persons,3,1,<1,82.93,82.13,83.72
+2022,E14001290,Parliamentary Constituency,Holborn and St Pancras,Persons,3,1,<1,81.29,80.23,82.35
+2022,E14001291,Parliamentary Constituency,Honiton and Sidmouth,Persons,3,1,<1,83.86,83.07,84.64
+2022,E14001292,Parliamentary Constituency,Hornchurch and Upminster,Persons,3,1,<1,81.93,81.15,82.70
+2022,E14001293,Parliamentary Constituency,Hornsey and Friern Barnet,Persons,3,1,<1,83.37,82.53,84.22
+2022,E14001294,Parliamentary Constituency,Horsham,Persons,3,1,<1,83.18,82.40,83.97
+2022,E14001295,Parliamentary Constituency,Houghton and Sunderland South,Persons,3,1,<1,79.85,79.10,80.61
+2022,E14001296,Parliamentary Constituency,Hove and Portslade,Persons,3,1,<1,81.16,80.30,82.02
+2022,E14001297,Parliamentary Constituency,Huddersfield,Persons,3,1,<1,78.93,78.10,79.76
+2022,E14001298,Parliamentary Constituency,Huntingdon,Persons,3,1,<1,82.29,81.58,83.00
+2022,E14001299,Parliamentary Constituency,Hyndburn,Persons,3,1,<1,78.16,77.27,79.06
+2022,E14001300,Parliamentary Constituency,Ilford North,Persons,3,1,<1,82.34,81.56,83.12
+2022,E14001301,Parliamentary Constituency,Ilford South,Persons,3,1,<1,81.09,80.23,81.95
+2022,E14001302,Parliamentary Constituency,Ipswich,Persons,3,1,<1,80.90,80.12,81.69
+2022,E14001303,Parliamentary Constituency,Isle of Wight East,Persons,3,1,<1,82.31,81.43,83.19
+2022,E14001304,Parliamentary Constituency,Isle of Wight West,Persons,3,1,<1,82.56,81.70,83.43
+2022,E14001305,Parliamentary Constituency,Islington North,Persons,3,1,<1,81.38,80.49,82.28
+2022,E14001306,Parliamentary Constituency,Islington South and Finsbury,Persons,3,1,<1,80.99,80.09,81.89
+2022,E14001307,Parliamentary Constituency,Jarrow and Gateshead East,Persons,3,1,<1,78.24,77.42,79.06
+2022,E14001308,Parliamentary Constituency,Keighley and Ilkley,Persons,3,1,<1,80.30,79.41,81.20
+2022,E14001309,Parliamentary Constituency,Kenilworth and Southam,Persons,3,1,<1,84.03,83.24,84.83
+2022,E14001310,Parliamentary Constituency,Kensington and Bayswater,Persons,3,1,<1,84.09,83.29,84.88
+2022,E14001311,Parliamentary Constituency,Kettering,Persons,3,1,<1,80.70,79.90,81.51
+2022,E14001312,Parliamentary Constituency,Kingston and Surbiton,Persons,3,1,<1,83.35,82.55,84.14
+2022,E14001313,Parliamentary Constituency,Kingston upon Hull East,Persons,3,1,<1,77.70,76.89,78.51
+2022,E14001314,Parliamentary Constituency,Kingston upon Hull North and Cottingham,Persons,3,1,<1,78.88,78.08,79.68
+2022,E14001315,Parliamentary Constituency,Kingston upon Hull West and Haltemprice,Persons,3,1,<1,79.11,78.28,79.93
+2022,E14001316,Parliamentary Constituency,Kingswinford and South Staffordshire,Persons,3,1,<1,82.39,81.59,83.18
+2022,E14001317,Parliamentary Constituency,Knowsley,Persons,3,1,<1,77.96,77.16,78.76
+2022,E14001318,Parliamentary Constituency,Lancaster and Wyre,Persons,3,1,<1,80.58,79.74,81.42
+2022,E14001319,Parliamentary Constituency,Leeds Central and Headingley,Persons,3,1,<1,79.21,78.07,80.35
+2022,E14001320,Parliamentary Constituency,Leeds East,Persons,3,1,<1,79.20,78.36,80.04
+2022,E14001321,Parliamentary Constituency,Leeds North East,Persons,3,1,<1,82.45,81.63,83.26
+2022,E14001322,Parliamentary Constituency,Leeds North West,Persons,3,1,<1,83.83,83.07,84.59
+2022,E14001323,Parliamentary Constituency,Leeds South,Persons,3,1,<1,77.08,76.30,77.86
+2022,E14001324,Parliamentary Constituency,Leeds South West and Morley,Persons,3,1,<1,80.27,79.44,81.10
+2022,E14001325,Parliamentary Constituency,Leeds West and Pudsey,Persons,3,1,<1,79.99,79.22,80.77
+2022,E14001326,Parliamentary Constituency,Leicester East,Persons,3,1,<1,80.36,79.59,81.12
+2022,E14001327,Parliamentary Constituency,Leicester South,Persons,3,1,<1,78.34,77.44,79.25
+2022,E14001328,Parliamentary Constituency,Leicester West,Persons,3,1,<1,77.33,76.54,78.11
+2022,E14001329,Parliamentary Constituency,Leigh and Atherton,Persons,3,1,<1,78.65,77.87,79.43
+2022,E14001330,Parliamentary Constituency,Lewes,Persons,3,1,<1,83.40,82.64,84.16
+2022,E14001331,Parliamentary Constituency,Lewisham East,Persons,3,1,<1,81.29,80.41,82.17
+2022,E14001332,Parliamentary Constituency,Lewisham North,Persons,3,1,<1,80.73,79.86,81.60
+2022,E14001333,Parliamentary Constituency,Lewisham West and East Dulwich,Persons,3,1,<1,81.62,80.71,82.52
+2022,E14001334,Parliamentary Constituency,Leyton and Wanstead,Persons,3,1,<1,81.67,80.80,82.53
+2022,E14001335,Parliamentary Constituency,Lichfield,Persons,3,1,<1,82.82,82.00,83.64
+2022,E14001336,Parliamentary Constituency,Lincoln,Persons,3,1,<1,79.35,78.56,80.14
+2022,E14001337,Parliamentary Constituency,Liverpool Garston,Persons,3,1,<1,80.12,79.26,80.97
+2022,E14001338,Parliamentary Constituency,Liverpool Riverside,Persons,3,1,<1,75.04,74.17,75.91
+2022,E14001339,Parliamentary Constituency,Liverpool Walton,Persons,3,1,<1,78.23,77.42,79.03
+2022,E14001340,Parliamentary Constituency,Liverpool Wavertree,Persons,3,1,<1,79.34,78.47,80.20
+2022,E14001341,Parliamentary Constituency,Liverpool West Derby,Persons,3,1,<1,77.55,76.68,78.41
+2022,E14001342,Parliamentary Constituency,Loughborough,Persons,3,1,<1,80.98,80.09,81.87
+2022,E14001343,Parliamentary Constituency,Louth and Horncastle,Persons,3,1,<1,80.50,79.58,81.41
+2022,E14001344,Parliamentary Constituency,Lowestoft,Persons,3,1,<1,80.03,79.18,80.88
+2022,E14001345,Parliamentary Constituency,Luton North,Persons,3,1,<1,80.12,79.26,80.97
+2022,E14001346,Parliamentary Constituency,Luton South and South Bedfordshire,Persons,3,1,<1,79.80,78.94,80.67
+2022,E14001347,Parliamentary Constituency,Macclesfield,Persons,3,1,<1,83.01,82.29,83.73
+2022,E14001348,Parliamentary Constituency,Maidenhead,Persons,3,1,<1,83.65,82.90,84.40
+2022,E14001349,Parliamentary Constituency,Maidstone and Malling,Persons,3,1,<1,81.79,81.03,82.54
+2022,E14001350,Parliamentary Constituency,Makerfield,Persons,3,1,<1,79.12,78.32,79.93
+2022,E14001351,Parliamentary Constituency,Maldon,Persons,3,1,<1,82.52,81.75,83.28
+2022,E14001352,Parliamentary Constituency,Manchester Central,Persons,3,1,<1,77.33,76.44,78.22
+2022,E14001353,Parliamentary Constituency,Manchester Rusholme,Persons,3,1,<1,77.22,76.20,78.24
+2022,E14001354,Parliamentary Constituency,Manchester Withington,Persons,3,1,<1,80.57,79.62,81.52
+2022,E14001355,Parliamentary Constituency,Mansfield,Persons,3,1,<1,79.35,78.55,80.15
+2022,E14001356,Parliamentary Constituency,Melksham and Devizes,Persons,3,1,<1,83.86,83.16,84.55
+2022,E14001357,Parliamentary Constituency,Melton and Syston,Persons,3,1,<1,82.04,81.13,82.94
+2022,E14001358,Parliamentary Constituency,Meriden and Solihull East,Persons,3,1,<1,81.37,80.55,82.19
+2022,E14001359,Parliamentary Constituency,Mid Bedfordshire,Persons,3,1,<1,83.39,82.56,84.23
+2022,E14001360,Parliamentary Constituency,Mid Buckinghamshire,Persons,3,1,<1,84.57,83.74,85.39
+2022,E14001361,Parliamentary Constituency,Mid Cheshire,Persons,3,1,<1,80.64,79.87,81.41
+2022,E14001362,Parliamentary Constituency,Mid Derbyshire,Persons,3,1,<1,82.49,81.66,83.32
+2022,E14001363,Parliamentary Constituency,Mid Dorset and North Poole,Persons,3,1,<1,83.31,82.47,84.16
+2022,E14001364,Parliamentary Constituency,Mid Leicestershire,Persons,3,1,<1,82.28,81.46,83.11
+2022,E14001365,Parliamentary Constituency,Mid Norfolk,Persons,3,1,<1,81.51,80.77,82.24
+2022,E14001366,Parliamentary Constituency,Mid Sussex,Persons,3,1,<1,82.64,81.82,83.47
+2022,E14001367,Parliamentary Constituency,Middlesbrough and Thornaby East,Persons,3,1,<1,76.07,75.24,76.90
+2022,E14001368,Parliamentary Constituency,Middlesbrough South and East Cleveland,Persons,3,1,<1,80.50,79.62,81.37
+2022,E14001369,Parliamentary Constituency,Milton Keynes Central,Persons,3,1,<1,81.01,80.19,81.83
+2022,E14001370,Parliamentary Constituency,Milton Keynes North,Persons,3,1,<1,81.56,80.66,82.46
+2022,E14001371,Parliamentary Constituency,Mitcham and Morden,Persons,3,1,<1,82.20,81.39,83.01
+2022,E14001372,Parliamentary Constituency,Morecambe and Lunesdale,Persons,3,1,<1,80.39,79.51,81.27
+2022,E14001373,Parliamentary Constituency,New Forest East,Persons,3,1,<1,83.37,82.53,84.21
+2022,E14001374,Parliamentary Constituency,New Forest West,Persons,3,1,<1,83.78,83.04,84.52
+2022,E14001375,Parliamentary Constituency,Newark,Persons,3,1,<1,81.98,81.19,82.77
+2022,E14001376,Parliamentary Constituency,Newbury,Persons,3,1,<1,82.68,81.87,83.48
+2022,E14001377,Parliamentary Constituency,Newcastle upon Tyne Central and West,Persons,3,1,<1,78.66,77.83,79.49
+2022,E14001378,Parliamentary Constituency,Newcastle upon Tyne East and Wallsend,Persons,3,1,<1,78.09,77.35,78.83
+2022,E14001379,Parliamentary Constituency,Newcastle upon Tyne North,Persons,3,1,<1,82.01,81.21,82.81
+2022,E14001380,Parliamentary Constituency,Newcastle-under-Lyme,Persons,3,1,<1,80.37,79.51,81.24
+2022,E14001381,Parliamentary Constituency,Newton Abbot,Persons,3,1,<1,81.75,80.93,82.58
+2022,E14001382,Parliamentary Constituency,Newton Aycliffe and Spennymoor,Persons,3,1,<1,79.06,78.23,79.89
+2022,E14001383,Parliamentary Constituency,Normanton and Hemsworth,Persons,3,1,<1,79.70,78.85,80.54
+2022,E14001384,Parliamentary Constituency,North Bedfordshire,Persons,3,1,<1,82.60,81.83,83.38
+2022,E14001385,Parliamentary Constituency,North Cornwall,Persons,3,1,<1,81.42,80.63,82.21
+2022,E14001386,Parliamentary Constituency,North Cotswolds,Persons,3,1,<1,83.45,82.65,84.25
+2022,E14001387,Parliamentary Constituency,North Devon,Persons,3,1,<1,81.71,80.91,82.50
+2022,E14001388,Parliamentary Constituency,North Dorset,Persons,3,1,<1,83.42,82.57,84.28
+2022,E14001389,Parliamentary Constituency,North Durham,Persons,3,1,<1,79.47,78.56,80.39
+2022,E14001390,Parliamentary Constituency,North East Cambridgeshire,Persons,3,1,<1,80.06,79.20,80.93
+2022,E14001391,Parliamentary Constituency,North East Derbyshire,Persons,3,1,<1,81.20,80.40,82.00
+2022,E14001392,Parliamentary Constituency,North East Hampshire,Persons,3,1,<1,84.59,83.90,85.29
+2022,E14001393,Parliamentary Constituency,North East Hertfordshire,Persons,3,1,<1,83.39,82.66,84.13
+2022,E14001394,Parliamentary Constituency,North East Somerset and Hanham,Persons,3,1,<1,82.73,81.96,83.49
+2022,E14001395,Parliamentary Constituency,North Herefordshire,Persons,3,1,<1,82.55,81.75,83.35
+2022,E14001396,Parliamentary Constituency,North Norfolk,Persons,3,1,<1,81.35,80.40,82.31
+2022,E14001397,Parliamentary Constituency,North Northumberland,Persons,3,1,<1,81.28,80.32,82.23
+2022,E14001398,Parliamentary Constituency,North Shropshire,Persons,3,1,<1,81.44,80.56,82.31
+2022,E14001399,Parliamentary Constituency,North Somerset,Persons,3,1,<1,83.92,83.17,84.66
+2022,E14001400,Parliamentary Constituency,North Warwickshire and Bedworth,Persons,3,1,<1,80.03,79.27,80.78
+2022,E14001401,Parliamentary Constituency,North West Cambridgeshire,Persons,3,1,<1,80.61,79.74,81.47
+2022,E14001402,Parliamentary Constituency,North West Essex,Persons,3,1,<1,84.19,83.47,84.91
+2022,E14001403,Parliamentary Constituency,North West Hampshire,Persons,3,1,<1,82.49,81.71,83.27
+2022,E14001404,Parliamentary Constituency,North West Leicestershire,Persons,3,1,<1,81.90,81.18,82.63
+2022,E14001405,Parliamentary Constituency,North West Norfolk,Persons,3,1,<1,81.27,80.45,82.09
+2022,E14001406,Parliamentary Constituency,Northampton North,Persons,3,1,<1,79.38,78.66,80.11
+2022,E14001407,Parliamentary Constituency,Northampton South,Persons,3,1,<1,81.36,80.59,82.12
+2022,E14001408,Parliamentary Constituency,Norwich North,Persons,3,1,<1,81.55,80.77,82.33
+2022,E14001409,Parliamentary Constituency,Norwich South,Persons,3,1,<1,80.84,79.95,81.73
+2022,E14001410,Parliamentary Constituency,Nottingham East,Persons,3,1,<1,78.04,77.14,78.93
+2022,E14001411,Parliamentary Constituency,Nottingham North and Kimberley,Persons,3,1,<1,79.83,79.01,80.65
+2022,E14001412,Parliamentary Constituency,Nottingham South,Persons,3,1,<1,79.91,79.06,80.77
+2022,E14001413,Parliamentary Constituency,Nuneaton,Persons,3,1,<1,80.14,79.31,80.97
+2022,E14001414,Parliamentary Constituency,Old Bexley and Sidcup,Persons,3,1,<1,82.81,82.08,83.53
+2022,E14001415,Parliamentary Constituency,Oldham East and Saddleworth,Persons,3,1,<1,79.54,78.75,80.32
+2022,E14001416,Parliamentary Constituency,"Oldham West, Chadderton and Royton",Persons,3,1,<1,78.30,77.54,79.06
+2022,E14001417,Parliamentary Constituency,Orpington,Persons,3,1,<1,83.56,82.76,84.35
+2022,E14001418,Parliamentary Constituency,Ossett and Denby Dale,Persons,3,1,<1,81.13,80.30,81.96
+2022,E14001419,Parliamentary Constituency,Oxford East,Persons,3,1,<1,81.51,80.67,82.35
+2022,E14001420,Parliamentary Constituency,Oxford West and Abingdon,Persons,3,1,<1,84.04,83.11,84.97
+2022,E14001421,Parliamentary Constituency,Peckham,Persons,3,1,<1,81.63,80.60,82.65
+2022,E14001422,Parliamentary Constituency,Pendle and Clitheroe,Persons,3,1,<1,80.84,80.03,81.65
+2022,E14001423,Parliamentary Constituency,Penistone and Stocksbridge,Persons,3,1,<1,81.00,80.09,81.90
+2022,E14001424,Parliamentary Constituency,Penrith and Solway,Persons,3,1,<1,81.38,80.55,82.22
+2022,E14001425,Parliamentary Constituency,Peterborough,Persons,3,1,<1,78.94,78.16,79.71
+2022,E14001426,Parliamentary Constituency,Plymouth Moor View,Persons,3,1,<1,81.02,80.17,81.88
+2022,E14001427,Parliamentary Constituency,Plymouth Sutton and Devonport,Persons,3,1,<1,78.17,77.38,78.96
+2022,E14001428,Parliamentary Constituency,"Pontefract, Castleford and Knottingley",Persons,3,1,<1,78.66,77.85,79.46
+2022,E14001429,Parliamentary Constituency,Poole,Persons,3,1,<1,82.28,81.53,83.02
+2022,E14001430,Parliamentary Constituency,Poplar and Limehouse,Persons,3,1,<1,80.68,79.67,81.68
+2022,E14001431,Parliamentary Constituency,Portsmouth North,Persons,3,1,<1,80.43,79.59,81.27
+2022,E14001432,Parliamentary Constituency,Portsmouth South,Persons,3,1,<1,79.42,78.54,80.30
+2022,E14001433,Parliamentary Constituency,Preston,Persons,3,1,<1,77.98,77.14,78.83
+2022,E14001434,Parliamentary Constituency,Putney,Persons,3,1,<1,83.28,82.36,84.20
+2022,E14001435,Parliamentary Constituency,Queen's Park and Maida Vale,Persons,3,1,<1,82.30,81.42,83.18
+2022,E14001436,Parliamentary Constituency,Rawmarsh and Conisbrough,Persons,3,1,<1,78.47,77.58,79.36
+2022,E14001437,Parliamentary Constituency,Rayleigh and Wickford,Persons,3,1,<1,84.07,83.41,84.73
+2022,E14001438,Parliamentary Constituency,Reading Central,Persons,3,1,<1,81.57,80.75,82.38
+2022,E14001439,Parliamentary Constituency,Reading West and Mid Berkshire,Persons,3,1,<1,83.50,82.61,84.39
+2022,E14001440,Parliamentary Constituency,Redcar,Persons,3,1,<1,78.79,77.88,79.70
+2022,E14001441,Parliamentary Constituency,Redditch,Persons,3,1,<1,81.25,80.39,82.12
+2022,E14001442,Parliamentary Constituency,Reigate,Persons,3,1,<1,83.49,82.72,84.26
+2022,E14001443,Parliamentary Constituency,Ribble Valley,Persons,3,1,<1,82.97,82.19,83.75
+2022,E14001444,Parliamentary Constituency,Richmond and Northallerton,Persons,3,1,<1,83.00,82.21,83.79
+2022,E14001445,Parliamentary Constituency,Richmond Park,Persons,3,1,<1,84.62,83.87,85.37
+2022,E14001446,Parliamentary Constituency,Rochdale,Persons,3,1,<1,78.95,78.11,79.79
+2022,E14001447,Parliamentary Constituency,Rochester and Strood,Persons,3,1,<1,80.59,79.80,81.38
+2022,E14001448,Parliamentary Constituency,Romford,Persons,3,1,<1,81.70,80.94,82.45
+2022,E14001449,Parliamentary Constituency,Romsey and Southampton North,Persons,3,1,<1,83.55,82.68,84.42
+2022,E14001450,Parliamentary Constituency,Rossendale and Darwen,Persons,3,1,<1,78.86,78.04,79.67
+2022,E14001451,Parliamentary Constituency,Rother Valley,Persons,3,1,<1,80.53,79.68,81.39
+2022,E14001452,Parliamentary Constituency,Rotherham,Persons,3,1,<1,77.30,76.42,78.18
+2022,E14001453,Parliamentary Constituency,Rugby,Persons,3,1,<1,81.01,80.20,81.81
+2022,E14001454,Parliamentary Constituency,"Ruislip, Northwood and Pinner",Persons,3,1,<1,84.56,83.73,85.39
+2022,E14001455,Parliamentary Constituency,Runcorn and Helsby,Persons,3,1,<1,79.93,79.10,80.75
+2022,E14001456,Parliamentary Constituency,Runnymede and Weybridge,Persons,3,1,<1,82.65,81.95,83.35
+2022,E14001457,Parliamentary Constituency,Rushcliffe,Persons,3,1,<1,83.60,82.82,84.38
+2022,E14001458,Parliamentary Constituency,Rutland and Stamford,Persons,3,1,<1,82.73,81.84,83.63
+2022,E14001459,Parliamentary Constituency,Salford,Persons,3,1,<1,76.96,76.16,77.75
+2022,E14001460,Parliamentary Constituency,Salisbury,Persons,3,1,<1,82.88,82.06,83.71
+2022,E14001461,Parliamentary Constituency,Scarborough and Whitby,Persons,3,1,<1,79.54,78.64,80.45
+2022,E14001462,Parliamentary Constituency,Scunthorpe,Persons,3,1,<1,79.69,78.84,80.54
+2022,E14001463,Parliamentary Constituency,Sefton Central,Persons,3,1,<1,83.04,82.29,83.79
+2022,E14001464,Parliamentary Constituency,Selby,Persons,3,1,<1,81.69,80.90,82.47
+2022,E14001465,Parliamentary Constituency,Sevenoaks,Persons,3,1,<1,83.57,82.77,84.37
+2022,E14001466,Parliamentary Constituency,Sheffield Brightside and Hillsborough,Persons,3,1,<1,77.39,76.57,78.20
+2022,E14001467,Parliamentary Constituency,Sheffield Central,Persons,3,1,<1,78.64,77.54,79.74
+2022,E14001468,Parliamentary Constituency,Sheffield Hallam,Persons,3,1,<1,84.45,83.60,85.30
+2022,E14001469,Parliamentary Constituency,Sheffield Heeley,Persons,3,1,<1,78.30,77.47,79.13
+2022,E14001470,Parliamentary Constituency,Sheffield South East,Persons,3,1,<1,79.99,79.18,80.79
+2022,E14001471,Parliamentary Constituency,Sherwood Forest,Persons,3,1,<1,80.26,79.44,81.09
+2022,E14001472,Parliamentary Constituency,Shipley,Persons,3,1,<1,81.85,81.00,82.69
+2022,E14001473,Parliamentary Constituency,Shrewsbury,Persons,3,1,<1,81.28,80.44,82.11
+2022,E14001474,Parliamentary Constituency,Sittingbourne and Sheppey,Persons,3,1,<1,79.45,78.66,80.23
+2022,E14001475,Parliamentary Constituency,Skipton and Ripon,Persons,3,1,<1,83.32,82.49,84.14
+2022,E14001476,Parliamentary Constituency,Sleaford and North Hykeham,Persons,3,1,<1,82.01,81.19,82.82
+2022,E14001477,Parliamentary Constituency,Slough,Persons,3,1,<1,79.41,78.56,80.27
+2022,E14001478,Parliamentary Constituency,Smethwick,Persons,3,1,<1,79.23,78.42,80.04
+2022,E14001479,Parliamentary Constituency,Solihull West and Shirley,Persons,3,1,<1,82.74,81.94,83.54
+2022,E14001480,Parliamentary Constituency,South Basildon and East Thurrock,Persons,3,1,<1,81.47,80.69,82.26
+2022,E14001481,Parliamentary Constituency,South Cambridgeshire,Persons,3,1,<1,83.72,82.89,84.54
+2022,E14001482,Parliamentary Constituency,South Cotswolds,Persons,3,1,<1,83.15,82.47,83.83
+2022,E14001483,Parliamentary Constituency,South Derbyshire,Persons,3,1,<1,81.46,80.72,82.21
+2022,E14001484,Parliamentary Constituency,South Devon,Persons,3,1,<1,83.33,82.52,84.15
+2022,E14001485,Parliamentary Constituency,South Dorset,Persons,3,1,<1,82.54,81.77,83.32
+2022,E14001486,Parliamentary Constituency,South East Cornwall,Persons,3,1,<1,82.44,81.54,83.33
+2022,E14001487,Parliamentary Constituency,South Holland and The Deepings,Persons,3,1,<1,81.19,80.39,81.99
+2022,E14001488,Parliamentary Constituency,South Leicestershire,Persons,3,1,<1,82.70,81.93,83.47
+2022,E14001489,Parliamentary Constituency,South Norfolk,Persons,3,1,<1,83.08,82.27,83.88
+2022,E14001490,Parliamentary Constituency,South Northamptonshire,Persons,3,1,<1,83.59,82.79,84.39
+2022,E14001491,Parliamentary Constituency,South Ribble,Persons,3,1,<1,82.04,81.33,82.76
+2022,E14001492,Parliamentary Constituency,South Shields,Persons,3,1,<1,79.60,78.72,80.48
+2022,E14001493,Parliamentary Constituency,South Shropshire,Persons,3,1,<1,82.06,81.18,82.94
+2022,E14001494,Parliamentary Constituency,South Suffolk,Persons,3,1,<1,83.42,82.57,84.26
+2022,E14001495,Parliamentary Constituency,South West Devon,Persons,3,1,<1,83.26,82.52,83.99
+2022,E14001496,Parliamentary Constituency,South West Hertfordshire,Persons,3,1,<1,84.20,83.45,84.95
+2022,E14001497,Parliamentary Constituency,South West Norfolk,Persons,3,1,<1,81.43,80.62,82.24
+2022,E14001498,Parliamentary Constituency,South West Wiltshire,Persons,3,1,<1,82.21,81.41,83.00
+2022,E14001499,Parliamentary Constituency,Southampton Itchen,Persons,3,1,<1,80.47,79.67,81.27
+2022,E14001500,Parliamentary Constituency,Southampton Test,Persons,3,1,<1,79.75,78.93,80.57
+2022,E14001501,Parliamentary Constituency,Southend East and Rochford,Persons,3,1,<1,80.28,79.45,81.12
+2022,E14001502,Parliamentary Constituency,Southend West and Leigh,Persons,3,1,<1,82.07,81.40,82.75
+2022,E14001503,Parliamentary Constituency,Southgate and Wood Green,Persons,3,1,<1,83.89,83.11,84.66
+2022,E14001504,Parliamentary Constituency,Southport,Persons,3,1,<1,80.24,79.45,81.03
+2022,E14001505,Parliamentary Constituency,Spelthorne,Persons,3,1,<1,82.87,82.11,83.63
+2022,E14001506,Parliamentary Constituency,Spen Valley,Persons,3,1,<1,80.34,79.48,81.20
+2022,E14001507,Parliamentary Constituency,St Albans,Persons,3,1,<1,83.23,82.40,84.05
+2022,E14001508,Parliamentary Constituency,St Austell and Newquay,Persons,3,1,<1,80.44,79.61,81.28
+2022,E14001509,Parliamentary Constituency,St Helens North,Persons,3,1,<1,78.75,77.87,79.62
+2022,E14001510,Parliamentary Constituency,St Helens South and Whiston,Persons,3,1,<1,79.06,78.25,79.86
+2022,E14001511,Parliamentary Constituency,St Ives,Persons,3,1,<1,81.87,81.04,82.70
+2022,E14001512,Parliamentary Constituency,St Neots and Mid Cambridgeshire,Persons,3,1,<1,83.16,82.41,83.90
+2022,E14001513,Parliamentary Constituency,Stafford,Persons,3,1,<1,81.55,80.62,82.48
+2022,E14001514,Parliamentary Constituency,Staffordshire Moorlands,Persons,3,1,<1,81.37,80.48,82.25
+2022,E14001515,Parliamentary Constituency,Stalybridge and Hyde,Persons,3,1,<1,78.83,77.99,79.67
+2022,E14001516,Parliamentary Constituency,Stevenage,Persons,3,1,<1,81.03,80.17,81.89
+2022,E14001517,Parliamentary Constituency,Stockport,Persons,3,1,<1,78.17,77.35,78.99
+2022,E14001518,Parliamentary Constituency,Stockton North,Persons,3,1,<1,78.18,77.30,79.06
+2022,E14001519,Parliamentary Constituency,Stockton West,Persons,3,1,<1,82.38,81.48,83.28
+2022,E14001520,Parliamentary Constituency,Stoke-on-Trent Central,Persons,3,1,<1,78.46,77.62,79.31
+2022,E14001521,Parliamentary Constituency,Stoke-on-Trent North,Persons,3,1,<1,79.53,78.70,80.36
+2022,E14001522,Parliamentary Constituency,Stoke-on-Trent South,Persons,3,1,<1,80.98,80.11,81.85
+2022,E14001523,Parliamentary Constituency,"Stone, Great Wyrley and Penkridge",Persons,3,1,<1,83.02,82.27,83.76
+2022,E14001524,Parliamentary Constituency,Stourbridge,Persons,3,1,<1,80.43,79.58,81.29
+2022,E14001525,Parliamentary Constituency,Stratford and Bow,Persons,3,1,<1,81.30,80.34,82.26
+2022,E14001526,Parliamentary Constituency,Stratford-on-Avon,Persons,3,1,<1,82.96,82.19,83.72
+2022,E14001527,Parliamentary Constituency,Streatham and Croydon North,Persons,3,1,<1,82.26,81.42,83.09
+2022,E14001528,Parliamentary Constituency,Stretford and Urmston,Persons,3,1,<1,80.40,79.55,81.25
+2022,E14001529,Parliamentary Constituency,Stroud,Persons,3,1,<1,82.29,81.44,83.14
+2022,E14001530,Parliamentary Constituency,Suffolk Coastal,Persons,3,1,<1,82.70,81.92,83.48
+2022,E14001531,Parliamentary Constituency,Sunderland Central,Persons,3,1,<1,78.30,77.41,79.20
+2022,E14001532,Parliamentary Constituency,Surrey Heath,Persons,3,1,<1,83.29,82.55,84.03
+2022,E14001533,Parliamentary Constituency,Sussex Weald,Persons,3,1,<1,83.72,82.95,84.48
+2022,E14001534,Parliamentary Constituency,Sutton and Cheam,Persons,3,1,<1,83.85,83.08,84.62
+2022,E14001535,Parliamentary Constituency,Sutton Coldfield,Persons,3,1,<1,83.52,82.68,84.37
+2022,E14001536,Parliamentary Constituency,Swindon North,Persons,3,1,<1,81.65,80.85,82.46
+2022,E14001537,Parliamentary Constituency,Swindon South,Persons,3,1,<1,81.15,80.41,81.90
+2022,E14001538,Parliamentary Constituency,Tamworth,Persons,3,1,<1,80.59,79.77,81.41
+2022,E14001539,Parliamentary Constituency,Tatton,Persons,3,1,<1,82.74,81.99,83.50
+2022,E14001540,Parliamentary Constituency,Taunton and Wellington,Persons,3,1,<1,82.37,81.68,83.06
+2022,E14001541,Parliamentary Constituency,Telford,Persons,3,1,<1,79.23,78.38,80.08
+2022,E14001542,Parliamentary Constituency,Tewkesbury,Persons,3,1,<1,81.50,80.62,82.38
+2022,E14001543,Parliamentary Constituency,The Wrekin,Persons,3,1,<1,81.07,80.29,81.84
+2022,E14001544,Parliamentary Constituency,Thirsk and Malton,Persons,3,1,<1,83.08,82.33,83.84
+2022,E14001545,Parliamentary Constituency,Thornbury and Yate,Persons,3,1,<1,83.56,82.83,84.30
+2022,E14001546,Parliamentary Constituency,Thurrock,Persons,3,1,<1,79.64,78.83,80.45
+2022,E14001547,Parliamentary Constituency,Tipton and Wednesbury,Persons,3,1,<1,78.31,77.51,79.10
+2022,E14001548,Parliamentary Constituency,Tiverton and Minehead,Persons,3,1,<1,82.16,81.38,82.94
+2022,E14001549,Parliamentary Constituency,Tonbridge,Persons,3,1,<1,82.78,82.02,83.55
+2022,E14001550,Parliamentary Constituency,Tooting,Persons,3,1,<1,82.75,81.85,83.65
+2022,E14001551,Parliamentary Constituency,Torbay,Persons,3,1,<1,79.86,79.02,80.69
+2022,E14001552,Parliamentary Constituency,Torridge and Tavistock,Persons,3,1,<1,82.25,81.39,83.11
+2022,E14001553,Parliamentary Constituency,Tottenham,Persons,3,1,<1,80.86,80.02,81.70
+2022,E14001554,Parliamentary Constituency,Truro and Falmouth,Persons,3,1,<1,81.87,81.00,82.73
+2022,E14001555,Parliamentary Constituency,Tunbridge Wells,Persons,3,1,<1,82.38,81.60,83.16
+2022,E14001556,Parliamentary Constituency,Twickenham,Persons,3,1,<1,84.10,83.34,84.85
+2022,E14001557,Parliamentary Constituency,Tynemouth,Persons,3,1,<1,80.34,79.47,81.21
+2022,E14001558,Parliamentary Constituency,Uxbridge and South Ruislip,Persons,3,1,<1,81.94,81.13,82.76
+2022,E14001559,Parliamentary Constituency,Vauxhall and Camberwell Green,Persons,3,1,<1,80.37,79.36,81.37
+2022,E14001560,Parliamentary Constituency,Wakefield and Rothwell,Persons,3,1,<1,78.98,78.14,79.83
+2022,E14001561,Parliamentary Constituency,Wallasey,Persons,3,1,<1,79.29,78.44,80.13
+2022,E14001562,Parliamentary Constituency,Walsall and Bloxwich,Persons,3,1,<1,78.28,77.49,79.07
+2022,E14001563,Parliamentary Constituency,Walthamstow,Persons,3,1,<1,80.23,79.37,81.09
+2022,E14001564,Parliamentary Constituency,Warrington North,Persons,3,1,<1,79.75,78.85,80.65
+2022,E14001565,Parliamentary Constituency,Warrington South,Persons,3,1,<1,81.04,80.24,81.84
+2022,E14001566,Parliamentary Constituency,Warwick and Leamington,Persons,3,1,<1,81.45,80.67,82.24
+2022,E14001567,Parliamentary Constituency,Washington and Gateshead South,Persons,3,1,<1,78.59,77.73,79.46
+2022,E14001568,Parliamentary Constituency,Watford,Persons,3,1,<1,82.07,81.29,82.86
+2022,E14001569,Parliamentary Constituency,Waveney Valley,Persons,3,1,<1,82.76,81.80,83.73
+2022,E14001570,Parliamentary Constituency,Weald of Kent,Persons,3,1,<1,82.74,81.82,83.65
+2022,E14001571,Parliamentary Constituency,Wellingborough and Rushden,Persons,3,1,<1,80.47,79.77,81.17
+2022,E14001572,Parliamentary Constituency,Wells and Mendip Hills,Persons,3,1,<1,83.72,82.89,84.55
+2022,E14001573,Parliamentary Constituency,Welwyn Hatfield,Persons,3,1,<1,82.09,81.26,82.93
+2022,E14001574,Parliamentary Constituency,West Bromwich,Persons,3,1,<1,79.80,78.97,80.63
+2022,E14001575,Parliamentary Constituency,West Dorset,Persons,3,1,<1,83.10,82.16,84.04
+2022,E14001576,Parliamentary Constituency,West Ham and Beckton,Persons,3,1,<1,80.24,79.34,81.14
+2022,E14001577,Parliamentary Constituency,West Lancashire,Persons,3,1,<1,80.19,79.38,81.00
+2022,E14001578,Parliamentary Constituency,West Suffolk,Persons,3,1,<1,81.76,81.00,82.51
+2022,E14001579,Parliamentary Constituency,West Worcestershire,Persons,3,1,<1,82.57,81.75,83.40
+2022,E14001580,Parliamentary Constituency,Westmorland and Lonsdale,Persons,3,1,<1,83.06,82.30,83.82
+2022,E14001581,Parliamentary Constituency,Weston-super-Mare,Persons,3,1,<1,80.41,79.63,81.18
+2022,E14001582,Parliamentary Constituency,Wetherby and Easingwold,Persons,3,1,<1,83.56,82.65,84.47
+2022,E14001583,Parliamentary Constituency,Whitehaven and Workington,Persons,3,1,<1,78.72,77.77,79.66
+2022,E14001584,Parliamentary Constituency,Widnes and Halewood,Persons,3,1,<1,79.72,78.91,80.53
+2022,E14001585,Parliamentary Constituency,Wigan,Persons,3,1,<1,78.34,77.58,79.10
+2022,E14001586,Parliamentary Constituency,Wimbledon,Persons,3,1,<1,84.36,83.58,85.14
+2022,E14001587,Parliamentary Constituency,Winchester,Persons,3,1,<1,85.27,84.57,85.97
+2022,E14001588,Parliamentary Constituency,Windsor,Persons,3,1,<1,83.09,82.35,83.84
+2022,E14001589,Parliamentary Constituency,Wirral West,Persons,3,1,<1,83.14,82.39,83.90
+2022,E14001590,Parliamentary Constituency,Witham,Persons,3,1,<1,81.61,80.87,82.35
+2022,E14001591,Parliamentary Constituency,Witney,Persons,3,1,<1,83.15,82.35,83.95
+2022,E14001592,Parliamentary Constituency,Woking,Persons,3,1,<1,82.95,82.15,83.75
+2022,E14001593,Parliamentary Constituency,Wokingham,Persons,3,1,<1,84.48,83.77,85.19
+2022,E14001594,Parliamentary Constituency,Wolverhampton North East,Persons,3,1,<1,79.58,78.76,80.40
+2022,E14001595,Parliamentary Constituency,Wolverhampton South East,Persons,3,1,<1,77.84,77.02,78.65
+2022,E14001596,Parliamentary Constituency,Wolverhampton West,Persons,3,1,<1,80.07,79.30,80.84
+2022,E14001597,Parliamentary Constituency,Worcester,Persons,3,1,<1,81.51,80.63,82.39
+2022,E14001598,Parliamentary Constituency,Worsley and Eccles,Persons,3,1,<1,79.87,79.08,80.66
+2022,E14001599,Parliamentary Constituency,Worthing West,Persons,3,1,<1,81.97,81.23,82.70
+2022,E14001600,Parliamentary Constituency,Wycombe,Persons,3,1,<1,82.00,81.20,82.79
+2022,E14001601,Parliamentary Constituency,Wyre Forest,Persons,3,1,<1,80.89,80.10,81.68
+2022,E14001602,Parliamentary Constituency,Wythenshawe and Sale East,Persons,3,1,<1,78.89,78.08,79.71
+2022,E14001603,Parliamentary Constituency,Yeovil,Persons,3,1,<1,81.50,80.72,82.27
+2022,E14001604,Parliamentary Constituency,York Central,Persons,3,1,<1,78.89,78.02,79.76
+2022,E14001605,Parliamentary Constituency,York Outer,Persons,3,1,<1,83.50,82.77,84.22
+2022,N05000001,Parliamentary Constituency,Belfast East,Persons,3,1,<1,79.80,78.94,80.67
+2022,N05000002,Parliamentary Constituency,Belfast North,Persons,3,1,<1,78.54,77.72,79.37
+2022,N05000003,Parliamentary Constituency,Belfast South and Mid Down,Persons,3,1,<1,82.03,81.21,82.85
+2022,N05000004,Parliamentary Constituency,Belfast West,Persons,3,1,<1,75.94,75.06,76.83
+2022,N05000005,Parliamentary Constituency,East Antrim,Persons,3,1,<1,82.24,81.42,83.06
+2022,N05000006,Parliamentary Constituency,East Londonderry,Persons,3,1,<1,81.36,80.61,82.10
+2022,N05000007,Parliamentary Constituency,Fermanagh and South Tyrone,Persons,3,1,<1,81.30,80.51,82.10
+2022,N05000008,Parliamentary Constituency,Foyle,Persons,3,1,<1,79.43,78.58,80.27
+2022,N05000009,Parliamentary Constituency,Lagan Valley,Persons,3,1,<1,81.63,80.88,82.39
+2022,N05000010,Parliamentary Constituency,Mid Ulster,Persons,3,1,<1,81.34,80.56,82.12
+2022,N05000011,Parliamentary Constituency,Newry and Armagh,Persons,3,1,<1,80.73,79.94,81.53
+2022,N05000012,Parliamentary Constituency,North Antrim,Persons,3,1,<1,81.42,80.59,82.25
+2022,N05000013,Parliamentary Constituency,North Down,Persons,3,1,<1,82.49,81.72,83.26
+2022,N05000014,Parliamentary Constituency,South Antrim,Persons,3,1,<1,81.81,81.03,82.59
+2022,N05000015,Parliamentary Constituency,South Down,Persons,3,1,<1,81.64,80.82,82.46
+2022,N05000016,Parliamentary Constituency,Strangford,Persons,3,1,<1,81.82,81.04,82.61
+2022,N05000017,Parliamentary Constituency,Upper Bann,Persons,3,1,<1,80.91,80.11,81.71
+2022,N05000018,Parliamentary Constituency,West Tyrone,Persons,3,1,<1,81.40,80.57,82.23
+2022,S14000021,Parliamentary Constituency,East Renfrewshire,Persons,3,1,<1,83.47,82.66,84.27
+2022,S14000027,Parliamentary Constituency,Na h-Eileanan an Iar,Persons,3,1,<1,78.67,77.04,80.29
+2022,S14000045,Parliamentary Constituency,Midlothian,Persons,3,1,<1,79.30,78.47,80.13
+2022,S14000048,Parliamentary Constituency,North Ayrshire and Arran,Persons,3,1,<1,78.14,77.30,78.99
+2022,S14000051,Parliamentary Constituency,Orkney and Shetland,Persons,3,1,<1,81.09,79.85,82.34
+2022,S14000060,Parliamentary Constituency,Aberdeen North,Persons,3,1,<1,78.19,77.36,79.01
+2022,S14000061,Parliamentary Constituency,Aberdeen South,Persons,3,1,<1,80.70,79.92,81.48
+2022,S14000062,Parliamentary Constituency,Aberdeenshire North and Moray East,Persons,3,1,<1,79.63,78.78,80.48
+2022,S14000063,Parliamentary Constituency,Airdrie and Shotts,Persons,3,1,<1,77.90,77.07,78.73
+2022,S14000064,Parliamentary Constituency,Alloa and Grangemouth,Persons,3,1,<1,77.31,76.50,78.12
+2022,S14000065,Parliamentary Constituency,Angus and Perthshire Glens,Persons,3,1,<1,79.66,78.72,80.59
+2022,S14000066,Parliamentary Constituency,Arbroath and Broughty Ferry,Persons,3,1,<1,80.19,79.36,81.02
+2022,S14000067,Parliamentary Constituency,"Argyll, Bute and South Lochaber",Persons,3,1,<1,80.56,79.72,81.41
+2022,S14000068,Parliamentary Constituency,Bathgate and Linlithgow,Persons,3,1,<1,79.29,78.49,80.10
+2022,S14000069,Parliamentary Constituency,"Caithness, Sutherland and Easter Ross",Persons,3,1,<1,79.30,78.31,80.30
+2022,S14000070,Parliamentary Constituency,Coatbridge and Bellshill,Persons,3,1,<1,77.00,76.22,77.78
+2022,S14000071,Parliamentary Constituency,Cowdenbeath and Kirkcaldy,Persons,3,1,<1,79.39,78.59,80.18
+2022,S14000072,Parliamentary Constituency,Cumbernauld and Kirkintilloch,Persons,3,1,<1,79.02,78.13,79.90
+2022,S14000073,Parliamentary Constituency,Dumfries and Galloway,Persons,3,1,<1,78.21,77.25,79.17
+2022,S14000074,Parliamentary Constituency,"Dumfriesshire, Clydesdale and Tweeddale",Persons,3,1,<1,80.72,79.88,81.57
+2022,S14000075,Parliamentary Constituency,Dundee Central,Persons,3,1,<1,76.51,75.63,77.40
+2022,S14000076,Parliamentary Constituency,Dunfermline and Dollar,Persons,3,1,<1,79.70,78.89,80.51
+2022,S14000077,Parliamentary Constituency,East Kilbride and Strathaven,Persons,3,1,<1,80.15,79.39,80.91
+2022,S14000078,Parliamentary Constituency,Edinburgh East and Musselburgh,Persons,3,1,<1,78.68,77.84,79.51
+2022,S14000079,Parliamentary Constituency,Edinburgh North and Leith,Persons,3,1,<1,78.23,77.38,79.07
+2022,S14000080,Parliamentary Constituency,Edinburgh South,Persons,3,1,<1,80.32,79.44,81.20
+2022,S14000081,Parliamentary Constituency,Edinburgh South West,Persons,3,1,<1,79.60,78.71,80.50
+2022,S14000082,Parliamentary Constituency,Edinburgh West,Persons,3,1,<1,82.39,81.62,83.16
+2022,S14000083,Parliamentary Constituency,Falkirk,Persons,3,1,<1,78.23,77.36,79.11
+2022,S14000084,Parliamentary Constituency,Glasgow East,Persons,3,1,<1,75.51,74.72,76.30
+2022,S14000085,Parliamentary Constituency,Glasgow North,Persons,3,1,<1,75.87,75.01,76.72
+2022,S14000086,Parliamentary Constituency,Glasgow North East,Persons,3,1,<1,74.15,73.29,75.01
+2022,S14000087,Parliamentary Constituency,Glasgow South,Persons,3,1,<1,78.44,77.53,79.35
+2022,S14000088,Parliamentary Constituency,Glasgow South West,Persons,3,1,<1,76.08,75.26,76.90
+2022,S14000089,Parliamentary Constituency,Glasgow West,Persons,3,1,<1,77.91,77.06,78.75
+2022,S14000090,Parliamentary Constituency,Glenrothes and Mid Fife,Persons,3,1,<1,76.97,76.05,77.89
+2022,S14000091,Parliamentary Constituency,Gordon and Buchan,Persons,3,1,<1,81.80,80.98,82.62
+2022,S14000092,Parliamentary Constituency,Hamilton and Clyde Valley,Persons,3,1,<1,77.77,76.91,78.63
+2022,S14000093,Parliamentary Constituency,Inverclyde and Renfrewshire West,Persons,3,1,<1,78.12,77.25,78.99
+2022,S14000094,Parliamentary Constituency,"Inverness, Skye and West Ross-shire",Persons,3,1,<1,78.69,77.80,79.59
+2022,S14000095,Parliamentary Constituency,Livingston,Persons,3,1,<1,79.07,78.27,79.88
+2022,S14000096,Parliamentary Constituency,Lothian East,Persons,3,1,<1,81.10,80.29,81.91
+2022,S14000097,Parliamentary Constituency,Mid Dunbartonshire,Persons,3,1,<1,82.57,81.78,83.36
+2022,S14000098,Parliamentary Constituency,"Moray West, Nairn and Strathspey",Persons,3,1,<1,80.76,79.93,81.59
+2022,S14000099,Parliamentary Constituency,"Motherwell, Wishaw and Carluke",Persons,3,1,<1,77.17,76.30,78.03
+2022,S14000100,Parliamentary Constituency,North East Fife,Persons,3,1,<1,80.55,79.70,81.40
+2022,S14000101,Parliamentary Constituency,Paisley and Renfrewshire North,Persons,3,1,<1,79.12,78.34,79.90
+2022,S14000102,Parliamentary Constituency,Paisley and Renfrewshire South,Persons,3,1,<1,78.21,77.37,79.05
+2022,S14000103,Parliamentary Constituency,Perth and Kinross-shire,Persons,3,1,<1,80.71,79.91,81.51
+2022,S14000104,Parliamentary Constituency,Rutherglen,Persons,3,1,<1,78.06,77.18,78.93
+2022,S14000105,Parliamentary Constituency,Stirling and Strathallan,Persons,3,1,<1,80.50,79.70,81.30
+2022,S14000106,Parliamentary Constituency,West Dunbartonshire,Persons,3,1,<1,77.21,76.34,78.08
+2022,S14000107,Parliamentary Constituency,"Ayr, Carrick and Cumnock",Persons,3,1,<1,78.02,77.14,78.91
+2022,S14000108,Parliamentary Constituency,"Berwickshire, Roxburgh and Selkirk",Persons,3,1,<1,80.19,79.30,81.09
+2022,S14000109,Parliamentary Constituency,Central Ayrshire,Persons,3,1,<1,78.44,77.58,79.30
+2022,S14000110,Parliamentary Constituency,Kilmarnock and Loudoun,Persons,3,1,<1,77.49,76.66,78.32
+2022,S14000111,Parliamentary Constituency,West Aberdeenshire and Kincardine,Persons,3,1,<1,82.69,81.88,83.50
+2022,W07000081,Parliamentary Constituency,Aberafan Maesteg,Persons,3,1,<1,78.87,77.98,79.76
+2022,W07000082,Parliamentary Constituency,Alyn and Deeside,Persons,3,1,<1,80.34,79.58,81.11
+2022,W07000083,Parliamentary Constituency,Bangor Aberconwy,Persons,3,1,<1,81.34,80.50,82.17
+2022,W07000084,Parliamentary Constituency,Blaenau Gwent and Rhymney,Persons,3,1,<1,77.25,76.38,78.12
+2022,W07000085,Parliamentary Constituency,"Brecon, Radnor and Cwm Tawe",Persons,3,1,<1,81.38,80.52,82.24
+2022,W07000086,Parliamentary Constituency,Bridgend,Persons,3,1,<1,81.44,80.64,82.25
+2022,W07000087,Parliamentary Constituency,Caerfyrddin,Persons,3,1,<1,81.15,80.37,81.92
+2022,W07000088,Parliamentary Constituency,Caerphilly,Persons,3,1,<1,77.98,77.12,78.83
+2022,W07000089,Parliamentary Constituency,Cardiff East,Persons,3,1,<1,80.62,79.86,81.38
+2022,W07000090,Parliamentary Constituency,Cardiff North,Persons,3,1,<1,82.84,81.94,83.73
+2022,W07000091,Parliamentary Constituency,Cardiff South and Penarth,Persons,3,1,<1,80.22,79.36,81.07
+2022,W07000092,Parliamentary Constituency,Cardiff West,Persons,3,1,<1,81.08,80.21,81.94
+2022,W07000093,Parliamentary Constituency,Ceredigion Preseli,Persons,3,1,<1,81.05,80.18,81.92
+2022,W07000094,Parliamentary Constituency,Clwyd East,Persons,3,1,<1,81.44,80.63,82.24
+2022,W07000095,Parliamentary Constituency,Clwyd North,Persons,3,1,<1,78.75,77.92,79.57
+2022,W07000096,Parliamentary Constituency,Dwyfor Meirionnydd,Persons,3,1,<1,81.49,80.69,82.30
+2022,W07000097,Parliamentary Constituency,Gower,Persons,3,1,<1,81.76,80.93,82.60
+2022,W07000098,Parliamentary Constituency,Llanelli,Persons,3,1,<1,79.34,78.52,80.16
+2022,W07000099,Parliamentary Constituency,Merthyr Tydfil and Aberdare,Persons,3,1,<1,78.90,78.09,79.70
+2022,W07000100,Parliamentary Constituency,Mid and South Pembrokeshire,Persons,3,1,<1,80.72,79.93,81.50
+2022,W07000101,Parliamentary Constituency,Monmouthshire,Persons,3,1,<1,81.60,80.75,82.46
+2022,W07000102,Parliamentary Constituency,Montgomeryshire and Glyndwr,Persons,3,1,<1,80.97,80.00,81.94
+2022,W07000103,Parliamentary Constituency,Neath and Swansea East,Persons,3,1,<1,78.78,77.99,79.57
+2022,W07000104,Parliamentary Constituency,Newport East,Persons,3,1,<1,78.72,77.94,79.51
+2022,W07000105,Parliamentary Constituency,Newport West and Islwyn,Persons,3,1,<1,80.25,79.44,81.05
+2022,W07000106,Parliamentary Constituency,Pontypridd,Persons,3,1,<1,80.45,79.63,81.27
+2022,W07000107,Parliamentary Constituency,Rhondda and Ogmore,Persons,3,1,<1,78.92,78.09,79.74
+2022,W07000108,Parliamentary Constituency,Swansea West,Persons,3,1,<1,78.10,77.26,78.95
+2022,W07000109,Parliamentary Constituency,Torfaen,Persons,3,1,<1,79.09,78.27,79.90
+2022,W07000110,Parliamentary Constituency,Vale of Glamorgan,Persons,3,1,<1,82.22,81.39,83.04
+2022,W07000111,Parliamentary Constituency,Wrexham,Persons,3,1,<1,79.32,78.49,80.16
+2022,W07000112,Parliamentary Constituency,Ynys Môn,Persons,3,1,<1,80.97,80.00,81.94

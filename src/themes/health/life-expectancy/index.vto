@@ -1,0 +1,24 @@
+---
+title: Life expectancy (UK)
+theme: health
+created: 2025-05-20T15:03
+updated: 2025-05-20T15:03
+description: |
+  Estimates of life expectancy for each UK parlimentary constituency in 2022.
+keywords: [life,age,expectancy,length]
+api:
+  - expectancy
+---
+
+<p>Estimates of life expectancy for each UK parlimentary constituency in 2022.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "expectancy"
+}) }}
+
+<h2>Notes</h2>
+
+<ul>
+	<li>Figures are based on the number of deaths registered and mid-year population estimates 2022.</li>
+</ul>
