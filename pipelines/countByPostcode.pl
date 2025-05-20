@@ -36,9 +36,11 @@ GetOptions(
 
 if(defined($help) || !defined($ofile)){
 	msg("Usage:\n");
-	msg("    perl byPostcode.pl <CSV file> -postcode <postcode Column> -geojson <GeoJSON file> -output <output file> -category <column to group by>\n\n");
-	msg("Example:\n");
-	msg("    perl pipelines/countByPostcode.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/premises.csv -c \"Premises Activity\"\n\n");
+	msg("    perl byPostcode.pl <CSV file> -postcode <postcode Column> -geojson <GeoJSON file> -output <output file> -category <column to group by>\n");
+	msg("\n");
+	msg("Examples:\n");
+	msg("    perl pipelines/countByPostcode.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/premises.csv -c \"Premises Activity\"\n");
+	msg("\n");
 	msg("Options:\n");
 	msg("    <CSV file>                 the CSV file to load\n");
 	msg("    -c, --category=Column      the column in the input CSV to use to total by\n");
