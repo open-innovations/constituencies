@@ -81,7 +81,7 @@ sub updateCreationTimestamp {
 	close($fh);
 }
 
-# Version 1.5.1
+# Version 1.5.2
 sub ParseCSV {
 	my $str = shift;
 	my $config = shift;
@@ -109,6 +109,9 @@ sub ParseCSV {
 		@header = @{$config->{'header'}{'columns'}};
 	}
 
+	# Remove bigendian signifier
+	$rows[0] =~ s/^\x{feff}//;
+
 	for($r = $config->{'header'}{'start'}; $r < @rows; $r++){
 		$rows[$r] =~ s/[\n\r]//g;
 		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
@@ -135,6 +138,7 @@ sub ParseCSV {
 			push(@features,$data);
 		}
 	}
+
 	if($col){
 		$data = {};
 		for($r = 0; $r < @features; $r++){
