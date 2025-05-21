@@ -157,7 +157,7 @@ for($l = 0; $l < @layers; $l++){
 						$tjson->{'config'}{'value'} = $dt;
 					}
 					if(defined($tjson->{'config'}{'tooltip'})){
-						$tjson->{'config'}{'tooltip'} =~ s/\{\{ [0-9]{4}-[0-9]{2} \}\}/\{\{ $dt \}\}/g;
+						$tjson->{'config'}{'tooltip'} =~ s/\{\{ [0-9]{4}-[0-9]{2} ([^\}]*)\}\}/\{\{ $dt $1\}\}/g;
 					}
 					$tjson->{'date'} = $dtfull;
 				}
@@ -353,7 +353,7 @@ sub AugmentCSV {
 	$csv .= "\n";
 	for($r = 0; $r < @rows; $r++){
 		for($c = 0; $c < @head; $c++){
-			$csv .= ($c > 0 ? ",":"").($rows[$r][$c]=~/\,/ ? '"':'').$rows[$r][$c].($rows[$r][$c]=~/\,/ ? '"':'');
+			$csv .= ($c > 0 ? ",":"").($rows[$r][$c]=~/\,/ ? '"':'').($rows[$r][$c]||0).($rows[$r][$c]=~/\,/ ? '"':'');
 		}
 		$csv .= "\n";
 	}
