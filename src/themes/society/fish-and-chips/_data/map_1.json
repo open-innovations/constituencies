@@ -1,37 +1,26 @@
 {
-	"title": "Fish and chip shops (UK)",
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "release.fish_and_chips",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "2025-03",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 50,
-		"matchKey": "PCON24CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 50,
-				"label": "50+"
-			},{
-				"value": 25,
-				"label": "25"
-			},{
-				"value": 0,
-				"label": "0"
-			}]
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.fish_and_chips",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"50+","value":50},{"label":"25","value":25},{"label":"0","value":0}],
+			"position":"top right"
 		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
+		"matchKey":"PCON24CD",
+		"max":50,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />Fish and chip shops: <strong>{{ 2025-03 }}</strong>",
-        "attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors)."
-	}
+		"tooltip":"<strong>{{ n }}</strong><br />Fish and chip shops: <strong>{{ 2025-05 }}</strong>",
+		"value":"2025-05",
+		"width":600
+	},
+	"date":"2025-05-21T03:28",
+	"title":"Fish and chip shops (UK)"
 }

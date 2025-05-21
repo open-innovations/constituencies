@@ -1,43 +1,26 @@
 {
-	"title": "Pubs (UK)",
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "release.pubs",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "2025-03",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 400,
-		"matchKey": "PCON24CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 400,
-				"label": "400+"
-			},{
-				"value": 300,
-				"label": "300"
-			},{
-				"value": 200,
-				"label": "200"
-			},{
-				"value": 100,
-				"label": "100"
-			},{
-				"value": 0,
-				"label": "0"
-			}]
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.pubs",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"400+","value":400},{"label":"300","value":300},{"label":"200","value":200},{"label":"100","value":100},{"label":"0","value":0}],
+			"position":"top right"
 		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
+		"matchKey":"PCON24CD",
+		"max":400,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-03 }}</strong>",
-        "attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors)."
-	}
+		"tooltip":"<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-05 }}</strong>",
+		"value":"2025-05",
+		"width":600
+	},
+	"date":"2025-05-21T03:28",
+	"title":"Pubs (UK)"
 }

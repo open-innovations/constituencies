@@ -1,46 +1,26 @@
 {
-	"title": "Post offices (UK)",
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "release.postoffices",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "2025-03",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 50,
-		"matchKey": "PCON24CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 50,
-				"label": "50+"
-			},{
-				"value": 40,
-				"label": "40"
-			},{
-				"value": 30,
-				"label": "30"
-			},{
-				"value": 20,
-				"label": "20"
-			},{
-				"value": 10,
-				"label": "10"
-			},{
-				"value": 0,
-				"label": "0"
-			}]
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.postoffices",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"50+","value":50},{"label":"40","value":40},{"label":"30","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
+			"position":"top right"
 		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			}
+		"matchKey":"PCON24CD",
+		"max":50,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2025-03 }}</strong>",
-        "attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors)."
-	}
+		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2025-05 }}</strong>",
+		"value":"2025-05",
+		"width":600
+	},
+	"date":"2025-05-21T03:28",
+	"title":"Post offices (UK)"
 }

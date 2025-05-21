@@ -10,14 +10,26 @@
 	"layers": [{
 		"id": "postoffices",
 		"keep": "amenity=post_office",
-		"output": "../src/themes/society/post-offices/_data/release/postoffices.csv"
+		"output": "../src/themes/society/post-offices/_data/release/postoffices.csv",
+		"dates": [
+			"../src/themes/society/post-offices/index.vto",
+			"../src/themes/society/post-offices/_data/map_1.json"
+		]
 	},{
 		"id": "pubs",
 		"keep": "amenity=bar,pub",
-		"output": "../src/themes/society/pubs/_data/release/pubs.csv"
+		"output": "../src/themes/society/pubs/_data/release/pubs.csv",
+		"dates": [
+			"../src/themes/society/pubs/index.vto",
+			"../src/themes/society/pubs/_data/map_1.json"
+		]
 	},{
 		"id": "fish_and_chips",
 		"keep": "cuisine=fish_and_chips",
-		"output": "../src/themes/society/fish-and-chips/_data/release/fish_and_chips.csv"
+		"output": "../src/themes/society/fish-and-chips/_data/release/fish_and_chips.csv",
+		"dates": [
+			"../src/themes/society/fish-and-chips/index.vto",
+			"../src/themes/society/fish-and-chips/_data/map_1.json"
+		]
 	}]
 }

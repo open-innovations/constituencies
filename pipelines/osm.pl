@@ -19,9 +19,9 @@ my ($basedir, $path);
 BEGIN { ($basedir, $path) = abs_path($0) =~ m{(.*/)?([^/]+)$}; push @INC, $basedir; }
 use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
+require "lib.pl";
 
-
-my ($hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$kept,$count);
+my ($hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$dtfull,$kept,$count);
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -50,6 +50,7 @@ if(!-e $pbffile){
 
 # Create a YYYY-MM date from the PBF file last-modified date
 $dt = strftime("%Y-%m", localtime((stat($pbffile))[9]));
+$dtfull = strftime("%Y-%m-%dT%H:%M", localtime((stat($pbffile))[9]));
 
 @layers = @{$json->{'layers'}};
 
@@ -85,7 +86,8 @@ for($l = 0; $l < @layers; $l++){
 	}
 
 	msg("\tCreate GeoJSON version <cyan>$geofile<none>\n");
-	`osmium export $osmfile --overwrite -o $geofile`;
+	my $osmiumconf = $basedir."osmium.json";
+	`osmium export $osmfile --overwrite -o $geofile -c $osmiumconf`;
 	$geojson = LoadJSON($geofile);
 
 	$n = @{$geojson->{'features'}};
@@ -95,26 +97,33 @@ for($l = 0; $l < @layers; $l++){
 	msg("\tProcessing features\n");
 	$progress->max($n);
 	$count = 0;
+	my $done = {};
+	my $osmid = "";
 	for($f = 0; $f < $n; $f++){
-		if(shouldBeKept($geojson->{'features'}[$f],$layers[$l]{'keep'})){
-			@coord = getFirstPoint($geojson->{'features'}[$f]);
-			$cn = @coord;
-			if(@coord==2){
-				$id = getFeature($f,$json->{'constituencies'}{'id'},$coord[0],$coord[1],@{$constituencies->{'features'}});
-				if($id){
-					$geojson->{'features'}[$f]{'properties'}{$json->{'constituencies'}{'id'}} = $id;
-					if(!defined($data->{$id})){
-						$data->{$id} = {};
-						$data->{$id}{$json->{'constituencies'}{'id'}} = $id;
+		# Check if we've processed this OSM ID before
+		$osmid = $geojson->{'features'}[$f]{'properties'}{'@id'};
+		if(!defined($done->{$osmid})){
+			if(shouldBeKept($geojson->{'features'}[$f],$layers[$l]{'keep'})){
+				@coord = getFirstPoint($geojson->{'features'}[$f]);
+				$cn = @coord;
+				if(@coord==2){
+					$id = getFeature($f,$json->{'constituencies'}{'id'},$coord[0],$coord[1],@{$constituencies->{'features'}});
+					if($id){
+						$geojson->{'features'}[$f]{'properties'}{$json->{'constituencies'}{'id'}} = $id;
+						if(!defined($data->{$id})){
+							$data->{$id} = {};
+							$data->{$id}{$json->{'constituencies'}{'id'}} = $id;
+						}
+						$data->{$id}{$dt}++;
+					}else{
+						warning("\tNo constituency found for $f ($coord[1]/$coord[0]) / ".($geojson->{'features'}[$f]{'geometry'}{'type'})." / ".($geojson->{'features'}[$f]{'properties'}{'name'}||"")."\n");
 					}
-					$data->{$id}{$dt}++;
+					$count++;
 				}else{
-					warning("\tNo constituency found for $f ($coord[1]/$coord[0]) / ".($geojson->{'features'}[$f]{'geometry'}{'type'})." / ".($geojson->{'features'}[$f]{'properties'}{'name'}||"")."\n");
+					warning("No coordinates found\n");
+					print Dumper $geojson->{'features'}[$f];
 				}
-				$count++;
-			}else{
-				warning("No coordinates found\n");
-				print Dumper $geojson->{'features'}[$f];
+				$done->{$osmid} = 1;
 			}
 		}
 		$progress->update($f,"\t");
@@ -124,15 +133,39 @@ for($l = 0; $l < @layers; $l++){
 
 	# Save the combined GeoJSON
 	$geofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".geojson";
-	SaveJSON($geofile,$geojson,2);
+	SaveJSON($geojson,$geofile,2);
 
 	# Save the constituency data
 	$confile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}."-constituencies.json";
-	SaveJSON($confile,$data,1);
+	SaveJSON($data,$confile,1);
 
 	# Make a CSV
 	if($layers[$l]{'output'}){
 		AugmentCSV($basedir.$layers[$l]{'output'},$data,$json->{'constituencies'}{'id'});
+	}
+
+
+	# Update dates
+	if(defined($layers[$l]{'dates'})){
+		for(my $d = 0; $d < @{$layers[$l]{'dates'}}; $d++){
+			if($layers[$l]{'dates'}[$d] =~ /\.vto/){
+				updateCreationTimestamp($basedir.$layers[$l]{'dates'}[$d],$dtfull);
+			}elsif($layers[$l]{'dates'}[$d] =~ /\.json/){
+				my $tjson = LoadJSON($basedir.$layers[$l]{'dates'}[$d]);
+				if(defined($tjson->{'config'})){
+					if(defined($tjson->{'config'}{'value'})){
+						$tjson->{'config'}{'value'} = $dt;
+					}
+					if(defined($tjson->{'config'}{'tooltip'})){
+						$tjson->{'config'}{'tooltip'} =~ s/\{\{ [0-9]{4}-[0-9]{2} \}\}/\{\{ $dt \}\}/g;
+					}
+					$tjson->{'date'} = $dtfull;
+				}
+				SaveJSON($tjson,$basedir.$layers[$l]{'dates'}[$d],3);
+			}else{
+				warning("Unknown file type to update date for <cyan>$basedir$layers[$l]{'dates'}[$d]<none>\n");
+			}
+		}
 	}
 }
 
@@ -143,90 +176,6 @@ for($l = 0; $l < @layers; $l++){
 
 #################################
 
-sub msg {
-	my $str = $_[0];
-	my $dest = $_[1]||"STDOUT";
-	
-	my %colours = (
-		'black'=>"\033[0;30m",
-		'red'=>"\033[0;31m",
-		'green'=>"\033[0;32m",
-		'yellow'=>"\033[0;33m",
-		'blue'=>"\033[0;34m",
-		'magenta'=>"\033[0;35m",
-		'cyan'=>"\033[0;36m",
-		'white'=>"\033[0;37m",
-		'none'=>"\033[0m"
-	);
-	foreach my $c (keys(%colours)){ $str =~ s/\< ?$c ?\>/$colours{$c}/g; }
-	if($dest eq "STDERR"){
-		print STDERR $str;
-	}else{
-		print STDOUT $str;
-	}
-}
-
-sub error {
-	my $str = $_[0];
-	$str =~ s/(^[\t\s]*)/$1<red>ERROR:<none> /;
-	msg($str,"STDERR");
-}
-
-sub warning {
-	my $str = $_[0];
-	$str =~ s/(^[\t\s]*)/$1<yellow>WARNING:<none> /;
-	msg($str,"STDERR");
-}
-
-sub ParseJSON {
-	my $str = shift;
-	my $json = {};
-	if(!$str){ $str = "{}"; }
-	eval {
-		$json = JSON::XS->new->decode($str);
-	};
-	if($@){ error("\tInvalid output: $str\n"); }
-	return $json;
-}
-
-sub LoadJSON {
-	my (@files,$str,@lines,$json);
-	my $file = $_[0];
-	open(FILE,"<:utf8",$file);
-	@lines = <FILE>;
-	close(FILE);
-	$str = (join("",@lines));
-	# Error check for JS variable
-	$str =~ s/[^\{]*var [^\{]+ = //g;
-	return ParseJSON($str);
-}
-
-# Version 1.1
-sub SaveJSON {
-	my $file = shift;
-	my $json = shift;
-	my $depth = shift;
-	my $oneline = shift;
-	if(!defined($depth)){ $depth = 0; }
-	my $d = $depth+1;
-	my ($txt,$fh);
-	
-	$txt = JSON::XS->new->canonical(1)->pretty->space_before(0)->encode($json);
-	$txt =~ s/   /\t/g;
-	$txt =~ s/\n\t{$d,}//g;
-	$txt =~ s/\n\t{$depth}\}(\,|\n)/\}$1/g;
-	$txt =~ s/": /":/g;
-
-	if($oneline){
-		$txt =~ s/\n[\t\s]*//g;
-	}
-
-	open($fh,">:utf8",$file);
-	print $fh $txt;
-	close($fh);
-
-	return $txt;
-}
 
 
 # version 1
@@ -292,6 +241,11 @@ sub shouldBeKept {
 	my ($k,$key,$value,@keepers,@values,$v,$match,$m2);
 
 	@keepers = split(" ",$keep);
+
+	# Don't keep line strings
+	if($feature->{'geometry'}{'type'} eq "LineString"){
+		return 0;
+	}
 
 	$match = 0;
 	for($k = 0; $k < @keepers; $k++){
