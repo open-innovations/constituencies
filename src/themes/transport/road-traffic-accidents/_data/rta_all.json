@@ -1,5 +1,5 @@
 {
-	"title": "Road traffic accidents: all",
+	"title": "Road accidents: all collisions",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.constituencies",
