@@ -17,7 +17,7 @@
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2025-05 }}</strong>",
+		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2025-05 | \"0\" }}</strong>",
 		"value":"2025-05",
 		"width":600
 	},
