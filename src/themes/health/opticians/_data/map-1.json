@@ -1,0 +1,46 @@
+{
+	"title": "Opticians (England & Wales)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.opticians",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Opticians",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 40,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 40,
+				"label": "40+"
+			},{
+				"value": 30,
+				"label": "30"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Opticians: <strong>{{ Opticians | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous\">Optical sites</a> (NHS England)\n"
+	},
+	"date": "2025-05-27T20:30"
+}

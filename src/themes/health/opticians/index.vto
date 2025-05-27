@@ -1,0 +1,21 @@
+---
+title: Opticians (England & Wales)
+theme: health
+created: 2025-05-27T20:30
+updated: 2025-05-27T20:30
+description: |
+  Opticians by constituency (England & Wales).
+api:
+  - map-1
+---
+
+<p>This page provides constituency-level totals of opticians using data from <a href="https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/miscellaneous">NHS England</a>.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map-1"
+}) }}
+
+<h2>Notes</h2>
+<p>These figures have been calculated by using each opticians's postcode centroid.</p>
