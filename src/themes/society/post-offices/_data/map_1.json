@@ -1,26 +1,26 @@
 {
 	"config":{
-		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"attribution":"Data: <a href=\"https://www.postoffice.co.uk/all-locations\">All branches</a> (&copy; Post Office).",
 		"columns":[
 			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
 		],
 		"data":"release.postoffices",
 		"hexjson":"hexjson.uk-constituencies-2024",
 		"legend":{
-			"items":[{"label":"50+","value":50},{"label":"40","value":40},{"label":"30","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
+			"items":[{"label":"60+","value":50},{"label":"50","value":50},{"label":"40","value":40},{"label":"30","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
 			"position":"top right"
 		},
 		"matchKey":"PCON24CD",
-		"max":50,
+		"max":60,
 		"min":0,
 		"scale":"Viridis",
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2025-05 | \"0\" }}</strong>",
-		"value":"2025-05",
+		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ Total | \"0\" }}</strong>",
+		"value":"Total",
 		"width":600
 	},
-	"date":"2025-05-21T03:28",
+	"date":"2025-05-27T11:45",
 	"title":"Post offices (UK)"
 }

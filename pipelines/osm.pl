@@ -235,37 +235,6 @@ sub LoadCSVSimple {
 	return {'rows'=>\@rows,'head'=>\@header,'columns'=>$columns};
 }
 
-sub shouldBeKept {
-	my $feature = shift;
-	my $keep = shift;
-	my ($k,$key,$value,@keepers,@values,$v,$match,$m2);
-
-	@keepers = split(" ",$keep);
-
-	# Don't keep line strings
-	if($feature->{'geometry'}{'type'} eq "LineString"){
-		return 0;
-	}
-
-	$match = 0;
-	for($k = 0; $k < @keepers; $k++){
-		($key,$value) = split(/=/,$keepers[$k]);
-		@values = split(",",$value);
-		$m2 = 0;
-		for($v = 0; $v < @values; $v++){
-			$value = $values[$v];
-			if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
-				$m2++;
-			}
-		}
-		if($m2 == @keepers){
-			$match++;
-		}
-	}
-
-	return ($match == @keepers > 0);
-}
-
 sub AugmentCSV {
 	my $file = shift;
 	my $data = shift;
@@ -363,6 +332,37 @@ sub AugmentCSV {
 	print $fh $csv;
 	close($fh);
 	return;
+}
+
+sub shouldBeKept {
+	my $feature = shift;
+	my $keep = shift;
+	my ($k,$key,$value,@keepers,@values,$v,$match,$m2);
+
+	@keepers = split(" ",$keep);
+
+	# Don't keep line strings
+	if($feature->{'geometry'}{'type'} eq "LineString"){
+		return 0;
+	}
+
+	$match = 0;
+	for($k = 0; $k < @keepers; $k++){
+		($key,$value) = split(/=/,$keepers[$k]);
+		@values = split(",",$value);
+		$m2 = 0;
+		for($v = 0; $v < @values; $v++){
+			$value = $values[$v];
+			if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
+				$m2++;
+			}
+		}
+		if($m2 == @keepers){
+			$match++;
+		}
+	}
+
+	return ($match == @keepers > 0);
 }
 
 # Version 2.0
