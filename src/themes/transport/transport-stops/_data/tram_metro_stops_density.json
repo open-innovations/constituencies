@@ -1,5 +1,5 @@
 {
-	"title": "Tram and metro stops per square km (GB)",
+	"title": "Tram and metro stops density (GB)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -33,5 +33,10 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Stops / square km: <strong>{{ tram_metro_stops_density | toLocaleString }}</strong>",
 		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
+	},
+	"units": {
+		"bus_stops_density":{"value":"/km^2","post":"/km&sup2;"},
+		"rail_stops_density":{"value":"/km^2","post":"/km&sup2;"},
+		"tram_metro_stops_density":{"value":"/km^2","post":"/km&sup2;"}
 	}
 }

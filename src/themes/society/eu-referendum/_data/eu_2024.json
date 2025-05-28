@@ -36,7 +36,7 @@
 	},
 	"date": "2024",
 	"units": {
-		"LeavePct":{"value":"percent","scaleBy":100},
-		"RemainPct":{"value":"percent","scaleBy":100}
+		"LeavePct":{"value":"percent","scaleBy":100,"notes":"Percentage that voted Leave"},
+		"RemainPct":{"value":"percent","scaleBy":100,"notes":"Percentage that voted Remain"}
 	}
 }
