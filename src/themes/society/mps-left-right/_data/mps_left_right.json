@@ -52,5 +52,10 @@
 		  "region": "country"
 		},
 		"attribution": "Data: <a href=\"https://github.com/chrishanretty/pairwise_mps_2024\">MPs: Left vs Right</a> (Royal Holloway / Survation / UK in a Changing Europe)."
+	},
+	"date": "2025-01",
+	"units": {
+		"econ_mean":{"value":"score","notes":"From 0 (left) to 100 (right)"},
+		"cult_mean":{"value":"score","notes":"From 0 (left) to 100 (right)"}
 	}
 }
