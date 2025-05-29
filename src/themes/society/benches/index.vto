@@ -1,0 +1,23 @@
+---
+title: Memorial benches (UK)
+theme: society
+created: 2025-05-29T09:10
+updated: 2025-05-29T09:19
+description: |
+  Memorial benches included on OpenBenches (UK).
+keywords: [bench,memorial,plaque,inscription,benches]
+api:
+  - openbenches
+---
+
+<p>This page provides constituency-level data on the number of memorial benches included in <a href="https://www.openbenches.org/">OpenBenches</a>.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "openbenches"
+}) }}
+
+{{#
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+#}}

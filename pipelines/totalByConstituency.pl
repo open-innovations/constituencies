@@ -43,14 +43,15 @@ GetOptions(
 
 if(defined($help) || !defined($ofile)){
 	msg("Usage:\n");
-	msg("    perl pipelines/count.pl <CSV file> -postcode <postcode Column> -geojson <GeoJSON file> -output <output file> -category <column to group by>\n");
+	msg("    perl pipelines/totalByConstituency.pl <CSV file> -postcode <postcode Column> -geojson <GeoJSON file> -output <output file> -category <column to group by>\n");
 	msg("\n");
 	msg("Examples:\n");
 	msg("    perl pipelines/totalByConstituency.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/release/premises.csv -c \"Premises Activity\"\n");
-	msg("    perl pipelines/totalByConstituency.pl raw-data/society/post-offices/postofficebranches-details.csv -latitude=Latitude -longitude=Longitude -o src/themes/society/post-offices/_data/release/postoffices.csv -t \"%Y-%m\" -updatedate src/themes/society/post-offices/index.vto -updatedate src/themes/society/post-offices/_data/map_1.json");
+	msg("    perl pipelines/totalByConstituency.pl raw-data/society/post-offices/postofficebranches-details.csv -latitude=Latitude -longitude=Longitude -o src/themes/society/post-offices/_data/release/postoffices.csv -t \"%Y-%m\" -updatedate src/themes/society/post-offices/index.vto -updatedate src/themes/society/post-offices/_data/map_1.json\n");
+	msg("    perl pipelines/totalByConstituency.pl https://www.openbenches.org/api/benches.tsv -latitude=latitude -longitude=longitude -o src/themes/society/benches/_data/release/open-benches.csv -t \"%Y-%m\" -updatedate src/themes/society/benches/_data/openbenches.json -updatedate src/themes/society/benches/index.vto\n");
 	msg("\n");
 	msg("Options:\n");
-	msg("    <CSV file>                 the CSV file to load\n");
+	msg("    <CSV file>                 the CSV file to load (can be at a URL)\n");
 	msg("    -c, --category=Column      the column in the input CSV to use to total by\n");
 	msg("    -d, --date=file            update the date in the file\n");
 	msg("    -g, --geojson=file         the GeoJSON file to use to find postcodes for\n");
@@ -67,7 +68,7 @@ if(defined($help) || !defined($ofile)){
 }
 
 $tmpdir = $basedir."../raw-data/";
-$ifile = $tmpdir."premises-licence-register.csv";
+$ifile = $tmpdir."temp-download.csv";
 $pcdfile = $ifile;
 $pcdfile =~ s/\.csv/_postcodes\.csv/;
 $bad = 0;
@@ -106,6 +107,10 @@ if(defined($pcdcolumn)){
 
 # Get the data file if necessary
 $src = $ARGV[0]||"";
+if($src =~ /\.tsv$/){
+	$ifile =~ s/\.csv$/\.tsv/;
+}
+
 if($src =~ /^https?/){
 	SaveFromURL($src,$ifile);
 }else{
@@ -146,13 +151,13 @@ for($r = 0; $r < @rows; $r++){
 		}
 	}
 
-	if(defined($ll) && defined($ll->{'lat'}) && defined($ll->{'lon'})){
+	if(defined($ll) && defined($ll->{'lat'}) && defined($ll->{'lon'}) && $geo->withinGeoJSON($ll->{'lat'},$ll->{'lon'})){
 
 		$match = $geo->getFeatureAt($ll->{'lat'},$ll->{'lon'});
 
 		if(!defined($match->{'properties'}{$pid})){
 
-			warning("No properties <yellow>$pid<none> for row <yellow>$r<none>\n");
+			warning("No properties <yellow>$pid<none> for row <yellow>$r<none> ($ll->{'lat'}/$ll->{'lon'})\n");
 			$badnovalue++;
 
 		}else{

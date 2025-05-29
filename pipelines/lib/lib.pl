@@ -81,7 +81,7 @@ sub updateCreationTimestamp {
 	close($fh);
 }
 
-# Version 1.5.2
+# Version 1.5.3
 sub ParseCSV {
 	my $str = shift;
 	my $config = shift;
@@ -92,6 +92,7 @@ sub ParseCSV {
 	if(not defined($config->{'header'}{'start'})){ $config->{'header'}{'start'} = 0; }
 	if(not defined($config->{'header'}{'spacer'})){ $config->{'header'}{'spacer'} = 0; }
 	if(not defined($config->{'header'}{'join'})){ $config->{'header'}{'join'} = "→"; }
+	if(not defined($config->{'delimiter'})){ $config->{'delimiter'} = ","; }
 	$sline = (defined($config->{'startrow'})) ? $config->{'startrow'} : 1;
 	$col = $config->{'key'};
 
@@ -114,7 +115,11 @@ sub ParseCSV {
 
 	for($r = $config->{'header'}{'start'}; $r < @rows; $r++){
 		$rows[$r] =~ s/[\n\r]//g;
-		@cols = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
+		if($config->{'delimiter'} eq "\t"){
+			@cols = split(/\t/,$rows[$r]);
+		}else{
+			@cols = split(/$config->{'delimiter'}(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$rows[$r]);
+		}
 
 		if($r < $sline-$config->{'header'}{'spacer'}){
 			# Header
@@ -152,7 +157,7 @@ sub ParseCSV {
 	}
 }
 
-# version 1.3.1
+# version 1.3.2
 sub LoadCSV {
 	my $file = shift;
 	my $config = shift;
@@ -165,6 +170,9 @@ sub LoadCSV {
 	}
 	my @lines = <FILE>;
 	close(FILE);
+
+	if($file =~ /\.tsv$/){ $config->{'delimiter'} = "\t"; }
+
 	return ParseCSV(join("",@lines),$config);
 }
 
@@ -220,6 +228,7 @@ sub SaveJSON {
 	return $txt;
 }
 
+# Version 1.0
 sub SaveFromURL {
 	my $url = shift;
 	my $file = shift;

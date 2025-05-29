@@ -46,6 +46,7 @@ sub load {
 		$self->{'_file'} = $file;
 		$self->{'geojson'} = $json;
 		$self->{'options'} = $props;
+		$self->{'_bbox'} = {'lat'=>{'min'=>90,'max'=>-90},'lon'=>{'min'=>180,'max'=>-180}};
 
 		$total = @{$json->{'features'}};
 
@@ -68,6 +69,10 @@ sub load {
 				}
 				# Set the bounding box
 				$json->{'features'}[$f]->{'_bbox'} = {'lat'=>{'min'=>$minlat,'max'=>$maxlat},'lon'=>{'min'=>$minlon,'max'=>$maxlon}};
+				if($minlat < $self->{'_bbox'}{'lat'}{'min'}){ $self->{'_bbox'}{'lat'}{'min'} = $minlat; }
+				if($maxlat > $self->{'_bbox'}{'lat'}{'max'}){ $self->{'_bbox'}{'lat'}{'max'} = $maxlat; }
+				if($minlon < $self->{'_bbox'}{'lon'}{'min'}){ $self->{'_bbox'}{'lon'}{'min'} = $minlon; }
+				if($maxlon > $self->{'_bbox'}{'lon'}{'max'}){ $self->{'_bbox'}{'lon'}{'max'} = $maxlon; }
 			}else{
 				#print "ERROR: Unknown geometry type $json->{'features'}[$f]->{'geometry'}->{'type'}\n";
 			}
@@ -157,6 +162,16 @@ sub distanceFromFeature {
 	}
 	return $dmin;
 }
+sub withinGeoJSON {
+	my $self = shift;
+	my $lat = shift;
+	my $lon = shift;
+
+	if($lat < $self->{'_bbox'}{'lat'}{'min'} || $lat > $self->{'_bbox'}{'lat'}{'max'} || $lon < $self->{'_bbox'}{'lon'}{'min'} && $lon > $self->{'_bbox'}{'lon'}{'max'}){
+		return 0;
+	}
+	return 1;	
+}
 sub getFeatureAt {
 	my $self = shift;
 	my $lat = shift;
@@ -164,6 +179,10 @@ sub getFeatureAt {
 
 	my ($f,$total,$n,$ok,@gs,@features);
 
+	if(!$self->withinGeoJSON($lat,$lon)){
+		print "Outside of GeoJSON\n";
+		return {};
+	}
 	@features = @{$self->{'features'}};
 
 	$total = @features;

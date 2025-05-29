@@ -1,0 +1,26 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openbenches.org/\">OpenBenches</a> (&copy; Terence Eden and Elizabeth Eden CC-BY-SA).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.open-benches",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"500+","value":500},{"label":"400","value":400},{"label":"300","value":300},{"label":"200","value":200},{"label":"100","value":100},{"label":"0","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"PCON24CD",
+		"max":500,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />Memorial benches: <strong>{{ 2025-05 | \"0\" }}</strong>",
+		"value":"2025-05",
+		"width":600
+	},
+	"date":"2025-05-29T09:19",
+	"title":"Memorial benches (UK)"
+}
