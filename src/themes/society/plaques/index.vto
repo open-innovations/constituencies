@@ -1,0 +1,23 @@
+---
+title: Plaques (UK)
+theme: society
+created: 2025-05-29T18:10
+updated: 2025-05-29T18:19
+description: |
+  Commemorative plaques included on OpenPlaques (UK).
+keywords: [plaque,blue plaque,commemorative,marker]
+api:
+  - openplaques
+---
+
+<p>This page provides constituency-level data on the number of commemorative plaques included in <a href="https://openplaques.org/">OpenPlaques</a> as of November 2023.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "openplaques"
+}) }}
+
+{{#
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+#}}

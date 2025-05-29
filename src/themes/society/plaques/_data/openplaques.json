@@ -1,0 +1,26 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://openplaques.org/\">OpenPlaques</a> (&copy; Open Plaques, Public Domain).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.open-plaques",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"300+","value":300},{"label":"200","value":200},{"label":"100","value":100},{"label":"0","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"PCON24CD",
+		"max":300,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />Commemorative plaques: <strong>{{ 2025-05 | \"0\" }}</strong>\n<div style=\"font-size:0.8em\"></div>",
+		"value":"2025-05",
+		"width":600
+	},
+	"date":"2025-05-29T18:19",
+	"title":"Commemorative plaques (UK)"
+}
