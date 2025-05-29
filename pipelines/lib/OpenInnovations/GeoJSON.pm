@@ -167,6 +167,9 @@ sub withinGeoJSON {
 	my $lat = shift;
 	my $lon = shift;
 
+	if(!defined($lat) || !defined($lon) || $lat eq "" || $lon eq ""){
+		print "Bad lat/lon\n";
+	}
 	if($lat < $self->{'_bbox'}{'lat'}{'min'} || $lat > $self->{'_bbox'}{'lat'}{'max'} || $lon < $self->{'_bbox'}{'lon'}{'min'} && $lon > $self->{'_bbox'}{'lon'}{'max'}){
 		return 0;
 	}
@@ -347,7 +350,7 @@ sub withinPolygon {
 			for($p = 1; $p < $n; $p++){
 				$hole = (PtInPoly( \@{$gs[$p]}, [$lon,$lat]) ? 1 : 0);
 				if($hole){
-					print "Found in hole in Polygon $p\n";
+					print "Found in hole in Polygon $p ($lat/$lon)\n";
 					return 0;
 				}
 			}

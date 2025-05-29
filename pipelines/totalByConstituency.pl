@@ -22,7 +22,7 @@ use OpenInnovations::GeoJSON;
 require "lib.pl";
 
 
-my ($geojson,$geo,$help,$pcdcolumn,$latcolumn,$loncolumn,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$url,@rows,@row,$r,$c,$or,$pcds,$pcdfile,$ll,$pid,$match,$pcon,$data,$category,$cat,$name,$totals,$total,$groups,$group,$g,$csv,$dir,$fh,$bad,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles);
+my ($geojson,$geo,$help,$pcdcolumn,$latcolumn,$loncolumn,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$url,@rows,@row,$r,$c,$or,$pcds,$pcdfile,$ll,$pid,$match,$pcon,$data,$category,$cat,$name,$totals,$total,$groups,$group,$g,$csv,$dir,$fh,$badlocation,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles);
 
 # Get the command line options
 GetOptions(
@@ -67,13 +67,6 @@ if(defined($help) || !defined($ofile)){
 	exit;
 }
 
-$tmpdir = $basedir."../raw-data/";
-$ifile = $tmpdir."temp-download.csv";
-$pcdfile = $ifile;
-$pcdfile =~ s/\.csv/_postcodes\.csv/;
-$bad = 0;
-$badnovalue = 0;
-
 
 # Set the GeoJSON file if not provided on the command line
 if(!defined($geojson)){
@@ -97,25 +90,26 @@ if(!-e $geojson){
 }
 $geo->load($geojson);
 
+$src = $ARGV[0]||"";
 
-# Create a new Postcodes cache
-if(defined($pcdcolumn)){
-	$pcds = new OpenInnovations::Postcodes;
-	$pcds->setFile($pcdfile);
-	$pcds->setLocation("/mnt/c/Users/StuartLowe/Documents/Github/Postcodes2LatLon/postcodes/");
-}
+$tmpdir = $basedir."../raw-data/";
+$ifile = $tmpdir.($src =~ /([^\/]+\.[^\/]{3})$/ ? $1 : "temp-download.csv");
 
 # Get the data file if necessary
-$src = $ARGV[0]||"";
-if($src =~ /\.tsv$/){
-	$ifile =~ s/\.csv$/\.tsv/;
-}
-
 if($src =~ /^https?/){
 	SaveFromURL($src,$ifile);
 }else{
 	$ifile = $src;
 }
+
+
+
+$pcdfile = $ifile;
+$pcdfile =~ s/\.csv/_postcodes\.csv/;
+$badlocation = 0;
+$badnovalue = 0;
+
+
 if(!-e $ifile){
 	error("Can't find <cyan>$ifile<none>\n");
 	exit;
@@ -123,6 +117,14 @@ if(!-e $ifile){
 # Load the input data file
 @rows = LoadCSV($ifile,{'startrow'=>$startrow});
 
+
+
+# Create a new Postcodes cache
+if(defined($pcdcolumn)){
+	$pcds = new OpenInnovations::Postcodes;
+	$pcds->setFile($pcdfile);
+	$pcds->setLocation("/mnt/c/Users/StuartLowe/Documents/Github/Postcodes2LatLon/postcodes/");
+}
 
 
 # Update the total column with any date strings
@@ -151,45 +153,53 @@ for($r = 0; $r < @rows; $r++){
 		}
 	}
 
-	if(defined($ll) && defined($ll->{'lat'}) && defined($ll->{'lon'}) && $geo->withinGeoJSON($ll->{'lat'},$ll->{'lon'})){
+	if(!defined($ll) || !defined($ll->{'lat'}) || !defined($ll->{'lon'}) || $ll->{'lat'} eq "" || $ll->{'lon'} eq ""){
+		#warning("Bad coordinates for <yellow>$r<none>\n");
+		$badlocation++;
+	}else{
 
-		$match = $geo->getFeatureAt($ll->{'lat'},$ll->{'lon'});
+		if($geo->withinGeoJSON($ll->{'lat'},$ll->{'lon'})){
 
-		if(!defined($match->{'properties'}{$pid})){
+			$match = $geo->getFeatureAt($ll->{'lat'},$ll->{'lon'});
 
-			warning("No properties <yellow>$pid<none> for row <yellow>$r<none> ($ll->{'lat'}/$ll->{'lon'})\n");
-			$badnovalue++;
+			if(!defined($match->{'properties'}{$pid})){
 
-		}else{
+				warning("No properties <yellow>$pid<none> for row <yellow>$r<none> ($ll->{'lat'}/$ll->{'lon'})\n");
+				$badnovalue++;
 
-			$pcon = $match->{'properties'}{$pid};
-
-			if(defined($pcon)){
-
-				$cat = $totalcolumn;
-				if(defined($category)){
-					if(defined($rows[$r]->{$category})){
-						$cat = $rows[$r]->{$category};
-						if($totalcolumn){
-							$cat .= ($rows[$r]->{$category} ? " ":"");
-						}
-						$cat .= $totalcolumn;
-					}
-				}
-
-				if($cat eq ""){
-					warning("Bad row <yellow>$r<none> has no <yellow>$category<none>\n");
-					print Dumper $rows[$r];
-					$badnovalue++;
-				}else{
-					if(!defined($totals->{$cat})){ $totals->{$cat} = {}; }
-					if(!defined($totals->{$cat}{$pcon})){ $totals->{$cat}{$pcon} = 0; }
-					$totals->{$cat}{$pcon}++;
-				}
 			}else{
-				warning("No constituency.\n");
-				$bad++;
+
+				$pcon = $match->{'properties'}{$pid};
+
+				if(defined($pcon)){
+
+					$cat = $totalcolumn;
+					if(defined($category)){
+						if(defined($rows[$r]->{$category})){
+							$cat = $rows[$r]->{$category};
+							if($totalcolumn){
+								$cat .= ($rows[$r]->{$category} ? " ":"");
+							}
+							$cat .= $totalcolumn;
+						}
+					}
+
+					if($cat eq ""){
+						warning("Bad row <yellow>$r<none> has no <yellow>$category<none>\n");
+						print Dumper $rows[$r];
+						$badnovalue++;
+					}else{
+						if(!defined($totals->{$cat})){ $totals->{$cat} = {}; }
+						if(!defined($totals->{$cat}{$pcon})){ $totals->{$cat}{$pcon} = 0; }
+						$totals->{$cat}{$pcon}++;
+					}
+				}else{
+					warning("No constituency.\n");
+					$badnovalue++;
+				}
 			}
+		}else{
+			$badlocation++;
 		}
 	}
 }
@@ -308,8 +318,8 @@ for(my $d = 0; $d < @datefiles; $d++){
 }
 	
 
-if($bad > 0){
-	msg("There were <red>$bad<none> rows without location information (either postcodes or latitude/longitude).\n");
+if($badlocation > 0){
+	msg("There were <red>$badlocation<none> rows without location information (either postcodes or latitude/longitude).\n");
 }
 if($badnovalue > 0){
 	msg("There were <red>$badnovalue<none> rows without a valid value.\n");
