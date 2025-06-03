@@ -1,0 +1,62 @@
+{
+	"title": "Ofsted ratings: early years (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Inspection_outcomes_in_each_parliamentary_constituency",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Early years→Outstanding %",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"value":"Early years→Outstanding %","label":"Outstanding"},
+					{"value":"Early years→Good %","label":"Good"},
+					{"value":"Early years→Requires improvement %","label":"Requires improvement"},
+					{"value":"Early years→Inadequate %","label":"Inadequate"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Outstanding: <strong>{{ Early years→Outstanding }} ({{ Early years→Outstanding % }}%)</strong><br />Good: <strong>{{ Early years→Good }} ({{ Early years→Good % }}%)</strong><br />Requires improvement: <strong>{{ Early years→Requires improvement }} ({{ Early years→Requires improvement % }}%)</strong><br />Inadequate: <strong>{{ Early years→Inadequate }} ({{ Early years→Inadequate % }}%)</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/publications/inspection-outcomes-in-each-parliamentary-constituency\">Inspection outcomes</a> (Ofsted, OGL)."
+	},
+	"date": "2024-07-19",
+	"units":{
+		"Early years→Outstanding %":{"value":"percent"},
+		"Early years→Good %":{"value":"percent"},
+		"Early years→Requires improvement %":{"value":"percent"},
+		"Early years→Inadequate %":{"value":"percent"}
+	}
+}

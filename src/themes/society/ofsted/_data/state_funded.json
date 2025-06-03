@@ -1,0 +1,62 @@
+{
+	"title": "Ofsted ratings: state-funded schools (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Inspection_outcomes_in_each_parliamentary_constituency",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "State funded schools→Outstanding %",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"value":"State funded schools→Outstanding %","label":"Outstanding"},
+					{"value":"State funded schools→Good %","label":"Good"},
+					{"value":"State funded schools→Requires improvement %","label":"Requires improvement"},
+					{"value":"State funded schools→Inadequate %","label":"Inadequate"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Outstanding: <strong>{{ State funded schools→Outstanding }} ({{ State funded schools→Outstanding % }}%)</strong><br />Good: <strong>{{ State funded schools→Good }} ({{ State funded schools→Good % }}%)</strong><br />Requires improvement: <strong>{{ State funded schools→Requires improvement }} ({{ State funded schools→Requires improvement % }}%)</strong><br />Inadequate: <strong>{{ State funded schools→Inadequate }} ({{ State funded schools→Inadequate % }}%)</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/publications/inspection-outcomes-in-each-parliamentary-constituency\">Inspection outcomes</a> (Ofsted, OGL)."
+	},
+	"date": "2024-07-19",
+	"units":{
+		"State funded schools→Outstanding %":{"value":"percent"},
+		"State funded schools→Good %":{"value":"percent"},
+		"State funded schools→Requires improvement %":{"value":"percent"},
+		"State funded schools→Inadequate %":{"value":"percent"}
+	}
+}

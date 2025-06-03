@@ -1,0 +1,51 @@
+---
+title: Ofsted inspections (England)
+theme: society
+created: 2025-06-04T00:00
+updated: 2025-06-04T00:00
+description: |
+  Ofsted inspection outcomes.
+keywords: [education,attainment,schools,good,outstanding,inadequate,early years]
+api:
+  - state_funded
+  - further_education
+  - early_years
+  - social_care
+---
+
+<p>This page provides <a href="https://www.gov.uk/government/publications/inspection-outcomes-in-each-parliamentary-constituency">constituency-level data on Ofsted inspection outcomes in England</a> as of July 2024 for <a href="#early-years">early years</a>, <a href="#state-funded">state-funded schools</a>, <a href="#social-care">children's social care</a>, and <a href="#further-education">further education and skills</a> providers.</p>
+
+<h2>Early years{{ comp.anchor({ anchor: 'early-years'}) }}</h2>
+<p>This map shows the percentage of early years providers with different Ofsted ratings.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "early_years"
+}) }}
+
+
+<h2>State-funded schools{{ comp.anchor({ anchor: 'state-funded'}) }}</h2>
+<p>This map shows the percentage of state-funded schools with different Ofsted ratings.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "state_funded"
+}) }}
+
+
+<h2>Children's social care{{ comp.anchor({ anchor: 'social-care'}) }}</h2>
+<p>This map shows the percentage of children's social care providers with different Ofsted ratings.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "social_care"
+}) }}
+
+
+<h2>Further education and skills{{ comp.anchor({ anchor: 'further-education'}) }}</h2>
+<p>This map shows the percentage of further education and skills providers with different Ofsted ratings.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "further_education"
+}) }}

@@ -1,0 +1,62 @@
+{
+	"title": "Ofsted ratings: further education and skills (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Inspection_outcomes_in_each_parliamentary_constituency",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Further education and skills→Outstanding %",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"value":"Further education and skills→Outstanding %","label":"Outstanding"},
+					{"value":"Further education and skills→Good %","label":"Good"},
+					{"value":"Further education and skills→Requires improvement %","label":"Requires improvement"},
+					{"value":"Further education and skills→Inadequate %","label":"Inadequate"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Outstanding: <strong>{{ Further education and skills→Outstanding }} ({{ Further education and skills→Outstanding % }}%)</strong><br />Good: <strong>{{ Further education and skills→Good }} ({{ Further education and skills→Good % }}%)</strong><br />Requires improvement: <strong>{{ Further education and skills→Requires improvement }} ({{ Further education and skills→Requires improvement % }}%)</strong><br />Inadequate: <strong>{{ Further education and skills→Inadequate }} ({{ Further education and skills→Inadequate % }}%)</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/publications/inspection-outcomes-in-each-parliamentary-constituency\">Inspection outcomes</a> (Ofsted, OGL)."
+	},
+	"date": "2024-07-19",
+	"units":{
+		"Further education and skills→Outstanding %":{"value":"percent"},
+		"Further education and skills→Good %":{"value":"percent"},
+		"Further education and skills→Requires improvement %":{"value":"percent"},
+		"Further education and skills→Inadequate %":{"value":"percent"}
+	}
+}

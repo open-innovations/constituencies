@@ -1,0 +1,62 @@
+{
+	"title": "Ofsted ratings: children's social care (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.Inspection_outcomes_in_each_parliamentary_constituency",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Children's social care→Outstanding %",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 80,
+				"label": "80%"
+			},{
+				"value": 60,
+				"label": "60%"
+			},{
+				"value": 40,
+				"label": "40%"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"value":"Children's social care→Outstanding %","label":"Outstanding"},
+					{"value":"Children's social care→Good %","label":"Good"},
+					{"value":"Children's social care→Requires improvement %","label":"Requires improvement"},
+					{"value":"Children's social care→Inadequate %","label":"Inadequate"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Outstanding: <strong>{{ Children's social care→Outstanding }} ({{ Children's social care→Outstanding % }}%)</strong><br />Good: <strong>{{ Children's social care→Good }} ({{ Children's social care→Good % }}%)</strong><br />Requires improvement: <strong>{{ Children's social care→Requires improvement }} ({{ Children's social care→Requires improvement % }}%)</strong><br />Inadequate: <strong>{{ Children's social care→Inadequate }} ({{ Children's social care→Inadequate % }}%)</strong>",
+		"attribution": "Data: <a href=\"https://www.gov.uk/government/publications/inspection-outcomes-in-each-parliamentary-constituency\">Inspection outcomes</a> (Ofsted, OGL)."
+	},
+	"date": "2024-07-19",
+	"units":{
+		"Children's social care→Outstanding %":{"value":"percent"},
+		"Children's social care→Good %":{"value":"percent"},
+		"Children's social care→Requires improvement %":{"value":"percent"},
+		"Children's social care→Inadequate %":{"value":"percent"}
+	}
+}
