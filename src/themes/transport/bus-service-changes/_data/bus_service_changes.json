@@ -1,9 +1,9 @@
 {
-	"title": "Bus service changes",
+	"title": "Bus service changes (England & Wales)",
 	"config": {
 		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2023-temporary",
-		"data": "sources.transport.bustrip-trends-new-parliamentary_constituency_1",
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.bustrip-trends-new-parliamentary_constituency_1",
 		"columns": [{
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ Trips per hour % change: 2010-2023 }}%)"
@@ -12,7 +12,7 @@
 		"scale": "RdBu",
 		"min": -100,
 		"max": 100,
-		"matchKey": "ID",
+		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -48,5 +48,11 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString }}%</strong>",
 		"attribution": "Data: <a href=\"https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined\">How Britain’s bus services have drastically declined</a> (Friends of the Earth & University of Leeds 2023)"
+	},
+	"date": "2023-11-28",
+	"units": {
+		"Trips per hour (2010)":{"type":"/hr"},
+		"Trips per hour (2023)":{"type":"/hr"},
+		"Trips per hour % change: 2010-2023": {"type":"percent","notes":"Change in trips per hour 2010-2023"}
 	}
 }
