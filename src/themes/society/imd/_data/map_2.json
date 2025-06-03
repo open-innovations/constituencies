@@ -1,5 +1,5 @@
 {
-	"title": "Indicies of Multiple Deprivation: score",
+	"title": "Indicies of Multiple Deprivation: proportions",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -8,42 +8,50 @@
 			"name": "filterLabel",
 			"template": "{{ n }} ({{ a }})"
 		}],
-		"value": "parl25-deprivation-score",
+		"value": "low-deprivation",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 100,
+		"max": 1,
 		"matchKey": "PCON24CD",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 100,
-				"label": "most deprived"
+				"value": 1,
+				"label": "100%"
 			},{
-				"value": 80,
-				"label": ""
+				"value": 0.8,
+				"label": "80%"
 			},{
-				"value": 60,
-				"label": ""
+				"value": 0.6,
+				"label": "60%"
 			},{
-				"value": 40,
-				"label": ""
+				"value": 0.4,
+				"label": "40%"
 			},{
-				"value": 20,
-				"label": ""
+				"value": 0.2,
+				"label": "20%"
 			},{
 				"value": 0,
-				"label": "least deprived"
+				"label": "0%"
 			}]
 		},
 		"tools": {
 			"filter": {
 				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"label":"Low deprivation LSOA (quintile 4,5)","value":"low-deprivation"},
+					{"label":"Medium deprivation LSOA (quintile 2,3)","value":"medium-deprivation"},
+					{"label":"High deprivation LSOA (quintile 1)","value":"high-deprivation"}
+				],
+				"width": "500px"
 			}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />Deprivation score: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+        "tooltip": "<strong>{{ n }}</strong><br />Low deprivation: <strong>{{ low-deprivation | multiply(100) | toFixed(1) }}%</strong><br />Medium deprivation: <strong>{{ medium-deprivation | multiply(100) | toFixed(1) }}%</strong><br />High deprivation: <strong>{{ high-deprivation | multiply(100) | toFixed(1) }}%</strong>",
         "attribution": "Data: <a href=\"https://pages.mysociety.org/composite_uk_imd/datasets/uk_index/latest\">composite 2020 UK index of multiple deprivation version: 3.3.0</a> (MySociety, <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY</a>)."
 	},
-	"date": "2023-10-24",
+	"date": "2025-06-03",
 	"units": {
 		"parl25-deprivation-score":{"value":"score","notes":"Composite score from 0 (low deprivation) to 100 (high deprivation)"},
 		"low-deprivation":{"value":"percent","scaleBy":100,"notes":"Proportion of constituency population living in a low deprivation LOSA (quintile 4,5)"},

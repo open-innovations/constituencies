@@ -7,6 +7,7 @@ description: |
 keywords: [IMD]
 api:
   - map_1
+  - map_2
 ---
 
 <p>This page provides constituency-level data on composite IMD scores (2020). See the <a href="#notes">notes below</a>.</p>
@@ -16,6 +17,17 @@ api:
 	"component": comp.oi.map.hex_cartogram,
 	"config": "map_1"
 }) }}
+
+
+<h2>Proportions{{ comp.anchor({ 'ref': 'proportions'}) }}</h2>
+<p>The proportion of constituency population living in a high deprivation lsoa (quintile 1), medium deprivation losa (quintile 2,3), or low deprivation losa (quintile 4,5).</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map_2"
+}) }}
+
 
 
 <h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
