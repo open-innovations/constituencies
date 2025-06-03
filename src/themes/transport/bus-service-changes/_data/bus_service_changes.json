@@ -51,8 +51,8 @@
 	},
 	"date": "2023-11-28",
 	"units": {
-		"Trips per hour (2010)":{"type":"/hr"},
-		"Trips per hour (2023)":{"type":"/hr"},
-		"Trips per hour % change: 2010-2023": {"type":"percent","notes":"Change in trips per hour 2010-2023"}
+		"Trips per hour (2010)":{"value":"/hr"},
+		"Trips per hour (2023)":{"value":"/hr"},
+		"Trips per hour % change: 2010-2023": {"value":"percent","notes":"Change in trips per hour 2010-2023"}
 	}
 }
