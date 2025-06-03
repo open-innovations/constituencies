@@ -1,0 +1,33 @@
+---
+title: Household composition (UK)
+theme: society
+created: 2025-06-03T19:14
+updated: 2025-06-03T19:14
+description: |
+  The composition of households from the census (UK).
+keywords: [household,person,family,dependent,children]
+api:
+  - households
+---
+
+<p>This page provides constituency-level data on the composition of households from the census. The data shows whether the household is one person, one family, or other types of household where multiple people live together. It also shows whether the household includes dependent children, people aged over 65, and married couples.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "households"
+}) }}
+
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+<p>The census was carried out in March 2021 in England, Wales and Northern Ireland and in March 2022 in Scotland.</p>
+<p>The House of Commons Library have calculated UK averages for each group using 2021 data for England, Wales and Northern Ireland and 2022 data for Scotland. These figures are for comparative purposes, and don't tell us about the population on a particular date.</p>
+<p>A "household" is defined as either one person living alone, or a group of people living at the same address and sharing both cooking facilities and a living room or dining area.</p>
+<p>"Families" in this data can be:</p>
+<ul>
+<li>Married, civil partnered, or cohabiting couples, with or without children</li>
+<li>A lone parent with children</li>
+<li>Grandparents living with their grandchildren, if the grandchildren's parents aren't present.</li>
+</ul>
+<p>"Dependent children" are either aged 0-15 years, or aged 16-18 and in full-time education while living with family. If a 16-18-year-old has a spouse, partner or child living in the household then they aren’t counted as dependent children.</p>
+<p>"Non-dependent children" are people living with their parents who are either aged 19 or over, or aged 16-18 and not in full-time education. 16-18-year-olds with a spouse, partner or child in the household are also counted as non-dependent.</p>
+<p>The "all other household types" category includes people who live together but are not related. A group of students in shared private accommodation would fall into this category, for example.</p>

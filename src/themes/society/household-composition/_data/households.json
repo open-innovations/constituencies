@@ -1,0 +1,49 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://commonslibrary.parliament.uk/constitunecy-data-household-composition-2021-census/\">Household composition</a> (&copy; House of Commons Library/ONS/Northern Ireland Statistics and Research Agency/Scotland's census OGL).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ a }})"}
+		],
+		"data":"release.households_census",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"100%","value":1},{"label":"80%","value":0.80},{"label":"60%","value":0.6},{"label":"40%","value":0.40},{"label":"20%","value":0.20},{"label":"0%","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"ONSConstID",
+		"max":1,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"},
+			"slider":{
+				"columns":[
+					{"value":"Con_pc→One-person households","label":"One-person"},
+					{"value":"Con_pc→Families with dependent children","label":"Families with dependent children"},
+					{"value":"Con_pc→Other single-family households","label":"Other single-family households"},
+					{"value":"Con_pc→Other household types","label":"Other household types"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />One-person households: <strong>{{ Con_pc→One-person households | multiply(100) | toFixed(1) }}%</strong><br />Families with dependent children: <strong>{{ Con_pc→Families with dependent children | multiply(100) | toFixed(1) }}%</strong><br />Other single-family households: <strong>{{ Con_pc→Other single-family households | multiply(100) | toFixed(1) }}%</strong><br />Other household types: <strong>{{ Con_pc→Other household types | multiply(100) | toFixed(1) }}%</strong>",
+		"value":"Con_pc→One-person households",
+		"width":600
+	},
+	"date":"2024-10-14",
+	"title":"Household composition (UK)",
+	"units":{
+		"Con_pc→One-person households":{"value":"percent","scaleBy":100},
+		"Con_pc→Families with dependent children":{"value":"percent","scaleBy":100},
+		"Con_pc→Other single-family households":{"value":"percent","scaleBy":100},
+		"Con_pc→Other household types":{"value":"percent","scaleBy":100},
+		"RN_pc→One-person households":{"value":"percent","scaleBy":100},
+		"RN_pc→Families with dependent children":{"value":"percent","scaleBy":100},
+		"RN_pc→Other single-family households":{"value":"percent","scaleBy":100},
+		"RN_pc→Other household types":{"value":"percent","scaleBy":100},
+		"Nat_pc→One-person households":{"value":"percent","scaleBy":100},
+		"Nat_pc→Families with dependent children":{"value":"percent","scaleBy":100},
+		"Nat_pc→Other single-family households":{"value":"percent","scaleBy":100},
+		"Nat_pc→Other household types":{"value":"percent","scaleBy":100}
+	}
+}
