@@ -25,13 +25,13 @@ my ($geojson,$geo,$help,$pcdcolumn,$length,$ofile,$src,$ifile,$startrow,$tmpdir,
 
 # Get the command line options
 GetOptions(
-            "c|category=s"    => \$category,	# string
-            "g|geojson=s"    => \$geojson,		# string
-			"h|help" => \$help,					# flag
-            "i|id=s"   => \$pid,				# string
-            "o|output=s"   => \$ofile,			# string
-            "p|postcode=s"   => \$pcdcolumn,	# string
-            "s|startrow=i"   => \$startrow,		# integer
+	"c|category=s"    => \$category,	# string
+	"g|geojson=s"    => \$geojson,		# string
+	"h|help" => \$help,					# flag
+	"i|id=s"   => \$pid,				# string
+	"o|output=s"   => \$ofile,			# string
+	"p|postcode=s"   => \$pcdcolumn,	# string
+	"s|startrow=i"   => \$startrow,		# integer
 );
 
 if(defined($help) || !defined($ofile)){

@@ -5,6 +5,7 @@ use warnings;
 use utf8;
 use JSON::XS;
 use Data::Dumper;
+use Getopt::Long;
 my $dir;
 BEGIN {
 	$dir = $0;
@@ -12,11 +13,35 @@ BEGIN {
 	if(!$dir){ $dir = "./"; }
 }
 
-my ($ifile,$cmd,$namecol,$col,$rtn,$r,$h,$csv,$hexjson,$lookup,$pcon,$val,$ofile);
+my ($ifile,$cmd,$namecol,$col,$rtn,$r,$h,$csv,$hexjson,$lookup,$pcon,$val,$ofile,$help,$update);
 
-$cmd = getCommandLineOpts();
-$ifile = $cmd->{'args'}[0];
-$namecol = $cmd->{'c'}||$cmd->{'constituency'};
+
+
+# Get the command line options
+GetOptions(
+	"h|help" => \$help,			# flag
+	"n|name=s"    => \$namecol,	# string
+	"o|output=s" => \$ofile,	# string
+	"u|update" => \$update,		# flag
+);
+
+$ifile = $ARGV[0];
+
+if(defined($help) || !defined($ifile)){
+	msg("Usage:\n");
+	msg("    perl addPCON.pl <CSV file> -name <name Column> -output <CSV file>\n");
+	msg("\n");
+	msg("Examples:\n");
+	msg("    perl pipelines/addPCON.pl src/themes/society/imd/_data/release/parl25_imd.csv -name=\"constituency-name\" -u\n");
+	msg("\n");
+	msg("Options:\n");
+	msg("    <CSV file>                 the CSV file to load\n");
+	msg("    -h, --help                 display this help\n");
+	msg("    -n, --name=Column          the name of the column with the constituency name\n");
+	msg("    -o, --output=<CSV file>    the output file name (otherwise prints to the terminal)\n");
+	msg("    -u, --update               to update the input file (over-rides any output file name)\n");
+	exit;
+}
 
 if(!-e $ifile){
 	error("No input file <cyan>$ifile<none>\n");
@@ -25,6 +50,9 @@ if(!-e $ifile){
 if(!$namecol){
 	error("Please specify the name of the column with the constituency name.\n");
 	exit;
+}
+if($update){
+	$ofile = $ifile;
 }
 
 $rtn = LoadCSV($ifile);
@@ -66,7 +94,6 @@ for($r = 0; $r < @{$rtn->{'rows'}}; $r++){
 	$csv .= "\n";
 }
 
-$ofile = $cmd->{'o'} || $cmd->{'output'};
 if($ofile){
 	open(FILE,">utf8",$ofile);
 	print FILE $csv;
@@ -113,19 +140,6 @@ sub warning {
 	my $str = $_[0];
 	$str =~ s/(^[\t\s]*)/$1<yellow>WARNING:<none> /;
 	msg($str,"STDERR");
-}
-
-sub getCommandLineOpts {
-	my $data = {'args'=>[]};
-	for(my $i = 0; $i < @ARGV; $i++){
-		if($ARGV[$i] =~ /^\-\-?(.*)/){
-			$data->{$1} = $ARGV[++$i];
-		}else{
-			push(@{$data->{'args'}},$ARGV[$i]);
-		}
-		
-	}
-	return $data;
 }
 
 sub LoadCSV {
