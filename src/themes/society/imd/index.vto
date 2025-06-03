@@ -20,7 +20,7 @@ api:
 }) }}
 
 
-<h2>Proportions{{ comp.anchor({ 'ref': 'proportions'}) }}</h2>
+<h2>Proportions{{ comp.anchor({ 'anchor': 'proportions'}) }}</h2>
 <p>The proportion of constituency population living in a high deprivation lsoa (quintile 1), medium deprivation losa (quintile 2,3), or low deprivation losa (quintile 4,5).</p>
 
 {{ comp.wrapper({
@@ -31,7 +31,7 @@ api:
 
 
 
-<h2>Notes{{ comp.anchor({ 'ref': 'notes'}) }}</h2>
+<h2>Notes{{ comp.anchor({ 'anchor': 'notes'}) }}</h2>
 <p>IMD scores at constituency level are <a href="https://pages.mysociety.org/composite_uk_imd/analysis/methodology_and_analysis.html">created by MySociety</a> using methodology from a paper by <a href="https://bmjopen.bmj.com/content/6/11/e012750">Gary A Abel, Matthew E Barclay, and Rupert A Payne</a> to create a composite measure of multiple deprivation across the UK. This set of indexes follows the general convention that higher scores show 'worse' deprivation. The most deprived area is the one with the highest score.</p>
 <p>For each nation in the UK, the relevant statistics authority has created a ranking of multiple deprivation that ranks small census areas (LSOAs in England/Wales, DZs in Scotland and SOA in Northern Ireland). There is no equivalent ranking of areas across the entire UK.</p>
 <p>These indexes are independent and cannot be directly compared. These measures are not directly comparable because the underlying indicators and the method used to combine them are different in each case. Additionally data is collected at different times for each index. It is not directly possible to take a DataZone from Scotland and see where it would fit inside the deprivation measure in England.</p>
