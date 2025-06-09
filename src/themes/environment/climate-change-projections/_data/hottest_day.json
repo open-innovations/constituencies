@@ -39,9 +39,9 @@
 	},
 	"date": "2025",
 	"units": {
-		"prdjf_proj":{"value":"%","notes":"Change for 2021-2040 compared to 1981-2010"},
-		"prjja_proj":{"value":"%","notes":"Change for 2021-2040 compared to 1981-2010"},
-		"rx5day_proj":{"value":"%","notes":"Change for 2021-2040 compared to 1981-2010"},
+		"prdjf_proj":{"value":"percent","notes":"Change for 2021-2040 compared to 1981-2010"},
+		"prjja_proj":{"value":"percent","notes":"Change for 2021-2040 compared to 1981-2010"},
+		"rx5day_proj":{"value":"percent","notes":"Change for 2021-2040 compared to 1981-2010"},
 		"txx_proj":{"value":"degC","notes":"Change for 2021-2040 compared to 1981-2010"},
 		"t_proj":{"value":"degC","notes":"Change for 2021-2040 compared to 1981-2010"}
 	}
