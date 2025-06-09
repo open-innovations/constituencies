@@ -1,5 +1,5 @@
 {
-	"title": "Climate change: temperature projections (UK)",
+	"title": "Climate change: hottest day projections (UK)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -8,22 +8,25 @@
 			"name": "filterLabel",
 			"template": "{{ n }}"
 		}],
-		"min": 0.6,
+		"min": 0.4,
 		"max": 1,
-		"value": "t_proj",
+		"value": "txx_proj",
 		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
 		"matchKey": "constituency",
 		"legend": {
 			"position": "top right",
 			"items": [{
 				"value": 1,
-				"label": ">1&deg;C"
+				"label": "+1&deg;C"
 			},{
 				"value": 0.8,
 				"label": "+0.8&deg;C"
 			},{
 				"value": 0.6,
 				"label": "+0.6&deg;C"
+			},{
+				"value": 0.4,
+				"label": "+0.4&deg;C"
 			}]
 		},
 		"tools": {
@@ -31,8 +34,8 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Annual mean change in temperature: <strong>{{ t_proj | toFixed(2) }} &deg;C</strong>",
-		"attribution": "<a href=\"https://github-pages.ucl.ac.uk/UK-climate-by-mp/?var=t&period=proj\">Climate change projections</a> (UCL/Copernicus/EuroCORDEX)"
+		"tooltip": "<strong>{{ n }}</strong><br />Change in hottest day: <strong>{{ txx_proj | toFixed(1) }}&deg;C</strong>",
+		"attribution": "<a href=\"https://github-pages.ucl.ac.uk/UK-climate-by-mp/?var=txx&period=proj\">Climate change projections</a> (UCL/Copernicus/EuroCORDEX)"
 	},
 	"date": "2025",
 	"units": {

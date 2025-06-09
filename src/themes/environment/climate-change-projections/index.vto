@@ -1,35 +1,71 @@
 ---
-title: Climate change projections (England, Scotland and Wales)
+title: Climate change projections (UK)
 theme: environment
 created: 2023-10-10T18:35
-updated: 2023-10-10T18:35
+updated: 2025-06-09T18:15
 description: |
-  Projections taken from the Met Office's UKCP18 dataset. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010.
+  Projections taken from Copernicus' Interactive Climate Atlas. They represent projections for the change in the climate for the years 2021-2040 compared to 1981-2010.
 api:
-  - rainfall
-  - rainfall_anomaly
-  - wettest_days
+  - rainfall_winter
+  - rainfall_summer
+  - wettest_5_days
+  - hottest_day
   - temperature
-  - drought
-  - heatwaves
-  - warmest_days
 ---
 
-<div class="warning centred padded-bottom">This uses data for the old Parliamentary constituencies (pre July 2024).</div>
-
-<p>These projections are taken from the Met Office's <a href="https://www.metoffice.gov.uk/research/approach/collaboration/ukcp">UKCP18 dataset</a>. They represent the change in the climate for the years 2051-2080 (so roughly 2065) compared to 1981-2010. These changes are the average of an 'ensemble' of climate models with different physics that are then downscaled to an spatial grid of 12km. There are maps for:</p>
+<p>These projections are taken from Copernicus' <a href="https://atlas.climate.copernicus.eu/atlas">Interactive Climate Atlas</a>, which is a constantly updated version of the IPCC's Climate Atlas:</p>
 <ul>
-	<li><a href="#rainfall-anomaly">observed rainfall anomaly in 2019 (mm/day)</a></li>
-	<li><a href="#rainfall">annual mean change in rainfall (mm/day)</a></li>
-	<li><a href="#wettest">change in amount of rain falling over the wettest 5 days of the year (in mm, related to flooding)</a></li>
+	<li><a href="#winter-rainfall">winter rainfall</a></li>
+	<li><a href="#summer-rainfall">summer rainfall</a></li>
+	<li><a href="#wettest">wettest 5 days</a></li>
+	<li><a href="#hottest">hottest day (&deg;C)</a></li>
 	<li><a href="#temperature">annual temperature change (&deg;C)</a></li>
-	<li><a href="#drought">difference in the number of days experiencing drought per year</a></li>
-	<li><a href="#heatwaves">change in the number of days categorised as a heatwave by the regional publich health authorities</a></li>
-	<li><a href="#warmest">how much hotter the warmest day of the average year will be in future (in &deg;C)</a></li>
 </ul>
-<div class="warning padded padded-bottom">The projections use a scenario of global carbon emissions called <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway#RCP_8.5">RCP8.5</a> - a high-emissions scenario sometimes referred to as "business as usual" - which thankfully we are not currently following.</div>
-<p>This <a href="https://oacd-ucl.github.io/climate-hexmaps/">analysis of projections was undertaken by Georgia Willits</a> as part of her dissertation research for her Climate Change MSc at UCL Geography. Prof. Chris Brierley supervised the research.</p>
-    
+<p>The future projections show only the average of an ensemble called <a href="https://www.euro-cordex.net/">EuroCORDEX</a>, which downscales a range of different global projections using an international collection of regional climate models that all use a common spatial grid of roughly 11km over Europe. To measure climate rather than weather, you need to average over multiple years. So the projections show the difference between conditions averaged over 2021-2040 and those averaged over 1981-2010.</p>
+<div class="warning padded padded-bottom">The projections use a scenario of global carbon emissions called <a href="https://en.wikipedia.org/wiki/Representative_Concentration_Pathway#RCP_4.5">RCP4.5</a>, which is roughly the trajectory that we're following. However as they only show climate changes in the near-term, the impact of the scenario is pretty minimal as they're mainly set by our past emssions.</div>
+<p>This analysis was <a href="https://oacd-ucl.github.io/climate-hexmaps/">initially undertaken by Georgia Willits</a> as part of her dissertation research for her Climate Change MSc at UCL Geography. It has <a href="https://github-pages.ucl.ac.uk/UK-climate-by-mp/">since been taken on and updated by Prof. Chris Brierley</a>.</p>
+
+<h2>Winter rainfall projections{{ comp.anchor({ anchor: 'winter-rainfall'}) }}</h2>
+<p>Winter is the wettest season across most of the UK. Not all the country has the same amount of rainfall, with more falling on the Western side of the country. Therefore it is common to show rainfall changes as percentages. Here winter is taken as December, January and February.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rainfall_winter"
+}) }}
+
+<h2>Summer rainfall projections{{ comp.anchor({ anchor: 'summer-rainfall'}) }}</h2>
+<p>Summer is drier than winter in many parts of the UK (although East Anglia is dry all year round). It is common to show rainfall changes as percentages, as they are often more interpretable than using mm/day. Here Summer is taken as June, July and August.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "rainfall_summer"
+}) }}
+
+<h2>Wettest 5 days projections{{ comp.anchor({ anchor: 'wettest'}) }}</h2>
+<p>Flooding is caused by heavy rainfall, which can lead to rivers overflowing, flash floods and landslides. The amount of rain that falls in a single day can be important, but the amount that falls over a few days can be even more so. This indicator shows the percentage change in amount of rain that falls on the five wettest consecutive days of the year.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "wettest_5_days"
+}) }}
+
+<h2>Hottest day projections{{ comp.anchor({ anchor: 'hottest'}) }}</h2>
+<p>Heatwaves are an increasing threat under climate change. They can affect the health of people, animals and plants, and can also affect the amount of energy we use to cool our homes and buildings. They can be rather tricky to measure, so instead this indicator shows the change in the temperature of the hottest day of the average year.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "hottest_day"
+}) }}
+
+<h2>Temperature projections{{ comp.anchor({ anchor: 'temperature'}) }}</h2>
+<p>Changes in temperature are a headline response of climate change. This is because it is easy(ish) to measure and many more consequential impacts track it. This indicator shows the change in the annual temperature, averaged over all the years.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "temperature"
+}) }}
+
+{{#
 
 <h2>Rainfall anomaly{{ comp.anchor({ anchor: 'rainfall-anomaly'}) }}</h2>
 <p>The observed rainfall anomaly in 2019 (mm/day).</p>
@@ -93,3 +129,4 @@ api:
 	"component": comp.oi.map.hex_cartogram,
 	"config": "warmest_days"
 }) }}
+#}}

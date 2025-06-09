@@ -1,5 +1,5 @@
 {
-	"title": "Climate change: temperature projections (UK)",
+	"title": "Climate change: winter rainfall projections (UK)",
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
@@ -8,22 +8,28 @@
 			"name": "filterLabel",
 			"template": "{{ n }}"
 		}],
-		"min": 0.6,
-		"max": 1,
-		"value": "t_proj",
-		"scale": "#ffffb2 0%, #fecc5c 25%, #fd8d3c 50%, #f03b20 75%, #bd0026 100%",
+		"min": -10,
+		"max": 10,
+		"value": "prdjf_proj",
+		"scale": "#543005 0%, #8c510a 10%, #bf812d 20%, #dfc27d 30%, #f6e8c3 40%, #f5f5f5 50%, #c7eae5 60%, #80cdc1 70%, #35978f 80%, #01665e 90%, #003c30 100%",
 		"matchKey": "constituency",
 		"legend": {
 			"position": "top right",
 			"items": [{
-				"value": 1,
-				"label": ">1&deg;C"
+				"value": 10,
+				"label": "+10%"
 			},{
-				"value": 0.8,
-				"label": "+0.8&deg;C"
+				"value": 5,
+				"label": "+5%"
 			},{
-				"value": 0.6,
-				"label": "+0.6&deg;C"
+				"value": 0,
+				"label": "0.0%"
+			},{
+				"value": -5,
+				"label": "-5%"
+			},{
+				"value": -10,
+				"label": "-10%"
 			}]
 		},
 		"tools": {
@@ -31,8 +37,8 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Annual mean change in temperature: <strong>{{ t_proj | toFixed(2) }} &deg;C</strong>",
-		"attribution": "<a href=\"https://github-pages.ucl.ac.uk/UK-climate-by-mp/?var=t&period=proj\">Climate change projections</a> (UCL/Copernicus/EuroCORDEX)"
+		"tooltip": "<strong>{{ n }}</strong><br />Change in winter precipitation: <strong>{{ prdjf_proj | toFixed(1) }}%</strong>",
+		"attribution": "<a href=\"https://github-pages.ucl.ac.uk/UK-climate-by-mp/?var=prdjf&period=proj\">Climate change projections</a> (UCL/Copernicus/EuroCORDEX)"
 	},
 	"date": "2025",
 	"units": {
