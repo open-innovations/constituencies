@@ -1,0 +1,59 @@
+{
+	"title": "MP: financial interests (UK)",
+	"config": {
+		"test": true,
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.RMFI",
+		"value": "Employment (£)",
+		"matchKey": "PCON24CD",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100000,
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100000,
+				"label": "£100k+"
+			},{
+				"value": 80000,
+				"label": "£80k"
+			},{
+				"value": 60000,
+				"label": "£60k"
+			},{
+				"value": 40000,
+				"label": "£40k"
+			},{
+				"value": 20000,
+				"label": "£20k"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "PCON24NM"
+			},
+			"slider": {
+				"columns": [
+					{"value":"Employment (£)","label":"Employment"},
+					{"value":"Gifts (£)","label":"Gifts"},
+					{"value":"Donations (£)","label":"Donations"},
+					{"value":"Trips (£)","label":"Visits"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ Name }} ({{ Party }})<br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=12\">Employment</a>: <strong>£{{ Employment (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=3\">Donations</a>: <strong>£{{ Donations (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=4\">Gifts, benefits and hospitality</a>: <strong>£{{ Gifts (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=5\">Visits outside the UK</a>: <strong>£{{ Trips (£) | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://members.parliament.uk/members/commons/interests/publications\">Register of Interests</a> (UK Parliament)."
+	},
+	"date": "2025-06-02",
+	"units": {
+		"Employment (£)":{"value":"GBP","type":"currency","notes":"Employment and earnings outside Parliament"},
+		"Donations (£)":{"value":"GBP","type":"currency","notes":"Donations and other support (including loans) for activities as an MP"},
+		"Gifts (£)":{"value":"GBP","type":"currency","notes":"Gifts, benefits and hospitality"},
+		"Trips (£)":{"value":"GBP","type":"currency","notes":"Visits outside the UK"}
+	}
+}
