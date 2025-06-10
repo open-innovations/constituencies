@@ -1,0 +1,17 @@
+---
+title: Air pollution (England & Wales)
+theme: environment
+created: 2025-06-10T16:50
+updated: 2025-06-10T16:50
+description: |
+  The percentage of neighbourhoods where NO2 or PM2.5 are above WHO guidelines
+keywords: [air,pollution,no2,pm2.5]
+---
+
+<p>The percentage of neighbourhoods, in 2023, where <a href="https://en.wikipedia.org/wiki/Nitrogen_dioxide">nitrogen dioxide</a> (NO2) or <a href="https://en.wikipedia.org/wiki/Particulate_matter">fine particulate matter</a> (PM2.5) are above WHO guidelines.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "air-pollution"
+}) }}

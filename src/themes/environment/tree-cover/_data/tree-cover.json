@@ -1,0 +1,54 @@
+{
+	"title": "Tree canopy cover (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.environment.FoE",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Tree canopy cover→Proportion of constituency (%)",
+		"scale": "#dfdfdf 0%, #0DBC37 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Constituency code",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider": {
+				"width": "500px",
+				"columns": [
+					{"value":"Tree canopy cover→Proportion of constituency (%)","label":"Proportion of constituency"},
+					{"value":"Tree canopy cover→Neighbourhoods with less than 10% tree canopy (%)","label":"Neighbourhoods with less than 10% tree canopy"}
+				]
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Tree canopy cover: <strong>{{ Tree canopy cover→Proportion of constituency (%) }}%</strong><br />Neighbourhoods with less than 10% tree canopy: <strong>{{ Tree canopy cover→Neighbourhoods with less than 10% tree canopy (%) }}%</strong>",
+		"attribution": "Data: <a href=\"https://policy.friendsoftheearth.uk/download/spreadsheet-constituency-data-general-election-2024\">Environmental, economic and health data</a>, (Friends of the Earth)"
+	},
+	"date": "2023-03-02",
+	"units":{
+		"Tree canopy cover→Proportion of constituency (%)":{"value":"percent"}
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"title": "Air pollution (England & Wales)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.environment.FoE",
+		"columns":[{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)",
+		"scale": "#0DBC37 0%, #000000 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Constituency code",
+		"legend":{
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools":{
+			"filter":{
+				"label": "filterLabel"
+			},
+			"slider": {
+				"width": "500px",
+				"columns": [
+					{"value":"Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)","label":"NO2 above WHO guidelines"},
+					{"value":"Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%)","label":"PM2.5 above WHO guidelines"}
+				]
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />NO2: <strong>{{ Air pollution→Neighbourhoods where NO2 above WHO guidelines (%) }}%</strong><br />PM2.5: <strong>{{ Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%) }}%</strong>",
+		"attribution": "Data: <a href=\"https://policy.friendsoftheearth.uk/download/spreadsheet-constituency-data-general-election-2024\">Environmental, economic and health data</a>, (Friends of the Earth)"
+	},
+	"date": "2023",
+	"units":{
+		"Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)":{"value":"percent"},
+		"Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%)":{"value":"percent"}
+	}
+}
