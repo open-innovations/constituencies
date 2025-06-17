@@ -51,9 +51,9 @@
 	},
 	"date": "2025-06-02",
 	"units": {
-		"Employment (£)":{"value":"GBP","type":"currency","notes":"Employment and earnings outside Parliament"},
-		"Donations (£)":{"value":"GBP","type":"currency","notes":"Donations and other support (including loans) for activities as an MP"},
-		"Gifts (£)":{"value":"GBP","type":"currency","notes":"Gifts, benefits and hospitality"},
-		"Trips (£)":{"value":"GBP","type":"currency","notes":"Visits outside the UK"}
+		"Employment (£)":{"value":"GBP","category":"currency","notes":"Employment and earnings outside Parliament"},
+		"Donations (£)":{"value":"GBP","category":"currency","notes":"Donations and other support (including loans) for activities as an MP"},
+		"Gifts (£)":{"value":"GBP","category":"currency","notes":"Gifts, benefits and hospitality"},
+		"Trips (£)":{"value":"GBP","category":"currency","notes":"Visits outside the UK"}
 	}
 }
