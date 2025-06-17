@@ -2,11 +2,13 @@ export default function (input) {
 	const { component, config, download } = input;
 	let conf = JSON.parse(JSON.stringify(config));
 	let api = {'file':'','title':''};
+	let hasJSON = false;
 
 	if(typeof conf==="string"){
 		// It looks as though we've passed a string reference to an object
 		if(input.page){
 			if(conf in input.page.data){
+				hasJSON = (typeof input.page.data.api==="object" && input.page.data.api.indexOf(conf) >= 0);
 				api.file = conf;
 				api.title = input.page.data[conf].title;
 				// Get a copy of the config
@@ -59,7 +61,7 @@ export default function (input) {
 	}else{
 		if(conf.dataRows) conf.data = conf.dataRows;
 	}
-	if(api.file) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
+	if(hasJSON) conf.attribution += '<div class="menu-item JSON"><a href="'+api.file+'.json" aria-label="'+api.title+' as JSON">JSON</a></div>';
 	conf.attribution += '</div>'
 	if(!conf.boundaries){
 		conf.boundaries = {
