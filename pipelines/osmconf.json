@@ -10,11 +10,7 @@
 	"layers": [{
 		"id": "postoffices",
 		"keep": "amenity=post_office",
-		"output": "../src/themes/society/post-offices/_data/postoffices-osm.csv",
-		"dates": [
-			"../src/themes/society/post-offices/index.vto",
-			"../src/themes/society/post-offices/_data/map_1.json"
-		]
+		"output": "../src/themes/society/post-offices/_data/postoffices-osm.csv"
 	},{
 		"id": "pubs",
 		"keep": "amenity=bar,pub",
