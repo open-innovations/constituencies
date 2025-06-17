@@ -18,9 +18,9 @@
 			"filter":{"label":"filterLabel"}
 		},
 		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ Total | \"0\" }}</strong>",
-		"value":"Total",
+		"value":"2025-06",
 		"width":600
 	},
-	"date":"2025-05-27T11:45",
+	"date":"2025-06-17T07:05",
 	"title":"Post offices (UK)"
 }

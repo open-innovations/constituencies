@@ -49,6 +49,7 @@
 	},
 	"date": "2023-03-02",
 	"units":{
-		"Tree canopy cover→Proportion of constituency (%)":{"value":"percent"}
+		"Tree canopy cover→Proportion of constituency (%)":{"value":"percent"},
+		"Tree canopy cover→Neighbourhoods with less than 10% tree canopy (%)":{"value":"percent"}
 	}
 }

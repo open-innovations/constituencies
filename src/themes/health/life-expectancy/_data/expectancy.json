@@ -52,8 +52,8 @@
 	},
 	"date": "2022",
 	"units": {
-		"Life expectancy (years)":{"value":"yr"},
-		"Lower 95% confidence interval":{"value":"yr"},
-		"Upper 95% confidence interval":{"value":"yr"}
+		"Life expectancy (years)":{"value":"yr","precision":0.1},
+		"Lower 95% confidence interval":{"value":"yr","precision":0.1},
+		"Upper 95% confidence interval":{"value":"yr","precision":0.1}
 	}
 }

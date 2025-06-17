@@ -11,6 +11,7 @@ use POSIX qw(strftime);
 use Cwd qw(abs_path);
 use Math::Trig;
 use Text::CSV;
+use IPC::Cmd qw[can_run run run_forked];
 use constant PI => 4 * atan2(1, 1);
 use constant X         => 0;
 use constant Y         => 1;
@@ -21,7 +22,12 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 require "lib.pl";
 
-my ($hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$dtfull,$kept,$count);
+my (@lines,$hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$dtfull,$kept,$count);
+
+if(!can_run("osmium")){
+	error("osmium is not installed!\n");
+	exit;
+}
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -35,7 +41,7 @@ $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
 
 # Get the constituencies
 # Originally from https://geoportal.statistics.gov.uk/datasets/e489d4e5fe9f4f9caa6af161da5442af_0/explore then reduced with MapShaper
-msg("Loading constituencies and finding bounding boxes.");
+msg("Loading constituencies and finding bounding boxes.\n");
 $constituencies = addBoundingBoxes(LoadJSON($rawdir.$json->{'constituencies'}{'file'}));
 
 # Create a progress bar
@@ -46,6 +52,8 @@ $progress->len(100);
 if(!-e $pbffile){
 	msg("Downloading PBF (may take some time)\n");
 	`wget -O $pbffile "$json->{'pbf'}"`;
+}else{
+	msg("Using <cyan>$pbffile<none>.\n");
 }
 
 # Create a YYYY-MM date from the PBF file last-modified date

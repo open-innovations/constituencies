@@ -1,0 +1,40 @@
+name: Data Pipeline
+
+"on":
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "5 4 1 * *"
+
+# Cancel any in-flight jobs
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install cpanm and multiple modules
+        uses: perl-actions/install-with-cpanm@v1
+        with:
+          cpanfile: cpanfile
+
+      - name: Install osmium
+        run: sudo apt-get -y install osmium-tool
+
+      # Runs script
+      - name: Update from Geofabrik
+        working-directory: ./
+        run: |
+          perl pipelines/osm.pl
+
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Open Street Map updates
+          file_pattern: src/themes/

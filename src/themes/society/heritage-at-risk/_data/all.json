@@ -42,5 +42,6 @@
 		},
 		"tooltip": "<strong>{{ PCON24NM }}</strong><br />{{ MP }} ({{ Party }})<br />All at risk: <strong>{{ Type→All | toLocaleString() }}</strong><br /><a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&searchtype=harsearch\">More details</a>",
 		"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\">Heritage at Risk Register</a> 2024 (Historic England)"
-	}
+	},
+	"date":"2024-11"
 }
