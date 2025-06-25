@@ -98,12 +98,12 @@ foreach $cat (sort(keys(%{$categories}))){
 }
 print FILE "\n";
 foreach $pcon (sort(keys(%{$totals}))){
-	print FILE "$pcon";
+	print FILE "".($pcon||"");
 	for($i = 0; $i <= 90; $i++){
-		print FILE ",".$totals->{$pcon}{$i};
+		print FILE ",".($totals->{$pcon}{$i}||"");
 	}
 	foreach $cat (sort(keys(%{$categories}))){
-		print FILE ",".$totals->{$pcon}{$cat};
+		print FILE ",".($totals->{$pcon}{$cat}||"");
 	}
 	print FILE "\n";
 }
