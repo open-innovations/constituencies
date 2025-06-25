@@ -1,7 +1,7 @@
 package OpenInnovations::XLSX;
 
 # Version 1.1
-
+use utf8;
 use strict;
 use warnings;
 use Data::Dumper;
@@ -69,17 +69,64 @@ sub getXLSXSheets {
 	$str =  `unzip -p $self->{'file'} xl/workbook.xml`;
 	$str =~ s/<definedNames>.*?<\/definedNames>//;
 	my $parser = XMLin($str);
-	foreach $id (keys(%{$parser->{'sheets'}{'sheet'}})){
-		$rid = $parser->{'sheets'}{'sheet'}{$id}{'r:id'};
+	if(defined($parser->{'sheets'}{'sheet'}{'r:id'})){
+		$rid = $parser->{'sheets'}{'sheet'}{'r:id'};
 		$rid =~ s/^rId/sheet/;
 		$attr = {
-			'name'=>$id,
+			'name'=>$parser->{'sheets'}{'sheet'}{'name'},
 			'id'=>$rid,
-			'sheetId'=>$parser->{'sheets'}{'sheet'}{$id}{'sheetId'}
+			'sheetId'=>$parser->{'sheets'}{'sheet'}{'sheetId'}
 		};
 		push(@{$self->{'sheets'}},$attr);
+	}else{
+		foreach $id (keys(%{$parser->{'sheets'}{'sheet'}})){
+			if($id){
+				$rid = $parser->{'sheets'}{'sheet'}{$id}{'r:id'};
+				$rid =~ s/^rId/sheet/;
+				$attr = {
+					'name'=>$id,
+					'id'=>$rid,
+					'sheetId'=>$parser->{'sheets'}{'sheet'}{$id}{'sheetId'}
+				};
+				push(@{$self->{'sheets'}},$attr);
+			}
+		}
 	}
 	return @{$self->{'sheets'}};
+}
+
+sub getCellsInRange {
+	my $cells = shift;
+	my $range = shift;
+	my ($a,$b) = split(":",$range);
+	my ($al,$an,$bl,$bn,$l,$n);
+	if($a =~ /^([A-Z]+)([0-9]+)/){
+		$al = $1;
+		$an = $2;
+	}
+	if($b =~ /^([A-Z]+)([0-9]+)/){
+		$bl = $1;
+		$bn = $2;
+	}
+	for $l ($al .. $bl){
+		for $n ($an .. $bn){
+			if($l.$n ne $a){
+				$cells->{$l.$n} = $a;
+			}
+		}
+	}
+	return $cells;
+}
+
+sub processMerged {
+	my $merged = shift;
+	my $sameas = {};
+	my @mergedcells = @{$merged->{'mergeCell'}};
+	my ($i,$s,$e);
+	for($i = 0; $i < @mergedcells; $i++){
+		$sameas = getCellsInRange($sameas,$mergedcells[$i]->{'ref'});
+	}
+	return $sameas;
 }
 
 sub loadSheet {
@@ -90,7 +137,7 @@ sub loadSheet {
 
 	msg("\tProcessing sheet <yellow>$sheet<none>\n");
 
-	my ($stime,$etime,$txt,$xlsx,$parser,$nrows,$ncols,$found,$s,$str,$sheetcontent,$props,$row,$attr,$rowdata,$col,$c,$a,$n,@rows,$r,$head,$headers,$datum,$key,@features);
+	my ($stime,$etime,$txt,$xlsx,$parser,$nrows,$ncols,$found,$s,$str,$sheetcontent,$props,$row,$attr,$rowdata,$col,$c,$a,$n,@rows,$r,$head,$headers,$datum,$key,@features,$cell);
 	$xlsx = {};
 
 	# See if the sheet matches
@@ -121,6 +168,10 @@ sub loadSheet {
 	$nrows = @{$parser->{'sheetData'}{'row'}};
 	$ncols = 0;
 
+	# Need to deal with merged cells?
+	my $sameas = (defined($parser->{'mergeCells'})) ? processMerged($parser->{'mergeCells'}) : {};
+	my $lookup = {};
+
 	for($r = 0; $r < $nrows; $r++){
 		if(ref($parser->{'sheetData'}{'row'}[$r]{'c'}) eq "HASH"){
 			$parser->{'sheetData'}{'row'}[$r]{'c'} = [$parser->{'sheetData'}{'row'}[$r]{'c'}];
@@ -129,12 +180,22 @@ sub loadSheet {
 			$ncols = @{$parser->{'sheetData'}{'row'}[$r]{'c'}};
 			$rowdata = ();
 			for($c = 0; $c < $ncols; $c++){
-				if($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'r'} =~ /^([A-Z]+)([0-9]+)/){
+
+				$cell = $parser->{'sheetData'}{'row'}[$r]{'c'}[$c];
+
+				$lookup->{$cell->{'r'}} = {'r'=>$r,'c'=>$c};
+
+				if($cell->{'r'} =~ /^([A-Z]+)([0-9]+)/){
 					$a = $1;
 					$n = $2;
-					$col = $parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'v'};
-					if(!defined($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'})){ $parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'} = ""; }
-					if($parser->{'sheetData'}{'row'}[$r]{'c'}[$c]{'t'} eq "s"){
+
+					if(defined($sameas->{$cell->{'r'}})){
+						$cell = $parser->{'sheetData'}{'row'}[$lookup->{$sameas->{$cell->{'r'}}}{'r'}]{'c'}[$lookup->{$sameas->{$cell->{'r'}}}{'c'}];
+					}
+
+					$col = $cell->{'v'};
+					if(!defined($cell->{'t'})){ $cell->{'t'} = ""; }
+					if($cell->{'t'} eq "s"){
 						$rowdata->{$a} = $self->{'strings'}[$col];
 					}else{
 						$rowdata->{$a} = $col;
@@ -146,17 +207,27 @@ sub loadSheet {
 			warning("Not an array of columns on row <yellow>$r<none>\n");
 		}
 	}
+
 	$etime = time();
 	msg("\tParsed data in <green>".sprintf("%.2f",$etime - $stime)."<none>s\n");
 
 	foreach $r (sort(@{$args->{'header'}})){
 		foreach $col (keys(%{$rows[$r]})){
+			if(!defined($headers->{$col})){
+				$headers->{$col} = ();
+			}
 			$head = $rows[$r]{$col};
 			if(defined($args->{'rename'})){
 				$head = $args->{'rename'}->($rows[$r]{$col});
 			}
-			$headers->{$col} .= ($headers->{$col} ? "→" : "").$head;
+			if(defined($head) && $head ne "" && !grep( /^$head$/, @{$headers->{$col}} )){
+				# Avoid duplicates and empty values
+				push(@{$headers->{$col}},$head);
+			}
 		}
+	}
+	foreach $col (keys(%{$headers})){
+		$headers->{$col} = join("→",@{$headers->{$col}});
 	}
 
 	# Build output

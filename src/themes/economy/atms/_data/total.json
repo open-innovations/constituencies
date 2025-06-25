@@ -1,56 +1,41 @@
 {
-	"title": "ATMs: total (UK)",
-    "config": {
-        "width": 600,
-        "hexjson": "hexjson.uk-constituencies-2024",
-        "data": "release.link",
-        "columns": [{
-            "name": "filterLabel",
-            "template": "{{ n }} ({{ a }})"
-        }],
-        "value": "January 2025→TOTAL",
-        "scale": "Viridis",
-        "min": 0,
-        "max": 200,
-        "matchKey": "PCON24CD",
-        "legend": {
-            "position": "top right",
-            "items": [{
-                "value": 200,
-                "label": "200+"
-            },{
-                "value": 150,
-                "label": "150"
-            },{
-                "value": 100,
-                "label": "100"
-            },{
-                "value": 50,
-                "label": "50"
-            },{
-                "value": 0,
-                "label": "0"
-            }]
-        },
-        "tools": {
-            "filter": {
-                "label": "filterLabel"
-            },
-			"slider": {
-				"columns": [{
-					"label": "Free-to-use",
-					"value": "January 2025→Free-to-use ATM"
-				},{
-					"label": "Pay-to-use",
-					"value": "January 2025→Pay-to-use ATM"
-				},{
-					"label": "Total",
-					"value": "January 2025→TOTAL"
-				}],
-				"width": "500px"
+	"config":{
+		"attribution":"Data: <a href=\"https://www.link.co.uk/data-research/the-atm-network\">LINK ATMs by Parliamentary Constituency (Link)</a>",
+		"columns":[
+			{
+				"name":"filterLabel",
+				"template":"{{ n }} ({{ a }})"
 			}
-        },
-        "tooltip": "<strong>{{ n }}</strong><br />ATMs: {{ {{ _value }} | toLocaleString() }}</strong><br />{{ _value }}",
-        "attribution": "Data: <a href=\"https://www.link.co.uk/data-research/the-atm-network\">LINK ATMs by Parliamentary Constituency (Link)</a>"
-    }
+		],
+		"data":"release.link",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[
+				{"label":"200+","value":200},
+				{"label":"150","value":150},
+				{"label":"100","value":100},
+				{"label":"50","value":50},
+				{"label":"0","value":0}
+			],
+			"position":"top right"
+		},
+		"matchKey":"PCON24CD",
+		"max":200,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{
+				"label":"filterLabel"
+			},
+			"slider":{
+				"columns":[{"label":"Free-to-use","value":"April 2025→Free-to-use ATM"},{"label":"Pay-to-use","value":"April 2025→Pay-to-use ATM"},{"label":"Total","value":"April 2025→TOTAL"}],
+				"width":"500px"
+			}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />{{ _value }} ATMs: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
+		"value":"April 2025→TOTAL",
+		"width":600
+	},
+	"date":"2025-04",
+	"title":"ATMs: total (UK)"
 }
