@@ -40,12 +40,12 @@
 		"tooltip": "<strong>{{ n }}</strong><br />Below universal service obligation: <strong>{{ {{ _value }} | toLocaleString() }}%</strong>",
 		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-broadband-coverage-and-speeds/\">Broadband coverage and speeds (House of Commons Library)</a>"
 	},
-	"date": "2023-05",
+	"date": "2023-09",
 	"units":{
-		"Superfast availability (%)":{ "value": "percent" },
-		"Gigabit availability (%)":{ "value": "percent" },
+		"Superfast availability (%)":{ "value": "percent", "notes":"Lines capable of receiving download speeds of at least 30 Mbps" },
+		"Gigabit availability (%)":{ "value": "percent", "notes": "Premises capable of receiving speeds of 1 gigabit per second" },
 		"Below universal service obligation (%)":{ "value": "percent" },
-		"Average download speed (Mbps)":{ "value": "Mb/s" },
+		"Average download speed (Mbps)":{ "value": "Mb/s","notes": "Speeds actually being received based on the mean average" },
 		"Receiving under 10 Mbps (%)":{ "value": "percent" },
 		"Receiving over 30 Mbps (%)":{ "value": "percent" }
 	}

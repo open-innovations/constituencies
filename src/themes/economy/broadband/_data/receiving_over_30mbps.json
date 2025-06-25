@@ -45,10 +45,10 @@
 	},
 	"date": "2023-05",
 	"units":{
-		"Superfast availability (%)":{ "value": "percent" },
-		"Gigabit availability (%)":{ "value": "percent" },
+		"Superfast availability (%)":{ "value": "percent", "notes":"Lines capable of receiving download speeds of at least 30 Mbps" },
+		"Gigabit availability (%)":{ "value": "percent", "notes": "Premises capable of receiving speeds of 1 gigabit per second" },
 		"Below universal service obligation (%)":{ "value": "percent" },
-		"Average download speed (Mbps)":{ "value": "Mb/s" },
+		"Average download speed (Mbps)":{ "value": "Mb/s","notes": "Speeds actually being received based on the mean average" },
 		"Receiving under 10 Mbps (%)":{ "value": "percent" },
 		"Receiving over 30 Mbps (%)":{ "value": "percent" }
 	}
