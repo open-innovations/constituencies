@@ -1,0 +1,19 @@
+---
+title: "Pupil to teacher ratio (England)"
+theme: society
+created: 2025-06-26T16:10
+updated: 2025-06-26T16:10
+description: |
+  The pupil to qualified teacher ratio within all schools
+keywords: [education,school,pupil,teacher]
+api:
+  - pupil_teacher
+---
+
+
+<p>Pupil data from the January school census is used to produce pupil teacher ratios.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "pupil_teacher"
+}) }}

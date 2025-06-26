@@ -1,0 +1,51 @@
+{
+	"title": "Pupil to teacher ratio (qualified) within schools (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.workforce_ptrs_2010_2024",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Total state-funded schools→202425",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 25,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 25,
+				"label": "25"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 15,
+				"label": "15"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 5,
+				"label": "5"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [{"label":"2010/11","value":"Total state-funded schools→201011"},{"label":"2011/12","value":"Total state-funded schools→201112"},{"label":"2012/13","value":"Total state-funded schools→201213"},{"label":"2013/14","value":"Total state-funded schools→201314"},{"label":"2014/15","value":"Total state-funded schools→201415"},{"label":"2015/16","value":"Total state-funded schools→201516"},{"label":"2016/17","value":"Total state-funded schools→201617"},{"label":"2017/18","value":"Total state-funded schools→201718"},{"label":"2018/19","value":"Total state-funded schools→201819"},{"label":"2019/20","value":"Total state-funded schools→201920"},{"label":"2020/21","value":"Total state-funded schools→202021"},{"label":"2021/22","value":"Total state-funded schools→202122"},{"label":"2022/23","value":"Total state-funded schools→202223"},{"label":"2023/24","value":"Total state-funded schools→202324"},{"label":"2024/25","value":"Total state-funded schools→202425"}],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br /><strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}</strong> pupils to each qualified teacher",
+		"attribution": "Data: <a href=\"https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/c19afe79-7045-446a-9bc9-9f01e49ad09c\">Pupil to teacher ratios</a> (School workforce in England)."
+	},
+	"date": "2025-06-09"
+}
