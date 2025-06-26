@@ -1,0 +1,38 @@
+---
+title: "Higher education: entry rates for 18 year olds (UK)"
+theme: society
+created: 2025-06-26T14:10
+updated: 2025-06-26T14:10
+description: |
+  The rate at which 18 year olds enter into higher education.
+keywords: [education,higher,college,university,UCAS]
+api:
+  - entry_rates
+---
+
+
+
+<p>This map shows <a href="https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-cycle-data-resources-2024/westminster-parliamentary-constituency-dashboard-end-cycle-2024">information from UCAS</a>.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "entry_rates"
+}) }}
+
+{{#
+<h2>International students - numbers{{ comp.anchor({ anchor: 'international-students'}) }}</h2>
+<p>The Higher Education Policy Institute and Kaplan International Pathways <a href="https://www.hepi.ac.uk/2024/06/20/new-constituency-level-data-prove-the-value-of-international-students-to-the-uk/">published data</a> commissioned from London Economics showing the value of international students to the UK. They show the number of non-UK born full-time students aged 18+ in England, Wales, and Northern Ireland in each area, as recorded in the 2021 Census.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "international_students"
+}) }}
+
+<h2>International students - net impact{{ comp.anchor({ anchor: 'international-students-impact'}) }}</h2>
+<p>HEPI first find the impact by region, and then apportion that impact by constituency based on the number of students living in each constituency as a proportion of all students living in the region. This differs from the Higher Education Statistics Agency's definition of "internationally domiciled students". For Scotland, they use the 2011 Census data for all full-time students aged 18-74. The <a href="https://www.hepi.ac.uk/2023/05/16/international-students-boost-uk-economy-by-41-9-billion/">net economic impact per student</a> was estimated to be £125,000 per ‘typical’ EU domiciled student in the 2021/22 cohort, and £96,000 per non-EU domiciled student.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "international_students_impact"
+}) }}
+#}}

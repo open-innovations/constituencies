@@ -6,6 +6,8 @@ use utf8;
 use JSON::XS;
 use Data::Dumper;
 use Getopt::Long;
+binmode STDOUT, 'utf8';
+binmode STDERR, 'utf8';
 my $dir;
 BEGIN {
 	$dir = $0;
@@ -33,6 +35,7 @@ if(defined($help) || !defined($ifile)){
 	msg("\n");
 	msg("Examples:\n");
 	msg("    perl pipelines/addPCON.pl src/themes/society/imd/_data/release/parl25_imd.csv -name=\"constituency-name\" -u\n");
+	msg("    perl pipelines/addPCON.pl raw-data/society/hepi-international-students.csv -name=\"Constituency\" -o src/themes/society/higher-education/_data/release/hepi_international_students.csv\n");
 	msg("\n");
 	msg("Options:\n");
 	msg("    <CSV file>                 the CSV file to load\n");
@@ -63,7 +66,7 @@ foreach $pcon (keys(%{$hexjson->{'hexes'}})){
 }
 
 # Find the column index 
-$col = getIndexOf(@{$rtn->{'header'}},$namecol);
+$col = getIndexOf($namecol,@{$rtn->{'header'}});
 if($col < 0){
 	error("Can't find \"$namecol\" in the input CSV\n");
 	exit;
@@ -85,7 +88,7 @@ for($r = 0; $r < @{$rtn->{'rows'}}; $r++){
 		$csv .= ($h > 0 ? ",":"");
 		$csv .= ($val =~ /,/ ? "\"":"").$val.($val =~ /,/ ? "\"":"");
 		if($h == $col){
-			$csv .= ",$lookup->{$val}";
+			$csv .= ",".($lookup->{$val}||"");
 			if(!$lookup->{$val}){
 				warning("Can't find code for $val\n");
 			}
@@ -95,7 +98,7 @@ for($r = 0; $r < @{$rtn->{'rows'}}; $r++){
 }
 
 if($ofile){
-	open(FILE,">utf8",$ofile);
+	open(FILE,">",$ofile);
 	print FILE $csv;
 	close(FILE);
 }else{
@@ -189,8 +192,8 @@ sub LoadCSV {
 }
 
 sub getIndexOf {
+	my $val = shift;
 	my @array = @_;
-	my $val = pop(@array);
 	for(my $i = 0; $i < @array; $i++){
 		if($array[$i] eq $val){ return $i; }
 	}

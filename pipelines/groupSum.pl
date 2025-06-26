@@ -224,6 +224,8 @@ sub showHelp {
 	msg("Examples:\n");
 	msg("    perl pipelines/groupSum.pl raw-data/society/households_census.csv -group \"groups\" -sum \"Con_num,Con_pc,RN_pc,Nat_pc\" -id \"ONSConstID\" -keep \"ONSConstID,ConstituencyName,RegNationID,RegNationName,NatComparator,Con_num,Con_pc,RN_pc,Nat_pc\" -o src/themes/society/household-composition/_data/release/households_census.csv\n");
 	msg("\n");
+	msg("    perl pipelines/groupSum.pl raw-data/society/UCAS\ end\ of\ cycle\ 2024\ -\ Parliamentary\ Constituency\ entry\ rates.csv -group \"Year\" -id \"Parliamentary constituency code\" -sum \"Entry rate\" -o src/themes/society/ucas/_data/release/entry_rates.csv\n");
+	msg("\n");
 	msg("Options:\n");
 	msg("    <CSV file>                 the CSV file to load (can be at a URL)\n");
 	msg("    -g, --group=Column         the column in the input CSV to group by - these end up as columns\n");

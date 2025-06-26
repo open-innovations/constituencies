@@ -1,0 +1,72 @@
+{
+	"title": "Higher education: entry rates for 18 year olds (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.entry_rates",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Entry rate→2024",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 1,
+		"matchKey": "Parliamentary constituency code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 1,
+				"label": "100%"
+			},{
+				"value": 0.8,
+				"label": "80%"
+			},{
+				"value": 0.6,
+				"label": "60%"
+			},{
+				"value": 0.4,
+				"label": "40%"
+			},{
+				"value": 0.2,
+				"label": "20%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [{"label":"2006","value":"Entry rate→2006"},{"label":"2007","value":"Entry rate→2007"},{"label":"2008","value":"Entry rate→2008"},{"label":"2009","value":"Entry rate→2009"},{"label":"2010","value":"Entry rate→2010"},{"label":"2010","value":"Entry rate→2010"},{"label":"2011","value":"Entry rate→2011"},{"label":"2012","value":"Entry rate→2012"},{"label":"2013","value":"Entry rate→2013"},{"label":"2014","value":"Entry rate→2014"},{"label":"2015","value":"Entry rate→2015"},{"label":"2016","value":"Entry rate→2016"},{"label":"2017","value":"Entry rate→2017"},{"label":"2018","value":"Entry rate→2018"},{"label":"2019","value":"Entry rate→2019"},{"label":"2020","value":"Entry rate→2020"},{"label":"2021","value":"Entry rate→2021"},{"label":"2022","value":"Entry rate→2022"},{"label":"2023","value":"Entry rate→2023"},{"label":"2024","value":"Entry rate→2024"}],
+				"width": "500px"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | multiply(100) | toFixed(1) | toLocaleString() }}%</strong>",
+		"attribution": "Data: <a href=\"https://www.ucas.com/data-and-analysis/undergraduate-statistics-and-reports/ucas-undergraduate-end-cycle-data-resources-2024/westminster-parliamentary-constituency-dashboard-end-cycle-2024\">entry rates</a> (UCAS)."
+	},
+	"date": "2024",
+	"units":{
+		"Entry rate→2006":{"value":"percent","scaleBy":100},
+		"Entry rate→2007":{"value":"percent","scaleBy":100},
+		"Entry rate→2008":{"value":"percent","scaleBy":100},
+		"Entry rate→2009":{"value":"percent","scaleBy":100},
+		"Entry rate→2010":{"value":"percent","scaleBy":100},
+		"Entry rate→2011":{"value":"percent","scaleBy":100},
+		"Entry rate→2012":{"value":"percent","scaleBy":100},
+		"Entry rate→2013":{"value":"percent","scaleBy":100},
+		"Entry rate→2014":{"value":"percent","scaleBy":100},
+		"Entry rate→2015":{"value":"percent","scaleBy":100},
+		"Entry rate→2016":{"value":"percent","scaleBy":100},
+		"Entry rate→2017":{"value":"percent","scaleBy":100},
+		"Entry rate→2018":{"value":"percent","scaleBy":100},
+		"Entry rate→2019":{"value":"percent","scaleBy":100},
+		"Entry rate→2020":{"value":"percent","scaleBy":100},
+		"Entry rate→2021":{"value":"percent","scaleBy":100},
+		"Entry rate→2022":{"value":"percent","scaleBy":100},
+		"Entry rate→2023":{"value":"percent","scaleBy":100},
+		"Entry rate→2024":{"value":"percent","scaleBy":100}
+	}
+}
