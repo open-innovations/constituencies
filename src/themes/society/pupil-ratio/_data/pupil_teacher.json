@@ -45,7 +45,7 @@
 			}
 		},
 		"tooltip": "<strong>{{ n }}</strong><br /><strong>{{ {{ _value }} | toFixed(1) | toLocaleString() }}</strong> pupils to each qualified teacher",
-		"attribution": "Data: <a href=\"https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/c19afe79-7045-446a-9bc9-9f01e49ad09c\">Pupil to teacher ratios</a> (School workforce in England)."
+		"attribution": "Data: <a href=\"https://explore-education-statistics.service.gov.uk/data-catalogue/data-set/c19afe79-7045-446a-9bc9-9f01e49ad09c\">Pupil to teacher ratios</a> (School workforce in England, OGL)."
 	},
 	"date": "2025-06-09"
 }
