@@ -63,7 +63,7 @@ $progress->len(100);
 # Make sure we have the PBF file
 if(!-e $pbffile){
 	msg("Downloading PBF (may take some time)\n");
-	`wget -O $pbffile "$json->{'pbf'}"`;
+	`wget --quiet -O $pbffile "$json->{'pbf'}"`;
 }else{
 	msg("Using <cyan>$pbffile<none>.\n");
 }
