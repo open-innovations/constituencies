@@ -42,7 +42,11 @@ $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
 # Get the constituencies
 # Originally from https://geoportal.statistics.gov.uk/datasets/e489d4e5fe9f4f9caa6af161da5442af_0/explore then reduced with MapShaper
 msg("Loading constituencies and finding bounding boxes.\n");
-$constituencies = addBoundingBoxes(LoadJSON($rawdir.$json->{'constituencies'}{'file'}));
+if(!-e $basedir.$json->{'constituencies'}{'file'}){
+	error("No GeoJSON file <cyan>$json->{'constituencies'}{'file'}<none>\n");
+	exit;
+}
+$constituencies = addBoundingBoxes(LoadJSON($basedir.$json->{'constituencies'}{'file'}));
 
 # Create a progress bar
 $progress = OpenInnovations::ProgressBar->new();
