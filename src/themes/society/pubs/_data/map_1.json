@@ -17,10 +17,10 @@
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-06 | \"0\" }}</strong>",
-		"value":"2025-06",
+		"tooltip":"<strong>{{ n }}</strong><br />Pubs: <strong>{{ 2025-07 | \"0\" }}</strong>",
+		"value":"2025-07",
 		"width":600
 	},
-	"date":"2025-06-17T07:05",
+	"date":"2025-07-01T02:20",
 	"title":"Pubs (UK)"
 }
