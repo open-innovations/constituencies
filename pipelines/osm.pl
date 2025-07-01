@@ -37,6 +37,11 @@ $hexjson = LoadJSON($basedir.$json->{'hexjson'});
 
 # Set variables
 $rawdir = $basedir.$json->{'working'};
+if(!-d $rawdir){
+	msg("Make <cyan>$rawdir<none>\n");
+	makeDir($rawdir);
+}
+
 $pbffile = $rawdir.$json->{'prefix'}.".osm.pbf";
 
 # Get the constituencies
