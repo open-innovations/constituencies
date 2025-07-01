@@ -1,4 +1,4 @@
-name: Data Pipeline
+name: Update OSM data
 
 "on":
   workflow_dispatch:
