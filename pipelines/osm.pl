@@ -22,12 +22,15 @@ use lib $basedir."lib/";	# Custom functions
 use OpenInnovations::ProgressBar;
 require "lib.pl";
 
-my (@lines,$hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$dtfull,$kept,$count);
+my (@lines,$hexjson,$json,$l,$t,@layers,$o5mfile,$osmfile,$pbffile,$vrtfile,$geofile,$confile,$fh,$ofile,$ifile,$rawdir,$geojson,$tempgeo,$n,$f,$update,$constituencies,@coord,$id,$data,$progress,$csv,$cn,$dt,$dtfull,$kept,$count,$showprogress);
 
 if(!can_run("osmium")){
 	error("osmium is not installed!\n");
 	exit;
 }
+
+$showprogress = 0;
+if($ARGV[0]){ $showprogress = 1; }
 
 # Get configuration
 $json = LoadJSON($basedir."osmconf.json");
@@ -112,7 +115,7 @@ for($l = 0; $l < @layers; $l++){
 
 	# Loop over all features and process them
 	msg("\tProcessing features\n");
-	$progress->max($n);
+	if($showprogress){ $progress->max($n); }
 	$count = 0;
 	my $done = {};
 	my $osmid = "";
@@ -143,9 +146,9 @@ for($l = 0; $l < @layers; $l++){
 				$done->{$osmid} = 1;
 			}
 		}
-		$progress->update($f,"\t");
+		if($showprogress){ $progress->update($f,"\t"); }
 	}
-	$progress->update($n,"\t");
+	if($showprogress){ $progress->update($n,"\t"); }
 	msg("\tIdentified constituencies for <yellow>$count<none> features\n");
 
 	# Save the combined GeoJSON
