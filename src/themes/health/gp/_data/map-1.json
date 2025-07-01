@@ -1,0 +1,43 @@
+{
+	"title": "GPs (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.gps",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "All",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 30,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "30+"
+			},{
+				"value": 20,
+				"label": "20"
+			},{
+				"value": 10,
+				"label": "10"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />GP practices/branches: <strong>{{ All | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/gp-and-gp-practice-related-data\">GP Practices and Branches</a> (NHS England), <a href=\"https://www.opendata.nhs.scot/dataset/gp-practice-contact-details-and-list-sizes\">GP Practice contact details and list sizes</a> (PHS Dental Care Team), <a href=\"https://www.opendatani.gov.uk/dataset/gp-practice-list-sizes\">GP practice list sizes</a> (Business Services Organisation)\n"
+	},
+	"date": "2025-07-01T13:47"
+}

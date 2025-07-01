@@ -1,0 +1,21 @@
+---
+title: GPs (UK)
+theme: health
+created: 2025-07-01T12:30
+updated: 2025-07-01T13:47
+description: |
+  GPs by constituency (UK).
+api:
+  - map-1
+---
+
+<p>This page provides constituency-level totals of GP practices/branches in the UK using data from <a href="https://digital.nhs.uk/services/organisation-data-service/data-search-and-export/csv-downloads/gp-and-gp-practice-related-data">NHS England</a>, <a href="https://www.opendata.nhs.scot/dataset/gp-practice-contact-details-and-list-sizes">Public Health Scotland</a>, and the <a href="https://www.opendatani.gov.uk/dataset/gp-practice-list-sizes">Business Services Organisation, Northern Ireland</a>.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map-1"
+}) }}
+
+<h2>Notes</h2>
+<p>These figures have been calculated by using each GP practice/branch postcode centroid (May 2025).</p>
