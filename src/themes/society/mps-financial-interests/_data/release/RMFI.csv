@@ -1,51 +1,51 @@
 PCON24CD,PCON24NM,ParlID,Party,Name,Employment,Employment (£),Donations,Donations (£),Gifts,Gifts (£),Trips,Trips (£)
 E14001063,Aldershot,5173,Lab,Alex Baker,0,0,7,31350,0,0,0,0
-E14001064,Aldridge-Brownhills,4358,Con,Wendy Morton,0,0,3,9000,0,0,0,0
+E14001064,Aldridge-Brownhills,4358,Con,Wendy Morton,0,0,4,14000,0,0,2,1812.14
 E14001065,Altrincham and Sale West,5159,Lab,Mr Connor Rand,1,19432.24,4,10500,0,0,0,0
 E14001066,Amber Valley,5107,Lab,Linsey Farnsworth,0,0,5,22446.97,1,500,0,0
-E14001067,Arundel and South Downs,4874,Con,Andrew Griffith,0,0,9,50500,2,5500,2,1136
-E14001068,Ashfield,4743,RUK,Lee Anderson,2,103061.42,3,13000,0,0,0,0
-E14001069,Ashford,5247,Lab,Sojan Joseph,2,7841.92,0,0,1,352,1,1800
-E14001070,Ashton-under-Lyne,4356,Lab,Angela Rayner,0,0,6,60779.5,3,4736,0,0
+E14001067,Arundel and South Downs,4874,Con,Andrew Griffith,0,0,10,55500,2,5500,2,1785
+E14001068,Ashfield,4743,RUK,Lee Anderson,2,103380.84,3,13000,0,0,0,0
+E14001069,Ashford,5247,Lab,Sojan Joseph,2,1511.25,0,0,1,352,1,1800
+E14001070,Ashton-under-Lyne,4356,Lab,Angela Rayner,0,0,5,47030,3,4736,0,0
 E14001071,Aylesbury,5341,Lab,Laura Kyrke-Smith,1,2221.6,3,18600,0,0,1,678
-E14001072,Banbury,5328,Lab,Sean Woodcock,1,5166.38,1,15000,0,0,0,0
-E14001073,Barking,5180,Lab,Nesil Caliskan,3,7692,1,5001,0,0,0,0
-E14001074,Barnsley North,4243,Lab,Dan Jarvis,0,0,4,47000,1,600,0,0
+E14001072,Banbury,5328,Lab,Sean Woodcock,1,2583.19,1,15000,0,0,0,0
+E14001073,Barking,5180,Lab,Nesil Caliskan,3,6664,1,5001,0,0,0,0
+E14001074,Barnsley North,4243,Lab,Dan Jarvis,0,0,4,47000,0,0,0,0
 E14001075,Barnsley South,4607,Lab,Stephanie Peacock,0,0,1,2000,1,21.36,0,0
 E14001076,Barrow and Furness,5049,Lab,Michelle Scrogham,1,0,3,63000,0,0,0,0
 E14001077,Basildon and Billericay,4813,Con,Mr Richard Holden,0,0,2,15000,0,0,3,6308.71
 E14001078,Basingstoke,5248,Lab,Luke Murphy,0,0,4,39000,0,0,0,0
-E14001079,Bassetlaw,5105,Lab,Jo White,1,184.63,6,25464,1,700,1,559
+E14001079,Bassetlaw,5105,Lab,Jo White,1,184.63,7,43464,1,700,1,559
 E14001080,Bath,4602,LD,Wera Hobhouse,0,0,0,0,0,0,0,0
-E14001081,Battersea,4676,Lab,Marsha De Cordova,1,0,5,19000,0,0,1,5800
+E14001081,Battersea,4676,Lab,Marsha De Cordova,1,0,5,19000,0,0,0,0
 E14001082,Beaconsfield,4759,Con,Joy Morrissey,0,0,4,26500,0,0,0,0
 E14001083,Beckenham and Penge,5132,Lab,Liam Conlon,0,0,8,44000,3,2945,0,0
 E14001084,Bedford,4598,Lab,Mohammad Yasin,0,0,1,4250,1,707,1,3309.54
 E14001085,Bermondsey and Old Southwark,4368,Lab,Neil Coyle,0,0,3,10698.8,1,435.35,0,0
 E14001086,Bethnal Green and Stepney,4138,Lab,Rushanara Ali,0,0,0,0,0,0,0,0
-E14001087,Beverley and Holderness,1482,Con,Graham Stuart,0,0,4,12000,1,500,1,8639.5
-E14001088,Bexhill and Battle,4860,Con,Dr Kieran Mullan,0,0,1,5000,0,0,1,3100.22
+E14001087,Beverley and Holderness,1482,Con,Graham Stuart,0,0,4,12000,2,1698.4,2,11639.5
+E14001088,Bexhill and Battle,4860,Con,Dr Kieran Mullan,0,0,1,5000,0,0,0,0
 E14001089,Bexleyheath and Crayford,5184,Lab,Daniel Francis,0,0,0,0,0,0,0,0
 E14001090,Bicester and Woodstock,5346,LD,Calum Miller,2,15243.91,15,64500,1,1283.11,0,0
-E14001091,Birkenhead,4083,Lab,Alison McGovern,0,0,1,5000,3,1948,0,0
+E14001091,Birkenhead,4083,Lab,Alison McGovern,0,0,1,5000,2,1350,0,0
 E14001092,Birmingham Edgbaston,4603,Lab,Preet Kaur Gill,0,0,1,10000,0,0,0,0
-E14001093,Birmingham Erdington,4938,Lab,Paulette Hamilton,4,5571.4,0,0,0,0,0,0
-E14001094,Birmingham Hall Green and Moseley,4747,Lab,Tahir Ali,0,0,2,15000,0,0,2,8468.44
-E14001095,Birmingham Hodge Hill and Solihull North,1171,Lab,Liam Byrne,1,4550,0,0,0,0,3,8414.44
+E14001093,Birmingham Erdington,4938,Lab,Paulette Hamilton,4,6051.4,0,0,0,0,0,0
+E14001094,Birmingham Hall Green and Moseley,4747,Lab,Tahir Ali,0,0,2,15000,0,0,3,15204.81
+E14001095,Birmingham Hodge Hill and Solihull North,1171,Lab,Liam Byrne,1,4550,1,2500,0,0,2,5280.44
 E14001096,Birmingham Ladywood,3914,Lab,Shabana Mahmood,0,0,8,143968,0,0,0,0
-E14001097,Birmingham Northfield,5234,Lab,Laurence Turner,1,8476.59,3,13818.66,0,0,0,0
+E14001097,Birmingham Northfield,5234,Lab,Laurence Turner,1,2772.3,3,13818.66,0,0,0,0
 E14001098,Birmingham Perry Barr,5357,Ind,Ayoub Khan,2,0,0,0,0,0,0,0
 E14001099,Birmingham Selly Oak,5235,Lab,Al Carns,0,0,1,2000,0,0,0,0
 E14001100,Birmingham Yardley,4370,Lab,Jess Phillips,6,54256,1,3000,1,310,0,0
 E14001101,Bishop Auckland,5108,Lab,Sam Rushworth,1,2407.62,7,32000,0,0,2,5281.48
 E14001102,Blackburn,5231,Ind,Mr Adnan Hussain,2,51000,1,1950,0,0,0,0
 E14001103,Blackley and Middleton South,449,Lab,Graham Stringer,0,0,0,0,0,0,0,0
-E14001104,Blackpool North and Fleetwood,5232,Lab,Lorraine Beavers,2,10411.2568767123,3,15000,0,0,0,0
-E14001105,Blackpool South,5025,Lab,Chris Webb,0,0,8,37500,1,1600,0,0
+E14001104,Blackpool North and Fleetwood,5232,Lab,Lorraine Beavers,2,9354.39112328767,3,15000,0,0,0,0
+E14001105,Blackpool South,5025,Lab,Chris Webb,0,0,6,20500,1,1600,0,0
 E14001106,Blaydon and Consett,4618,Lab,Liz Twist,0,0,2,4000,0,0,0,0
 E14001107,Blyth and Ashington,4139,Lab,Ian Lavery,0,0,3,20000,0,0,0,0
-E14001108,Bognor Regis and Littlehampton,5203,Con,Alison Griffiths,1,0,4,11500,1,720,1,1418
-E14001109,Bolsover,5053,Lab,Natalie Fleet,1,3323.81,5,34046,0,0,0,0
+E14001108,Bognor Regis and Littlehampton,5203,Con,Alison Griffiths,1,0,4,11500,1,720,1,1045
+E14001109,Bolsover,5053,Lab,Natalie Fleet,1,0,5,34046,1,705,0,0
 E14001110,Bolton North East,5095,Lab,Kirith Entwistle,1,2463.56,4,21000,0,0,0,0
 E14001111,Bolton South and Walkden,3924,Lab,Yasmin Qureshi,0,0,0,0,0,0,1,5955
 E14001112,Bolton West,5128,Lab,Phil Brickell,2,5695.38,2,17000,1,394,1,2840
@@ -56,79 +56,79 @@ E14001116,Bournemouth West,5202,Lab,Jessica Toale,0,0,5,50000,0,0,1,1950
 E14001117,Bracknell,5165,Lab,Peter Swallow,1,734.71,1,3000,0,0,0,0
 E14001118,Bradford East,4394,Lab,Imran Hussain,0,0,2,9620,0,0,0,0
 E14001119,Bradford South,4391,Lab,Judith Cummins,0,0,0,0,0,0,0,0
-E14001120,Bradford West,4409,Lab,Naz Shah,1,9225,4,69430,0,0,5,24807.52
-E14001121,Braintree,4366,Con,Sir James Cleverly,0,0,29,297500,0,0,0,0
-E14001122,Brent East,1489,Lab,Dawn Butler,1,500,4,14971,0,0,1,2443.01
-E14001123,Brent West,146,Lab,Barry Gardiner,4,43360,2,16500,0,0,4,6275.76
+E14001120,Bradford West,4409,Lab,Naz Shah,1,9225,3,65930,0,0,5,24807.52
+E14001121,Braintree,4366,Con,Sir James Cleverly,1,28517.5,29,297500,0,0,0,0
+E14001122,Brent East,1489,Lab,Dawn Butler,1,500,4,14971,0,0,2,5368.2
+E14001123,Brent West,146,Lab,Barry Gardiner,5,45260,2,16500,0,0,4,6275.76
 E14001124,Brentford and Isleworth,4389,Lab,Ruth Cadbury,0,0,0,0,3,1168,0,0
 E14001125,Brentwood and Ongar,4613,Con,Alex Burghart,0,0,1,7817.24,1,14350.38,1,731
-E14001126,Bridgwater,5101,Con,Sir Ashley Fox,1,0,2,7500,1,1367,0,0
+E14001126,Bridgwater,5101,Con,Sir Ashley Fox,1,1080,3,9500,1,1367,0,0
 E14001127,Bridlington and The Wolds,5169,Con,Charlie Dewhirst,0,0,2,40000,0,0,0,0
-E14001128,Brigg and Immingham,3957,Con,Martin Vickers,0,0,1,2812.2,0,0,2,2636
+E14001128,Brigg and Immingham,3957,Con,Martin Vickers,0,0,1,2812.2,0,0,3,3518.45
 E14001129,Brighton Kemptown and Peacehaven,5276,Lab,Chris Ward,1,2634.1,3,2767.33,1,1660,0,0
 E14001130,Brighton Pavilion,5314,Green,Siân Berry,0,0,19,178086.07,0,0,0,0
 E14001131,Bristol Central,5102,Green,Carla Denyer,2,2201.1,21,196265.27,20,6398.64,0,0
-E14001132,Bristol East,1491,Lab,Kerry McCarthy,0,0,1,5000,3,1469,0,0
+E14001132,Bristol East,1491,Lab,Kerry McCarthy,0,0,1,5000,2,1119,0,0
 E14001133,Bristol North East,5010,Lab,Damien Egan,0,0,1,5000,0,0,1,2500
-E14001134,Bristol North West,4621,Lab,Darren Jones,0,0,5,130061.83,2,5811,0,0
+E14001134,Bristol North West,4621,Lab,Darren Jones,0,0,4,125061.83,1,3400,0,0
 E14001135,Bristol South,4444,Lab,Karin Smyth,0,0,0,0,1,410,0,0
 E14001136,Broadland and Fakenham,4739,Con,Jerome Mayhew,1,3000,0,0,0,0,2,4445.06
 E14001137,Bromley and Biggin Hill,5209,Con,Peter Fortune,0,0,4,13500,2,832.82,1,906
 E14001138,Bromsgrove,5186,Con,Bradley Thomas,1,4342.08,4,13000,3,3608.95,2,7946
 E14001139,Broxbourne,5050,Con,Lewis Cocking,2,12299.39,10,33023.52,5,4006.95,0,0
 E14001140,Broxtowe,5058,Lab,Juliet Campbell,0,0,3,13321,1,500,0,0
-E14001141,Buckingham and Bletchley,5193,Lab,Callum Anderson,2,6855.68,2,15000,1,460,0,0
+E14001141,Buckingham and Bletchley,5193,Lab,Callum Anderson,2,1083.69,2,15000,2,1862.5,0,0
 E14001142,Burnley,5135,Ind,Oliver Ryan,0,0,7,39000,0,0,0,0
 E14001143,Burton and Uttoxeter,5077,Lab,Jacob Collier,1,651.02,2,17000,6,4100,0,0
-E14001144,Bury North,4637,Lab,Mr James Frith,0,0,5,40500,9,17174.72,0,0
+E14001144,Bury North,4637,Lab,Mr James Frith,0,0,5,40500,10,17858.72,0,0
 E14001145,Bury South,4871,Lab,Christian Wakeford,0,0,0,0,0,0,0,0
-E14001146,Bury St Edmunds and Stowmarket,5163,Lab,Peter Prinsley,6,7520.04,0,0,0,0,0,0
+E14001146,Bury St Edmunds and Stowmarket,5163,Lab,Peter Prinsley,6,7126.54,0,0,0,0,0,0
 E14001147,Calder Valley,5295,Lab,Josh Fenton-Glynn,1,26368.8,3,23000,0,0,0,0
-E14001148,Camborne and Redruth,5208,Lab,Perran Moon,0,0,5,29530,0,0,0,0
+E14001148,Camborne and Redruth,5208,Lab,Perran Moon,0,0,5,29530,2,678.22,0,0
 E14001149,Cambridge,4382,Lab,Daniel Zeichner,0,0,0,0,0,0,0,0
 E14001150,Cannock Chase,5034,Lab,Josh Newbury,1,0,4,27500,0,0,0,0
 E14001151,Canterbury,4616,Ind,Rosie Duffield,1,0,2,12000,0,0,0,0
 E14001152,Carlisle,5094,Lab,Ms Julie Minns,1,1920,2,20000,0,0,0,0
-E14001153,Carshalton and Wallington,5083,LD,Bobby Dean,2,1228.35,12,29252,2,2625.85,0,0
+E14001153,Carshalton and Wallington,5083,LD,Bobby Dean,2,1108.83,12,29252,2,2625.85,0,0
 E14001154,Castle Point,3948,Con,Rebecca Harris,0,0,1,6000,0,0,1,8451.66
 E14001155,Central Devon,3935,Con,Sir Mel Stride,0,0,6,95000,0,0,0,0
 E14001156,Central Suffolk and North Ipswich,5303,Ind,Patrick Spencer,1,0,5,12500,0,0,0,0
 E14001157,Chatham and Aylesford,5220,Lab,Tristan Osborne,2,1825.87,2,3575.64,0,0,0,0
-E14001158,Cheadle,5090,LD,Tom Morrison,1,2763.66,9,33000,0,0,0,0
-E14001159,Chelmsford,5073,LD,Marie Goldman,2,16714.78,0,0,2,2720,0,0
+E14001158,Cheadle,5090,LD,Tom Morrison,1,1842.44,9,33000,0,0,0,0
+E14001159,Chelmsford,5073,LD,Marie Goldman,2,13583.36,0,0,2,2720,0,0
 E14001160,Chelsea and Fulham,5344,Lab,Ben Coleman,1,2431.8,5,22200,0,0,1,446
-E14001161,Cheltenham,5055,LD,Max Wilkinson,0,0,17,65450,3,1896.69,0,0
-E14001162,Chesham and Amersham,4918,LD,Sarah Green,0,0,17,36450,0,0,0,0
+E14001161,Cheltenham,5055,LD,Max Wilkinson,0,0,17,65450,4,2372.69,0,0
+E14001162,Chesham and Amersham,4918,LD,Sarah Green,0,0,16,34650,0,0,1,683.32
 E14001163,Chester North and Neston,4976,Lab,Samantha Dixon,0,0,0,0,0,0,0,0
 E14001164,Chester South and Eddisbury,5241,Con,Aphra Brandreth,1,1047.5,8,30505.35,2,4337,0,0
-E14001165,Chesterfield,3952,Lab,Mr Toby Perkins,0,0,2,12500,1,1438.24,1,518
+E14001165,Chesterfield,3952,Lab,Mr Toby Perkins,0,0,2,12500,1,1438.24,1,1701.99
 E14001166,Chichester,5335,LD,Jess Brown-Fuller,1,5608,19,99643,3,2520,0,0
-E14001167,Chingford and Woodford Green,152,Con,Sir Iain Duncan Smith,4,8150,4,15000,2,1975,2,7360.18
+E14001167,Chingford and Woodford Green,152,Con,Sir Iain Duncan Smith,4,8150,3,13000,2,1975,3,10690.04
 E14001168,Chippenham,5239,LD,Sarah Gibson,2,18809.14,7,19498,0,0,0,0
-E14001169,Chipping Barnet,5282,Lab,Dan Tomlinson,1,0,11,45050,0,0,1,2200
+E14001169,Chipping Barnet,5282,Lab,Dan Tomlinson,1,0,11,45050,0,0,2,3082.45
 E14001170,Chorley,467,Spk,Sir Lindsay Hoyle,0,0,1,2995,0,0,0,0
 E14001171,Christchurch,242,Con,Sir Christopher Chope,2,600,0,0,0,0,0,0
 E14001172,Cities of London and Westminster,5257,Lab,Rachel Blake,1,143.32,10,94469.69,2,1025,0,0
 E14001173,City of Durham,4753,Lab,Mary Kelly Foy,0,0,3,14000,0,0,0,0
 E14001174,Clacton,5091,RUK,Nigel Farage,10,981173.76,0,0,4,11333.2,6,89624.92
-E14001175,Clapham and Brixton Hill,4764,Lab,Bell Ribeiro-Addy,4,2418.45,4,14000,0,0,2,2156.82
-E14001176,Colchester,5042,Lab,Pam Cox,2,22173.63,2,20000,0,0,0,0
+E14001175,Clapham and Brixton Hill,4764,Lab,Bell Ribeiro-Addy,4,1718.45,4,14000,0,0,3,5087.01
+E14001176,Colchester,5042,Lab,Pam Cox,2,14992.88,2,20000,0,0,0,0
 E14001177,Colne Valley,5317,Lab,Paul Davies,0,0,3,17000,0,0,0,0
 E14001178,Congleton,5324,Lab,Sarah Russell,2,8330,1,3000,0,0,0,0
 E14001179,Corby and East Northamptonshire,5315,Lab,Lee Barron,1,1800,5,23000,0,0,0,0
 E14001180,Coventry East,1579,Lab,Mary Creagh,0,0,2,13000,3,2592,0,0
-E14001181,Coventry North West,4779,Lab,Taiwo Owatemi,1,0,1,5000,1,540,0,0
-E14001182,Coventry South,4786,Ind,Zarah Sultana,0,0,4,31339.66,1,350.61,1,372.58
+E14001181,Coventry North West,4779,Lab,Taiwo Owatemi,0,0,1,5000,0,0,0,0
+E14001182,Coventry South,4786,Ind,Zarah Sultana,0,0,3,21339.66,2,1181.75,1,372.58
 E14001183,Cramlington and Killingworth,5029,Lab,Emma Foody,1,1084.35,5,20750,0,0,0,0
-E14001184,Crawley,5345,Lab,Peter Lamb,2,10294.44,3,22000,0,0,0,0
-E14001185,Crewe and Nantwich,5273,Lab,Connor Naismith,2,3469.23,1,10000,0,0,0,0
-E14001186,Croydon East,5119,Lab,Natasha Irons,1,49932.23,0,0,0,0,0,0
+E14001184,Crawley,5345,Lab,Peter Lamb,2,9559.71,3,22000,0,0,0,0
+E14001185,Crewe and Nantwich,5273,Lab,Connor Naismith,2,0,1,10000,0,0,1,6736.37
+E14001186,Croydon East,5119,Lab,Natasha Irons,1,47219,0,0,0,0,0,0
 E14001187,Croydon South,4503,Con,Chris Philp,0,0,0,0,2,2378,1,664.14
-E14001188,Croydon West,4631,Lab,Sarah Jones,0,0,4,12000,0,0,1,5298.17
+E14001188,Croydon West,4631,Lab,Sarah Jones,0,0,3,9500,0,0,1,5298.17
 E14001189,Dagenham and Rainham,5272,Lab,Margaret Mullane,2,838.84,7,50491.83,0,0,0,0
 E14001190,Darlington,5037,Lab,Lola McEvoy,1,4971.51,5,31500,0,0,0,0
 E14001191,Dartford,5223,Lab,Jim Dickson,0,0,0,0,0,0,0,0
-E14001192,Daventry,4032,Con,Stuart Andrew,0,0,0,0,3,5415.68,0,0
+E14001192,Daventry,4032,Con,Stuart Andrew,0,0,0,0,4,5965.68,0,0
 E14001193,Derby North,5143,Lab,Catherine Atkinson,0,0,3,25000,0,0,0,0
 E14001194,Derby South,5176,Lab,Baggy Shanker,2,68671.51,7,44400,0,0,0,0
 E14001195,Derbyshire Dales,5342,Lab,John Whitby,2,1527.07452054795,0,0,0,0,0,0
@@ -136,63 +136,63 @@ E14001196,Dewsbury and Batley,5268,Ind,Iqbal Mohamed,0,0,3,14630.26,0,0,0,0
 E14001197,Didcot and Wantage,5318,LD,Olly Glover,1,4450,2,65000,1,442.54,2,819.04
 E14001198,Doncaster Central,5178,Lab,Sally Jameson,0,0,2,7000,1,484,0,0
 E14001199,Doncaster East and the Isle of Axholme,5233,Lab,Lee Pitcher,2,7703.94,2,20000,1,960,0,0
-E14001200,Doncaster North,1510,Lab,Ed Miliband,0,0,3,255000,0,0,0,0
+E14001200,Doncaster North,1510,Lab,Ed Miliband,0,0,2,21400,0,0,0,0
 E14001201,Dorking and Horley,5198,LD,Chris Coghlan,1,752.53,15,94405.49,0,0,0,0
 E14001202,Dover and Deal,5266,Lab,Mike Tapp,1,3458.38,5,32050,1,450,3,12715.81
-E14001203,Droitwich and Evesham,4407,Con,Nigel Huddleston,0,0,1,5000,0,0,0,0
-E14001204,Dudley,5274,Lab,Sonia Kumar,1,0,2,6625,0,0,0,0
+E14001203,Droitwich and Evesham,4407,Con,Nigel Huddleston,0,0,1,5000,1,840,0,0
+E14001204,Dudley,5274,Lab,Sonia Kumar,1,0,4,10125,0,0,0,0
 E14001205,Dulwich and West Norwood,4510,Lab,Helen Hayes,0,0,3,9000,0,0,0,0
 E14001206,Dunstable and Leighton Buzzard,5141,Lab,Alex Mayer,0,0,0,0,1,2500,0,0
-E14001207,Ealing Central and Acton,4511,Lab,Dr Rupa Huq,0,0,0,0,3,1660,5,13341.79
+E14001207,Ealing Central and Acton,4511,Lab,Dr Rupa Huq,0,0,0,0,3,1660,5,12411.59
 E14001208,Ealing North,4797,Lab,James Murray,0,0,1,5000,2,1225.7,0,0
-E14001209,Ealing Southall,5075,Lab,Deirdre Costigan,4,1110.07,4,7005.6,2,1265,0,0
-E14001210,Earley and Woodley,5267,Lab,Yuan Yang,4,69467.46,15,92000,1,570,1,920
+E14001209,Ealing Southall,5075,Lab,Deirdre Costigan,4,257.17,4,7005.6,2,1265,0,0
+E14001210,Earley and Woodley,5267,Lab,Yuan Yang,4,69467.46,16,102000,1,570,1,920
 E14001211,Easington,3973,Lab,Grahame Morris,0,0,3,38672,2,850,0,0
 E14001212,East Grinstead and Uckfield,4513,Con,Mims Davies,0,0,2,6000,1,420,0,0
 E14001213,East Ham,163,Lab,Sir Stephen Timms,0,0,2,4000,0,0,0,0
-E14001214,East Hampshire,3969,Con,Damian Hinds,0,0,3,17500,1,435,0,0
-E14001215,East Surrey,4806,Con,Claire Coutinho,1,2000,5,21500,1,7182,0,0
+E14001214,East Hampshire,3969,Con,Damian Hinds,0,0,2,7500,1,435,0,0
+E14001215,East Surrey,4806,Con,Claire Coutinho,1,2000,4,19500,1,7182,0,0
 E14001216,East Thanet,5123,Lab,Ms Polly Billington,0,0,7,35000,1,500,0,0
 E14001217,East Wiltshire,4858,Con,Danny Kruger,0,0,0,0,0,0,0,0
-E14001218,East Worthing and Shoreham,5222,Lab,Tom Rutland,1,1668.51,9,31500,3,4820,1,2215
+E14001218,East Worthing and Shoreham,5222,Lab,Tom Rutland,1,1668.51,9,31500,4,5219.47,1,2215
 E14001219,Eastbourne,5086,LD,Josh Babarinde,0,0,32,78541.62,1,1425.6,0,0
-E14001220,Eastleigh,5040,LD,Liz Jarvis,1,1391.42,2,7000,0,0,0,0
+E14001220,Eastleigh,5040,LD,Liz Jarvis,1,695.71,2,7000,0,0,0,0
 E14001221,Edmonton and Winchmore Hill,4515,Lab,Kate Osamor,0,0,2,7500,0,0,0,0
 E14001222,Ellesmere Port and Bromborough,4418,Lab,Justin Madders,0,0,1,3000,1,388,0,0
 E14001223,Eltham and Chislehurst,165,Lab,Clive Efford,0,0,1,4000,1,400,0,0
-E14001224,Ely and East Cambridgeshire,5182,LD,Charlotte Cane,1,5201.44,6,21500,2,1621.86,0,0
+E14001224,Ely and East Cambridgeshire,5182,LD,Charlotte Cane,1,5851.62,6,21500,2,1621.86,0,0
 E14001225,Enfield North,4822,Lab,Feryal Clark,0,0,1,3500,0,0,0,0
 E14001226,Epping Forest,4853,Con,Dr Neil Hudson,0,0,0,0,0,0,0,0
-E14001227,Epsom and Ewell,5336,LD,Helen Maguire,0,0,4,23425,1,783.9,0,0
+E14001227,Epsom and Ewell,5336,LD,Helen Maguire,0,0,4,23425,2,2283.9,1,2334.27
 E14001228,Erewash,5044,Lab,Adam Thompson,1,798.67,3,16000,0,0,0,0
-E14001229,Erith and Thamesmead,4820,Lab,Ms Abena Oppong-Asare,0,0,1,2000,1,360,0,0
+E14001229,Erith and Thamesmead,4820,Lab,Ms Abena Oppong-Asare,0,0,2,4000,1,360,0,0
 E14001230,Esher and Walton,5299,LD,Monica Harding,0,0,21,91093,1,1347.88,1,2175
-E14001231,Exeter,5064,Lab,Steve Race,0,0,1,2000,4,4769.95,4,3705
+E14001231,Exeter,5064,Lab,Steve Race,0,0,1,2000,4,4769.95,4,3741.2
 E14001232,Exmouth and Exeter East,5347,Con,David Reed,0,0,5,24000,1,550,4,13786.07
-E14001233,Fareham and Waterlooville,4475,Con,Suella Braverman,4,121106.11,3,15200,4,4986.87,2,15865.12
+E14001233,Fareham and Waterlooville,4475,Con,Suella Braverman,4,93403.71,3,15200,4,4986.87,2,15865.12
 E14001234,Farnham and Bordon,5351,Con,Gregory Stafford,1,2334.03,3,11500,1,760,0,0
 E14001235,Faversham and Mid Kent,4527,Con,Helen Whately,0,0,2,4450,2,940.5,0,0
-E14001236,Feltham and Heston,4253,Lab,Seema Malhotra,0,0,9,28838.58,0,0,1,600
+E14001236,Feltham and Heston,4253,Lab,Seema Malhotra,0,0,9,28838.58,0,0,1,1456.32
 E14001237,Filton and Bradley Stoke,5306,Lab,Claire Hazelgrove,0,0,9,58732.27,1,318,0,0
-E14001238,Finchley and Golders Green,5204,Lab,Sarah Sackman,6,25207.9,17,61710,0,0,0,0
-E14001239,Folkestone and Hythe,5067,Lab,Tony Vaughan,3,48621.35,3,11400,0,0,2,5057
-E14001240,Forest of Dean,5323,Lab,Matt Bishop,1,730.59,1,5000,2,880,1,1060
+E14001238,Finchley and Golders Green,5204,Lab,Sarah Sackman,6,25207.9,18,64210,0,0,0,0
+E14001239,Folkestone and Hythe,5067,Lab,Tony Vaughan,3,63817.52,3,11400,0,0,3,5492
+E14001240,Forest of Dean,5323,Lab,Matt Bishop,1,0,1,5000,2,880,1,1060
 E14001241,Frome and East Somerset,5286,LD,Anna Sabine,0,0,7,30552.86,0,0,0,0
 E14001242,Fylde,5072,Con,Mr Andrew Snowden,0,0,3,9500,0,0,0,0
 E14001243,Gainsborough,345,Con,Sir Edward Leigh,0,0,0,0,0,0,1,1958
 E14001244,Gateshead Central and Whickham,5031,Lab,Mark Ferguson,1,1074.32,2,6000,0,0,0,0
-E14001245,Gedling,5146,Lab,Michael Payne,5,26355.0377260274,15,55689.78,1,550,0,0
+E14001245,Gedling,5146,Lab,Michael Payne,5,20834.5147671233,15,55689.78,1,550,0,0
 E14001246,Gillingham and Rainham,5215,Lab,Naushabah Khan,1,1447.21,6,35000,0,0,0,0
 E14001247,Glastonbury and Somerton,4995,LD,Sarah Dyke,1,14680.56,4,22000,0,0,0,0
 E14001248,Gloucester,5349,Lab,Alex McIntyre,1,1659.25,2,25000,0,0,0,0
-E14001249,Godalming and Ash,1572,Con,Sir Jeremy Hunt,2,54920,0,0,6,5206.95,0,0
-E14001250,Goole and Pocklington,373,Con,David Davis,3,34900,0,0,2,7091.76,1,1968
+E14001249,Godalming and Ash,1572,Con,Sir Jeremy Hunt,3,109570,0,0,6,5809.95,0,0
+E14001250,Goole and Pocklington,373,Con,David Davis,3,34900,1,250000,2,7091.76,1,1968
 E14001251,Gorton and Denton,1506,Ind,Andrew Gwynne,0,0,1,2500,0,0,0,0
-E14001252,Gosport,4008,Con,Dame Caroline Dinenage,1,50000,4,19500,3,7192.5,0,0
-E14001253,Grantham and Bourne,4850,Con,Gareth Davies,0,0,2,15000,1,5625,1,9456.86
+E14001252,Gosport,4008,Con,Dame Caroline Dinenage,1,50000,4,19500,4,8367.5,0,0
+E14001253,Grantham and Bourne,4850,Con,Gareth Davies,0,0,0,0,1,5625,2,15405.67
 E14001254,Gravesham,5269,Lab,Dr Lauren Sullivan,2,3107.47,5,34611,0,0,0,0
 E14001255,Great Grimsby and Cleethorpes,4464,Lab,Melanie Onn,0,0,7,41219.6,0,0,1,2200
-E14001256,Great Yarmouth,5158,Ind,Rupert Lowe,7,30870.62,1,20000,2,1000,0,0
+E14001256,Great Yarmouth,5158,Ind,Rupert Lowe,7,34466.43,1,20000,2,1000,0,0
 E14001257,Greenwich and Woolwich,4520,Lab,Matthew Pennycook,0,0,1,10000,0,0,0,0
 E14001258,Guildford,5313,LD,Zöe Franklin,0,0,31,112600,1,1552.86,0,0
 E14001259,Hackney North and Stoke Newington,172,Lab,Ms Diane Abbott,3,25090,5,18000,0,0,0,0
@@ -201,132 +201,132 @@ E14001261,Halesowen,5238,Lab,Alex Ballinger,0,0,3,11300,0,0,0,0
 E14001262,Halifax,5224,Lab,Kate Dearden,1,1475.23,3,9800,1,1206,0,0
 E14001263,Hamble Valley,4803,Con,Paul Holmes,0,0,1,2500,0,0,0,0
 E14001264,Hammersmith and Chiswick,1516,Lab,Andy Slaughter,0,0,0,0,0,0,0,0
-E14001265,Hampstead and Highgate,4518,Lab,Tulip Siddiq,0,0,0,0,2,829,0,0
+E14001265,Hampstead and Highgate,4518,Lab,Tulip Siddiq,0,0,0,0,1,370,0,0
 E14001266,"Harborough, Oadby and Wigston",4679,Con,Neil O'Brien,0,0,0,0,0,0,0,0
 E14001267,Harlow,5237,Lab,Chris Vince,0,0,3,29000,0,0,0,0
 E14001268,Harpenden and Berkhamsted,5201,LD,Victoria Collins,0,0,26,133500,1,1183.9,0,0
 E14001269,Harrogate and Knaresborough,5032,LD,Tom Gordon,0,0,11,48500,1,660,0,0
-E14001270,Harrow East,4005,Con,Bob Blackman,0,0,4,19141,2,1124,1,2143
+E14001270,Harrow East,4005,Con,Bob Blackman,0,0,4,19141,2,1124,3,4230.87
 E14001271,Harrow West,177,Lab,Gareth Thomas,0,0,4,9000,0,0,0,0
-E14001272,Hartlepool,5045,Lab,Mr Jonathan Brash,1,1388.34,8,37500,0,0,0,0
-E14001273,Harwich and North Essex,40,Con,Sir Bernard Jenkin,1,650,2,9818.5,1,600,0,0
+E14001272,Hartlepool,5045,Lab,Mr Jonathan Brash,1,694.17,8,37500,0,0,0,0
+E14001273,Harwich and North Essex,40,Con,Sir Bernard Jenkin,1,650,1,5000,1,600,0,0
 E14001274,Hastings and Rye,5192,Lab,Helena Dollimore,1,7588.42,12,57322.4,2,967.35,3,11567.86
-E14001275,Havant,4484,Con,Alan Mak,0,0,10,54907,0,0,2,1823.9
+E14001275,Havant,4484,Con,Alan Mak,0,0,11,51548.32,1,2085,1,1012.71
 E14001276,Hayes and Harlington,178,Ind,John McDonnell,0,0,6,75569,0,0,0,0
-E14001277,Hazel Grove,5070,LD,Lisa Smart,3,5309.03,23,122239.9,2,1223.69,0,0
+E14001277,Hazel Grove,5070,LD,Lisa Smart,3,3864.25,24,124239.9,2,1223.69,1,64
 E14001278,Hemel Hempstead,5348,Lab,David Taylor,0,0,5,21519,1,578.26,1,5680
 E14001279,Hendon,5360,Lab,David Pinto-Duschinsky,1,42788.63,10,32500,0,0,0,0
-E14001280,Henley and Thame,5296,LD,Freddie van Mierlo,3,18062.19,11,66600,2,2025.85,0,0
-E14001281,Hereford and South Herefordshire,3991,Con,Jesse Norman,2,7473.08,7,35000,0,0,0,0
+E14001280,Henley and Thame,5296,LD,Freddie van Mierlo,3,18297.61,11,66600,2,2025.85,0,0
+E14001281,Hereford and South Herefordshire,3991,Con,Jesse Norman,2,11860.35,7,35000,0,0,0,0
 E14001282,Herne Bay and Sandwich,87,Con,Sir Roger Gale,0,0,0,0,0,0,0,0
 E14001283,Hertford and Stortford,5187,Lab,Josh Dean,0,0,0,0,0,0,0,0
-E14001284,Hertsmere,4441,Con,Sir Oliver Dowden,2,120000,4,22000,3,4160,2,19495.99
+E14001284,Hertsmere,4441,Con,Sir Oliver Dowden,2,130000,1,5000,3,4160,3,21571.41
 E14001285,Hexham,5081,Lab,Joe Morris,0,0,7,20250,1,1660,0,0
 E14001286,Heywood and Middleton North,5084,Lab,Mrs Elsie Blundell,1,750.04,2,14000,1,850.83,0,0
-E14001287,High Peak,5115,Lab,Jon Pearce,0,0,5,16750,0,0,3,7150
+E14001287,High Peak,5115,Lab,Jon Pearce,0,0,6,19250,0,0,4,9750
 E14001288,Hinckley and Bosworth,4781,Con,Dr Luke Evans,0,0,2,10000,0,0,0,0
 E14001289,Hitchin,5000,Lab,Alistair Strathern,0,0,1,1000,0,0,0,0
-E14001290,Holborn and St Pancras,4514,Lab,Sir Keir Starmer,2,842.67,0,0,22,67747.8,0,0
+E14001290,Holborn and St Pancras,4514,Lab,Sir Keir Starmer,2,842.67,0,0,19,47914.8,0,0
 E14001291,Honiton and Sidmouth,4942,LD,Richard Foord,0,0,3,12000,0,0,1,982.68
 E14001292,Hornchurch and Upminster,4647,Con,Julia Lopez,0,0,0,0,1,14350.38,0,0
 E14001293,Hornsey and Friern Barnet,4523,Lab,Catherine West,0,0,0,0,0,0,0,0
 E14001294,Horsham,5329,LD,John Milne,2,20109.3,2,5000,0,0,0,0
-E14001295,Houghton and Sunderland South,4046,Lab,Bridget Phillipson,1,500,5,27500,2,1582.54,0,0
-E14001296,Hove and Portslade,4505,Lab,Peter Kyle,0,0,3,74280,2,1144,0,0
+E14001295,Houghton and Sunderland South,4046,Lab,Bridget Phillipson,1,500,0,0,2,1582.54,0,0
+E14001296,Hove and Portslade,4505,Lab,Peter Kyle,0,0,2,69280,2,1144,0,0
 E14001297,Huddersfield,5289,Lab,Harpreet Uppal,0,0,0,0,0,0,0,0
 E14001298,Huntingdon,5089,Con,Ben Obese-Jecty,0,0,0,0,1,2500,1,2650
 E14001299,Hyndburn,5117,Lab,Sarah Smith,0,0,1,2000,0,0,0,0
-E14001300,Ilford North,4504,Lab,Wes Streeting,2,8558.21,9,89000,3,3160,0,0
+E14001300,Ilford North,4504,Lab,Wes Streeting,1,358.21,9,89000,2,2160,0,0
 E14001301,Ilford South,5227,Lab,Jas Athwal,1,400,0,0,1,450,0,0
-E14001302,Ipswich,5131,Lab,Jack Abbott,0,0,9,56727.3,2,1380,0,0
-E14001303,Isle of Wight East,5255,Con,Joe Robertson,2,11195.19,1,5000,0,0,0,0
+E14001302,Ipswich,5131,Lab,Jack Abbott,0,0,9,56727.3,4,3635,0,0
+E14001303,Isle of Wight East,5255,Con,Joe Robertson,2,10093.56,1,5000,0,0,0,0
 E14001304,Isle of Wight West,5144,Lab,Mr Richard Quigley,0,0,0,0,1,651,0,0
-E14001305,Islington North,185,Ind,Jeremy Corbyn,0,0,6,88631.29,11,57341.35,8,12556.84
+E14001305,Islington North,185,Ind,Jeremy Corbyn,0,0,6,88631.29,11,54749.68,6,11430.92
 E14001306,Islington South and Finsbury,1536,Lab,Emily Thornberry,3,3250,0,0,1,3120,1,1850
-E14001307,Jarrow and Gateshead East,4783,Lab,Kate Osborne,0,0,4,22000,0,0,0,0
+E14001307,Jarrow and Gateshead East,4783,Lab,Kate Osborne,0,0,4,22000,1,350,0,0
 E14001308,Keighley and Ilkley,4861,Con,Robbie Moore,0,0,5,13926.11,1,450,0,0
-E14001309,Kenilworth and Southam,1560,Con,Sir Jeremy Wright,1,48000,4,16000,0,0,0,0
+E14001309,Kenilworth and Southam,1560,Con,Sir Jeremy Wright,1,0,4,16000,0,0,0,0
 E14001310,Kensington and Bayswater,5229,Lab,Joe Powell,1,11054.89,15,115010,0,0,0,0
 E14001311,Kettering,5331,Lab,Rosie Wrighting,0,0,4,11500,0,0,0,0
-E14001312,Kingston and Surbiton,188,LD,Ed Davey,2,14500,13,75875,2,1382,0,0
+E14001312,Kingston and Surbiton,188,LD,Ed Davey,2,14500,8,51375,2,1382,0,0
 E14001313,Kingston upon Hull East,4030,Lab,Karl Turner,0,0,1,5000,0,0,0,0
 E14001314,Kingston upon Hull North and Cottingham,1533,Lab,Dame Diana Johnson,0,0,0,0,0,0,0,0
 E14001315,Kingston upon Hull West and Haltemprice,4645,Lab,Emma Hardy,0,0,4,17000,0,0,0,0
 E14001316,Kingswinford and South Staffordshire,4384,Con,Mike Wood,0,0,3,7750,0,0,0,0
-E14001317,Knowsley,5038,Lab,Anneliese Midgley,1,2279,4,9650,3,2670,0,0
+E14001317,Knowsley,5038,Lab,Anneliese Midgley,1,2279,4,9650,5,4870,0,0
 E14001318,Lancaster and Wyre,4436,Lab,Cat Smith,0,0,7,23250,1,350,1,2101.41
-E14001319,Leeds Central and Headingley,4658,Lab,Alex Sobel,0,0,0,0,7,5174.9,4,7926.48
+E14001319,Leeds Central and Headingley,4658,Lab,Alex Sobel,0,0,0,0,6,3458.9,4,7926.48
 E14001320,Leeds East,4493,Lab,Richard Burgon,0,0,2,15000,0,0,0,0
 E14001321,Leeds North East,415,Lab,Fabian Hamilton,0,0,0,0,0,0,4,4375.82
 E14001322,Leeds North West,5260,Lab,Katie White,0,0,6,34000,1,1400,0,0
 E14001323,Leeds South,413,Lab,Hilary Benn,0,0,0,0,0,0,0,0
-E14001324,Leeds South West and Morley,5166,Lab,Mark Sewards,1,1783.54,4,32500,0,0,1,700
-E14001325,Leeds West and Pudsey,4031,Lab,Rachel Reeves,1,0,14,229940.02,3,1141.69,0,0
-E14001326,Leicester East,5068,Con,Shivani Raja,0,0,3,8901,0,0,2,3669.79
+E14001324,Leeds South West and Morley,5166,Lab,Mark Sewards,1,0,4,32500,0,0,3,4331
+E14001325,Leeds West and Pudsey,4031,Lab,Rachel Reeves,1,0,12,193670.8,3,1141.69,0,0
+E14001326,Leicester East,5068,Con,Shivani Raja,0,0,3,8901,0,0,2,3615.79
 E14001327,Leicester South,5120,Ind,Shockat Adam,3,0,14,63485,0,0,1,2090.64
 E14001328,Leicester West,4026,Lab,Liz Kendall,0,0,1,7500,0,0,0,0
 E14001329,Leigh and Atherton,4673,Lab,Jo Platt,1,541.98,1,9000,0,0,1,2200
 E14001330,Lewes,5265,LD,James MacCleary,2,16930.26,14,57060,2,2118.5,1,432.02
 E14001331,Lewisham East,4698,Lab,Janet Daby,0,0,0,0,0,0,0,0
 E14001332,Lewisham North,4491,Lab,Vicky Foxcroft,0,0,0,0,0,0,1,4000
-E14001333,Lewisham West and East Dulwich,4620,Lab,Ellie Reeves,0,0,0,0,0,0,0,0
+E14001333,Lewisham West and East Dulwich,4620,Lab,Ellie Reeves,0,0,0,0,1,760,0,0
 E14001334,Leyton and Wanstead,5054,Lab,Mr Calvin Bailey,0,0,1,10000,4,1486,0,0
 E14001335,Lichfield,5126,Lab,Dave Robertson,0,0,1,2000,0,0,0,0
 E14001336,Lincoln,5148,Lab,Mr Hamish Falconer,0,0,11,52600,0,0,2,9056
 E14001337,Liverpool Garston,483,Lab,Maria Eagle,0,0,1,3000,0,0,0,0
-E14001338,Liverpool Riverside,4824,Lab,Kim Johnson,0,0,2,8000,2,1396,2,4613.19
+E14001338,Liverpool Riverside,4824,Lab,Kim Johnson,0,0,2,8000,1,900,2,4613.19
 E14001339,Liverpool Walton,4651,Lab,Dan Carden,2,12000,2,7000,5,3381,3,4466.13
-E14001340,Liverpool Wavertree,4828,Lab,Paula Barker,0,0,2,8000,0,0,0,0
+E14001340,Liverpool Wavertree,4828,Lab,Paula Barker,0,0,2,8000,0,0,1,6745.12
 E14001341,Liverpool West Derby,4831,Lab,Ian Byrne,0,0,6,17450,1,900,0,0
 E14001342,Loughborough,5259,Lab,Dr Jeevun Sandher,0,0,6,48948,0,0,0,0
-E14001343,Louth and Horncastle,4399,Con,Victoria Atkins,0,0,1,5000,1,450,0,0
+E14001343,Louth and Horncastle,4399,Con,Victoria Atkins,0,0,1,5000,2,1170,0,0
 E14001344,Lowestoft,5156,Lab,Jess Asato,0,0,10,55205,1,750,0,0
 E14001345,Luton North,4777,Lab,Sarah Owen,0,0,1,5000,0,0,0,0
 E14001346,Luton South and South Bedfordshire,4873,Lab,Rachel Hopkins,0,0,1,7500,0,0,0,0
-E14001347,Macclesfield,5287,Lab,Tim Roca,1,5000,5,21000,0,0,0,0
+E14001347,Macclesfield,5287,Lab,Tim Roca,1,0,5,21000,0,0,0,0
 E14001348,Maidenhead,5343,LD,Mr Joshua Reynolds,2,18170.16,1,7000,1,1552.86,0,0
 E14001349,Maidstone and Malling,4018,Con,Helen Grant,0,0,2,7500,6,4631,0,0
-E14001350,Makerfield,5060,Lab,Josh Simons,2,4340.33,3,59500,4,2062,0,0
-E14001351,Maldon,39,Con,Sir John Whittingdale,0,0,1,5000,3,7619.94,1,1850
+E14001350,Makerfield,5060,Lab,Josh Simons,2,4340.33,4,64500,4,2062,0,0
+E14001351,Maldon,39,Con,Sir John Whittingdale,0,0,1,5000,4,11219.94,1,1850
 E14001352,Manchester Central,4263,Lab,Lucy Powell,0,0,0,0,5,2134,0,0
 E14001353,Manchester Rusholme,4671,Lab,Afzal Khan,0,0,2,3900,0,0,0,0
-E14001354,Manchester Withington,4456,Lab,Jeff Smith,0,0,1,2000,3,2856.45,0,0
-E14001355,Mansfield,5194,Lab,Steve Yemm,1,2230.77,8,37921.2,0,0,0,0
+E14001354,Manchester Withington,4456,Lab,Jeff Smith,0,0,1,2000,2,1058.45,0,0
+E14001355,Mansfield,5194,Lab,Steve Yemm,1,2230.77,9,41671.2,0,0,0,0
 E14001356,Melksham and Devizes,5214,LD,Brian Mathew,1,15869.04,2,10000,2,3280,1,2052.08
 E14001357,Melton and Syston,4362,Con,Edward Argar,0,0,1,5000,0,0,0,0
 E14001358,Meriden and Solihull East,4818,Con,Saqib Bhatti,0,0,0,0,3,3931,1,4954.41
 E14001359,Mid Bedfordshire,5100,Con,Blake Stephenson,3,16618.83,3,6400,2,797,0,0
-E14001360,Mid Buckinghamshire,4778,Con,Greg Smith,0,0,3,12000,6,9089.6,0,0
+E14001360,Mid Buckinghamshire,4778,Con,Greg Smith,0,0,3,12000,7,9679.6,0,0
 E14001361,Mid Cheshire,5195,Lab,Andrew Cooper,2,3036.46,2,12000,0,0,0,0
 E14001362,Mid Derbyshire,5256,Lab,Jonathan Davies,1,1569.29,0,0,0,0,0,0
 E14001363,Mid Dorset and North Poole,5327,LD,Vikki Slade,2,15143.7589041096,4,22625,1,1552.86,0,0
 E14001364,Mid Leicestershire,5330,Con,Mr Peter Bedford,1,10067.5,0,0,2,3335,0,0
-E14001365,Mid Norfolk,4020,Con,George Freeman,10,148500,0,0,1,1000,0,0
+E14001365,Mid Norfolk,4020,Con,George Freeman,10,153000,0,0,1,1000,0,0
 E14001366,Mid Sussex,5283,LD,Alison Bennett,1,950,18,42230,2,1867.2,0,0
 E14001367,Middlesbrough and Thornaby East,4269,Lab,Andy McDonald,0,0,5,25000,0,0,0,0
 E14001368,Middlesbrough South and East Cleveland,5147,Lab,Luke Myer,0,0,3,21000,0,0,0,0
 E14001369,Milton Keynes Central,5139,Lab,Emily Darlington,1,12299.16,1,2000,1,760,0,0
-E14001370,Milton Keynes North,5118,Lab,Chris Curtis,1,4800,4,25500,2,2550,0,0
+E14001370,Milton Keynes North,5118,Lab,Chris Curtis,1,4800,4,25500,3,4785,0,0
 E14001371,Mitcham and Morden,193,Lab,Dame Siobhain McDonagh,0,0,0,0,1,1200000,0,0
-E14001372,Morecambe and Lunesdale,5225,Lab,Lizzi Collinge,1,2240.14,1,15000,0,0,0,0
+E14001372,Morecambe and Lunesdale,5225,Lab,Lizzi Collinge,1,2240.14,1,15000,1,466.49,0,0
 E14001373,New Forest East,54,Con,Sir Julian Lewis,0,0,0,0,0,0,0,0
 E14001374,New Forest West,55,Con,Sir Desmond Swayne,0,0,0,0,0,0,0,0
-E14001375,Newark,4320,Con,Robert Jenrick,1,7500,61,804026.71,0,0,0,0
+E14001375,Newark,4320,Con,Robert Jenrick,1,7500,60,804026.71,0,0,0,0
 E14001376,Newbury,5310,LD,Mr Lee Dillon,1,11587.92,3,36000,1,1552.86,0,0
-E14001377,Newcastle upon Tyne Central and West,4124,Lab,Chi Onwurah,0,0,3,35302.5,6,6583.23,0,0
+E14001377,Newcastle upon Tyne Central and West,4124,Lab,Dame Chi Onwurah,0,0,3,35302.5,7,7083.23,0,0
 E14001378,Newcastle upon Tyne East and Wallsend,4126,Lab,Mary Glindon,0,0,1,2000,0,0,0,0
-E14001379,Newcastle upon Tyne North,4125,Lab,Catherine McKinnell,1,1000,0,0,1,2000,0,0
+E14001379,Newcastle upon Tyne North,4125,Lab,Catherine McKinnell,0,0,0,0,1,2000,0,0
 E14001380,Newcastle-under-Lyme,5168,Lab,Adam Jogee,0,0,9,58100,0,0,1,2653.58
 E14001381,Newton Abbot,5111,LD,Martin Wrigley,3,27888.36,0,0,1,1029.62,0,0
 E14001382,Newton Aycliffe and Spennymoor,5080,Lab,Alan Strickland,0,0,2,7000,0,0,0,0
 E14001383,Normanton and Hemsworth,410,Lab,Jon Trickett,0,0,3,14000,0,0,0,0
-E14001384,North Bedfordshire,3912,Con,Richard Fuller,3,51065.0684931507,2,7000,1,1065,0,0
-E14001385,North Cornwall,5350,LD,Ben Maguire,1,15441.74,3,46795,1,1310.75,0,0
+E14001384,North Bedfordshire,3912,Con,Richard Fuller,3,52215.7534246575,2,7000,1,1065,0,0
+E14001385,North Cornwall,5350,LD,Ben Maguire,1,7720.87,3,46795,1,1310.75,0,0
 E14001386,North Cotswolds,249,Con,Sir Geoffrey Clifton-Brown,1,47111.05,0,0,0,0,1,3855
-E14001387,North Devon,5138,LD,Ian Roome,4,34478.18,3,21000,1,1310.75,0,0
+E14001387,North Devon,5138,LD,Ian Roome,4,30407.11,3,21000,1,1310.75,0,0
 E14001388,North Dorset,4494,Con,Simon Hoare,0,0,1,4232,0,0,0,0
 E14001389,North Durham,5112,Lab,Luke Akehurst,2,1084.62,4,19500,0,0,1,2500
-E14001390,North East Cambridgeshire,4095,Con,Steve Barclay,1,8000,4,31768.72,0,0,0,0
+E14001390,North East Cambridgeshire,4095,Con,Steve Barclay,1,12000,4,31768.72,0,0,0,0
 E14001391,North East Derbyshire,5258,Lab,Louise Jones,1,423.08,4,35000,0,0,0,0
 E14001392,North East Hampshire,5263,LD,Alex Brewer,0,0,3,5500,0,0,0,0
 E14001393,North East Hertfordshire,5244,Lab,Chris Hinchliff,1,56.23,0,0,0,0,0,0
@@ -334,45 +334,45 @@ E14001394,North East Somerset and Hanham,221,Ind,Dan Norris,1,81492.58,11,66800,
 E14001395,North Herefordshire,5249,Green,Ellie Chowns,1,974.67,12,75441.4,3,706.6,0,0
 E14001396,North Norfolk,5164,LD,Steff Aquarone,2,13171,12,38150.69,0,0,0,0
 E14001397,North Northumberland,5218,Lab,David Smith,0,0,1,2000,0,0,0,0
-E14001398,North Shropshire,4934,LD,Helen Morgan,0,0,14,43950,0,0,0,0
+E14001398,North Shropshire,4934,LD,Helen Morgan,0,0,12,41950,0,0,0,0
 E14001399,North Somerset,5312,Lab,Sadik Al-Hassan,1,1143.94,1,6000,3,1759,0,0
-E14001400,North Warwickshire and Bedworth,5065,Lab,Rachel Taylor,2,436.54,3,21000,2,1290,1,3199.8
+E14001400,North Warwickshire and Bedworth,5065,Lab,Rachel Taylor,2,0,3,21000,2,1290,1,3199.8
 E14001401,North West Cambridgeshire,5308,Lab,Sam Carling,1,1132.98,0,0,0,0,0,0
-E14001402,North West Essex,4597,Con,Mrs Kemi Badenoch,0,0,63,623674.95,1,14350.38,0,0
+E14001402,North West Essex,4597,Con,Mrs Kemi Badenoch,0,0,64,773674.95,1,14350.38,0,0
 E14001403,North West Hampshire,4495,Con,Kit Malthouse,0,0,2,7500,0,0,0,0
 E14001404,North West Leicestershire,5149,Lab,Amanda Hack,2,2356.64,1,5000,2,845,0,0
-E14001405,North West Norfolk,4787,Con,James Wild,0,0,2,5500,1,350,0,0
+E14001405,North West Norfolk,4787,Con,James Wild,0,0,2,5500,0,0,0,0
 E14001406,Northampton North,5333,Lab,Lucy Rigby,1,6477.81,7,37636.6,2,1133,2,10790.89
-E14001407,Northampton South,5316,Lab,Mike Reader,0,0,5,28891.06,5,4083.76,1,2400
+E14001407,Northampton South,5316,Lab,Mike Reader,0,0,5,28891.06,9,5676.64,1,2400
 E14001408,Norwich North,5133,Lab,Alice Macdonald,0,0,10,48733,0,0,0,0
-E14001409,Norwich South,4500,Lab,Clive Lewis,4,1768.95,17,129274.08,1,400,2,1974.15
+E14001409,Norwich South,4500,Lab,Clive Lewis,4,2068.95,18,139262,1,400,2,1974.15
 E14001410,Nottingham East,4869,Lab,Nadia Whittome,0,0,2,7000,0,0,0,0
-E14001411,Nottingham North and Kimberley,4641,Lab,Alex Norris,0,0,1,2000,2,950,0,0
+E14001411,Nottingham North and Kimberley,4641,Lab,Alex Norris,0,0,1,2000,1,350,0,0
 E14001412,Nottingham South,4029,Lab,Lilian Greenwood,0,0,1,2000,0,0,0,0
-E14001413,Nuneaton,5036,Lab,Jodie Gosling,1,357.9,3,18000,0,0,0,0
-E14001414,Old Bexley and Sidcup,4932,Con,Mr Louie French,0,0,0,0,5,4436,0,0
+E14001413,Nuneaton,5036,Lab,Jodie Gosling,1,0,3,18000,0,0,0,0
+E14001414,Old Bexley and Sidcup,4932,Con,Mr Louie French,0,0,0,0,8,6506,0,0
 E14001415,Oldham East and Saddleworth,4212,Lab,Debbie Abrahams,0,0,2,3900,0,0,0,0
-E14001416,"Oldham West, Chadderton and Royton",4569,Lab,Jim McMahon,0,0,1,2000,0,0,0,0
+E14001416,"Oldham West, Chadderton and Royton",4569,Lab,Jim McMahon,0,0,1,2000,2,690,0,0
 E14001417,Orpington,4798,Con,Gareth Bacon,0,0,0,0,0,0,0,0
-E14001418,Ossett and Denby Dale,5236,Lab,Jade Botterill,1,2872.29,5,40500,0,0,0,0
-E14001419,Oxford East,4657,Lab,Anneliese Dodds,3,5653.42,0,0,1,450,0,0
-E14001420,Oxford West and Abingdon,4656,LD,Layla Moran,1,17637,11,22179.61,1,392,1,1038.69
+E14001418,Ossett and Denby Dale,5236,Lab,Jade Botterill,1,0,5,40500,1,496,0,0
+E14001419,Oxford East,4657,Lab,Anneliese Dodds,3,5653.42,0,0,0,0,0,0
+E14001420,Oxford West and Abingdon,4656,LD,Layla Moran,1,18078,11,22179.61,1,392,1,1038.69
 E14001421,Peckham,5099,Lab,Miatta Fahnbulleh,0,0,4,37000,0,0,0,0
 E14001422,Pendle and Clitheroe,5264,Lab,Jonathan Hinder,0,0,3,28250,0,0,0,0
 E14001423,Penistone and Stocksbridge,5098,Lab,Dr Marie Tidball,0,0,8,52300,1,2250,0,0
 E14001424,Penrith and Solway,5124,Lab,Markus Campbell-Savours,0,0,2,15000,0,0,0,0
 E14001425,Peterborough,5243,Lab,Andrew Pakes,1,2645.64,17,74025,0,0,0,0
-E14001426,Plymouth Moor View,5174,Lab,Fred Thomas,0,0,26,107992.18,3,1389.95,3,7879.76
-E14001427,Plymouth Sutton and Devonport,4682,Lab,Luke Pollard,0,0,3,8584,4,1143.65,0,0
-E14001428,"Pontefract, Castleford and Knottingley",420,Lab,Yvette Cooper,1,1779.6,3,91592.24,1,3555.6,0,0
-E14001429,Poole,5359,Lab,Neil Duncan-Jordan,1,678.72,3,16000,1,571.42,0,0
-E14001430,Poplar and Limehouse,4790,Ind,Apsana Begum,0,0,5,21000,0,0,1,2923.43
+E14001426,Plymouth Moor View,5174,Lab,Fred Thomas,0,0,26,107992.18,3,1389.95,4,8204.09
+E14001427,Plymouth Sutton and Devonport,4682,Lab,Luke Pollard,0,0,3,8584,3,743.65,0,0
+E14001428,"Pontefract, Castleford and Knottingley",420,Lab,Yvette Cooper,1,854.16,3,91592.24,1,3555.6,0,0
+E14001429,Poole,5359,Lab,Neil Duncan-Jordan,1,0,3,16000,1,571.42,0,0
+E14001430,Poplar and Limehouse,4790,Ind,Apsana Begum,0,0,5,21000,0,0,1,1944.92
 E14001431,Portsmouth North,5294,Lab,Amanda Martin,1,2742.18,4,12000,3,2155,1,1360
 E14001432,Portsmouth South,4653,Lab,Stephen Morgan,0,0,0,0,3,1780,0,0
 E14001433,Preston,473,Lab,Sir Mark Hendrick,0,0,2,4430,1,1400,0,0
 E14001434,Putney,4788,Lab,Fleur Anderson,0,0,1,5150,0,0,0,0
-E14001435,Queen's Park and Maida Vale,5305,Lab,Georgia Gould,2,6427.13,3,6018.52,0,0,0,0
-E14001436,Rawmarsh and Conisbrough,400,Lab,John Healey,0,0,5,65940.3,0,0,0,0
+E14001435,Queen's Park and Maida Vale,5305,Lab,Georgia Gould,2,1564.88,3,6018.52,0,0,0,0
+E14001436,Rawmarsh and Conisbrough,400,Lab,John Healey,0,0,4,26723.56,0,0,0,0
 E14001437,Rayleigh and Wickford,1444,Con,Mr Mark Francois,1,0,5,22500,0,0,2,4222.95
 E14001438,Reading Central,4654,Lab,Matt Rodda,0,0,3,15675,0,0,0,0
 E14001439,Reading West and Mid Berkshire,5337,Lab,Olivia Bailey,1,2762.23,7,21500,2,3300,0,0
@@ -380,176 +380,176 @@ E14001440,Redcar,4449,Lab,Anna Turley,1,2950.35,7,49000,1,900,0,0
 E14001441,Redditch,5109,Lab,Chris Bloore,1,2500,4,20500,0,0,0,0
 E14001442,Reigate,5297,Con,Rebecca Paul,1,14409.96,1,5000,1,551,0,0
 E14001443,Ribble Valley,5228,Lab,Maya Ellis,1,677.86,1,5000,1,302,0,0
-E14001444,Richmond and Northallerton,4483,Con,Rishi Sunak,2,160750,0,0,2,11496,0,0
-E14001445,Richmond Park,4591,LD,Sarah Olney,0,0,7,18800,1,1050,0,0
+E14001444,Richmond and Northallerton,4483,Con,Rishi Sunak,2,505661.44,0,0,2,11496,0,0
+E14001445,Richmond Park,4591,LD,Sarah Olney,0,0,6,13800,0,0,0,0
 E14001446,Rochdale,5071,Lab,Paul Waugh,0,0,2,9000,0,0,1,1958
 E14001447,Rochester and Strood,5298,Lab,Lauren Edwards,1,1335.47,5,37000,0,0,0,0
-E14001448,Romford,1447,Con,Andrew Rosindell,0,0,7,29800,2,8728.6,2,3441
+E14001448,Romford,1447,Con,Andrew Rosindell,0,0,7,29800,2,8728.6,3,5351
 E14001449,Romsey and Southampton North,4048,Con,Caroline Nokes,0,0,1,17550,1,1400,0,0
 E14001450,Rossendale and Darwen,5134,Lab,Andy MacNae,1,5436.92,2,15000,0,0,0,0
 E14001451,Rother Valley,5082,Lab,Jake Richards,1,52070,5,30500,1,1250,1,2200
-E14001452,Rotherham,4267,Lab,Sarah Champion,0,0,0,0,0,0,3,18775
+E14001452,Rotherham,4267,Lab,Sarah Champion,0,0,0,0,0,0,4,24475
 E14001453,Rugby,5127,Lab,John Slinger,0,0,1,15000,0,0,1,7200
 E14001454,"Ruislip, Northwood and Pinner",4872,Con,David Simmonds,0,0,2,23088,1,1500,0,0
 E14001455,Runcorn and Helsby,5403,RUK,Sarah Pochin,0,0,0,0,0,0,0,0
-E14001456,Runnymede and Weybridge,4785,Con,Dr Ben Spencer,0,0,2,3460,4,5195,1,7634
-E14001457,Rushcliffe,5047,Lab,James Naish,3,9623,3,18000,0,0,0,0
+E14001456,Runnymede and Weybridge,4785,Con,Dr Ben Spencer,0,0,1,2500,4,5195,1,7634
+E14001457,Rushcliffe,5047,Lab,James Naish,3,8023,3,18000,0,0,0,0
 E14001458,Rutland and Stamford,4805,Con,Alicia Kearns,2,1000,3,12500,1,582,3,20117.76
 E14001459,Salford,4396,Lab,Rebecca Long Bailey,0,0,6,52188,0,0,0,0
 E14001460,Salisbury,4051,Con,John Glen,0,0,0,0,0,0,0,0
 E14001461,Scarborough and Whitby,5254,Lab,Alison Hume,1,15239.51,10,43625,0,0,0,0
 E14001462,Scunthorpe,4056,Lab,Sir Nicholas Dakin,0,0,5,28000,0,0,0,0
-E14001463,Sefton Central,4061,Lab,Bill Esterson,0,0,2,12000,2,1800,1,1098.66
-E14001464,Selby,4993,Lab,Keir Mather,0,0,4,16250,1,576,0,0
-E14001465,Sevenoaks,4780,Con,Laura Trott,0,0,4,50770,6,4900,0,0
-E14001466,Sheffield Brightside and Hillsborough,4571,Lab,Gill Furniss,0,0,0,0,0,0,0,0
+E14001463,Sefton Central,4061,Lab,Bill Esterson,0,0,2,12000,1,900,1,1098.66
+E14001464,Selby,4993,Lab,Keir Mather,0,0,2,8000,1,576,0,0
+E14001465,Sevenoaks,4780,Con,Laura Trott,0,0,5,60770,6,4900,0,0
+E14001466,Sheffield Brightside and Hillsborough,4571,Lab,Gill Furniss,0,0,0,0,0,0,1,6745.12
 E14001467,Sheffield Central,5142,Lab,Abtisam Mohamed,0,0,1,5000,1,2000,1,920
 E14001468,Sheffield Hallam,4864,Lab,Olivia Blake,0,0,4,47460,0,0,0,0
-E14001469,Sheffield Heeley,4473,Lab,Louise Haigh,0,0,3,53329.63,0,0,0,0
+E14001469,Sheffield Heeley,4473,Lab,Louise Haigh,0,0,2,48329.63,0,0,0,0
 E14001470,Sheffield South East,394,Lab,Mr Clive Betts,0,0,0,0,0,0,0,0
-E14001471,Sherwood Forest,5226,Lab,Michelle Welsh,2,7594.84643835616,6,23000,1,550,0,0
+E14001471,Sherwood Forest,5226,Lab,Michelle Welsh,2,5971.15328767123,6,23000,1,550,0,0
 E14001472,Shipley,5281,Lab,Anna Dixon,1,1450,3,44000,0,0,1,5466.63
 E14001473,Shrewsbury,5171,Lab,Julia Buckley,0,0,3,11600,0,0,0,0
 E14001474,Sittingbourne and Sheppey,5300,Lab,Kevin McKenna,1,1198.26,1,500,0,0,0,0
 E14001475,Skipton and Ripon,4118,Con,Sir Julian Smith,1,0,3,10000.01,2,1125,3,2140.69
-E14001476,Sleaford and North Hykeham,4592,Con,Dr Caroline Johnson,1,25917,0,0,1,700,0,0
+E14001476,Sleaford and North Hykeham,4592,Con,Dr Caroline Johnson,1,25917,0,0,0,0,0,0
 E14001477,Slough,4638,Lab,Mr Tanmanjeet Singh Dhesi,0,0,11,41500,1,895,3,6148.6
 E14001478,Smethwick,5059,Lab,Gurinder Singh Josan,0,0,0,0,0,0,0,0
-E14001479,Solihull West and Shirley,5197,Con,Dr Neil Shastri-Hurst,2,76361.86,5,8133.92,0,0,1,5254.93
+E14001479,Solihull West and Shirley,5197,Con,Dr Neil Shastri-Hurst,2,80890.57,5,8133.92,0,0,1,5254.93
 E14001480,South Basildon and East Thurrock,5361,RUK,James McMurdock,1,2136.35,0,0,0,0,0,0
-E14001481,South Cambridgeshire,5078,LD,Pippa Heylings,2,3676,14,61698.96,1,600,3,6298
+E14001481,South Cambridgeshire,5078,LD,Pippa Heylings,2,2101.5,14,61698.96,1,600,3,6298
 E14001482,South Cotswolds,5352,LD,Dr Roz Savage,0,0,11,44816,0,0,0,0
 E14001483,South Derbyshire,5150,Lab,Samantha Niblett,0,0,7,75500,1,3120,0,0
-E14001484,South Devon,5216,LD,Caroline Voaden,0,0,17,51709,2,2552.86,0,0
-E14001485,South Dorset,5217,Lab,Lloyd Hatton,2,4098.78,1,1932,0,0,0,0
-E14001486,South East Cornwall,5353,Lab,Anna Gelderd,1,0,1,2000,0,0,0,0
+E14001484,South Devon,5216,LD,Caroline Voaden,0,0,17,51709,3,2992.86,0,0
+E14001485,South Dorset,5217,Lab,Lloyd Hatton,2,0,1,1932,0,0,0,0
+E14001486,South East Cornwall,5353,Lab,Anna Gelderd,1,0,1,2000,0,0,1,1310
 E14001487,South Holland and The Deepings,350,Con,Sir John Hayes,4,96563.6,2,22100,0,0,0,0
-E14001488,South Leicestershire,4439,Con,Alberto Costa,0,0,3,8833.8,1,700,0,0
+E14001488,South Leicestershire,4439,Con,Alberto Costa,0,0,2,7500,1,700,0,0
 E14001489,South Norfolk,5205,Lab,Ben Goldsborough,0,0,1,2610,0,0,0,0
-E14001490,South Northamptonshire,5355,Con,Sarah Bool,1,4825.59,2,7200,1,3636,0,0
+E14001490,South Northamptonshire,5355,Con,Sarah Bool,1,4825.59,2,7200,3,6169,0,0
 E14001491,South Ribble,5074,Lab,Mr Paul Foster,1,4522.52,3,22000,0,0,1,474.79
 E14001492,South Shields,4277,Lab,Emma Lewell,0,0,0,0,0,0,1,435.28
-E14001493,South Shropshire,4742,Con,Stuart Anderson,0,0,3,17360,1,102,0,0
-E14001494,South Suffolk,4519,Con,James Cartlidge,0,0,0,0,0,0,0,0
-E14001495,South West Devon,5301,Con,Rebecca Smith,2,14490,2,17000,5,2377.95,0,0
+E14001493,South Shropshire,4742,Con,Stuart Anderson,0,0,1,6000,1,102,0,0
+E14001494,South Suffolk,4519,Con,James Cartlidge,0,0,1,5000,0,0,0,0
+E14001495,South West Devon,5301,Con,Rebecca Smith,2,13227,2,17000,5,2377.95,0,0
 E14001496,South West Hertfordshire,4804,Con,Mr Gagan Mohindra,0,0,6,11963.85,0,0,0,0
 E14001497,South West Norfolk,5338,Lab,Terry Jermy,1,303.49,0,0,0,0,0,0
-E14001498,South West Wiltshire,1466,Con,Dr Andrew Murrison,1,8007.81,1,2000,0,0,0,0
-E14001499,Southampton Itchen,5270,Lab,Darren Paffey,1,3037.37,7,27705.85,0,0,0,0
-E14001500,Southampton Test,5271,Lab,Satvir Kaur,2,6728.74794520548,8,35000,0,0,2,9906
+E14001498,South West Wiltshire,1466,Con,Dr Andrew Murrison,1,22180.97,1,2000,0,0,0,0
+E14001499,Southampton Itchen,5270,Lab,Darren Paffey,1,0,7,27705.85,0,0,0,0
+E14001500,Southampton Test,5271,Lab,Satvir Kaur,2,4240.4301369863,8,35000,0,0,2,9906
 E14001501,Southend East and Rochford,5097,Lab,Mr Bayo Alaba,1,0,7,36133.53,0,0,0,0
 E14001502,Southend West and Leigh,5106,Lab,David Burton-Sampson,1,747.5,1,5000,0,0,0,0
-E14001503,Southgate and Wood Green,4610,Lab,Bambos Charalambous,0,0,0,0,1,350,0,0
-E14001504,Southport,5052,Lab,Patrick Hurley,0,0,6,41500,1,3120,0,0
+E14001503,Southgate and Wood Green,4610,Lab,Bambos Charalambous,0,0,0,0,0,0,1,882.45
+E14001504,Southport,5052,Lab,Patrick Hurley,0,0,6,41500,2,4680,0,0
 E14001505,Spelthorne,5332,Con,Lincoln Jopp,0,0,0,0,1,2000,0,0
 E14001506,Spen Valley,4923,Lab,Kim Leadbeater,0,0,3,3444.96,1,301,0,0
-E14001507,St Albans,4769,LD,Daisy Cooper,0,0,14,106324.93,18,3901.31,0,0
+E14001507,St Albans,4769,LD,Daisy Cooper,0,0,15,111324.93,16,3509.35,0,0
 E14001508,St Austell and Newquay,5302,Lab,Noah Law,1,1269.69,0,0,0,0,2,7950.59
 E14001509,St Helens North,5092,Lab,David Baines,0,0,0,0,2,2472,0,0
 E14001510,St Helens South and Whiston,4457,Lab,Ms Marie Rimmer,0,0,0,0,0,0,0,0
 E14001511,St Ives,227,LD,Andrew George,2,15306.6,2,68000,0,0,1,2177.99
 E14001512,St Neots and Mid Cambridgeshire,5096,LD,Ian Sollom,1,0,7,25750,1,1560,0,0
 E14001513,Stafford,5290,Lab,Leigh Ingham,0,0,2,20000,0,0,1,2994.17
-E14001514,Staffordshire Moorlands,4110,Con,Dame Karen Bradley,1,900,1,2000,2,5966,0,0
-E14001515,Stalybridge and Hyde,4119,Lab,Jonathan Reynolds,0,0,1,3000,3,1609.28,0,0
+E14001514,Staffordshire Moorlands,4110,Con,Dame Karen Bradley,1,750,1,2000,2,5966,0,0
+E14001515,Stalybridge and Hyde,4119,Lab,Jonathan Reynolds,0,0,1,3000,3,2021.28,0,0
 E14001516,Stevenage,5051,Lab,Kevin Bonavia,0,0,3,13000,0,0,1,1950
-E14001517,Stockport,4811,Lab,Navendu Mishra,0,0,7,18320.84,1,550,0,0
-E14001518,Stockton North,5116,Lab,Chris McDonald,2,28034.61,4,16000,0,0,0,0
-E14001519,Stockton West,4844,Con,Matt Vickers,1,0,1,7000,1,494,3,10748.3
+E14001517,Stockport,4811,Lab,Navendu Mishra,0,0,6,15820.84,1,550,1,6736.37
+E14001518,Stockton North,5116,Lab,Chris McDonald,2,31659.61,4,16000,0,0,0,0
+E14001519,Stockton West,4844,Con,Matt Vickers,1,0,0,0,1,494,3,10748.3
 E14001520,Stoke-on-Trent Central,4595,Lab,Gareth Snell,1,7000,5,40000,0,0,0,0
 E14001521,Stoke-on-Trent North,5151,Lab,David Williams,1,12000,2,20000,0,0,0,0
 E14001522,Stoke-on-Trent South,5334,Lab,Dr Allison Gardner,0,0,2,17000,0,0,0,0
 E14001523,"Stone, Great Wyrley and Penkridge",4108,Con,Sir Gavin Williamson,1,60000,0,0,1,760,1,6352.83
 E14001524,Stourbridge,5293,Lab,Cat Eccles,1,797.77,2,20000,0,0,0,0
 E14001525,Stratford and Bow,5278,Lab,Uma Kumaran,1,2345.8,1,7000,0,0,1,1930
-E14001526,Stratford-on-Avon,5122,LD,Manuela Perteghella,3,2172.15,8,10700,2,643,0,0
-E14001527,Streatham and Croydon North,4268,Lab,Steve Reed,0,0,5,175200,2,1077.61,0,0
+E14001526,Stratford-on-Avon,5122,LD,Manuela Perteghella,3,1290.82,8,10700,2,643,0,0
+E14001527,Streatham and Croydon North,4268,Lab,Steve Reed,0,0,4,20000,2,1077.61,0,0
 E14001528,Stretford and Urmston,4979,Lab,Andrew Western,1,0,0,0,3,2280,0,0
 E14001529,Stroud,5030,Lab,Dr Simon Opher,2,3200,1,10000,0,0,0,0
 E14001530,Suffolk Coastal,5160,Lab,Jenny Riddell-Carpenter,0,0,2,12000,1,450,0,0
 E14001531,Sunderland Central,5028,Lab,Lewis Atkinson,0,0,0,0,0,0,0,0
-E14001532,Surrey Heath,5288,LD,Dr Al Pinkerton,1,16707,3,9000,0,0,0,0
-E14001533,Sussex Weald,4460,Con,Ms Nusrat Ghani,0,0,0,0,4,4663,0,0
-E14001534,Sutton and Cheam,5103,LD,Luke Taylor,2,36836.69,8,25500,1,1552.86,0,0
-E14001535,Sutton Coldfield,1211,Con,Sir Andrew Mitchell,1,0,12,51301,0,0,4,12350.51
+E14001532,Surrey Heath,5288,LD,Dr Al Pinkerton,1,11138,3,9000,0,0,0,0
+E14001533,Sussex Weald,4460,Con,Ms Nusrat Ghani,0,0,0,0,3,4073,0,0
+E14001534,Sutton and Cheam,5103,LD,Luke Taylor,2,30883.35,8,25500,1,1552.86,0,0
+E14001535,Sutton Coldfield,1211,Con,Sir Andrew Mitchell,1,0,13,52901,0,0,7,22946.83
 E14001536,Swindon North,5035,Lab,Will Stone,0,0,2,11000,0,0,0,0
 E14001537,Swindon South,4038,Lab,Heidi Alexander,0,0,4,29000,0,0,0,0
 E14001538,Tamworth,5001,Lab,Sarah Edwards,0,0,5,26000,0,0,0,0
-E14001539,Tatton,4084,Con,Esther McVey,2,9342.29,0,0,0,0,0,0
+E14001539,Tatton,4084,Con,Esther McVey,3,11245.62,0,0,0,0,0,0
 E14001540,Taunton and Wellington,5250,LD,Gideon Amos,1,2154.48,10,50354,0,0,0,0
 E14001541,Telford,5041,Lab,Shaun Davies,3,6388,5,29450,2,1238,0,0
-E14001542,Tewkesbury,5354,LD,Cameron Thomas,0,0,3,8000,1,1280,2,2068.23
-E14001543,The Wrekin,1576,Con,Mark Pritchard,5,87999.96,3,7000,0,0,3,8646
+E14001542,Tewkesbury,5354,LD,Cameron Thomas,0,0,3,8000,1,1280,2,2200.99
+E14001543,The Wrekin,1576,Con,Mark Pritchard,5,96999.96,1,2000,0,0,4,9151
 E14001544,Thirsk and Malton,4474,Con,Kevin Hollinrake,1,5000,2,7499,2,2455.45,0,0
-E14001545,Thornbury and Yate,5140,LD,Claire Young,1,1405.32,6,12500,2,2352.86,0,0
+E14001545,Thornbury and Yate,5140,LD,Claire Young,1,0,6,12500,2,2352.86,0,0
 E14001546,Thurrock,5056,Lab,Jen Craft,0,0,3,30450,0,0,0,0
 E14001547,Tipton and Wednesbury,5048,Lab,Antonia Bance,1,4565.81,4,17000,0,0,0,0
 E14001548,Tiverton and Minehead,5252,LD,Rachel Gilmour,1,6000,1,11514.61,1,1675.85,0,0
-E14001549,Tonbridge,4462,Con,Tom Tugendhat,5,6765,31,399805.49,1,509.02,5,32583.78
-E14001550,Tooting,4573,Lab,Dr Rosena Allin-Khan,2,11681.03,7,17700,0,0,2,8773.43
+E14001549,Tonbridge,4462,Con,Tom Tugendhat,7,33815,31,399805.49,1,509.02,7,34407.08
+E14001550,Tooting,4573,Lab,Dr Rosena Allin-Khan,2,11093.04,7,17700,0,0,2,8773.43
 E14001551,Torbay,5066,LD,Steve Darling,0,0,6,28392,1,1552.86,0,0
-E14001552,Torridge and Tavistock,1508,Con,Sir Geoffrey Cox,12,1054031.52,0,0,0,0,1,13302
-E14001553,Tottenham,206,Lab,Mr David Lammy,2,3360,11,142173.55,3,5550,0,0
-E14001554,Truro and Falmouth,5279,Lab,Jayne Kirkham,1,933.86,7,34240,0,0,0,0
-E14001555,Tunbridge Wells,5219,LD,Mike Martin,1,513.28,66,171910.8,1,1183.9,0,0
-E14001556,Twickenham,4776,LD,Munira Wilson,0,0,24,141463.02,3,2521,0,0
+E14001552,Torridge and Tavistock,1508,Con,Sir Geoffrey Cox,12,1051031.52,0,0,0,0,1,13302
+E14001553,Tottenham,206,Lab,Mr David Lammy,2,3360,10,134673.55,2,3050,0,0
+E14001554,Truro and Falmouth,5279,Lab,Jayne Kirkham,1,0,7,34240,0,0,0,0
+E14001555,Tunbridge Wells,5219,LD,Mike Martin,1,513.28,67,172710.8,1,1183.9,0,0
+E14001556,Twickenham,4776,LD,Munira Wilson,0,0,24,136463.02,2,1921,0,0
 E14001557,Tynemouth,529,Lab,Sir Alan Campbell,0,0,0,0,0,0,0,0
 E14001558,Uxbridge and South Ruislip,5339,Lab,Danny Beales,1,2392.03,5,23500,1,700,1,2200
-E14001559,Vauxhall and Camberwell Green,4870,Lab,Florence Eshalomi,0,0,1,2000,0,0,2,11755
+E14001559,Vauxhall and Camberwell Green,4870,Lab,Florence Eshalomi,0,0,1,2000,0,0,1,5955
 E14001560,Wakefield and Rothwell,4943,Lab,Simon Lightwood,0,0,2,8375,0,0,0,0
 E14001561,Wallasey,491,Lab,Dame Angela Eagle,0,0,0,0,0,0,0,0
-E14001562,Walsall and Bloxwich,4076,Lab,Valerie Vaz,0,0,0,0,0,0,0,0
+E14001562,Walsall and Bloxwich,4076,Lab,Valerie Vaz,0,0,0,0,1,1050,0,0
 E14001563,Walthamstow,4088,Lab,Ms Stella Creasy,1,0,3,7000,0,0,0,0
 E14001564,Warrington North,4799,Lab,Charlotte Nichols,0,0,2,10000,1,700,0,0
 E14001565,Warrington South,5154,Lab,Sarah Hall,2,2465.61,5,28000,0,0,0,0
 E14001566,Warwick and Leamington,4617,Lab,Matt Western,0,0,0,0,0,0,0,0
-E14001567,Washington and Gateshead South,1521,Lab,Mrs Sharon Hodgson,0,0,0,0,1,358.8,4,8923.42
+E14001567,Washington and Gateshead South,1521,Lab,Mrs Sharon Hodgson,0,0,0,0,1,358.8,4,6197.42
 E14001568,Watford,5130,Lab,Matt Turmaine,1,3286.23,8,32500,0,0,0,0
 E14001569,Waveney Valley,5320,Green,Adrian Ramsay,1,0,15,214375,6,1037.79,0,0
 E14001570,Weald of Kent,5285,Con,Katie Lam,0,0,3,12200,1,1356,1,2650
 E14001571,Wellingborough and Rushden,5011,Lab,Gen Kitchen,0,0,3,4946.25,0,0,0,0
 E14001572,Wells and Mendip Hills,4089,LD,Tessa Munt,1,15500,7,26500,0,0,0,0
-E14001573,Welwyn Hatfield,5061,Lab,Andrew Lewin,1,6179.66,21,120554.15,0,0,0,0
+E14001573,Welwyn Hatfield,5061,Lab,Andrew Lewin,1,0,21,120554.15,0,0,0,0
 E14001574,West Bromwich,5088,Lab,Sarah Coombes,0,0,5,39500,1,3120,0,0
 E14001575,West Dorset,5326,LD,Edward Morello,0,0,9,56765.74,0,0,1,1850
 E14001576,West Ham and Beckton,5211,Lab,James Asser,0,0,0,0,0,0,0,0
 E14001577,West Lancashire,4981,Lab,Ashley Dalton,0,0,0,0,0,0,0,0
 E14001578,West Suffolk,5062,Con,Nick Timothy,1,145000,11,71500,0,0,0,0
-E14001579,West Worcestershire,4107,Con,Dame Harriett Baldwin,0,0,0,0,3,1344.85,0,0
+E14001579,West Worcestershire,4107,Con,Dame Harriett Baldwin,0,0,0,0,4,2147.85,0,0
 E14001580,Westmorland and Lonsdale,1591,LD,Tim Farron,0,0,10,153501.87,1,1102.5,0,0
 E14001581,Weston-super-Mare,5172,Lab,Dan Aldridge,1,1046.2,1,2100,0,0,0,0
 E14001582,Wetherby and Easingwold,3997,Con,Sir Alec Shelbrooke,0,0,1,4999,0,0,0,0
 E14001583,Whitehaven and Workington,5033,Lab,Josh MacAlister,0,0,15,84700,0,0,0,0
 E14001584,Widnes and Halewood,429,Lab,Derek Twigg,0,0,1,5000,1,500,0,0
-E14001585,Wigan,4082,Lab,Lisa Nandy,0,0,4,45000.08,0,0,1,5554.56
-E14001586,Wimbledon,5321,LD,Mr Paul Kohler,1,12014.04,16,49628,3,3840.02,0,0
+E14001585,Wigan,4082,Lab,Lisa Nandy,0,0,3,5000.08,0,0,0,0
+E14001586,Wimbledon,5321,LD,Mr Paul Kohler,1,12014.04,16,49628,4,4540.02,0,0
 E14001587,Winchester,5304,LD,Dr Danny Chambers,0,0,21,89705,1,1475.85,0,0
 E14001588,Windsor,5340,Con,Jack Rankin,1,37090,8,28554,3,1487,0,0
 E14001589,Wirral West,5162,Lab,Matthew Patrick,1,3012.12,6,17000,2,875,1,2400
-E14001590,Witham,4066,Con,Priti Patel,0,0,16,208900,7,8070,3,7118.86
-E14001591,Witney,5325,LD,Charlie Maynard,1,0,6,24000,8,748324.8,0,0
-E14001592,Woking,5322,LD,Mr Will Forster,3,21712.46,14,45710.7,1,1552.86,1,1958
+E14001590,Witham,4066,Con,Priti Patel,0,0,15,203900,7,8070,3,4849.38
+E14001591,Witney,5325,LD,Charlie Maynard,1,0,6,24000,12,877704.6,0,0
+E14001592,Woking,5322,LD,Mr Will Forster,3,17950,14,45710.7,1,1552.86,1,1958
 E14001593,Wokingham,5207,LD,Clive Jones,0,0,17,75700,2,1552.9,0,0
-E14001594,Wolverhampton North East,5152,Lab,Mrs Sureena Brackenridge,0,0,5,35000,0,0,0,0
+E14001594,Wolverhampton North East,5152,Lab,Mrs Sureena Brackenridge,0,0,5,35000,1,700,0,0
 E14001595,Wolverhampton South East,1587,Lab,Pat McFadden,0,0,3,10000,2,2248,0,0
 E14001596,Wolverhampton West,5230,Lab,Warinder Juss,2,0,4,14801.27,0,0,0,0
 E14001597,Worcester,5087,Lab,Tom Collins,1,1149.4,5,20459.64,0,0,0,0
-E14001598,Worsley and Eccles,5242,Lab,Michael Wheeler,1,19362.32,1,3000,0,0,0,0
-E14001599,Worthing West,5307,Lab,Dr Beccy Cooper,2,3689.04109589041,2,8700,0,0,0,0
+E14001598,Worsley and Eccles,5242,Lab,Michael Wheeler,1,14566.67,1,3000,0,0,0,0
+E14001599,Worthing West,5307,Lab,Dr Beccy Cooper,2,2001.3698630137,2,8700,0,0,0,0
 E14001600,Wycombe,4077,Lab,Emma Reynolds,1,2975.86,4,19675,0,0,0,0
 E14001601,Wyre Forest,4074,Con,Mark Garnier,3,46000,0,0,0,0,0,0
 E14001602,Wythenshawe and Sale East,4316,Lab,Mike Kane,0,0,0,0,0,0,0,0
 E14001603,Yeovil,5191,LD,Adam Dance,2,15500.04,18,32500,1,863.69,0,0
 E14001604,York Central,4471,Lab,Rachael Maskell,0,0,2,9000,0,0,0,0
-E14001605,York Outer,5199,Lab,Mr Luke Charters,1,1661.51,6,32221.75,0,0,0,0
+E14001605,York Outer,5199,Lab,Mr Luke Charters,1,1661.51,6,32221.75,0,0,1,1252.27
 N05000001,Belfast East,4360,DUP,Gavin Robinson,0,0,0,0,0,0,0,0
 N05000002,Belfast North,4823,SF,John Finucane,1,56064,0,0,1,454.55,1,2671.02
 N05000003,Belfast South and Mid Down,4827,SDLP,Claire Hanna,0,0,0,0,0,0,0,0
-N05000004,Belfast West,4245,SF,Paul Maskey,0,0,0,0,0,0,1,160
+N05000004,Belfast West,4245,SF,Paul Maskey,0,0,0,0,0,0,1,1390.85
 N05000005,East Antrim,1593,DUP,Sammy Wilson,0,0,0,0,0,0,0,0
 N05000006,East Londonderry,1409,DUP,Mr Gregory Campbell,0,0,0,0,0,0,0,0
-N05000007,Fermanagh and South Tyrone,5261,SF,Pat Cullen,0,0,0,0,0,0,0,0
-N05000008,Foyle,4846,SDLP,Colum Eastwood,0,0,0,0,0,0,0,0
+N05000007,Fermanagh and South Tyrone,5261,SF,Pat Cullen,0,0,0,0,0,0,1,3369.51
+N05000008,Foyle,4846,SDLP,Colum Eastwood,0,0,0,0,1,684,0,0
 N05000009,Lagan Valley,5125,APNI,Sorcha Eastwood,0,0,0,0,0,0,0,0
 N05000010,Mid Ulster,5153,SF,Mr Cathal Mallaghan,0,0,0,0,0,0,0,0
 N05000011,Newry and Armagh,5292,SF,Dáire Hughes,0,0,0,0,0,0,2,2351.23
@@ -579,53 +579,53 @@ S14000070,Coatbridge and Bellshill,5183,Lab,Frank McNally,2,2434.04,4,25000,0,0,
 S14000071,Cowdenbeath and Kirkcaldy,5240,Lab,Melanie Ward,1,1887,2,9000,0,0,2,6636
 S14000072,Cumbernauld and Kirkintilloch,5309,Lab,Katrina Murray,1,615.85,5,25250,0,0,0,0
 S14000073,Dumfries and Galloway,5358,Con,John Cooper,0,0,5,25000,0,0,1,918
-S14000074,"Dumfriesshire, Clydesdale and Tweeddale",1512,Con,David Mundell,0,0,3,9000,0,0,4,11014.86
-S14000075,Dundee Central,4403,SNP,Chris Law,0,0,1,2000,0,0,3,13394.07
-S14000076,Dunfermline and Dollar,5275,Lab,Graeme Downie,3,3882.71,5,22500,2,365,2,2225
+S14000074,"Dumfriesshire, Clydesdale and Tweeddale",1512,Con,David Mundell,0,0,2,4000,0,0,4,11014.86
+S14000075,Dundee Central,4403,SNP,Chris Law,0,0,1,2000,0,0,2,7594.07
+S14000076,Dunfermline and Dollar,5275,Lab,Graeme Downie,3,1982.71,5,22500,2,365,2,2292.11
 S14000077,East Kilbride and Strathaven,5079,Lab,Joani Reid,0,0,2,25000,0,0,0,0
 S14000078,Edinburgh East and Musselburgh,5245,Lab,Chris Murray,0,0,5,31500,0,0,0,0
 S14000079,Edinburgh North and Leith,5188,Lab,Tracy Gilbert,1,16269.01,7,34001.64,2,1070,1,1958
 S14000080,Edinburgh South,3966,Lab,Ian Murray,0,0,3,12131.75,1,360,0,0
-S14000081,Edinburgh South West,5212,Lab,Dr Scott Arthur,4,0,0,0,0,0,1,50
+S14000081,Edinburgh South West,5212,Lab,Dr Scott Arthur,4,0,0,0,0,0,1,86.2
 S14000082,Edinburgh West,4634,LD,Christine Jardine,0,0,6,14000,5,2514,0,0
 S14000083,Falkirk,5110,Lab,Euan Stainbank,0,0,1,2000,1,387,0,0
 S14000084,Glasgow East,5170,Lab,John Grady,1,0,1,10000,0,0,0,0
 S14000085,Glasgow North,5251,Lab,Martin Rhodes,1,836.02,2,15000,0,0,0,0
 S14000086,Glasgow North East,5137,Lab,Maureen Burke,0,0,2,7000,0,0,0,0
 S14000087,Glasgow South,5189,Lab,Gordon McKee,0,0,3,22500,1,550,0,0
-S14000088,Glasgow South West,5213,Lab,Dr Zubir Ahmed,1,0,2,30000,0,0,2,10056
+S14000088,Glasgow South West,5213,Lab,Dr Zubir Ahmed,1,0,2,30000,0,0,3,15756
 S14000089,Glasgow West,5190,Lab,Patricia Ferguson,1,292.4,2,7000,0,0,0,0
 S14000090,Glenrothes and Mid Fife,5253,Lab,Richard Baker,1,1228.75,2,9000,0,0,0,0
 S14000091,Gordon and Buchan,5311,Con,Harriet Cross,1,1900,4,14500,0,0,0,0
 S14000092,Hamilton and Clyde Valley,5136,Lab,Imogen Walker,1,3646.72,2,25000,0,0,0,0
 S14000093,Inverclyde and Renfrewshire West,5129,Lab,Martin McCluskey,1,982.5,5,38500,0,0,0,0
 S14000094,"Inverness, Skye and West Ross-shire",5362,LD,Mr Angus MacDonald,1,21345,18,104100,0,0,0,0
-S14000095,Livingston,5167,Lab,Gregor Poynton,1,2288.46,4,20000,1,2254,0,0
+S14000095,Livingston,5167,Lab,Gregor Poynton,1,2288.46,4,20000,2,3154,0,0
 S14000096,Lothian East,632,Lab,Mr Douglas Alexander,0,0,8,45000,3,868.75,1,2500
-S14000097,Mid Dunbartonshire,5157,LD,Susan Murray,1,10584.7808219178,4,33552.86,0,0,0,0
-S14000098,"Moray West, Nairn and Strathspey",5277,SNP,Graham Leadbitter,1,4447.66,1,2000,0,0,0,0
+S14000097,Mid Dunbartonshire,5157,LD,Susan Murray,1,8947.35616438356,4,33552.86,0,0,0,0
+S14000098,"Moray West, Nairn and Strathspey",5277,SNP,Graham Leadbitter,1,2223.83,1,2000,0,0,0,0
 S14000099,"Motherwell, Wishaw and Carluke",3909,Lab,Pamela Nash,0,0,1,10000,0,0,0,0
 S14000100,North East Fife,4765,LD,Wendy Chamberlain,0,0,4,19800,3,2130,0,0
 S14000101,Paisley and Renfrewshire North,5093,Lab,Alison Taylor,0,0,2,16250,0,0,0,0
 S14000102,Paisley and Renfrewshire South,5063,Lab,Johanna Baxter,0,0,4,29550,0,0,0,0
 S14000103,Perth and Kinross-shire,1440,SNP,Pete Wishart,2,2150.07,0,0,0,0,0,0
 S14000104,Rutherglen,4998,Lab,Michael Shanks,0,0,1,4000,0,0,0,0
-S14000105,Stirling and Strathallan,5155,Lab,Chris Kane,2,9705.3,0,0,0,0,1,647.52
-S14000106,West Dunbartonshire,5057,Lab,Douglas McAllister,1,2668.67,1,10000,0,0,0,0
-S14000107,"Ayr, Carrick and Cumnock",5206,Lab,Elaine Stewart,3,9909.76,0,0,0,0,0,0
-S14000108,"Berwickshire, Roxburgh and Selkirk",4608,Con,John Lamont,0,0,4,25000,1,375,1,3200
-S14000109,Central Ayrshire,5185,Lab,Alan Gemmell,0,0,1,1800,1,450,2,6874.12
-S14000110,Kilmarnock and Loudoun,5043,Lab,Lillian Jones,2,5729.13,0,0,0,0,0,0
+S14000105,Stirling and Strathallan,5155,Lab,Chris Kane,2,6248.51,0,0,0,0,1,647.52
+S14000106,West Dunbartonshire,5057,Lab,Douglas McAllister,1,0,1,10000,0,0,0,0
+S14000107,"Ayr, Carrick and Cumnock",5206,Lab,Elaine Stewart,3,8131.01,0,0,0,0,0,0
+S14000108,"Berwickshire, Roxburgh and Selkirk",4608,Con,John Lamont,0,0,2,15000,1,375,1,3200
+S14000109,Central Ayrshire,5185,Lab,Alan Gemmell,0,0,1,1800,1,450,3,7421.92
+S14000110,Kilmarnock and Loudoun,5043,Lab,Lillian Jones,2,2449.13,0,0,0,0,0,0
 S14000111,West Aberdeenshire and Kincardine,4601,Con,Andrew Bowie,0,0,0,0,1,350,1,796.29
-W07000081,Aberafan Maesteg,4359,Lab,Stephen Kinnock,0,0,3,12000,2,1210.9,1,3100.22
-W07000082,Alyn and Deeside,1383,Lab,Mark Tami,1,400,1,10000,1,552,0,0
+W07000081,Aberafan Maesteg,4359,Lab,Stephen Kinnock,0,0,3,12000,2,1210.9,0,0
+W07000082,Alyn and Deeside,1383,Lab,Sir Mark Tami,1,400,1,10000,1,552,0,0
 W07000083,Bangor Aberconwy,5113,Lab,Claire Hughes,0,0,1,10000,1,700,0,0
-W07000084,Blaenau Gwent and Rhymney,3928,Lab,Nick Smith,0,0,1,2000,0,0,0,0
+W07000084,Blaenau Gwent and Rhymney,3928,Lab,Nick Smith,0,0,0,0,0,0,0,0
 W07000085,"Brecon, Radnor and Cwm Tawe",5284,LD,David Chadwick,0,0,11,36650,2,1403.9,0,0
 W07000086,Bridgend,4572,Lab,Chris Elmore,0,0,0,0,0,0,0,0
 W07000087,Caerfyrddin,5177,PC,Ann Davies,1,3172,2,4000,0,0,0,0
 W07000088,Caerphilly,4040,Lab,Chris Evans,2,634,0,0,1,550,0,0
-W07000089,Cardiff East,4425,Lab,Jo Stevens,0,0,3,8000,2,1317.6,0,0
+W07000089,Cardiff East,4425,Lab,Jo Stevens,0,0,3,8000,1,957.6,0,0
 W07000090,Cardiff North,4632,Lab,Anna McMorrin,0,0,1,2000,0,0,0,0
 W07000091,Cardiff South and Penarth,4264,Lab,Stephen Doughty,0,0,2,7000,0,0,0,0
 W07000092,Cardiff West,5175,Lab,Mr Alex Barros-Curtis,1,6652.98,0,0,0,0,0,0
@@ -639,13 +639,13 @@ W07000099,Merthyr Tydfil and Aberdare,4501,Lab,Gerald Jones,0,0,2,4500,0,0,0,0
 W07000100,Mid and South Pembrokeshire,5121,Lab,Henry Tufnell,0,0,4,15327.28,0,0,0,0
 W07000101,Monmouthshire,5291,Lab,Catherine Fookes,0,0,4,25321.96,0,0,0,0
 W07000102,Montgomeryshire and Glyndŵr,5221,Lab,Steve Witherden,0,0,3,20000,0,0,0,0
-W07000103,Neath and Swansea East,4480,Lab,Carolyn Harris,1,2370,2,4000,0,0,1,2495
+W07000103,Neath and Swansea East,4480,Lab,Carolyn Harris,1,2670,2,4000,0,0,1,2495
 W07000104,Newport East,1548,Lab,Jessica Morden,0,0,2,4727.26,0,0,0,0
 W07000105,Newport West and Islwyn,4716,Lab,Ruth Jones,0,0,2,6419,1,468,1,1778.59
 W07000106,Pontypridd,4849,Lab,Alex Davies-Jones,0,0,4,23000,0,0,0,0
 W07000107,Rhondda and Ogmore,1446,Lab,Chris Bryant,3,82096.08,3,9000,5,1292.92,0,0
 W07000108,Swansea West,5069,Lab,Torsten Bell,3,15702.93,1,3000,1,447.65,0,0
-W07000109,Torfaen,4479,Lab,Nick Thomas-Symonds,1,3690.58,2,25647.44,4,1293,0,0
+W07000109,Torfaen,4479,Lab,Nick Thomas-Symonds,1,3690.58,2,25647.44,3,1253,0,0
 W07000110,Vale of Glamorgan,5039,Lab,Kanishka Narayan,0,0,6,55500,1,1356,2,8280
 W07000111,Wrexham,5046,Lab,Andrew Ranger,1,2218.59,1,5000,0,0,0,0
 W07000112,Ynys Môn,5085,PC,Llinos Medi,0,0,0,0,0,0,0,0
