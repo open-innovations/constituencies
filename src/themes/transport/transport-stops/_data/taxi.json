@@ -31,5 +31,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Ranks: <strong>{{ TXR | toLocaleString }}</strong>"	}
+		"tooltip": "<strong>{{ n }}</strong><br />Ranks: <strong>{{ TXR | toLocaleString }}</strong>"
+	},
+	"date": "2025-04"
 }

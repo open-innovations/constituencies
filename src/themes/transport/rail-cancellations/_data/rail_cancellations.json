@@ -34,6 +34,7 @@
 		"tooltip": "<strong>{{ n }}</strong><br />Cancellations: <strong>{{ Cancellations % | toLocaleString() }}%</strong><br />Scheduled stops: <strong>{{ Scheduled stops | toLocaleString() }}</strong><br />Recorded station stops: <strong>{{ Recorded station stops | toLocaleString() }}</strong><br />Stations: {{ Stations }}",
 		"attribution": "Data: <a href=\"https://dataportal.orr.gov.uk/statistics/performance/performance-at-stations\">Performance at stations (ORR)</a>"
 	},
+	"date": "2025-03",
 	"units":{
 		"Cancellations %":{"value":"percent","precision":0.1}
 	}

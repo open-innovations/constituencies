@@ -38,5 +38,6 @@
 		"bus_stops_density":{"value":"/km^2","post":"/km&sup2;"},
 		"rail_stops_density":{"value":"/km^2","post":"/km&sup2;"},
 		"tram_metro_stops_density":{"value":"/km^2","post":"/km&sup2;"}
-	}
+	},
+	"date": "2025-04"
 }

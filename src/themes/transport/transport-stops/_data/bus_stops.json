@@ -36,5 +36,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ bus_stops | toLocaleString }}</strong>",
 		"attribution": "Data: <a href=\"https://beta-naptan.dft.gov.uk/Download/National\">NaPTAN national stop data</a>"
-	}
+	},
+	"date": "2025-04"
 }

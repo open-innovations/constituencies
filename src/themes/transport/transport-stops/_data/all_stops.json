@@ -34,5 +34,7 @@
 				"label": "filterLabel"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ alltypes | toLocaleString }}</strong>"	}
+		"tooltip": "<strong>{{ n }}</strong><br />Stops: <strong>{{ alltypes | toLocaleString }}</strong>"
+	},
+	"date": "2025-04"
 }
