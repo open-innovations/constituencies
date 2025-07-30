@@ -43,5 +43,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Population (2020): <strong>{{ population (2020) | toLocaleString() }}</strong><br />All: <strong>{{ all (per 100k) | toLocaleString() }}</strong> / 100k<br />Slow (3-6 KW): <strong>{{ slow (3-6 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Fast (7-22 KW): <strong>{{ fast (7-22 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Rapid (25-100 KW): <strong>{{ rapid (25-100 KW per 100k) | toLocaleString()}}</strong> / 100k<br />Ultra (&gt;100 KW): <strong>{{ ultra (>100 KW per 100k) | toLocaleString()}}</strong> / 100k",
 		"attribution": "Connections aggregated from the <a href=\"https://www.gov.uk/guidance/find-and-use-data-on-public-electric-vehicle-chargepoints\">National Chargepoint Registry</a> (as of September 2023)<br /><a href=\"https://commonslibrary.parliament.uk/constituency-statistics-population-by-age/\">Population data</a> (House of Commons Library)"
-	}
+	},
+	"date": "2023-09"
 }

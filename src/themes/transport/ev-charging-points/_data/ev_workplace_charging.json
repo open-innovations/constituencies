@@ -33,5 +33,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Workplace charging sockets: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-charging-device-grant-scheme-statistics-april-2023\">Electric Vehicle Charging Grant Scheme Statistics</a> (DfT)"
-	}
+	},
+	"date": "2025-01"
 }

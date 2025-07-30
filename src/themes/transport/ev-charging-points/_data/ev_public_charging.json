@@ -39,5 +39,6 @@
 		},
 		"tooltip": "<strong>{{ n }}</strong><br />Public charging sockets: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
 		"attribution": "<a href=\"https://www.gov.uk/government/statistics/electric-vehicle-public-charging-infrastructure-statistics-january-2025\">Electric Vehicle Charging Device Statistics</a> (DfT)"
-	}
+	},
+	"date": "2025-01"
 }
