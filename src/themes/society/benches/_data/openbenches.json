@@ -17,10 +17,10 @@
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Memorial benches: <strong>{{ 2025-05 | \"0\" }}</strong>",
-		"value":"2025-05",
+		"tooltip":"<strong>{{ n }}</strong><br />Memorial benches: <strong>{{ 2025-08 | \"0\" }}</strong>",
+		"value":"2025-08",
 		"width":600
 	},
-	"date":"2025-05-29T09:19",
+	"date":"2025-08-20T20:32",
 	"title":"Memorial benches (UK)"
 }

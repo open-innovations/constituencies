@@ -39,7 +39,7 @@ if(defined($help) || !defined($ofile)){
 	msg("    perl byPostcode.pl <CSV file> -postcode <postcode Column> -geojson <GeoJSON file> -output <output file> -category <column to group by>\n");
 	msg("\n");
 	msg("Examples:\n");
-	msg("    perl pipelines/countByPostcode.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/premises.csv -c \"Premises Activity\"\n");
+	msg("    perl pipelines/countByPostcode.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/release/premises.csv -c \"Premises Activity\"\n");
 	msg("\n");
 	msg("Options:\n");
 	msg("    <CSV file>                 the CSV file to load\n");
