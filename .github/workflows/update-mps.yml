@@ -24,10 +24,15 @@ jobs:
           cpanfile: cpanfile
 
       # Runs script
-      - name: Run tests
+      - name: Update MP lists
         working-directory: ./
         run: |
           perl pipelines/society/current-MPs.pl
+
+      - name: Update RMFI
+        working-directory: ./
+        run: |
+          perl pipelines/society/RMFI.pl
 
       - name: Commit changes to files
         working-directory: ./
@@ -36,7 +41,10 @@ jobs:
           git config --local user.name "GitHub Action"
           git add lookups/current-MPs.csv
           git add lookups/current-MPs.json
-          git commit -m "Update MPs" || exit 0
+          git add src/themes/society/mps-financial-interests/_data/map_1.json
+          git add src/themes/society/mps-financial-interests/_data/release/RMFI.csv
+          git add src/themes/society/mps-financial-interests/index.vto
+          git commit -m "Update MPs and data" || exit 0
 
       - name: Push changes
         uses: ad-m/github-push-action@master
