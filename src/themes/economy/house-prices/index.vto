@@ -7,8 +7,7 @@ description: |
   Constituency-level data on house prices. The house price figures used are the median price paid for properties over the twelve months to the date shown.
 api:
   - map_1
-  - high_value
-  - high_value_pct
+  - high_value_sold
 ---
 
 <p>This page provides constituency-level data on house prices in England and Wales. The <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas">house price figures</a> used are the median price paid for properties over the twelve months to the date shown. The figures aren’t adjusted for the mix of different property sizes and types sold in different periods and places.</p>
@@ -35,8 +34,16 @@ api:
 
 <section>
 	<h2>High-value homes sold{{ comp.anchor({ anchor: "high-value" }) }}</h2>
-	<p>In August 2025 <a href="https://bsky.app/profile/owenboswarva.bsky.social/post/3lwvh4vf4xk2m">Owen Boswarva estimated</a> the number of homes that sold for over £1,500,000 in each constituency of England and Wales, based on <a href="https://www.gov.uk/government/collections/price-paid-data">HM Land Registry's Price Paid Data</a> for July 2024 to June 2025. Below we have maps showing the number sold above those amounts and the percentage of homes sold above those amounts.</p>
+	<p>In August 2025 <a href="https://bsky.app/profile/owenboswarva.bsky.social/post/3lwvh4vf4xk2m">Owen Boswarva estimated</a> the number of homes that sold for over £1,500,000 in each constituency of England and Wales. We have taken inspiration from Owen and have found the number of high-value homes sold each year since 2018.</p>
 
+	{{ comp.wrapper({
+		"page": page,
+		"component": comp.oi.map.hex_cartogram,
+		"config": "high_value_sold",
+		"download": {"text": "High-value homes sold", "type": "CSV"}
+	}) }}
+
+{{#
 	<h3>Number sold{{ comp.anchor({ anchor: "high-value-number" }) }}</h3>
 	<p>An estimate of the number of homes sold from July 2024 to June 2025 that were above £1,500,000.</p>
 	{{ comp.wrapper({
@@ -54,10 +61,12 @@ api:
 		"config": "high_value_pct",
 		"download": {"text": "High-value homes sold 2024-2025", "type": "CSV"}
 	}) }}
+#}}
 </section>
 
 <h2>Notes</h2>
 <ul>
 	<li>The median is the point at which half of house prices in the data are higher and half are lower.</li>
 	<li>The median house price is for the rolling year to the end of the month specified.</li>
+	<li>We have only included Land Registry price paid data for properties with a postcode. We have used the <a href="https://geoportal.statistics.gov.uk/datasets/6f2f35a9a0b94e7e949eeba7785911d4/about">ONS postcode to constituency lookup (May 2024)</a> to match postcodes to 2024 constituencies. Approximately 0.45% of properties sold haven't been matched to a constituency.</li>
 </ul>
