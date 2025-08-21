@@ -36,6 +36,7 @@ export default function*({search,themes}){
 
 			data.api = notes;
 			data.title = page[id].title;
+			if(page[id].subtitle) data.subtitle = page[id].subtitle;
 			data.url = url;
 			data.key = config.matchKey;
 			data.values = [{"value":config.value,"label":config.value}];
