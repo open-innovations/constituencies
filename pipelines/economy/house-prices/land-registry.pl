@@ -22,14 +22,16 @@ use OpenInnovations::GeoJSON;
 require "lib.pl";
 
 
-my ($pcds,$pcd,@files,$file,$geojson,$geo,$i,$r,$f,$y,$bad,$count,$pcon,$pnam,$pid,$totals,$price,$date,$newest,$json);
+my ($pcds,$pcd,@files,$file,$geojson,$geo,$i,$r,$f,$y,$bad,$count,$pcon,$pnam,$pid,$totals,$price,$date,$newest,$json,@lines,$line,$str,$fh);
 my $dir = $basedir."../../../";
 my $rawdir = $dir."raw-data/";
 my $pcdurl = "https://www.arcgis.com/sharing/rest/content/items/6f2f35a9a0b94e7e949eeba7785911d4/data";
 my $csvfile = $dir."src/themes/economy/house-prices/_data/release/land_registry_sold.csv";
 my $jsonfile = $dir."src/themes/economy/house-prices/_data/high_value_sold.json";
+my $vtofile = $dir."src/themes/economy/house-prices/index.vto";
 my $syear = 2018;
 my $eyear = ((localtime())[5]+1900)+0;
+
 
 
 
@@ -52,7 +54,7 @@ if(!-e $zipfile){
 	`unzip $zipfile -d $zipdir`;
 }
 msg("Loading postcode lookup\n");
-open(my $fh,$pcdfile);
+open($fh,$pcdfile);
 while(<$fh>){
 	if($_ =~ /\"([^\"]*)\",[0-9]+,[0-9]+,\"([^\"]*)\",\"([^\"]*)\"/s){
 		$pcd = $1;
@@ -132,10 +134,12 @@ for($f = 0; $f < @files; $f++){
 msg("Bad: <red>$bad<none> / $count\n");
 msg("Most recent: <green>$newest<none> ".getDateFromISO($newest)."\n");
 
+# Format the date correctly
+$newest =~ s/ /T/g;
 
 msg("Update JSON file at <cyan>$jsonfile<none>\n");
 $json = LoadJSON($jsonfile);
-$json->{'date'} = strftime("%Y-%m-%d", localtime());
+$json->{'date'} = substr($newest,0,10);
 $json->{'config'}{'value'} = "1.5M_UP→$eyear";
 $json->{'config'}{'tools'}{'slider'}{'columns'} = ();
 for(my $y = $syear; $y <= $eyear; $y++){
@@ -194,6 +198,23 @@ msg("Saving to <cyan>$csvfile<none>\n");
 open($fh,">",$csvfile);
 print $fh $csv;
 close($fh);
+
+
+
+# Need to update the index.vto file
+open($fh,$vtofile);
+@lines = <$fh>;
+close($fh);
+$str = join("",@lines);
+$date = strftime("%Y-%m-%dT%H:%M", localtime());
+$str =~ s/(\-\-\-[\n\r].*?)updated: ?[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9\:]+)?(.*?[\n\r]\-\-\-)/$1updated: $date$3/gs;
+msg("Updating <cyan>$vtofile<none>\n");
+open($fh,">",$vtofile);
+print $fh $str;
+close($fh);
+
+
+
 
 
 ###################
