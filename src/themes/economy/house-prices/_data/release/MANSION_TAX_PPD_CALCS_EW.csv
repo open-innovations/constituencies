@@ -1,0 +1,576 @@
+PCONCD,PCONNM,MP,MP_PARTY,PPD_COUNT,500K_UP,1.5M_UP,500K_UP_PCT,1.5M_UP_PCT
+E14001063,Aldershot,Alex Baker,Labour,1229,206,1,16.76,0.08
+E14001064,Aldridge-Brownhills,Wendy Morton,Conservative,934,51,0,5.46,0.00
+E14001065,Altrincham and Sale West,Mr Connor Rand,Labour,1249,468,32,37.47,2.56
+E14001066,Amber Valley,Linsey Farnsworth,Labour,1195,38,0,3.18,0.00
+E14001067,Arundel and South Downs,Andrew Griffith,Conservative,1107,509,37,45.98,3.34
+E14001068,Ashfield,Lee Anderson,Reform UK,1205,14,0,1.16,0.00
+E14001069,Ashford,Sojan Joseph,Labour,1260,138,1,10.95,0.08
+E14001070,Ashton-under-Lyne,Angela Rayner,Labour,969,4,0,0.41,0.00
+E14001071,Aylesbury,Laura Kyrke-Smith,Labour,1357,247,2,18.20,0.15
+E14001072,Banbury,Sean Woodcock,Labour,1223,244,10,19.95,0.82
+E14001073,Barking,Nesil Caliskan,Labour,671,54,0,8.05,0.00
+E14001074,Barnsley North,Dan Jarvis,Labour,1265,12,0,0.95,0.00
+E14001075,Barnsley South,Stephanie Peacock,Labour,1332,6,0,0.45,0.00
+E14001076,Barrow and Furness,Michelle Scrogham,Labour,1340,27,0,2.01,0.00
+E14001077,Basildon and Billericay,Mr Richard Holden,Conservative,1118,240,3,21.47,0.27
+E14001078,Basingstoke,Luke Murphy,Labour,1245,170,0,13.65,0.00
+E14001079,Bassetlaw,Jo White,Labour,1415,27,1,1.91,0.07
+E14001080,Bath,Wera Hobhouse,Liberal Democrat,1271,525,48,41.31,3.78
+E14001081,Battersea,Marsha De Cordova,Labour,1415,1062,178,75.05,12.58
+E14001082,Beaconsfield,Joy Morrissey,Conservative,1163,699,61,60.10,5.25
+E14001083,Beckenham and Penge,Liam Conlon,Labour,1361,660,11,48.49,0.81
+E14001084,Bedford,Mohammad Yasin,Labour,1016,98,1,9.65,0.10
+E14001085,Bermondsey and Old Southwark,Neil Coyle,Labour,951,533,18,56.05,1.89
+E14001086,Bethnal Green and Stepney,Rushanara Ali,Labour,643,301,6,46.81,0.93
+E14001087,Beverley and Holderness,Graham Stuart,Conservative,1354,49,0,3.62,0.00
+E14001088,Bexhill and Battle,Dr Kieran Mullan,Conservative,1223,288,3,23.55,0.25
+E14001089,Bexleyheath and Crayford,Daniel Francis,Labour,1043,243,0,23.30,0.00
+E14001090,Bicester and Woodstock,Calum Miller,Liberal Democrat,1172,295,5,25.17,0.43
+E14001091,Birkenhead,Alison McGovern,Labour,1179,44,1,3.73,0.08
+E14001092,Birmingham Edgbaston,Preet Kaur Gill,Labour,881,95,5,10.78,0.57
+E14001093,Birmingham Erdington,Paulette Hamilton,Labour,1077,3,0,0.28,0.00
+E14001094,Birmingham Hall Green and Moseley,Tahir Ali,Labour,741,71,1,9.58,0.13
+E14001095,Birmingham Hodge Hill and Solihull North,Liam Byrne,Labour,757,4,0,0.53,0.00
+E14001096,Birmingham Ladywood,Shabana Mahmood,Labour,922,10,0,1.08,0.00
+E14001097,Birmingham Northfield,Laurence Turner,Labour,1046,29,0,2.77,0.00
+E14001098,Birmingham Perry Barr,Ayoub Khan,Independent,612,12,0,1.96,0.00
+E14001099,Birmingham Selly Oak,Al Carns,Labour,987,51,0,5.17,0.00
+E14001100,Birmingham Yardley,Jess Phillips,Labour,800,3,0,0.38,0.00
+E14001101,Bishop Auckland,Sam Rushworth,Labour,1371,25,0,1.82,0.00
+E14001102,Blackburn,Mr Adnan Hussain,Independent,985,7,1,0.71,0.10
+E14001103,Blackley and Middleton South,Graham Stringer,Labour,903,9,0,1.00,0.00
+E14001104,Blackpool North and Fleetwood,Lorraine Beavers,Labour,1430,7,0,0.49,0.00
+E14001105,Blackpool South,Chris Webb,Labour,1471,7,0,0.48,0.00
+E14001106,Blaydon and Consett,Liz Twist,Labour,1325,18,0,1.36,0.00
+E14001107,Blyth and Ashington,Ian Lavery,Labour,1385,4,0,0.29,0.00
+E14001108,Bognor Regis and Littlehampton,Alison Griffiths,Conservative,1424,198,3,13.90,0.21
+E14001109,Bolsover,Natalie Fleet,Labour,1355,19,0,1.40,0.00
+E14001110,Bolton North East,Kirith Entwistle,Labour,1181,29,0,2.46,0.00
+E14001111,Bolton South and Walkden,Yasmin Qureshi,Labour,1018,11,0,1.08,0.00
+E14001112,Bolton West,Phil Brickell,Labour,1313,67,1,5.10,0.08
+E14001113,Bootle,Peter Dowd,Labour,905,2,0,0.22,0.00
+E14001114,Boston and Skegness,Richard Tice,Reform UK,1257,19,0,1.51,0.00
+E14001115,Bournemouth East,Tom Hayes,Labour,1329,265,1,19.94,0.08
+E14001116,Bournemouth West,Jessica Toale,Labour,1186,117,8,9.87,0.67
+E14001117,Bracknell,Peter Swallow,Labour,1123,250,1,22.26,0.09
+E14001118,Bradford East,Imran Hussain,Labour,1147,6,0,0.52,0.00
+E14001119,Bradford South,Judith Cummins,Labour,1251,5,0,0.40,0.00
+E14001120,Bradford West,Naz Shah,Labour,809,2,0,0.25,0.00
+E14001121,Braintree,Sir James Cleverly,Conservative,1260,212,4,16.83,0.32
+E14001122,Brent East,Dawn Butler,Labour,642,316,25,49.22,3.89
+E14001123,Brent West,Barry Gardiner,Labour,608,322,2,52.96,0.33
+E14001124,Brentford and Isleworth,Ruth Cadbury,Labour,871,406,1,46.61,0.11
+E14001125,Brentwood and Ongar,Alex Burghart,Conservative,1202,597,29,49.67,2.41
+E14001126,Bridgwater,Sir Ashley Fox,Conservative,1251,53,0,4.24,0.00
+E14001127,Bridlington and The Wolds,Charlie Dewhirst,Conservative,1476,34,0,2.30,0.00
+E14001128,Brigg and Immingham,Martin Vickers,Conservative,1267,24,0,1.89,0.00
+E14001129,Brighton Kemptown and Peacehaven,Chris Ward,Labour,954,224,9,23.48,0.94
+E14001130,Brighton Pavilion,Siân Berry,Green Party,1191,465,10,39.04,0.84
+E14001131,Bristol Central,Carla Denyer,Green Party,1105,372,19,33.67,1.72
+E14001132,Bristol East,Kerry McCarthy,Labour,1283,95,0,7.40,0.00
+E14001133,Bristol North East,Damien Egan,Labour,1053,40,0,3.80,0.00
+E14001134,Bristol North West,Darren Jones,Labour,1035,335,10,32.37,0.97
+E14001135,Bristol South,Karin Smyth,Labour,1192,141,0,11.83,0.00
+E14001136,Broadland and Fakenham,Jerome Mayhew,Conservative,1219,154,1,12.63,0.08
+E14001137,Bromley and Biggin Hill,Peter Fortune,Conservative,1108,601,16,54.24,1.44
+E14001138,Bromsgrove,Bradley Thomas,Conservative,1091,194,4,17.78,0.37
+E14001139,Broxbourne,Lewis Cocking,Conservative,1153,317,4,27.49,0.35
+E14001140,Broxtowe,Juliet Campbell,Labour,1157,51,1,4.41,0.09
+E14001141,Buckingham and Bletchley,Callum Anderson,Labour,1235,248,2,20.08,0.16
+E14001142,Burnley,Oliver Ryan,Independent,1463,6,0,0.41,0.00
+E14001143,Burton and Uttoxeter,Jacob Collier,Labour,1354,56,0,4.14,0.00
+E14001144,Bury North,Mr James Frith,Labour,1116,38,0,3.41,0.00
+E14001145,Bury South,Christian Wakeford,Labour,1160,83,0,7.16,0.00
+E14001146,Bury St Edmunds and Stowmarket,Peter Prinsley,Labour,1396,156,4,11.17,0.29
+E14001147,Calder Valley,Josh Fenton-Glynn,Labour,1274,62,1,4.87,0.08
+E14001148,Camborne and Redruth,Perran Moon,Labour,1047,110,4,10.51,0.38
+E14001149,Cambridge,Daniel Zeichner,Labour,904,427,19,47.23,2.10
+E14001150,Cannock Chase,Josh Newbury,Labour,1111,14,0,1.26,0.00
+E14001151,Canterbury,Rosie Duffield,Independent,1183,274,5,23.16,0.42
+E14001152,Carlisle,Ms Julie Minns,Labour,1452,30,0,2.07,0.00
+E14001153,Carshalton and Wallington,Bobby Dean,Liberal Democrat,882,342,0,38.78,0.00
+E14001154,Castle Point,Rebecca Harris,Conservative,1058,151,0,14.27,0.00
+E14001155,Central Devon,Sir Mel Stride,Conservative,1017,156,2,15.34,0.20
+E14001156,Central Suffolk and North Ipswich,Patrick Spencer,Independent,1087,136,2,12.51,0.18
+E14001157,Chatham and Aylesford,Tristan Osborne,Labour,1224,74,1,6.05,0.08
+E14001158,Cheadle,Tom Morrison,Liberal Democrat,1210,318,4,26.28,0.33
+E14001159,Chelmsford,Marie Goldman,Liberal Democrat,1337,259,2,19.37,0.15
+E14001160,Chelsea and Fulham,Ben Coleman,Labour,1362,1141,336,83.77,24.67
+E14001161,Cheltenham,Max Wilkinson,Liberal Democrat,1498,349,13,23.30,0.87
+E14001162,Chesham and Amersham,Sarah Green,Liberal Democrat,977,621,71,63.56,7.27
+E14001163,Chester North and Neston,Samantha Dixon,Labour,1184,124,1,10.47,0.08
+E14001164,Chester South and Eddisbury,Aphra Brandreth,Conservative,1172,264,2,22.53,0.17
+E14001165,Chesterfield,Mr Toby Perkins,Labour,1157,21,0,1.82,0.00
+E14001166,Chichester,Jess Brown-Fuller,Liberal Democrat,1283,321,14,25.02,1.09
+E14001167,Chingford and Woodford Green,Sir Iain Duncan Smith,Conservative,978,548,13,56.03,1.33
+E14001168,Chippenham,Sarah Gibson,Liberal Democrat,1225,118,1,9.63,0.08
+E14001169,Chipping Barnet,Dan Tomlinson,Labour,1009,640,28,63.43,2.78
+E14001170,Chorley,Sir Lindsay Hoyle,Speaker,1255,42,0,3.35,0.00
+E14001171,Christchurch,Sir Christopher Chope,Conservative,1268,418,4,32.97,0.32
+E14001172,Cities of London and Westminster,Rachel Blake,Labour,1344,1137,409,84.60,30.43
+E14001173,City of Durham,Mary Kelly Foy,Labour,1137,44,0,3.87,0.00
+E14001174,Clacton,Nigel Farage,Reform UK,1499,113,1,7.54,0.07
+E14001175,Clapham and Brixton Hill,Bell Ribeiro-Addy,Labour,1023,635,48,62.07,4.69
+E14001176,Colchester,Pam Cox,Labour,1375,96,0,6.98,0.00
+E14001177,Colne Valley,Paul Davies,Labour,1185,81,1,6.84,0.08
+E14001178,Congleton,Sarah Russell,Labour,1368,142,1,10.38,0.07
+E14001179,Corby and East Northamptonshire,Lee Barron,Labour,1461,116,2,7.94,0.14
+E14001180,Coventry East,Mary Creagh,Labour,952,3,0,0.32,0.00
+E14001181,Coventry North West,Taiwo Owatemi,Labour,1300,26,0,2.00,0.00
+E14001182,Coventry South,Zarah Sultana,Independent,1039,78,0,7.51,0.00
+E14001183,Cramlington and Killingworth,Emma Foody,Labour,1233,12,0,0.97,0.00
+E14001184,Crawley,Peter Lamb,Labour,1013,113,0,11.15,0.00
+E14001185,Crewe and Nantwich,Connor Naismith,Labour,1491,49,0,3.29,0.00
+E14001186,Croydon East,Natasha Irons,Labour,949,283,0,29.82,0.00
+E14001187,Croydon South,Chris Philp,Conservative,1109,510,7,45.99,0.63
+E14001188,Croydon West,Sarah Jones,Labour,889,100,1,11.25,0.11
+E14001189,Dagenham and Rainham,Margaret Mullane,Labour,883,90,0,10.19,0.00
+E14001190,Darlington,Lola McEvoy,Labour,1429,14,0,0.98,0.00
+E14001191,Dartford,Jim Dickson,Labour,1161,188,2,16.19,0.17
+E14001192,Daventry,Stuart Andrew,Conservative,1406,206,5,14.65,0.36
+E14001193,Derby North,Catherine Atkinson,Labour,1165,33,0,2.83,0.00
+E14001194,Derby South,Baggy Shanker,Labour,1130,12,0,1.06,0.00
+E14001195,Derbyshire Dales,John Whitby,Labour,1113,179,2,16.08,0.18
+E14001196,Dewsbury and Batley,Iqbal Mohamed,Independent,795,13,0,1.64,0.00
+E14001197,Didcot and Wantage,Olly Glover,Liberal Democrat,1495,347,11,23.21,0.74
+E14001198,Doncaster Central,Sally Jameson,Labour,1339,22,0,1.64,0.00
+E14001199,Doncaster East and the Isle of Axholme,Lee Pitcher,Labour,1044,35,2,3.35,0.19
+E14001200,Doncaster North,Ed Miliband,Labour,1088,15,0,1.38,0.00
+E14001201,Dorking and Horley,Chris Coghlan,Liberal Democrat,1077,537,18,49.86,1.67
+E14001202,Dover and Deal,Mike Tapp,Labour,1340,138,3,10.30,0.22
+E14001203,Droitwich and Evesham,Nigel Huddleston,Conservative,1175,187,5,15.91,0.43
+E14001204,Dudley,Sonia Kumar,Labour,876,9,0,1.03,0.00
+E14001205,Dulwich and West Norwood,Helen Hayes,Labour,990,553,79,55.86,7.98
+E14001206,Dunstable and Leighton Buzzard,Alex Mayer,Labour,1509,174,0,11.53,0.00
+E14001207,Ealing Central and Acton,Dr Rupa Huq,Labour,1127,717,74,63.62,6.57
+E14001208,Ealing North,James Murray,Labour,725,359,5,49.52,0.69
+E14001209,Ealing Southall,Deirdre Costigan,Labour,730,394,15,53.97,2.05
+E14001210,Earley and Woodley,Yuan Yang,Labour,1098,357,1,32.51,0.09
+E14001211,Easington,Grahame Morris,Labour,1363,8,0,0.59,0.00
+E14001212,East Grinstead and Uckfield,Mims Davies,Conservative,1249,484,12,38.75,0.96
+E14001213,East Ham,Sir Stephen Timms,Labour,463,102,0,22.03,0.00
+E14001214,East Hampshire,Damian Hinds,Conservative,1022,400,24,39.14,2.35
+E14001215,East Surrey,Claire Coutinho,Conservative,1072,500,25,46.64,2.33
+E14001216,East Thanet,Ms Polly Billington,Labour,1242,117,1,9.42,0.08
+E14001217,East Wiltshire,Danny Kruger,Conservative,979,224,8,22.88,0.82
+E14001218,East Worthing and Shoreham,Tom Rutland,Labour,1107,245,0,22.13,0.00
+E14001219,Eastbourne,Josh Babarinde,Liberal Democrat,1461,137,2,9.38,0.14
+E14001220,Eastleigh,Liz Jarvis,Liberal Democrat,1102,176,0,15.97,0.00
+E14001221,Edmonton and Winchmore Hill,Kate Osamor,Labour,752,286,9,38.03,1.20
+E14001222,Ellesmere Port and Bromborough,Justin Madders,Labour,1100,16,0,1.45,0.00
+E14001223,Eltham and Chislehurst,Clive Efford,Labour,1013,525,26,51.83,2.57
+E14001224,Ely and East Cambridgeshire,Charlotte Cane,Liberal Democrat,1242,251,3,20.21,0.24
+E14001225,Enfield North,Feryal Clark,Labour,977,311,2,31.83,0.20
+E14001226,Epping Forest,Dr Neil Hudson,Conservative,1095,568,32,51.87,2.92
+E14001227,Epsom and Ewell,Helen Maguire,Liberal Democrat,1228,653,15,53.18,1.22
+E14001228,Erewash,Adam Thompson,Labour,1218,20,0,1.64,0.00
+E14001229,Erith and Thamesmead,Ms Abena Oppong-Asare,Labour,915,96,1,10.49,0.11
+E14001230,Esher and Walton,Monica Harding,Liberal Democrat,1260,828,116,65.71,9.21
+E14001231,Exeter,Steve Race,Labour,1029,90,0,8.75,0.00
+E14001232,Exmouth and Exeter East,David Reed,Conservative,1424,278,4,19.52,0.28
+E14001233,Fareham and Waterlooville,Suella Braverman,Conservative,1294,137,1,10.59,0.08
+E14001234,Farnham and Bordon,Gregory Stafford,Conservative,1213,531,36,43.78,2.97
+E14001235,Faversham and Mid Kent,Helen Whately,Conservative,1116,230,2,20.61,0.18
+E14001236,Feltham and Heston,Seema Malhotra,Labour,646,165,0,25.54,0.00
+E14001237,Filton and Bradley Stoke,Claire Hazelgrove,Labour,1394,195,0,13.99,0.00
+E14001238,Finchley and Golders Green,Sarah Sackman,Labour,946,604,123,63.85,13.00
+E14001239,Folkestone and Hythe,Tony Vaughan,Labour,1240,158,0,12.74,0.00
+E14001240,Forest of Dean,Matt Bishop,Labour,1000,107,1,10.70,0.10
+E14001241,Frome and East Somerset,Anna Sabine,Liberal Democrat,1073,177,8,16.50,0.75
+E14001242,Fylde,Mr Andrew Snowden,Conservative,1462,110,4,7.52,0.27
+E14001243,Gainsborough,Sir Edward Leigh,Conservative,1251,47,0,3.76,0.00
+E14001244,Gateshead Central and Whickham,Mark Ferguson,Labour,1043,12,0,1.15,0.00
+E14001245,Gedling,Michael Payne,Labour,1399,33,0,2.36,0.00
+E14001246,Gillingham and Rainham,Naushabah Khan,Labour,1145,75,1,6.55,0.09
+E14001247,Glastonbury and Somerton,Sarah Dyke,Liberal Democrat,1135,169,5,14.89,0.44
+E14001248,Gloucester,Alex McIntyre,Labour,1455,30,0,2.06,0.00
+E14001249,Godalming and Ash,Sir Jeremy Hunt,Conservative,1125,529,34,47.02,3.02
+E14001250,Goole and Pocklington,David Davis,Conservative,1441,83,0,5.76,0.00
+E14001251,Gorton and Denton,Andrew Gwynne,Independent,941,9,0,0.96,0.00
+E14001252,Gosport,Dame Caroline Dinenage,Conservative,1217,104,0,8.55,0.00
+E14001253,Grantham and Bourne,Gareth Davies,Conservative,1320,85,2,6.44,0.15
+E14001254,Gravesham,Dr Lauren Sullivan,Labour,988,128,0,12.96,0.00
+E14001255,Great Grimsby and Cleethorpes,Melanie Onn,Labour,1352,3,0,0.22,0.00
+E14001256,Great Yarmouth,Rupert Lowe,Independent,1274,33,0,2.59,0.00
+E14001257,Greenwich and Woolwich,Matthew Pennycook,Labour,1154,555,16,48.09,1.39
+E14001258,Guildford,Zöe Franklin,Liberal Democrat,1149,577,42,50.22,3.66
+E14001259,Hackney North and Stoke Newington,Ms Diane Abbott,Independent,775,474,41,61.16,5.29
+E14001260,Hackney South and Shoreditch,Dame Meg Hillier,Labour,858,560,36,65.27,4.20
+E14001261,Halesowen,Alex Ballinger,Labour,905,16,0,1.77,0.00
+E14001262,Halifax,Kate Dearden,Labour,1290,30,0,2.33,0.00
+E14001263,Hamble Valley,Paul Holmes,Conservative,1421,300,5,21.11,0.35
+E14001264,Hammersmith and Chiswick,Andy Slaughter,Labour,1034,687,151,66.44,14.60
+E14001265,Hampstead and Highgate,Tulip Siddiq,Labour,1209,972,255,80.40,21.09
+E14001266,"Harborough, Oadby and Wigston",Neil O'Brien,Conservative,1198,154,1,12.85,0.08
+E14001267,Harlow,Chris Vince,Labour,1115,163,2,14.62,0.18
+E14001268,Harpenden and Berkhamsted,Victoria Collins,Liberal Democrat,1152,753,88,65.36,7.64
+E14001269,Harrogate and Knaresborough,Tom Gordon,Liberal Democrat,1620,367,4,22.65,0.25
+E14001270,Harrow East,Bob Blackman,Conservative,607,394,17,64.91,2.80
+E14001271,Harrow West,Gareth Thomas,Labour,739,331,1,44.79,0.14
+E14001272,Hartlepool,Mr Jonathan Brash,Labour,1433,23,0,1.61,0.00
+E14001273,Harwich and North Essex,Sir Bernard Jenkin,Conservative,1284,234,1,18.22,0.08
+E14001274,Hastings and Rye,Helena Dollimore,Labour,1337,139,1,10.40,0.07
+E14001275,Havant,Alan Mak,Conservative,1048,138,0,13.17,0.00
+E14001276,Hayes and Harlington,John McDonnell,Independent,677,248,2,36.63,0.30
+E14001277,Hazel Grove,Lisa Smart,Liberal Democrat,1215,108,0,8.89,0.00
+E14001278,Hemel Hempstead,David Taylor,Labour,1064,278,9,26.13,0.85
+E14001279,Hendon,David Pinto-Duschinsky,Labour,833,385,19,46.22,2.28
+E14001280,Henley and Thame,Freddie van Mierlo,Liberal Democrat,1077,570,34,52.92,3.16
+E14001281,Hereford and South Herefordshire,Jesse Norman,Conservative,1122,127,2,11.32,0.18
+E14001282,Herne Bay and Sandwich,Sir Roger Gale,Conservative,1320,187,1,14.17,0.08
+E14001283,Hertford and Stortford,Josh Dean,Labour,1470,546,8,37.14,0.54
+E14001284,Hertsmere,Sir Oliver Dowden,Conservative,1051,594,42,56.52,4.00
+E14001285,Hexham,Joe Morris,Labour,1190,208,6,17.48,0.50
+E14001286,Heywood and Middleton North,Mrs Elsie Blundell,Labour,1050,25,0,2.38,0.00
+E14001287,High Peak,Jon Pearce,Labour,1204,99,0,8.22,0.00
+E14001288,Hinckley and Bosworth,Dr Luke Evans,Conservative,1289,110,1,8.53,0.08
+E14001289,Hitchin,Alistair Strathern,Labour,1332,455,17,34.16,1.28
+E14001290,Holborn and St Pancras,Sir Keir Starmer,Labour,692,487,87,70.38,12.57
+E14001291,Honiton and Sidmouth,Richard Foord,Liberal Democrat,1290,273,4,21.16,0.31
+E14001292,Hornchurch and Upminster,Julia Lopez,Conservative,1073,445,7,41.47,0.65
+E14001293,Hornsey and Friern Barnet,Catherine West,Labour,1026,659,111,64.23,10.82
+E14001294,Horsham,John Milne,Liberal Democrat,1188,385,8,32.41,0.67
+E14001295,Houghton and Sunderland South,Bridget Phillipson,Labour,1094,10,0,0.91,0.00
+E14001296,Hove and Portslade,Peter Kyle,Labour,1326,474,20,35.75,1.51
+E14001297,Huddersfield,Harpreet Uppal,Labour,1021,24,0,2.35,0.00
+E14001298,Huntingdon,Ben Obese-Jecty,Conservative,1333,187,3,14.03,0.23
+E14001299,Hyndburn,Sarah Smith,Labour,1144,9,0,0.79,0.00
+E14001300,Ilford North,Wes Streeting,Labour,668,339,1,50.75,0.15
+E14001301,Ilford South,Jas Athwal,Labour,596,201,0,33.72,0.00
+E14001302,Ipswich,Jack Abbott,Labour,1214,41,0,3.38,0.00
+E14001303,Isle of Wight East,Joe Robertson,Conservative,912,85,1,9.32,0.11
+E14001304,Isle of Wight West,Mr Richard Quigley,Labour,833,76,4,9.12,0.48
+E14001305,Islington North,Jeremy Corbyn,Independent,850,556,70,65.41,8.24
+E14001306,Islington South and Finsbury,Emily Thornberry,Labour,975,757,124,77.64,12.72
+E14001307,Jarrow and Gateshead East,Kate Osborne,Labour,897,2,0,0.22,0.00
+E14001308,Keighley and Ilkley,Robbie Moore,Conservative,1309,113,4,8.63,0.31
+E14001309,Kenilworth and Southam,Sir Jeremy Wright,Conservative,1296,347,12,26.77,0.93
+E14001310,Kensington and Bayswater,Joe Powell,Labour,1196,1049,408,87.71,34.11
+E14001311,Kettering,Rosie Wrighting,Labour,1470,64,1,4.35,0.07
+E14001312,Kingston and Surbiton,Ed Davey,Liberal Democrat,1268,645,19,50.87,1.50
+E14001313,Kingston upon Hull East,Karl Turner,Labour,1035,0,0,0.00,0.00
+E14001314,Kingston upon Hull North and Cottingham,Dame Diana Johnson,Labour,1264,8,0,0.63,0.00
+E14001315,Kingston upon Hull West and Haltemprice,Emma Hardy,Labour,1292,16,0,1.24,0.00
+E14001316,Kingswinford and South Staffordshire,Mike Wood,Conservative,941,96,1,10.20,0.11
+E14001317,Knowsley,Anneliese Midgley,Labour,873,5,0,0.57,0.00
+E14001318,Lancaster and Wyre,Cat Smith,Labour,1102,32,0,2.90,0.00
+E14001319,Leeds Central and Headingley,Alex Sobel,Labour,823,29,2,3.52,0.24
+E14001320,Leeds East,Richard Burgon,Labour,1062,15,0,1.41,0.00
+E14001321,Leeds North East,Fabian Hamilton,Labour,971,151,4,15.55,0.41
+E14001322,Leeds North West,Katie White,Labour,1285,185,3,14.40,0.23
+E14001323,Leeds South,Hilary Benn,Labour,1134,1,0,0.09,0.00
+E14001324,Leeds South West and Morley,Mark Sewards,Labour,1318,25,0,1.90,0.00
+E14001325,Leeds West and Pudsey,Rachel Reeves,Labour,1197,23,0,1.92,0.00
+E14001326,Leicester East,Shivani Raja,Conservative,590,13,0,2.20,0.00
+E14001327,Leicester South,Shockat Adam,Independent,656,36,0,5.49,0.00
+E14001328,Leicester West,Liz Kendall,Labour,834,6,0,0.72,0.00
+E14001329,Leigh and Atherton,Jo Platt,Labour,1357,12,0,0.88,0.00
+E14001330,Lewes,James MacCleary,Liberal Democrat,1262,310,11,24.56,0.87
+E14001331,Lewisham East,Janet Daby,Labour,954,349,4,36.58,0.42
+E14001332,Lewisham North,Vicky Foxcroft,Labour,1010,430,15,42.57,1.49
+E14001333,Lewisham West and East Dulwich,Ellie Reeves,Labour,1146,686,32,59.86,2.79
+E14001334,Leyton and Wanstead,Mr Calvin Bailey,Labour,1068,606,16,56.74,1.50
+E14001335,Lichfield,Dave Robertson,Labour,1188,156,2,13.13,0.17
+E14001336,Lincoln,Mr Hamish Falconer,Labour,1233,20,0,1.62,0.00
+E14001337,Liverpool Garston,Maria Eagle,Labour,940,90,1,9.57,0.11
+E14001338,Liverpool Riverside,Kim Johnson,Labour,1006,13,0,1.29,0.00
+E14001339,Liverpool Walton,Dan Carden,Labour,887,1,0,0.11,0.00
+E14001340,Liverpool Wavertree,Paula Barker,Labour,1122,35,0,3.12,0.00
+E14001341,Liverpool West Derby,Ian Byrne,Labour,982,11,0,1.12,0.00
+E14001342,Loughborough,Dr Jeevun Sandher,Labour,1079,70,0,6.49,0.00
+E14001343,Louth and Horncastle,Victoria Atkins,Conservative,1247,67,0,5.37,0.00
+E14001344,Lowestoft,Jess Asato,Labour,1187,28,0,2.36,0.00
+E14001345,Luton North,Sarah Owen,Labour,866,38,0,4.39,0.00
+E14001346,Luton South and South Bedfordshire,Rachel Hopkins,Labour,892,84,1,9.42,0.11
+E14001347,Macclesfield,Tim Roca,Labour,1366,232,4,16.98,0.29
+E14001348,Maidenhead,Mr Joshua Reynolds,Liberal Democrat,1284,688,35,53.58,2.73
+E14001349,Maidstone and Malling,Helen Grant,Conservative,1366,237,0,17.35,0.00
+E14001350,Makerfield,Josh Simons,Labour,1123,4,0,0.36,0.00
+E14001351,Maldon,Sir John Whittingdale,Conservative,1210,326,10,26.94,0.83
+E14001352,Manchester Central,Lucy Powell,Labour,1395,38,2,2.72,0.14
+E14001353,Manchester Rusholme,Afzal Khan,Labour,684,20,0,2.92,0.00
+E14001354,Manchester Withington,Jeff Smith,Labour,977,217,4,22.21,0.41
+E14001355,Mansfield,Steve Yemm,Labour,1240,12,0,0.97,0.00
+E14001356,Melksham and Devizes,Brian Mathew,Liberal Democrat,1193,219,2,18.36,0.17
+E14001357,Melton and Syston,Edward Argar,Conservative,1292,96,2,7.43,0.15
+E14001358,Meriden and Solihull East,Saqib Bhatti,Conservative,965,268,11,27.77,1.14
+E14001359,Mid Bedfordshire,Blake Stephenson,Conservative,1207,280,4,23.20,0.33
+E14001360,Mid Buckinghamshire,Greg Smith,Conservative,1119,548,19,48.97,1.70
+E14001361,Mid Cheshire,Andrew Cooper,Labour,1255,72,0,5.74,0.00
+E14001362,Mid Derbyshire,Jonathan Davies,Labour,1140,114,6,10.00,0.53
+E14001363,Mid Dorset and North Poole,Vikki Slade,Liberal Democrat,1135,263,4,23.17,0.35
+E14001364,Mid Leicestershire,Mr Peter Bedford,Conservative,1284,110,7,8.57,0.55
+E14001365,Mid Norfolk,George Freeman,Conservative,1329,143,1,10.76,0.08
+E14001366,Mid Sussex,Alison Bennett,Liberal Democrat,1341,479,15,35.72,1.12
+E14001367,Middlesbrough and Thornaby East,Andy McDonald,Labour,1281,1,0,0.08,0.00
+E14001368,Middlesbrough South and East Cleveland,Luke Myer,Labour,1178,25,0,2.12,0.00
+E14001369,Milton Keynes Central,Emily Darlington,Labour,1209,265,2,21.92,0.17
+E14001370,Milton Keynes North,Chris Curtis,Labour,1299,229,0,17.63,0.00
+E14001371,Mitcham and Morden,Dame Siobhain McDonagh,Labour,926,371,0,40.06,0.00
+E14001372,Morecambe and Lunesdale,Lizzi Collinge,Labour,1219,73,0,5.99,0.00
+E14001373,New Forest East,Sir Julian Lewis,Conservative,1069,209,14,19.55,1.31
+E14001374,New Forest West,Sir Desmond Swayne,Conservative,1104,396,19,35.87,1.72
+E14001375,Newark,Robert Jenrick,Conservative,1374,124,2,9.02,0.15
+E14001376,Newbury,Mr Lee Dillon,Liberal Democrat,1205,306,7,25.39,0.58
+E14001377,Newcastle upon Tyne Central and West,Dame Chi Onwurah,Labour,1047,10,0,0.96,0.00
+E14001378,Newcastle upon Tyne East and Wallsend,Mary Glindon,Labour,1119,20,0,1.79,0.00
+E14001379,Newcastle upon Tyne North,Catherine McKinnell,Labour,1362,138,4,10.13,0.29
+E14001380,Newcastle-under-Lyme,Adam Jogee,Labour,1129,19,0,1.68,0.00
+E14001381,Newton Abbot,Martin Wrigley,Liberal Democrat,1212,104,1,8.58,0.08
+E14001382,Newton Aycliffe and Spennymoor,Alan Strickland,Labour,1481,10,0,0.68,0.00
+E14001383,Normanton and Hemsworth,Jon Trickett,Labour,1140,16,0,1.40,0.00
+E14001384,North Bedfordshire,Richard Fuller,Conservative,1400,296,2,21.14,0.14
+E14001385,North Cornwall,Ben Maguire,Liberal Democrat,1218,204,10,16.75,0.82
+E14001386,North Cotswolds,Sir Geoffrey Clifton-Brown,Conservative,1262,361,33,28.61,2.61
+E14001387,North Devon,Ian Roome,Liberal Democrat,1248,149,4,11.94,0.32
+E14001388,North Dorset,Simon Hoare,Conservative,1245,213,2,17.11,0.16
+E14001389,North Durham,Luke Akehurst,Labour,1292,14,0,1.08,0.00
+E14001390,North East Cambridgeshire,Steve Barclay,Conservative,1326,37,0,2.79,0.00
+E14001391,North East Derbyshire,Louise Jones,Labour,970,47,1,4.85,0.10
+E14001392,North East Hampshire,Alex Brewer,Liberal Democrat,1262,567,17,44.93,1.35
+E14001393,North East Hertfordshire,Chris Hinchliff,Independent,1121,379,12,33.81,1.07
+E14001394,North East Somerset and Hanham,Dan Norris,Independent,1046,211,2,20.17,0.19
+E14001395,North Herefordshire,Ellie Chowns,Green Party,998,185,3,18.54,0.30
+E14001396,North Norfolk,Steff Aquarone,Liberal Democrat,1219,186,3,15.26,0.25
+E14001397,North Northumberland,David Smith,Labour,1378,106,0,7.69,0.00
+E14001398,North Shropshire,Helen Morgan,Liberal Democrat,1279,105,0,8.21,0.00
+E14001399,North Somerset,Sadik Al-Hassan,Labour,1265,358,6,28.30,0.47
+E14001400,North Warwickshire and Bedworth,Rachel Taylor,Labour,950,39,0,4.11,0.00
+E14001401,North West Cambridgeshire,Sam Carling,Labour,1445,84,4,5.81,0.28
+E14001402,North West Essex,Mrs Kemi Badenoch,Conservative,1254,447,14,35.65,1.12
+E14001403,North West Hampshire,Kit Malthouse,Conservative,1225,225,4,18.37,0.33
+E14001404,North West Leicestershire,Amanda Hack,Labour,1366,72,0,5.27,0.00
+E14001405,North West Norfolk,James Wild,Conservative,1268,138,3,10.88,0.24
+E14001406,Northampton North,Lucy Rigby,Labour,1468,30,0,2.04,0.00
+E14001407,Northampton South,Mike Reader,Labour,1337,106,0,7.93,0.00
+E14001408,Norwich North,Alice Macdonald,Labour,1372,48,0,3.50,0.00
+E14001409,Norwich South,Clive Lewis,Labour,1208,90,0,7.45,0.00
+E14001410,Nottingham East,Nadia Whittome,Labour,1094,29,0,2.65,0.00
+E14001411,Nottingham North and Kimberley,Alex Norris,Labour,1008,5,0,0.50,0.00
+E14001412,Nottingham South,Lilian Greenwood,Labour,828,31,0,3.74,0.00
+E14001413,Nuneaton,Jodie Gosling,Labour,1224,13,0,1.06,0.00
+E14001414,Old Bexley and Sidcup,Mr Louie French,Conservative,1160,412,2,35.52,0.17
+E14001415,Oldham East and Saddleworth,Debbie Abrahams,Labour,968,54,1,5.58,0.10
+E14001416,"Oldham West, Chadderton and Royton",Jim McMahon,Labour,920,8,0,0.87,0.00
+E14001417,Orpington,Gareth Bacon,Conservative,993,496,9,49.95,0.91
+E14001418,Ossett and Denby Dale,Jade Botterill,Labour,1206,92,1,7.63,0.08
+E14001419,Oxford East,Anneliese Dodds,Labour,835,281,4,33.65,0.48
+E14001420,Oxford West and Abingdon,Layla Moran,Liberal Democrat,1016,416,42,40.94,4.13
+E14001421,Peckham,Miatta Fahnbulleh,Labour,747,354,16,47.39,2.14
+E14001422,Pendle and Clitheroe,Jonathan Hinder,Labour,1392,43,0,3.09,0.00
+E14001423,Penistone and Stocksbridge,Dr Marie Tidball,Labour,1048,48,0,4.58,0.00
+E14001424,Penrith and Solway,Markus Campbell-Savours,Labour,1299,78,2,6.00,0.15
+E14001425,Peterborough,Andrew Pakes,Labour,1083,38,0,3.51,0.00
+E14001426,Plymouth Moor View,Fred Thomas,Labour,1050,21,0,2.00,0.00
+E14001427,Plymouth Sutton and Devonport,Luke Pollard,Labour,1367,26,0,1.90,0.00
+E14001428,"Pontefract, Castleford and Knottingley",Yvette Cooper,Labour,1265,9,1,0.71,0.08
+E14001429,Poole,Neil Duncan-Jordan,Independent,1364,282,31,20.67,2.27
+E14001430,Poplar and Limehouse,Apsana Begum,Independent,1504,763,19,50.73,1.26
+E14001431,Portsmouth North,Amanda Martin,Labour,1080,46,0,4.26,0.00
+E14001432,Portsmouth South,Stephen Morgan,Labour,1202,84,2,6.99,0.17
+E14001433,Preston,Sir Mark Hendrick,Labour,1229,8,0,0.65,0.00
+E14001434,Putney,Fleur Anderson,Labour,1369,850,88,62.09,6.43
+E14001435,Queen's Park and Maida Vale,Georgia Gould,Labour,912,630,86,69.08,9.43
+E14001436,Rawmarsh and Conisbrough,John Healey,Labour,1020,11,0,1.08,0.00
+E14001437,Rayleigh and Wickford,Mr Mark Francois,Conservative,1225,259,2,21.14,0.16
+E14001438,Reading Central,Matt Rodda,Labour,1309,272,4,20.78,0.31
+E14001439,Reading West and Mid Berkshire,Olivia Bailey,Labour,974,291,16,29.88,1.64
+E14001440,Redcar,Anna Turley,Labour,1096,8,0,0.73,0.00
+E14001441,Redditch,Chris Bloore,Labour,924,76,0,8.23,0.00
+E14001442,Reigate,Rebecca Paul,Conservative,1312,681,51,51.91,3.89
+E14001443,Ribble Valley,Maya Ellis,Labour,1430,101,2,7.06,0.14
+E14001444,Richmond and Northallerton,Rishi Sunak,Conservative,1115,124,1,11.12,0.09
+E14001445,Richmond Park,Sarah Olney,Liberal Democrat,1246,941,197,75.52,15.81
+E14001446,Rochdale,Paul Waugh,Labour,868,11,0,1.27,0.00
+E14001447,Rochester and Strood,Lauren Edwards,Labour,1121,119,0,10.62,0.00
+E14001448,Romford,Andrew Rosindell,Conservative,1183,388,0,32.80,0.00
+E14001449,Romsey and Southampton North,Caroline Nokes,Conservative,1028,337,12,32.78,1.17
+E14001450,Rossendale and Darwen,Andy MacNae,Labour,1462,35,0,2.39,0.00
+E14001451,Rother Valley,Jake Richards,Labour,1163,35,1,3.01,0.09
+E14001452,Rotherham,Sarah Champion,Labour,974,17,0,1.75,0.00
+E14001453,Rugby,John Slinger,Labour,1364,101,1,7.40,0.07
+E14001454,"Ruislip, Northwood and Pinner",David Simmonds,Conservative,877,589,17,67.16,1.94
+E14001455,Runcorn and Helsby,Sarah Pochin,Reform UK,949,54,0,5.69,0.00
+E14001456,Runnymede and Weybridge,Dr Ben Spencer,Conservative,1307,612,92,46.82,7.04
+E14001457,Rushcliffe,James Naish,Labour,1386,252,8,18.18,0.58
+E14001458,Rutland and Stamford,Alicia Kearns,Conservative,1205,259,10,21.49,0.83
+E14001459,Salford,Rebecca Long Bailey,Labour,1674,16,1,0.96,0.06
+E14001460,Salisbury,John Glen,Conservative,1097,265,9,24.16,0.82
+E14001461,Scarborough and Whitby,Alison Hume,Labour,1477,73,1,4.94,0.07
+E14001462,Scunthorpe,Sir Nicholas Dakin,Labour,1202,8,0,0.67,0.00
+E14001463,Sefton Central,Bill Esterson,Labour,1125,113,4,10.04,0.36
+E14001464,Selby,Keir Mather,Labour,1374,80,0,5.82,0.00
+E14001465,Sevenoaks,Laura Trott,Conservative,1099,478,58,43.49,5.28
+E14001466,Sheffield Brightside and Hillsborough,Gill Furniss,Labour,779,3,0,0.39,0.00
+E14001467,Sheffield Central,Abtisam Mohamed,Labour,872,49,0,5.62,0.00
+E14001468,Sheffield Hallam,Olivia Blake,Labour,1090,260,4,23.85,0.37
+E14001469,Sheffield Heeley,Louise Haigh,Labour,983,16,0,1.63,0.00
+E14001470,Sheffield South East,Mr Clive Betts,Labour,933,7,0,0.75,0.00
+E14001471,Sherwood Forest,Michelle Welsh,Labour,1288,57,1,4.43,0.08
+E14001472,Shipley,Anna Dixon,Labour,1327,114,0,8.59,0.00
+E14001473,Shrewsbury,Julia Buckley,Labour,1247,108,3,8.66,0.24
+E14001474,Sittingbourne and Sheppey,Kevin McKenna,Labour,1354,95,0,7.02,0.00
+E14001475,Skipton and Ripon,Sir Julian Smith,Conservative,1285,212,1,16.50,0.08
+E14001476,Sleaford and North Hykeham,Dr Caroline Johnson,Conservative,1266,45,0,3.55,0.00
+E14001477,Slough,Mr Tanmanjeet Singh Dhesi,Labour,885,147,1,16.61,0.11
+E14001478,Smethwick,Gurinder Singh Josan,Labour,731,4,0,0.55,0.00
+E14001479,Solihull West and Shirley,Dr Neil Shastri-Hurst,Conservative,1101,236,4,21.44,0.36
+E14001480,South Basildon and East Thurrock,James McMurdock,Independent,976,137,0,14.04,0.00
+E14001481,South Cambridgeshire,Pippa Heylings,Liberal Democrat,1055,491,20,46.54,1.90
+E14001482,South Cotswolds,Dr Roz Savage,Liberal Democrat,1136,376,11,33.10,0.97
+E14001483,South Derbyshire,Samantha Niblett,Labour,1306,94,0,7.20,0.00
+E14001484,South Devon,Caroline Voaden,Liberal Democrat,1225,295,15,24.08,1.22
+E14001485,South Dorset,Lloyd Hatton,Labour,1448,155,2,10.70,0.14
+E14001486,South East Cornwall,Anna Gelderd,Labour,1131,94,1,8.31,0.09
+E14001487,South Holland and The Deepings,Sir John Hayes,Conservative,1462,43,0,2.94,0.00
+E14001488,South Leicestershire,Alberto Costa,Conservative,1270,99,3,7.80,0.24
+E14001489,South Norfolk,Ben Goldsborough,Labour,1321,163,2,12.34,0.15
+E14001490,South Northamptonshire,Sarah Bool,Conservative,1469,295,4,20.08,0.27
+E14001491,South Ribble,Mr Paul Foster,Labour,1231,71,1,5.77,0.08
+E14001492,South Shields,Emma Lewell,Labour,893,25,0,2.80,0.00
+E14001493,South Shropshire,Stuart Anderson,Conservative,919,179,2,19.48,0.22
+E14001494,South Suffolk,James Cartlidge,Conservative,1098,167,2,15.21,0.18
+E14001495,South West Devon,Rebecca Smith,Conservative,1382,133,3,9.62,0.22
+E14001496,South West Hertfordshire,Mr Gagan Mohindra,Conservative,1017,589,43,57.92,4.23
+E14001497,South West Norfolk,Terry Jermy,Labour,1228,76,0,6.19,0.00
+E14001498,South West Wiltshire,Dr Andrew Murrison,Conservative,1344,86,1,6.40,0.07
+E14001499,Southampton Itchen,Darren Paffey,Labour,1158,17,0,1.47,0.00
+E14001500,Southampton Test,Satvir Kaur,Labour,972,44,0,4.53,0.00
+E14001501,Southend East and Rochford,Mr Bayo Alaba,Labour,1083,164,5,15.14,0.46
+E14001502,Southend West and Leigh,David Burton-Sampson,Labour,1296,240,1,18.52,0.08
+E14001503,Southgate and Wood Green,Bambos Charalambous,Labour,928,511,21,55.06,2.26
+E14001504,Southport,Patrick Hurley,Labour,1344,70,0,5.21,0.00
+E14001505,Spelthorne,Lincoln Jopp,Conservative,1160,444,4,38.28,0.34
+E14001506,Spen Valley,Kim Leadbeater,Labour,1238,47,0,3.80,0.00
+E14001507,St Albans,Daisy Cooper,Liberal Democrat,1153,720,32,62.45,2.78
+E14001508,St Austell and Newquay,Noah Law,Labour,1335,123,4,9.21,0.30
+E14001509,St Helens North,David Baines,Labour,1000,11,1,1.10,0.10
+E14001510,St Helens South and Whiston,Ms Marie Rimmer,Labour,1043,15,0,1.44,0.00
+E14001511,St Ives,Andrew George,Liberal Democrat,1002,171,4,17.07,0.40
+E14001512,St Neots and Mid Cambridgeshire,Ian Sollom,Liberal Democrat,1463,298,1,20.37,0.07
+E14001513,Stafford,Leigh Ingham,Labour,1129,56,0,4.96,0.00
+E14001514,Staffordshire Moorlands,Dame Karen Bradley,Conservative,997,35,0,3.51,0.00
+E14001515,Stalybridge and Hyde,Jonathan Reynolds,Labour,1121,23,0,2.05,0.00
+E14001516,Stevenage,Kevin Bonavia,Labour,896,157,1,17.52,0.11
+E14001517,Stockport,Navendu Mishra,Labour,1311,91,1,6.94,0.08
+E14001518,Stockton North,Chris McDonald,Labour,1242,24,0,1.93,0.00
+E14001519,Stockton West,Matt Vickers,Conservative,1386,60,0,4.33,0.00
+E14001520,Stoke-on-Trent Central,Gareth Snell,Labour,1162,1,0,0.09,0.00
+E14001521,Stoke-on-Trent North,David Williams,Labour,1179,3,0,0.25,0.00
+E14001522,Stoke-on-Trent South,Dr Allison Gardner,Labour,1011,36,0,3.56,0.00
+E14001523,"Stone, Great Wyrley and Penkridge",Sir Gavin Williamson,Conservative,945,86,1,9.10,0.11
+E14001524,Stourbridge,Cat Eccles,Labour,908,52,0,5.73,0.00
+E14001525,Stratford and Bow,Uma Kumaran,Labour,828,317,5,38.29,0.60
+E14001526,Stratford-on-Avon,Manuela Perteghella,Liberal Democrat,1379,408,15,29.59,1.09
+E14001527,Streatham and Croydon North,Steve Reed,Labour,1256,571,16,45.46,1.27
+E14001528,Stretford and Urmston,Andrew Western,Labour,933,70,1,7.50,0.11
+E14001529,Stroud,Dr Simon Opher,Labour,1223,214,2,17.50,0.16
+E14001530,Suffolk Coastal,Jenny Riddell-Carpenter,Labour,1296,246,6,18.98,0.46
+E14001531,Sunderland Central,Lewis Atkinson,Labour,1218,9,0,0.74,0.00
+E14001532,Surrey Heath,Dr Al Pinkerton,Liberal Democrat,1140,514,17,45.09,1.49
+E14001533,Sussex Weald,Ms Nusrat Ghani,Conservative,1195,338,11,28.28,0.92
+E14001534,Sutton and Cheam,Luke Taylor,Liberal Democrat,1086,466,12,42.91,1.10
+E14001535,Sutton Coldfield,Sir Andrew Mitchell,Conservative,1143,275,5,24.06,0.44
+E14001536,Swindon North,Will Stone,Labour,1293,64,0,4.95,0.00
+E14001537,Swindon South,Heidi Alexander,Labour,1266,49,0,3.87,0.00
+E14001538,Tamworth,Sarah Edwards,Labour,1054,68,3,6.45,0.28
+E14001539,Tatton,Esther McVey,Conservative,1462,523,39,35.77,2.67
+E14001540,Taunton and Wellington,Gideon Amos,Liberal Democrat,1471,149,0,10.13,0.00
+E14001541,Telford,Shaun Davies,Labour,1137,11,0,0.97,0.00
+E14001542,Tewkesbury,Cameron Thomas,Liberal Democrat,1308,199,5,15.21,0.38
+E14001543,The Wrekin,Mark Pritchard,Conservative,1104,77,0,6.97,0.00
+E14001544,Thirsk and Malton,Kevin Hollinrake,Conservative,1303,119,2,9.13,0.15
+E14001545,Thornbury and Yate,Claire Young,Liberal Democrat,1106,209,1,18.90,0.09
+E14001546,Thurrock,Jen Craft,Labour,1116,106,0,9.50,0.00
+E14001547,Tipton and Wednesbury,Antonia Bance,Labour,743,0,0,0.00,0.00
+E14001548,Tiverton and Minehead,Rachel Gilmour,Liberal Democrat,1060,131,1,12.36,0.09
+E14001549,Tonbridge,Tom Tugendhat,Conservative,1111,466,12,41.94,1.08
+E14001550,Tooting,Dr Rosena Allin-Khan,Labour,1388,922,101,66.43,7.28
+E14001551,Torbay,Steve Darling,Liberal Democrat,1273,69,0,5.42,0.00
+E14001552,Torridge and Tavistock,Sir Geoffrey Cox,Conservative,1182,134,0,11.34,0.00
+E14001553,Tottenham,Mr David Lammy,Labour,931,533,7,57.25,0.75
+E14001554,Truro and Falmouth,Jayne Kirkham,Labour,1191,231,11,19.40,0.92
+E14001555,Tunbridge Wells,Mike Martin,Liberal Democrat,1308,528,28,40.37,2.14
+E14001556,Twickenham,Munira Wilson,Liberal Democrat,1158,786,80,67.88,6.91
+E14001557,Tynemouth,Sir Alan Campbell,Labour,1265,117,0,9.25,0.00
+E14001558,Uxbridge and South Ruislip,Danny Beales,Labour,1047,523,2,49.95,0.19
+E14001559,Vauxhall and Camberwell Green,Florence Eshalomi,Labour,808,426,22,52.72,2.72
+E14001560,Wakefield and Rothwell,Simon Lightwood,Labour,1144,28,1,2.45,0.09
+E14001561,Wallasey,Dame Angela Eagle,Labour,1264,14,0,1.11,0.00
+E14001562,Walsall and Bloxwich,Valerie Vaz,Labour,792,14,0,1.77,0.00
+E14001563,Walthamstow,Ms Stella Creasy,Labour,1167,649,2,55.61,0.17
+E14001564,Warrington North,Charlotte Nichols,Labour,979,44,1,4.49,0.10
+E14001565,Warrington South,Sarah Hall,Labour,1247,140,0,11.23,0.00
+E14001566,Warwick and Leamington,Matt Western,Labour,1418,264,3,18.62,0.21
+E14001567,Washington and Gateshead South,Mrs Sharon Hodgson,Labour,900,13,0,1.44,0.00
+E14001568,Watford,Matt Turmaine,Labour,1027,328,2,31.94,0.19
+E14001569,Waveney Valley,Adrian Ramsay,Green Party,1020,154,0,15.10,0.00
+E14001570,Weald of Kent,Katie Lam,Conservative,1033,370,3,35.82,0.29
+E14001571,Wellingborough and Rushden,Gen Kitchen,Labour,1330,46,0,3.46,0.00
+E14001572,Wells and Mendip Hills,Tessa Munt,Liberal Democrat,1160,275,2,23.71,0.17
+E14001573,Welwyn Hatfield,Andrew Lewin,Labour,966,319,11,33.02,1.14
+E14001574,West Bromwich,Sarah Coombes,Labour,741,5,0,0.67,0.00
+E14001575,West Dorset,Edward Morello,Liberal Democrat,1284,305,5,23.75,0.39
+E14001576,West Ham and Beckton,James Asser,Labour,882,254,0,28.80,0.00
+E14001577,West Lancashire,Ashley Dalton,Labour,1114,64,3,5.75,0.27
+E14001578,West Suffolk,Nick Timothy,Conservative,1397,116,1,8.30,0.07
+E14001579,West Worcestershire,Dame Harriett Baldwin,Conservative,1099,230,2,20.93,0.18
+E14001580,Westmorland and Lonsdale,Tim Farron,Liberal Democrat,1227,197,11,16.06,0.90
+E14001581,Weston-super-Mare,Dan Aldridge,Labour,1458,49,0,3.36,0.00
+E14001582,Wetherby and Easingwold,Sir Alec Shelbrooke,Conservative,1178,318,10,26.99,0.85
+E14001583,Whitehaven and Workington,Josh MacAlister,Labour,1226,15,0,1.22,0.00
+E14001584,Widnes and Halewood,Derek Twigg,Labour,1061,34,0,3.20,0.00
+E14001585,Wigan,Lisa Nandy,Labour,1243,26,1,2.09,0.08
+E14001586,Wimbledon,Mr Paul Kohler,Liberal Democrat,1223,840,115,68.68,9.40
+E14001587,Winchester,Dr Danny Chambers,Liberal Democrat,1131,563,33,49.78,2.92
+E14001588,Windsor,Jack Rankin,Conservative,1114,578,69,51.89,6.19
+E14001589,Wirral West,Matthew Patrick,Labour,1101,180,3,16.35,0.27
+E14001590,Witham,Priti Patel,Conservative,1282,277,3,21.61,0.23
+E14001591,Witney,Charlie Maynard,Liberal Democrat,1163,287,13,24.68,1.12
+E14001592,Woking,Mr Will Forster,Liberal Democrat,1193,456,37,38.22,3.10
+E14001593,Wokingham,Clive Jones,Liberal Democrat,1246,668,17,53.61,1.36
+E14001594,Wolverhampton North East,Mrs Sureena Brackenridge,Labour,785,2,0,0.25,0.00
+E14001595,Wolverhampton South East,Pat McFadden,Labour,721,0,0,0.00,0.00
+E14001596,Wolverhampton West,Warinder Juss,Labour,931,55,0,5.91,0.00
+E14001597,Worcester,Tom Collins,Labour,1213,49,0,4.04,0.00
+E14001598,Worsley and Eccles,Michael Wheeler,Labour,1260,61,0,4.84,0.00
+E14001599,Worthing West,Dr Beccy Cooper,Labour,1429,321,6,22.46,0.42
+E14001600,Wycombe,Emma Reynolds,Labour,1064,309,11,29.04,1.03
+E14001601,Wyre Forest,Mark Garnier,Conservative,1127,62,0,5.50,0.00
+E14001602,Wythenshawe and Sale East,Mike Kane,Labour,1051,86,0,8.18,0.00
+E14001603,Yeovil,Adam Dance,Liberal Democrat,1364,94,1,6.89,0.07
+E14001604,York Central,Rachael Maskell,Independent,1333,118,4,8.85,0.30
+E14001605,York Outer,Mr Luke Charters,Labour,1086,176,2,16.21,0.18
+W07000081,Aberafan Maesteg,Stephen Kinnock,Labour,972,4,0,0.41,0.00
+W07000082,Alyn and Deeside / Alun a Glannau Dyfrdwy,Sir Mark Tami,Labour,1057,23,0,2.18,0.00
+W07000083,Bangor Aberconwy,Claire Hughes,Labour,1000,44,0,4.40,0.00
+W07000084,Blaenau Gwent and Rhymney / Blaenau Gwent a Rhymni,Nick Smith,Labour,916,1,0,0.11,0.00
+W07000085,"Brecon, Radnor and Cwm Tawe / Aberhonddu, Maesyfed a Chwm-tawe",David Chadwick,Liberal Democrat,909,50,0,5.50,0.00
+W07000086,Bridgend / Pen-y-bont,Chris Elmore,Labour,1192,47,0,3.94,0.00
+W07000087,Caerfyrddin,Ann Davies,Plaid Cymru,778,35,0,4.50,0.00
+W07000088,Caerphilly / Caerffili,Chris Evans,Labour,1044,18,0,1.72,0.00
+W07000089,Cardiff East / Dwyrain Caerdydd,Jo Stevens,Labour,970,68,1,7.01,0.10
+W07000090,Cardiff North / Gogledd Caerdydd,Anna McMorrin,Labour,1096,137,0,12.50,0.00
+W07000091,Cardiff South and Penarth / De Caerdydd a Phenarth,Stephen Doughty,Labour,1179,98,3,8.31,0.25
+W07000092,Cardiff West / Gorllewin Caerdydd,Mr Alex Barros-Curtis,Labour,1130,112,1,9.91,0.09
+W07000093,Ceredigion Preseli,Ben Lake,Plaid Cymru,894,39,0,4.36,0.00
+W07000094,Clwyd East / Dwyrain Clwyd,Becky Gittins,Labour,1048,36,0,3.44,0.00
+W07000095,Clwyd North / Gogledd Clwyd,Gill German,Labour,1311,35,0,2.67,0.00
+W07000096,Dwyfor Meirionnydd,Liz Saville Roberts,Plaid Cymru,1092,50,1,4.58,0.09
+W07000097,Gower / G?yr,Tonia Antoniazzi,Labour,1091,97,0,8.89,0.00
+W07000098,Llanelli,Dame Nia Griffith,Labour,1011,16,0,1.58,0.00
+W07000099,Merthyr Tydfil and Aberdare / Merthyr Tudful ac Aberdâre,Gerald Jones,Labour,931,12,0,1.29,0.00
+W07000100,Mid and South Pembrokeshire / Canol a De Sir Benfro,Henry Tufnell,Labour,1114,37,1,3.32,0.09
+W07000101,Monmouthshire / Sir Fynwy,Catherine Fookes,Labour,1035,152,2,14.69,0.19
+W07000102,Montgomeryshire and Glyndwr / Maldwyn a Glynd?r,Steve Witherden,Labour,894,33,0,3.69,0.00
+W07000103,Neath and Swansea East / Castell-nedd a Dwyrain Abertawe,Carolyn Harris,Labour,1029,5,0,0.49,0.00
+W07000104,Newport East / Dwyrain Casnewydd,Jessica Morden,Labour,1213,27,0,2.23,0.00
+W07000105,Newport West and Islwyn / Gorllewin Casnewydd ac Islwyn,Ruth Jones,Labour,1108,44,0,3.97,0.00
+W07000106,Pontypridd,Alex Davies-Jones,Labour,1108,9,0,0.81,0.00
+W07000107,Rhondda and Ogmore / Rhondda ac Ogwr,Chris Bryant,Labour,1099,2,0,0.18,0.00
+W07000108,Swansea West / Gorllewin Abertawe,Torsten Bell,Labour,1094,23,0,2.10,0.00
+W07000109,Torfaen,Nick Thomas-Symonds,Labour,735,6,0,0.82,0.00
+W07000110,Vale of Glamorgan / Bro Morgannwg,Kanishka Narayan,Labour,1110,105,2,9.46,0.18
+W07000111,Wrexham / Wrecsam,Andrew Ranger,Labour,905,23,0,2.54,0.00
+W07000112,Ynys Môn,Llinos Medi,Plaid Cymru,651,39,1,5.99,0.15

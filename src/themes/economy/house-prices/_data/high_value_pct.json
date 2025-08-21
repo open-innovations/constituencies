@@ -1,0 +1,48 @@
+{
+	"title": "High-value homes sold % (England & Wales)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.MANSION_TAX_PPD_CALCS_EW",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ PCONNM }}"
+		}],
+		"value": "1.5M_UP_PCT",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 30,
+		"matchKey": "PCONCD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 30,
+				"label": "30%+"
+			},{
+				"value": 20,
+				"label": "20%"
+			},{
+				"value": 10,
+				"label": "10%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Estimate of high-value homes sold from July 2024 to June 2025:<br />Total: {{ PPD_COUNT | toLocaleString() }}<br />Over £500,000: {{ 500K_UP | toLocaleString() }} ({{ 500K_UP_PCT }}%)<br />Over £1.5 million: {{ 1.5M_UP | toLocaleString() }} ({{ 1.5M_UP_PCT }}%)</strong>",
+		"attribution": "Data: <a href=\"https://www.owenboswarva.com/opendata/MANSION_TAX_PPD_CALCS_EW.xlsx\">Estimate of high-value houses sold (Owen Boswarva using data from HM Land Registry; OGL3)</a>"
+	},
+	"date": "2025-08-21",
+	"units":{
+		"PPD_COUNT":{ "value": "number", "notes":"Estimate from HM Land Registry Price Paid Data (June 2024 - June 2025)" },
+		"500K_UP":{ "value": "number", "notes":"Estimate from HM Land Registry Price Paid Data (June 2024 - June 2025)" },
+		"1.5M_UP":{ "value": "number", "notes":"Estimate from HM Land Registry Price Paid Data (June 2024 - June 2025)" },
+		"500K_UP_PCT":{ "value": "percent", "notes":"Estimate from HM Land Registry Price Paid Data (June 2024 - June 2025)" },
+		"1.5M_UP_PCT":{ "value": "percent", "notes":"Estimate from HM Land Registry Price Paid Data (June 2024 - June 2025)" }
+	}
+}
