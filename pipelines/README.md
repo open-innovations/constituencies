@@ -20,3 +20,6 @@
 
 `perl pipelines/society/foodbanks.pl`
 
+### RMFI
+
+`perl pipelines/society/RMFI.pl`
