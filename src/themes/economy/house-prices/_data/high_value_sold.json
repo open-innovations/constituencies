@@ -24,6 +24,7 @@
 	},
 	"date":"2025-08-21",
 	"title":"High-value homes sold (England & Wales)",
+	"subtitle": "Price over £1.5 million",
 	"units":{
 		"1.5M_UP→2018":{
 			"value":"number"
