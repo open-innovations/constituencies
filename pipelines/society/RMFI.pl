@@ -21,15 +21,23 @@ use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
 
-my ($tdir,$catnum,$rid,$row,$id,$category,$data,$file,$mps,$pconlookup,$pcon,$mp,$i,$value,$totals,$j,$name,$cat,$csv,$outfile);
+my ($tdir,$catnum,$rid,$row,$id,$category,$data,$file,$mps,$pconlookup,$pcon,$mp,$i,$value,$totals,$j,$name,$cat,$csv,$outfile,$curfile);
 
 $tdir = $basedir."../../raw-data/society/RMFI/";
 $file = "current-MPs.json";
 $outfile = $basedir."../../src/themes/society/mps-financial-interests/_data/release/RMFI.csv";
 
 # Get the current MPs file
-SaveFromURL("https://github.com/open-innovations/constituencies/raw/refs/heads/main/lookups/current-MPs.json",$tdir.$file);
-$mps = LoadJSON($tdir.$file);
+if(!-d $tdir){
+	makeDir($tdir);
+}
+$curfile = $basedir."../../lookups/current-MPs.json";
+if(-e $curfile){
+	$mps = LoadJSON($curfile);
+}else{
+	SaveFromURL("https://github.com/open-innovations/constituencies/raw/refs/heads/main/lookups/current-MPs.json",$tdir.$file);
+	$mps = LoadJSON($tdir.$file);
+}
 # Make MP lookup
 foreach $pcon (keys(%{$mps})){ $pconlookup->{$mps->{$pcon}{'ID'}} = $pcon; }
 
