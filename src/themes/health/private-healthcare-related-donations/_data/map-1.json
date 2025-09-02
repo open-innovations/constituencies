@@ -42,5 +42,8 @@
 		"tooltip": "<a href=\"{{ Constituency URL }}\"><strong>{{ n }}</strong></a><br /><a href=\"{{ MP URL }}\">{{ MP }}</a> / {{ Party }}<br />Donations {{ Donation period || \"\" }}: <strong>£{{ Donations (£) | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://privatisation.everydoctor.org.uk/does-your-mp-receive-private-healthcare-related-donations/\">Does your mp receive private-healthcare-related donations</a> (EveryDoctor Ltd)\n"
 	},
-	"date": "2025-03"
+	"date": "2025-03",
+	"units": {
+		"Donations (£)":{"value":"GBP","category":"currency"}
+	}
 }
