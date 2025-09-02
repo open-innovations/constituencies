@@ -1,0 +1,46 @@
+{
+	"title": "Private-healthcare-related donations to MPs (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.donations",
+		"columns": [
+			{
+				"name": "filterLabel",
+				"template": "{{ n }} ({{ a }})"
+			}
+		],
+		"value": "Donations (£)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 100000,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100000,
+				"label": "£100k+"
+			},{
+				"value": 75000,
+				"label": "£75k"
+			},{
+				"value": 50000,
+				"label": "£50k"
+			},{
+				"value": 25000,
+				"label": "£25k"
+			},{
+				"value": 0,
+				"label": "£0"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<a href=\"{{ Constituency URL }}\"><strong>{{ n }}</strong></a><br /><a href=\"{{ MP URL }}\">{{ MP }}</a> / {{ Party }}<br />Donations {{ Donation period || \"\" }}: <strong>£{{ Donations (£) | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://privatisation.everydoctor.org.uk/does-your-mp-receive-private-healthcare-related-donations/\">Does your mp receive private-healthcare-related donations</a> (EveryDoctor Ltd)\n"
+	},
+	"date": "2025-03"
+}

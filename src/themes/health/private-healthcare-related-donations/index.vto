@@ -1,0 +1,21 @@
+---
+title: Private-healthcare-related donations to MPs (UK)
+theme: health
+created: 2025-09-02T11:20
+updated: 2025-09-02T11:20
+description: |
+  Donations MPs have received from people and organisations associated with the private healthcare sector.
+api:
+  - map-1
+---
+
+<p>This page provides constituency-level totals of donations MPs have received - from the beginning of 2023 to the end of March 2025 - from people and organisations associated with the private healthcare sector.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "map-1"
+}) }}
+
+<h2>Notes</h2>
+<p>These figures have been collated by <a href="https://privatisation.everydoctor.org.uk/does-your-mp-receive-private-healthcare-related-donations/">EveryDoctor Ltd</a> (a campaign against privatisation of the NHS). They used the Register of Members' Financial Interests (UK Parliament) to look for donations from organisations/individuals with connections to private healthcare.</p>
