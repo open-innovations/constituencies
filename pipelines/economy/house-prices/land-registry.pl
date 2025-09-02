@@ -90,10 +90,9 @@ for($f = 0; $f < @files; $f++){
 				$pcd = $4;
 				$pcd =~ s/ //g;
 
-				if($date gt $newest){ $newest = $date; }
-
 				if($date =~ /^([0-9]{4})/){
 					$y = $1;
+					if($date gt $newest){ $newest = $date; }
 				}else{
 					$y = "";
 				}
