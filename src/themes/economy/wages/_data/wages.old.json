@@ -1,0 +1,67 @@
+{
+	"title": "Wages",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.constituencies",
+		"data": "wages",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "2023",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 50000,
+		"matchKey": "geography_code",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 50000,
+				"label": "£50k"
+			},{
+				"value": 40000,
+				"label": "£40k"
+			},{
+				"value": 30000,
+				"label": "£30k"
+			},{
+				"value": 20000,
+				"label": "£20k"
+			},{
+				"value": 10000,
+				"label": "£10k"
+			},{
+				"value": 0,
+				"label": "0"
+			}]
+		},
+		"tools": {
+			"slider": {
+				"columns": ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"],
+				"width": "500px"
+			},
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Median gross annual pay ({{ _value }}): <strong>&pound;{{ {{ _value }} | toLocaleString() }}</strong>",
+		"attribution": "Data: <a href=\"https://www.nomisweb.co.uk/articles/295.aspx\">The Annual Survey of Hours and Earnings</a> &copy; ONS Crown Copyright (from Nomis on 2 April 2024)"
+	},
+	"date": "2022-12",
+	"units":{
+		"2010":{"value":"GBP","category":"currency"},
+		"2011":{"value":"GBP","category":"currency"},
+		"2012":{"value":"GBP","category":"currency"},
+		"2013":{"value":"GBP","category":"currency"},
+		"2014":{"value":"GBP","category":"currency"},
+		"2015":{"value":"GBP","category":"currency"},
+		"2016":{"value":"GBP","category":"currency"},
+		"2017":{"value":"GBP","category":"currency"},
+		"2018":{"value":"GBP","category":"currency"},
+		"2019":{"value":"GBP","category":"currency"},
+		"2020":{"value":"GBP","category":"currency"},
+		"2021":{"value":"GBP","category":"currency"},
+		"2022":{"value":"GBP","category":"currency"},
+		"2023":{"value":"GBP","category":"currency"}
+	}
+}
