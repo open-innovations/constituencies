@@ -1,0 +1,51 @@
+{
+	"title": "Playgrounds: square metres per child (UK)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "release.playgrounds",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }} ({{ a }})"
+		}],
+		"value": "Playground (sqm/child)",
+		"scale": "Viridis",
+		"min": 0,
+		"max": 10,
+		"matchKey": "PCON24CD",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 10,
+				"label": ">10 m&sup2;/child"
+			},{
+				"value": 8,
+				"label": "8 m&sup2;/child"
+			},{
+				"value": 6,
+				"label": "6 m&sup2;/child"
+			},{
+				"value": 4,
+				"label": "4 m&sup2;/child"
+			},{
+				"value": 2,
+				"label": "2 m&sup2;/child"
+			},{
+				"value": 0,
+				"label": "0 m&sup2;/child"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />Square metres per child: <strong>{{ {{ _value }} | toLocaleString() }}m&sup2;</strong>",
+		"attribution": "Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors), <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/populationestimatesforenglandandwales/mid2022\">Population estimates for England and Wales, mid-2022</a>, NRS <a href=\"https://www.scotlandscensus.gov.uk/search-the-census#/topics/list?topic=Demography%20and%20migration&categoryId=2\">Search census data 2022, Table UV103 (Age by single year)</a>, NISRA <a href=\"https://www.nisra.gov.uk/publications/2021-mid-year-population-estimates-small-geographical-areas\">2021 Mid-year population estimates for small geographical areas within Northern Ireland</a>"
+	},
+	"date": "2025-08-15",
+	"units": {
+		"Playground (% area)": {"value":"percent"},
+		"Playground (sqm/child)": {"value":"m^2"}
+	}
+}

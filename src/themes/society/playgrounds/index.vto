@@ -1,0 +1,32 @@
+---
+title: Playgrounds (UK)
+theme: society
+created: 2025-09-04T17:40
+updated: 2025-09-04T17:40
+description: |
+  Playgrounds added to OpenStreetMap (UK).
+keywords: [playground,leisure,children,play]
+api:
+  - percent
+  - square-metres
+---
+
+<p>This page provides constituency-level data on playgrounds included in <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as of September 2025. </p>
+
+<h2>As a percentage of total area</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "percent"
+}) }}
+
+<h2>Square metres per child</h2>
+<p>Brindley et al (2025) found that, overall, smaller settlements tended to have larger playgrounds.</p>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "square-metres"
+}) }}
+
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+<p>This analysis was inspired by similar work by <a href="https://www.mdpi.com/2073-445X/14/3/477">Brindley et al (2025)</a>. They analysed children's playgrounds by settlement. Like them, we've taken children to mean those aged 15 years or younger. We extracted everything with tag <code><a href="https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dplayground">leisure=playground</a></code> in OpenStreetMap and then found the overlap of polygons with constituency boundaries in QGIS. This analysis only includes children's playgrounds and doesn't include other types of greenspace.</p>
