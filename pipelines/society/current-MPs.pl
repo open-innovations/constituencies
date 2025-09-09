@@ -6,6 +6,7 @@ use utf8;
 use JSON::XS;
 use Data::Dumper;
 use Cwd qw(abs_path);
+use MIME::Base64 qw(encode_base64);
 binmode STDOUT, 'utf8';
 binmode STDERR, 'utf8';
 my ($basedir, $path);
@@ -16,11 +17,13 @@ BEGIN {
 use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
-my ($baseurl,$tmpdir,$url,$page,$json,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon);
+my ($baseurl,$tmpdir,$url,$page,$json,$thumbs,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon,$thumbfile,$size,$args);
 
 $tmpdir = $basedir."../../raw-data/";
 $dir = $tmpdir."society/parliament/";
 if(!-d $dir){ makeDir($dir); }
+if(!-d $dir."thumbs/"){ makeDir($dir."thumbs/"); }
+
 
 
 # Get Constituency IDs from HexJSON
@@ -73,9 +76,10 @@ while($count < $total){
 	$p++;
 }
 
-
 $json = LoadCSV($twfyfile,{'key'=>'Constituency'});
 
+$size = 120;
+$args = "-auto-orient -thumbnail ".$size."x".$size."^ -gravity center -extent ".$size."x".$size." -background transparent -quality 90  -strip";
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	$pcon = $out->{'MPs'}[$i]{'PCON24NM'};
 	if(defined($json->{$pcon})){
@@ -86,10 +90,22 @@ for($i = 0; $i < @{$out->{'MPs'}};$i++){
 
 
 $json = {};
+$thumbs = {};
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	$json->{$out->{'MPs'}[$i]{'PCON24CD'}} = $out->{'MPs'}[$i];
+	if($out->{'MPs'}[$i]{'Thumbnail'}){
+		msg("Processing thumbnail from <cyan>$out->{'MPs'}[$i]{'Thumbnail'}<none> with $args\n");
+		$thumbfile = $dir."thumbs/".$out->{'MPs'}[$i]{'ID'};
+		CacheDownloadNoReturn($out->{'MPs'}[$i]{'Thumbnail'},$thumbfile,6*86400);
+		msg($out->{'MPs'}[$i]{'Thumbnail'}."\n");
+		if(!-e $thumbfile.".webp"){
+			`convert \"$thumbfile\" $args \"$thumbfile.webp\"`;
+		}
+		$thumbs->{$out->{'MPs'}[$i]{'PCON24CD'}} = "data:image/webp;base64,".get64($thumbfile = $dir."thumbs/".$out->{'MPs'}[$i]{'ID'}.".webp");
+	}
 }
 SaveJSON($json,$basedir."../../lookups/current-MPs.json",1);
+SaveJSON($thumbs,$basedir."../../lookups/current-MPs-thumbnails.json",1);
 
 
 
@@ -121,3 +137,18 @@ print $fh @rows;
 close($fh);
 
 
+
+##################
+
+sub get64 {
+	my $file = shift;
+	my ($fh,$buf,$str);
+	open($fh, $file) or die "$!";
+	$str = "";
+	while (read($fh, $buf, 60*57)) {
+		$str .= encode_base64($buf);
+	}
+	close($fh);
+	$str =~ s/[\n\r]//g;
+	return $str;
+}

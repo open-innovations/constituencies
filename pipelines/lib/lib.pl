@@ -266,11 +266,11 @@ sub SaveFromURL {
 
 
 # Version 1.1
-sub CacheDownload {
+sub CacheDownloadNoReturn {
 	my $url = shift;
 	my $file = shift;
 	my $expireafter = shift||86400;
-	my (@lines,$fh,$epoch_timestamp,$now,$age);
+	my ($epoch_timestamp,$now,$age);
 
 	$age = 100000;
 	if(-e $file){
@@ -280,6 +280,13 @@ sub CacheDownload {
 	}
 
 	if(!-e $file || -s $file == 0 || $age >= $expireafter){ SaveURL($url,$file); }
+	return;
+}
+sub CacheDownload {
+	my $url = shift;
+	my $file = shift;
+	my (@lines,$fh);
+	CacheDownloadNoReturn($url,$file);
 	open($fh,"<:utf8",$file);
 	@lines = <$fh>;
 	close($fh);
