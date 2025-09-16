@@ -7,6 +7,7 @@ use JSON::XS;
 use Data::Dumper;
 use Cwd qw(abs_path);
 use MIME::Base64 qw(encode_base64);
+use IPC::Cmd qw[can_run run run_forked];
 binmode STDOUT, 'utf8';
 binmode STDERR, 'utf8';
 my ($basedir, $path);
@@ -17,12 +18,14 @@ BEGIN {
 use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
-my ($baseurl,$tmpdir,$url,$page,$json,$thumbs,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon,$thumbfile,$size,$args);
+my ($baseurl,$tmpdir,$url,$page,$json,$thumbs,$makethumbs,$p,$qs,$count,$total,$txt,$file,$fh,$out,$i,$n,$dir,$csv,$mp,$hexjson,%hexlookup,$id,$code,$row,@rows,$twfyfile,$pcon,$thumbfile,$size,$args);
 
 $tmpdir = $basedir."../../raw-data/";
 $dir = $tmpdir."society/parliament/";
+$makethumbs = can_run("convert");
+
 if(!-d $dir){ makeDir($dir); }
-if(!-d $dir."thumbs/"){ makeDir($dir."thumbs/"); }
+if($makethumbs && !-d $dir."thumbs/"){ makeDir($dir."thumbs/"); }
 
 
 
@@ -93,7 +96,7 @@ $json = {};
 $thumbs = {};
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	$json->{$out->{'MPs'}[$i]{'PCON24CD'}} = $out->{'MPs'}[$i];
-	if($out->{'MPs'}[$i]{'Thumbnail'}){
+	if($makethumbs && $out->{'MPs'}[$i]{'Thumbnail'}){
 		msg("Processing thumbnail from <cyan>$out->{'MPs'}[$i]{'Thumbnail'}<none> with $args\n");
 		$thumbfile = $dir."thumbs/".$out->{'MPs'}[$i]{'ID'};
 		CacheDownloadNoReturn($out->{'MPs'}[$i]{'Thumbnail'},$thumbfile,6*86400);
@@ -105,8 +108,9 @@ for($i = 0; $i < @{$out->{'MPs'}};$i++){
 	}
 }
 SaveJSON($json,$basedir."../../lookups/current-MPs.json",1);
-SaveJSON($thumbs,$basedir."../../lookups/current-MPs-thumbnails.json",1);
-
+if($makethumbs){
+	SaveJSON($thumbs,$basedir."../../lookups/current-MPs-thumbnails.json",1);
+}
 
 
 for($i = 0; $i < @{$out->{'MPs'}};$i++){
