@@ -49,7 +49,7 @@
 		"tooltip": "<strong>{{ n }}</strong><br />{{ Name }} ({{ Party }})<br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=12\">Employment</a>: <strong>£{{ Employment (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=3\">Donations</a>: <strong>£{{ Donations (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=4\">Gifts, benefits and hospitality</a>: <strong>£{{ Gifts (£) | toLocaleString() }}</strong><br /><a href=\"https://members.parliament.uk/member/{{ ParlID }}/registeredinterests?categoryId=5\">Visits outside the UK</a>: <strong>£{{ Trips (£) | toLocaleString() }}</strong>",
 		"attribution": "Data: <a href=\"https://members.parliament.uk/members/commons/interests/publications\">Register of Interests</a> (UK Parliament)."
 	},
-	"date": "2025-09-15",
+	"date": "2025-10-06",
 	"units": {
 		"Employment (£)":{"value":"GBP","category":"currency","notes":"Employment and earnings outside Parliament"},
 		"Donations (£)":{"value":"GBP","category":"currency","notes":"Donations and other support (including loans) for activities as an MP"},
