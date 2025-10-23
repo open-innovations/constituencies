@@ -24,7 +24,7 @@
 		"value": "region",
 		"matchKey": "PCON11CD",
 		"legend": {
-			"position": "top right",
+			"position": "bottom",
 			"items": [{
 				"colour": "E12000001",
 				"label": "North East"
