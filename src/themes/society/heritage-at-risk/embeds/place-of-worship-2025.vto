@@ -7,6 +7,9 @@ layout: template/embed-national-churches-trust.vto
 <style>
 .tooltip .info { border-top: 4px solid black; }
 .footnote { margin-bottom: 0; }
+@media (max-width: 768px) {
+	panelSelector [role="tab"] { padding: 0.25rem; line-height: 1.25em; }
+}
 </style>
 
 
@@ -184,6 +187,14 @@ layout: template/embed-national-churches-trust.vto
 				"width": "100%",
 				"data": "HAR2025",
 				"columns":[{
+					"name": "Places of worship at risk",
+					"template": "{{ Type→Place of worship }}",
+					"align": "center",
+					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
+					"min": 0,
+					"max": 20,
+					"sortable": true
+				},{
 					"name": "Constituency",
 					"template": "<a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/results/?advsearch=1&par={{ HAR name }}&at=Place of Worship&searchtype=harsearch\" target=\"_parent\">{{ PCON24NM }}</a>",
 					"sortable": true
@@ -194,14 +205,6 @@ layout: template/embed-national-churches-trust.vto
 				},{
 					"name": "Party",
 					"template": "{{ Party }}",
-					"sortable": true
-				},{
-					"name": "Places of worship at risk",
-					"template": "{{ Type→Place of worship }}",
-					"align": "center",
-					"scale": "#ffffcc 0%, #f4be49 20%, #e3051f 50%, #291009 100%",
-					"min": 0,
-					"max": 20,
 					"sortable": true
 				}],
 				"attribution": "Data: <a href=\"https://historicengland.org.uk/advice/heritage-at-risk/search-register/annual-heritage-at-risk-registers-and-maps/\" target=\"_parent\">Heritage at Risk 2025 Register</a> (Historic England)"
