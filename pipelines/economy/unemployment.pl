@@ -15,7 +15,7 @@ use lib $basedir."../lib/";	# Custom functions
 require "lib.pl";
 
 
-my $odir = $basedir."data/";
+my $ddir = $basedir."../../raw-data/economy/data/";
 
 my ($url,$syear,$eyear,$y,$file,$dl,@files,$i,@rows,$r,$data,$dates,@dts,$csv,$pcon,$ofile,$json,$cfile,$lbl,$months,$vfile,$conlookup);
 
@@ -35,7 +35,7 @@ $eyear = strftime "%Y", gmtime;
 
 $dl = 0;
 for($y = $syear; $y <= $eyear; $y++){
-	$file = $odir."NM_162_1-unemployment-$y.csv";
+	$file = $ddir."NM_162_1-unemployment-$y.csv";
 	if(!-e $file){
 		if($dl > 0){
 			sleep 4;
