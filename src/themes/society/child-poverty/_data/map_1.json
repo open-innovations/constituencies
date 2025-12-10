@@ -3,16 +3,16 @@
 	"config": {
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "child_poverty_2024",
+		"data": "release.Child-poverty-AHC-2015-2024_final",
 		"columns": [{
 			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
+			"template": "{{ n }}"
 		}],
-		"value": "Percentage of children living in poverty",
+		"value": "Percentage 2023/24",
 		"scale": "Viridis",
 		"min": 0,
 		"max": 100,
-		"matchKey": "PCON24CD",
+		"matchKey": "Area Code",
 		"legend": {
 			"position": "top right",
 			"items": [{
@@ -38,14 +38,37 @@
 		"tools": {
 			"filter": {
 				"label": "filterLabel"
+			},
+			"slider": {
+				"columns": [
+					{"value":"Percentage 2014/15","label":"2014/15"},
+					{"value":"Percentage 2015/16","label":"2015/16"},
+					{"value":"Percentage 2016/17","label":"2016/17"},
+					{"value":"Percentage 2017/18","label":"2017/18"},
+					{"value":"Percentage 2018/19","label":"2018/19"},
+					{"value":"Percentage 2019/20","label":"2019/20"},
+					{"value":"Percentage 2020/21","label":"2020/21"},
+					{"value":"Percentage 2021/22","label":"2021/22"},
+					{"value":"Percentage 2022/23","label":"2022/23"},
+					{"value":"Percentage 2023/24","label":"2023/24"}
+				],
+				"width": "600px"
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />Child poverty rate: <strong>{{ Percentage of children living in poverty | toFixed(1) }}%</strong>",
-		"attribution": "Data: <a href=\"https://commonslibrary.parliament.uk/constituency-data-child-poverty/\">Child poverty rate estimates, after housing costs</a> (Loughborough University/JRF 2022/23)."
+		"tooltip": "<strong>{{ n }}</strong><br />Child poverty rate: <strong>{{ {{ _value }} | toFixed(1) }}%</strong>",
+		"attribution": "Data: <a href=\"https://endchildpoverty.org.uk/child-poverty-2025/\">Local Child Poverty Statistics 2025</a> (Loughborough University/End Child Poverty)."
 	},
-	"date": "2023",
+	"date": "2024",
 	"units":{
-		"Percentage of children affected by two-child limit":{"value":"percent"},
-		"Percentage of children living in poverty":{"value":"percent"}
+		"Percentage 2014/15":{"value":"percent"},
+		"Percentage 2015/16":{"value":"percent"},
+		"Percentage 2016/17":{"value":"percent"},
+		"Percentage 2017/18":{"value":"percent"},
+		"Percentage 2018/19":{"value":"percent"},
+		"Percentage 2019/20":{"value":"percent"},
+		"Percentage 2020/21":{"value":"percent"},
+		"Percentage 2021/22":{"value":"percent"},
+		"Percentage 2022/23":{"value":"percent"},
+		"Percentage 2023/24":{"value":"percent"}
 	}
 }
