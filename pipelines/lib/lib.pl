@@ -258,8 +258,12 @@ sub SaveFromURL {
 		if($args->{'form'}){
 			$arguments .= " --data-raw \'$args->{'form'}\'";
 		}
-		`curl -s --insecure -L $arguments --compressed -o $file "$url"`;
-		msg("Downloaded to <cyan>$file<none>\n");
+		`curl -s --insecure -L $arguments --compressed --create-dirs --output $file "$url"`;
+		if(-e $file){
+			msg("Downloaded to <cyan>$file<none>\n");
+		}else{
+			error("Failed to download to <cyan>$file<none>\n");
+		}
 	}
 	return $file;
 }
