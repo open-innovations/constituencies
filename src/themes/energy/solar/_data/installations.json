@@ -42,7 +42,7 @@
 		"tooltip": "<strong>{{ n }}</strong><br />Installations: <strong>{{ Number of installations | toLocaleString() }}</strong><br />Installed capacity: <strong>{{ Installed capacity (MW) | toLocaleString() }}&thinsp;MW</strong>",
 		"attribution": "Data: <a href=\"https://www.gov.uk/government/statistics/solar-photovoltaics-deployment\">Solar photovoltaics deployment</a> (Department for Energy Security and Net Zero )\n"
 	},
-	"date": "2024-12",
+	"date": "2025-10",
 	"units": {
 		"Installed capacity (MW)":{"value":"MW"}
 	}
