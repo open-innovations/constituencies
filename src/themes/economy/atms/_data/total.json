@@ -28,14 +28,14 @@
 				"label":"filterLabel"
 			},
 			"slider":{
-				"columns":[{"label":"Free-to-use","value":"June 2025→Free-to-use ATM"},{"label":"Pay-to-use","value":"June 2025→Pay-to-use ATM"},{"label":"Total","value":"June 2025→TOTAL"}],
+				"columns":[{"label":"Free-to-use","value":"October 2025→Free-to-use ATM"},{"label":"Pay-to-use","value":"October 2025→Pay-to-use ATM"},{"label":"Total","value":"October 2025→TOTAL"}],
 				"width":"500px"
 			}
 		},
 		"tooltip":"<strong>{{ n }}</strong><br />{{ _value }} ATMs: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"value":"June 2025→TOTAL",
+		"value":"October 2025→TOTAL",
 		"width":600
 	},
-	"date":"2025-06",
+	"date":"2025-10",
 	"title":"ATMs: total (UK)"
 }
