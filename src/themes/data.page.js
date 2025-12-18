@@ -122,8 +122,8 @@ export default function*({search,themes}){
 
 			const pageurl = url+id+'.json';
 
-			index.themes[page.theme].visualisations.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution});
-			
+			index.themes[page.theme].visualisations.push({'url':site.url(pageurl, true),'title':(page[id].title||""),'attribution':config.attribution,'date':data.data.date||null});
+
 			yield {'url':pageurl,'content':niceJSON(data,2)};
 		}
 	}
