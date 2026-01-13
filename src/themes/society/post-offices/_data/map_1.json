@@ -17,10 +17,10 @@
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ Total | \"0\" }}</strong>",
-		"value":"Total",
+		"tooltip":"<strong>{{ n }}</strong><br />Post offices: <strong>{{ 2026-01 | \"0\" }}</strong>",
+		"value":"2026-01",
 		"width":600
 	},
-	"date":"2025-05-27T11:45",
+	"date":"2026-01-13T00:43",
 	"title":"Post offices (UK)"
 }
