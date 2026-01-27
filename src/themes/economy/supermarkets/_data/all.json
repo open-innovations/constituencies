@@ -7,11 +7,11 @@
 		"data":"release.supermarkets",
 		"hexjson":"hexjson.uk-constituencies-2024",
 		"legend":{
-			"items":[{"label":"30+","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
+			"items":[{"label":"40+","value":40},{"label":"30","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
 			"position":"top right"
 		},
 		"matchKey":"PCON24CD",
-		"max":30,
+		"max":40,
 		"min":0,
 		"scale":"Viridis",
 		"tools":{
