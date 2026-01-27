@@ -1,0 +1,27 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }}"}
+		],
+		"data":"release.supermarkets",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"10+","value":10},{"label":"8","value":8},{"label":"6","value":6},{"label":"4","value":4},{"label":"2","value":2},{"label":"0","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"PCON24CD",
+		"max":10,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"},
+			"slider":{"columns":[{"label":"Aldi","value":"Aldi"},{"label":"ASDA","value":"Asda"},{"label":"Co-op","value":"Co-op"},{"label":"Lidl","value":"Lidl"},{"label":"M&S","value":"M&S"},{"label":"Morrisons","value":"Morrisons"},{"label":"Sainsbury's","value":"Sainsbury's"},{"label":"Spar","value":"Spar"},{"label":"Tesco","value":"Tesco"},{"label":"Waitrose","value":"Waitrose"},{"label":"Other","value":"Other"}],"width":"400px"}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br /><table><tr><td>Total</td><td>{{ All | \"0\" }}</td></tr><tr><td>Aldi</td><td>{{ Aldi | \"0\" }}</td></tr><tr><td>ASDA</td><td>{{ Asda | \"0\" }}</td></tr><tr><td>Co-op</td><td>{{ Co-op | \"0\" }}</td></tr><tr><td>Lidl</td><td>{{ Lidl | \"0\" }}</td></tr><tr><td>M&S</td><td>{{ \"M&S\" | \"0\" }}</td></tr><tr><td>Morrisons</td><td>{{ Morrisons | \"0\" }}</td></tr><tr><td>Sainsbury's</td><td>{{ \"Sainsbury's\" | \"0\" }}</td></tr><tr><td>Spar</td><td>{{ Spar | \"0\" }}</td></tr><tr><td>Tesco</td><td>{{ Tesco | \"0\" }}</td></tr><tr><td>Waitrose</td><td>{{ Waitrose | \"0\" }}</td></tr></table>",
+		"value":"Co-op",
+		"width":600
+	},
+	"date":"2026-01-22T03:13",
+	"title":"Supermarkets by brand (UK)"
+}

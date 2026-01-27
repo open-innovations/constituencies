@@ -8,13 +8,49 @@
 	},
 	"hexjson": "../src/_data/hexjson/uk-constituencies-2024.hexjson",
 	"layers": [{
+		"id": "supermarkets",
+		"keep": "shop=supermarket",
+		"geotype": ["Point","LineString","MultiPolygon"],
+		"split": {
+			"by": "brand",
+			"rename": {
+				"ALDI":"Aldi",
+				"Co-op Food":"Co-op",
+				"Co-op Daily":"Co-op",
+				"Your Coop Food":"Co-op",
+				"The Co-operative Food":"Co-op",
+				"Waitrose & Partners":"Waitrose",
+				"Tesco Extra":"Tesco",
+				"Tesco Express":"Tesco",
+				"Morrisons Daily":"Morrisons",
+				"M&S Simply Food":"M&S",
+				"Marks & Spencer":"M&S",
+				"M&S Foodhall":"M&S",
+				"Nisa Local":"Nisa",
+				"Nisa Extra":"Nisa",
+				"Sainsbury's Local":"Sainsbury's",
+				"Sainsbury's On the Go":"Sainsbury's",
+				"Eurospar": "Spar"
+			},
+			"keep": ["Aldi","Asda","Co-op","Lidl","M&S","Morrisons","Sainsbury's","Spar","Tesco","Waitrose"],
+			"simple": true
+		},
+		"output": "../src/themes/economy/supermarkets/_data/release/supermarkets.csv",
+		"dates": [
+			"../src/themes/economy/supermarkets/index.vto",
+			"../src/themes/economy/supermarkets/_data/all.json",
+			"../src/themes/economy/supermarkets/_data/brand.json"
+		]
+	},{
 		"id": "postoffices",
 		"keep": "amenity=post_office",
+		"geotype": ["Point","MultiPolygon"],
 		"output": "../src/themes/society/post-offices/_data/postoffices-osm.csv"
 	},{
 		"id": "pubs",
 		"keep": "amenity=bar,pub",
 		"output": "../src/themes/society/pubs/_data/release/pubs.csv",
+		"geotype": ["Point","MultiPolygon"],
 		"dates": [
 			"../src/themes/society/pubs/index.vto",
 			"../src/themes/society/pubs/_data/map_1.json"
@@ -22,6 +58,7 @@
 	},{
 		"id": "fish_and_chips",
 		"keep": "cuisine=fish_and_chips",
+		"geotype": ["Point","MultiPolygon"],
 		"output": "../src/themes/society/fish-and-chips/_data/release/fish_and_chips.csv",
 		"dates": [
 			"../src/themes/society/fish-and-chips/index.vto",

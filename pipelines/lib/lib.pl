@@ -50,6 +50,7 @@ sub warning {
 
 sub makeDir {
 	my $str = $_[0];
+	$str =~ s/[^\/]+$//g;
 	my @bits = split(/\//,$str);
 	my $tdir = "";
 	my $i;

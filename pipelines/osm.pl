@@ -79,8 +79,6 @@ for($l = 0; $l < @layers; $l++){
 
 	msg("<green>$layers[$l]{'id'}<none>:\n");
 
-	$data = {};
-
 	$osmfile = $rawdir.$json->{'prefix'}."-$layers[$l]{'id'}.osm.pbf";
 	$geofile = $rawdir.$json->{'prefix'}."-".$layers[$l]{'id'}.".geojson";
 
@@ -119,11 +117,13 @@ for($l = 0; $l < @layers; $l++){
 	$count = 0;
 	my $done = {};
 	my $osmid = "";
+	my ($prop,$all);
+
 	for($f = 0; $f < $n; $f++){
 		# Check if we've processed this OSM ID before
 		$osmid = $geojson->{'features'}[$f]{'properties'}{'@id'};
 		if(!defined($done->{$osmid})){
-			if(shouldBeKept($geojson->{'features'}[$f],$layers[$l]{'keep'})){
+			if(shouldBeKept($geojson->{'features'}[$f],$layers[$l])){
 				@coord = getFirstPoint($geojson->{'features'}[$f]);
 				$cn = @coord;
 				if(@coord==2){
@@ -134,7 +134,31 @@ for($l = 0; $l < @layers; $l++){
 							$data->{$id} = {};
 							$data->{$id}{$json->{'constituencies'}{'id'}} = $id;
 						}
-						$data->{$id}{$dt}++;
+						if(defined($layers[$l]{'split'})){
+							if(!defined($data->{$id}{$dt})){
+								$data->{$id}{$dt} = {'All'=>0,'split'=>{}};
+							}
+							$prop = $geojson->{'features'}[$f]{'properties'}{$layers[$l]{'split'}{'by'}};
+							if(!defined($prop) || $prop eq ""){
+								$prop = "Other";
+							}
+							# Potentially rename a value
+							if(defined($layers[$l]{'split'}{'rename'}{$prop})){
+								$prop = $layers[$l]{'split'}{'rename'}{$prop};
+							}
+							if(defined($layers[$l]{'split'}{'keep'})){
+								if(grep( /^$prop$/, @{$layers[$l]{'split'}{'keep'}} )){
+								}else{
+									# It isn't in our list to keep
+									$prop = "Other";
+								}
+							}
+							if(!defined($data->{$id}{$dt}{'split'}{$prop})){ $data->{$id}{$dt}{'split'}{$prop} = 0; }
+							$data->{$id}{$dt}{'split'}{$prop}++;
+							$data->{$id}{$dt}{'All'}++;
+						}else{
+							$data->{$id}{$dt}++;
+						}
 					}else{
 						warning("\tNo constituency found for $f ($coord[1]/$coord[0]) / ".($geojson->{'features'}[$f]{'geometry'}{'type'})." / ".($geojson->{'features'}[$f]{'properties'}{'name'}||"")."\n");
 					}
@@ -161,6 +185,13 @@ for($l = 0; $l < @layers; $l++){
 
 	# Make a CSV
 	if($layers[$l]{'output'}){
+		if(defined($layers[$l]{'split'}{'simple'})){
+			foreach $id (keys(%{$data})){
+				$all = $data->{$id}{$dt}{'split'};
+				$all->{'All'} = $data->{$id}{$dt}{'All'};
+				$data->{$id} = $all;
+			}
+		}
 		AugmentCSV($basedir.$layers[$l]{'output'},$data,$json->{'constituencies'}{'id'});
 	}
 
@@ -173,11 +204,13 @@ for($l = 0; $l < @layers; $l++){
 			}elsif($layers[$l]{'dates'}[$d] =~ /\.json/){
 				my $tjson = LoadJSON($basedir.$layers[$l]{'dates'}[$d]);
 				if(defined($tjson->{'config'})){
-					if(defined($tjson->{'config'}{'value'})){
-						$tjson->{'config'}{'value'} = $dt;
-					}
-					if(defined($tjson->{'config'}{'tooltip'})){
-						$tjson->{'config'}{'tooltip'} =~ s/\{\{ [0-9]{4}-[0-9]{2} ([^\}]*)\}\}/\{\{ $dt $1\}\}/g;
+					if(!defined($layers[$l]{'split'}{'simple'})){
+						if(defined($tjson->{'config'}{'value'})){
+							$tjson->{'config'}{'value'} = $dt;
+						}
+						if(defined($tjson->{'config'}{'tooltip'})){
+							$tjson->{'config'}{'tooltip'} =~ s/\{\{ [0-9]{4}-[0-9]{2} ([^\}]*)\}\}/\{\{ $dt $1\}\}/g;
+						}
 					}
 					$tjson->{'date'} = $dtfull;
 				}
@@ -348,6 +381,7 @@ sub AugmentCSV {
 	}
 
 	msg("\tUpdated <cyan>$file<none>\n");
+	makeDir($file);
 	open($fh,">",$file);
 	print $fh $csv;
 	close($fh);
@@ -356,14 +390,42 @@ sub AugmentCSV {
 
 sub shouldBeKept {
 	my $feature = shift;
-	my $keep = shift;
-	my ($k,$key,$value,@keepers,@values,$v,$match,$m2);
+	my $layer = shift;
+	my ($k,$key,$value,@keepers,@values,$v,$match,$m2,@dontinclude,$keep,$not,@gtypes,$g);
+	$keep = $layer->{'keep'}||"";
+	$not = $layer->{'not'}||"";
 
 	@keepers = split(" ",$keep);
 
-	# Don't keep line strings
-	if($feature->{'geometry'}{'type'} eq "LineString"){
-		return 0;
+	if(defined($layer->{'geotype'})){
+		@gtypes = @{$layer->{'geotype'}};
+		$match = 0;
+		for($g = 0; $g < @gtypes; $g++){
+			if($feature->{'geometry'}{'type'} eq $gtypes[$g]){
+				$match++;
+				$g = @gtypes;
+			}
+		}
+		# If none of the types matched we return
+		if($match == 0){
+			return 0;
+		}
+	}
+
+	if($not ne ""){
+		@dontinclude = split(" ",$not);
+		for($k = 0; $k < @dontinclude; $k++){
+			($key,$value) = split(/=/,$dontinclude[$k]);
+			@values = split(",",$value);
+			$m2 = 0;
+			if(defined($feature->{'properties'}{$key})){
+				for($v = 0; $v < @values; $v++){
+					if(defined($feature->{'properties'}{$key}) && $feature->{'properties'}{$key} =~ /$value/){
+						return 0;
+					}
+				}
+			}
+		}
 	}
 
 	$match = 0;

@@ -20,6 +20,10 @@
 
 `perl pipelines/society/foodbanks.pl`
 
+### Post Offices
+
+`perl pipelines/totalByConstituency.pl raw-data/society/post-offices/postofficebranches-details.csv -latitude=Latitude -longitude=Longitude -o src/themes/society/post-offices/_data/release/postoffices.csv -t "%Y-%m" -updatedate src/themes/society/post-offices/index.vto -updatedate src/themes/society/post-offices/_data/map_1.json`
+
 ### RMFI
 
 `perl pipelines/society/RMFI.pl`

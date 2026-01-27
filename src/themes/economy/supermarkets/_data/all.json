@@ -1,0 +1,26 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> (&copy; OpenStreetMap contributors).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }}"}
+		],
+		"data":"release.supermarkets",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"30+","value":30},{"label":"20","value":20},{"label":"10","value":10},{"label":"0","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"PCON24CD",
+		"max":30,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />Supermarkets: <strong>{{ All | \"0\" }}</strong>",
+		"value":"All",
+		"width":600
+	},
+	"date":"2026-01-22T03:13",
+	"title":"Supermarkets (UK)"
+}

@@ -1,0 +1,35 @@
+---
+title: Supermarkets (UK)
+theme: economy
+created: 2026-01-27T11:50
+updated: 2026-01-22T03:13
+description: |
+  Supermarkets included in OpenStreetMap (UK).
+keywords: [supermarket,supermarkets,shops,Aldi,Asda,Co-op,Lidl,Morrisons,Sainsbury's,Spar,Tesco,Waitrose]
+api:
+  - all
+  - brand
+---
+
+<p>This page provides constituency-level data on the number of supermarkets included in <a href="https://www.openstreetmap.org/">OpenStreetMap</a>.</p>
+
+<h2>All supermarkets</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "all"
+}) }}
+
+<h2>By brand</h2>
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "brand"
+}) }}
+
+
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+<p>This only includes features tagged with <code><a href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dsupermarket">shop=supermarket</a></code> on <a href="https://www.openstreetmap.org">Open Street Map</a>. Shops tagged with <code>shop=frozen_food</code> - such as <em>Iceland</em> - are not included here. "Supermarket" can cover a large range of store sizes depending on what each locality counts as a supermarket. In the breakdown by brand we've only included the largest brands - all other brands are grouped into "Other".</p>
+<p>No de-duplication has been performed. So supermarkets included as both points and (multi)polyons may be included more than once. Various sub-brands have been combined (e.g. "Co-op Food", "Co-op Daily", "Your Coop Food" and "The Co-operative Food" are combined into "Co-op").</p>
+<p>Large rural constituencies may have more supermarkets because they cover a larger area.</p>
+<p>Open Street Map is not complete. But you can help improve it.</p>
