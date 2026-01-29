@@ -21,6 +21,10 @@
 		{{ content }}
 		</div>
 	</div>
+	
+	<div class="b5-bg doublepadded centred" style="text-wrap: balance;">
+		For more of our constituency-related data and visualisations visit:<br /><a href="https://constituencies.org.uk/" style="font-family:Poppins,sans-serif;">constituencies.org.uk</a>
+	</div>
 
 	{{ for row of sources.co2.rows }}
 		{{ if url == row.Path }}<div class="b2-bg doublepadded centred" style="text-wrap: balance;"><div class="holder">This page generates around {{ row.CO2 |> toFixed(2) }}g of CO2 emissions per visit (last checked {{ row.Date |> date('do MMMM yyyy')}})</div></div>{{ /if }}
