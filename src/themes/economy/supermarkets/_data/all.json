@@ -22,5 +22,6 @@
 		"width":600
 	},
 	"date":"2026-01-22T03:13",
-	"title":"Supermarkets (UK)"
+	"title":"Supermarkets (UK)",
+	"subtitle":"Only includes shops tagged as supermarket in OpenStreetMap."
 }

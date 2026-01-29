@@ -23,5 +23,6 @@
 		"width":600
 	},
 	"date":"2026-01-22T03:13",
-	"title":"Supermarkets by brand (UK)"
+	"title":"Supermarkets by brand (UK)",
+	"subtitle":"Only includes shops tagged as supermarket in OpenStreetMap."
 }
