@@ -1,0 +1,45 @@
+{
+	"config":{
+		"attribution":"Data: <a href=\"https://commonslibrary.parliament.uk/constituency-statistics-country-of-birth/\">Country of birth</a> (&copy; House of Commons Library/Office for National Statistics/Northern Ireland Statistics and Research Agency/Scotland's census OGL).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }} ({{ RegNationName }})"}
+		],
+		"data":"release.country_of_birth",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"100%","value":1},{"label":"80%","value":0.80},{"label":"60%","value":0.6},{"label":"40%","value":0.40},{"label":"20%","value":0.20},{"label":"0%","value":0}],
+			"position":"top right"
+		},
+		"matchKey":"ONSConstID",
+		"max":1,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"},
+			"slider":{
+				"columns":[
+					{"value":"con_pc→UK","label":"UK"},
+					{"value":"con_pc→European Union","label":"European Union"},
+					{"value":"con_pc→Rest of world","label":"Rest of the world"}
+				],
+				"width": "500px"
+			}
+		},
+		"tooltip":"<strong>{{ n }}</strong><br />UK: <strong>{{ con_pc→UK | multiply(100) | toFixed(1) }}%</strong><br />EU: <strong>{{ con_pc→European Union | multiply(100) | toFixed(1) }}%</strong><br />Rest of the world: <strong>{{ con_pc→Rest of world | multiply(100) | toFixed(1) }}%</strong>",
+		"value":"con_pc→UK",
+		"width":600
+	},
+	"date":"2022-03",
+	"title":"Country of birth (UK)",
+	"units":{
+		"con_pc→UK":{"value":"percent","scaleBy":100},
+		"con_pc→European Union":{"value":"percent","scaleBy":100},
+		"con_pc→Rest of world":{"value":"percent","scaleBy":100},
+		"rn_pc→UK":{"value":"percent","scaleBy":100},
+		"rn_pc→European Union":{"value":"percent","scaleBy":100},
+		"rn_pc→Rest of world":{"value":"percent","scaleBy":100},
+		"uk_pc→UK":{"value":"percent","scaleBy":100},
+		"uk_pc→European Union":{"value":"percent","scaleBy":100},
+		"uk_pc→Rest of world":{"value":"percent","scaleBy":100}
+	}
+}

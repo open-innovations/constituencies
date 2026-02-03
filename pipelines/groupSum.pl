@@ -20,7 +20,7 @@ use lib $basedir."lib/";	# Custom functions
 require "lib.pl";
 
 
-my ($help,$keep,@keeps,$sum,@sums,$sumcolumns,$col,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$r,$c,$pid,$pcon,$constituencies,$match,$lookup,$csvrow,@row,@rows,@cols,$ll,$pcds,$or,$data,$category,$cat,$name,$totals,$total,$groups,$group,@grouplist,$g,$csv,$dir,$fh,$badlocation,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles);
+my ($help,$keep,@keeps,$sum,@sums,$precision,@precisions,$scale,@scales,$sumcolumns,$col,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$r,$c,$pid,$pcon,$constituencies,$match,$lookup,$csvrow,@row,@rows,@cols,$ll,$pcds,$or,$data,$category,$cat,$name,$totals,$total,$groups,$group,@grouplist,$g,$csv,$dir,$fh,$badlocation,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles);
 
 # Get the command line options
 GetOptions(
@@ -31,6 +31,8 @@ GetOptions(
 	"o|output=s" => \$ofile,						# the output file
 	"startrow=i" => \$startrow,						# the start row of the data in the CSV file
 	"sum=s" => sub { $sum .= ($sum ? ",":"").$_[1] },	# columns to sum
+	"precision=s" => sub { $precision .= ($precision ? ",":"").$_[1] },	# precision for the sum columns
+	"scale=s" => sub { $scale .= ($scale ? ",":"").$_[1] },	# scale for the sum columns
 	"u|updatedate=s" => sub { push(@datefiles,$_[1]) },	# any files to update dates in
 );
 
@@ -58,8 +60,12 @@ if(!-e $ifile){
 }
 
 @sums = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$sum);
+@precisions = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$precision);
+@scales = split(/,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))/,$scale);
 for($r = 0; $r < @sums; $r++){
-	$sumcolumns->{$sums[$r]} = 1;
+	$sumcolumns->{$sums[$r]} = {};
+	if(defined($precisions[$r])){ $sumcolumns->{$sums[$r]}{'precision'} = $precisions[$r]; }
+	if(defined($scales[$r])){ $sumcolumns->{$sums[$r]}{'scale'} = $scales[$r]; }
 }
 if(@sums == 0){
 	error("No columns provided to sum over. Try providing <cyan>--sum \"column name,second column\".\n");
@@ -135,8 +141,6 @@ for($r = 0; $r < @{$csv->{'rows'}}; $r++){
 
 @grouplist = sort(keys(%{$groups}));
 
-
-
 # Build CSV output
 $csv = "";
 for($c = 0; $c < @keeps; $c++){
@@ -156,6 +160,14 @@ foreach $pcon (sort(keys(%{$constituencies}))){
 		if(defined($sumcolumns->{$keeps[$c]})){
 			for($g = 0; $g < @grouplist; $g++){
 				$v = ($constituencies->{$pcon}[$col]{$grouplist[$g]}||"");
+				if(defined($sumcolumns->{$keeps[$c]})){
+					if(defined($sumcolumns->{$keeps[$c]}{'scale'})){
+						$v *= $sumcolumns->{$keeps[$c]}{'scale'};
+					}
+					if(defined($sumcolumns->{$keeps[$c]}{'precision'})){
+						$v = $sumcolumns->{$keeps[$c]}{'precision'} * int(0.5 + $v / $sumcolumns->{$keeps[$c]}{'precision'});
+					}
+				}
 				$csvrow .= ($csvrow ? ",":"").($v =~ /,/ ? "\"":"").($v).($v =~ /,/ ? "\"":"");
 			}
 		}else{

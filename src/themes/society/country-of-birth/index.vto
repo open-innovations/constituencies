@@ -1,0 +1,30 @@
+---
+title: Country of birth (UK)
+theme: society
+created: 2026-02-03T12:50
+updated: 2026-02-03T12:50
+description: |
+  Census data for constituencies on residents’ country of birth (UK).
+keywords: [census,birth,country,origin]
+api:
+  - country_of_birth
+---
+
+<p>This page provides constituency-level data on residents' country of birth based on the census.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "country_of_birth"
+}) }}
+
+<h2>Notes{{ comp.anchor({ anchor: 'notes'}) }}</h2>
+<p>The census was carried out in March 2021 in England, Wales and Northern Ireland and in March 2022 in Scotland.</p>
+<p>Country of birth is different from nationality or residence.</p>
+<p>In the census questionnaire, people were asked which country they were born in. Those who were not born in the UK were then asked to write in the current name of their country of birth.</p>
+<p>EU member countries are as follows:</p>
+<ul>
+	<li>Member countries in March 2001: Austria, Belgium, Denmark, Germany, Greece, Finland, France, Ireland, Italy, Luxembourg, the Netherlands, Portugal, Spain, Sweden.</li>
+	<li>Member countries joining after March 2001: Bulgaria, Cyprus, Croatia, Czechia, Estonia, Latvia, Lithuania, Hungary, Malta, Poland, Romania, Slovakia, Slovenia.</li>
+</ul>
+<p>Scotland's census data also groups together some countries that are in the process of applying to join the EU. These are labelled "Countries applying to join the EU (March 2022)". The countries are Albania, Bosnia and Herzegovina, Montenegro, Serbia, Ukraine and North Macedonia.</p>
