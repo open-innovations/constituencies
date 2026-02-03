@@ -16,13 +16,13 @@
 		"scale":"Viridis",
 		"tools":{
 			"filter":{"label":"filterLabel"},
-			"slider":{"columns":[{"label":"2018","value":"1.5M_UP→2018"},{"label":"2019","value":"1.5M_UP→2019"},{"label":"2020","value":"1.5M_UP→2020"},{"label":"2021","value":"1.5M_UP→2021"},{"label":"2022","value":"1.5M_UP→2022"},{"label":"2023","value":"1.5M_UP→2023"},{"label":"2024","value":"1.5M_UP→2024"},{"label":"2025 (31st July)","value":"1.5M_UP→2025"}],"width":"250px"}
+			"slider":{"columns":[{"label":"2018","value":"1.5M_UP→2018"},{"label":"2019","value":"1.5M_UP→2019"},{"label":"2020","value":"1.5M_UP→2020"},{"label":"2021","value":"1.5M_UP→2021"},{"label":"2022","value":"1.5M_UP→2022"},{"label":"2023","value":"1.5M_UP→2023"},{"label":"2024","value":"1.5M_UP→2024"},{"label":"2025 (24th December)","value":"1.5M_UP→2025"}],"width":"250px"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Homes over £1.5 million sold:<br />2025 (31st July): {{ 1.5M_UP→2025 | toLocaleString() }} / {{ Total→2025 | toLocaleString() }}</strong><br />2024: {{ 1.5M_UP→2024 | toLocaleString() }} / {{ Total→2024 | toLocaleString() }}</strong><br />2023: {{ 1.5M_UP→2023 | toLocaleString() }} / {{ Total→2023 | toLocaleString() }}</strong><br />2022: {{ 1.5M_UP→2022 | toLocaleString() }} / {{ Total→2022 | toLocaleString() }}</strong><br />2021: {{ 1.5M_UP→2021 | toLocaleString() }} / {{ Total→2021 | toLocaleString() }}</strong><br />2020: {{ 1.5M_UP→2020 | toLocaleString() }} / {{ Total→2020 | toLocaleString() }}</strong><br />2019: {{ 1.5M_UP→2019 | toLocaleString() }} / {{ Total→2019 | toLocaleString() }}</strong><br />2018: {{ 1.5M_UP→2018 | toLocaleString() }} / {{ Total→2018 | toLocaleString() }}</strong>",
+		"tooltip":"<strong>{{ n }}</strong><br />Homes over £1.5 million sold:<br />2025 (24th December): {{ 1.5M_UP→2025 | toLocaleString() }} / {{ Total→2025 | toLocaleString() }}</strong><br />2024: {{ 1.5M_UP→2024 | toLocaleString() }} / {{ Total→2024 | toLocaleString() }}</strong><br />2023: {{ 1.5M_UP→2023 | toLocaleString() }} / {{ Total→2023 | toLocaleString() }}</strong><br />2022: {{ 1.5M_UP→2022 | toLocaleString() }} / {{ Total→2022 | toLocaleString() }}</strong><br />2021: {{ 1.5M_UP→2021 | toLocaleString() }} / {{ Total→2021 | toLocaleString() }}</strong><br />2020: {{ 1.5M_UP→2020 | toLocaleString() }} / {{ Total→2020 | toLocaleString() }}</strong><br />2019: {{ 1.5M_UP→2019 | toLocaleString() }} / {{ Total→2019 | toLocaleString() }}</strong><br />2018: {{ 1.5M_UP→2018 | toLocaleString() }} / {{ Total→2018 | toLocaleString() }}</strong>",
 		"value":"1.5M_UP→2025",
 		"width":600
 	},
-	"date":"2025-07-31",
+	"date":"2025-12-24",
 	"subtitle":"Price paid over £1.5 million",
 	"title":"High-value homes sold (England & Wales)",
 	"units":{
@@ -48,7 +48,7 @@
 			"value":"number"
 		},
 		"1.5M_UP→2025":{
-			"notes":"31st July",
+			"notes":"24th December",
 			"value":"number"
 		}
 	}

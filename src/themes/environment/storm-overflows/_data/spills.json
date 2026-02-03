@@ -51,6 +51,7 @@
 		"attribution": "Data: <a href=\"https://environment.data.gov.uk/dataset/21e15f12-0df8-4bfc-b763-45226c16a8ac\">Event Duration Monitoring - Storm Overflows - Annual Returns</a> (Environment Agency)"
 	},
 	"date": "2025-03-27",
+	"nextupdate": "2026-03",
 	"units": {
 		"Total Duration (hrs) all spills prior to processing through 12-24h count method→2022":{"value":"hr"},
 		"Total Duration (hrs) all spills prior to processing through 12-24h count method→2023":{"value":"hr"},

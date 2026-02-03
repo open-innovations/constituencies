@@ -49,6 +49,7 @@
 		"attribution": "Data: <a href=\"https://www.ons.gov.uk/peoplepopulationandcommunity/housing/datasets/parliamentaryconstituencyhousepricestatisticsforsmallareas\">House prices (ONS Housing Analysis Team)</a> (Table 2a)"
 	},
 	"date": "2024-12",
+	"nextupdate": "2026-03",
 	"units":{
 		"1995-12":{"value":"GBP","category":"currency"},
 		"1996-03":{"value":"GBP","category":"currency"},
