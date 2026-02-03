@@ -17,7 +17,7 @@
 OI.ready(function(){
 
 	function saveDOMImage(el, opt) {
-		var w, h, d;
+		let w, h, d, heading;
 		if(!opt) opt = {};
 		if(!opt.file) opt.file = "figure.png";
 		if(opt.scale){
@@ -36,8 +36,16 @@ OI.ready(function(){
 		el.classList.add("capture");
 		d = new Date();
 
+		// Create a temporary heading based on the nearest heading
+		head = nearestHeading(el);
+		if(head){
+			heading = document.createElement('h3');
+			heading.innerHTML = head.innerHTML.replace(/<a [^\>]*>.*?<\/a>/g,"").replace(/<[^\>]*>/g,"");
+			el.prepend(heading);
+		}
+
 		domtoimage.toPng(el, opt).then(function (dataUrl) {
-			var link = document.createElement("a");
+			let link = document.createElement("a");
 			link.download = opt.file;
 			link.href = dataUrl;
 			link.click();
@@ -47,6 +55,7 @@ OI.ready(function(){
 				el.style.setProperty("height", h);
 			}
 			el.classList.remove("capture");
+			if(heading) heading.remove();
 			if(typeof opt.callback === "function") opt.callback.call();
 		}).catch(function (error) {
 			console.error('oops, something went wrong!', error);
@@ -55,16 +64,16 @@ OI.ready(function(){
 	
 	function saveSVG(el, opt) {
 		if(!opt) opt = {};
-		var str = el.outerHTML;
+		let str = el.outerHTML;
 		str = '<?xml version="1.0"?>\n'+str.replace(/<br>/g, " ");
 
-		var textFileAsBlob = new Blob([str], { type: "text/application/svg+xml" });
-		var fileNameToSaveAs = opt.file || "figure.svg";
+		let textFileAsBlob = new Blob([str], { type: "text/application/svg+xml" });
+		let fileNameToSaveAs = opt.file || "figure.svg";
 
 		function destroyClickedElement(event) {
 			document.body.removeChild(event.target);
 		}
-		var dl = document.createElement("a");
+		let dl = document.createElement("a");
 		dl.download = fileNameToSaveAs;
 		dl.innerHTML = "Download File";
 		if(window.webkitURL != null){
@@ -85,7 +94,7 @@ OI.ready(function(){
 
 	function FigureMenu(el){
 
-		var i,item,btn,btnsvg,oiviz,tabpanel;
+		let i,item,btn,btnsvg,oiviz,tabpanel;
 		oiviz = el.closest('.oi-viz');
 		
 		if(oiviz){
@@ -120,7 +129,19 @@ OI.ready(function(){
 		}
 		return this;
 	}
-
-	var els = document.querySelectorAll('.oi-viz .menu');
-	for(i = 0; i < els.length; i++) new FigureMenu(els[i]);	
+	function nearestHeading(el){
+		if(el.previousElementSibling){
+			if(el.previousElementSibling.tagName.match(/H[1-6]/)){
+				return el.previousElementSibling;
+			}else{
+				return nearestHeading(el.previousElementSibling);
+			}
+		}else if(el.parentElement){
+			return nearestHeading(el.parentElement);
+		}else{
+			return null;
+		}
+	}
+	let els = document.querySelectorAll('.oi-viz .menu');
+	for(let i = 0; i < els.length; i++) new FigureMenu(els[i]);	
 });
