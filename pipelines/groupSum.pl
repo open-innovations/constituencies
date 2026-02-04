@@ -20,7 +20,7 @@ use lib $basedir."lib/";	# Custom functions
 require "lib.pl";
 
 
-my ($help,$keep,@keeps,$sum,@sums,$precision,@precisions,$scale,@scales,$sumcolumns,$col,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$r,$c,$pid,$pcon,$constituencies,$match,$lookup,$csvrow,@row,@rows,@cols,$ll,$pcds,$or,$data,$category,$cat,$name,$totals,$total,$groups,$group,@grouplist,$g,$csv,$dir,$fh,$badlocation,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles);
+my ($help,$keep,@keeps,$sum,@sums,$precision,@precisions,$scale,@scales,$sumcolumns,$col,$length,$ofile,$src,$ifile,$startrow,$tmpdir,$r,$c,$pid,$pcon,$constituencies,$match,$lookup,$csvrow,@row,@rows,@cols,$ll,$pcds,$or,$data,$category,$cat,$name,$totals,$total,$groups,$group,@grouplist,$g,$csv,$dir,$fh,$badlocation,$badnovalue,$ok,$dt,$dtfull,$totalcolumn,$v,@datefiles,$colhead);
 
 # Get the command line options
 GetOptions(
@@ -146,7 +146,8 @@ $csv = "";
 for($c = 0; $c < @keeps; $c++){
 	if(defined($sumcolumns->{$keeps[$c]})){
 		for($g = 0; $g < @grouplist; $g++){
-			$csv .= ($csv ? ",":"").$keeps[$c]."→".$grouplist[$g];
+			$colhead = $keeps[$c]."→".$grouplist[$g];
+			$csv .= ($csv ? ",":"").($colhead =~ /,/ ? "\"":"").$colhead.($colhead =~ /,/ ? "\"":"");
 		}
 	}else{
 		$csv .= ($csv ? ",":"").$keeps[$c];

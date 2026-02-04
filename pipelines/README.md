@@ -6,6 +6,16 @@
 
 `perl pipelines/economy/atms.pl`
 
+
+## Health
+
+### Health conditions
+
+Take the HoC data from https://commonslibrary.parliament.uk/constituency-data-how-healthy-is-your-area/#constituency
+
+`perl pipelines/groupSum.pl src/themes/health/health-conditions/_data/health_conditions_constituency.csv -group "condition" -sum "prevalence%" -precision=0.001 -id "pcon_code" -keep "pcon_code,pcon_name,prevalence%" -o src/themes/health/health-conditions/_data/release/health_conditions.csv`
+
+
 ## Society
 
 ### Benches
