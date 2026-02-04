@@ -1,0 +1,23 @@
+---
+title: Emissions from homes (England)
+theme: environment
+created: 2026-02-04T18:40
+updated: 2026-02-04T18:40
+description: |
+  The fraction of climate emissions from homes.
+keywords: [emissions,climate,homes]
+api:
+  - homes
+---
+
+<p>The percentage of greenhouse gas emissions from homes.</p>
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "homes"
+}) }}
+
+<h2>Notes</h2>
+
+<p>Total greenhouse gas emissions from homes are taken from local authority and regional greenhouse gas emissions statistics published by the UK government. Friends of the Earth estimated emissions at the constituency level using a postcode-based local authority to constituency lookup.</p>

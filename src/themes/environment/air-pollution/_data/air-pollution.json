@@ -1,18 +1,19 @@
 {
 	"title": "Air pollution (England & Wales)",
 	"config": {
+		"debug": true,
 		"width": 600,
 		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "sources.environment.FoE",
+		"data": "sources.environment.FoE2025",
 		"columns":[{
 			"name": "filterLabel",
 			"template": "{{ n }}"
 		}],
-		"value": "Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)",
+		"value": "Air pollution: LSOAs above WHO (%)",
 		"scale": "#0DBC37 0%, #000000 100%",
 		"min": 0,
 		"max": 100,
-		"matchKey": "Constituency code",
+		"matchKey": "Pcon",
 		"legend":{
 			"position": "top right",
 			"items": [{
@@ -39,17 +40,17 @@
 			"slider": {
 				"width": "500px",
 				"columns": [
-					{"value":"Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)","label":"NO2 above WHO guidelines"},
-					{"value":"Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%)","label":"PM2.5 above WHO guidelines"}
+					{"value":"Air pollution: LSOAs above WHO (%)","label":"LSOAs above WHO guidelines"},
+					{"value":"Air pollution: LSOAs twice WHO (%)","label":"LSOAs twice WHO guidelines"}
 				]
 			}
 		},
-		"tooltip": "<strong>{{ n }}</strong><br />NO2: <strong>{{ Air pollution→Neighbourhoods where NO2 above WHO guidelines (%) }}%</strong><br />PM2.5: <strong>{{ Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%) }}%</strong>",
-		"attribution": "Data: <a href=\"https://policy.friendsoftheearth.uk/download/spreadsheet-constituency-data-general-election-2024\">Environmental, economic and health data</a>, (Friends of the Earth)"
+		"tooltip": "<strong>{{ n }}</strong><br />LSOAs above WHO guidelines: <strong>{{ Air pollution: LSOAs above WHO (%) }}%</strong><br />LSOAs twice WHO guidelines: <strong>{{ Air pollution: LSOAs twice WHO (%) }}%</strong>",
+		"attribution": "Data: <a href=\"https://friendsoftheearth.uk/take-action/environmental-threats-across-every-constituency-england-revealed\">Environmental, economic and health data</a>, (Friends of the Earth)"
 	},
-	"date": "2023",
+	"date": "2025-10-23",
 	"units":{
-		"Air pollution→Neighbourhoods where NO2 above WHO guidelines (%)":{"value":"percent"},
-		"Air pollution→Neighbourhoods where PM2.5 above WHO guidelines (%)":{"value":"percent"}
+		"Air pollution: LSOAs above WHO (%)":{"value":"percent"},
+		"Air pollution: LSOAs twice WHO (%)":{"value":"percent"}
 	}
 }

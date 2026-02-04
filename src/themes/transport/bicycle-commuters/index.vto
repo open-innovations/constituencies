@@ -1,0 +1,22 @@
+---
+title: Bicycle commuters (England)
+theme: transport
+created: 2026-02-04T18:30
+updated: 2026-02-04T18:30
+description: |
+  The proportion of commuter journeys by bike.
+keywords: [bicycle,commute]
+api:
+  - bicycle
+---
+
+{{ comp.wrapper({
+	"page": page,
+	"component": comp.oi.map.hex_cartogram,
+	"config": "bicycle"
+}) }}
+
+<h2>Notes</h2>
+
+<p>The data on the proportion of commuting journeys made by public transport, cycling or walking is from the 2011 Census. This is the most recent dataset available for every local authority. The data is unlikely to have changed significantly since 2011 and may even be worse given cuts to buses have reduced bus passenger miles in most locations.</p>
+<p>Estimates for potential bike use - including accounting for the increased use of electric bikes - come from the <a href="https://www.pct.bike/">Propensity to Cycle Tool</a> funded by the Department for Transport and others.</p>

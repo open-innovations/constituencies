@@ -1,0 +1,47 @@
+{
+	"title": "Emissions from homes (England)",
+	"config": {
+		"width": 600,
+		"hexjson": "hexjson.uk-constituencies-2024",
+		"data": "sources.environment.FoE2025",
+		"columns": [{
+			"name": "filterLabel",
+			"template": "{{ n }}"
+		}],
+		"value": "Emissions from homes (%)",
+		"scale": "#0DBC37 0%, #000000 100%",
+		"min": 0,
+		"max": 100,
+		"matchKey": "Pcon",
+		"legend": {
+			"position": "top right",
+			"items": [{
+				"value": 100,
+				"label": "100%"
+			},{
+				"value": 75,
+				"label": "75%"
+			},{
+				"value": 50,
+				"label": "50%"
+			},{
+				"value": 25,
+				"label": "25%"
+			},{
+				"value": 0,
+				"label": "0%"
+			}]
+		},
+		"tools": {
+			"filter": {
+				"label": "filterLabel"
+			}
+		},
+		"tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} | toLocaleString }}%</strong>",
+		"attribution": "Data: <a href=\"https://friendsoftheearth.uk/take-action/environmental-threats-across-every-constituency-england-revealed\">Environmental threats</a> (Friends of the Earth)"
+	},
+	"date": "2025-10-23",
+	"units":{
+		"Emissions from homes (%)":{"value":"percent"}
+	}
+}
