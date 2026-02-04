@@ -1,50 +1,27 @@
 {
-	"title": "Gambling premises (GB)",
-	"config": {
-		"width": 600,
-		"hexjson": "hexjson.uk-constituencies-2024",
-		"data": "release.premises",
-		"columns": [{
-			"name": "filterLabel",
-			"template": "{{ n }} ({{ a }})"
-		}],
-		"value": "Total",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 25,
-		"matchKey": "PCON24CD",
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 25,
-				"label": "25+"
-			},{
-				"value": 20,
-				"label": "20+"
-			},{
-				"value": 15,
-				"label": "15"
-			},{
-				"value": 10,
-				"label": "10"
-			},{
-				"value": 5,
-				"label": "5"
-			},{
-				"value": 0,
-				"label": "0"
-			}]
+	"config":{
+		"attribution":"Data: <a href=\"https://www.gamblingcommission.gov.uk/public-register/premises/download\">the register of gambling premises</a> (&copy; Gambling Commission).",
+		"columns":[
+			{"name":"filterLabel","template":"{{ n }}"}
+		],
+		"data":"release.premises",
+		"hexjson":"hexjson.uk-constituencies-2024",
+		"legend":{
+			"items":[{"label":"25+","value":25},{"label":"20+","value":20},{"label":"15","value":15},{"label":"10","value":10},{"label":"5","value":5},{"label":"0","value":0}],
+			"position":"top right"
 		},
-		"tools": {
-			"filter": {
-				"label": "filterLabel"
-			},
-			"slider":{
-				"columns":["Total","Adult Gaming Centre","Betting Shop","Bingo","Casino","Casino 2005","Family Entertainment Centre","Pool Betting"],
-				"width": "500px"
-			}
+		"matchKey":"PCON24CD",
+		"max":25,
+		"min":0,
+		"scale":"Viridis",
+		"tools":{
+			"filter":{"label":"filterLabel"},
+			"slider":{"columns":[{"label":"Total","value":"Total"},{"label":"Adult Gaming Centre","value":"Adult Gaming Centre Total"},{"label":"Betting Shop","value":"Betting Shop Total"},{"label":"Bingo","value":"Bingo Total"},{"label":"Casino","value":"Casino Total"},{"label":"Casino 2005","value":"Casino 2005 Total"},{"label":"Family Entertainment Centre","value":"Family Entertainment Centre Total"},{"label":"Pool Betting","value":"Pool Betting Total"}],"width":"500px"}
 		},
-        "tooltip": "<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} }}</strong>",
-        "attribution": "Data: <a href=\"https://www.gamblingcommission.gov.uk/public-register/premises/download\">the register of gambling premises</a> (&copy; Gambling Commission)."
-	}
+		"tooltip":"<strong>{{ n }}</strong><br />{{ _value }}: <strong>{{ {{ _value }} }}</strong>",
+		"value":"Total",
+		"width":600
+	},
+	"date":"2026-02-04T17:56",
+	"title":"Gambling premises (GB)"
 }

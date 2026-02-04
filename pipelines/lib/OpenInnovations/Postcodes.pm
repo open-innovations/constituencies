@@ -109,17 +109,17 @@ sub save {
 
 sub getPostcode {
 	my ($self, $postcode) = @_;
-	
 	my ($i,$pcd,$fh,@lines,$p,$lat,$lon,$file);
 
 	$postcode = uc($postcode);
+	$postcode =~ s/^\s//g;
 	$postcode =~ /^([A-Z]{1,2})/;
 	$pcd = $1;
 	$postcode =~ s/ //g;
 	
 	if(!defined($pcd)){
 		error("Bad postcode <yellow>$postcode<none>\n");
-		exit;
+		return {};
 	}
 	
 	if(defined($self->{'postcodelookup'}{$postcode})){

@@ -130,7 +130,6 @@ if(defined($pcdcolumn)){
 # Update the total column with any date strings
 $totalcolumn = strftime($totalcolumn, localtime((stat($ifile))[9]));
 
-
 $totals = {};
 # Loop over rows in input file and find totals
 for($r = 0; $r < @rows; $r++){
@@ -192,6 +191,12 @@ for($r = 0; $r < @rows; $r++){
 						if(!defined($totals->{$cat})){ $totals->{$cat} = {}; }
 						if(!defined($totals->{$cat}{$pcon})){ $totals->{$cat}{$pcon} = 0; }
 						$totals->{$cat}{$pcon}++;
+						if(defined($totalcolumn)){
+							$cat = $totalcolumn;
+							if(!defined($totals->{$cat})){ $totals->{$cat} = {}; }
+							if(!defined($totals->{$cat}{$pcon})){ $totals->{$cat}{$pcon} = 0; }
+							$totals->{$cat}{$pcon}++;
+						}
 					}
 				}else{
 					warning("No constituency.\n");
@@ -245,9 +250,9 @@ foreach $total (sort(keys(%{$totals}))){
 		push(@{$data->{'head'}},$total);
 		$data->{'lookup'}{'col'}{$total} = @{$data->{'head'}};
 	}
-	# We need to set the total to zero in every row
+	# We need to set the total to blank in every row
 	for($r = 0; $r < @{$data->{'rows'}}; $r++){
-		$data->{'rows'}[$r][$data->{'lookup'}{'col'}{$total}] = 0;
+		$data->{'rows'}[$r][$data->{'lookup'}{'col'}{$total}] = "";
 	}
 }
 
@@ -256,14 +261,13 @@ for($r = 0; $r < @{$data->{'rows'}}; $r++){
 	$pcon = $data->{'rows'}[$r][$data->{'lookup'}{'col'}{$pid}];
 	if($pcon){
 		foreach $total (keys(%{$totals})){
-			$data->{'rows'}[$r][$data->{'lookup'}{'col'}{$total}] = $totals->{$total}{$pcon}||0;
+			$data->{'rows'}[$r][$data->{'lookup'}{'col'}{$total}] = (defined($totals->{$total}{$pcon})) ? $totals->{$total}{$pcon} : ($totalcolumn && defined($totals->{$totalcolumn}{$pcon}) ? 0 : "");
 		}
 	}else{
 		warning("No constituency ID for row <yellow>$r<none>.\n");
 		print Dumper $data->{'rows'}[$r];
 	}
 }
-
 
 # Build CSV output
 # Build header

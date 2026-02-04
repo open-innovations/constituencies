@@ -20,7 +20,9 @@ Get data from https://data.parliament.uk/resources/constituencystatistics/PowerB
 
 ### Gambling premises
 
-`perl pipelines/totalByConstituency.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/release/premises.csv -c "Premises Activity"`
+Check if the CSV from the Gambling Commission is the whole file. Otherwise get the XLSX version and convert it.
+
+`perl pipelines/totalByConstituency.pl https://www.gamblingcommission.gov.uk/downloads/premises-licence-register.csv -postcode=Postcode -o src/themes/society/gambling-premises/_data/release/premises.csv -c "Premises Activity" -updatedate src/themes/society/gambling-premises/index.vto -updatedate src/themes/society/gambling-premises/_data/map_1.json -t Total`
 
 ### Foodbanks
 
