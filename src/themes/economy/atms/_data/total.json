@@ -28,14 +28,14 @@
 				"label":"filterLabel"
 			},
 			"slider":{
-				"columns":[{"label":"Free-to-use","value":"February 2026→Free-to-use ATM"},{"label":"Pay-to-use","value":"February 2026→Pay-to-use ATM"},{"label":"Total","value":"February 2026→TOTAL"}],
+				"columns":[{"label":"Free-to-use","value":"March 2026→Free-to-use ATM"},{"label":"Pay-to-use","value":"March 2026→Pay-to-use ATM"},{"label":"Total","value":"March 2026→TOTAL"}],
 				"width":"500px"
 			}
 		},
 		"tooltip":"<strong>{{ n }}</strong><br />{{ _value }} ATMs: <strong>{{ {{ _value }} | toLocaleString() }}</strong>",
-		"value":"February 2026→TOTAL",
+		"value":"March 2026→TOTAL",
 		"width":600
 	},
-	"date":"2026-02",
+	"date":"2026-03",
 	"title":"ATMs: total (UK)"
 }
