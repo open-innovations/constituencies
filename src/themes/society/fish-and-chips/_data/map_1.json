@@ -17,10 +17,10 @@
 		"tools":{
 			"filter":{"label":"filterLabel"}
 		},
-		"tooltip":"<strong>{{ n }}</strong><br />Fish and chip shops: <strong>{{ 2026-05 | \"0\" }}</strong>",
-		"value":"2026-05",
+		"tooltip":"<strong>{{ n }}</strong><br />Fish and chip shops: <strong>{{ 2026-06 | \"0\" }}</strong>",
+		"value":"2026-06",
 		"width":600
 	},
-	"date":"2026-05-01T03:40",
+	"date":"2026-06-01T00:56",
 	"title":"Fish and chip shops (UK)"
 }
